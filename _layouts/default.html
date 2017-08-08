@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+	{% include head.html %}
+
+	<body class="a-st">
+
+        <div class="l-page-layout l-page-layout--two-column-fixed">
+
+            <div class="l-page-layout__secondary a-st-navbar a-st-expandable">
+
+                {% include header.html %}
+
+            </div><!--end l-page-layout__secondary-->
+
+						<button aria-label="Toggle Side Navigation" class="a-st-toggleNavbar a-st-toggleNavbar-expandable open">
+							<div>
+								<span class="line"></span>
+								<span class="line"></span>
+								<span class="line"></span>
+							</div>
+						</button>
+
+            <div class="l-page-layout__main">
+
+              <main role="main">
+
+                      {{ content }}
+
+							</main><!--end role=main-->
+
+                {% include footer.html %}
+
+            </div><!--end l-page-layout__main-->
+
+        </div><!--end l--two-column-fixed-->
+
+	</body>
+
+</html>
