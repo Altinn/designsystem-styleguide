@@ -3,12 +3,17 @@ layout: page
 title: Sidemaler
 permalink: sidemaler.html
 description:
+project: altinn
 
 ---
 
+<div id="alert-no-arrow" class="a-message a-message-error a-message--arrow-off a-message--fullwidth mb-2 a-py-minus-1">
+  NB: Innholdet og sidene er under utvikling
+</div>
+
 <p class="a-leadText a-fontBold">Her finner du sidemalene som er prototypet for Altinn ved hjelp av UI-komponentene.</p>
 
-## FORSIDE
+## FORSIDER PÅ ALTINN
 
 - [Forside normal](http://altinn.github.io/DesignSystem/patterns/04-sider-infoportal-01-forside-00-forside/04-sider-infoportal-01-forside-00-forside.html?1498551267012)
 - [Forside innlogget](http://altinn.github.io/DesignSystem/patterns/04-sider-infoportal-01-forside-02-forside-innlogget/04-sider-infoportal-01-forside-02-forside-innlogget.html)

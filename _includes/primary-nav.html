@@ -157,17 +157,7 @@
 
 		</li><!-- end c-nav__list__item -->
 
-		<li class="c-primary-nav__item">
-
-			{% for my_page in site.pages %}
-				{% if my_page.url == "/support.html" %}
-				<a href="{{ "/support.html" | prepend: site.baseurl }}" class="c-primary-nav__link {% if page.url == '/support.html' %}is-active is-current{% endif %}">
-					<span class="c-primary-nav__text">Hjelp og kontakt</span>
-				</a>
-				{% endif %}
-			{% endfor %}
-
-		</li><!-- end c-nav__list__item -->
+	
 
 
 	</ul><!-- end c-nav__list -->

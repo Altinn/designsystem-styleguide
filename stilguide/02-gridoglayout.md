@@ -8,6 +8,10 @@ description: Stilguide
 
 ---
 
+<div id="alert-no-arrow" class="a-message a-message-error a-message--arrow-off a-message--fullwidth mb-2 a-py-minus-1">
+  NB: Innholdet og sidene er under utvikling
+</div>
+
 <p class="a-leadText a-fontBold">Altinn’s responsive brukergrensesnitt er basert på en 12-kolonners grid layout, samt et sett definerte avstander som tar utgangspunkt i 12px som base.</p>
 
 ## Bootstrap grid
@@ -31,7 +35,7 @@ Det er tre hovedkomponenter: "containers", "rows", og "columns".
 
 ## Breakpoints
 
-<pre>
+```css
 $grid-breakpoints: (
   // Extra small screen / phone
   xs: 0,
@@ -44,26 +48,26 @@ $grid-breakpoints: (
   // Extra large screen / wide desktop
   xl: 1200px
 ) !default;
-</pre>
+```
 
 ## CSS3 Media queries
 @media blir brukt for å definere ulik stilsetting for ulike medietyper, skjermstørrelser og enheter. CSS-kode som skal være forskjellig på forskjellige skjermstørrelser lages for mobil først - deretter utvider vi for større skjermer. Eksempel:
 
 ## Avstander
 
-<pre>
+```css
 // SPACE
 
-$spacer : 12px;			// 12px
+$spacer : 12px;	// 12px
 
 $spacer/2;			// 6px
-$spacer*1.5;		        // 18px
+$spacer*1.5;		// 18px
 $spacer*2;			// 24px
 $spacer*3;			// 36px
 $spacer*4;			// 48px
 $spacer*5; 			// 60px
 $spacer*6;			// 72px
-</pre>
+```
 
 ### Gjenbrukbare klasser for avstander
 

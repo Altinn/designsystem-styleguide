@@ -17,6 +17,48 @@
  });
 
 
+ /*
+ * VIEW CORRECT NAV BASED ON CHOSEN PROJECT
+ */
+
+ $(".primary-nav-altinnett").hide();
+ $(".primary-nav-brreg").hide();
+
+ $("[data-toggle='altinn-dropdown']").find(".dropdown-item").on("click", function() {
+  switch($(this).attr("data-value")) {
+    case "1":
+      $(".primary-nav-altinnett").hide();
+      $(".primary-nav-brreg").hide();
+      $(".primary-nav-altinn").show();
+      $('link[rel=stylesheet][href~="/styleguide/css/altinnett.css"]').remove();
+      $('link[rel=stylesheet][href~="/styleguide/css/brreg.css"]').remove();
+      break;
+    case "2":
+      $(".primary-nav-altinnett").show();
+      $(".primary-nav-altinn").hide();
+      $(".primary-nav-brreg").hide();
+      $("head link[rel='stylesheet']").last().after("<link rel='stylesheet' href='/styleguide/css/altinnett.css' type='text/css' media='screen'>");
+      $('link[rel=stylesheet][href~="/styleguide/css/brreg.css"]').remove();
+      break;
+    case "3":
+      $(".primary-nav-altinn").hide();
+      $(".primary-nav-altinnett").hide();
+      $(".primary-nav-brreg").show();
+      $("head link[rel='stylesheet']").last().after("<link rel='stylesheet' href='/styleguide/css/brreg.css' type='text/css' media='screen'>");
+      $('link[rel=stylesheet][href~="/styleguide/css/altinnett.css"]').remove();
+      break;
+  }
+});
+
+
+$(".fruit").onchange = function() {
+    localStorage.setItem('.fruit', document.getElementById(".fruit").value);
+}
+
+if (localStorage.getItem('.fruit')) {
+    $(".fruit").options[localStorage.getItem('.fruit')].selected = true;
+}
+
  /*!
  * TOGGLE navbar
  	+ hide the others

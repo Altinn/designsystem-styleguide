@@ -8,6 +8,10 @@ description: Retingslinjer
 
 ---
 
+<div id="alert-no-arrow" class="a-message a-message-error a-message--arrow-off a-message--fullwidth mb-2 a-py-minus-1">
+  NB: Innholdet og sidene er under utvikling
+</div>
+
 ## Målform
 På altinn.no har vi innhold på både bokmål, nynorsk og engelsk. Vi forholder oss til mållova, som sier at begge målformer skal være representert med minst 25 prosent.
 

@@ -8,6 +8,10 @@ description: Retningslinjer
 
 ---
 
+<div id="alert-no-arrow" class="a-message a-message-error a-message--arrow-off a-message--fullwidth mb-2 a-py-minus-1">
+  NB: Innholdet og sidene er under utvikling
+</div>
+
 <p class="a-leadText a-fontBold">Altinn har sin egen visuelle profil. Denne ble fornyet høsten 2016, i forbindelse med utvikling av "et enklere og mer brukervennlig Altinn".</p>
 
 ## Logo

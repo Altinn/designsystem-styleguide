@@ -6,6 +6,10 @@ title: Universell utforming
 description: Retningslinjer
 ---
 
+<div id="alert-no-arrow" class="a-message a-message-error a-message--arrow-off a-message--fullwidth mb-2 a-py-minus-1">
+  NB: Innholdet og sidene er under utvikling
+</div>
+
 ## Tilgjengelighet
 
 Det er viktig gjøre innhold tilgjengelig for alle. God tilgjengelighet kan hjelpe mennesker med funksjonshemninger å oppfatte innholdet vårt på en meningsfull måte. Dette gjelder f.eks blindhet, nedsatt syn og hørsel, lærevansker og begrenset bevegelse. Det er flere ting vi kan gjøre, men det første og viktigste er å skrive semantisk god HTML.

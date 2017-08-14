@@ -8,6 +8,10 @@ description: Stilguide
 
 ---
 
+<div id="alert-no-arrow" class="a-message a-message-error a-message--arrow-off a-message--fullwidth mb-2 a-py-minus-1">
+  NB: Innholdet og sidene er under utvikling
+</div>
+
 <p class="a-leadText a-fontBold">I utgangspunktet skal kun de fargene som er presentert her brukes. Hvis nye farger blir implementert skal dette gås opp med ansvarlig designer. De skal i så fall inkluderes i hele nettstedet, og tilføre en verdi til brukeropplevelsen. </p>
 
 Fargene refereres til ved bruk av variabler som er definert i <code> variables.scss </code>.
