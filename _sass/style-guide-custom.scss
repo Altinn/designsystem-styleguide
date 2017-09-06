@@ -42,6 +42,7 @@ $blue-dark: #0062BA;
 
 			.c-header {
 				background: #fff;
+				overflow-y: hidden;
 
 				.c-header__inner {
 					padding: 0;
@@ -79,32 +80,30 @@ $blue-dark: #0062BA;
 		width: 4rem;
 		height: 4rem;
 		box-shadow: 1px 1px 4px 0 rgba(137, 137, 137, 0.5);
-		background-color: #fff;
+		background-color: $blue-dark;
 		border: 1px solid transparent;
 		margin: 0;
 		padding: 0;
 		cursor: pointer;
 		z-index: 10001;
-		border-radius: 50%;
 		left: 0px;
+		top: 0px;
 
-		@media screen and (min-width: 768px) {
+		@media screen and (min-width: 783px) {
 			left: 280px;
+			display: none;
 		}
 
 		&:hover,
 		&:active,
 		&:focus {
-			background-color: #f9f9f9;
+			background-color: $blue-dark;
 		}
 
 		&.open {
 			+.l-page-layout__main {
 				@media all and (min-width: 768px) {
-					width: calc(100% - 300px);
-					transform: translateX(300px) translateY(0px);
-					transition: all 200ms ease;
-					transition-delay: 300ms;
+					margin-left: 300px;
 				}
 			}
 		}
@@ -130,7 +129,7 @@ $blue-dark: #0062BA;
 		    cursor: pointer;
 		    display: block;
 		    margin: 0.16rem 0;
-		    background: #333;
+		    background: #fff;
 
 				&:nth-child(1),
 				&:nth-child(3) {
@@ -415,7 +414,6 @@ $blue-dark: #0062BA;
 
 		.c-page-header__title {
 			font-family: 'DIN-bold';
-			font-size: 4.6rem;
 		}
 	}
 
@@ -445,6 +443,7 @@ $blue-dark: #0062BA;
 
 .c-footer {
   padding-left: 36px;
+	padding-right: 36px;
 	p {
 		font-size: 14px;
 		margin-bottom: 0;

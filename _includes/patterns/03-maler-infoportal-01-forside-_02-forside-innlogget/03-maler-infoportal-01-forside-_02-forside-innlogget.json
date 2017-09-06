@@ -107,14 +107,11 @@
 	],
 	"imageurl": "../../images/temp-placeholder.svg",
 	"figCaption": "Tekst under bildet med en <a href=\"{{link.sider-infoportal-seksjonsforside-v-starteogdrive}}\">lenke</a>.",
-	"button-text": "En knapp med ikon",
+	"button-text": "En standard knapp",
 	"button-class": "a-btn a-btn-icon a-btn-shadow",
 	"button-colorClass": "",
 	"button-shadow-label": false,
-	"button-icon": {
-		"icon-prefix": "ai",
-		"icon-class": "ai-deadline"
-	},
+	"button-icon": false,
 	"info-delete-add": {
 		"added-content": [
 			{
@@ -751,8 +748,12 @@
 			"link-url": "/patterns/04-sider-portal-60-profil-roller-rettigheter-profil-roller-rettigheter/04-sider-portal-60-profil-roller-rettigheter-profil-roller-rettigheter.html"
 		}
 	},
+	"profile-text": "Alle dine profiler: ",
+	"profile-text-class": "a-h2",
+	"personswitch-button": false,
+	"personswitch-overview": true,
 	"personswitch-search": {
-		"text-input-id": "text-input-find-13",
+		"text-input-id": "person-switch-input-field",
 		"top-label": "Søk etter profil",
 		"isHidden": true,
 		"text-input-placeholder": "Søk etter profil",
@@ -808,6 +809,7 @@
 	"logo-class": "a-modal-top-logo",
 	"header-color": "a-darkBackground",
 	"dropdown-personswitch": true,
+	"hide-header": true,
 	"dropdown-languages": {
 		"dropdown-class": "a-dropdown-languages",
 		"dropdown-item": [
@@ -840,7 +842,7 @@
 		]
 	},
 	"header-mobilesearch": {
-		"text-input-id": "text-input-search-12",
+		"text-input-id": "dropdown-input-search",
 		"top-label": "Søk etter innhold",
 		"text-input-placeholder": "Søk etter innhold",
 		"input-type": "search",

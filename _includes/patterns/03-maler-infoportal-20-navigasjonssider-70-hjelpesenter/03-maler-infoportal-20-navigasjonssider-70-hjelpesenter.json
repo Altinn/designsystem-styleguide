@@ -11,13 +11,6 @@
 	"icon-post-text": false,
 	"icon-title": false,
 	"icon-sr-only-text": false,
-	"stickyHelp-animationHint": "",
-	"stickyHelp-close": {
-		"icon-prefix": "ai",
-		"icon-class": "ai-exit ai-sm",
-		"icon-id": "close-stickyHelp",
-		"icon-sr-only-text": "Minimer hjelpevinduet"
-	},
 	"print-form-tag": false,
 	"text-input-id": "text-input-generic",
 	"isHidden": false,
@@ -69,15 +62,12 @@
 	"telNumber": "75006000",
 	"telNumberVisible": "75 00 60 00",
 	"telText": "Telefonnummer til Altinn kundestøtte",
-	"button-text": "En knapp med ikon",
+	"button-text": "En standard knapp",
 	"button-class": "a-btn a-btn-icon a-btn-shadow",
 	"button-disabled": false,
 	"button-type": "button",
 	"onclick": false,
-	"button-icon": {
-		"icon-prefix": "ai",
-		"icon-class": "ai-deadline"
-	},
+	"button-icon": false,
 	"display-as-link": false,
 	"aria-label": "Tilbake",
 	"button-list": [
@@ -549,9 +539,9 @@
 	"firstLevelColClass": "col-12",
 	"secondLevelColClass": "col-12 col-md-3",
 	"hrExtraClass": "a-hrLight",
-	"hasSecondLevel": true,
 	"firstLevelCheckboxes": [
 		{
+			"hasSecondLevel": true,
 			"isStacked": "custom-controls-stacked",
 			"secondLevelId": "firstNestedLevel",
 			"check-legend": false,
@@ -582,266 +572,8 @@
 							"checkboxes-title": "Nested"
 						}
 					]
-				},
-				{
-					"isDiscreet": "a-form-checkboxes--discret",
-					"isStacked": "custom-controls-stacked",
-					"check-legend": false,
-					"checkboxes": [
-						{
-							"checkboxes-title": "Nested"
-						}
-					]
-				},
-				{
-					"isDiscreet": "a-form-checkboxes--discret",
-					"isStacked": "custom-controls-stacked",
-					"check-legend": false,
-					"checkboxes": [
-						{
-							"checkboxes-title": "Nested"
-						}
-					]
-				},
-				{
-					"isDiscreet": "a-form-checkboxes--discret",
-					"isStacked": "custom-controls-stacked",
-					"check-legend": false,
-					"checkboxes": [
-						{
-							"checkboxes-title": "Nested"
-						}
-					]
-				},
-				{
-					"isDiscreet": "a-form-checkboxes--discret",
-					"isStacked": "custom-controls-stacked",
-					"check-legend": false,
-					"checkboxes": [
-						{
-							"checkboxes-title": "Nested"
-						}
-					]
-				},
-				{
-					"isDiscreet": "a-form-checkboxes--discret",
-					"isStacked": "custom-controls-stacked",
-					"check-legend": false,
-					"checkboxes": [
-						{
-							"checkboxes-title": "Nested"
-						}
-					]
-				},
-				{
-					"isDiscreet": "a-form-checkboxes--discret",
-					"isStacked": "custom-controls-stacked",
-					"check-legend": false,
-					"checkboxes": [
-						{
-							"checkboxes-title": "Nested"
-						}
-					]
-				},
-				{
-					"isDiscreet": "a-form-checkboxes--discret",
-					"isStacked": "custom-controls-stacked",
-					"check-legend": false,
-					"checkboxes": [
-						{
-							"checkboxes-title": "Nested"
-						}
-					]
 				}
 			]
-		},
-		{
-			"isStacked": "custom-controls-stacked",
-			"secondLevelId": "secondNestedLevel",
-			"check-legend": false,
-			"checkboxes": [
-				{
-					"checkboxes-title": "Main",
-					"data-toggle": "nestedCheckbox",
-					"data-target": "#secondNestedLevel"
-				}
-			],
-			"secondLevelCheckboxes": [
-				{
-					"isDiscreet": "a-form-checkboxes--discret",
-					"isStacked": "custom-controls-stacked",
-					"check-legend": false,
-					"checkboxes": [
-						{
-							"checkboxes-title": "Nested"
-						}
-					]
-				},
-				{
-					"isDiscreet": "a-form-checkboxes--discret",
-					"isStacked": "custom-controls-stacked",
-					"check-legend": false,
-					"checkboxes": [
-						{
-							"checkboxes-title": "Nested"
-						}
-					]
-				},
-				{
-					"isDiscreet": "a-form-checkboxes--discret",
-					"isStacked": "custom-controls-stacked",
-					"check-legend": false,
-					"checkboxes": [
-						{
-							"checkboxes-title": "Nested"
-						}
-					]
-				},
-				{
-					"isDiscreet": "a-form-checkboxes--discret",
-					"isStacked": "custom-controls-stacked",
-					"check-legend": false,
-					"checkboxes": [
-						{
-							"checkboxes-title": "Nested"
-						}
-					]
-				},
-				{
-					"isDiscreet": "a-form-checkboxes--discret",
-					"isStacked": "custom-controls-stacked",
-					"check-legend": false,
-					"checkboxes": [
-						{
-							"checkboxes-title": "Nested"
-						}
-					]
-				},
-				{
-					"isDiscreet": "a-form-checkboxes--discret",
-					"isStacked": "custom-controls-stacked",
-					"check-legend": false,
-					"checkboxes": [
-						{
-							"checkboxes-title": "Nested"
-						}
-					]
-				},
-				{
-					"isDiscreet": "a-form-checkboxes--discret",
-					"isStacked": "custom-controls-stacked",
-					"check-legend": false,
-					"checkboxes": [
-						{
-							"checkboxes-title": "Nested"
-						}
-					]
-				},
-				{
-					"isDiscreet": "a-form-checkboxes--discret",
-					"isStacked": "custom-controls-stacked",
-					"check-legend": false,
-					"checkboxes": [
-						{
-							"checkboxes-title": "Nested"
-						}
-					]
-				},
-				{
-					"isDiscreet": "a-form-checkboxes--discret",
-					"isStacked": "custom-controls-stacked",
-					"check-legend": false,
-					"checkboxes": [
-						{
-							"checkboxes-title": "Nested"
-						}
-					]
-				}
-			]
-		},
-		{
-			"isStacked": "custom-controls-stacked",
-			"firstLevelColClass": "col-12 col-md-3",
-			"hrExtraClass": "hidden-md-up a-hrLight",
-			"check-legend": false,
-			"checkboxes": [
-				{
-					"checkboxes-title": "Secondexample"
-				}
-			],
-			"hasSecondLevel": false
-		},
-		{
-			"isStacked": "custom-controls-stacked",
-			"firstLevelColClass": "col-12 col-md-3",
-			"hrExtraClass": "hidden-md-up a-hrLight",
-			"check-legend": false,
-			"checkboxes": [
-				{
-					"checkboxes-title": "Secondexample"
-				}
-			],
-			"hasSecondLevel": false
-		},
-		{
-			"isStacked": "custom-controls-stacked",
-			"firstLevelColClass": "col-12 col-md-3",
-			"hrExtraClass": "hidden-md-up a-hrLight",
-			"check-legend": false,
-			"checkboxes": [
-				{
-					"checkboxes-title": "Secondexample"
-				}
-			],
-			"hasSecondLevel": false
-		},
-		{
-			"isStacked": "custom-controls-stacked",
-			"firstLevelColClass": "col-12 col-md-3",
-			"hrExtraClass": "hidden-md-up a-hrLight",
-			"check-legend": false,
-			"checkboxes": [
-				{
-					"checkboxes-title": "Secondexample"
-				}
-			],
-			"hasSecondLevel": false
-		},
-		{
-			"isStacked": "custom-controls-stacked",
-			"firstLevelColClass": "col-12 col-md-3",
-			"hrExtraClass": "hidden-md-up a-hrLight",
-			"check-legend": false,
-			"checkboxes": [
-				{
-					"checkboxes-title": "Secondexample"
-				}
-			],
-			"hasSecondLevel": false
-		},
-		{
-			"isStacked": "custom-controls-stacked",
-			"firstLevelColClass": "col-12 col-md-3",
-			"hrExtraClass": "hidden-md-up a-hrLight",
-			"check-legend": false,
-			"checkboxes": [
-				{
-					"checkboxes-title": "Secondexample"
-				}
-			],
-			"hasSecondLevel": false
-		},
-		{
-			"isStacked": "custom-controls-stacked",
-			"firstLevelColClass": "col-12 col-md-3",
-			"hrExtraClass": "hidden-md-up a-hrLight",
-			"check-legend": false,
-			"checkboxes": [
-				{
-					"checkboxes-title": "Secondexample"
-				}
-			],
-			"hasSecondLevel": false
 		},
 		{
 			"isStacked": "custom-controls-stacked",
@@ -869,7 +601,6 @@
 		}
 	],
 	"date-input-label": "Dato:",
-	"form-control-class": "a-hasIcon",
 	"hasFieldset": true,
 	"switch-legend": "Velg et alternativ",
 	"radiobuttons": [
@@ -1035,23 +766,19 @@
 			"collapse-header-id": "accordionHeaderItem1",
 			"collapse-header-text": "Første ekspandérbare overskrift har veldig veldig veldig veldig veldig mange ord for å teste hvordan det vil se ut",
 			"collapse-header-content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus cumque maxime, quam commodi doloremque adipisci deserunt atque non unde rem blanditiis quos veritatis suscipit, omnis animi labore nobis delectus eaque.",
-			"checkboxes": false,
-			"radiogroup-date": false
+			"isSmall": false
 		},
 		{
 			"collapse-header-id": "accordionHeaderItem2",
 			"collapse-header-text": "Andre ekspandérbare overskrift",
 			"collapse-header-content": false,
-			"isSmall": true,
-			"checkboxes": false,
-			"radiogroup-date": {}
+			"isSmall": false
 		},
 		{
 			"collapse-header-id": "accordionHeaderItem3",
 			"collapse-header-text": "Tredje ekspandérbare overskrift",
 			"collapse-header-content": false,
-			"isSmall": true,
-			"checkboxes": {}
+			"isSmall": false
 		}
 	],
 	"section-title": "Tittel på seksjon",
@@ -1137,6 +864,7 @@
 			"top-label": "Hva kan vi hjelpe deg med?",
 			"text-input-placeholder": "Hva kan vi hjelpe deg med?",
 			"isInput-group": "input-group",
+			"form-label-hasIcon": false,
 			"form-input-hasButton": {
 				"form-input-button-action": "Utfør søk",
 				"button-icon": {
@@ -1150,11 +878,10 @@
 					}
 				],
 				"onclick": "location.href='/patterns/04-sider-infoportal-40-sok-70-sok-hjelp/04-sider-infoportal-40-sok-70-sok-hjelp.html';"
-			},
-			"form-label-hasIcon": false
+			}
 		}
 	},
-	"jumbotron-image-url": "url('../../images/header-bg7.svg')",
+	"jumbotron-image-url": "url('../../images/header-bg-help.svg')",
 	"jumbo-smulesti": false,
 	"jumbotron-styles": "a-jumbotron-header a-jumbotron-light",
 	"action-button-text": "En knapp for å legge til",
@@ -1457,8 +1184,12 @@
 			"link-url": "/patterns/04-sider-portal-60-profil-roller-rettigheter-profil-roller-rettigheter/04-sider-portal-60-profil-roller-rettigheter-profil-roller-rettigheter.html"
 		}
 	},
+	"profile-text": "Alle dine profiler: ",
+	"profile-text-class": "a-h2",
+	"personswitch-button": false,
+	"personswitch-overview": true,
 	"personswitch-search": {
-		"text-input-id": "text-input-find-13",
+		"text-input-id": "person-switch-input-field",
 		"top-label": "Søk etter profil",
 		"isHidden": true,
 		"text-input-placeholder": "Søk etter profil",
@@ -1502,6 +1233,7 @@
 	],
 	"header-color": "",
 	"dropdown-personswitch": true,
+	"hide-header": true,
 	"dropdown-languages": {
 		"dropdown-class": "a-dropdown-languages",
 		"dropdown-item": [
@@ -1534,7 +1266,7 @@
 		]
 	},
 	"header-mobilesearch": {
-		"text-input-id": "text-input-search-12",
+		"text-input-id": "dropdown-input-search",
 		"top-label": "Søk etter innhold",
 		"text-input-placeholder": "Søk etter innhold",
 		"input-type": "search",
@@ -1561,7 +1293,7 @@
 	"jumbo-md-class": "col-md-12",
 	"jumbo-lg-class": "col-lg-10",
 	"jumbo-xl-class": "col-xl-8",
-	"jumbotron-bgcolor": "#E0DAF7",
+	"jumbotron-bgcolor": "#cff0ff",
 	"artikkelsok": false,
 	"kontakt": {
 		"card-picture-content": {
@@ -1689,218 +1421,11 @@
 			}
 		]
 	},
-	"hei": {
-		"header-color": "",
-		"bodyClass": "a-bgWhite",
-		"header": {
-			"logo": "../../images/a-logo-blue.svg"
-		},
-		"login-icon": {
-			"icon-prefix": "ai",
-			"icon-class": "ai-keyhole-circle"
-		},
-		"jumbo-md-class": "col-md-12",
-		"jumbo-md-offset-class": "offset-md-0",
-		"jumbo-lg-class": "col-lg-10",
-		"jumbo-lg-offset-class": "offset-lg-1",
-		"jumbo-xl-class": "col-xl-8",
-		"jumbo-xl-offset-class": "offset-xl-2",
-		"jumbotron-styles": "a-jumbotron-header a-jumbotron-light",
-		"jumbotron-bgcolor": "#E0DAF7",
-		"jumbotron-image-url": "url('../../images/header-bg7.svg')",
-		"pagestart": {
-			"page-title": false,
-			"h1Title": "Hjelpesenter",
-			"jumbo-intro": "Altinn brukerservice hjelper deg med inlogging, navigering, delegering, og veien frem til et skjema. Har du spørsmål om utfylling av et skjema må du kontakte etaten som eier det.",
-			"jumbo-intro-small": true,
-			"front-main-button": false,
-			"front-main-button-text-right": "",
-			"jumbo-search": {
-				"isLarge": "a-form-group-large",
-				"isHidden": "sr-only",
-				"top-label": "Hva kan vi hjelpe deg med?",
-				"form-label-hasIcon": false,
-				"text-input-placeholder": "Hva kan vi hjelpe deg med?",
-				"isInput-group": "input-group",
-				"form-input-hasButton": {
-					"form-input-button-action": "Utfør søk",
-					"button-icon": {
-						"icon-prefix": "ai",
-						"icon-class": "ai-search"
-					},
-					"button-text": [
-						{
-							"button-text-value": "Søk",
-							"button-text-class": "sr-only"
-						}
-					],
-					"onclick": "location.href='/patterns/04-sider-infoportal-40-sok-70-sok-hjelp/04-sider-infoportal-40-sok-70-sok-hjelp.html';"
-				}
-			}
-		},
-		"artikkelsok": false,
-		"kontakt": {
-			"card-picture-content": {
-				"border-top": "a-borderTop",
-				"image": false,
-				"card-picture-title": "Står du fast?",
-				"card-picture-description": "",
-				"tel": {
-					"telNumber": "75006000",
-					"telNumberVisible": "75 00 60 00",
-					"telText": "Telefonnummer til Altinn brukerstøtte",
-					"tel-icon": {
-						"icon-prefix": "ai ai-nw ai-nw-pr",
-						"icon-class": "ai-phone"
-					}
-				},
-				"mail": false,
-				"linkIcon": {
-					"linkIcon-text": "Skriv til oss",
-					"icon-prefix": "ai ai-nw ai-nw-pr",
-					"icon-class": "ai-send",
-					"linkIcon-url": "javascript:void(0)",
-					"data-toggle": "altinn-modal",
-					"data-action": "load",
-					"data-url": {
-						"data-url": "../../patterns/02-organismer-80-Modal-js-innhold-10-kontaktskjema/02-organismer-80-Modal-js-innhold-10-kontaktskjema.markup-only.html"
-					},
-					"data-target": "#modal"
-				}
-			}
-		},
-		"kontaktskjema": {
-			"show-login": false,
-			"display-as-dropdown": false,
-			"logo": {
-				"logo": "../../images/a-logo-black.svg"
-			},
-			"logo-class": "a-modal-top-logo",
-			"login-show": {
-				"login-name": "Kari Nordmann",
-				"login-icon": {
-					"icon-prefix": "ai",
-					"icon-class": "ai-private-circle-big",
-					"icon-extra-class": "a-personSwitcher-icon"
-				}
-			},
-			"icon": "group_add",
-			"hasTextSmall": false,
-			"modal-navbar-override": {
-				"button-list": [
-					{
-						"button-class": "a-modal-close",
-						"aria-label": "Lukk",
-						"icon-prefix": "ai",
-						"icon-class": "ai-exit",
-						"icon-extra-class": "a-modal-close-icon",
-						"stacked-background": {
-							"icon-prefix": "ai",
-							"icon-class": "ai-plain-circle-big"
-						},
-						"is-modal-close": {
-							"data-target": "#modal"
-						},
-						"onclick": "goBack()"
-					}
-				]
-			}
-		},
-		"illustrationLink": [
-			{
-				"url": "/patterns/04-sider-infoportal-20-navigasjonssider-32-temaside-v-hjelp-innlogging/04-sider-infoportal-20-navigasjonssider-32-temaside-v-hjelp-innlogging.html",
-				"col": "col-6 col-lg-3",
-				"h2": "innlogging",
-				"text": "ID-porten, <br>aktørvalg, mm.",
-				"icon": "ai-keyhole"
-			},
-			{
-				"url": "/patterns/04-sider-infoportal-20-navigasjonssider-32-temaside-v-hjelp-innlogging/04-sider-infoportal-20-navigasjonssider-32-temaside-v-hjelp-innlogging.html",
-				"col": "col-6 col-lg-3",
-				"h2": "profil",
-				"text": "Meldinger, filter, <br> videresending, mm.",
-				"icon": "ai-private"
-			},
-			{
-				"url": "/patterns/04-sider-infoportal-20-navigasjonssider-32-temaside-v-hjelp-innlogging/04-sider-infoportal-20-navigasjonssider-32-temaside-v-hjelp-innlogging.html",
-				"col": "col-6 col-lg-3",
-				"h2": "innboks",
-				"text": "Signering, etater, <br>vedlegg, mm.",
-				"icon": "ai-closedmessage"
-			},
-			{
-				"url": "/patterns/04-sider-infoportal-20-navigasjonssider-32-temaside-v-hjelp-innlogging/04-sider-infoportal-20-navigasjonssider-32-temaside-v-hjelp-innlogging.html",
-				"col": "col-6 col-lg-3",
-				"h2": "skjema",
-				"text": "Kontaktinformasjon, roller, rettigheter, mm.",
-				"icon": "ai-write"
-			}
-		],
-		"help-questions": {
-			"section-title": "Spørsmål du kanskje har:",
-			"data-parent": "accordion",
-			"accordion-header-items": [
-				{
-					"collapse-header-id": "accordionHeaderItem1",
-					"collapse-header-text": "Hvorfor mottar jeg ikke kode på sms?",
-					"collapse-header-content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus cumque maxime, quam commodi doloremque adipisci deserunt atque non unde rem blanditiis quos veritatis suscipit, omnis animi labore nobis delectus eaque.",
-					"collapse-header-buttons": {
-						"link-group-items": [
-							{
-								"link-text": "Hjelp meg gjennom prosessen",
-								"link-class": "a-btn a-btn-success"
-							},
-							{
-								"link-text": "Trinn for trinn uten å logge inn",
-								"link-url": "/patterns/04-sider-infoportal-30-artikkel-70-artikkel-v-hjelpetrinn/04-sider-infoportal-30-artikkel-70-artikkel-v-hjelpetrinn.html",
-								"link-class": ""
-							}
-						]
-					}
-				},
-				{
-					"collapse-header-id": "accordionHeaderItem2",
-					"collapse-header-text": "Hvordan kan jeg korrigere en feil i innsendt a-melding?",
-					"collapse-header-content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus cumque maxime, quam commodi doloremque adipisci deserunt atque non unde rem blanditiis quos veritatis suscipit, omnis animi labore nobis delectus eaque."
-				},
-				{
-					"collapse-header-id": "accordionHeaderItem3",
-					"collapse-header-text": "Jeg finner ikke skjemaet jeg leter etter",
-					"collapse-header-content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus cumque maxime, quam commodi doloremque adipisci deserunt atque non unde rem blanditiis quos veritatis suscipit, omnis animi labore nobis delectus eaque."
-				},
-				{
-					"collapse-header-id": "accordionHeaderItem4",
-					"collapse-header-text": "Hvordan representerer jeg organisasjonsnummeret til en underenhet?",
-					"collapse-header-content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus cumque maxime, quam commodi doloremque adipisci deserunt atque non unde rem blanditiis quos veritatis suscipit, omnis animi labore nobis delectus eaque."
-				},
-				{
-					"collapse-header-id": "accordionHeaderItem5",
-					"collapse-header-text": "Hvordan finner jeg gamle meldinger i innboksen?",
-					"collapse-header-content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus cumque maxime, quam commodi doloremque adipisci deserunt atque non unde rem blanditiis quos veritatis suscipit, omnis animi labore nobis delectus eaque."
-				},
-				{
-					"collapse-header-id": "accordionHeaderItem6",
-					"collapse-header-text": "Når kommer selvangivelsen?",
-					"collapse-header-content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus cumque maxime, quam commodi doloremque adipisci deserunt atque non unde rem blanditiis quos veritatis suscipit, omnis animi labore nobis delectus eaque."
-				},
-				{
-					"collapse-header-id": "accordionHeaderItem7",
-					"collapse-header-text": "Hvordan registrerer jeg et selskap?",
-					"collapse-header-content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus cumque maxime, quam commodi doloremque adipisci deserunt atque non unde rem blanditiis quos veritatis suscipit, omnis animi labore nobis delectus eaque."
-				},
-				{
-					"collapse-header-id": "accordionHeaderItem8",
-					"collapse-header-text": "Hva er a-melding og hvem skal fylle det ut?",
-					"collapse-header-content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus cumque maxime, quam commodi doloremque adipisci deserunt atque non unde rem blanditiis quos veritatis suscipit, omnis animi labore nobis delectus eaque."
-				}
-			]
-		},
-		"stickyHelp-animationHint": "",
-		"stickyHelp-close": {
-			"icon-prefix": "ai",
-			"icon-class": "ai-exit ai-sm",
-			"icon-id": "close-stickyHelp",
-			"icon-sr-only-text": "Minimer hjelpevinduet"
-		}
+	"stickyHelp-animationHint": "",
+	"stickyHelp-close": {
+		"icon-prefix": "ai",
+		"icon-class": "ai-exit ai-sm",
+		"icon-id": "close-stickyHelp",
+		"icon-sr-only-text": "Minimer hjelpevinduet"
 	}
 }

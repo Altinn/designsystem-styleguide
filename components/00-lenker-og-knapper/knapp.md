@@ -21,6 +21,12 @@ variations:
   includeClassification: atoms
   includeCategory: 03-knapper
   includeName: 12-knapp-fare
+- title: Knapp Suksess
+  description: Grønn knapp brukes for
+  styleModifier: a-btn-success
+  includeClassification: atoms
+  includeCategory: 03-knapper
+  includeName: 11-knapp-suksess
 
   usage:
   - title: When to use

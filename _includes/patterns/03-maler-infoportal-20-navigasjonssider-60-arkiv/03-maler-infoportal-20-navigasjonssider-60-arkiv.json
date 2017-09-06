@@ -62,15 +62,12 @@
 	"telNumber": "75006000",
 	"telNumberVisible": "75 00 60 00",
 	"telText": "Telefonnummer til Altinn kundestøtte",
-	"button-text": "En knapp med ikon",
+	"button-text": "En standard knapp",
 	"button-class": "a-btn a-btn-icon a-btn-shadow",
 	"button-disabled": false,
 	"button-type": "button",
 	"onclick": false,
-	"button-icon": {
-		"icon-prefix": "ai",
-		"icon-class": "ai-deadline"
-	},
+	"button-icon": false,
 	"display-as-link": false,
 	"form-abonner": {
 		"text-input-id": "text-input-epost",
@@ -748,8 +745,12 @@
 			"link-url": "/patterns/04-sider-portal-60-profil-roller-rettigheter-profil-roller-rettigheter/04-sider-portal-60-profil-roller-rettigheter-profil-roller-rettigheter.html"
 		}
 	},
+	"profile-text": "Alle dine profiler: ",
+	"profile-text-class": "a-h2",
+	"personswitch-button": false,
+	"personswitch-overview": true,
 	"personswitch-search": {
-		"text-input-id": "text-input-find-13",
+		"text-input-id": "person-switch-input-field",
 		"top-label": "Søk etter profil",
 		"isHidden": true,
 		"text-input-placeholder": "Søk etter profil",
@@ -805,6 +806,7 @@
 	"logo-class": "a-modal-top-logo",
 	"header-color": "",
 	"dropdown-personswitch": true,
+	"hide-header": true,
 	"dropdown-languages": {
 		"dropdown-class": "a-dropdown-languages",
 		"dropdown-item": [
@@ -837,7 +839,7 @@
 		]
 	},
 	"header-mobilesearch": {
-		"text-input-id": "text-input-search-12",
+		"text-input-id": "dropdown-input-search",
 		"top-label": "Søk etter innhold",
 		"text-input-placeholder": "Søk etter innhold",
 		"input-type": "search",
