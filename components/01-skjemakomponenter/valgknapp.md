@@ -1,8 +1,8 @@
 ---
 layout: component-detail
-group: components
+group: komponenter
 subgroup: skjemakomponenter
-permalink: /components/skjemakomponenter/valgknapp.html
+permalink: /komponenter/skjemakomponenter/valgknapp.html
 
 title: Valgknapp
 description:
