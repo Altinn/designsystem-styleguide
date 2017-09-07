@@ -1,8 +1,8 @@
 ---
 layout: component-detail
-group: components
+group: komponenter
 subgroup: skjemakomponenter
-permalink: /components/skjemakomponenter/avkrysningsboks.html
+permalink: /komponenter/skjemakomponenter/avkrysningsboks.html
 
 title: Avkrysningsboks
 description:

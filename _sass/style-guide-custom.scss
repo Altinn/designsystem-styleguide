@@ -340,9 +340,30 @@ $blue-dark: #0062BA;
 				}
 			}
 			&.is-active {
+				background: #f5f7fa;
+
 				.c-primary-nav__sublist {
-					&:first-of-type {
-						// margin-left: 0;
+					margin-left: 0;
+					border-left: none;
+
+					.c-primary-nav__link,
+					.c-primary-nav__sublink {
+						padding-left: 24px;
+
+						&.is-current {
+							border-left: 6px solid $blue-dark;
+							padding-left: 18px;
+							background: #f5f7fa;
+						}
+					}
+
+					.c-primary-nav__sublist {
+						.c-primary-nav__sublink {
+							padding-left: 36px;
+							&.is-current {
+								padding-left: 30px;
+							}
+						}
 					}
 				}
 			}
@@ -371,12 +392,7 @@ $blue-dark: #0062BA;
 		}
 	}
 
-	.c-primary-nav__link.is-current,
-	.c-primary-nav__sublink.is-current {
-		border-left: 6px solid $blue-dark;
-		padding-left: 6px;
-		background: #f5f7fa;
-	}
+
 
 	.c-primary-nav__link--has-children {
 		&.is-current {
