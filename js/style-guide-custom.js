@@ -26,8 +26,11 @@
  $(".primary-nav-altinnett").hide();
  $(".primary-nav-brreg").hide();
 
- if (window.localStorage.getItem('persisted_style') === undefined) {
+ if (window.localStorage.getItem('persisted_style') === null) {
    window.localStorage.setItem('persisted_style', '1')
+ }
+ if (window.localStorage.getItem('persisted_html') === null) {
+   window.localStorage.setItem('persisted_html', $("[data-toggle='altinn-dropdown']").find(".dropdown-item").eq(0).html())
  }
  $('[data-toggle="altinn-dropdown"]').find('.a-js-altinnDropdown-value')
    .val(window.localStorage.getItem('persisted_style'))
