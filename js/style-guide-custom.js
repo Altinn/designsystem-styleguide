@@ -1,3 +1,5 @@
+/* globals $ */
+
 /**
  * Style Guide specific JavaScript CUSTOM
  */
@@ -24,7 +26,42 @@
  $(".primary-nav-altinnett").hide();
  $(".primary-nav-brreg").hide();
 
+ if (window.localStorage.getItem('persisted_style') === undefined) {
+   window.localStorage.setItem('persisted_style', '1')
+ }
+ $('[data-toggle="altinn-dropdown"]').find('.a-js-altinnDropdown-value')
+   .val(window.localStorage.getItem('persisted_style'))
+ $('[data-toggle="altinn-dropdown"]').find('.a-dropdown-toggle')
+   .html(window.localStorage.getItem('persisted_html'))
+ switch (window.localStorage.getItem('persisted_style')) {
+   case '1':
+     $('.primary-nav-altinnett').hide()
+     $('.primary-nav-brreg').hide()
+     $('.primary-nav-altinn').show()
+     $('link[rel=stylesheet][href~=\'/designsystem-styleguide/css/altinnett.css\']').remove()
+     $('link[rel=stylesheet][href~=\'/designsystem-styleguide/css/brreg.css\']').remove()
+     break
+   case '2':
+     $('.primary-nav-altinnett').show()
+     $('.primary-nav-altinn').hide()
+     $('.primary-nav-brreg').hide()
+     $('head link[rel=\'stylesheet\']').last()
+       .after('<link rel=\'stylesheet\' href=\'/designsystem-styleguide/css/altinnett.css\' type=\'text/css\' media=\'screen\'>')
+     $('link[rel=stylesheet][href~=\'/designsystem-styleguide/css/brreg.css\']').remove()
+     break
+   case '3':
+     $('.primary-nav-altinn').hide()
+     $('.primary-nav-altinnett').hide()
+     $('.primary-nav-brreg').show()
+     $('head link[rel=\'stylesheet\']').last()
+       .after('<link rel=\'stylesheet\' href=\'/designsystem-styleguide/css/brreg.css\' type=\'text/css\' media=\'screen\'>')
+     $('link[rel=stylesheet][href~=\'/designsystem-styleguide/css/altinnett.css\']').remove()
+     break
+ }
+
  $("[data-toggle='altinn-dropdown']").find(".dropdown-item").on("click", function() {
+  window.localStorage.setItem('persisted_style', $(this).attr("data-value"))
+  window.localStorage.setItem('persisted_html', $(this).html())
   switch($(this).attr("data-value")) {
     case "1":
       $(".primary-nav-altinnett").hide();
