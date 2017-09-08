@@ -238,6 +238,7 @@ $blue-dark: #0062BA;
 			padding: 0 0 0 12px;
 			background: $blue-dark;
 			min-height: 60px;
+			transition: none;
 
 			.svg-logo-color {
 				fill: #fff !important;
@@ -267,6 +268,7 @@ $blue-dark: #0062BA;
 		    overflow-y: auto;
 		    border: none;
 				position: relative;
+				top: 0;
 			}
 
 			.a-dropdown-item {
