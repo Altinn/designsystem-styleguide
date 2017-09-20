@@ -15,6 +15,18 @@ variations:
   includeClassification: atoms
   includeCategory: 01-forms
   includeName: 00-avkrysningsboks
+- title: Inaktiv
+  description: Card description
+  styleModifier: custom-control custom-checkbox inactive
+  includeClassification: atoms
+  includeCategory: 01-forms
+  includeName: 01-avkrysningsboks-stacked
+- title: Diskret
+  description: Card description
+  styleModifier: form-check a-form-checkboxes a-form-checkboxes--discret
+  includeClassification: atoms
+  includeCategory: 01-forms
+  includeName: 02-avkrysningsboks-diskret
 
   usage:
   - title: When to use

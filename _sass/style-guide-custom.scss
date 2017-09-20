@@ -457,6 +457,21 @@ $blue-dark: #0062BA;
 
 }
 
+// COMPONENTS VIEW
+
+.iffframe {
+  padding: 0 0.7rem 0 0;
+}
+
+.iffframe__iframe {
+	overflow: auto !important;
+	-webkit-overflow-scrolling: touch !important;
+}
+
+.pattern-code-block {
+	overflow: auto;
+}
+
 // FOOTER
 
 .c-footer {

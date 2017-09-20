@@ -20,7 +20,11 @@
 	        clearInterval(iframeInterval);
 	    }
 
+			$('.iffframe__iframe').attr('scrolling','auto');
+			
+
 	}, 250);
+
 
 	/**
 	 * Iframe resize handle
