@@ -308,7 +308,8 @@ code[class*="language-"], pre[class*="language-"] {
       border: none;
       padding: 0 0 0 12px;
       background: #0062BA;
-      min-height: 60px; }
+      min-height: 60px;
+      transition: none; }
       .a-st .a-st-logoArea .a-dropdown-toggle .svg-logo-color {
         fill: #fff !important; }
       .a-st .a-st-logoArea .a-dropdown-toggle::after {
@@ -326,7 +327,8 @@ code[class*="language-"], pre[class*="language-"] {
         padding: 0;
         overflow-y: auto;
         border: none;
-        position: relative; }
+        position: relative;
+        top: 0; }
       .a-st .a-st-logoArea .a-form-group .a-dropdown-item {
         padding: 12px 0 12px 12px;
         border-bottom: 1px solid rgba(0, 98, 186, 0.2);
@@ -350,7 +352,7 @@ code[class*="language-"], pre[class*="language-"] {
         padding: 0; }
   .a-st .c-header__nav-container {
     display: block;
-    height: calc(100vh - 210px);
+    height: calc(100vh - 242px);
     overflow-y: scroll; }
   .a-st .c-header--vertical .c-primary-nav {
     margin-left: 0;
@@ -412,6 +414,16 @@ code[class*="language-"], pre[class*="language-"] {
       list-style: none; }
   .a-st .c-tabs__item a {
     border-bottom: 2px solid #fff; }
+
+.iffframe {
+  padding: 0 0.7rem 0 0; }
+
+.iffframe__iframe {
+  overflow: auto !important;
+  -webkit-overflow-scrolling: touch !important; }
+
+.pattern-code-block {
+  overflow: auto; }
 
 .c-footer {
   padding-left: 36px;
