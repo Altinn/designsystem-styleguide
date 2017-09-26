@@ -120,6 +120,18 @@
 
 			<ul class="c-primary-nav__sublist js-nav-dropdown {% assign post_index = '0' %}{% for my_page in site.pages %}{% if my_page.group == 'komponenter' %}{% capture post_index %}{{ post_index | plus: '1' }}{% endcapture %}{% endif %}{% endfor %}{% if page.url contains '/komponenter' %} is-active{% endif %}">
 
+				<li class="c-primary-nav__item">
+
+					{% for my_page in site.pages %}
+						{% if my_page.url == "/tabelltest.html" %}
+						<a href="{{ "/tabelltest.html" | prepend: site.baseurl }}" class="c-primary-nav__link {% if page.url == '/tabelltest.html' %}is-active is-current{% endif %}">
+							<span class="c-primary-nav__text">tabelltest</span>
+						</a>
+						{% endif %}
+					{% endfor %}
+
+				</li><!-- end c-nav__list__item -->
+
 				{% include primary-nav-item.html label='Lenker og knapper' subgroup='lenker-og-knapper' %}
 
 				{% include primary-nav-item.html label='Skjemakomponenter' subgroup='skjemakomponenter' %}
@@ -134,7 +146,7 @@
 
 				{% include primary-nav-item.html label='Navigasjon' subgroup='navigasjon' %}
 
-				{% include primary-nav-item.html label='Kort og blokker' subgroup='kort-og-blokker' %}
+				{% include primary-nav-item.html label='Artikkel' subgroup='artikkel' %}
 
 				{% include primary-nav-item.html label='Modaler' subgroup='modaler' %}
 

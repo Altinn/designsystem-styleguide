@@ -17,8 +17,6 @@ På altinn.no har vi innhold på både bokmål, nynorsk og engelsk. Vi forholder
 
 Informasjonsportal har mer variasjon i sidene som er tilgjengelig på hvilket språk, mens innlogget skal alt være oversatt.
 
-Tjenestene som er tilgjengelig i altinn skal i utgangspunktet være tilgjengelig på alle språk.
-
 ## Tall, nummer og tid
 Så fremt ikke annet er oppgitt her bruker vi retningslinjene for skrivemåte fra Språkrådet. Det er viktig at disse reglene følges konsekvent. Særlig aktuelt for Altinn er følgende regler:
 
