@@ -2,39 +2,82 @@
 layout: default
 ---
 
-{% include page-header.html %}
+{% include breadcrumbs.html %}
 
-<section class="c-section">
-	<ul class="c-card-list l-grid l-grid--3up ">
+<div class="l-container">
+	<ul>
 
 		{% for componentPage in site.pages %}
     		{% if componentPage.group == page.group %}
         		{% if componentPage.subgroup == page.subgroup %}
             		{% if componentPage.layout != "component-category" and componentPage.layout != "component-category2" and componentPage.status != "Planned" %}
 
-					<li class="c-card-list__item l-grid__item">
-						<a href="{{ componentPage.permalink | prepend: site.baseurl }}" class="c-card ">
+					<li>
 
-							<div class="c-card__header">
-								{{ componentPage.subgroup | replace: '-', ' ' | capitalize }}
-							</div>
+			    		<section class="c-section u-margin-bottom-none">
 
-							<div class="c-card__body">
+			    			<div class="c-section__body">
 
-								<h2 class="c-card__title">
-									<span class="c-card__title-text">{{ componentPage.title }}</span>
-									<svg class="c-icon c-card__icon">
-										<use href="{{ "/icons.svg#chevron-right" | prepend: site.baseurl }}"></use>
-									</svg>
-								</h2><!-- end c-card__title -->
+			    				<div class="c-pattern-example">
 
-								<p class="c-card__desc">{{ componentPage.description }}</p>
+			                        <ul class="c-lined-list">
 
-							</div><!-- end c-card__body -->
+			                        	{% for variation in componentPage.variations %}
+
+			                        	<li class="c-lined-list__item">
+
+			                        		<section class="c-section u-margin-bottom-none c-section-viewall">
+			                        			<header class="c-section__header c-section__header--bare">
+			                        				<h2 class="c-section__title">{{ variation.title }} </h2>
+			                        			</header>
+
+			                        			<div class="c-section__body">
+
+			                        				<div class="c-pattern-example u-margin-bottom-double">
+
+			                        					{% if variation.includeClassification == 'atoms' %}
+			                        					{% assign atomicNumber = "00" %}
+			                        					{% elsif variation.includeClassification == 'molecules' %}
+			                        					{% assign atomicNumber = "01" %}
+			                        					{% elsif variation.includeClassification == 'organisms' %}
+			                        					{% assign atomicNumber = "02" %}
+			                        					{% endif %}
+
+			                        					{% capture componentString %}{{ atomicNumber }}-{{ variation.includeClassification }}-{{ variation.includeCategory }}-{{ variation.includeName }}{% endcapture %}
+
+			                        					{% capture iframePath %}/patterns/{{ componentString }}/{{ componentString }}.rendered.html{% endcapture %}
+
+														<div class="iffframe">
+
+														    <iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="{{ iframePath  | prepend: site.baseurl }}"></iframe>
+
+														    <div class="iffframe__handle"></div>
+
+														</div><!--end iffframe-->
 
 
-						</a><!-- end c-card -->
-					</li>
+			                        				</div><!-- end c-pattern-example -->
+
+			                        				<a href="{{ componentPage.permalink  | prepend: site.baseurl }}"> See code and usage</a>
+
+			                        			</div><!-- end l-section__body -->
+
+			                        		</section>
+
+			                        	</li><!--end c-lined-list__item -->
+
+			                        	{% endfor %}
+
+			                        </ul><!--end c-lined-list-->
+
+
+			    				</div><!-- end c-pattern-example -->
+
+			                </div><!-- end c-section__body -->
+
+			            </section><!-- end c-section__body -->
+
+			    	</li><!--end c-lined-list__item -->
 
 					{% endif %}
 
@@ -46,4 +89,4 @@ layout: default
 
 	</ul><!-- end c-card-list -->
 
-</section>
+</div>
