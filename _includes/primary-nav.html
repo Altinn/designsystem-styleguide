@@ -91,7 +91,7 @@
 						<a class="c-primary-nav__link {% if my_page.url == page.url %}is-active is-current{% endif %}" href="{{ my_page.url | prepend: site.baseurl }}">
                         {% if my_page.layout == "landing" %}
 
-                        <span class="c-primary-nav__text">Overview</span>
+                        <span class="c-primary-nav__text">Oversikt</span>
 
                         {% else %}
 
@@ -123,6 +123,18 @@
 				<li class="c-primary-nav__item">
 
 					{% for my_page in site.pages %}
+						{% if my_page.url == "/komponenter/" %}
+						<a href="{{ "/komponenter/" | prepend: site.baseurl }}" class="c-primary-nav__link {% if page.url == '/komponenter/' %}is-active is-current{% endif %}">
+							<span class="c-primary-nav__text">Alle komponenter</span>
+						</a>
+						{% endif %}
+					{% endfor %}
+
+				</li>
+
+				<li class="c-primary-nav__item">
+
+					{% for my_page in site.pages %}
 						{% if my_page.url == "/tabelltest.html" %}
 						<a href="{{ "/tabelltest.html" | prepend: site.baseurl }}" class="c-primary-nav__link {% if page.url == '/tabelltest.html' %}is-active is-current{% endif %}">
 							<span class="c-primary-nav__text">tabelltest</span>
@@ -131,6 +143,8 @@
 					{% endfor %}
 
 				</li><!-- end c-nav__list__item -->
+
+				
 
 				{% include primary-nav-item.html label='Lenker og knapper' subgroup='lenker-og-knapper' %}
 

@@ -27,8 +27,7 @@ layout: default
 
 					<section class="c-section">
 						<header class="c-section__header">
-							{% if variation.title %}<h5 class="c-section__title">{{ variation.title }} {% if variation.styleModifier %}<code class="u-font-size-med">{{ variation.styleModifier }}</code>{% endif %}</h5>{% endif %}
-							{% if variation.description %}<div>{{ variation.description | markdownify }} </div>{% endif %}
+							{% if variation.title %}<h5 class="c-section__title">{{ variation.title }}</h5>{% endif %}
 						</header>
 
 						{% if variation.includeClassification == 'atoms' %}
