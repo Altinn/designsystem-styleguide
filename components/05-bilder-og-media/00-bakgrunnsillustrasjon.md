@@ -9,9 +9,9 @@ description:
 
 
 variations:
-- title: Bakgrunnsillustrasjon
+- title: Standard
   description:
-  styleModifier: < a >
+  styleModifier:
   includeClassification: molecules
   includeCategory: 03-media
   includeName: 10-jumbotron

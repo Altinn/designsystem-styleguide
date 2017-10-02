@@ -1,20 +1,20 @@
 ---
 layout: component-detail
 group: komponenter
-subgroup: skjemakomponenter
-permalink: /komponenter/skjemakomponenter/lastopp.html
+subgroup: lister
+permalink: /komponenter/lister/ikonliste.html
 
-title: Last opp
+title: Ikonliste
 description:
 
 
 variations:
 - title: Standard
-  description: 
+  description:
   styleModifier:
   includeClassification: atoms
-  includeCategory: 01-forms
-  includeName: 71-fileupload
+  includeCategory: 08-lister
+  includeName: 10-liste-unummerert-ikoner
 
   usage:
   - title: When to use

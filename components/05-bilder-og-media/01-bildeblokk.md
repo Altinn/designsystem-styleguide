@@ -9,9 +9,9 @@ description:
 
 
 variations:
-- title: Bildeblokk
+- title: Standard
   description:
-  styleModifier: < a >
+  styleModifier:
   includeClassification: molecules
   includeCategory: 03-media
   includeName: 03-bilde-innhold

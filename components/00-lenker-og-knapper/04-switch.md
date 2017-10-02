@@ -9,7 +9,7 @@ description:
 
 
 variations:
-- title: Normal
+- title: Standard
   description: Skriv en kort oppsummering av komponenten.
   styleModifier: < a >
   includeClassification: atoms

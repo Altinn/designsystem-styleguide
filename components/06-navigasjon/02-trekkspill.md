@@ -9,7 +9,7 @@ description:
 
 
 variations:
-- title: Trekkspill
+- title: Standard
   description:
   styleModifier: < a >
   includeClassification: molecules

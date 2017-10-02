@@ -9,15 +9,15 @@ description:
 
 
 variations:
-- title: Valgknapp
-  description: Card description
-  styleModifier: a-switch
+- title: Standard
+  description:
+  styleModifier:
   includeClassification: atoms
   includeCategory: 01-forms
   includeName: 03-valgknapp
 - title: Valgknapp Radio
-  description: Kun ett alternativ er mulig å velge med denne typen valgknapper.
-  styleModifier: a-switch
+  description:
+  styleModifier:
   includeClassification: atoms
   includeCategory: 01-forms
   includeName: 07-valgknapp-ett-alternativ
@@ -31,7 +31,7 @@ variations:
   classes:
   - className: c-hero
     required : yes
-    description: Apply to the hero block's containing HTML element. This class sets up the background-image handling and text color for the unit. The `c-hero` element should have just one immediate child, the `c-hero__body` element. Note, too, that the unit's hero image should be applied as a background image to this `c-hero` element.
+    description: Kun ett alternativ er mulig å velge med denne typen valgknapper.
   - className: c-hero--bare
     modifier : yes
     description: Add to the `c-hero` element to remove the default gradient overlay from the hero image.

@@ -9,7 +9,7 @@ description:
 
 
 variations:
-- title: Lenke
+- title: Standard
   description:
   styleModifier: < a >
   includeClassification: atoms

@@ -9,7 +9,7 @@ description:
 
 
 variations:
-- title: Avkrysningsboks
+- title: Standard
   description: Card description
   styleModifier: a-form-checkboxes
   includeClassification: atoms

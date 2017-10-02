@@ -1,20 +1,20 @@
 ---
 layout: component-detail
 group: komponenter
-subgroup: skjemakomponenter
-permalink: /komponenter/skjemakomponenter/lastopp.html
+subgroup: lister
+permalink: /komponenter/lister/punktliste.html
 
-title: Last opp
+title: Punktliste
 description:
 
 
 variations:
 - title: Standard
-  description: 
+  description:
   styleModifier:
   includeClassification: atoms
-  includeCategory: 01-forms
-  includeName: 71-fileupload
+  includeCategory: 08-lister
+  includeName: 11-liste-unummerert-kuler
 
   usage:
   - title: When to use

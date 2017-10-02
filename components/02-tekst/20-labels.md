@@ -2,14 +2,14 @@
 layout: component-detail
 group: komponenter
 subgroup: tekst
-permalink: /komponenter/tekst/artikkelheader.html
+permalink: /komponenter/tekst/labels.html
 
-title: Artikkel-header
+title: Labels
 description:
 
 
 variations:
-- title: Artikkel-header
+- title: Standard
   description:
   styleModifier: < a >
   includeClassification: organisms

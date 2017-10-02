@@ -9,9 +9,9 @@ description:
 
 
 variations:
-- title: Bildelenker
+- title: Standard
   description:
-  styleModifier: < a >
+  styleModifier: 
   includeClassification: molecules
   includeCategory: 03-media
   includeName: 00-illustrasjonslenke

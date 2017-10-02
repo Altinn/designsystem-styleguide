@@ -2,19 +2,31 @@
 layout: component-detail
 group: komponenter
 subgroup: tekst
-permalink: /komponenter/tekst/artikkelheader.html
+permalink: /komponenter/tekst/personopplysninger.html
 
-title: Artikkel-header
+title: Personopplysninger
 description:
 
 
 variations:
-- title: Artikkel-header
+- title: Standard
   description:
-  styleModifier: < a >
-  includeClassification: organisms
-  includeCategory: 40-artikkel
-  includeName: 60-artikkel-start
+  styleModifier:
+  includeClassification: molecules
+  includeCategory: 00-tekst
+  includeName: 03-person-rolle
+- title: Rolle
+  description:
+  styleModifier:
+  includeClassification: molecules
+  includeCategory: 00-tekst
+  includeName: 01-person-privat
+- title: Rolle med status
+  description:
+  styleModifier:
+  includeClassification: molecules
+  includeCategory: 00-tekst
+  includeName: 02-person-privat-status
 
   usage:
   - title: When to use

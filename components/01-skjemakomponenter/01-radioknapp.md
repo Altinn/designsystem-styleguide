@@ -9,7 +9,7 @@ description:
 
 
 variations:
-- title: Radioknapp
+- title: Standard
   description: Card description
   styleModifier: a-switch
   includeClassification: atoms
