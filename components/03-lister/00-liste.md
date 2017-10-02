@@ -2,19 +2,31 @@
 layout: component-detail
 group: komponenter
 subgroup: lister
-permalink: /komponenter/lister/Liste.html
+permalink: /komponenter/lister/liste.html
 
 title: Liste
 description:
 
 
 variations:
-- title: Liste
+- title: Standard
   description:
   styleModifier:
   includeClassification: molecules
   includeCategory: 05-lister
   includeName: 00-liste-unummerert
+- title: Med lenker
+  description:
+  styleModifier:
+  includeClassification: molecules
+  includeCategory: 05-lister
+  includeName: 02-liste-unummerert-lenke
+- title: Ulike radvarianter
+  description:
+  styleModifier:
+  includeClassification: molecules
+  includeCategory: 05-lister
+  includeName: 10-liste-unummerert-radvarianter
 
   usage:
   - title: When to use

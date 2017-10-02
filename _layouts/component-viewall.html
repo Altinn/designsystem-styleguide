@@ -26,7 +26,7 @@ layout: default
 
                         		<section class="c-section u-margin-bottom-none c-section-viewall">
                         			<header class="c-section__header c-section__header--bare">
-                        				<h2 class="c-section__title">{{ variation.title }} </h2>
+                        				<h2 class="c-section__title">{{ componentPage.title }} <span class="badge badge-warning a-label badge-pill">{{ variation.title }}</span> </h2>
                         			</header>
 
                         			<div class="c-section__body">
@@ -56,7 +56,7 @@ layout: default
 
                         				</div><!-- end c-pattern-example -->
 
-                        				<a href="{{ componentPage.permalink  | prepend: site.baseurl }}"> See code and usage</a>
+                        				<a href="{{ componentPage.permalink  | prepend: site.baseurl }}"> Mer info om {{ componentPage.title }} </a>
 
                         			</div><!-- end l-section__body -->
 

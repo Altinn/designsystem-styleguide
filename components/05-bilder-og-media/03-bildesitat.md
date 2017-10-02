@@ -9,9 +9,9 @@ description:
 
 
 variations:
-- title: Bildesitat
+- title: Standard
   description:
-  styleModifier: < a >
+  styleModifier:
   includeClassification: molecules
   includeCategory: 03-media
   includeName: 06-bilde-sitat

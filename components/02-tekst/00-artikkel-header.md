@@ -9,7 +9,7 @@ description:
 
 
 variations:
-- title: Artikkel-header
+- title: Standard
   description:
   styleModifier: < a >
   includeClassification: organisms

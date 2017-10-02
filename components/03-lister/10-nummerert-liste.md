@@ -1,20 +1,32 @@
 ---
 layout: component-detail
 group: komponenter
-subgroup: skjemakomponenter
-permalink: /komponenter/skjemakomponenter/lastopp.html
+subgroup: lister
+permalink: /komponenter/lister/nummerert-liste.html
 
-title: Last opp
+title: Nummerert liste
 description:
 
 
 variations:
 - title: Standard
-  description: 
+  description:
   styleModifier:
   includeClassification: atoms
-  includeCategory: 01-forms
-  includeName: 71-fileupload
+  includeCategory: 08-lister
+  includeName: 06-liste-nummerert-sirkel
+- title: Strippet
+  description:
+  styleModifier:
+  includeClassification: atoms
+  includeCategory: 08-lister
+  includeName: 05-liste-nummerert
+- title: Gul
+  description:
+  styleModifier:
+  includeClassification: atoms
+  includeCategory: 08-lister
+  includeName: 07-liste-nummerert-sirkel-gul
 
   usage:
   - title: When to use

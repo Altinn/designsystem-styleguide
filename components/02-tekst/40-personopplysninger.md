@@ -2,16 +2,16 @@
 layout: component-detail
 group: komponenter
 subgroup: tekst
-permalink: /komponenter/tekst/artikkelheader.html
+permalink: /komponenter/tekst/personopplysninger.html
 
-title: Artikkel-header
+title: Personopplysninger
 description:
 
 
 variations:
-- title: Artikkel-header
+- title: Standard
   description:
-  styleModifier: < a >
+  styleModifier:
   includeClassification: organisms
   includeCategory: 40-artikkel
   includeName: 60-artikkel-start

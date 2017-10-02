@@ -9,9 +9,9 @@ description:
 
 
 variations:
-- title: Nedtrekksmeny
-  description: Card description
-  styleModifier: a-switch
+- title: Standard
+  description:
+  styleModifier: 
   includeClassification: atoms
   includeCategory: 01-forms
   includeName: 50-flervalg-stilisert
