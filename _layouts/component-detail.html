@@ -26,7 +26,7 @@ layout: default
 				<div class="c-tabs__panel js-tabs-panel" id="tab-{{ variation.title | downcase | replace: ' ', '-' }}">
 
 					<section class="c-section">
-						
+
 						{% if variation.includeClassification == 'atoms' %}
 						{% assign atomicNumber = "00" %}
 						{% elsif variation.includeClassification == 'molecules' %}
@@ -141,17 +141,16 @@ layout: default
 
 	<div class="l-container">
 
-		<div class="c-section-header ">
+		<div class="c-section-header">
 
-			<h1 class="c-section-header__title">Usage</h1>
+			<h2 class="">Retningslinjer for bruk</h2>
 
 		</div><!-- end c-section-header -->
 
 		<div class="c-text-passage l-linelength-container">
 
 			<h3>When to use</h3>
-			<p>Use this pattern like this. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-			  ea commodo consequat.</p>
+			<p>{{ componentPage.state }}</p>
 
 			<h3>When to consider alternatives</h3>
 			<p>Use this pattern like this. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
@@ -218,7 +217,7 @@ layout: default
 		<div class="c-text-passage l-linelength-container">
 	        <ul>
 						<!-- TODO: SKriv ut dette fra MD-filen? -->
-	            <li>Versjon: 0.3</li>
+	            <li>Versjon: 1</li>
 	            <li>Sist oppdatert: April 27, 2017</li>
 	            <li>Brukt på : <a href="#">Altinn</a>, <a href="#">Altinnett</a></li>
 	        </ul>

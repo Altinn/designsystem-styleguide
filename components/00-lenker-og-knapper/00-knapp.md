@@ -30,7 +30,7 @@ variations:
   includeName: 11-knapp-suksess
 
   usage:
-  - title: When to use
+  - title: Når skal du bruke denne komponenten?
     description: Usage description.
   - title: When to consider an alternative
     description: Alternative usage.
