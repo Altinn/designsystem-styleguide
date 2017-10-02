@@ -6,7 +6,8 @@ permalink: /komponenter/tekst/labels.html
 
 title: Labels
 description:
-
+state: Ferdig
+statecolor: badge-success
 
 variations:
 - title: Standard

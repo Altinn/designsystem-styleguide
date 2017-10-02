@@ -6,12 +6,13 @@ permalink: /komponenter/tekst/varsel.html
 
 title: Varsel
 description:
-
+state: Ferdig
+statecolor: badge-success
 
 variations:
 - title: Standard
   description:
-  styleModifier: 
+  styleModifier:
   includeClassification: organisms
   includeCategory: 40-artikkel
   includeName: 60-artikkel-start

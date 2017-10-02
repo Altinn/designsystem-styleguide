@@ -6,7 +6,8 @@ permalink: /komponenter/tekst/personopplysninger.html
 
 title: Personopplysninger
 description:
-
+state: Ferdig
+statecolor: badge-success
 
 variations:
 - title: Standard

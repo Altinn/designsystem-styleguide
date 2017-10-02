@@ -6,7 +6,8 @@ permalink: /komponenter/skjemakomponenter/avkrysningsboks.html
 
 title: Avkrysningsboks
 description:
-
+state: Ferdig
+statecolor: badge-success
 
 variations:
 - title: Standard

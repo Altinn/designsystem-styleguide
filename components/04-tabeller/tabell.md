@@ -6,7 +6,8 @@ permalink: /komponenter/tabeller/tabell.html
 
 title: Tabell
 description:
-
+state: Ferdig
+statecolor: badge-success
 
 variations:
 - title: Tabell

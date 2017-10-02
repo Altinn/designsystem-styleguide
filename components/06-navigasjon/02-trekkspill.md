@@ -6,7 +6,8 @@ permalink: /komponenter/navigasjon/trekkspill.html
 
 title: Trekkspill
 description:
-
+state: Ferdig
+statecolor: badge-success
 
 variations:
 - title: Standard

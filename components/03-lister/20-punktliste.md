@@ -6,7 +6,8 @@ permalink: /komponenter/lister/punktliste.html
 
 title: Punktliste
 description:
-
+state: Ferdig
+statecolor: badge-success
 
 variations:
 - title: Standard

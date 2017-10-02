@@ -6,7 +6,8 @@ permalink: /komponenter/navigasjon/hurtignavigasjon.html
 
 title: hurtignavigasjon
 description:
-
+state: Ferdig
+statecolor: badge-success
 
 variations:
 - title: Standard

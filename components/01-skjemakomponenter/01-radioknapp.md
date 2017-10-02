@@ -6,7 +6,8 @@ permalink: /komponenter/skjemakomponenter/radioknapp.html
 
 title: Radioknapp
 description:
-
+state: Ferdig
+statecolor: badge-success
 
 variations:
 - title: Standard

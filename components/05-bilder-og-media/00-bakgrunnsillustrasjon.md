@@ -6,7 +6,8 @@ permalink: /komponenter/bilder-og-media/bakgrunnsillustrasjon.html
 
 title: Bakgrunnsillustrasjon
 description:
-
+state: Ferdig
+statecolor: badge-success
 
 variations:
 - title: Standard

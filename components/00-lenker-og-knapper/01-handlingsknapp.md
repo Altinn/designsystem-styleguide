@@ -6,7 +6,8 @@ permalink: /komponenter/lenker-og-knapper/handlingsknapp.html
 
 title: Handlingsknapp
 description:
-
+state: Ferdig
+statecolor: badge-success
 
 variations:
 - title: Standard

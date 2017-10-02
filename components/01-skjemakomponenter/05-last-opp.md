@@ -6,11 +6,12 @@ permalink: /komponenter/skjemakomponenter/lastopp.html
 
 title: Last opp
 description:
-
+state: Under arbeid
+statecolor: badge-warning
 
 variations:
 - title: Standard
-  description: 
+  description:
   styleModifier:
   includeClassification: atoms
   includeCategory: 01-forms

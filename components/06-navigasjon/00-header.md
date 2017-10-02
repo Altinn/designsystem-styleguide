@@ -6,7 +6,8 @@ permalink: /komponenter/navigasjon/header.html
 
 title: header
 description:
-
+state: Ferdig
+statecolor: badge-success
 
 variations:
 - title: Standard

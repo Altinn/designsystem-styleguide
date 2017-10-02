@@ -6,7 +6,8 @@ permalink: /komponenter/lister/koblet-liste.html
 
 title: Koblet liste
 description:
-
+state: Ferdig
+statecolor: badge-success
 
 variations:
 - title: Standard

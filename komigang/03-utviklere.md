@@ -2,7 +2,7 @@
 layout: page
 title: Utviklere
 group: komigang
-permalink: /komigang/getting-started-developers.html
+permalink: /komigang/utviklere.html
 description: Kom i gang
 
 

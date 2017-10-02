@@ -6,7 +6,8 @@ permalink: /komponenter/lenker-og-knapper/knapp.html
 
 title: Knapp
 description:
-
+state: Ferdig
+statecolor: badge-success
 
 variations:
 - title: Standard

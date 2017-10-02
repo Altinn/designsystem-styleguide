@@ -6,7 +6,8 @@ permalink: /komponenter/tekst/artikkelheader.html
 
 title: Artikkel-header
 description:
-
+state: Ferdig
+statecolor: badge-success
 
 variations:
 - title: Standard

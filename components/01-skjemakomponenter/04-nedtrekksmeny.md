@@ -6,12 +6,13 @@ permalink: /komponenter/skjemakomponenter/nedtrekksmeny.html
 
 title: Nedtrekksmeny
 description:
-
+state: Ferdig
+statecolor: badge-success
 
 variations:
 - title: Standard
   description:
-  styleModifier: 
+  styleModifier:
   includeClassification: atoms
   includeCategory: 01-forms
   includeName: 50-flervalg-stilisert

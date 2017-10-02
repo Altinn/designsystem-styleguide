@@ -2,7 +2,7 @@
 layout: page
 title: Designere
 group: komigang
-permalink: /komigang/getting-started-designers.html
+permalink: /komigang/designere.html
 description: Kom i gang
 
 ---
