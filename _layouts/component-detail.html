@@ -26,9 +26,7 @@ layout: default
 				<div class="c-tabs__panel js-tabs-panel" id="tab-{{ variation.title | downcase | replace: ' ', '-' }}">
 
 					<section class="c-section">
-						<header class="c-section__header">
-							{% if variation.title %}<h5 class="c-section__title">{{ variation.title }}</h5>{% endif %}
-						</header>
+						
 
 						{% if variation.includeClassification == 'atoms' %}
 						{% assign atomicNumber = "00" %}
@@ -43,7 +41,7 @@ layout: default
 						{% capture path %}/patterns/{{ componentString }}/{{ componentString }}.rendered.html{% endcapture %}
 						<div class="iffframe">
 
-							<iframe class="iffframe__iframe" frameBorder="0" width="100%" height="100%" src="{{ path | prepend: site.baseurl }}"></iframe>
+							<iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="{{ path | prepend: site.baseurl }}"></iframe>
 
 							<div class="iffframe__handle"></div>
 
