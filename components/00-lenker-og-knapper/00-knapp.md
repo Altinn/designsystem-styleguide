@@ -9,19 +9,19 @@ description:
 
 
 variations:
-- title: Knapp
+- title: Standard
   description: Brukes for handlinger, f.eks Lagre, Send, osv. Siden knappen er kun 36px høy, er det avsatt et område over og under, slik at touch target er 48px. Det skal være minimum 12px mellomrom mellom hver knapp/lenke.
   styleModifier: a-btn
   includeClassification: atoms
   includeCategory: 03-knapper
   includeName: 10-knapp
-- title: Knapp fare
+- title: Fare
   description: Rød knapp brukes for å advare brukeren mot handlingen. F.eks. Slett, Avbryt, osv.
   styleModifier: a-btn-danger
   includeClassification: atoms
   includeCategory: 03-knapper
   includeName: 12-knapp-fare
-- title: Knapp Suksess
+- title: Suksess
   description: Grønn knapp brukes for
   styleModifier: a-btn-success
   includeClassification: atoms

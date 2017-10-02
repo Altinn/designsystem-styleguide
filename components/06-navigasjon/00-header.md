@@ -9,7 +9,7 @@ description:
 
 
 variations:
-- title: header
+- title: Standard
   description:
   styleModifier: < a >
   includeClassification: organisms

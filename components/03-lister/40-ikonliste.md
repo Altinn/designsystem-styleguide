@@ -9,7 +9,7 @@ description:
 
 
 variations:
-- title: Ikonliste
+- title: Standard
   description:
   styleModifier:
   includeClassification: atoms

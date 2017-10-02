@@ -9,9 +9,9 @@ description:
 
 
 variations:
-- title: Footer
+- title: Standard
   description:
-  styleModifier: 
+  styleModifier:
   includeClassification: organisms
   includeCategory: 01-globale
   includeName: 01-footer

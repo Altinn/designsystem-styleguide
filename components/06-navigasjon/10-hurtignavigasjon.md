@@ -9,9 +9,9 @@ description:
 
 
 variations:
-- title: hurtignavigasjon
+- title: Standard
   description:
-  styleModifier: < a >
+  styleModifier:
   includeClassification: atoms
   includeCategory: 02-lenker
   includeName: 80-hurtignavigasjon-navbar

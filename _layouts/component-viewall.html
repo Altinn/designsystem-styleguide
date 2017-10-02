@@ -6,7 +6,26 @@ layout: default
 
 
 <div class="l-container">
-<ul>
+
+  <div class="form-group a-form-group a-form-group-large mb-4">
+
+      <label class="a-form-label sr-only" for="text-input-find-12">Søk etter innhold</label>
+
+      <div class="a-form-group-items input-group">
+
+      <input class="form-control a-hasButton" type="search" placeholder="Søk etter innhold" name="input-field" data-val="true" id="text-input-find-12">
+
+      <div class="input-group-btn">
+        <button onclick="" class="btn btn-secondary" type="button">
+          <i class="ai ai-search"></i>
+            <span class="sr-only">Søk</span>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <ul>
 
     {% for componentPage in site.pages %}
 
@@ -26,7 +45,7 @@ layout: default
 
                         		<section class="c-section u-margin-bottom-none c-section-viewall">
                         			<header class="c-section__header c-section__header--bare">
-                        				<h2 class="c-section__title">{{ componentPage.title }} <span class="badge badge-warning a-label badge-pill">{{ variation.title }}</span> </h2>
+                        				<h2 class="c-section__title">{{ componentPage.title }} <span class="badge badge-default a-label badge-pill">{{ variation.title }}</span> </h2>
                         			</header>
 
                         			<div class="c-section__body">

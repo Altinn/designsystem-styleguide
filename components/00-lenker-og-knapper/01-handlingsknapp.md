@@ -9,7 +9,7 @@ description:
 
 
 variations:
-- title: Handlingsknapp
+- title: Standard
   description: Skriv en kort oppsummering av komponenten.
   styleModifier: a-btn
   includeClassification: atoms
