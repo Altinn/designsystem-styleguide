@@ -6,7 +6,8 @@ permalink: /komponenter/lister/ikonliste.html
 
 title: Ikonliste
 description:
-
+state: Ferdig
+statecolor: badge-success
 
 variations:
 - title: Standard

@@ -7,6 +7,7 @@
 $shadow-color: #898989;
 $yellow: #FFDA06;
 $blue: #1EAEF7;
+$blue-light: #CFF0FF;
 $blue-dark: #0062BA;
 
 // LAYOUT WRAPPER
@@ -14,7 +15,7 @@ $blue-dark: #0062BA;
 	background: #fff;
 	::selection {
 	  color: #000;
-	  background: $yellow !important;
+	  background: $blue-light !important;
 	}
 
 	a,
@@ -471,6 +472,21 @@ $blue-dark: #0062BA;
 .pattern-code-block {
 	overflow: auto;
 }
+
+.c-section__header {
+    background: #f5f7fa;
+    padding: 14px 24px 1px 24px;
+    margin-left: -24px;
+    width: calc(100% + 48px);
+    margin-bottom: 24px;
+    border-bottom: 1px solid #dee7ef;
+    border-top: 1px solid #dee7ef;
+
+		h2 {
+			font-size: 2.2rem;
+		}
+}
+
 
 // ICON PREVIEW
 

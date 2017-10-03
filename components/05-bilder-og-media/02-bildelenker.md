@@ -6,12 +6,13 @@ permalink: /komponenter/bilder-og-media/bildelenker.html
 
 title: Bildelenker
 description:
-
+state: Ferdig
+statecolor: badge-success
 
 variations:
 - title: Standard
   description:
-  styleModifier: 
+  styleModifier:
   includeClassification: molecules
   includeCategory: 03-media
   includeName: 00-illustrasjonslenke

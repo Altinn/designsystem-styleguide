@@ -6,7 +6,8 @@ permalink: /komponenter/lister/liste.html
 
 title: Liste
 description:
-
+state: Ferdig
+statecolor: badge-success
 
 variations:
 - title: Standard

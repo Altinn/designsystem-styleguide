@@ -6,7 +6,8 @@ permalink: /komponenter/tekst/sitat.html
 
 title: Sitat
 description:
-
+state: Ferdig
+statecolor: badge-success
 
 variations:
 - title: Standard

@@ -6,7 +6,8 @@ permalink: /komponenter/lister/nummerert-liste.html
 
 title: Nummerert liste
 description:
-
+state: Ferdig
+statecolor: badge-success
 
 variations:
 - title: Standard

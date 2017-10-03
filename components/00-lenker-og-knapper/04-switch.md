@@ -6,7 +6,8 @@ permalink: /komponenter/lenker-og-knapper/switch.html
 
 title: Switch
 description:
-
+state: Ferdig
+statecolor: badge-success
 
 variations:
 - title: Standard

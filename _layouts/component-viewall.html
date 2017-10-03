@@ -9,11 +9,11 @@ layout: default
 
   <div class="form-group a-form-group a-form-group-large mb-4">
 
-      <label class="a-form-label sr-only" for="text-input-find-12">Søk etter innhold</label>
+      <label class="a-form-label sr-only" for="text-input-find-12">Søk etter komponenter</label>
 
       <div class="a-form-group-items input-group">
 
-      <input class="form-control a-hasButton" type="search" placeholder="Søk etter innhold" name="input-field" data-val="true" id="text-input-find-12">
+      <input class="form-control a-hasButton live-search-box" type="search" placeholder="Søk etter innhold" name="input-field" data-val="true" id="text-input-find-12">
 
       <div class="input-group-btn">
         <button onclick="" class="btn btn-secondary" type="button">
@@ -37,15 +37,19 @@ layout: default
 
     				<div class="c-pattern-example">
 
-                        <ul class="c-lined-list">
+                        <ul class="c-lined-list live-search-list">
 
                         	{% for variation in componentPage.variations %}
 
                         	<li class="c-lined-list__item">
 
                         		<section class="c-section u-margin-bottom-none c-section-viewall">
-                        			<header class="c-section__header c-section__header--bare">
-                        				<h2 class="c-section__title">{{ componentPage.title }} <span class="badge badge-default a-label badge-pill">{{ variation.title }}</span> </h2>
+                        			<header class="c-section__header c-section__header--bare d-flex justify-content-between">
+                        				<h2 class="c-section__title">{{ componentPage.title }} <span class="a-meta-text a-dimText7">({{ variation.title }})</span> </h2>
+                                <div class="">
+                                  <span class="badge {{ componentPage.statecolor }} a-label badge-pill">{{ componentPage.state }}</span>
+                                </div>
+
                         			</header>
 
                         			<div class="c-section__body">
@@ -64,13 +68,13 @@ layout: default
 
                         					{% capture iframePath %}/patterns/{{ componentString }}/{{ componentString }}.rendered.html{% endcapture %}
 
-											<div class="iffframe">
+            											<div class="iffframe">
 
-											    <iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="{{ iframePath  | prepend: site.baseurl }}"></iframe>
+            											    <iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="{{ iframePath  | prepend: site.baseurl }}"></iframe>
 
-											    <div class="iffframe__handle"></div>
+            											    <div class="iffframe__handle"></div>
 
-											</div><!--end iffframe-->
+            											</div><!--end iffframe-->
 
 
                         				</div><!-- end c-pattern-example -->

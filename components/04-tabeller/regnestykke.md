@@ -6,7 +6,8 @@ permalink: /komponenter/tabeller/Regnestykke.html
 
 title: Regnestykke
 description:
-
+state: Ferdig
+statecolor: badge-success
 
 variations:
 - title: Regnestykke

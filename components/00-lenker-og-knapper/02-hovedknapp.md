@@ -6,7 +6,8 @@ permalink: /komponenter/lenker-og-knapper/hovedknapp.html
 
 title: Hovedknapp
 description:
-
+state: Ferdig
+statecolor: badge-success
 
 variations:
 - title: Standard

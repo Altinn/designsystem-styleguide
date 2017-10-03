@@ -6,15 +6,22 @@ permalink: /komponenter/tekst/labels.html
 
 title: Labels
 description:
-
+state: Ferdig
+statecolor: badge-success
 
 variations:
 - title: Standard
-  description:
-  styleModifier: < a >
-  includeClassification: organisms
-  includeCategory: 40-artikkel
-  includeName: 60-artikkel-start
+  description: Label kan ha ulike farger basert på hva den representerer, se "variasjoner".
+  styleModifier:
+  includeClassification: atoms
+  includeCategory: 07-tekst
+  includeName: 04-merkelapp
+- title: Variasjoner
+  description: Blå merkelapp brukes for å belyse et nummer, eksempelvis hvor mange uleste meldinger du har, hvor mange filter du har valgt, etc. Grå brukes for å gi tilleggsinfo, f.eks hvilken kategori et søkeresultat tilhører. Gul brukes for å gjøre brukeren oppmerksom på noe. Rød brukes for å advare. Grønn brukes for å oppfordre.
+  styleModifier:
+  includeClassification: atoms
+  includeCategory: 07-tekst
+  includeName: 05-merkelapp-variasjoner
 
   usage:
   - title: When to use

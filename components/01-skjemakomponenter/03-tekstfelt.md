@@ -6,7 +6,8 @@ permalink: /komponenter/skjemakomponenter/tekstfelt.html
 
 title: Tekstfelt
 description:
-
+state: Ferdig
+statecolor: badge-success
 
 variations:
 - title: Standard

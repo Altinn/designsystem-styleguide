@@ -6,7 +6,8 @@ permalink: /komponenter/lenker-og-knapper/lenke.html
 
 title: Lenke
 description:
-
+state: Ferdig
+statecolor: badge-success
 
 variations:
 - title: Standard

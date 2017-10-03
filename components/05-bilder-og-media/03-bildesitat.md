@@ -6,7 +6,8 @@ permalink: /komponenter/bilder-og-media/bildesitat.html
 
 title: Bildesitat
 description:
-
+state: Ferdig
+statecolor: badge-success
 
 variations:
 - title: Standard

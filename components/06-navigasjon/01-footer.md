@@ -6,7 +6,8 @@ permalink: /komponenter/navigasjon/footer.html
 
 title: Footer
 description:
-
+state: Ferdig
+statecolor: badge-success
 
 variations:
 - title: Standard
