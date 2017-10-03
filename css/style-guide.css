@@ -170,7 +170,7 @@ code[class*="language-"], pre[class*="language-"] {
   background: #fff; }
   .a-st ::selection {
     color: #000;
-    background: #FFDA06 !important; }
+    background: #CFF0FF !important; }
   .a-st a,
   .a-st .c-text-passage a:not(.c-btn) {
     text-decoration: none;
@@ -424,6 +424,39 @@ code[class*="language-"], pre[class*="language-"] {
 
 .pattern-code-block {
   overflow: auto; }
+
+.c-section__header {
+  background: #f5f7fa;
+  padding: 14px 24px 1px 24px;
+  margin-left: -24px;
+  width: calc(100% + 48px);
+  margin-bottom: 24px;
+  border-bottom: 1px solid #dee7ef;
+  border-top: 1px solid #dee7ef; }
+  .c-section__header h2 {
+    font-size: 2.2rem; }
+
+.a-st-iconItem {
+  display: inline-block;
+  margin: 5px;
+  background: #eff2f5;
+  padding: 10px;
+  height: 14rem;
+  width: 154px;
+  text-align: center; }
+  .a-st-iconItem a {
+    visibility: hidden; }
+  .a-st-iconItem:hover {
+    background: rgba(0, 0, 0, 0.2);
+    transition: 250ms; }
+    .a-st-iconItem:hover a {
+      visibility: visible;
+      top: -50px; }
+    .a-st-iconItem:hover span {
+      visibility: hidden; }
+
+.a-st-iconLabel {
+  margin-top: 5px; }
 
 .c-footer {
   padding-left: 36px;

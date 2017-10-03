@@ -1456,6 +1456,9 @@ pre[class*="language-"] {
 .c-section {
   margin-bottom: 2rem; }
 
+.c-section-viewall {
+  margin-bottom: 5rem; }
+
 /*------------------------------------*\
     #SECTION HEADER
 \*------------------------------------*/
