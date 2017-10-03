@@ -13,9 +13,15 @@ variations:
 - title: Standard
   description:
   styleModifier:
-  includeClassification: organisms
-  includeCategory: 40-artikkel
-  includeName: 60-artikkel-start
+  includeClassification: atoms
+  includeCategory: 07-tekst
+  includeName: 00-varsel
+- title: Varianter
+  description:
+  styleModifier:
+  includeClassification: atoms
+  includeCategory: 07-tekst
+  includeName: 01-varsel-variasjoner
 
   usage:
   - title: When to use

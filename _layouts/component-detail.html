@@ -26,6 +26,10 @@ layout: default
 				<div class="c-tabs__panel js-tabs-panel" id="tab-{{ variation.title | downcase | replace: ' ', '-' }}">
 
 					<section class="c-section">
+						<header class="c-section__header">
+							{% if variation.title %}<h5 class="c-section__title">{{ variation.title }} {% if variation.styleModifier %}<code class="u-font-size-med">{{ variation.styleModifier }}</code>{% endif %}</h5>{% endif %}
+							{% if variation.description %}<div>{{ variation.description | markdownify }} </div>{% endif %}
+						</header>
 
 						{% if variation.includeClassification == 'atoms' %}
 						{% assign atomicNumber = "00" %}
@@ -149,8 +153,8 @@ layout: default
 
 		<div class="c-text-passage l-linelength-container">
 
-			<h3>When to use</h3>
-			<p>{{ componentPage.state }}</p>
+			<h3>Når skal komponenten brukes?</h3>
+			<p>{% if variation.description %}<div>{{ variation.description | markdownify }} </div>{% endif %}</p>
 
 			<h3>When to consider alternatives</h3>
 			<p>Use this pattern like this. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex

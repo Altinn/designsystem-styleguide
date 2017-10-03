@@ -13,9 +13,9 @@ variations:
 - title: Standard
   description:
   styleModifier:
-  includeClassification: organisms
-  includeCategory: 01-globale
-  includeName: 01-footer
+  includeClassification: molecules
+  includeCategory: 02-navigasjon
+  includeName: 14-smulesti
 
   usage:
   - title: When to use
