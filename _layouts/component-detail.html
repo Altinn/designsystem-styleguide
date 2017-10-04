@@ -154,7 +154,16 @@ layout: default
 		<div class="c-text-passage l-linelength-container">
 
 			<h3>Når skal komponenten brukes?</h3>
+
+			{% for variation in page.variations %}
+			
+
 			<p>{% if variation.description %}<div>{{ variation.description | markdownify }} </div>{% endif %}</p>
+	
+			<p>{% if variation.statecolor %}<div>{{ variation.statecolor | markdownify }} </div>{% endif %}</p>
+				
+						
+			{% endfor %}
 
 			<h3>When to consider alternatives</h3>
 			<p>Use this pattern like this. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
@@ -163,6 +172,8 @@ layout: default
 			<h3>Accessibility considerations</h3>
 			<p>Use this pattern like this. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
 			  ea commodo consequat.</p>
+
+
 
 			<h3>Learn more</h3>
 			<ul>
