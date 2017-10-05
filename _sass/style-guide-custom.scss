@@ -494,10 +494,11 @@ $blue-dark: #0062BA;
 	display: inline-block;
 	margin: 5px;
 	background: #eff2f5;
-	padding: 10px;
-    height: 14rem;
-    width: 154px;
-    text-align: center;
+	padding: 15px 0 0 0;
+	height: 15rem;
+	width: 154px;
+	text-align: center;
+	overflow: hidden;
 
 	a {
 		visibility: hidden;
