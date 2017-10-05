@@ -25,8 +25,10 @@
 
            if ($(this).filter('[data-search-term *= ' + searchTerm + ']').length > 0 || searchTerm.length < 1) {
                $(this).show();
+               $('.live-search-title').show();
            } else {
                $(this).hide();
+               $('.live-search-title').hide();
            }
 
        });

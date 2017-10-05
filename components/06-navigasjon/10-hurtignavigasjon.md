@@ -13,9 +13,9 @@ variations:
 - title: Standard
   description:
   styleModifier:
-  includeClassification: atoms
-  includeCategory: 02-lenker
-  includeName: 80-hurtignavigasjon-navbar
+  includeClassification: molecules
+  includeCategory: 02-navigasjon
+  includeName: 20-hurtignavigasjon
 
   usage:
   - title: When to use

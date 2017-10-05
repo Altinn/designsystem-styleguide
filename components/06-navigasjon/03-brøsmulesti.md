@@ -2,9 +2,9 @@
 layout: component-detail
 group: komponenter
 subgroup: navigasjon
-permalink: /komponenter/navigasjon/footer.html
+permalink: /komponenter/navigasjon/smulesti.html
 
-title: Footer
+title: Brødsmulesti
 description:
 state: Ferdig
 statecolor: badge-success

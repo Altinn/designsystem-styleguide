@@ -16,12 +16,6 @@ variations:
   includeClassification: atoms
   includeCategory: 06-tabeller
   includeName: 10-tabell-responsiv
-- title: Regnestykke
-  description:
-  styleModifier: < a >
-  includeClassification: atoms
-  includeCategory: 06-tabeller
-  includeName: 05-tabell-regnestykke
 
   usage:
   - title: When to use

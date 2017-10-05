@@ -27,8 +27,7 @@ layout: default
 
 					<section class="c-section">
 						<header class="c-section__header">
-							{% if variation.title %}<h5 class="c-section__title">{{ variation.title }} {% if variation.styleModifier %}<code class="u-font-size-med">{{ variation.styleModifier }}</code>{% endif %}</h5>{% endif %}
-							{% if variation.description %}<div>{{ variation.description | markdownify }} </div>{% endif %}
+							{% if variation.title %}<div>{{ variation.title }} {% endif %} : {% if variation.description %}{{ variation.description | markdownify }} </div>{% endif %}
 						</header>
 
 						{% if variation.includeClassification == 'atoms' %}
@@ -153,23 +152,10 @@ layout: default
 
 		<div class="c-text-passage l-linelength-container">
 
-			<h3>Når skal komponenten brukes?</h3>
-			<p>{% if variation.description %}<div>{{ variation.description | markdownify }} </div>{% endif %}</p>
-
-			<h3>When to consider alternatives</h3>
-			<p>Use this pattern like this. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-			  ea commodo consequat.</p>
-
-			<h3>Accessibility considerations</h3>
-			<p>Use this pattern like this. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-			  ea commodo consequat.</p>
-
-			<h3>Learn more</h3>
-			<ul>
-			    <li><a href="#">Resource link #1</a></li>
-			    <li><a href="#">Resource link #2</a></li>
-			</ul>
-
+			{% for class in page.usage %}
+				<h3>{{ class.title }}</h3>
+        <p>{{ class.description }}</p>
+      {% endfor %}
 		</div><!-- end c-text-passage -->
 
 		<table class="c-table ">
@@ -214,7 +200,7 @@ layout: default
 
 		<div class="c-section-header ">
 
-			<h1 class="c-section-header__title">Detaljer</h1>
+			<h2>Detaljer</h2>
 
 		</div><!-- end c-section-header -->
 

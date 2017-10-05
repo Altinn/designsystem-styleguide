@@ -1,29 +1,17 @@
 ---
 layout: component-detail
-group: altinnett-komponenter
-subgroup: altinnett-lenker-og-knapper
-permalink: /altinnett-komponenter/lenker-og-knapper/knapp.html
+group: brreg-komp
+subgroup: brreg-lenker-og-knapper
+permalink: /brreg-komp/brreg-lenker-og-knapper/knapp.html
 
 title: Knapp
 description:
 
 
-variations:
-- title: Knapp
-  description: Brukes for handlinger, f.eks Lagre, Send, osv. Siden knappen er kun 36px høy, er det avsatt et område over og under, slik at touch target er 48px. Det skal være minimum 12px mellomrom mellom hver knapp/lenke.
+brreg-variations:
+- title: Knapp BRREG TEST
+  description:
   styleModifier: a-btn
-  includeClassification: atoms
-  includeCategory: 03-knapper
-  includeName: 10-knapp
-- title: Knapp fare
-  description: Rød knapp brukes for å advare brukeren mot handlingen. F.eks. Slett, Avbryt, osv.
-  styleModifier: a-btn-danger
-  includeClassification: atoms
-  includeCategory: 03-knapper
-  includeName: 10-knapp
-- title: Knapp Suksess
-  description: Grønn knapp brukes for
-  styleModifier: a-btn-success
   includeClassification: atoms
   includeCategory: 03-knapper
   includeName: 10-knapp
