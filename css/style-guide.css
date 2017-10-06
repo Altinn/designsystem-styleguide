@@ -416,11 +416,13 @@ code[class*="language-"], pre[class*="language-"] {
     border-bottom: 2px solid #fff; }
 
 .iffframe {
-  padding: 0 0.7rem 0 0; }
+  padding: 0 0.7rem 0 0;
+  border-left: 1px solid #f5f5f5; }
 
 .iffframe__iframe {
   overflow: auto !important;
-  -webkit-overflow-scrolling: touch !important; }
+  -webkit-overflow-scrolling: touch !important;
+  min-height: 60px !important; }
 
 .pattern-code-block {
   overflow: auto; }
@@ -440,10 +442,11 @@ code[class*="language-"], pre[class*="language-"] {
   display: inline-block;
   margin: 5px;
   background: #eff2f5;
-  padding: 10px;
-  height: 14rem;
+  padding: 15px 0 0 0;
+  height: 15rem;
   width: 154px;
-  text-align: center; }
+  text-align: center;
+  overflow: hidden; }
   .a-st-iconItem a {
     visibility: hidden; }
   .a-st-iconItem:hover {
