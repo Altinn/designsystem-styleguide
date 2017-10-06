@@ -462,11 +462,13 @@ $blue-dark: #0062BA;
 
 .iffframe {
   padding: 0 0.7rem 0 0;
+	border-left: 1px solid #f5f5f5;
 }
 
 .iffframe__iframe {
 	overflow: auto !important;
 	-webkit-overflow-scrolling: touch !important;
+	min-height: 60px !important;
 }
 
 .pattern-code-block {

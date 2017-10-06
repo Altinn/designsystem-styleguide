@@ -4826,6 +4826,8 @@ button.close {
   border-width: 1px 0;
   margin-left: -5px;
   margin-right: -5px; }
+
+/*# sourceMappingURL=bootstrap-datepicker3.min.css.map */
 .align-baseline {
   vertical-align: baseline !important; }
 
@@ -8522,7 +8524,7 @@ textarea,
     -webkit-font-smoothing: subpixel-antialiased; } }
 
 .a-fontSizeXXS, .a-label, .a-validatorInfo, .a-header-options .a-languageSwitcher, .a-personSwitcher, .a-dropdown-languages .dropdown-item p,
-.a-dropdown-personswitchList .dropdown-item p, .a-footerExtraNav, .a-footerExtraNav ul li a, .a-iconText.a-iconText-smallLink .a-iconText-text a, .a-box-button .a-box-button-action, .a-box-button .a-box-button-name, .a-autocomplete-container .a-list li, .a-inboxHeadingContent .a-msgDuedate, .a-searchResults .a-searchResults-breadcrumb {
+.a-dropdown-personswitchList .dropdown-item p, .a-footerExtraNav, .a-footerExtraNav ul li a, .a-iconText.a-iconText-smallLink .a-iconText-text a, .a-box-button .a-box-button-action, .a-box-button .a-box-button-name, .a-autocomplete-container .a-list li, .a-inboxHeadingContent .a-msgDuedate, .a-inboxHeadingContent .a-msgState, .a-searchResults .a-searchResults-breadcrumb {
   font-size: 14px;
   font-size: 1.4rem;
   line-height: 1.5;
@@ -13289,10 +13291,6 @@ ul {
     margin-left: 0;
     color: #000000;
     list-style: none; }
-    @media (min-width: 768px) {
-      ul.a-bullet-list, .a-text ul:not(.connected-bullets):not(.no-decoration):not(.a-list),
-      .a-text ul.a-bullet-list:not(.connected-bullets):not(.no-decoration):not(.a-list) {
-        margin-left: -24px; } }
     ul.a-bullet-list li, .a-text ul:not(.connected-bullets):not(.no-decoration):not(.a-list) li,
     .a-text ul.a-bullet-list:not(.connected-bullets):not(.no-decoration):not(.a-list) li {
       position: relative;
@@ -13335,7 +13333,8 @@ ul {
       list-style: none; }
       @media (min-width: 768px) {
         ul.connected-bullets li {
-          padding-left: 0; } }
+          padding-left: 0;
+          margin-left: 36px; } }
       ul.connected-bullets li::before {
         position: absolute;
         left: 12px;
@@ -14678,6 +14677,20 @@ a.a-modal-close {
 
 /*------------------------------------*    Inbox
 \*------------------------------------*/
+@media (min-width: 768px) {
+  a[aria-expanded='false'] .a-inboxHeadingContent .a-msgHeadingTextContainer {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; } }
+
+@media (min-width: 768px) {
+  a[aria-expanded='false'] .a-inboxHeadingContent .a-msgHeadingTextContainer div,
+  a[aria-expanded='false'] .a-inboxHeadingContent .a-msgHeadingTextContainer h1,
+  a[aria-expanded='false'] .a-inboxHeadingContent .a-msgHeadingTextContainer h3 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; } }
+
 .a-inboxHeadingContent {
   height: auto !important;
   height: 84px;
@@ -14714,6 +14727,10 @@ a.a-modal-close {
     margin-right: 24px;
     -ms-flex-item-align: center;
     align-self: center; }
+  .a-inboxHeadingContent .a-msgState {
+    margin-right: 24px;
+    -ms-flex-item-align: center;
+    align-self: center; }
   .a-inboxHeadingContent .a-msgHeadingTextContainer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -14723,26 +14740,11 @@ a.a-modal-close {
     align-self: center; }
     @media (min-width: 768px) {
       .a-inboxHeadingContent .a-msgHeadingTextContainer {
-        padding-right: 24px;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap; } }
-    @media (min-width: 768px) {
-      .a-inboxHeadingContent .a-msgHeadingTextContainer div,
-      .a-inboxHeadingContent .a-msgHeadingTextContainer h1,
-      .a-inboxHeadingContent .a-msgHeadingTextContainer h3 {
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap; } }
+        padding-right: 24px; } }
     .a-inboxHeadingContent .a-msgHeadingTextContainer h1,
     .a-inboxHeadingContent .a-msgHeadingTextContainer h3 {
-      font-family: "DIN-medium";
+      font-family: "DIN-reg";
       font-weight: normal; }
-      @media (min-width: 768px) {
-        .a-inboxHeadingContent .a-msgHeadingTextContainer h1,
-        .a-inboxHeadingContent .a-msgHeadingTextContainer h3 {
-          font-family: "DIN-reg";
-          font-weight: normal; } }
     .a-inboxHeadingContent .a-msgHeadingTextContainer .a-msgDuedate {
       margin-right: 24px; }
   .a-inboxHeadingContent .a-msgDuedateIcon {
@@ -14968,6 +14970,10 @@ a.a-modal-close {
     cursor: pointer;
     content: ''; }
 
+@media (min-width: 768px) {
+  .a-text ul:not(.connected-bullets):not(.no-decoration):not(.a-list), .a-text ul:not(.connected-bullets):not(.no-decoration):not(.a-list), .a-text ul.a-bullet-list:not(.connected-bullets):not(.no-decoration):not(.a-list) {
+    margin-left: -24px; } }
+
 .a-text ol,
 .a-text .a-circle-list {
   margin: 0 0 36px 0; }
@@ -15040,7 +15046,11 @@ a.a-modal-close {
 .a-text ul.connected-bullets {
   margin-left: 0; }
   .a-text ul.connected-bullets li {
+    padding-left: 36px;
     margin: 0; }
+    @media (min-width: 768px) {
+      .a-text ul.connected-bullets li {
+        padding-left: 0; } }
 
 .a-text ul.no-decoration,
 .a-text ol.no-decoration {
@@ -17030,7 +17040,7 @@ textarea,
     -webkit-font-smoothing: subpixel-antialiased; } }
 
 .a-fontSizeXXS, .a-label, .a-validatorInfo, .a-header-options .a-languageSwitcher, .a-personSwitcher, .a-dropdown-languages .dropdown-item p,
-.a-dropdown-personswitchList .dropdown-item p, .a-footerExtraNav, .a-footerExtraNav ul li a, .a-iconText.a-iconText-smallLink .a-iconText-text a, .a-box-button .a-box-button-action, .a-box-button .a-box-button-name, .a-autocomplete-container .a-list li, .a-inboxHeadingContent .a-msgDuedate, .a-searchResults .a-searchResults-breadcrumb {
+.a-dropdown-personswitchList .dropdown-item p, .a-footerExtraNav, .a-footerExtraNav ul li a, .a-iconText.a-iconText-smallLink .a-iconText-text a, .a-box-button .a-box-button-action, .a-box-button .a-box-button-name, .a-autocomplete-container .a-list li, .a-inboxHeadingContent .a-msgDuedate, .a-inboxHeadingContent .a-msgState, .a-searchResults .a-searchResults-breadcrumb {
   font-size: 14px;
   font-size: 1.4rem;
   line-height: 1.5;
@@ -17710,3 +17720,5 @@ pre.prettyprint {
 .epi-wysiwyg .a-compare-header,
 .epi-wysiwyg .a-compare-category {
   margin-bottom: 84px; }
+
+/*# sourceMappingURL=maps/style.css.map */

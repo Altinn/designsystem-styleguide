@@ -13,9 +13,9 @@ variations:
 - title: Standard
   description:
   styleModifier:
-  includeClassification: atoms
-  includeCategory: 01-forms
-  includeName: 71-fileupload
+  includeClassification: molecules
+  includeCategory: 05-forms
+  includeName: 00-last-opp-og-fjern
 
   usage:
   - title: When to use
