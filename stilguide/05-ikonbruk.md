@@ -12,15 +12,19 @@ description: Stilguide
   NB: Innholdet og sidene er under utvikling
 </div>
 
-Alle flate, ensfargede ikoner settes sammen til en font i FortAwesome. Denne fonten kan oppdateres med nye ikoner ved å laste opp SVG-filer til FortAwesome. For ikoner som ikke er ferdig-lagde, men som vi har behov for i designsystemet legges det placeholder-ikoner med riktig navn i FortAwesome.
+<p class="a-leadText a-fontBold">Altinns ikoner er spesialtegnet for å passe resten av uttrykket. Ikonene er tegnet i vektorgrafikk, og satt sammen til en font ved hjelp av verktøyet "FortAwesome". </p>
+
+Fonten kan oppdateres med nye ikoner etter behov ved å laste opp SVG-filer til [FortAwesome](https://www.fortawesome.com/). Kontakt løsningsansvarlig på UX i Digitalisering for å få tilgang til å laste opp nye ikoner til fortAwesome.
+
+## Bruk av ikoner
 
 For å sette inn et ikon, bruk følgende kode:
 
 ```
-<i class="fa fa-flag"></i> Flagg
+<i class="ai ai-flag"></i> Flagg
 ```
 
-Bytt ut "flag"" med navnet på ikonet du vil sette inn.
+Bytt ut "flag" med navnet på ikonet du vil sette inn.
 
 NB: Dersom ikonet står alene uten tekst, legg følgende etter:
 
@@ -29,8 +33,6 @@ NB: Dersom ikonet står alene uten tekst, legg følgende etter:
 ```
 
 Dette vil hjelpe brukere med skjermleser å oppfatte ikonets funksjon. Denne teksten er kun synlig for skjermlesere, ikke for vanlige brukere.
-
-Du kan se alle tilgjengelige ikoner [her](/styleguide/fortAwesome/demo.html). Kontakt løsningsansvarlig på UX i Digitalisering for å få tilgang til å laste opp nye ikoner til fortAwesome. 
 
 <h2> Tilgjengelige ikoner </h2>
 

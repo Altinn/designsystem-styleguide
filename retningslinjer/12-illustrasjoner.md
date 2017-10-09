@@ -1,10 +1,10 @@
 ---
 layout: page
 type: detail
-title: Bilder
-group: styles
-permalink: /styles/imagery.html
-description: Stilguide
+title: Illustrasjoner
+group: guidelines
+permalink: /guidelines/illustrations.html
+description: Retningslinjer
 
 ---
 
@@ -12,4 +12,34 @@ description: Stilguide
   NB: Innholdet og sidene er under utvikling
 </div>
 
-Image style guidelines go here
+<p class="a-leadText a-fontBold">Illustrasjonene brukt på altinn er spesialtegnet for å forsterke det visuelle uttrykket og myke opp budskapet.</p>
+
+## Målet med illustrasjonene
+Illustrasjonene skal:
+- Heve brukeropplevelsen og styrke Altinns posisjon hos nye brukergrupper
+- Ha en gjennomgående egenart og gjenkjennelighet
+- Fange blikket, differensiere sidene, myke opp budskapet og heve helhetsinntrykket
+- Ha et naturlig visuelt slektskap til resten av det visuelle uttrykket
+- Baseres på fargepaletten og formspråket i designet som ligger til grunn
+
+## Bruk av illustrasjoner
+Illustrasjoner på Altinn skal brukes enten som [bakgrunnsillustrasjon](../komponenter/bilder-og-media/bakgrunnsillustrasjon.html), eller som illustrasjoner ved siden av tekst (de skal da være innrammet i en sirkel). F.eks:
+
+<div class="a-card a-cardImage mt-3 mb-5">
+  <img src="../images/temp-placeholder.svg" alt="Illustrasjon">
+
+  <div class="a-cardImage-text">
+    <h2>Eksempel på illustrasjon</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud. </p>
+  </div>
+</div>
+
+## Alle illustrasjoner
+Det jobbes for tiden med å lage flere illustrasjoner. Foreløpig har vi følgende tilgjengelig:
+
+### Hjelpesenter
+![Illustrasjon for Hjelpesidene](../images/header-bg-help.svg)
+
+
+### Starte og drive
+![Illustrasjon for Starte og drive](../images/header-bg-starteogdrive.svg)

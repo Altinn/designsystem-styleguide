@@ -12,6 +12,28 @@ description: Stilguide
   NB: Innholdet og sidene er under utvikling
 </div>
 
+## Font
+All tekst på Altinn er satt med fonten ‘DIN’ i fire ulike varianter: Light, Regular, Medium og Bold. For å style teksten med de ulike variantene kan følgende klasser benyttes:
+
+```
+.a-fontLight
+.a-fontReg
+.a-fontMedium
+.a-fontBold
+```
+
+Brødtekst er satt til 16px regular, og normal tekst i paragrafer vil få denne stylingen. Ingresser er litt større og kan styles med klassen ```a-leadText```.
+
+## Overskrifter
+
+Overskriftsnivåer brukes for å strukturere teksten. Det er derfor viktig å ikke bruke H1, H2, H3, osv for styling av størrelse, men for strukturering. Er det sturkturmesig riktig å bruke en H2, men du den skal ha styling som H3 kan du bruke klassen ```a-h3```. F.eks:
+
+```
+<h2 class="a-h3">Overskrift</h2>
+```
+
+Les mer om riktig bruk av overskrifter på [Difis nettsider](https://uu.difi.no/artikkel/2015/07/tekst-og-struktur#Overskrifter).
+
 ## Line-height
 
 Line-height er satt til 1.5 (unitless).

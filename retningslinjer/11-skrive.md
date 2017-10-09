@@ -17,6 +17,13 @@ På altinn.no har vi innhold på både bokmål, nynorsk og engelsk. Vi forholder
 
 Informasjonsportal har mer variasjon i sidene som er tilgjengelig på hvilket språk, mens innlogget skal alt være oversatt.
 
+## Retningslinjer fra Altinns innholdsstrategi
+Venter på innhold.
+
+## Begreper
+Venter på innhold.
+
+
 ## Tall, nummer og tid
 Så fremt ikke annet er oppgitt her bruker vi retningslinjene for skrivemåte fra Språkrådet. Det er viktig at disse reglene følges konsekvent. Særlig aktuelt for Altinn er følgende regler:
 
@@ -35,13 +42,3 @@ Riktig og konsekvent oppdeling av tallene hjelper brukeren å lese og skille for
 - Personnummer delers opp i seks og fem: 123456 78901
 - Mobilnummer deles opp i tre, to og tre: 987 65 432
 - Fasttelefon og faks deles opp i to og to: 98 76 54 32
-
-
-## Presist og variert språk
-Venter på innhold.
-
-## Begreper
-Venter på innhold.
-
-## Guidelines fra Altinns innholdsstrategi
-Venter på innhold.

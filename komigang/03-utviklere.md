@@ -12,7 +12,13 @@ description: Kom i gang
   NB: Innholdet og sidene er under utvikling
 </div>
 
-<p class="a-leadText a-fontBold">For å komme i gang med utvikling på Altinn og Brønnøysundregistrenes webløsninger, bør du ha kjennskap til hvordan designsystemet er tenkt å fungere som bindeledd mellom de ulike løsningene.</p>
+<p class="a-leadText a-fontBold">Selv om Altinn er satt sammen av flere ulike bakenforliggende system, sørger vi for en helhetlig og konsistent brukeropplevelse ved hjelp av designsystemet som binder det hele sammen.</p>
+
+Siden vi er flere ulike team som jobber med ulike løsninger (men med samme brukergrensesnitt), trenger vi et felles sted for frontend. Dette er for å sikre at vi kun lager komponentene èn gang og at de fremtrer konsistent i brukergrensesnittet selv om de er implementert i ulike løsninger.
+
+![Illustrasjon av ulike team som jobber med ulike bakenforliggendesystem, men frontend-koden må gå via et felles designsystem](../images/designsystemTeams.png)
+
+For å komme i gang med utvikling på Altinn og Brønnøysundregistrenes webløsninger, bør du ha kjennskap til hvordan designsystemet er tenkt å fungere som bindeledd mellom de ulike løsningene.
 
 ## Pattern Lab
 
@@ -22,8 +28,6 @@ For å bygge designsystemet har vi brukt «Pattern Lab», som er et verktøy for
 
 - Pattern Lab skal være et hjem for alle UI-komponenter med deres styling og retningslinjer. CSS og javascript for komponentene skal **kun** eksistere og vedlikeholdes her.
 - Pattern Lab skal fungere som prototypeverktøy. Alle maler skal i de fleste tilfeller prototypes og brukertestes før implementering.
-
-Siden vi er flere ulike team som jobber med ulike løsninger (men med samme brukergrensesnitt), trenger vi et felles sted for frontend.
 
 ## Er du backend-utvikler?
 

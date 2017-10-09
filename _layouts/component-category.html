@@ -27,8 +27,11 @@ layout: default
 			                        	<li class="c-lined-list__item">
 
 			                        		<section class="c-section u-margin-bottom-none c-section-viewall">
-			                        			<header class="c-section__header c-section__header--bare">
-			                        				<h2 class="c-section__title">{{ componentPage.title }} <span class="badge badge-default a-label badge-pill">{{ variation.title }}</span> </h2>
+			                        			<header class="c-section__header c-section__header--bare d-flex justify-content-between">
+																			<h2 class="c-section__title">{{ componentPage.title }} <span class="a-meta-text a-dimText7">({{ variation.title }})</span> </h2>
+			                                <div class="">
+			                                  <span class="badge {{ componentPage.statecolor }} a-label badge-pill">{{ componentPage.state }}</span>
+			                                </div>
 			                        			</header>
 
 			                        			<div class="c-section__body">
