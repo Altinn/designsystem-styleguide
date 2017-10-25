@@ -1,9 +1,9 @@
 ---
 layout: page
 title: Visuell profil
-group: guidelines
-permalink: /guidelines/visuellprofil.html
-description: Retningslinjer
+group: retningslinjer-altinn
+permalink: /retningslinjer-altinn/visuellprofil.html
+description: Altinns retningslinjer
 
 
 ---

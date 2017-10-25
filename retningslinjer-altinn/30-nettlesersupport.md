@@ -2,9 +2,9 @@
 layout: page
 type: detail
 title: Nettleserstøtte
-group: guidelines
-permalink: /guidelines/browsers.html
-description: Retningslinjer
+group: retningslinjer-altinn
+permalink: /retningslinjer-altinn/browsers.html
+description: Altinns retningslinjer
 
 
 ---

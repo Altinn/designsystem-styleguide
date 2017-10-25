@@ -2,9 +2,9 @@
 layout: page
 type: detail
 title: Grid og layout
-group: styles
-permalink: /styles/grid.html
-description: Stilguide
+group: guidelines
+permalink: /guidelines/grid.html
+description: Felles retningslinjer
 
 ---
 
@@ -15,11 +15,11 @@ description: Stilguide
 <p class="a-leadText a-fontBold">Altinn’s responsive brukergrensesnitt er basert på en 12-kolonners grid layout, samt et sett definerte avstander som tar utgangspunkt i 12px som base.</p>
 
 ## Bootstrap grid
-Vi har brukt Bootstrap's responsive gridsystem (fra aplha v4) for å bygge malene. Systemet baserer seg på **flexbox**. Les mer om grid-systemet på [Bootstraps nettsted](http://v4-alpha.getbootstrap.com/layout/grid/)
+Vi har brukt Bootstrap's responsive gridsystem (fra aplha v4) for å bygge malene. Systemet baserer seg på **flexbox**. Les mer om grid-systemet hos [Bootstrap](http://v4-alpha.getbootstrap.com/layout/grid/)
 
 ### Hvordan grid-systemet skal brukes
 
-Det er tre hovedkomponenter: "containers", "rows", og "columns".
+Dette står også i Bootstraps dokumentasjon, men kort oppsummert består grid-systemet av tre hovedkomponenter: "containers", "rows", og "columns".
 
 1. **"Containers"** sentrerer innholdet på siden.
 <code>.container</code> for fast bredde eller <code>.container-fluid</code> for full bredde.
@@ -86,7 +86,7 @@ $spacer*6;			// 72px
 
 Klassene refereres til med {property}-{sides}-{size}
 
-F.eks "p-r-1" vil sette padding right til 12px.
+F.eks "pr-1" vil sette padding right til 12px. "mt-2" vil sette margin top til 24px. Her kan man også bruke mediaquery-klasser, f.eks ved å sette "pl-md-3" så vil man få en padding left på 36 px for skjermer større enn md (768px).
 
 Les mer på [Bootstraps nettsider](http://v4-alpha.getbootstrap.com/components/utilities/#spacing)
 

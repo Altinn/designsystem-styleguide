@@ -156,15 +156,17 @@ layout: default
 				<h3>{{ class.title }}</h3>
         <p>{{ class.description }}</p>
       {% endfor %}
+
 		</div><!-- end c-text-passage -->
 
-		<table class="c-table ">
+		<table class="c-table my-3">
 
 			<thead class="c-table__header">
 
 				<tr class="c-table__header-row">
-				<th scope="col" class="c-table__header-cell ">Class Name</th>
-				<th scope="col" class="c-table__header-cell ">Description</th>
+				<th scope="col" class="c-table__header-cell ">Relevante klasser</th>
+				<th scope="col" class="c-table__header-cell ">Obligatorisk</th>
+				<th scope="col" class="c-table__header-cell ">Beskrivelse</th>
 				</tr><!-- c-table__header-row -->
 
 			</thead><!-- end c-table__header -->
@@ -179,6 +181,10 @@ layout: default
 					</td>
 
 					<td class="c-table__cell ">
+						{{ class.required }}
+					</td>
+
+					<td class="c-table__cell ">
 						{% capture desc %}{{ class.description }}{% endcapture %}
 						{% if class.description %}{{ desc | markdownify }}{% endif %}
 					</td>
@@ -190,6 +196,13 @@ layout: default
 
 		</table><!--end c-table-->
 
+		<div class="c-text-passage l-linelength-container">
+			{% for class in page.theme-specific %}
+				<h3>Theme-spesifikke policies for <span id="a-js-showChosenTheme"></span></h3>
+        <p>{{ class.description }}</p>
+      {% endfor %}
+		</div><!-- end c-text-passage -->
+
 	</div>
 
 </section><!-- end c-section -->
@@ -198,20 +211,20 @@ layout: default
 
 	<div class="l-container">
 
-		<div class="c-section-header ">
+<!-- TODO: SKriv ut dette fra MD-filen?
+<div class="c-section-header ">
 
-			<h2>Detaljer</h2>
+	<h2>Detaljer</h2>
 
-		</div><!-- end c-section-header -->
-
+</div>
 		<div class="c-text-passage l-linelength-container">
 	        <ul>
-						<!-- TODO: SKriv ut dette fra MD-filen? -->
+
 	            <li>Versjon: 1</li>
 	            <li>Sist oppdatert: April 27, 2017</li>
 	            <li>Brukt på : <a href="#">Altinn</a>, <a href="#">Altinnett</a></li>
 	        </ul>
-		</div><!-- end c-text-passage -->
+		</div> -->
 
 	</div>
 

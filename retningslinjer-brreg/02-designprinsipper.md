@@ -1,9 +1,9 @@
 ---
 layout: page
 title: Designprinsipper
-group: guidelines
-permalink: /guidelines/designprinsipper.html
-description: Retningslinjer
+group: retningslinjer-brreg
+permalink: /retningslinjer-brreg/designprinsipper.html
+description: Brønnøysundregistrene retningslinjer
 
 
 ---

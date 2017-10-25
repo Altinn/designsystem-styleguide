@@ -2,9 +2,9 @@
 layout: page
 type: detail
 title: Farger
-group: styles
-permalink: /styles/farger.html
-description: Stilguide
+group: retningslinjer-altinn
+permalink: /retningslinjer-altinn/farger.html
+description: Altinns retningslinjer
 
 ---
 

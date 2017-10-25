@@ -6,7 +6,6 @@
  * * * * * * * * * * * * * * * * * * * * *
  */
 
-
  /*
  * LIVE SEARCH IN COMPONENTS
  */
@@ -35,6 +34,15 @@
 
    });
 
+ });
+
+ /*
+ * Get text from chosen theme
+ */
+
+ jQuery(document).ready(function($){
+   var str = $( '.a-dropdown-toggle #a-js-chosenTheme' ).text();
+   $( '#a-js-showChosenTheme' ).html( str );
  });
 
 

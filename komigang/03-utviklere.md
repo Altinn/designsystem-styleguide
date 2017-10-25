@@ -51,14 +51,11 @@ Når et nytt atom, molekyl eller organisme lages, skal følgene sjekkes:
 - Sjekk at komponenten fungerer i alle skjermstørrelser (responsivt).
 - Sjekk at både koden og komponenten er <a href="../guidelines/uu.html">universelt utformet</a> i henhold til kravene.
 
-### Pushe til Github
-Vi jobber **ikke** direkte på master-branchen, men en ansvarlig utvikler merger dev-branchen inn i master regelmessig. Du kan velge å jobbe på en egen branch i git, eller pushe direkte til dev-branchen. For å få tilgang til å pushe til Altinns github, snakk med [Eirik Mikkelsen](mailto:eirik.mikkelsen@brreg.no).
+### Branching i github
+Designsystemet benytter trunk-basert utvikling. Les mer om dette på [altinnpedia](http://altinnpedia.ai-dev.brreg.no/dev/design-system/branching)
 
-### Generere distribuerte js og css-filer
-I dist-mappen ligger genererte css og js-filer som benyttes i de implementerte løsningene. For å generere nye filer, kjør ```gulp dist``` i kommandolinjen. Det genereres en fil for hvert prosjekt, slik at en skal slippe å inludere mer css og javascript enn nødvendig.
-
-### Legge ny versjon av designsystemet på NPM
-For å få tilgang til å pushe til NPM, snakk med [Eirik Mikkelsen](mailto:eirik.mikkelsen@brreg.no). Når man skal pushe en ny versjon av designsystemet skal package.json oppdateres med nytt versjonsnummer. Skriv hva som er gjort og hvilke komponenter som er påvirket.
+### Publisering
+Designsystemet versjoneres og publiseres slik at det enkelt kan benyttes av andre løsninger. Vi publiserer til både npmjs.com og github.com. Les mer om dette på [altinnpedia](http://altinnpedia.ai-dev.brreg.no/dev/design-system/publishing/)
 
 ### Oppdatere Designsystemets utstillingsvindu
 Designsystemet har et eget "utstillingsvindu" (det er her du er akkurat nå). Koden for dette ligger på Git-repositoriet "[designsystem-styleguide](https://github.com/Altinn/designsystem-styleguide)." Dersom du skal oppdatere dette må du først klone Git-repositoriet.

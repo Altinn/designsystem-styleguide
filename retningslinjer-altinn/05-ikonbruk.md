@@ -2,9 +2,9 @@
 layout: page
 type: detail
 title: Ikonbruk
-group: styles
-permalink: /styles/iconography.html
-description: Stilguide
+group: retningslinjer-altinn
+permalink: /retningslinjer-altinn/iconography.html
+description: Altinns retningslinjer
 
 ---
 

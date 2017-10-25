@@ -3,7 +3,7 @@ layout: page
 group: guidelines
 permalink: /guidelines/frontend.html
 title: Frontend
-description: Retningslinjer
+description: Felles retningslinjer
 ---
 
 <div id="alert-no-arrow" class="a-message a-message-error a-message--arrow-off a-message--fullwidth mb-2 a-py-minus-1">

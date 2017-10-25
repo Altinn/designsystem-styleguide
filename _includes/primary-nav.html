@@ -39,7 +39,7 @@
 		<li class="c-primary-nav__item {% if page.url contains '/guidelines' %}is-active{% endif %}">
 			<a class="c-primary-nav__link c-primary-nav__link--has-children js-nav-dropdown-trigger {% if page.url contains '/guidelines' %} is-active is-current{% endif %}" href="{{ "/guidelines/" | prepend: site.baseurl }}">
 
-				<span class="c-primary-nav__text">Retningslinjer</span>
+				<span class="c-primary-nav__text">Felles retningslinjer</span>
 
 				<svg class="c-icon c-primary-nav__icon" aria-hidden="true">
 					<use href="{{ "/icons.svg#chevron-right" | prepend: site.baseurl }}"></use>
@@ -70,12 +70,10 @@
 			</ul>
 		</li>
 
+		<li class="c-primary-nav__item {% if page.url contains '/retningslinjer-altinn' %}is-active{% endif %}">
+			<a class="c-primary-nav__link c-primary-nav__link--has-children js-nav-dropdown-trigger {% if page.url contains '/retningslinjer-altinn' %} is-active is-current{% endif %}" href="{{ "/guidelines/" | prepend: site.baseurl }}">
 
-		<li class="c-primary-nav__item {% if page.url contains '/styles' %}is-active{% endif %}">
-
-			<a href="{{ "/styles/index.html" | prepend: site.baseurl }}" class="c-primary-nav__link c-primary-nav__link--has-children js-nav-dropdown-trigger {% if page.url contains '/styles' %} is-active  is-current{% endif %}">
-
-				<span class="c-primary-nav__span">Stilguide</span>
+				<span class="c-primary-nav__text">Altinns retningslinjer</span>
 
 				<svg class="c-icon c-primary-nav__icon" aria-hidden="true">
 					<use href="{{ "/icons.svg#chevron-right" | prepend: site.baseurl }}"></use>
@@ -83,29 +81,30 @@
 
 			</a>
 
-			<ul class="c-primary-nav__sublist js-nav-dropdown {% if page.url contains '/styles' %} is-active{% endif %}">
+			<ul class="c-primary-nav__sublist js-nav-dropdownn {% if page.url contains '/retningslinjer-altinn' %} is-active{% endif %}">
 			{% for my_page in site.pages %}
-				{% if my_page.title %}
-					{% if my_page.group == "styles" %}
-					<li class="c-primary-nav__item">
-						<a class="c-primary-nav__link {% if my_page.url == page.url %}is-active is-current{% endif %}" href="{{ my_page.url | prepend: site.baseurl }}">
-                        {% if my_page.layout == "landing" %}
 
-                        <span class="c-primary-nav__text">Oversikt</span>
+				{% if my_page.group == "retningslinjer-altinn" %}
+				<li class="c-primary-nav__item">
+					<a class="c-primary-nav__link {% if my_page.url == page.url %}is-active is-current{% endif %}" href="{{ my_page.url | prepend: site.baseurl }}">
+                    {% if my_page.title == "retningslinjer-altinn" %}
 
-                        {% else %}
+                    <span class="c-primary-nav__text">Overview</span>
 
-                        {{ my_page.title }}
+                    {% else %}
 
-                        {% endif %}
-						</a>
-					</li>
-					{% endif %}
+                    {{ my_page.title }}
+
+                    {% endif %}
+					</a>
+				</li>
 				{% endif %}
+
 			{% endfor %}
 			</ul>
+		</li>
 
-		</li><!-- end c-nav__list__item -->
+
 
 		<li class="c-primary-nav__item {% if page.url contains '/komponenter' %}is-active{% endif %}">
 			<a class="c-primary-nav__link c-primary-nav__link--has-children js-nav-dropdown-trigger {% if page.url contains '/komponenter' %} is-active  is-current{% endif %}" href="{{ "/komponenter/" | prepend: site.baseurl }}">
@@ -171,7 +170,7 @@
 			{% for my_page in site.pages %}
 				{% if my_page.url == "/sidemaler.html" %}
 				<a href="{{ "/sidemaler.html" | prepend: site.baseurl }}" class="c-primary-nav__link {% if page.url == '/sidemaler.html' %}is-active is-current{% endif %}">
-					<span class="c-primary-nav__text">Sidemaler</span>
+					<span class="c-primary-nav__text">Altinns sidemaler</span>
 				</a>
 				{% endif %}
 			{% endfor %}

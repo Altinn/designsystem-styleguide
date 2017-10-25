@@ -2,9 +2,9 @@
 layout: page
 type: detail
 title: Språkguide
-group: guidelines
-permalink: /guidelines/skrive.html
-description: Retingslinjer
+group: retningslinjer-altinn
+permalink: /retningslinjer-altinn/skrive.html
+description: Altinns retingslinjer
 
 ---
 

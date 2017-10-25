@@ -11,36 +11,42 @@ statecolor: badge-success
 
 variations:
 - title: Standard
-  description: Skriv en kort oppsummering av komponenten.
+  description: Handlingsknapp i standard størrelse.
   styleModifier: a-btn
   includeClassification: atoms
   includeCategory: 04-handlingsknapper
   includeName: 17-handlingsknapp
+- title: Full bredde
+  description: Handlingsknapp i full bredde.
+  styleModifier: a-btn
+  includeClassification: atoms
+  includeCategory: 04-handlingsknapper
+  includeName: 19-handlingsknapp-full-bredde
 
-  usage:
-  - title: When to use
-    description: En handlingsknapp består av et ikon og beskrivende tekst. Denne skal benyttes i disse tilfellene; Legge til, laste opp, laste ned, laste inn flere.
-  - title: When to consider an alternative
-    description: Alternative usage.
+usage:
+- title: Når skal du bruke denne komponenten?
+  description: En handlingsknapp består av et ikon som forklarer handlingen samt beskrivende tekst. Denne skal benyttes i disse tilfellene; Legge til, laste opp, laste ned, laste inn flere. Full bredde brukes i tilfeller der knappen avslutter en liste og ikke står helt for seg selv.
+- title: Policies
+  description: Det skal være minimum 12px mellomrom mellom hver knapp/lenke. Dersom det skal legges flere knapper ved siden hverandre, legges de inn i < div class="a-btn-group" > </ div >.
+- title: Når skal du vurdere alternativer?
+  description: Dersom knappen skal utføre en av følgende handlinger, 'Send', 'Lagre', 'Neste'. I disse tilfellene benyttes vanlig knapp som har solid bakgrunnsfarge.
 
-  classes:
-  - className: c-hero
-    required : yes
-    description: Apply to the hero block's containing HTML element. This class sets up the background-image handling and text color for the unit. The `c-hero` element should have just one immediate child, the `c-hero__body` element. Note, too, that the unit's hero image should be applied as a background image to this `c-hero` element.
-  - className: c-hero--bare
-    modifier : yes
-    description: Add to the `c-hero` element to remove the default gradient overlay from the hero image.
-  - className: c-hero--tinted
-    modifier : yes
-    description: Add to the `c-hero` element to replace the default gradient overlay with a solid, uniform tint.
-  - className: c-hero__body
-    required: yes
-    description: Apply to the container for the card body, which typically includes a title and description (see below) but can include any arbitrary markup including buttons for a call to action. The class manages the card's background gradient.
-  - className: c-hero__title
-    recommended: yes
-    description: Apply to the card's heading inside the card body. The recommended element for this class is `<h1>`.
-  - className: c-hero__desc
-    recommended: yes
-    description: Apply to the card's description text inside the card body. The recommended element for this class is `<p>`.
+classes:
+- className: a-btn a-btn-action
+  required : ja
+  description: Bruk disse klassene for handlingsknapper.
+- className: a-fullWidthBtn
+  required : nei
+  description: Legges på når knappen skal fylle helt ut i bredden av sin container.
+- className: ai ai-plus
+  required : nei
+  description: Legg til disse to klassene på < i > , bytt evt ut "plus" med ikonet som skal brukes.
+- className: a-btn-group
+  required : nei
+  description: Dersom det skal ligge flere knapper ved siden hverandre, legg en < div > rundt knappene med klassen a-btn-group.
+
+theme-specific:
+- description: Altinns handlingsknapp har stiplete kantlinjer og transparent fyll. Siden knappen bare er 36px høy, er det avsatt et område over og under, slik at touch target blir 48px.
+
 
 ---

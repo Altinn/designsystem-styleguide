@@ -29,30 +29,29 @@ variations:
   includeCategory: 05-lister
   includeName: 10-liste-unummerert-radvarianter
 
-  usage:
-  - title: When to use
-    description: Usage description.
-  - title: When to consider an alternative
-    description: Alternative usage.
+usage:
+- title: Når skal du bruke denne komponenten?
+  description: Brukes for handlinger, f.eks Lagre, Send, osv.
+- title: Policies
+  description: Dersom det kun er én link i en rad skal hele raden være klikkbar og trigge linkens "action". Dersom det er flere linker i samme rad skal ikke hele raden være klikkbar. Da skal man måtte klikke på linken man ønsker å trykke på.
+- title: Interaksjon og styling
+  description: Siden knappen er kun 36px høy, er det avsatt et område over og under, slik at touch target er 48px. Det skal være minimum 12px mellomrom mellom hver knapp/lenke.
+- title: Når skal du vurdere alternativer?
+  description: Dersom knappen skal utføre en av følgende handlinger, 'Last ned', 'Last opp', eller 'last inn flere'. I disse tilfellene benyttes handlingsknapp som har stiplet linje.
 
-  classes:
-  - className: c-hero
-    required : yes
-    description: Apply to the hero block's containing HTML element. This class sets up the background-image handling and text color for the unit. The `c-hero` element should have just one immediate child, the `c-hero__body` element. Note, too, that the unit's hero image should be applied as a background image to this `c-hero` element.
-  - className: c-hero--bare
-    modifier : yes
-    description: Add to the `c-hero` element to remove the default gradient overlay from the hero image.
-  - className: c-hero--tinted
-    modifier : yes
-    description: Add to the `c-hero` element to replace the default gradient overlay with a solid, uniform tint.
-  - className: c-hero__body
-    required: yes
-    description: Apply to the container for the card body, which typically includes a title and description (see below) but can include any arbitrary markup including buttons for a call to action. The class manages the card's background gradient.
-  - className: c-hero__title
-    recommended: yes
-    description: Apply to the card's heading inside the card body. The recommended element for this class is `<h1>`.
-  - className: c-hero__desc
-    recommended: yes
-    description: Apply to the card's description text inside the card body. The recommended element for this class is `<p>`.
+classes:
+- className: a-btn
+  required : Ja
+  description: Dersom du skal style en lenke slik at den ut som en knapp, kan du også bruke denne klassen.
+- className: a-btn-success
+  required : nei
+  description: Legg til denne klassen dersom knappen skal være grønn.
+- className: a-btn-danger
+  required: nei
+  description: Legg til denne klassen dersom knappen skal være rød.
+- className: disabled
+  required: nei
+  description: Legg til denne klassen dersom knappen skal være deaktivert.
+
 
 ---

@@ -2,9 +2,9 @@
 layout: page
 type: detail
 title: Typografi
-group: styles
-permalink: /styles/typography.html
-description: Stilguide
+group: retningslinjer-altinn
+permalink: /retningslinjer-altinn/typography.html
+description: Altinns retningslinjer
 
 ---
 

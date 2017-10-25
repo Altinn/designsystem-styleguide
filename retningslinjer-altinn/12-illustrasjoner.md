@@ -2,8 +2,8 @@
 layout: page
 type: detail
 title: Illustrasjoner
-group: guidelines
-permalink: /guidelines/illustrations.html
+group: retningslinjer-altinn
+permalink: /retningslinjer-altinn/illustrations.html
 description: Retningslinjer
 
 ---

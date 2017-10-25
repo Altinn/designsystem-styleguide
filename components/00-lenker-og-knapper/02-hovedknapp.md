@@ -11,36 +11,27 @@ statecolor: badge-success
 
 variations:
 - title: Standard
-  description: Skriv en kort oppsummering av komponenten.
+  description: Hovedknapp i standard størrelse.
   styleModifier: a-btn
   includeClassification: atoms
   includeCategory: 03-knapper
   includeName: 14-knapp-stor
 
-  usage:
-  - title: When to use
-    description: Den store knappen brukes for å fremheve en oppgave, f.eks en lenke til et viktig skjema, logge inn, etc.
-  - title: When to consider an alternative
-    description: Alternative usage.
+usage:
+- title: Når skal du bruke denne komponenten?
+  description: Den store knappen brukes i sjeldne tilfeller der en oppgave skal fremheves, f.eks "Logg inn" eller fremheve en lenke til et aktuelt skjema. Brukes stort sett inni illustrasjonsfelt på forside.
+- title: Policies
+  description: Se theme-spesifikke policies lengre nede.
+- title: Når skal du vurdere alternativer?
+  description: Dersom knappen ikke har en veldig god grunn til å være fremhevet, skal vanlige knapper benyttes.
 
-  classes:
-  - className: c-hero
-    required : yes
-    description: Apply to the hero block's containing HTML element. This class sets up the background-image handling and text color for the unit. The `c-hero` element should have just one immediate child, the `c-hero__body` element. Note, too, that the unit's hero image should be applied as a background image to this `c-hero` element.
-  - className: c-hero--bare
-    modifier : yes
-    description: Add to the `c-hero` element to remove the default gradient overlay from the hero image.
-  - className: c-hero--tinted
-    modifier : yes
-    description: Add to the `c-hero` element to replace the default gradient overlay with a solid, uniform tint.
-  - className: c-hero__body
-    required: yes
-    description: Apply to the container for the card body, which typically includes a title and description (see below) but can include any arbitrary markup including buttons for a call to action. The class manages the card's background gradient.
-  - className: c-hero__title
-    recommended: yes
-    description: Apply to the card's heading inside the card body. The recommended element for this class is `<h1>`.
-  - className: c-hero__desc
-    recommended: yes
-    description: Apply to the card's description text inside the card body. The recommended element for this class is `<p>`.
+classes:
+- className: a-btn a-btn-border
+  required : ja
+  description: Bruk disse klassene for hovedknappen. NB. En lenke kan også styles som en hovedknapp, ved å legge på de samme klassene på < a >.
+
+theme-specific:
+- description: Teksten i Altinns hovedknapp justeres etter skjermstørrelse 3.6rem (desktop), 2.8rem (tablet), 2.4rem (mobil).
+
 
 ---
