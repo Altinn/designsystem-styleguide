@@ -38,11 +38,16 @@ variations:
 usage:
 - title: Når skal du bruke denne komponenten?
   description: Brukes for handlinger, f.eks Lagre, Send, osv.
+- title: Når skal du vurdere alternativer?
+  description: Dersom knappen skal utføre en av følgende handlinger, 'Last ned', 'Last opp', eller 'last inn flere'. I disse tilfellene benyttes handlingsknapp.
 - title: Policies
   description: Det skal være minimum 12px mellomrom mellom hver knapp/lenke. En lenke kan også styles som en knapp ved å bruke samme "a-btn" klassen på < a >.
 
-- title: Når skal du vurdere alternativer?
-  description: Dersom knappen skal utføre en av følgende handlinger, 'Last ned', 'Last opp', eller 'last inn flere'. I disse tilfellene benyttes handlingsknapp.
+theme-specific-altinn:
+- description: Altinns knapp har ingen borders, kun en solid farge (blå som standard, rød for fare, grønn for oppfordring). Siden knappen bare er 36px høy, er det avsatt et område over og under, slik at touch target blir 48px.
+
+theme-specific-brreg:
+- description: Ingen retningslinjer er lagt inn for Brønnøysundregistrene enda.
 
 classes:
 - className: a-btn
@@ -63,9 +68,5 @@ classes:
 - className: a-btn-link
   required : nei
   description: En knapp kan styles som en lenke med klassen "a-btn-link" på < button >. Knappen skal da se ut og oppføre seg likt som en lenke, altså at teksten er venstrejustert og har understrek under hele.
-
-theme-specific:
-- description: Altinns knapp har ingen borders, kun en solid farge (blå som standard, rød for fare, grønn for oppfordring). Siden knappen bare er 36px høy, er det avsatt et område over og under, slik at touch target blir 48px.
-
 
 ---

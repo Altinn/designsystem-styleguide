@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Sidemaler
+title: Altinns sidemaler
 permalink: sidemaler.html
 description:
 project: altinn

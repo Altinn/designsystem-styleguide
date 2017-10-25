@@ -159,6 +159,20 @@ layout: default
 
 		</div><!-- end c-text-passage -->
 
+		<div class="c-text-passage l-linelength-container display-altinn">
+			{% for class in page.theme-specific-altinn %}
+				<h3>Theme-spesifikke policies for Altinn</h3>
+        <p>{{ class.description }}</p>
+      {% endfor %}
+		</div><!-- end c-text-passage -->
+
+		<div class="c-text-passage l-linelength-container display-brreg">
+			{% for class in page.theme-specific-brreg %}
+				<h3>Theme-spesifikke policies for Brønnøysundregistrene</h3>
+        <p>{{ class.description }}</p>
+      {% endfor %}
+		</div><!-- end c-text-passage -->
+
 		<table class="c-table my-3">
 
 			<thead class="c-table__header">
@@ -195,13 +209,6 @@ layout: default
 			</tbody><!-- end c-table__body -->
 
 		</table><!--end c-table-->
-
-		<div class="c-text-passage l-linelength-container">
-			{% for class in page.theme-specific %}
-				<h3>Theme-spesifikke policies for <span id="a-js-showChosenTheme"></span></h3>
-        <p>{{ class.description }}</p>
-      {% endfor %}
-		</div><!-- end c-text-passage -->
 
 	</div>
 
