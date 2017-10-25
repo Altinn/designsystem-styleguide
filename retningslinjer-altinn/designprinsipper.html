@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE11">
 
-	<title>Designsystem for Altinn og Brønnøysundregistrenes webløsninger | Designsystem</title>
+	<title>Designprinsipper | Designsystem</title>
 	<meta name="description" content="Designsystem for Brønnøysundregistrenes webløsninger
 ">
 
@@ -16,7 +16,7 @@
 
 	<link rel="stylesheet" href="/designsystem-styleguide/css/style.css">
 
-	<link rel="canonical" href="http://localhost:4000/designsystem-styleguide/">
+	<link rel="canonical" href="http://localhost:4000/designsystem-styleguide/retningslinjer-altinn/designprinsipper.html">
 	<script src="https://use.fortawesome.com/ed31cded.js"></script>
 </head>
 
@@ -849,8 +849,8 @@
 			</ul>
 		</li>
 
-		<li class="c-primary-nav__item ">
-			<a class="c-primary-nav__link c-primary-nav__link--has-children js-nav-dropdown-trigger " href="/designsystem-styleguide/guidelines/">
+		<li class="c-primary-nav__item is-active">
+			<a class="c-primary-nav__link c-primary-nav__link--has-children js-nav-dropdown-trigger  is-active is-current" href="/designsystem-styleguide/guidelines/">
 
 				<span class="c-primary-nav__text">Altinns retningslinjer</span>
 
@@ -860,7 +860,7 @@
 
 			</a>
 
-			<ul class="c-primary-nav__sublist js-nav-dropdownn ">
+			<ul class="c-primary-nav__sublist js-nav-dropdownn  is-active">
 			
 
 				
@@ -925,7 +925,7 @@
 
 				
 				<li class="c-primary-nav__item">
-					<a class="c-primary-nav__link " href="/designsystem-styleguide/retningslinjer-altinn/designprinsipper.html">
+					<a class="c-primary-nav__link is-active is-current" href="/designsystem-styleguide/retningslinjer-altinn/designprinsipper.html">
                     
 
                     Designprinsipper
@@ -12339,11 +12339,11 @@
 	<div class="l-container">
 
 			<div class="c-page-header__desc">
-				<p>Introduksjon</p>
+				<p>Altinns retningslinjer</p>
 
 			</div>
 
-			<h1 class="c-page-header__title">Designsystem for Altinn og Brønnøysundregistrenes webløsninger </h1>
+			<h1 class="c-page-header__title">Designprinsipper </h1>
 			
 
 	</div>
@@ -12358,52 +12358,31 @@
   NB: Innholdet og sidene er under utvikling
 </div>
 
-<p class="a-leadText a-fontBold"> Velkommen til Altinn og Brønnøysundregistrenes samleside for design, som viser deg hvordan våre webløsninger skal fremstå. Målet er å sikre at de ulike løsningene fremstår helhetlig og konsekvent i alle kanaler. </p>
+<p class="a-leadText a-fontBold">Altinn og Brønnøysundregistrene har som mål å gjøre det enklere for innbyggere og næringsliv å være i kontakt med det offentlige uavhengig av digital kompetanse.</p>
 
-<h2 id="om-designsystemet">Om designsystemet</h2>
+<p>Når vi utvikler nye eller forbedrer eksisterende produkter følger vi et sett med prinsipper for å kunne sikre oss at vi leverer brukervennlige løsninger til alle. Disse prinsippene er viktig å følge uansett om du jobber med Altinn, Brønnøysundregistrenes løsninger eller andre offentlige løsninger.</p>
 
-<p>For å oppnå et konsistent brukergrensesnitt, har vi i Altinn og Brønnøysundregistrene bygget et levende designsystem for web, basert på Pattern Lab og atomisk designmetodikk. Frontend-koden i dette designsystemet skal være grunnlaget for webløsninger som utvikles hos Brønnøysundregistrene. Foreløpig er det <strong>altinn</strong> og <strong>altinnett</strong> som er koblet på designsystemet.</p>
-
-<p>Designsystemet fungerer som et løsrevet lag, uavhengig av CMS og plattform. Kode for design eksisterer dermed kun et sted - i designsystemet. Når det oppstår behov for nye UI-komponenter, skal designsystemet oppdateres med den nye komponenten og dens design.</p>
-
-<h2 id="ta-i-bruk-designsystemet">Ta i bruk designsystemet</h2>
-
-<p><b>Før designsystemet kan tas i bruk må prosjektet sørge for:</b></p>
-
-<ul>
-  <li>Ha en klar definert målgruppe for løsningen og kunne vise til innhentede brukerbehov i innsiktfase</li>
-  <li>Ha presentert denne for løsningsansvarlig på UX i Digitalisering og fått godkjennelse på bruk av designsystemet til formålet</li>
-</ul>
-
-<p><b>Prosjekter som har fått godkjent å ta i bruk designsystemet må oppfylle følgende kriterier:</b></p>
-<ul>
-  <li>Ha en dedikert design-ressurs med i prosjektet.</li>
-  <li>Følge alle retningslinjer for frontend og universell utforming som beskrevet i denne manualen.</li>
-  <li>Alle sidemaler som settes sammen av komponenter skal designgodkjennes og brukertestes før videre implementering.</li>
-  <li>Dersom egen visuell profil (eget theme) skal benyttes, skal dette themet brukes gjennomgående, og skal ikke blandes med andre visuelle profiler.</li>
-</ul>
-
-<div class="a-btn-group" id="btnGroup">
-  <a href="komigang/designere.html">
-    Kom i gang som <b>designer</b>
-  </a>
-
-  <a href="komigang/utviklere.html">
-    Kom i gang som <b>utvikler</b>
-  </a>
-</div>
-<p><br /></p>
-
-<h2 id="målet">Målet</h2>
-<p>Målet med designsystemet er:</p>
-
-<ul>
-  <li>Å opprettholde en konsekvent identitet på tvers av Brønnøysundsregistrenes nettløsninger, som fører til mer helhetlige, konsistente brukeropplevelser.</li>
-  <li>Å ha et felles prototypemiljø der det er mulig å se komponenter både i og utenfor kontekst.</li>
-  <li>Å forenkle arbeidsflyten for designere og utviklere.</li>
-  <li>Å etablere et felles samlingspunkt mellom fagdisipliner (interaksjonsdesignere, grafiske designere, utviklere, prosjekteiere ++) for å oppnå bedre samarbeid og en mer konstruktiv arbeidsflyt.</li>
-  <li>At designsystemet skal være et solid fundament å bygge på over tid, som  hjelper organisasjonen å lettere tilpasse seg det stadig skiftende weblandskapet.</li>
-</ul>
+<ol class="a-circle-list mt-2">
+  <li><b>Vi setter brukerbehov først</b>
+    <br />Vi bruker innsikt om brukernes behov aktivt i utviklingen av produktene våre. Alle løsninger skal fokusere på å løse reelle problemer for brukerne og vi bruker undersøkelser og brukerinnsikt til å ta beslutninger.
+  </li>
+  <li>
+    <b>Skjule kompleksitet</b>
+    <br />Vi lager fokuserte og forenklede løsninger og skreller vekk unødvendig kompleksitet for brukerne. Løsningene er ofte komplekse på baksiden, men fremstår enkle og brukervennlige for folk som bruker dem.
+  </li>
+  <li>
+    <b>Helhetlige brukeropplevelser</b>
+    <br />Produktene våre skal henge sammen slik at folk får en helhetlig brukeropplevelse. Vi bruker konsistent språk og samme komponenter i alle digitale løsninger. Brukerne skal kjenne seg uansett hvilken del av produktet man bruker.
+  </li>
+  <li>
+    <b>Visuelt design som motiverer</b>
+    <br />Det visuelle designet skal bidra til å gjøre brukerne trygge i dialogen med det offentlige. Vi bruker en vennlig fargepalett, et enklere grensesnitt, tydelige interaksjonselementer og fargesterke illustrasjoner til å skal skape en god atmosfære. Alle visuelle beslutninger skal ha et klart formål om å skape en spesifikk effekt.
+  </li>
+  <li>
+    <b>Tilgjengelighet for alle</b>
+    <br />Vi strekker oss langt for å lage digitale løsninger som skal være tilgjengelige for alle. Vi gjenbruker komponenter som en måte å optimalisere tilgjengelighet på - teknisk så vel som interaksjonsdesign og visuelt design.
+  </li>
+</ol>
 
 	</div><!--end c-text-passage-->
 

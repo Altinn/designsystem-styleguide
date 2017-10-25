@@ -6,7 +6,6 @@
  * * * * * * * * * * * * * * * * * * * * *
  */
 
-
  /*
  * LIVE SEARCH IN COMPONENTS
  */
@@ -37,6 +36,15 @@
 
  });
 
+ /*
+ * Get text from chosen theme
+ */
+
+ jQuery(document).ready(function($){
+   var str = $( '.a-dropdown-toggle #a-js-chosenTheme' ).text();
+   $( '#a-js-showChosenTheme' ).html( str );
+ });
+
 
  /*
  * SWITCH BETWEEN PROJECTS
@@ -56,8 +64,8 @@
  * VIEW CORRECT NAV BASED ON CHOSEN PROJECT
  */
 
- $(".primary-nav-altinnett").hide();
- $(".primary-nav-brreg").hide();
+ $(".display-altinnett").hide();
+ $(".display-brreg").hide();
 
  if (window.localStorage.getItem('persisted_style') === null) {
    window.localStorage.setItem('persisted_style', '1')
@@ -71,24 +79,24 @@
    .html(window.localStorage.getItem('persisted_html'))
  switch (window.localStorage.getItem('persisted_style')) {
    case '1':
-     $('.primary-nav-altinnett').hide()
-     $('.primary-nav-brreg').hide()
-     $('.primary-nav-altinn').show()
+     $('.display-altinnett').hide()
+     $('.display-brreg').hide()
+     $('.display-altinn').show()
      $('link[rel=stylesheet][href~=\'/designsystem-styleguide/css/altinnett.css\']').remove()
      $('link[rel=stylesheet][href~=\'/designsystem-styleguide/css/brreg.css\']').remove()
      break
    case '2':
-     $('.primary-nav-altinnett').show()
-     $('.primary-nav-altinn').hide()
-     $('.primary-nav-brreg').hide()
+     $('.display-altinnett').show()
+     $('.display-altinn').hide()
+     $('.display-brreg').hide()
      $('head link[rel=\'stylesheet\']').last()
        .after('<link rel=\'stylesheet\' href=\'/designsystem-styleguide/css/altinnett.css\' type=\'text/css\' media=\'screen\'>')
      $('link[rel=stylesheet][href~=\'/designsystem-styleguide/css/brreg.css\']').remove()
      break
    case '3':
-     $('.primary-nav-altinn').hide()
-     $('.primary-nav-altinnett').hide()
-     $('.primary-nav-brreg').show()
+     $('.display-altinn').hide()
+     $('.display-altinnett').hide()
+     $('.display-brreg').show()
      $('head link[rel=\'stylesheet\']').last()
        .after('<link rel=\'stylesheet\' href=\'/designsystem-styleguide/css/brreg.css\' type=\'text/css\' media=\'screen\'>')
      $('link[rel=stylesheet][href~=\'/designsystem-styleguide/css/altinnett.css\']').remove()
@@ -100,9 +108,9 @@
   window.localStorage.setItem('persisted_html', $(this).html())
   switch($(this).attr("data-value")) {
     case "1":
-      $(".primary-nav-altinnett").hide();
-      $(".primary-nav-brreg").hide();
-      $(".primary-nav-altinn").show();
+      $(".display-altinnett").hide();
+      $(".display-brreg").hide();
+      $(".display-altinn").show();
       $('link[rel=stylesheet][href~="/designsystem-styleguide/css/altinnett.css"]').remove();
       $('link[rel=stylesheet][href~="/designsystem-styleguide/css/brreg.css"]').remove();
       $($('.iffframe').find('iframe')[0].contentWindow.document.getElementsByTagName('head')[0])
@@ -111,9 +119,9 @@
        .find('link[rel=stylesheet][href~=\'/designsystem-styleguide/css/brreg.css\']').remove()
       break;
     case "2":
-      $(".primary-nav-altinnett").show();
-      $(".primary-nav-altinn").hide();
-      $(".primary-nav-brreg").hide();
+      $(".display-altinnett").show();
+      $(".display-altinn").hide();
+      $(".display-brreg").hide();
       $("head link[rel='stylesheet']").last().after("<link rel='stylesheet' href='/designsystem-styleguide/css/altinnett.css' type='text/css' media='screen'>");
       $('link[rel=stylesheet][href~="/designsystem-styleguide/css/brreg.css"]').remove();
       var e = document.createElement('link')
@@ -125,9 +133,9 @@
       $('.iffframe').find('iframe')[0].contentWindow.document.getElementsByTagName('head')[0].appendChild(e)
       break;
     case "3":
-      $(".primary-nav-altinn").hide();
-      $(".primary-nav-altinnett").hide();
-      $(".primary-nav-brreg").show();
+      $(".display-altinn").hide();
+      $(".display-altinnett").hide();
+      $(".display-brreg").show();
       $("head link[rel='stylesheet']").last().after("<link rel='stylesheet' href='/designsystem-styleguide/css/brreg.css' type='text/css' media='screen'>");
       $('link[rel=stylesheet][href~="/designsystem-styleguide/css/altinnett.css"]').remove();
       var e = document.createElement('link')
