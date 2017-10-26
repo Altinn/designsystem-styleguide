@@ -37,9 +37,20 @@ Illustrasjoner på Altinn skal brukes enten som [bakgrunnsillustrasjon](../kompo
 ## Alle illustrasjoner
 Det jobbes for tiden med å lage flere illustrasjoner. Foreløpig har vi følgende tilgjengelig:
 
-### Hjelpesenter
-![Illustrasjon for Hjelpesidene](../images/header-bg-help.svg)
+### Forside / Logg inn
+![Illustrasjon for forside](../images/illustrasjon_logginn.svg)
 
+### Hjelpesenter
+![Illustrasjon for Hjelpesidene](../images/illustrasjon_hjelp.svg)
 
 ### Starte og drive
-![Illustrasjon for Starte og drive](../images/header-bg-starteogdrive.svg)
+![Illustrasjon for Starte og drive](../images/illustrasjon_starte_og_drive.svg)
+
+### Arbeidsforhold
+![Illustrasjon for Arbeidsforhold](../images/illustrasjon_arbeidsforhold.svg)
+
+### Regnskap og revisjon
+![Illustrasjon for Regnskap og revisjon](../images/illustrasjon_regnskap_og_revisjon.svg)
+
+### Skatt og avgift
+![Illustrasjon for Skatt og avgift](../images/illustrasjon_skatt_og_avgift.svg)
