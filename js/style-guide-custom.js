@@ -51,10 +51,22 @@
  */
  var that = this;
  $('body').on('click', '[data-toggle="altinn-dropdown"] .a-dropdown-item', function() {
- 	var $dropdownElement = $(this).closest('[data-toggle="altinn-dropdown"');
- 	if ($(this).data('value')) {
- 		$dropdownElement.find('.a-js-altinnDropdown-value').val($(this).data('value'));
- 	}
+   var $dropdownElement = $(this).closest('[data-toggle="altinn-dropdown"');
+   var project = $(this).data('project');
+   var projectCssClassPrefix = 'a-pr-';
+   var $body = $('body');
+   var i;
+   var cssClasses = $body.attr('class').split(' ').filter(function(elem) {
+    return elem.indexOf(projectCssClassPrefix) == 0;
+   });
+   for (i = 0; i < cssClasses.length; i = i+1) {
+    $body.removeClass(cssClasses[i]);
+   }
+   $body.addClass(projectCssClassPrefix + project);
+    
+   if ($(this).data('value')) {
+ 		 $dropdownElement.find('.a-js-altinnDropdown-value').val($(this).data('value'));
+  }
 
  	$dropdownElement.find('.a-dropdown-toggle').html($(this).html());
  });
@@ -82,24 +94,24 @@
      $('.display-altinnett').hide()
      $('.display-brreg').hide()
      $('.display-altinn').show()
-     $('link[rel=stylesheet][href~=\'/designsystem-styleguide/css/altinnett.css\']').remove()
-     $('link[rel=stylesheet][href~=\'/designsystem-styleguide/css/brreg.css\']').remove()
+    //  $('link[rel=stylesheet][href~=\'/designsystem-styleguide/css/altinnett.css\']').remove()
+    //  $('link[rel=stylesheet][href~=\'/designsystem-styleguide/css/brreg.css\']').remove()
      break
    case '2':
      $('.display-altinnett').show()
      $('.display-altinn').hide()
      $('.display-brreg').hide()
-     $('head link[rel=\'stylesheet\']').last()
-       .after('<link rel=\'stylesheet\' href=\'/designsystem-styleguide/css/altinnett.css\' type=\'text/css\' media=\'screen\'>')
-     $('link[rel=stylesheet][href~=\'/designsystem-styleguide/css/brreg.css\']').remove()
+    //  $('head link[rel=\'stylesheet\']').last()
+    //    .after('<link rel=\'stylesheet\' href=\'/designsystem-styleguide/css/altinnett.css\' type=\'text/css\' media=\'screen\'>')
+    //  $('link[rel=stylesheet][href~=\'/designsystem-styleguide/css/brreg.css\']').remove()
      break
    case '3':
      $('.display-altinn').hide()
      $('.display-altinnett').hide()
      $('.display-brreg').show()
-     $('head link[rel=\'stylesheet\']').last()
-       .after('<link rel=\'stylesheet\' href=\'/designsystem-styleguide/css/brreg.css\' type=\'text/css\' media=\'screen\'>')
-     $('link[rel=stylesheet][href~=\'/designsystem-styleguide/css/altinnett.css\']').remove()
+    //  $('head link[rel=\'stylesheet\']').last()
+    //    .after('<link rel=\'stylesheet\' href=\'/designsystem-styleguide/css/brreg.css\' type=\'text/css\' media=\'screen\'>')
+    //  $('link[rel=stylesheet][href~=\'/designsystem-styleguide/css/altinnett.css\']').remove()
      break
  }
 
@@ -111,40 +123,40 @@
       $(".display-altinnett").hide();
       $(".display-brreg").hide();
       $(".display-altinn").show();
-      $('link[rel=stylesheet][href~="/designsystem-styleguide/css/altinnett.css"]').remove();
-      $('link[rel=stylesheet][href~="/designsystem-styleguide/css/brreg.css"]').remove();
-      $($('.iffframe').find('iframe')[0].contentWindow.document.getElementsByTagName('head')[0])
-       .find('link[rel=stylesheet][href~=\'/designsystem-styleguide/css/altinnett.css\']').remove()
-      $($('.iffframe').find('iframe')[0].contentWindow.document.getElementsByTagName('head')[0])
-       .find('link[rel=stylesheet][href~=\'/designsystem-styleguide/css/brreg.css\']').remove()
+      // $('link[rel=stylesheet][href~="/designsystem-styleguide/css/altinnett.css"]').remove();
+      // $('link[rel=stylesheet][href~="/designsystem-styleguide/css/brreg.css"]').remove();
+      // $($('.iffframe').find('iframe')[0].contentWindow.document.getElementsByTagName('head')[0])
+      //  .find('link[rel=stylesheet][href~=\'/designsystem-styleguide/css/altinnett.css\']').remove()
+      // $($('.iffframe').find('iframe')[0].contentWindow.document.getElementsByTagName('head')[0])
+      //  .find('link[rel=stylesheet][href~=\'/designsystem-styleguide/css/brreg.css\']').remove()
       break;
     case "2":
       $(".display-altinnett").show();
       $(".display-altinn").hide();
       $(".display-brreg").hide();
-      $("head link[rel='stylesheet']").last().after("<link rel='stylesheet' href='/designsystem-styleguide/css/altinnett.css' type='text/css' media='screen'>");
-      $('link[rel=stylesheet][href~="/designsystem-styleguide/css/brreg.css"]').remove();
-      var e = document.createElement('link')
-      e.rel = 'stylesheet'
-      e.type = 'text/css'
-      e.href = '/designsystem-styleguide/css/altinnett.css'
-      $($('.iffframe').find('iframe')[0].contentWindow.document.getElementsByTagName('head')[0])
-       .find('link[rel=stylesheet][href~=\'/designsystem-styleguide/css/brreg.css\']').remove()
-      $('.iffframe').find('iframe')[0].contentWindow.document.getElementsByTagName('head')[0].appendChild(e)
+      // $("head link[rel='stylesheet']").last().after("<link rel='stylesheet' href='/designsystem-styleguide/css/altinnett.css' type='text/css' media='screen'>");
+      // $('link[rel=stylesheet][href~="/designsystem-styleguide/css/brreg.css"]').remove();
+      // var e = document.createElement('link')
+      // e.rel = 'stylesheet'
+      // e.type = 'text/css'
+      // e.href = '/designsystem-styleguide/css/altinnett.css'
+      // $($('.iffframe').find('iframe')[0].contentWindow.document.getElementsByTagName('head')[0])
+      //  .find('link[rel=stylesheet][href~=\'/designsystem-styleguide/css/brreg.css\']').remove()
+      // $('.iffframe').find('iframe')[0].contentWindow.document.getElementsByTagName('head')[0].appendChild(e)
       break;
     case "3":
       $(".display-altinn").hide();
       $(".display-altinnett").hide();
       $(".display-brreg").show();
-      $("head link[rel='stylesheet']").last().after("<link rel='stylesheet' href='/designsystem-styleguide/css/brreg.css' type='text/css' media='screen'>");
-      $('link[rel=stylesheet][href~="/designsystem-styleguide/css/altinnett.css"]').remove();
-      var e = document.createElement('link')
-      e.rel = 'stylesheet'
-      e.type = 'text/css'
-      e.href = '/designsystem-styleguide/css/brreg.css'
-      $($('.iffframe').find('iframe')[0].contentWindow.document.getElementsByTagName('head')[0])
-       .find('link[rel=stylesheet][href~=\'/designsystem-styleguide/css/altinnett.css\']').remove()
-      $('.iffframe').find('iframe')[0].contentWindow.document.getElementsByTagName('head')[0].appendChild(e)
+      // $("head link[rel='stylesheet']").last().after("<link rel='stylesheet' href='/designsystem-styleguide/css/brreg.css' type='text/css' media='screen'>");
+      // $('link[rel=stylesheet][href~="/designsystem-styleguide/css/altinnett.css"]').remove();
+      // var e = document.createElement('link')
+      // e.rel = 'stylesheet'
+      // e.type = 'text/css'
+      // e.href = '/designsystem-styleguide/css/brreg.css'
+      // $($('.iffframe').find('iframe')[0].contentWindow.document.getElementsByTagName('head')[0])
+      //  .find('link[rel=stylesheet][href~=\'/designsystem-styleguide/css/altinnett.css\']').remove()
+      // $('.iffframe').find('iframe')[0].contentWindow.document.getElementsByTagName('head')[0].appendChild(e)
       break;
   }
 });
