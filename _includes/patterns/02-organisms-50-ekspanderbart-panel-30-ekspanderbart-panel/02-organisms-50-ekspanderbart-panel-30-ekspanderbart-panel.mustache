@@ -1,4 +1,4 @@
-<!-- START: 02-organismer-50-ekspanderbart-panel-30-ekspanderbart-panel JS doc: togglePanel.js -->
+
 <div class="{{^ is-static }}card a-accordion-card {{/ is-static }}a-collapsePanel{{# isLarge }} {{{ isLarge }}}{{/ isLarge }} {{{ styleModifier }}}">
   <div class="card-header {{^ is-static }}a-js-index-heading{{/ is-static }} a-collapsePanel-heading collapsed{{# isExpanded }} {{ isExpanded }}{{/ isExpanded }}{{# panel-extra-class }} {{ panel-extra-class }}{{/ panel-extra-class }}" {{^ is-static }}{{#
     collapse-panel-header-id }} id="{{ collapse-panel-header-id }}" {{/ collapse-panel-header-id }} role="tab" {{/ is-static }}>
@@ -13,14 +13,13 @@
           {{> molekyler-innboks-header-innhold }}
         {{/ isElement }}
       {{/ collapseHeader }}
-
-    {{^ is-static }}
+    {{^ is-static }}
       </a> {{/ is-static }}
   </div>
   <div class="a-collapsePanel-body collapse{{# isVisibleFromStart }} {{ isVisibleFromStart }}{{/ isVisibleFromStart }}{{# extraPanelBodyClass}} {{ extraPanelBodyClass }}{{/ extraPanelBodyClass }}" {{^ is-static }} role="tabpanel" aria-labelledby="{{ collapse-panel-header-id }}"
     id="{{ collapseID }}" {{/ is-static }}>
     {{# top-notification }}
-    <div class="col pr-4 pl-2 py-1 a-collapsePanel-body-secondary a-no-sideborder">
+    <div class="col a-collapsePanel-body-secondary a-no-sideborder">
       <p class="{{ notification-text-class }}">{{{ notification-text }}}</p>
       {{# text-link }} {{> atomer-link }} {{/ text-link }}
     </div>
@@ -30,5 +29,4 @@
     </div>
   </div>
 </div>
-
-<!-- END: 02-organismer-50-ekspanderbart-panel-30-ekspanderbart-panel -->
+

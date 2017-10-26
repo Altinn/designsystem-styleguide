@@ -3682,10 +3682,12 @@ var colnavCustom = function() {
     category: 'category',
     checked: ':checked',
     dataId: 'data-id',
+    disabled: 'disabled',
     colnavWrapper: '.a-colnav-wrapper',
     loaderClass: '.a-js-drilldownLoader',
-    toggleInput: '[name="js-switchForm"]',
-    switchurl: 'switchurl'
+    radioClassSelector: '.radio',
+    switchurl: 'switchurl',
+    toggleInput: '[name="js-switchForm"]'
   };
 
   var category = {
@@ -3713,7 +3715,7 @@ var colnavCustom = function() {
   }
 
   // This code awful. It can return a number or an element (!),
-  // the argument name don't convey any information and there
+  // the argument names don't convey any information and there
   // a few magical numbers.
   // Should be the first target of a refactoring in the future.
   // Perform various calculations to determine placements and widths
@@ -3723,9 +3725,9 @@ var colnavCustom = function() {
     var contentOverviewWith = $('.a-contentOverview').width();
     if (isSmall) {
       if (isNaN(x)) {
-        returnValue = x.css('left', '40px');
+        returnValue = x.css('left', '50px');
       } else {
-        returnValue = ((contentOverviewWith - ((z + 1) * 40)) - (1.5 * (z + 1))) + 'px';
+        returnValue = ((contentOverviewWith - ((z + 1) * 50)) - (1.5 * (z + 1))) + 'px';
       }
     } else if (isNaN(x)) {
       left = parseInt(x.css('left'), 10);
@@ -3745,6 +3747,16 @@ var colnavCustom = function() {
     }
 
     return returnValue;
+  }
+
+  function disableToggles() {
+    $(keys.toggleInput).closest(keys.radioClassSelector).addClass(keys.disabled);
+    $(keys.toggleInput).attr(keys.disabled, true);
+  }
+
+  function enableToggles() {
+    $(keys.toggleInput).closest(keys.radioClassSelector).removeClass(keys.disabled);
+    $(keys.toggleInput).attr(keys.disabled, false);
   }
 
   function setHistoryState(position) {
@@ -3848,21 +3860,7 @@ var colnavCustom = function() {
     levels.forEach(function(str, index) {
       var wasStacked;
       if (el.closest('ul').hasClass(str)) { // Check if element exists
-        // Check if device is small and level is stacked
-        if (isSmall && el.closest('ul').hasClass('stacked')) {
-          // Get name from parent
-          position = el.closest('ul').prev().find('h2').attr(keys.dataId) || '';
-          setHistoryState(position);
-          open = []; // Clear array for open levels
-          // Hide lower levels:
-          $('.' + levels[index + 1]).removeClass('noTrans').css('left', '250%');
-          $('.' + levels[2]).removeClass('noTrans').css('left', '250%');
-          calc(index > 0 ? el.closest('ul') : 0, 3 / index); // Calculate left position for parent
-          // Reset markup:
-          el.closest('ul').removeClass('stacked').find('.open').removeClass('open');
-          el.closest('ul').find('.dim').removeClass('dim');
-          el.closest('ul').css('width', calc(1.5, null, index - 1));
-        } else if (el.closest('a').hasClass('open') || el.find('a').hasClass('open') || el.hasClass('open')) { // Check if item is already open:
+        if (el.closest('a').hasClass('open') || el.find('a').hasClass('open') || el.hasClass('open')) { // Check if item is already open:
           position = el.closest('ul').prev().find('h2').attr(keys.dataId) || '';
           setHistoryState(position);
           open = []; // Clear array for open levels
@@ -3976,6 +3974,8 @@ var colnavCustom = function() {
             return false;
           });
       }
+
+      enableToggles();
     }
     $(document).on('keyup keydown', function(e) { // Detect shift key
       shifted = e.shiftKey;
@@ -4076,7 +4076,7 @@ var colnavCustom = function() {
             var __span = document.createElement('span');
             $(__h4).text(__item.Heading || __item.Title).appendTo($(__a));
             $(__h4).attr(keys.dataId, __item.Id);
-            $(__span).addClass('a-colnav-rightText').text(__item.Provider || '–')
+            $(__span).addClass('a-colnav-rightText').text(__item.Provider || 'Skatteetaten')
               .appendTo($(__a));
             $(__a).prop('href', __item.Url)
               .addClass('a-colnav-item-third')
@@ -4133,14 +4133,13 @@ var colnavCustom = function() {
   function getDrilldownSource(str) {
     var url = endPointUrl + str;
     showLoader();
+    disableToggles();
     if (savedResults[str]) { // Get stored results if present
       afterRequest(str, savedResults[str]);
     } else {
       // These hardcoded paths and IPs need to be fixed probably
       if (window.location.pathname.indexOf('DesignSystem') === 1 ||
-        window.location.origin.indexOf('localhost') !== -1 ||
-        window.location.origin.indexOf('10.4.67.79') !== -1 ||
-        window.location.origin.indexOf('192.168.10.153') !== -1) {
+        window.location.origin.indexOf('localhost') !== -1) {
         url += '.json';
       }
       $.ajax({
@@ -4161,9 +4160,8 @@ var colnavCustom = function() {
     if (isSmall === wasSmall) {
       return;
     }
+    getDrilldownSource($(keys.toggleInput + keys.checked).data(keys.switchurl));
     if (!isSmall) {
-      // Perform drilldown logic with currently selected source:
-      getDrilldownSource($(keys.toggleInput + keys.checked).data(keys.switchurl));
       // Ensure reset of markup
       $('.switch-container').show();
       $('.a-js-colnavTitleRegular').text('Alle skjemaer');
@@ -4189,8 +4187,8 @@ var colnavCustom = function() {
   }
 
   function performResizeLogicAfterResizeEvents() {
-    var resizeTimeout; // Timeout variable for resizing
-    window.onresize = function() { // Perform resize logic after resize events
+    var resizeTimeout;
+    window.onresize = function() {
       clearTimeout(resizeTimeout);
       resizeTimeout = setTimeout(resizedWindow, 100);
     };
@@ -4257,58 +4255,78 @@ var colnavCustom = function() {
 /* globals $ */
 var genericSearch = function() {
   var dimensions;
-  var dataSource;
-  var $container;
-  var $altContainer;
-  var $genericSearch;
   var base;
-  var page = 1;
-  var legend;
-  var loader;
-  var empty;
+  var page = 0;
+  var articlesPerPage = 20;
   var inputBy;
   var selection = [];
-  var currentFilter = '';
   var dataList;
+  var elements = {};
 
   var keys = {
-    showResultsButtonClass: '.a-js-expandResults',
-    tagFilterSectionClass: '.a-card-filter'
+    forceHiddenClass: 'a-js-forceHidden',
+    genericSearchSelector: '.a-js-genericSearch',
+    showResultsButtonSelector: '.a-js-expandResults',
+    tagFilterSectionSelector: '.a-card-filter',
+    generalArticleSelector: 'a-js-underneath'
   };
 
-  var grinder = function(item) {
+  function arrayIncludes(array, element) {
+    var newArray;
+    var includes;
+
+    if (array.includes) {
+      includes = array.includes(element);
+    } else { // IE
+      newArray = array.filter(function(el) {
+        return el === element;
+      });
+      includes = newArray.length > 0;
+    }
+
+    return includes;
+  }
+
+  function grinder(item) {
     var i;
     var j;
     var itemDimension;
     var isMatch = false;
+    var itemDimensionsCount = 0;
 
     for (i = 0; i < dimensions.length; i += 1) {
+      itemDimensionsCount += item[dimensions[i].name].length;
       for (j = 0; j < item[dimensions[i].name].length; j += 1) {
         itemDimension = item[dimensions[i].name][j];
-        if (selection.includes('d' + (i + 1) + '-' + itemDimension)) {
+        if (arrayIncludes(selection, 'd' + (i + 1) + '-' + itemDimension)) {
           isMatch = true;
           break;
         }
       }
     }
 
+    // General item
+    if (itemDimensionsCount === 0) {
+      isMatch = true;
+    }
+
     return isMatch;
-  };
+  }
 
   function tags() {
-    return $(keys.tagFilterSectionClass).find('input[type="checkbox"].sr-only');
+    return $(keys.tagFilterSectionSelector).find('input[type="checkbox"].sr-only');
   }
 
   function selectedTags() {
-    return $(keys.tagFilterSectionClass).find('input[type="checkbox"]:checked.sr-only');
-  }
-
-  function loadMoreButton() {
-    return $container.next().next();
+    return $(keys.tagFilterSectionSelector).find('input[type="checkbox"]:checked.sr-only');
   }
 
   function urlFilterPrefix(id) {
     return id.replace('filterDim1ID', 'd1-').replace('filterDim2ID', 'd2-');
+  }
+
+  function resetPage() {
+    page = 1;
   }
 
   // TODO: This method is copied from colnavCustom.js, should be put in a common
@@ -4325,76 +4343,11 @@ var genericSearch = function() {
     return false;
   }
 
-  function setHistoryState() {
-    var newurl = window.location.pathname;
-    var urlQueryString = '?filter=';
-    if (selection.length > 0) {
-      urlQueryString += selection.join(',');
-      newurl += urlQueryString;
-    }
-    if (history.replaceState) {
-      window.history.replaceState({
-        path: newurl
-      }, '', newurl);
-    }
-  }
+  function getDataSource(index) {
+    var dataSources = $(keys.genericSearchSelector).attr('data-source').split(',');
+    var dataUrl = dataSources[index] + '/' + $('html').attr('lang');
 
-  function getUrlFilter() {
-    if (urlQuery('filter')) {
-      currentFilter = urlQuery('filter');
-    }
-  }
-
-  function setContainerVisibility() {
-    if (dimensions[1].isSelected) {
-      $container.hide();
-      $altContainer.show();
-    } else {
-      $container.show();
-      $altContainer.hide();
-    }
-  }
-
-  function renderPaginatedResults(data) {
-    var aboveCount;
-    var belowCount;
-    aboveCount = 0;
-    belowCount = 0;
-    page += 1;
-    $container.find('.a-js-result').hide();
-    $altContainer.find('.a-js-result').hide();
-    dataList.filter(grinder).forEach(function(item, index) {
-      $('#' + item.id)[index < 20 * page ? 'show' : 'hide']();
-      if (item.isAbove) {
-        aboveCount += 1;
-        $('#' + item.altId)[aboveCount < 20 * page ? 'show' : 'hide']();
-      }
-    });
-    dataList.filter(grinder).forEach(function(item, index) {
-      if (item.isBelow) {
-        belowCount += 1;
-        $('#' + item.altId)[
-          aboveCount < (20 * page) && belowCount < ((20 * page) - aboveCount) ? 'show' : 'hide'
-        ]();
-      }
-    });
-    setTimeout(function() {
-      $('.a-js-extraHeading')[
-        $('.a-js-underneath').is(':visible') ? 'show' : 'hide']();
-    }, 1);
-    loadMoreButton()[dataList.filter(grinder).length < 20 * page ? 'hide' : 'show']();
-    setContainerVisibility();
-  }
-
-  function showResults() {
-    var $showResultsButton = $(keys.showResultsButtonClass);
-    if ($showResultsButton.length > 0) {
-      $showResultsButton.removeAttr('disabled');
-      $('.a-js-results').addClass('a-js-forceHidden');
-      $('.a-js-alternativeResults').addClass('a-js-forceHidden');
-      $('.a-js-moreResults').addClass('a-js-forceHidden');
-      $showResultsButton.show();
-    }
+    return dataUrl;
   }
 
   function getSelection() {
@@ -4423,99 +4376,239 @@ var genericSearch = function() {
     });
   }
 
-  function onTagChecked() {
-    var aboveCount = 0;
-    var belowCount = 0;
-    var filteredList = [];
-
-    showResults();
-    page = 1;
-    $('.a-js-none').show().prev().hide();
-    $container.find('.a-js-result').hide();
-    $altContainer.find('.a-js-result').hide();
-    getSelection();
-    setHistoryState();
-    dimensions.forEach(function(dimension, index) {
-      $('.a-js-filterDim' + (index + 1))
-        .find('.a-js-none')
-        .hide()
-        .prev()
-        .show()
-        .find('.badge')
-        .html(dimension.selectedCount);
-      if ($('.a-js-filterDim' + (index + 1)).find('.a-js-plural')) {
-        $('.a-js-filterDim' + (index + 1))
-          .find('.a-js-plural')[dimension.selectedCount > 1 ? 'show' : 'hide']();
-      }
-      if ($('.a-js-filterDim' + (index + 1)).find('.a-js-singular')) {
-        $('.a-js-filterDim' + (index + 1))
-          .find('.a-js-singular')[dimension.selectedCount === 1 ? 'hide' : 'show']();
-      }
-    });
-    filteredList = dataList.filter(grinder);
-    filteredList.forEach(function(item, index) {
-      $('#' + item.id)[index < 20 ? 'show' : 'hide']();
-      if (item.isAbove) {
-        aboveCount += 1;
-        $('#' + item.altId)[aboveCount < 20 ? 'show' : 'hide']();
-      }
-    });
-    filteredList.forEach(function(item, index) {
-      if (item.isBelow) {
-        belowCount += 1;
-        $('#' + item.altId)[
-          aboveCount < 20 && belowCount < (20 - aboveCount) ? 'show' : 'hide']();
-      }
-    });
-    setTimeout(function() {
-      $('.a-js-extraHeading')[
-        $('.a-js-underneath').is(':visible') ? 'show' : 'hide']();
-    }, 1);
-    loadMoreButton()[filteredList.length < 20 ? 'hide' : 'show']();
-    empty[filteredList.length === 0 ? 'show' : 'hide']();
-    setContainerVisibility();
+  function userHasSelectedTags() {
+    return selection.length > 0;
   }
 
-  function appendExtraContentHeading() {
-    $altContainer.append('<span class="a-js-top"></span>');
-    $altContainer.append($altContainer.attr('data-extraresultsheading'));
-    $altContainer.append('<span class="a-js-bottom"></span>');
+  function setHistoryState() {
+    var newurl = window.location.pathname;
+    var urlQueryString = '?filter=';
+    if (selection.length > 0) {
+      urlQueryString += selection.join(',');
+      newurl += urlQueryString;
+    }
+    if (history.replaceState) {
+      window.history.replaceState({
+        path: newurl
+      }, '', newurl);
+    }
+  }
+
+  function getUrlFilter() {
+    if (urlQuery('filter')) {
+      selection = urlQuery('filter').split(',');
+    }
+  }
+
+  function hideContainers() {
+    elements.$container.hide();
+    elements.$altContainer.hide();
+  }
+
+  function showContainers() {
+    if (dimensions[1].isSelected) {
+      elements.$container.hide();
+      elements.$altContainer.show();
+      elements.$altContainer.removeClass(keys.forceHiddenClass);
+    } else {
+      elements.$container.show();
+      elements.$container.removeClass(keys.forceHiddenClass);
+      elements.$altContainer.hide();
+    }
+  }
+
+  function setElementsVisibility(filteredList) {
+    if (userHasSelectedTags()) {
+      elements.$loadMoreButton[filteredList.length <= articlesPerPage * page ? 'hide' : 'show']();
+      elements.$noResultsMessage[filteredList.length === 0 ? 'show' : 'hide']();
+      elements.$showResultsButton.removeAttr('disabled');
+      elements.$showResultsButton.removeClass(keys.forceHiddenClass);
+      elements.$showResultsButton.show();
+    } else {
+      elements.$showResultsButton.hide();
+    }
+  }
+
+  function showResults() {
+    $('.a-collapse-title').not('.collapsed').click();
+    elements.$container.removeClass(keys.forceHiddenClass);
+    elements.$altContainer.removeClass(keys.forceHiddenClass);
+    elements.$loadMoreButton.removeClass(keys.forceHiddenClass);
+    elements.$showResultsButton.hide();
+    showContainers();
+    $('body').scrollTop($('.a-js-filterDim1').offset().top - 12);
+  }
+
+  function setDimenstionLabels() {
+    var $dimensionSectionContainer = null;
+    var $noSelectionLabel = null;
+    var $selectionLabel = null;
+    var $selectionLabelType = null;
+
+    dimensions.forEach(function(dimension, index) {
+      $dimensionSectionContainer = $('.a-js-filterDim' + (index + 1));
+      $noSelectionLabel = $dimensionSectionContainer.find('.a-js-none');
+      $selectionLabel = $noSelectionLabel.prev();
+      $selectionLabel.find('.badge').html(dimension.selectedCount);
+      $selectionLabelType = $selectionLabel.find('.a-js-card-filter-type');
+      switch (dimension.selectedCount) {
+      case 0:
+        $noSelectionLabel.show();
+        $selectionLabel.hide();
+        break;
+      case 1:
+        $noSelectionLabel.hide();
+        $selectionLabel.show();
+        $selectionLabelType.text($selectionLabelType.attr('data-singular-text'));
+        break;
+      default:
+        $noSelectionLabel.hide();
+        $selectionLabel.show();
+        $selectionLabelType.text($selectionLabelType.attr('data-plural-text'));
+        break;
+      }
+    });
+  }
+
+  function hideResultItems() {
+    elements.$container.find('.a-js-result').hide();
+    elements.$altContainer.find('.a-js-result').hide();
+  }
+
+  function setAboveItemsVisibility(filteredList, maxNumberOfItemsToDisplay) {
+    var aboveCount = 0;
+    var i = 0;
+    var item;
+
+    while (i < filteredList.length && aboveCount < maxNumberOfItemsToDisplay) {
+      item = filteredList[i];
+      $('#' + item.id).show();
+      if (item.isAbove) {
+        $('#' + item.altId).show();
+        aboveCount += 1;
+      }
+      i += 1;
+    }
+
+    return aboveCount;
+  }
+
+  function setBelowItemsVisibility(filteredList, maxNumberOfItemsToDisplay) {
+    var showExtraHeading = false;
+    var belowCount = 0;
+    var i = 0;
+    var item;
+    var $altItem = null;
+
+    while (i < filteredList.length
+      && belowCount < maxNumberOfItemsToDisplay) {
+      item = filteredList[i];
+      if (!item.isAbove) {
+        $altItem = $('#' + item.altId);
+        if ($altItem.hasClass(keys.generalArticleSelector)) {
+          showExtraHeading = true;
+        }
+        $altItem.show();
+        belowCount += 1;
+      }
+      i += 1;
+    }
+
+    return showExtraHeading;
+  }
+
+  function filterArticles() {
+    var aboveCount = 0;
+    var filteredList = [];
+    var showExtraHeading;
+    var maxNumberOfItemsToDisplay;
+
+    getSelection();
+    setHistoryState();
+    setDimenstionLabels();
+    hideResultItems();
+    filteredList = dataList.filter(grinder);
+    maxNumberOfItemsToDisplay = articlesPerPage * page;
+
+    aboveCount = setAboveItemsVisibility(filteredList, maxNumberOfItemsToDisplay);
+    if (aboveCount < maxNumberOfItemsToDisplay) {
+      maxNumberOfItemsToDisplay -= aboveCount;
+      showExtraHeading = setBelowItemsVisibility(filteredList, maxNumberOfItemsToDisplay);
+    }
+
+    if (showExtraHeading) {
+      elements.$extraResultsHeading.show();
+    } else {
+      elements.$extraResultsHeading.hide();
+    }
+
+    setElementsVisibility(filteredList);
+    hideContainers();
+  }
+
+  function appendExtraResultsHeading() {
+    elements.$altContainer.append('<span class="a-js-top"></span>');
+    elements.$altContainer.append(elements.$altContainer.attr('data-extraresultsheading'));
+    elements.$altContainer.append('<span class="a-js-bottom"></span>');
+    elements.$extraResultsHeading = $('.a-js-extraHeading');
+  }
+
+  function createResultElement(template, name, url, description, id, cssClasses) {
+    return template.replace('%NAME%', name)
+      .replace(/%URL%/g, url)
+      .replace('%DESC%', description || 'Ingen beskrivelse.')
+      .replace('%IDENTIFIER%', id)
+      .replace('a-linkArticle', cssClasses);
   }
 
   function buildResultsList(mappedKeys) {
-    var extraCssClass = '';
+    var element;
+    var name;
+    var url;
+    var description;
+    var id;
+    var cssClasses;
+
     dataList.forEach(function(item, index) {
       dataList[index].id = 'result-' + index;
       dataList[index].altId = 'altResult-' + index;
-      $container.append(
-        base.replace('%NAME%', item[mappedKeys.NAME]).replace(/%URL%/g, item[mappedKeys.URL])
-          .replace('%DESC%', item[mappedKeys.DESC] || 'Ingen beskrivelse.')
-          .replace('%IDENTIFIER%', 'result-' + index)
-          .replace('a-linkArticle', 'a-linkArticle a-js-result'));
-      if (item.Industries.length !== 0) {
-        extraCssClass = '';
+      if (item.Purposes.length !== 0 || item.Industries.length !== 0) {
         dataList[index].isAbove = true;
       } else {
-        dataList[index].isBelow = true;
-        extraCssClass = ' a-js-underneath';
+        dataList[index].isAbove = false;
       }
-      $altContainer.find('.a-js-extraHeading').before(
-        base.replace('%NAME%', item[mappedKeys.NAME]).replace(/%URL%/g, item[mappedKeys.URL])
-          .replace('%DESC%', item[mappedKeys.DESC] || 'Ingen beskrivelse.')
-          .replace('%IDENTIFIER%', 'altResult-' + index)
-          .replace('a-linkArticle', 'a-linkArticle a-js-result' + extraCssClass));
+      name = item[mappedKeys.NAME];
+      url = item[mappedKeys.URL];
+      description = item[mappedKeys.DESC] || 'Ingen beskrivelse.';
+      id = 'result-' + index;
+      cssClasses = 'a-linkArticle a-js-result';
+      element = createResultElement(base, name, url, description, id, cssClasses);
+      elements.$container.append(element);
+
+      id = 'altResult-' + index;
+      if (dataList[index].isAbove) {
+        element = createResultElement(base, name, url, description, id, cssClasses);
+        elements.$extraResultsHeading.before(element);
+      } else {
+        cssClasses = 'a-linkArticle a-js-result ' + keys.generalArticleSelector;
+        element = createResultElement(base, name, url, description, id, cssClasses);
+        elements.$altContainer.append(element);
+      }
     });
-    $container.find('.a-js-result').each(function(index, item) {
-      $(this)[index < 20 * page ? 'show' : 'hide']();
+    elements.$container.find('.a-js-result').each(function(index, item) {
+      $(this)[index < articlesPerPage * page ? 'show' : 'hide']();
     });
-    loadMoreButton().show();
-    $altContainer.hide();
+    resetPage();
+    elements.$loader.hide();
+    filterArticles();
   }
 
-  function buildTagsAndDimensions(data) {
-    var lastKeypress;
-    var iterate;
-    var mappedKeys = {};
+  function toggleTag() {
+    resetPage();
+    filterArticles();
+  }
+
+  function getDimensionNames() {
     var dimensionNames;
     var dimensionAliases;
     var dimensionIndex;
@@ -4523,8 +4616,8 @@ var genericSearch = function() {
     var i;
 
     dimensions = [];
-    dimensionNames = $('.a-js-genericSearch').attr('data-dimensions').split(',');
-    dimensionAliases = $('.a-js-genericSearch').attr('data-dimensionsaliases').split(',');
+    dimensionNames = $(keys.genericSearchSelector).attr('data-dimensions').split(',');
+    dimensionAliases = $(keys.genericSearchSelector).attr('data-dimensionsaliases').split(',');
     for (i = 0; i < dimensionNames.length; i += 1) {
       dimensions.push({
         name: dimensionNames[i],
@@ -4533,16 +4626,32 @@ var genericSearch = function() {
         selectedCount: 0
       });
     }
+  }
 
-    $('.a-js-genericSearch').attr('data-mappedkeys').split(',').forEach(function(pair) {
+  function getMappedKeys() {
+    var mappedKeys = {};
+    var parts;
+
+    $(keys.genericSearchSelector).attr('data-mappedkeys').split(',').forEach(function(pair) {
       parts = pair.split('=');
       mappedKeys[parts[0]] = parts[1];
     });
 
+    return mappedKeys;
+  }
+
+  function buildTagsAndDimensions(data) {
+    var lastKeypress;
+    var iterate;
+    var mappedKeys;
+
+    getDimensionNames();
+    mappedKeys = getMappedKeys();
+
     dimensions.forEach(function(dimension, index) {
       var hasNote = $('.a-js-filterDim' + (index + 1)).find('.d-block').length > 0;
-      var where = data[dimension + 'List'] ?
-        data[dimension + 'List'] : data[dimensions[index].alias + 'List'];
+      var where = data[dimension.name + 'List'] ?
+        data[dimension.name + 'List'] : data[dimensions[index].alias + 'List'];
       where.forEach(function(item) {
         var $tag = $('<div class="a-switch">' +
           $('.a-js-filterDim' + (index + 1)).find('.a-switch').eq(0).html()
@@ -4550,7 +4659,7 @@ var genericSearch = function() {
             .replace('%TITLE%', item[mappedKeys.TITLE]) + '</div>');
         var $input = $tag.find('input[type="checkbox"]');
         var tagId = urlFilterPrefix($input.attr('id'));
-        if (currentFilter.indexOf(tagId) !== -1) {
+        if (arrayIncludes(selection, tagId)) {
           $input.attr('checked', true);
         }
         $('.a-js-filterDim' + (index + 1))
@@ -4558,31 +4667,24 @@ var genericSearch = function() {
       });
       $('.a-js-filterDim' + (index + 1)).find('.a-switch').eq(0).hide();
     });
-    appendExtraContentHeading();
+    tags().on('change', toggleTag);
     // Give the browser time to update the UI
     setTimeout(function() {
       buildResultsList(mappedKeys);
     }, 0);
-    tags().on('change', function() {
-      onTagChecked();
-    });
   }
 
-  function afterRequest(data, paginating) {
+  function processData(data) {
     var lastKeypress;
     var iterate;
 
     if (inputBy === 'filter') {
-      // Do we need to sort the results?
-      dataList = data.SubsidiesList; // .sort(dynamicSort('SubsidyName'));
+      // We keep the order the in the data sent by the server
+      dataList = data.SubsidiesList;
     }
-    $('.a-js-genericSearch').next().find(keys.tagFilterSectionClass).show();
-    $container.show();
-    if ($altContainer) {
-      $altContainer.show();
-    }
+    $(keys.genericSearchSelector).next().find(keys.tagFilterSectionSelector).show();
     if (inputBy === 'search') {
-      $('.a-js-genericSearch').find('form').on('keyup keypress', function(e) {
+      $(keys.genericSearchSelector).find('form').on('keyup keypress', function(e) {
         var keyCode = e.keyCode || e.which;
         if (keyCode === 13) {
           e.preventDefault();
@@ -4590,18 +4692,18 @@ var genericSearch = function() {
         }
         return true;
       });
-      $('.a-js-genericSearch').find('form').find('input[type=search]')
+      $(keys.genericSearchSelector).find('form').find('input[type=search]')
         .on('keypress', function() {
           lastKeypress = new Date().getTime();
           iterate = true;
-          loader.show();
-          legend.hide();
-          empty.hide();
-          $container.html('');
+          elements.$loader.show();
+          elements.$legend.hide();
+          elements.$noResultsMessage.hide();
+          elements.$container.html('');
         }
       );
       setInterval(function() {
-        var value = $('.a-js-genericSearch').find('form').find('input[type=search]')
+        var value = $(keys.genericSearchSelector).find('form').find('input[type=search]')
           .val();
         var query = value !== undefined ? value.toLowerCase() : '';
         if (query.length > 0 && (new Date().getTime() - lastKeypress > 1500) && iterate) {
@@ -4609,93 +4711,88 @@ var genericSearch = function() {
           data.items.forEach(function(item) {
             if (item.name.toLowerCase().indexOf(query) !== -1 ||
               item.parent.toLowerCase().indexOf(query) !== -1) {
-              $container[item.name.toLowerCase().indexOf(query) !== -1 ? 'prepend' : 'append'](
+              elements.$container[item.name.toLowerCase().indexOf(query) !== -1 ? 'prepend' : 'append'](
                 base.replace('%NAME%', item.name).replace('%PARENT%', item.parent)
                   .replace(/%URL%/g, item.url).replace('../..', '')
               );
             }
           });
-          loader.hide();
-          empty[$container.html() === '' ? 'show' : 'hide']();
-          legend[$container.html() === '' ? 'hide' : 'show']();
+          elements.$loader.hide();
+          elements.$noResultsMessage[elements.$container.html() === '' ? 'show' : 'hide']();
+          elements.$legend[elements.$container.html() === '' ? 'hide' : 'show']();
         }
       }, 2000);
-    } else if (paginating) {
-      renderPaginatedResults(data);
     } else {
       buildTagsAndDimensions(data);
     }
-
-    loadMoreButton().on('click', function() {
-      afterRequest(data, true);
-    });
-    loader.hide();
-  }
-
-  function onSuccess(data) {
-    afterRequest(data, false);
   }
 
   function onSecondError() {
-    $.getJSON(dataSource[2] + '/' + $('html').attr('lang'), onSuccess);
+    $.getJSON(getDataSource(2), processData);
   }
 
   function onError() {
     $.ajax({
-      type: 'GET', url: dataSource[1] + '/' + $('html').attr('lang'), success: onSuccess, error: onSecondError
+      type: 'GET', url: getDataSource(1), success: processData, error: onSecondError
     });
   }
 
-  if ($('.a-js-genericSearch').length > 0) {
-    getUrlFilter();
-    dataSource = $('.a-js-genericSearch').attr('data-source').split(',');
+  function addEventHandlers() {
+    elements.$showResultsButton.on('click', showResults);
+    elements.$loadMoreButton.on('click', function() {
+      page += 1;
+      filterArticles();
+      showContainers();
+    });
+  }
 
-    if ($(keys.showResultsButtonClass).length > 0) {
-      $('.a-js-results').addClass('a-js-forceHidden');
-      $('.a-js-alternativeResults').addClass('a-js-forceHidden');
-      $('.a-js-moreResults').addClass('a-js-forceHidden');
-      $(keys.showResultsButtonClass).attr('disabled', 'disabled');
-      $(keys.showResultsButtonClass).on('click', function() {
-        $('.a-collapse-title').not('.collapsed').click();
-        $('.a-js-results').removeClass('a-js-forceHidden');
-        $('.a-js-alternativeResults').removeClass('a-js-forceHidden');
-        $('.a-js-moreResults').removeClass('a-js-forceHidden');
-        $(keys.showResultsButtonClass).hide();
-        $('body').scrollTop($('.a-js-filterDim1').offset().top - 12);
-      });
-    }
-    $('.a-js-none').show().prev().hide();
-    inputBy = $('.a-js-genericSearch').find('input[type=search]').length > 0 ? 'search' : 'filter';
+  function findElements() {
     if (inputBy === 'search') {
-      $container = $('.a-js-genericSearch').find('.a-list');
-      $altContainer = null;
+      elements.$container = $(keys.genericSearchSelector).find('.a-list');
+      elements.$altContainer = null;
     } else {
-      $container = $('.a-js-genericSearch').next().find('.a-js-results');
-      $altContainer = $('.a-js-genericSearch').next().find('.a-js-alternativeResults');
+      elements.$container = $(keys.genericSearchSelector).next().find('.a-js-results');
+      elements.$altContainer = $(keys.genericSearchSelector).next().find('.a-js-alternativeResults');
     }
-    $container.find('li:gt(0)').remove();
-    $container.find('.a-js-result:gt(0)').remove();
-    base = $container.html();
-    $container.html('');
-    $genericSearch = $('.a-js-genericSearch');
+    base = elements.$container.html();
+    elements.$genericSearch = $(keys.genericSearchSelector);
     if (inputBy !== 'search') {
-      $genericSearch = $genericSearch.next();
+      elements.$genericSearch = elements.$genericSearch.next();
     }
-    legend = $genericSearch.find('.a-legend');
-    loader = $genericSearch.find('.a-loader');
-    empty = $genericSearch.find('.a-js-noResults');
-    empty.hide();
-    legend.hide();
-    if ($altContainer) {
-      $altContainer.html('');
-    }
+    elements.$legend = elements.$genericSearch.find('.a-legend');
+    elements.$loader = elements.$genericSearch.find('.a-loader');
+    elements.$noResultsMessage = elements.$genericSearch.find('.a-js-noResults');
+    elements.$showResultsButton = $(keys.showResultsButtonSelector);
+    elements.$loadMoreButton = $('.a-js-moreResults');
+  }
 
+  function initialLayout() {
+    elements.$container.find('li:gt(0)').remove();
+    elements.$container.find('.a-js-result:gt(0)').remove();
+    elements.$container.html('');
+    elements.$altContainer.html('');
+  }
+
+  function getInputType() {
+    inputBy = $(keys.genericSearchSelector).find('input[type=search]').length > 0 ? 'search' : 'filter';
+  }
+
+  function getData() {
+    var dataUrl = getDataSource(0);
+    // This line only for development, do not commit uncommented
+    // dataUrl = '/data/getsubsidy.json';
+    $.ajax({ type: 'GET', url: dataUrl, success: processData, error: onError });
+  }
+
+  if ($(keys.genericSearchSelector).length > 0) {
+    getUrlFilter();
+    getInputType();
+    findElements();
+    initialLayout();
+    appendExtraResultsHeading();
+    addEventHandlers();
     // Give the browser time to update the UI
-    setTimeout(function() {
-      var dataUrl = dataSource[0];
-      // dataUrl = '/data/getsubsidy.json';
-      $.ajax({ type: 'GET', url: dataUrl, success: onSuccess, error: onError });
-    }, 0);
+    setTimeout(getData, 0);
   }
 };
 
@@ -4775,6 +4872,39 @@ var listenForAttachmentChanges = function(formId, errorMessageCallback) {
 };
 
 /* globals $ */
+
+var newsArchive = function() {
+  var page = 1;
+  var numberOfItemsPerPage = 5;
+  var rootSelector = '.a-newsArchive';
+  var articleCssSelector = '.a-linkArticle';
+  var $loadMoreButton = $('.a-btn-loadMore');
+  var articlesCount = $(articleCssSelector).length;
+
+  function visibleItems() {
+    return page * numberOfItemsPerPage;
+  }
+
+  function setButtonVisibility() {
+    if (articlesCount <= visibleItems()) {
+      $loadMoreButton.hide();
+    }
+  }
+
+  if ($(rootSelector).length > 0) {
+    $loadMoreButton.on('click', function() {
+      var articles;
+      page += 1;
+      $(':nth-child(n+' + (visibleItems() + 1) + ')' + articleCssSelector).hide();
+      $(':nth-child(-n+' + visibleItems() + ')' + articleCssSelector).show();
+      setButtonVisibility();
+    });
+
+    setButtonVisibility();
+  }
+};
+
+/* globals $ */
 var questionnaireInteraction = function() {
   $('.a-trigger-question').each(function() {
     $(this).find('input').on('change', function() {
@@ -4841,66 +4971,7 @@ function setupFormValidation(formId, buttonId) {
       validateBackwards(el.prev());
     }
   };
-  $(formId + ' .a-js-dropdownToValidate').each(function() {
-    $(this).attr('data-dropdowndefaultvalue', $(this).find('.a-form-text').text());
-  });
-
-  if (!buttonId) {
-    $submitBtn = $(formId + ' button[type="submit"]');
-  }
-  $.validator.unobtrusive.parse($(formId));
-
-  $submitBtn.addClass('disabled');
-  $submitBtn.prop('disabled', 'disabled');
-
-  $(formId).on('blur input change', '*', function() {
-    var str;
-    if ($(formId).validate().checkForm() && validAllDropdowns() && validAllReferancials()) {
-      $submitBtn.prop('disabled', false);
-      $submitBtn.removeClass('disabled');
-    } else {
-      $submitBtn.prop('disabled', 'disabled');
-      $submitBtn.addClass('disabled');
-    }
-
-    if (!wasSubmitted) {
-      $(formId).validate().submitted = {};
-    }
-  });
-
-  $(formId + ' input').on('blur', function() {
-    $(this).valid();
-    validateBackwards($(this).closest('.form-group'));
-  });
-
-  $(formId + ' textarea').on('blur', function() {
-    $(this).valid();
-    validateBackwards($(this).closest('.form-group'));
-  });
-
-  $(formId + ' .a-js-dropdownToValidate').next().on('click', function() {
-    setTimeout(function() {
-      validDropdown($(this).prev());
-    }.bind(this), 0);
-    validateBackwards($(this).closest('.form-group'));
-  });
-
-  $(formId + ' .a-js-dropdownToValidate').on('blur', function() {
-    validDropdown($(this));
-    validateBackwards($(this).closest('.form-group'));
-  });
-  $('.a-js-certificateContainer').on('focus', function() {
-    $('.a-js-certificateContainer').closest('label').addClass('a-custom-fileupload--focused');
-  });
-  $('.a-js-certificateContainer').on('blur', function() {
-    $('.a-js-certificateContainer').closest('label').removeClass('a-custom-fileupload--focused');
-  });
-  $('.a-js-validateThisAgainstPrev').each(function() {
-    storedString = $(this).closest('.form-group').prev().find('input')
-      .attr('data-val-regex');
-  });
-  $('.a-js-validateThisAgainstPrev').on('change blur keyup', function(e) {
-    e.stopPropagation();
+  var validateAgainstPrev = function() {
     if ($(this).closest('.form-group').prev().find('.a-message-error')
       .text() !== '') {
       $(this).closest('.form-group').find('.a-message-error').text(
@@ -4925,6 +4996,79 @@ function setupFormValidation(formId, buttonId) {
       $(this).closest('.a-form-group').removeClass('has-error').find('.a-message-error')
         .css('display', 'none');
     }
+  };
+
+  var validateForm = function() {
+    var str;
+    if ($(formId).validate().checkForm() && validAllDropdowns() && validAllReferancials()) {
+      $submitBtn.prop('disabled', false);
+      $submitBtn.removeClass('disabled');
+    } else {
+      $submitBtn.prop('disabled', 'disabled');
+      $submitBtn.addClass('disabled');
+    }
+
+    if (!wasSubmitted) {
+      $(formId).validate().submitted = {};
+    }
+  };
+
+  $(formId + ' .a-js-dropdownToValidate').each(function() {
+    $(this).attr('data-dropdowndefaultvalue', $(this).find('.a-form-text').text());
+  });
+
+  if (!buttonId) {
+    $submitBtn = $(formId + ' button[type="submit"]');
+  }
+  $.validator.unobtrusive.parse($(formId));
+
+  $submitBtn.addClass('disabled');
+  $submitBtn.prop('disabled', 'disabled');
+
+  $(formId).on('blur input change', '*', validateForm);
+
+  $(formId + ' .a-js-dropdownToValidate').next().on('click', function() {
+    setTimeout(function() {
+      validDropdown($(this).prev());
+    }.bind(this), 0);
+    validateBackwards($(this).closest('.form-group'));
+  });
+
+  $(formId + ' .a-js-dropdownToValidate').on('blur', function() {
+    validDropdown($(this));
+    validateBackwards($(this).closest('.form-group'));
+  });
+  $('.a-js-certificateContainer').on('focus', function() {
+    $('.a-js-certificateContainer').closest('label').addClass('a-custom-fileupload--focused');
+  });
+  $('.a-js-certificateContainer').on('blur', function() {
+    $('.a-js-certificateContainer').closest('label').removeClass('a-custom-fileupload--focused');
+  });
+  $('.a-js-validateThisAgainstPrev').each(function() {
+    storedString = $(this).closest('.form-group').prev().find('input')
+      .attr('data-val-regex');
+  });
+
+  $(formId + ' .form-control').not('.a-js-validateThisAgainstPrev').on('blur change', function() {
+    var $nextInput = $('#text-input-epost1').closest('.form-group').next().find('.a-js-validateThisAgainstPrev');
+    if ($nextInput.length > 0 && $nextInput.val() !== '') {
+      validateAgainstPrev.bind($nextInput)();
+      setTimeout(function() {
+        validateForm();
+      }, 0);
+    }
+  });
+  $('.a-js-validateThisAgainstPrev').on('keyup', function(e) {
+    var hasError = $(this).closest('.form-group').hasClass('has-error');
+    e.stopPropagation();
+    if (hasError) {
+      validateAgainstPrev.bind(this)();
+    }
+  });
+
+  $('.a-js-validateThisAgainstPrev').on('change blur', function(e) {
+    e.stopPropagation();
+    validateAgainstPrev.bind(this)();
   });
 }
 
@@ -5003,7 +5147,8 @@ var uniformHeight = function() {
   articleAnchors,
   subscribe,
   setupFormValidation,
-  listenForAttachmentChanges
+  listenForAttachmentChanges,
+  newsArchive
 */
 window.infoportalInit = function() {
   colnavCustom();
@@ -5014,6 +5159,7 @@ window.infoportalInit = function() {
   subscribe();
   setupFormValidation();
   listenForAttachmentChanges();
+  newsArchive();
   function setupForm1() {
     $('body').off('focus', '#contactForm', setupForm1);
     setupFormValidation('#contactForm', '#a-js-contactForm-submit');
@@ -5322,10 +5468,12 @@ AltinnModal = {
       $(settings.target).on('hidden.bs.modal', function() {
         $(settings.target + ' .a-modal-content-target').empty();
         $(settings.target).attr('aria-hidden', true);
+        $('#altinnModal').siblings('.row').removeClass('d-none');
       });
 
       $(settings.target).on('shown.bs.modal', function() {
         $(settings.target).removeAttr('aria-hidden');
+        $('#altinnModal').siblings('.row').addClass('d-none');
       });
       popoverLocalInit();
 
@@ -5339,9 +5487,10 @@ AltinnModal = {
       }
 
       AltinnLoader.removeLoader($('body'));
-      $(settings.target).on('transitionend', function() {
-        $(settings.target).append($('.a-stickyHelp-container'));
-      });
+      // causes issues in IE11 (blinking quickhelp when modal is open)
+      // $(settings.target).on('transitionend', function() {
+      // $(settings.target).append($('.a-stickyHelp-container'));
+      // });
     });
   },
 
@@ -6156,13 +6305,15 @@ var popoverLocalInit = function() {
   $('[data-toggle="popover"]').popover(options);
 
   $('.a-js-togglePopoverIcons').each(function() {
-    $(this).find('i').eq(1).hide();
-    // $(this).find('.a-js-popoverIconExpanded').hide();
+    // $(this).find('i').eq(1).hide();
+    $(this).find('.a-js-popoverIconExpanded').hide();
   });
 
   $('.a-js-popoverIconExpanded').on('click', function() {
-    $(this).hide();
-    $(this).parent().find('.a-js-popoverIconInitial').show();
+    $('.a-js-popoverIconExpanded').hide();
+    $('.a-js-popoverIconInitial').show();
+    // $(this).hide();
+    // $('.a-js-popoverIconInitial').show();
   });
   $('.a-js-popoverIconInitial').on('click', function() {
     $(this).hide();
@@ -6233,6 +6384,8 @@ var popoverGlobalInit = function() {
       && $(e.target).parents('.popover.show').length === 0) {
       $('[data-toggle="popover"]').popover('hide');
       forceFocusTriggerElement = false;
+      $(this).parent().find('.a-js-popoverIconInitial').show();
+      $(this).parent().find('.a-js-popoverIconExpanded').hide();
     }
   });
 

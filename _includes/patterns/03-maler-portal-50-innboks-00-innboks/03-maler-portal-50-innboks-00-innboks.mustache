@@ -1,4 +1,4 @@
-<!-- START: 03-maler-portal-50-innboks-00-innboks -->
+
 {{# show-mainheader }} {{> organismer-header }} {{/ show-mainheader }} {{# show-subheader }} {{> organismer-subheader }} {{/ show-subheader }}
 <div class="a-overlay-container d-none" tabindex="-1">
   {{> organismer-filter }}
@@ -23,8 +23,7 @@
         {{# new-form }} {{> atomer-handlingsknapp }} {{/ new-form }}
       </div>
       {{# vis-toppoppgaver }} {{> molekyler-toppoppgaver }} {{/ vis-toppoppgaver }}
-
-      <div class="hidden-md-down">
+      <div class="hidden-md-down">
         <p class="a-fontSizeS mt-2 mb-1">Lagrede søk</p>
         {{# vis-lagrede-sok }} {{> molekyler-toppoppgaver }} {{/ vis-lagrede-sok }}
       </div>
@@ -71,8 +70,7 @@
               {{> atomer-seksjonstittel }}
             </div>
           </div>
-
-          {{# messages }}
+          {{# messages }}
           <div class="row">
             <div class="col-sm-12 col-lg-12">
               <div {{# accordion-large-id }}id="{{ accordion-large-id }}" {{/ accordion-large-id }} class="a-panelAccordion" role="tablist">
@@ -101,4 +99,3 @@
   {{/ sidebar }}
 </div>
 {{> organismer-footer }} {{> molekyler-hjelp-container }}
-<!-- END: 03-maler-portal-50-innboks-00-innboks -->

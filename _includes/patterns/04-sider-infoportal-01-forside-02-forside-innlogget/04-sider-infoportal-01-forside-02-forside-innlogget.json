@@ -484,8 +484,11 @@
 	"byline": true,
 	"hr": true,
 	"jumbo-articlestart": false,
+	"jumbo-md-class": "col-md-12",
 	"jumbo-md-offset-class": "offset-md-0",
+	"jumbo-lg-class": "col-lg-10",
 	"jumbo-lg-offset-class": "offset-lg-1",
+	"jumbo-xl-class": "col-xl-8",
 	"jumbo-xl-offset-class": "offset-xl-2",
 	"pagestart": {
 		"page-title": "Hei Jan,",
@@ -495,6 +498,7 @@
 		"jumbo-search": {
 			"isLarge": "a-form-group-large",
 			"isHidden": "sr-only",
+			"text-input-id": "search",
 			"top-label": "Søk etter innhold",
 			"text-input-placeholder": "Søk etter innhold",
 			"isInput-group": "input-group",
@@ -515,6 +519,7 @@
 		}
 	},
 	"jumbotron-image-url": "url('../../images/header-bg-help.svg')",
+	"jumbotron-bgcolor": "#cff0ff",
 	"jumbo-smulesti": false,
 	"jumbotron-styles": "a-jumbotron-header a-jumbotron-light",
 	"check-legend": {
@@ -922,9 +927,6 @@
 	"bodyClass": "a-bgWhite home",
 	"login-or-switchuser": "",
 	"url": "#",
-	"jumbo-md-class": "col-md-12",
-	"jumbo-lg-class": "col-lg-10",
-	"jumbo-xl-class": "col-xl-8",
 	"artikkelsok": false,
 	"article-search": false,
 	"list-header": "Aktuelle skjema og tjenester:",
@@ -1090,7 +1092,6 @@
 		"figCaption": "Informasjon om alt det offentlige krever av deg som privatperson finner du på <a href=\"http://norge.no\">norge.no</a>"
 	},
 	"newslist": true,
-	"jumbotron-bgcolor": "#cff0ff",
 	"front-main-button": false,
 	"front-main-button-text-right": "",
 	"login-represent": "",

@@ -1,12 +1,11 @@
-<!-- START: 02-organismer-70-Modal-innhold-20-se-og-fjern-samtykke -->
+
 <div {{# isModal }} class="modal-body a-modal-body" {{/ isModal }}>
   {{^ hide-top-section }}
   <div class="row">
     <div class="col-12 col-md-6 col-lg-7">
       {{# person-rolle }} {{> molekyler-person-rolle }} {{/ person-rolle }}
     </div>
-
-    {{# showButton }}
+    {{# showButton }}
     <div class="col-12 col-md pt-1">
       {{> atomer-knapp-med-popover }}
     </div>
@@ -52,4 +51,3 @@
   </div>
   {{/ bottom-button-row }}
 </div>
-<!-- END: 02-organismer-70-Modal-innhold-20-se-og-fjern-samtykke -->

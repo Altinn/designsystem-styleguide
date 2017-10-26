@@ -1,75 +1,56 @@
-<!-- START: 02-organismer-70-Modal-innhold-_30-starte-enk -->
+
 <!-- Modal -->
 <span class="a-scene a-page">
   <div class="a-modal {{ bodyClass }}" id="{{ modal-id }}" tabindex="-1" role="dialog" aria-labelledby="{{ modal-label }}" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
-
-      <div class="container">
+      <div class="container">
         <div class="row">
           <div class="col-md-12">
-
-            <!-- Modal Header -->
+            <!-- Modal Header -->
               {{> molekyler-modal-header }}
-            <!-- END Modal Header -->
-
-          </div>
+            
+          </div>
         </div>
-
-        <div class="row">
+        <div class="row">
           <div class="col-xl-10 offset-xl-1">
-
-            <!-- Modal NavBar -->
+            <!-- Modal NavBar -->
             {{> molekyler-modal-navbar }}
-            <!-- END Modal NavBar -->
+            
           </div>
         </div>
-
-        <div class="row">
+        <div class="row">
           <div class="col-xl-10 offset-xl-1">
-
-            <!-- Modal window -->
+            <!-- Modal window -->
             <span class="a-right-panel a-page a-scene-element {{ animationClass }}">
-
-              <div class="modal-content">
-
-                <!-- Modal Body header -->
+              <div class="modal-content">
+                <!-- Modal Body header -->
                 {{> molekyler-modal-body-header }}
-
-                <!-- Modal Body content -->
+                <!-- Modal Body content -->
                 <div class="modal-body a-modal-body">
-
-                  <!-- TITLE -->
+                  <!-- TITLE -->
                   {{# modal-title }}
                     {{> atomer-seksjonstittel:mb-2 }}
                   {{/ modal-title }}
-
-                  <!-- INTROTEKST -->
+                  <!-- INTROTEKST -->
                   {{# modal-lead }}
                     {{> atomer-intro-tekst }}
                   {{/ modal-lead }}
-
-                  <!-- BUTTON -->
+                  <!-- BUTTON -->
                   {{# modal-lonelyButtons }}
                     <div class="a-btn-group mt-2 hei">
-
-                      {{# modal-nextbutton }}
+                      {{# modal-nextbutton }}
                         {{> atomer-link }}
                       {{/ modal-nextbutton }}
-
-                      {{# modal-discard }}
+                      {{# modal-discard }}
                         {{> atomer-link }}
                       {{/ modal-discard }}
-
-                    </div>
+                    </div>
                   {{/ modal-lonelyButtons }}
-
-                  <!-- INPUT: OWNER INFO -->
+                  <!-- INPUT: OWNER INFO -->
                   {{# modal-input-owner }}
                     {{> organismer-skjema-innehaver }}
                   {{/ modal-input-owner }}
-
-
-                  <!-- *********************** --->
+                  <!-- *********************** --->
                   <!-- OLD INPUT: ORG NAME REMOVE--->
                   <!-- *********************** --->
                   {{# modal-input-orgName-Old }}
@@ -90,74 +71,51 @@
                     {{/ modal-discard-Old }}
                   </div>
                   <!-- *********************** --->
-                  <!-- END OLD INPUT: ORG NAME REMOVE--->
+                  
                   <!-- *********************** --->
-
-
-
-
-
-                  <!-- FIND INDUSTY CODE -->
-
-                    <!-- INPUT: KEYWORD -->
+                  <!-- FIND INDUSTY CODE -->
+                    <!-- INPUT: KEYWORD -->
                     {{# modal-input-keyword }}
                       {{> atomer-tekst-input }}
                     {{/ modal-input-keyword }}
-
-                    <!-- LOADER -->
+                    <!-- LOADER -->
                     {{# modal-loader }}
                       {{> atomer-laster-inn }}
                     {{/ modal-loader }}
-
-                    <!-- IF NO RESULTS -->
+                    <!-- IF NO RESULTS -->
                     {{# modal-empty }}
                       {{> atomer-avsnitt }}
                     {{/ modal-empty }}
-
-                    <!-- INPUT: CATEGORY -->
+                    <!-- INPUT: CATEGORY -->
                     {{# modal-chooseCategory }}
                       {{> organismer-skjema-radio }}
                     {{/ modal-chooseCategory }}
-
-                  <!-- END FIND INDUSTY CODE -->
-
-                  <!-- INPUT: DESCRIPTION -->
+                  
+                  <!-- INPUT: DESCRIPTION -->
                   {{# modal-input-description }}
                      {{> organismer-skjema-beskrivelse }}
                   {{/ modal-input-description }}
-
-                  <!-- INPUT: ADRESS -->
+                  <!-- INPUT: ADRESS -->
                   {{# modal-input-adress }}
                     {{> organismer-adresse }}
                   {{/ modal-input-adress }}
-
-                  <!-- INPUT: DATE -->
+                  <!-- INPUT: DATE -->
                   {{# modal-date }}
                     {{> organismer-dato }}
                   {{/ modal-date }}
-
-                  <!-- EXTRA INFO (Footer) -->
+                  <!-- EXTRA INFO (Footer) -->
                   {{# modal-extraInfo }}
                     {{> atomer-liste-unummerert-kuler:mx-1|mt-4|a-bulletList-light }}
                   {{/ modal-extraInfo }}
-
-                </div><!-- END Modal body -->
-
-              </div><!-- END .modal-Content -->
-
-              {{> atomer-link-hjelpefunksjon }}
-
-            </span>
-<!-- END Modal window -->
-{{> organismer-chat }}
+                </div>
+              </div>
+              {{> atomer-link-hjelpefunksjon }}
+            </span>
+{{> organismer-chat }}
 </div>
 </div>
-
-</div>
-
-
-</div>
+</div>
+</div>
 </div>
 </span>
-
-<!-- END: 02-organismer-70-Modal-innhold-_30-starte-enk -->
+

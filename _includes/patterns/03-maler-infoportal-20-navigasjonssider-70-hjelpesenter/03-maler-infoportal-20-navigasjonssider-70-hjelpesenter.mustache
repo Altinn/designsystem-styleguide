@@ -1,14 +1,10 @@
-<!-- START: 03-maler-infoportal-20-navigasjonssider-70-hjelpesenter -->
+
 <div class="a-page">
   {{# header }} {{> organismer-header }} {{/ header }}
-
-  <section id="content" tabindex="-1">
-
-    {{> molekyler-jumbotron }}
-
-    <div class="container">
-
-      {{> molekyler-illustrasjonslenke:mt-4|a-dontPrint }} {{# help-questions }}
+  <section id="content" tabindex="-1">
+    {{> molekyler-jumbotron }}
+    <div class="container">
+      {{> molekyler-illustrasjonslenke:mt-4|a-dontPrint }} {{# help-questions }}
       <div class="row mt-6">
         <div class="col-sm-12 col-lg-10 offset-lg-1">
           {{> atomer-seksjonstittel }}
@@ -26,16 +22,10 @@
         </div>
       </div>
       {{/ kontakt }} {{# kontaktskjema }} {{> organismer-modal }} {{/ kontaktskjema }}
-
-    </div>
-    <!-- END Container -->
-
-  </section>
-
-  {{> organismer-footer }}
+    </div>
+    
+  </section>
+  {{> organismer-footer }}
 </div>
-
-
-{{> molekyler-hjelp-container }}
-
-<!-- END: 03-maler-infoportal-20-navigasjonssider-70-hjelpesenter -->
+{{> molekyler-hjelp-container }}
+
