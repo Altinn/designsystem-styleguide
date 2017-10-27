@@ -20,10 +20,16 @@ variations:
 usage:
 - title: Når skal du bruke denne komponenten?
   description: Den store knappen brukes i sjeldne tilfeller der en oppgave skal fremheves, f.eks "Logg inn" eller fremheve en lenke til et aktuelt skjema. Brukes stort sett inni illustrasjonsfelt på forside.
-- title: Policies
-  description: Se theme-spesifikke policies lengre nede.
 - title: Når skal du vurdere alternativer?
   description: Dersom knappen ikke har en veldig god grunn til å være fremhevet, skal vanlige knapper benyttes.
+- title: Policies
+  description: Se theme-spesifikke policies.
+
+theme-specific-altinn:
+- description: Ingen retningslinjer er lagt inn for Altinn enda.
+
+theme-specific-brreg:
+- description: Ingen retningslinjer er lagt inn for Brønnøysundregistrene enda.
 
 classes:
 - className: a-btn a-btn-border
