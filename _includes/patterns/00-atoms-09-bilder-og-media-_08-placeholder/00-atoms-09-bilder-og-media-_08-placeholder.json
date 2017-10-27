@@ -1,3 +1,6 @@
 {
-	"imageurl": "../../images/temp-placeholder.svg"
+	"imageurl": "../../images/temp-placeholder.svg",
+	"themeCss": "../../css/style.css",
+	"themeJs": "./../../js/altinnDev.js",
+	"themeJsVendor": "../../js/altinnDev.vendor.js"
 }

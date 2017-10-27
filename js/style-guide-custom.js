@@ -46,7 +46,7 @@
  var that = this;
 
 function setProject(project) {
-  var projectCssClassPrefix = 'a-pr-';
+  var projectCssClassPrefix = 'project-';
   var $body = $('body');
   var i;
   var cssClasses = $body.attr('class').split(' ').filter(function(elem) {
@@ -62,7 +62,7 @@ function setProject(project) {
    var $dropdownElement = $(this).closest('[data-toggle="altinn-dropdown"');
    var project = $(this).data('project');
    setProject(project);
-    
+
    if ($(this).data('value')) {
  		 $dropdownElement.find('.a-js-altinnDropdown-value').val($(this).data('value'));
   }
@@ -91,14 +91,13 @@ function setPersistedHtml(value) {
   window.localStorage.setItem('persisted_html', value);
 }
 
- $(".display-altinnett").hide();
  $(".display-brreg").hide();
 
  if (getPersistedStyle() === null) {
    setPersistedStyle('1')
  }
  if (window.localStorage.getItem('persisted_html') === null) {
-   etPersistedHtml($('[data-toggle=\'altinn-dropdown\']').find('.dropdown-item').eq(0).html())
+   setPersistedHtml($('[data-toggle=\'altinn-dropdown\']').find('.dropdown-item').eq(0).html())
  }
  $('[data-toggle="altinn-dropdown"]').find('.a-js-altinnDropdown-value')
    .val(getPersistedStyle())
@@ -108,18 +107,11 @@ function setPersistedHtml(value) {
 function setDisplay(style) {
   switch (style) {
     case '1':
-      $('.display-altinnett').hide()
       $('.display-brreg').hide()
       $('.display-altinn').show()
       break
     case '2':
-      $('.display-altinnett').show()
       $('.display-altinn').hide()
-      $('.display-brreg').hide()
-      break
-    case '3':
-      $('.display-altinn').hide()
-      $('.display-altinnett').hide()
       $('.display-brreg').show()
       break
   };
@@ -129,7 +121,7 @@ setDisplay (getPersistedStyle());
 
 $("[data-toggle='altinn-dropdown']").find(".dropdown-item").on("click", function() {
   setPersistedStyle($(this).attr("data-value"));
-  etPersistedHtml($(this).html());
+  setPersistedHtml($(this).html());
   setDisplay($(this).attr("data-value"));
 });
 

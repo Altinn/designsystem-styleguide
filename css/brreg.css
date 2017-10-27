@@ -1,20 +1,8 @@
 
-.a-pr-brreg .a-st .a-st-logoArea .a-dropdown-toggle {
+.a-st.project-brreg .a-st-logoArea .a-dropdown-toggle {
     background: #333;
 }
 
-.a-pr-brreg .svg-dslogo-color {
+.project-brreg .svg-dslogo-color {
   fill: #333;
-}
-
-.a-pr-brreg .a-btn {
-  background-image: url(//scf.brreg.no/bilder/2015/pilknapp_graa.svg);
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: auto 100%;
-  background-color: #89d6f6;
-}
-
-.a-pr-brreg .a-btn:hover {
-  background-color: #bce6fa;
 }

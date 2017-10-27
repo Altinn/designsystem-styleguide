@@ -11,6 +11,9 @@
 	"icon-post-text": false,
 	"icon-title": false,
 	"icon-sr-only-text": false,
+	"themeCss": "../../css/style.css",
+	"themeJs": "./../../js/altinnDev.js",
+	"themeJsVendor": "../../js/altinnDev.vendor.js",
 	"print-form-tag": false,
 	"text-input-id": "text-input-generic",
 	"isHidden": false,
@@ -65,15 +68,12 @@
 	"link-text": "En lenke ser slik ut",
 	"link-url": "/patterns/04-sider-infoportal-01-forside-00-forside/04-sider-infoportal-01-forside-00-forside.html",
 	"sr-text": false,
-	"button-text": "En knapp med ikon",
+	"button-text": "En standard knapp",
 	"button-class": "a-btn a-btn-icon a-btn-shadow",
 	"button-disabled": false,
 	"button-type": "button",
 	"onclick": false,
-	"button-icon": {
-		"icon-prefix": "ai",
-		"icon-class": "ai-deadline"
-	},
+	"button-icon": false,
 	"display-as-link": false,
 	"action-button-text": "En knapp for å legge til",
 	"expandable-content": {
@@ -112,7 +112,7 @@
 				"icon-size": "",
 				"icon-extra-class": "a-blue"
 			},
-			"dropdown-item-content": "Lagre søk",
+			"dropdown-item-content": "Alt innhold er tilgjengelig på bokmål.",
 			"dropdown-item-content-class": "a-fontBold",
 			"dropdown-item-image": "../../images/norsk.svg",
 			"dropdown-item-image-class": "a-iconLeft a-flag",
@@ -125,7 +125,7 @@
 				"icon-size": "",
 				"icon-extra-class": "a-blue"
 			},
-			"dropdown-item-content": "Annet lagret søk",
+			"dropdown-item-content": "All content is available in english.",
 			"dropdown-item-content-class": "a-fontBold",
 			"dropdown-item-image": "../../images/english.svg",
 			"dropdown-item-image-class": "a-iconLeft a-flag",
@@ -139,7 +139,7 @@
 				"icon-size": "",
 				"icon-extra-class": "a-blue"
 			},
-			"dropdown-item-content": "tilpass",
+			"dropdown-item-content": "Det er førebels berre skjema som er tilgjengelig på nynorsk. Andre sider vil vises med bokmål.",
 			"dropdown-item-content-class": "a-fontBold",
 			"dropdown-item-image": "../../images/norsk.svg",
 			"dropdown-item-image-class": "a-iconLeft a-flag",
@@ -1066,7 +1066,7 @@
 		}
 	],
 	"loadmore": {
-		"action-button-text": "Vis alle profiler",
+		"action-button-text": "Vis alle aktører",
 		"button-class": "a-btn a-btn-action a-fullWidthBtn",
 		"icon-prefix": "ai",
 		"icon-class": "ai-plus",
@@ -1110,15 +1110,15 @@
 			"link-url": "/patterns/04-sider-portal-60-profil-roller-rettigheter-profil-roller-rettigheter/04-sider-portal-60-profil-roller-rettigheter-profil-roller-rettigheter.html"
 		}
 	},
-	"profile-text": "Alle dine profiler: ",
+	"profile-text": "Alle dine aktører: ",
 	"profile-text-class": "a-h2",
 	"personswitch-button": false,
 	"personswitch-overview": true,
 	"personswitch-search": {
 		"text-input-id": "person-switch-input-field",
-		"top-label": "Søk etter profil",
+		"top-label": "Søk etter aktør",
 		"isHidden": true,
-		"text-input-placeholder": "Søk etter profil",
+		"text-input-placeholder": "Søk etter aktør",
 		"input-type": "search",
 		"isInput-group": "input-group",
 		"form-label-hasIcon": {
