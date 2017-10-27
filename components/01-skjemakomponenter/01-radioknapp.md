@@ -11,36 +11,38 @@ statecolor: badge-success
 
 variations:
 - title: Standard
-  description: Card description
-  styleModifier: a-switch
+  description: Vanlig utseende på radioknapper.
+  styleModifier:
   includeClassification: atoms
   includeCategory: 01-forms
   includeName: 04-radioknapp
+- title: Stacked
+  description: Dersom radioknappene skal falle under hverandre.
+  styleModifier:
+  includeClassification: atoms
+  includeCategory: 01-forms
+  includeName: 05-radioknapp-stacked
 
-  usage:
-  - title: When to use
-    description: Usage description.
-  - title: When to consider an alternative
-    description: Alternative usage.
+usage:
+- title: Når skal du bruke denne komponenten?
+  description: Radioknapper brukes i tilfeller der brukeren får et spørsmål og kan svare med kun ett alternativ.
+- title: Når skal du vurdere alternativer?
+  description: Valgknapper kan også brukes som radioknapper i spesielle tilfeller.
+- title: Policies
+  description: Se theme-spesifikke policies.
 
-  classes:
-  - className: c-hero
-    required : yes
-    description: Apply to the hero block's containing HTML element. This class sets up the background-image handling and text color for the unit. The `c-hero` element should have just one immediate child, the `c-hero__body` element. Note, too, that the unit's hero image should be applied as a background image to this `c-hero` element.
-  - className: c-hero--bare
-    modifier : yes
-    description: Add to the `c-hero` element to remove the default gradient overlay from the hero image.
-  - className: c-hero--tinted
-    modifier : yes
-    description: Add to the `c-hero` element to replace the default gradient overlay with a solid, uniform tint.
-  - className: c-hero__body
-    required: yes
-    description: Apply to the container for the card body, which typically includes a title and description (see below) but can include any arbitrary markup including buttons for a call to action. The class manages the card's background gradient.
-  - className: c-hero__title
-    recommended: yes
-    description: Apply to the card's heading inside the card body. The recommended element for this class is `<h1>`.
-  - className: c-hero__desc
-    recommended: yes
-    description: Apply to the card's description text inside the card body. The recommended element for this class is `<p>`.
+theme-specific-altinn:
+- description: Ingen retningslinjer er lagt inn for Altinn enda.
+
+theme-specific-brreg:
+- description: Ingen retningslinjer er lagt inn for Brønnøysundregistrene enda.
+
+classes:
+- className: form-check a-radioButtons
+  required : ja
+  description:
+- className: custom-controls-stacked
+  required : nei
+  description: Legg på denne klassen dersom radioknappene skal falle under hverandre.
 
 ---

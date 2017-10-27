@@ -11,48 +11,47 @@ statecolor: badge-success
 
 variations:
 - title: Standard
-  description: Card description
-  styleModifier: a-form-checkboxes
+  description: Vanlig utseende for avkrysningsbokser
+  styleModifier:
   includeClassification: atoms
   includeCategory: 01-forms
   includeName: 00-avkrysningsboks
-- title: Inaktiv
-  description: Card description
-  styleModifier: custom-control custom-checkbox inactive
+- title: Stacked
+  description: Dersom avkrysningsboksene skal falle under hverandre.
+  styleModifier:
   includeClassification: atoms
   includeCategory: 01-forms
   includeName: 01-avkrysningsboks-stacked
 - title: Diskret
-  description: Card description
-  styleModifier: form-check a-form-checkboxes a-form-checkboxes--discret
+  description: En mer diskret visning av boksene.
+  styleModifier:
   includeClassification: atoms
   includeCategory: 01-forms
   includeName: 02-avkrysningsboks-diskret
 
-  usage:
-  - title: When to use
-    description: Usage description.
-  - title: When to consider an alternative
-    description: Alternative usage.
+usage:
+- title: Når skal du bruke denne komponenten?
+  description: Avkrysningsbokser brukes i tilfeller der brukeren får et spørsmål og kan svare med et eller flere alternativer.
+- title: Når skal du vurdere alternativer?
+  description: Dersom det handler om en filtrering, skal valgknapper brukes.
+- title: Policies
+  description: Se theme-spesifikke policies.
 
-  classes:
-  - className: c-hero
-    required : yes
-    description: Apply to the hero block's containing HTML element. This class sets up the background-image handling and text color for the unit. The `c-hero` element should have just one immediate child, the `c-hero__body` element. Note, too, that the unit's hero image should be applied as a background image to this `c-hero` element.
-  - className: c-hero--bare
-    modifier : yes
-    description: Add to the `c-hero` element to remove the default gradient overlay from the hero image.
-  - className: c-hero--tinted
-    modifier : yes
-    description: Add to the `c-hero` element to replace the default gradient overlay with a solid, uniform tint.
-  - className: c-hero__body
-    required: yes
-    description: Apply to the container for the card body, which typically includes a title and description (see below) but can include any arbitrary markup including buttons for a call to action. The class manages the card's background gradient.
-  - className: c-hero__title
-    recommended: yes
-    description: Apply to the card's heading inside the card body. The recommended element for this class is `<h1>`.
-  - className: c-hero__desc
-    recommended: yes
-    description: Apply to the card's description text inside the card body. The recommended element for this class is `<p>`.
+theme-specific-altinn:
+- description: Ingen retningslinjer er lagt inn for Altinn enda.
+
+theme-specific-brreg:
+- description: Ingen retningslinjer er lagt inn for Brønnøysundregistrene enda.
+
+classes:
+- className: form-check a-form-checkboxes
+  required : ja
+  description:
+- className: custom-controls-stacked
+  required : nei
+  description: Legg på denne klassen dersom avkrysningsboksene skal falle under hverandre.
+- className: a-form-checkboxes--discret
+  required : nei
+  description: Legg på denne klassen dersom avkrysningsboksene skal være små.
 
 ---

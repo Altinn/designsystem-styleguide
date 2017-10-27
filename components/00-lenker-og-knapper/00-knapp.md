@@ -52,7 +52,7 @@ theme-specific-brreg:
 classes:
 - className: a-btn
   required : ja
-  description: Bruk denne klassen for alle knapper. PS. Dersom du skal style en lenke < a > slik at den ut som en knapp, kan du også bruke denne klassen.
+  description: Bruk denne klassen for alle knapper. PS. Dersom du skal style en lenke < a > slik at den ser ut som en knapp, kan du også bruke denne klassen.
 - className: a-btn-success
   required : nei
   description: Legg til denne klassen dersom knappen skal oppfordre til klikk.

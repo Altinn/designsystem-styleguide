@@ -11,36 +11,29 @@ statecolor: badge-success
 
 variations:
 - title: Standard
-  description: Skriv en kort oppsummering av komponenten.
-  styleModifier: < a >
+  description: Vanlig utseende på switch. Lengden er 100% av containeren den legges inn i.
+  styleModifier:
   includeClassification: atoms
   includeCategory: 04-handlingsknapper
   includeName: 23-knapp-veksle
 
-  usage:
-  - title: When to use
-    description: Usage description.
-  - title: When to consider an alternative
-    description: Alternative usage.
+usage:
+- title: Når skal du bruke denne komponenten?
+  description: Dersom brukeren skal kunne bytte mellom to ulike visninger av f.eks en liste, tabell, etc.
+- title: Når skal du vurdere alternativer?
+  description: Dersom det er mer en to alternativer, eller en skal kunne vise flere samtidig, vil ikke denne switchen være hensiktsmessig å bruke.
+- title: Policies
+  description: Se theme-spesifikke policies.
 
-  classes:
-  - className: c-hero
-    required : yes
-    description: Apply to the hero block's containing HTML element. This class sets up the background-image handling and text color for the unit. The `c-hero` element should have just one immediate child, the `c-hero__body` element. Note, too, that the unit's hero image should be applied as a background image to this `c-hero` element.
-  - className: c-hero--bare
-    modifier : yes
-    description: Add to the `c-hero` element to remove the default gradient overlay from the hero image.
-  - className: c-hero--tinted
-    modifier : yes
-    description: Add to the `c-hero` element to replace the default gradient overlay with a solid, uniform tint.
-  - className: c-hero__body
-    required: yes
-    description: Apply to the container for the card body, which typically includes a title and description (see below) but can include any arbitrary markup including buttons for a call to action. The class manages the card's background gradient.
-  - className: c-hero__title
-    recommended: yes
-    description: Apply to the card's heading inside the card body. The recommended element for this class is `<h1>`.
-  - className: c-hero__desc
-    recommended: yes
-    description: Apply to the card's description text inside the card body. The recommended element for this class is `<p>`.
+theme-specific-altinn:
+- description: Ingen retningslinjer er lagt inn for Altinn enda.
+
+theme-specific-brreg:
+- description: Ingen retningslinjer er lagt inn for Brønnøysundregistrene enda.
+
+classes:
+- className: Ingen foreløpig
+  required : nei
+  description: 
 
 ---
