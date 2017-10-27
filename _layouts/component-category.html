@@ -50,11 +50,12 @@ layout: default
 														{% capture iframePath %}patterns/{{ componentString }}/{{ componentString }}.markup-only.html{% endcapture %}
 
 														<div class="iffframe">
+															<div class="iffframe__iframe">
 															{% include {{ iframePath }} %} 
+															</div>
+														    <!-- iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="{{ iframePath  | prepend: site.baseurl }}"></iframe -->
 
-														    <!-- iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="{{ iframePath  | prepend: site.baseurl }}"></iframe>
-
-														    <div class="iffframe__handle"></div -->
+														    <div class="iffframe__handle"></div>
 
 														</div><!--end iffframe-->
 
