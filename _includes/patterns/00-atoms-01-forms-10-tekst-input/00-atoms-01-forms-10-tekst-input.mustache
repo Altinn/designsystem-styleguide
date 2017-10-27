@@ -1,18 +1,14 @@
-<!-- START: 00-atomer-01-forms-10-tekst-input JS doc: handleFocus.js -->
+
 {{# print-form-tag }}
 <form>
   {{/ print-form-tag }}
-
-  <div class="form-group a-form-group {{# isLarge }} a-form-group-large {{/ isLarge }} {{styleModifier}}">
-
-    {{# top-label }}
+  <div class="form-group a-form-group {{# isLarge }} a-form-group-large {{/ isLarge }} {{styleModifier}}">
+    {{# top-label }}
     <label class="a-form-label {{# isHidden }} sr-only {{/ isHidden}} {{# isInactive }} inactive {{/ isInactive }}" for="{{ text-input-id }}">{{ top-label }}</label> {{/ top-label }}
-
-    <div class="a-form-group-items input-group  {{# isDisabled }} disabled {{/ isDisabled }} {{# isInactive }} inactive {{/ isInactive }}">
+    <div class="a-form-group-items input-group  {{# isDisabled }} disabled {{/ isDisabled }} {{# isInactive }} inactive {{/ isInactive }}">
       {{# form-label-hasIcon }}
       <span class="input-group-addon hidden-sm-down">{{> atomer-ikon }}</span> {{/ form-label-hasIcon }}
-
-      <input class="form-control {{ form-control-class }} {{# form-label-hasIcon }} a-hasIcon {{/ form-label-hasIcon }}
+      <input class="form-control {{ form-control-class }} {{# form-label-hasIcon }} a-hasIcon {{/ form-label-hasIcon }}
         {{# form-input-hasButton }} a-hasButton {{/ form-input-hasButton }} {{# form-input-isPassword }} a-hasButton {{/ form-input-isPassword }}" type="{{ input-type }}" {{# hasAutoFocus }} autofocus {{/ hasAutoFocus }} {{# text-input-placeholder }}placeholder="{{text-input-placeholder}}"
         {{/ text-input-placeholder }} {{# text-input-value }}value="{{text-input-value}}" {{/ text-input-value }} name="{{ input-name }}" data-val="true" {{# text-input-id }}id="{{ text-input-id }}" {{/ text-input-id }} {{# isRequired }}required{{/ isRequired
         }} {{# data-required }} data-val-required="{{ data-required-message }}" {{/ data-required }} {{# isDisabled }}disabled{{/ isDisabled }} {{# isInactive }}disabled{{/ isInactive }} {{# maxlength }}data-val-length-max="{{ maxlength }}" {{/ maxlength
@@ -43,8 +39,7 @@
       </div>
       {{/ form-input-isPassword }} {{# postal-code }}
       <span class="a-input-placecode a-js-place" style="display:none;"></span> {{/ postal-code }}
-
-    </div>
+    </div>
     {{# autocomplete }}
     <div class="a-autocomplete-container hidden-xs">
     </div>
@@ -59,5 +54,4 @@
   {{# print-form-tag }}
 </form>
 {{/ print-form-tag }}
-
-<!-- END: 00-atomer-01-forms-10-tekst-input -->
+

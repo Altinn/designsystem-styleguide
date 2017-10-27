@@ -40,12 +40,12 @@ layout: default
 
 						{% capture componentString %}{{ atomicNumber }}-{{ variation.includeClassification }}-{{ variation.includeCategory }}-{{ variation.includeName }}{% endcapture %}
 
-						{% capture path %}/patterns/{{ componentString }}/{{ componentString }}.rendered.html{% endcapture %}
+						{% capture path %}/patterns/{{ componentString }}/{{ componentString }}.markup-only.html{% endcapture %}
 						<div class="iffframe">
+							{% include {{ path }} %} 
+							<!-- iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="{{ path | prepend: site.baseurl }}"></iframe>
 
-							<iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="{{ path | prepend: site.baseurl }}"></iframe>
-
-							<div class="iffframe__handle"></div>
+							<div class="iffframe__handle"></div -->
 
 						</div><!--end iffframe-->
 

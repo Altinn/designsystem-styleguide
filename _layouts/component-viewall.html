@@ -68,15 +68,14 @@ layout: default
                         					{% endif %}
 
                         					{% capture componentString %}{{ atomicNumber }}-{{ variation.includeClassification }}-{{ variation.includeCategory }}-{{ variation.includeName }}{% endcapture %}
-
-                        					{% capture iframePath %}/patterns/{{ componentString }}/{{ componentString }}.rendered.html{% endcapture %}
-
+                        					{% capture iframePath %}patterns/{{ componentString }}/{{ componentString }}.markup-only.html{% endcapture %}
+																	
             											<div class="iffframe">
-
-            											    <iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="{{ iframePath  | prepend: site.baseurl }}"></iframe>
-
-            											    <div class="iffframe__handle"></div>
-
+																			<div class="iffframe__iframe">
+																			{% include {{ iframePath }} %} 
+																			</div>
+            											    <!-- frame class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="{{ iframePath  | prepend: site.baseurl }}"></iframe -->
+																			<div class="iffframe__handle"></div>
             											</div><!--end iffframe-->
 
 
