@@ -14,10 +14,12 @@
 	<link rel="stylesheet" href="/designsystem-styleguide/css/style-guide.css">
 	<link rel="icon" href="/designsystem-styleguide/favicon.ico">
 
-	<link rel="stylesheet" href="/designsystem-styleguide/css/style.css">
+	<script src="https://use.fortawesome.com/ed31cded.js"></script>
+
+	<link rel="stylesheet" href="/designsystem-styleguide/css/style.dist.storefront.css">
+	<link rel="stylesheet" href="/designsystem-styleguide/css/brreg.css">
 
 	<link rel="canonical" href="http://localhost:4000/designsystem-styleguide/komponenter/navigasjon/trekkspill.html">
-	<script src="https://use.fortawesome.com/ed31cded.js"></script>
 </head>
 
 
@@ -61,13 +63,11 @@
 
 	<!-- TITLE -->
 
-	<a href="https://www.npmjs.com/package/altinn-designsystem" class="a-st-version">Versjon: 0.2.36</a>
+	<a href="https://www.npmjs.com/package/altinn-designsystem" class="a-st-version">Versjon: 1.0.0</a>
 
 	<!-- THEME PICKER -->
 	<div class="form-group input-group transparent a-js-forceFlexColumn a-form-group">
 	  <div data-toggle="altinn-dropdown" class="dropdown a-fullWidthXs">
-	    <input type="hidden" class="a-js-altinnDropdown-value">
-
 			<button class="btn dropdown-toggle a-dropdown-toggle form-control-alt  a-js-dropdownToValidate" type="button" id="dropdownMenu" name="Velg theme" title="Velg theme" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 	      <span class="a-form-text">
 					<span class="sr-only" id="a-js-chosenTheme">Altinn</span>
@@ -107,7 +107,7 @@
 
 	    <div class="dropdown-menu a-dropdown-menu" aria-labelledby="dropdownMenu" name="chooseProject">
 
-	        <a class="dropdown-item a-dropdown-item" href="#" data-value="1">
+	        <a class="dropdown-item a-dropdown-item" href="#" data-project="altinn">
 	          <span class="a-form-text">
 	            <span class="sr-only" id="a-js-chosenTheme">Altinn</span>
 							<span class="a-st-dropdownLogo">
@@ -148,7 +148,7 @@
 	          </span>
 	        </a>
 
-	        <a class="dropdown-item a-dropdown-item" href="#" data-value="3">
+	        <a class="dropdown-item a-dropdown-item" href="#" data-project="brreg">
 						<span class="a-form-text a-dropdown-item--long">
 							<span class="sr-only" id="a-js-chosenTheme">Brønnøysundregistrene</span>
 							<span class="a-st-dropdownLogo">
@@ -2574,8 +2574,8 @@
 
 			<li class="c-primary-nav__subitem ">
 
-                <a class="c-primary-nav__sublink " href="/designsystem-styleguide/komponenter/skjemakomponenter/tekstfelt.html">
-			    	Tekstfelt
+                <a class="c-primary-nav__sublink " href="/designsystem-styleguide/komponenter/skjemakomponenter/inputfelt.html">
+			    	Inputfelt
 				</a><!-- end c-primary-nav__link -->
 
 			</li><!-- end c-primary-nav__item -->
@@ -5990,742 +5990,6 @@
 
       </div>
 
-      <div class="display-altinnett">
-        <nav class="c-primary-nav" role="navigation">
-
-	<ul class="c-primary-nav__list c-primary-nav__list--flush js-nav-panel" role="tablist" aria-multiselectable="true">
-
-
-		<li class="c-primary-nav__item">
-
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-				<a href="/designsystem-styleguide/eksempel-altinnett.html" class="c-primary-nav__link ">
-					<span class="c-primary-nav__text">Eksemepelside altinnett</span>
-				</a>
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-
-		</li><!-- end c-nav__list__item -->
-
-		<li class="c-primary-nav__item ">
-			<a class="c-primary-nav__link c-primary-nav__link--has-children js-nav-dropdown-trigger " href="/designsystem-styleguide/altinnett-components/">
-
-				<span class="c-primary-nav__text">Komponenter Altinnett</span>
-
-				<svg class="c-icon c-primary-nav__icon" aria-hidden="true">
-					<use href="/designsystem-styleguide/icons.svg#chevron-right"></use>
-				</svg>
-
-			</a><!--end c-primary-nav__link-->
-
-			<ul class="c-primary-nav__sublist js-nav-dropdown ">
-
-				<li class="c-primary-nav__subitem ">
-
-	<a class="c-primary-nav__sublink c-primary-nav__sublink--has-children js-nav-dropdown-trigger  " href="#">
-
-		<span class="c-primary-nav__text">Lenker og knapper</span>
-
-		
-		<svg class="c-icon c-primary-nav__subicon" aria-hidden="true">
-			<use href="/designsystem-styleguide/icons.svg#chevron-right"></use>
-		</svg>
-		
-	</a><!--end c-primary-nav__link-->
-
-	
-	<ul class="c-primary-nav__sublist js-nav-dropdown ">
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-</ul><!-- end c-primary-nav__sublist-->
-	
-
-</li><!-- end c-primary-nav__item-->
-
-
-
-			</ul>
-
-		</li>
-
-
-	</ul><!-- end c-nav__list -->
-
-</nav><!-- end c-nav -->
-
-      </div>
-
       <div class="display-brreg">
         <nav class="c-primary-nav" role="navigation">
 
@@ -9045,8 +8309,8 @@
 
 			<li class="c-primary-nav__subitem ">
 
-                <a class="c-primary-nav__sublink " href="/designsystem-styleguide/komponenter/skjemakomponenter/tekstfelt.html">
-			    	Tekstfelt
+                <a class="c-primary-nav__sublink " href="/designsystem-styleguide/komponenter/skjemakomponenter/inputfelt.html">
+			    	Inputfelt
 				</a><!-- end c-primary-nav__link -->
 
 			</li><!-- end c-primary-nav__item -->
@@ -12399,10 +11663,68 @@
 
 						
 						<div class="iffframe">
+							
+<div class="a-accordion-large " id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="card">
+    <!-- TITLE -->
+    <div>
+      
+      <a data-toggle="collapse" data-parent="#accordion" href="#accordionHeaderItem1" role="tab" aria-expanded="false" class="a-collapse-title no-decoration collapsed a-h3">
+    <span class="a-dropdownCircleArrow">
+      <i class="ai ai-expand ai-sm"><span class="sr-only">Vis/skjul innhold</span></i>
+    </span>
+    Første ekspandérbare overskrift har veldig veldig veldig veldig veldig mange ord for å teste hvordan det vil se ut
+</a>
+      
+    </div>
+    <!-- CONTENT -->
+    <div id="accordionHeaderItem1" class="a-collapseContent collapse" role="tabpanel">
+      <div class="a-collapseContent-inside">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus cumque maxime, quam commodi doloremque adipisci deserunt atque non unde rem blanditiis quos veritatis suscipit, omnis animi labore nobis delectus eaque.
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <!-- TITLE -->
+    <div>
+      
+      <a data-toggle="collapse" data-parent="#accordion" href="#accordionHeaderItem2" role="tab" aria-expanded="false" class="a-collapse-title no-decoration collapsed a-h3">
+    <span class="a-dropdownCircleArrow">
+      <i class="ai ai-expand ai-sm"><span class="sr-only">Vis/skjul innhold</span></i>
+    </span>
+    Andre ekspandérbare overskrift
+</a>
+      
+    </div>
+    <!-- CONTENT -->
+    <div id="accordionHeaderItem2" class="a-collapseContent collapse" role="tabpanel">
+      <div class="a-collapseContent-inside">
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <!-- TITLE -->
+    <div>
+      
+      <a data-toggle="collapse" data-parent="#accordion" href="#accordionHeaderItem3" role="tab" aria-expanded="false" class="a-collapse-title no-decoration collapsed a-h3">
+    <span class="a-dropdownCircleArrow">
+      <i class="ai ai-expand ai-sm"><span class="sr-only">Vis/skjul innhold</span></i>
+    </span>
+    Tredje ekspandérbare overskrift
+</a>
+      
+    </div>
+    <!-- CONTENT -->
+    <div id="accordionHeaderItem3" class="a-collapseContent collapse" role="tabpanel">
+      <div class="a-collapseContent-inside">
+      </div>
+    </div>
+  </div>
+</div>
+ 
+							<!-- iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="/designsystem-styleguide/patterns/01-molecules-02-navigasjon-01-trekkspill-overskrifter/01-molecules-02-navigasjon-01-trekkspill-overskrifter.markup-only.html"></iframe>
 
-							<iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="/designsystem-styleguide/patterns/01-molecules-02-navigasjon-01-trekkspill-overskrifter/01-molecules-02-navigasjon-01-trekkspill-overskrifter.rendered.html"></iframe>
-
-							<div class="iffframe__handle"></div>
+							<div class="iffframe__handle"></div -->
 
 						</div><!--end iffframe-->
 
@@ -12455,91 +11777,63 @@
 								<div class="pattern-code">
 									<button class="c-btn pattern-code-copy-btn" data-clipboard-target="#pattern-code-1">Copy</button>
 									<pre class="highlight pattern-code-block"><code class="language-html" id="pattern-code-1">
-<figure class="highlight"><pre><code class="language-liquid" data-lang="liquid">&lt;!-- START: 01-molekyler-02-navigasjon-01-trekkspill-overskrifter --&gt;
-&lt;div class="a-accordion-large " id="accordion" role="tablist" aria-multiselectable="true"&gt;
-
-  &lt;div class="card"&gt;
-
-    &lt;!-- TITLE --&gt;
+<figure class="highlight"><pre><code class="language-liquid" data-lang="liquid">&lt;div class="a-accordion-large " id="accordion" role="tablist" aria-multiselectable="true"&gt;
+  &lt;div class="card"&gt;
+    &lt;!-- TITLE --&gt;
     &lt;div&gt;
-      &lt;!-- START: 00-atomer-05-Ekspansjonsknapper-10-ekspanderbar-overskrift JS doc: toggleFilter.js --&gt;
+      
       &lt;a data-toggle="collapse" data-parent="#accordion" href="#accordionHeaderItem1" role="tab" aria-expanded="false" class="a-collapse-title no-decoration collapsed a-h3"&gt;
     &lt;span class="a-dropdownCircleArrow"&gt;
       &lt;i class="ai ai-expand ai-sm"&gt;&lt;span class="sr-only"&gt;Vis/skjul innhold&lt;/span&gt;&lt;/i&gt;
     &lt;/span&gt;
     Første ekspandérbare overskrift har veldig veldig veldig veldig veldig mange ord for å teste hvordan det vil se ut
 &lt;/a&gt;
-
-      &lt;!-- END: 00-atomer-05-Ekspansjonsknapper-10-ekspanderbar-overskrift --&gt;
-
-    &lt;/div&gt;
-
-    &lt;!-- CONTENT --&gt;
+      
+    &lt;/div&gt;
+    &lt;!-- CONTENT --&gt;
     &lt;div id="accordionHeaderItem1" class="a-collapseContent collapse" role="tabpanel"&gt;
       &lt;div class="a-collapseContent-inside"&gt;
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus cumque maxime, quam commodi doloremque adipisci deserunt atque non unde rem blanditiis quos veritatis suscipit, omnis animi labore nobis delectus eaque.
-
-
-
-
-      &lt;/div&gt;
+      &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
   &lt;div class="card"&gt;
-
-    &lt;!-- TITLE --&gt;
+    &lt;!-- TITLE --&gt;
     &lt;div&gt;
-      &lt;!-- START: 00-atomer-05-Ekspansjonsknapper-10-ekspanderbar-overskrift JS doc: toggleFilter.js --&gt;
+      
       &lt;a data-toggle="collapse" data-parent="#accordion" href="#accordionHeaderItem2" role="tab" aria-expanded="false" class="a-collapse-title no-decoration collapsed a-h3"&gt;
     &lt;span class="a-dropdownCircleArrow"&gt;
       &lt;i class="ai ai-expand ai-sm"&gt;&lt;span class="sr-only"&gt;Vis/skjul innhold&lt;/span&gt;&lt;/i&gt;
     &lt;/span&gt;
     Andre ekspandérbare overskrift
 &lt;/a&gt;
-
-      &lt;!-- END: 00-atomer-05-Ekspansjonsknapper-10-ekspanderbar-overskrift --&gt;
-
-    &lt;/div&gt;
-
-    &lt;!-- CONTENT --&gt;
+      
+    &lt;/div&gt;
+    &lt;!-- CONTENT --&gt;
     &lt;div id="accordionHeaderItem2" class="a-collapseContent collapse" role="tabpanel"&gt;
       &lt;div class="a-collapseContent-inside"&gt;
-
-
-
-
-      &lt;/div&gt;
+      &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
   &lt;div class="card"&gt;
-
-    &lt;!-- TITLE --&gt;
+    &lt;!-- TITLE --&gt;
     &lt;div&gt;
-      &lt;!-- START: 00-atomer-05-Ekspansjonsknapper-10-ekspanderbar-overskrift JS doc: toggleFilter.js --&gt;
+      
       &lt;a data-toggle="collapse" data-parent="#accordion" href="#accordionHeaderItem3" role="tab" aria-expanded="false" class="a-collapse-title no-decoration collapsed a-h3"&gt;
     &lt;span class="a-dropdownCircleArrow"&gt;
       &lt;i class="ai ai-expand ai-sm"&gt;&lt;span class="sr-only"&gt;Vis/skjul innhold&lt;/span&gt;&lt;/i&gt;
     &lt;/span&gt;
     Tredje ekspandérbare overskrift
 &lt;/a&gt;
-
-      &lt;!-- END: 00-atomer-05-Ekspansjonsknapper-10-ekspanderbar-overskrift --&gt;
-
-    &lt;/div&gt;
-
-    &lt;!-- CONTENT --&gt;
+      
+    &lt;/div&gt;
+    &lt;!-- CONTENT --&gt;
     &lt;div id="accordionHeaderItem3" class="a-collapseContent collapse" role="tabpanel"&gt;
       &lt;div class="a-collapseContent-inside"&gt;
-
-
-
-
-      &lt;/div&gt;
+      &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;!-- END: 01-molekyler-02-navigasjon-01-trekkspill-overskrifter --&gt;</code></pre></figure>
+&lt;/div&gt;</code></pre></figure>
 </code></pre>
 								</div>
 
@@ -12667,27 +11961,6 @@
 <!-- Bundled assets -->
 <script src="/designsystem-styleguide/dist/js/infoportal.vendor.js"></script>
 <script src="/designsystem-styleguide/dist/js/infoportal.js"></script>
-
-<script>
-  $('.iffframe').find('iframe').on('load', function() {
-    if (window.localStorage.getItem('persisted_style') !== '1') {
-      var e = document.createElement('link')
-      e.rel = 'stylesheet'
-      e.type = 'text/css'
-      if (window.localStorage.getItem('persisted_style') === '2') {
-        e.href = '/designsystem-styleguide/css/altinnett.css'
-      } else {
-        e.href = '/designsystem-styleguide/css/brreg.css'
-      }
-      $($('.iffframe').find('iframe')[0].contentWindow.document.getElementsByTagName('head')[0])
-       .find('link[rel=stylesheet][href~=\'/designsystem-styleguide/css/altinnett.css\']').remove()
-      $($('.iffframe').find('iframe')[0].contentWindow.document.getElementsByTagName('head')[0])
-       .find('link[rel=stylesheet][href~=\'/designsystem-styleguide/css/brreg.css\']').remove()
-      $('.iffframe').find('iframe')[0].contentWindow.document.getElementsByTagName('head')[0].appendChild(e)
-    }
-  });
-</script>
-
 
             </div><!--end l-page-layout__main-->
 

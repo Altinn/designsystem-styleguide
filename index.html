@@ -14,10 +14,12 @@
 	<link rel="stylesheet" href="/designsystem-styleguide/css/style-guide.css">
 	<link rel="icon" href="/designsystem-styleguide/favicon.ico">
 
-	<link rel="stylesheet" href="/designsystem-styleguide/css/style.css">
+	<script src="https://use.fortawesome.com/ed31cded.js"></script>
+
+	<link rel="stylesheet" href="/designsystem-styleguide/css/style.dist.storefront.css">
+	<link rel="stylesheet" href="/designsystem-styleguide/css/brreg.css">
 
 	<link rel="canonical" href="http://localhost:4000/designsystem-styleguide/">
-	<script src="https://use.fortawesome.com/ed31cded.js"></script>
 </head>
 
 
@@ -61,13 +63,11 @@
 
 	<!-- TITLE -->
 
-	<a href="https://www.npmjs.com/package/altinn-designsystem" class="a-st-version">Versjon: 0.2.36</a>
+	<a href="https://www.npmjs.com/package/altinn-designsystem" class="a-st-version">Versjon: 1.0.0</a>
 
 	<!-- THEME PICKER -->
 	<div class="form-group input-group transparent a-js-forceFlexColumn a-form-group">
 	  <div data-toggle="altinn-dropdown" class="dropdown a-fullWidthXs">
-	    <input type="hidden" class="a-js-altinnDropdown-value">
-
 			<button class="btn dropdown-toggle a-dropdown-toggle form-control-alt  a-js-dropdownToValidate" type="button" id="dropdownMenu" name="Velg theme" title="Velg theme" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 	      <span class="a-form-text">
 					<span class="sr-only" id="a-js-chosenTheme">Altinn</span>
@@ -107,7 +107,7 @@
 
 	    <div class="dropdown-menu a-dropdown-menu" aria-labelledby="dropdownMenu" name="chooseProject">
 
-	        <a class="dropdown-item a-dropdown-item" href="#" data-value="1">
+	        <a class="dropdown-item a-dropdown-item" href="#" data-project="altinn">
 	          <span class="a-form-text">
 	            <span class="sr-only" id="a-js-chosenTheme">Altinn</span>
 							<span class="a-st-dropdownLogo">
@@ -148,7 +148,7 @@
 	          </span>
 	        </a>
 
-	        <a class="dropdown-item a-dropdown-item" href="#" data-value="3">
+	        <a class="dropdown-item a-dropdown-item" href="#" data-project="brreg">
 						<span class="a-form-text a-dropdown-item--long">
 							<span class="sr-only" id="a-js-chosenTheme">Brønnøysundregistrene</span>
 							<span class="a-st-dropdownLogo">
@@ -2574,8 +2574,8 @@
 
 			<li class="c-primary-nav__subitem ">
 
-                <a class="c-primary-nav__sublink " href="/designsystem-styleguide/komponenter/skjemakomponenter/tekstfelt.html">
-			    	Tekstfelt
+                <a class="c-primary-nav__sublink " href="/designsystem-styleguide/komponenter/skjemakomponenter/inputfelt.html">
+			    	Inputfelt
 				</a><!-- end c-primary-nav__link -->
 
 			</li><!-- end c-primary-nav__item -->
@@ -5990,742 +5990,6 @@
 
       </div>
 
-      <div class="display-altinnett">
-        <nav class="c-primary-nav" role="navigation">
-
-	<ul class="c-primary-nav__list c-primary-nav__list--flush js-nav-panel" role="tablist" aria-multiselectable="true">
-
-
-		<li class="c-primary-nav__item">
-
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-				<a href="/designsystem-styleguide/eksempel-altinnett.html" class="c-primary-nav__link ">
-					<span class="c-primary-nav__text">Eksemepelside altinnett</span>
-				</a>
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-
-		</li><!-- end c-nav__list__item -->
-
-		<li class="c-primary-nav__item ">
-			<a class="c-primary-nav__link c-primary-nav__link--has-children js-nav-dropdown-trigger " href="/designsystem-styleguide/altinnett-components/">
-
-				<span class="c-primary-nav__text">Komponenter Altinnett</span>
-
-				<svg class="c-icon c-primary-nav__icon" aria-hidden="true">
-					<use href="/designsystem-styleguide/icons.svg#chevron-right"></use>
-				</svg>
-
-			</a><!--end c-primary-nav__link-->
-
-			<ul class="c-primary-nav__sublist js-nav-dropdown ">
-
-				<li class="c-primary-nav__subitem ">
-
-	<a class="c-primary-nav__sublink c-primary-nav__sublink--has-children js-nav-dropdown-trigger  " href="#">
-
-		<span class="c-primary-nav__text">Lenker og knapper</span>
-
-		
-		<svg class="c-icon c-primary-nav__subicon" aria-hidden="true">
-			<use href="/designsystem-styleguide/icons.svg#chevron-right"></use>
-		</svg>
-		
-	</a><!--end c-primary-nav__link-->
-
-	
-	<ul class="c-primary-nav__sublist js-nav-dropdown ">
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-</ul><!-- end c-primary-nav__sublist-->
-	
-
-</li><!-- end c-primary-nav__item-->
-
-
-
-			</ul>
-
-		</li>
-
-
-	</ul><!-- end c-nav__list -->
-
-</nav><!-- end c-nav -->
-
-      </div>
-
       <div class="display-brreg">
         <nav class="c-primary-nav" role="navigation">
 
@@ -9045,8 +8309,8 @@
 
 			<li class="c-primary-nav__subitem ">
 
-                <a class="c-primary-nav__sublink " href="/designsystem-styleguide/komponenter/skjemakomponenter/tekstfelt.html">
-			    	Tekstfelt
+                <a class="c-primary-nav__sublink " href="/designsystem-styleguide/komponenter/skjemakomponenter/inputfelt.html">
+			    	Inputfelt
 				</a><!-- end c-primary-nav__link -->
 
 			</li><!-- end c-primary-nav__item -->
@@ -12354,56 +11618,36 @@
 <div class="l-container">
 
 	<div class="c-text-passage a-text">
-		<div id="alert-no-arrow" class="a-message a-message-error a-message--arrow-off a-message--fullwidth mb-2 a-py-minus-1">
-  NB: Innholdet og sidene er under utvikling
-</div>
+		<p class="a-leadText a-fontBold">Vi har erfart at det å lage konsistente webløsninger ikke er så lett. Derfor har vi laget et designsystem som skal gjøre samarbeidet mellom designere, utviklere og andre folk lettere, og få webløsningene våre til å fremstå mer helhetlige.  </p>
 
-<p class="a-leadText a-fontBold"> Velkommen til Altinn og Brønnøysundregistrenes samleside for design, som viser deg hvordan våre webløsninger skal fremstå. Målet er å sikre at de ulike løsningene fremstår helhetlig og konsekvent i alle kanaler. </p>
+<p>Designsystemet baserer seg på såkalt atomisk designmetodikk hvor man i stedet for å designe sider designer komponenter som kan settes sammen og gjenbrukes i ulike webløsninger. Vi trenger derfor ikke starte helt på nytt hver gang vi skal lage en ny løsning. Arbeidet vil fokuseres rundt å lage gode interaksjoner for brukerne.</p>
 
-<h2 id="om-designsystemet">Om designsystemet</h2>
+<p>Redesignet av Altinn har vært pådriveren for designsystemet og vi har planer om å følge etter med flere nye løsninger som bruker designsystemet fremover.</p>
 
-<p>For å oppnå et konsistent brukergrensesnitt, har vi i Altinn og Brønnøysundregistrene bygget et levende designsystem for web, basert på Pattern Lab og atomisk designmetodikk. Frontend-koden i dette designsystemet skal være grunnlaget for webløsninger som utvikles hos Brønnøysundregistrene. Foreløpig er det <strong>altinn</strong> og <strong>altinnett</strong> som er koblet på designsystemet.</p>
-
-<p>Designsystemet fungerer som et løsrevet lag, uavhengig av CMS og plattform. Kode for design eksisterer dermed kun et sted - i designsystemet. Når det oppstår behov for nye UI-komponenter, skal designsystemet oppdateres med den nye komponenten og dens design.</p>
-
-<h2 id="ta-i-bruk-designsystemet">Ta i bruk designsystemet</h2>
-
-<p><b>Før designsystemet kan tas i bruk må prosjektet sørge for:</b></p>
-
+<h2 id="dette-ønsker-vi-å-oppnå">Dette ønsker vi å oppnå</h2>
 <ul>
-  <li>Ha en klar definert målgruppe for løsningen og kunne vise til innhentede brukerbehov i innsiktfase</li>
-  <li>Ha presentert denne for løsningsansvarlig på UX i Digitalisering og fått godkjennelse på bruk av designsystemet til formålet</li>
+  <li>At alle som jobber med å lage offentlige digitale løsnigner skal kunne ha nytte av designsystemet - enten ved å la seg inspirere til godt interaksjonsdesign eller gjenbruke komponenter</li>
+  <li>Forenkle arbeidsflyten for designere, utviklere, produkteiere og andre</li>
+  <li>Opprettholde en konsekvent identitet på tvers av Altinn og Brønnøysundsregistrenes webløsninger</li>
+  <li>Helhetlige og konsistente brukeropplevelser ved å bruke gjenkjennbare og godt testede komponenter</li>
+  <li>At designsystemet skal være et solid fundament å bygge på over tid, som hjelper oss å lettere tilpasse oss det stadig skiftende weblandskapet</li>
 </ul>
 
-<p><b>Prosjekter som har fått godkjent å ta i bruk designsystemet må oppfylle følgende kriterier:</b></p>
-<ul>
-  <li>Ha en dedikert design-ressurs med i prosjektet.</li>
-  <li>Følge alle retningslinjer for frontend og universell utforming som beskrevet i denne manualen.</li>
-  <li>Alle sidemaler som settes sammen av komponenter skal designgodkjennes og brukertestes før videre implementering.</li>
-  <li>Dersom egen visuell profil (eget theme) skal benyttes, skal dette themet brukes gjennomgående, og skal ikke blandes med andre visuelle profiler.</li>
-</ul>
+<h2 id="kom-i-gang">Kom i gang</h2>
 
-<div class="a-btn-group" id="btnGroup">
-  <a href="komigang/designere.html">
-    Kom i gang som <b>designer</b>
-  </a>
-
-  <a href="komigang/utviklere.html">
-    Kom i gang som <b>utvikler</b>
-  </a>
-</div>
-<p><br /></p>
-
-<h2 id="målet">Målet</h2>
-<p>Målet med designsystemet er:</p>
-
-<ul>
-  <li>Å opprettholde en konsekvent identitet på tvers av Brønnøysundsregistrenes nettløsninger, som fører til mer helhetlige, konsistente brukeropplevelser.</li>
-  <li>Å ha et felles prototypemiljø der det er mulig å se komponenter både i og utenfor kontekst.</li>
-  <li>Å forenkle arbeidsflyten for designere og utviklere.</li>
-  <li>Å etablere et felles samlingspunkt mellom fagdisipliner (interaksjonsdesignere, grafiske designere, utviklere, prosjekteiere ++) for å oppnå bedre samarbeid og en mer konstruktiv arbeidsflyt.</li>
-  <li>At designsystemet skal være et solid fundament å bygge på over tid, som  hjelper organisasjonen å lettere tilpasse seg det stadig skiftende weblandskapet.</li>
-</ul>
+<p><b><a href="komigang/prosjektet.html">
+  Kom i gang med et nytt prosjekt
+</a></b>
+<br />
+<br />
+<b><a href="komigang/designere.html">
+  Kom i gang som <b>designer</b>
+</a></b>
+<br />
+<br />
+<b><a href="komigang/utviklere.html">
+  Kom i gang som <b>utvikler</b>
+</a></b></p>
 
 	</div><!--end c-text-passage-->
 
@@ -12429,27 +11673,6 @@
 <!-- Bundled assets -->
 <script src="/designsystem-styleguide/dist/js/infoportal.vendor.js"></script>
 <script src="/designsystem-styleguide/dist/js/infoportal.js"></script>
-
-<script>
-  $('.iffframe').find('iframe').on('load', function() {
-    if (window.localStorage.getItem('persisted_style') !== '1') {
-      var e = document.createElement('link')
-      e.rel = 'stylesheet'
-      e.type = 'text/css'
-      if (window.localStorage.getItem('persisted_style') === '2') {
-        e.href = '/designsystem-styleguide/css/altinnett.css'
-      } else {
-        e.href = '/designsystem-styleguide/css/brreg.css'
-      }
-      $($('.iffframe').find('iframe')[0].contentWindow.document.getElementsByTagName('head')[0])
-       .find('link[rel=stylesheet][href~=\'/designsystem-styleguide/css/altinnett.css\']').remove()
-      $($('.iffframe').find('iframe')[0].contentWindow.document.getElementsByTagName('head')[0])
-       .find('link[rel=stylesheet][href~=\'/designsystem-styleguide/css/brreg.css\']').remove()
-      $('.iffframe').find('iframe')[0].contentWindow.document.getElementsByTagName('head')[0].appendChild(e)
-    }
-  });
-</script>
-
 
             </div><!--end l-page-layout__main-->
 

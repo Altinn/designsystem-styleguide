@@ -14,10 +14,12 @@
 	<link rel="stylesheet" href="/designsystem-styleguide/css/style-guide.css">
 	<link rel="icon" href="/designsystem-styleguide/favicon.ico">
 
-	<link rel="stylesheet" href="/designsystem-styleguide/css/style.css">
+	<script src="https://use.fortawesome.com/ed31cded.js"></script>
+
+	<link rel="stylesheet" href="/designsystem-styleguide/css/style.dist.storefront.css">
+	<link rel="stylesheet" href="/designsystem-styleguide/css/brreg.css">
 
 	<link rel="canonical" href="http://localhost:4000/designsystem-styleguide/komponenter/skjemakomponenter/nedtrekksmeny.html">
-	<script src="https://use.fortawesome.com/ed31cded.js"></script>
 </head>
 
 
@@ -61,13 +63,11 @@
 
 	<!-- TITLE -->
 
-	<a href="https://www.npmjs.com/package/altinn-designsystem" class="a-st-version">Versjon: 0.2.36</a>
+	<a href="https://www.npmjs.com/package/altinn-designsystem" class="a-st-version">Versjon: 1.0.0</a>
 
 	<!-- THEME PICKER -->
 	<div class="form-group input-group transparent a-js-forceFlexColumn a-form-group">
 	  <div data-toggle="altinn-dropdown" class="dropdown a-fullWidthXs">
-	    <input type="hidden" class="a-js-altinnDropdown-value">
-
 			<button class="btn dropdown-toggle a-dropdown-toggle form-control-alt  a-js-dropdownToValidate" type="button" id="dropdownMenu" name="Velg theme" title="Velg theme" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 	      <span class="a-form-text">
 					<span class="sr-only" id="a-js-chosenTheme">Altinn</span>
@@ -107,7 +107,7 @@
 
 	    <div class="dropdown-menu a-dropdown-menu" aria-labelledby="dropdownMenu" name="chooseProject">
 
-	        <a class="dropdown-item a-dropdown-item" href="#" data-value="1">
+	        <a class="dropdown-item a-dropdown-item" href="#" data-project="altinn">
 	          <span class="a-form-text">
 	            <span class="sr-only" id="a-js-chosenTheme">Altinn</span>
 							<span class="a-st-dropdownLogo">
@@ -148,7 +148,7 @@
 	          </span>
 	        </a>
 
-	        <a class="dropdown-item a-dropdown-item" href="#" data-value="3">
+	        <a class="dropdown-item a-dropdown-item" href="#" data-project="brreg">
 						<span class="a-form-text a-dropdown-item--long">
 							<span class="sr-only" id="a-js-chosenTheme">Brønnøysundregistrene</span>
 							<span class="a-st-dropdownLogo">
@@ -2574,8 +2574,8 @@
 
 			<li class="c-primary-nav__subitem is-active">
 
-                <a class="c-primary-nav__sublink " href="/designsystem-styleguide/komponenter/skjemakomponenter/tekstfelt.html">
-			    	Tekstfelt
+                <a class="c-primary-nav__sublink " href="/designsystem-styleguide/komponenter/skjemakomponenter/inputfelt.html">
+			    	Inputfelt
 				</a><!-- end c-primary-nav__link -->
 
 			</li><!-- end c-primary-nav__item -->
@@ -5990,742 +5990,6 @@
 
       </div>
 
-      <div class="display-altinnett">
-        <nav class="c-primary-nav" role="navigation">
-
-	<ul class="c-primary-nav__list c-primary-nav__list--flush js-nav-panel" role="tablist" aria-multiselectable="true">
-
-
-		<li class="c-primary-nav__item">
-
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-				<a href="/designsystem-styleguide/eksempel-altinnett.html" class="c-primary-nav__link ">
-					<span class="c-primary-nav__text">Eksemepelside altinnett</span>
-				</a>
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-
-		</li><!-- end c-nav__list__item -->
-
-		<li class="c-primary-nav__item ">
-			<a class="c-primary-nav__link c-primary-nav__link--has-children js-nav-dropdown-trigger " href="/designsystem-styleguide/altinnett-components/">
-
-				<span class="c-primary-nav__text">Komponenter Altinnett</span>
-
-				<svg class="c-icon c-primary-nav__icon" aria-hidden="true">
-					<use href="/designsystem-styleguide/icons.svg#chevron-right"></use>
-				</svg>
-
-			</a><!--end c-primary-nav__link-->
-
-			<ul class="c-primary-nav__sublist js-nav-dropdown ">
-
-				<li class="c-primary-nav__subitem ">
-
-	<a class="c-primary-nav__sublink c-primary-nav__sublink--has-children js-nav-dropdown-trigger  " href="#">
-
-		<span class="c-primary-nav__text">Lenker og knapper</span>
-
-		
-		<svg class="c-icon c-primary-nav__subicon" aria-hidden="true">
-			<use href="/designsystem-styleguide/icons.svg#chevron-right"></use>
-		</svg>
-		
-	</a><!--end c-primary-nav__link-->
-
-	
-	<ul class="c-primary-nav__sublist js-nav-dropdown ">
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-</ul><!-- end c-primary-nav__sublist-->
-	
-
-</li><!-- end c-primary-nav__item-->
-
-
-
-			</ul>
-
-		</li>
-
-
-	</ul><!-- end c-nav__list -->
-
-</nav><!-- end c-nav -->
-
-      </div>
-
       <div class="display-brreg">
         <nav class="c-primary-nav" role="navigation">
 
@@ -9045,8 +8309,8 @@
 
 			<li class="c-primary-nav__subitem is-active">
 
-                <a class="c-primary-nav__sublink " href="/designsystem-styleguide/komponenter/skjemakomponenter/tekstfelt.html">
-			    	Tekstfelt
+                <a class="c-primary-nav__sublink " href="/designsystem-styleguide/komponenter/skjemakomponenter/inputfelt.html">
+			    	Inputfelt
 				</a><!-- end c-primary-nav__link -->
 
 			</li><!-- end c-primary-nav__item -->
@@ -12390,7 +11654,8 @@
 
 					<section class="c-section">
 						<header class="c-section__header">
-							<div>Standard  : 
+							<div>Standard  : <p>En stilisert utgave av dropdown.</p>
+ </div>
 						</header>
 
 						
@@ -12399,10 +11664,60 @@
 
 						
 						<div class="iffframe">
+							
+<div class="form-group input-group transparent a-js-forceFlexColumn a-form-group">
+  <div data-toggle="altinn-dropdown" class="dropdown a-transparent a-fullWidthXs">
+    <input type="hidden" class="a-js-altinnDropdown-value" />
+    <button class="btn dropdown-toggle a-dropdown-toggle form-control-alt  a-js-dropdownToValidate" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      
+<i class="ai ai-private  hidden-md-down "    ></i>
+      <span class="a-form-text ">
+        KARI NORDMANNS FORETAK
+      </span>
+    </button>
+    <div class="dropdown-menu a-dropdown-menu" aria-labelledby="dropdownMenu">
+      <a class="dropdown-item a-dropdown-item" href="#" data-value="1">
+        
+        <i class="ai ai-private  hidden-md-down "></i>
+        
+        <span class="a-form-text ">
+            KARI NORDMANN
+          </span>
+      </a>
+      <a class="dropdown-item a-dropdown-item" href="#" data-value="2">
+        
+        <i class="ai ai-private  hidden-md-down "></i>
+        
+        <span class="a-form-text ">
+            OLA NORDMANN
+          </span>
+      </a>
+      <a class="dropdown-item a-dropdown-item" href="#" data-value="3">
+        
+        <i class="ai ai-client  hidden-md-down "></i>
+        
+        <span class="a-form-text ">
+            OLA NORDMANNS FORETAK
+          </span>
+      </a>
+      <a class="dropdown-item a-dropdown-item" href="#" data-value="4">
+        
+        <i class="ai ai-client  hidden-md-down "></i>
+        
+        <span class="a-form-text ">
+            OLA NORDMANNS ANDRE FORETAK
+          </span>
+      </a>
+    </div>
+  </div>
+  <div class="a-message a-message-error a-js-adjustedError" data-valmsg-for="" data-valmsg-replace="false">
+    <span class="has-error"></span>
+  </div>
+</div>
+ 
+							<!-- iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="/designsystem-styleguide/patterns/00-atoms-01-forms-50-flervalg-stilisert/00-atoms-01-forms-50-flervalg-stilisert.markup-only.html"></iframe>
 
-							<iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="/designsystem-styleguide/patterns/00-atoms-01-forms-50-flervalg-stilisert/00-atoms-01-forms-50-flervalg-stilisert.rendered.html"></iframe>
-
-							<div class="iffframe__handle"></div>
+							<div class="iffframe__handle"></div -->
 
 						</div><!--end iffframe-->
 
@@ -12455,63 +11770,46 @@
 								<div class="pattern-code">
 									<button class="c-btn pattern-code-copy-btn" data-clipboard-target="#pattern-code-1">Copy</button>
 									<pre class="highlight pattern-code-block"><code class="language-html" id="pattern-code-1">
-<figure class="highlight"><pre><code class="language-liquid" data-lang="liquid">&lt;!-- START: 00-atomer-01-forms-50-flervalg-stilisert --&gt;
-&lt;div class="form-group input-group transparent a-js-forceFlexColumn a-form-group"&gt;
+<figure class="highlight"><pre><code class="language-liquid" data-lang="liquid">&lt;div class="form-group input-group transparent a-js-forceFlexColumn a-form-group"&gt;
   &lt;div data-toggle="altinn-dropdown" class="dropdown a-transparent a-fullWidthXs"&gt;
     &lt;input type="hidden" class="a-js-altinnDropdown-value" /&gt;
     &lt;button class="btn dropdown-toggle a-dropdown-toggle form-control-alt  a-js-dropdownToValidate" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"&gt;
-      &lt;!-- START: 00-atomer-09-bilder-og-media-15-ikon --&gt;
+      
 &lt;i class="ai ai-private  hidden-md-down "    &gt;&lt;/i&gt;
-
-
-&lt;!-- END: 00-atomer-09-bilder-og-media-15-ikon --&gt;
-
-      &lt;span class="a-form-text "&gt;
+      &lt;span class="a-form-text "&gt;
         KARI NORDMANNS FORETAK
       &lt;/span&gt;
     &lt;/button&gt;
     &lt;div class="dropdown-menu a-dropdown-menu" aria-labelledby="dropdownMenu"&gt;
       &lt;a class="dropdown-item a-dropdown-item" href="#" data-value="1"&gt;
-        &lt;!-- START: 00-atomer-09-bilder-og-media-15-ikon --&gt;
+        
         &lt;i class="ai ai-private  hidden-md-down "&gt;&lt;/i&gt;
-
-
-        &lt;!-- END: 00-atomer-09-bilder-og-media-15-ikon --&gt;
-
-        &lt;span class="a-form-text "&gt;
+        
+        &lt;span class="a-form-text "&gt;
             KARI NORDMANN
           &lt;/span&gt;
       &lt;/a&gt;
       &lt;a class="dropdown-item a-dropdown-item" href="#" data-value="2"&gt;
-        &lt;!-- START: 00-atomer-09-bilder-og-media-15-ikon --&gt;
+        
         &lt;i class="ai ai-private  hidden-md-down "&gt;&lt;/i&gt;
-
-
-        &lt;!-- END: 00-atomer-09-bilder-og-media-15-ikon --&gt;
-
-        &lt;span class="a-form-text "&gt;
+        
+        &lt;span class="a-form-text "&gt;
             OLA NORDMANN
           &lt;/span&gt;
       &lt;/a&gt;
       &lt;a class="dropdown-item a-dropdown-item" href="#" data-value="3"&gt;
-        &lt;!-- START: 00-atomer-09-bilder-og-media-15-ikon --&gt;
+        
         &lt;i class="ai ai-client  hidden-md-down "&gt;&lt;/i&gt;
-
-
-        &lt;!-- END: 00-atomer-09-bilder-og-media-15-ikon --&gt;
-
-        &lt;span class="a-form-text "&gt;
+        
+        &lt;span class="a-form-text "&gt;
             OLA NORDMANNS FORETAK
           &lt;/span&gt;
       &lt;/a&gt;
       &lt;a class="dropdown-item a-dropdown-item" href="#" data-value="4"&gt;
-        &lt;!-- START: 00-atomer-09-bilder-og-media-15-ikon --&gt;
+        
         &lt;i class="ai ai-client  hidden-md-down "&gt;&lt;/i&gt;
-
-
-        &lt;!-- END: 00-atomer-09-bilder-og-media-15-ikon --&gt;
-
-        &lt;span class="a-form-text "&gt;
+        
+        &lt;span class="a-form-text "&gt;
             OLA NORDMANNS ANDRE FORETAK
           &lt;/span&gt;
       &lt;/a&gt;
@@ -12520,9 +11818,7 @@
   &lt;div class="a-message a-message-error a-js-adjustedError" data-valmsg-for="" data-valmsg-replace="false"&gt;
     &lt;span class="has-error"&gt;&lt;/span&gt;
   &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;!-- END: 00-atomer-01-forms-50-flervalg-stilisert --&gt;</code></pre></figure>
+&lt;/div&gt;</code></pre></figure>
 </code></pre>
 								</div>
 
@@ -12573,15 +11869,30 @@
 		<div class="c-text-passage l-linelength-container">
 
 			
+				<h3>Når skal du bruke denne komponenten?</h3>
+        <p>Info kommer.</p>
+      
+				<h3>Når skal du vurdere alternativer?</h3>
+        <p>Info kommer.</p>
+      
+				<h3>Policies</h3>
+        <p>Se theme-spesifikke policies.</p>
+      
 
 		</div><!-- end c-text-passage -->
 
 		<div class="c-text-passage l-linelength-container display-altinn">
 			
+				<h3>Theme-spesifikke policies for Altinn</h3>
+        <p>Ingen retningslinjer er lagt inn for Altinn enda.</p>
+      
 		</div><!-- end c-text-passage -->
 
 		<div class="c-text-passage l-linelength-container display-brreg">
 			
+				<h3>Theme-spesifikke policies for Brønnøysundregistrene</h3>
+        <p>Ingen retningslinjer er lagt inn for Brønnøysundregistrene enda.</p>
+      
 		</div><!-- end c-text-passage -->
 
 		<table class="c-table my-3">
@@ -12597,6 +11908,24 @@
 			</thead><!-- end c-table__header -->
 
 			<tbody class="c-table__body ">
+				
+
+				<tr class="c-table__row ">
+
+					<td class="c-table__cell ">
+						form-group input-group transparent a-js-forceFlexColumn
+					</td>
+
+					<td class="c-table__cell ">
+						ja
+					</td>
+
+					<td class="c-table__cell ">
+						
+						
+					</td>
+
+				</tr><!-- end c-table__row -->
 				
 
 			</tbody><!-- end c-table__body -->
@@ -12650,27 +11979,6 @@
 <!-- Bundled assets -->
 <script src="/designsystem-styleguide/dist/js/infoportal.vendor.js"></script>
 <script src="/designsystem-styleguide/dist/js/infoportal.js"></script>
-
-<script>
-  $('.iffframe').find('iframe').on('load', function() {
-    if (window.localStorage.getItem('persisted_style') !== '1') {
-      var e = document.createElement('link')
-      e.rel = 'stylesheet'
-      e.type = 'text/css'
-      if (window.localStorage.getItem('persisted_style') === '2') {
-        e.href = '/designsystem-styleguide/css/altinnett.css'
-      } else {
-        e.href = '/designsystem-styleguide/css/brreg.css'
-      }
-      $($('.iffframe').find('iframe')[0].contentWindow.document.getElementsByTagName('head')[0])
-       .find('link[rel=stylesheet][href~=\'/designsystem-styleguide/css/altinnett.css\']').remove()
-      $($('.iffframe').find('iframe')[0].contentWindow.document.getElementsByTagName('head')[0])
-       .find('link[rel=stylesheet][href~=\'/designsystem-styleguide/css/brreg.css\']').remove()
-      $('.iffframe').find('iframe')[0].contentWindow.document.getElementsByTagName('head')[0].appendChild(e)
-    }
-  });
-</script>
-
 
             </div><!--end l-page-layout__main-->
 

@@ -14,10 +14,12 @@
 	<link rel="stylesheet" href="/designsystem-styleguide/css/style-guide.css">
 	<link rel="icon" href="/designsystem-styleguide/favicon.ico">
 
-	<link rel="stylesheet" href="/designsystem-styleguide/css/style.css">
+	<script src="https://use.fortawesome.com/ed31cded.js"></script>
+
+	<link rel="stylesheet" href="/designsystem-styleguide/css/style.dist.storefront.css">
+	<link rel="stylesheet" href="/designsystem-styleguide/css/brreg.css">
 
 	<link rel="canonical" href="http://localhost:4000/designsystem-styleguide/komponenter/lenker-og-knapper/lenke.html">
-	<script src="https://use.fortawesome.com/ed31cded.js"></script>
 </head>
 
 
@@ -61,13 +63,11 @@
 
 	<!-- TITLE -->
 
-	<a href="https://www.npmjs.com/package/altinn-designsystem" class="a-st-version">Versjon: 0.2.36</a>
+	<a href="https://www.npmjs.com/package/altinn-designsystem" class="a-st-version">Versjon: 1.0.0</a>
 
 	<!-- THEME PICKER -->
 	<div class="form-group input-group transparent a-js-forceFlexColumn a-form-group">
 	  <div data-toggle="altinn-dropdown" class="dropdown a-fullWidthXs">
-	    <input type="hidden" class="a-js-altinnDropdown-value">
-
 			<button class="btn dropdown-toggle a-dropdown-toggle form-control-alt  a-js-dropdownToValidate" type="button" id="dropdownMenu" name="Velg theme" title="Velg theme" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 	      <span class="a-form-text">
 					<span class="sr-only" id="a-js-chosenTheme">Altinn</span>
@@ -107,7 +107,7 @@
 
 	    <div class="dropdown-menu a-dropdown-menu" aria-labelledby="dropdownMenu" name="chooseProject">
 
-	        <a class="dropdown-item a-dropdown-item" href="#" data-value="1">
+	        <a class="dropdown-item a-dropdown-item" href="#" data-project="altinn">
 	          <span class="a-form-text">
 	            <span class="sr-only" id="a-js-chosenTheme">Altinn</span>
 							<span class="a-st-dropdownLogo">
@@ -148,7 +148,7 @@
 	          </span>
 	        </a>
 
-	        <a class="dropdown-item a-dropdown-item" href="#" data-value="3">
+	        <a class="dropdown-item a-dropdown-item" href="#" data-project="brreg">
 						<span class="a-form-text a-dropdown-item--long">
 							<span class="sr-only" id="a-js-chosenTheme">Brønnøysundregistrene</span>
 							<span class="a-st-dropdownLogo">
@@ -2574,8 +2574,8 @@
 
 			<li class="c-primary-nav__subitem ">
 
-                <a class="c-primary-nav__sublink " href="/designsystem-styleguide/komponenter/skjemakomponenter/tekstfelt.html">
-			    	Tekstfelt
+                <a class="c-primary-nav__sublink " href="/designsystem-styleguide/komponenter/skjemakomponenter/inputfelt.html">
+			    	Inputfelt
 				</a><!-- end c-primary-nav__link -->
 
 			</li><!-- end c-primary-nav__item -->
@@ -5990,742 +5990,6 @@
 
       </div>
 
-      <div class="display-altinnett">
-        <nav class="c-primary-nav" role="navigation">
-
-	<ul class="c-primary-nav__list c-primary-nav__list--flush js-nav-panel" role="tablist" aria-multiselectable="true">
-
-
-		<li class="c-primary-nav__item">
-
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-				<a href="/designsystem-styleguide/eksempel-altinnett.html" class="c-primary-nav__link ">
-					<span class="c-primary-nav__text">Eksemepelside altinnett</span>
-				</a>
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-
-		</li><!-- end c-nav__list__item -->
-
-		<li class="c-primary-nav__item ">
-			<a class="c-primary-nav__link c-primary-nav__link--has-children js-nav-dropdown-trigger " href="/designsystem-styleguide/altinnett-components/">
-
-				<span class="c-primary-nav__text">Komponenter Altinnett</span>
-
-				<svg class="c-icon c-primary-nav__icon" aria-hidden="true">
-					<use href="/designsystem-styleguide/icons.svg#chevron-right"></use>
-				</svg>
-
-			</a><!--end c-primary-nav__link-->
-
-			<ul class="c-primary-nav__sublist js-nav-dropdown ">
-
-				<li class="c-primary-nav__subitem ">
-
-	<a class="c-primary-nav__sublink c-primary-nav__sublink--has-children js-nav-dropdown-trigger  " href="#">
-
-		<span class="c-primary-nav__text">Lenker og knapper</span>
-
-		
-		<svg class="c-icon c-primary-nav__subicon" aria-hidden="true">
-			<use href="/designsystem-styleguide/icons.svg#chevron-right"></use>
-		</svg>
-		
-	</a><!--end c-primary-nav__link-->
-
-	
-	<ul class="c-primary-nav__sublist js-nav-dropdown ">
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-</ul><!-- end c-primary-nav__sublist-->
-	
-
-</li><!-- end c-primary-nav__item-->
-
-
-
-			</ul>
-
-		</li>
-
-
-	</ul><!-- end c-nav__list -->
-
-</nav><!-- end c-nav -->
-
-      </div>
-
       <div class="display-brreg">
         <nav class="c-primary-nav" role="navigation">
 
@@ -9045,8 +8309,8 @@
 
 			<li class="c-primary-nav__subitem ">
 
-                <a class="c-primary-nav__sublink " href="/designsystem-styleguide/komponenter/skjemakomponenter/tekstfelt.html">
-			    	Tekstfelt
+                <a class="c-primary-nav__sublink " href="/designsystem-styleguide/komponenter/skjemakomponenter/inputfelt.html">
+			    	Inputfelt
 				</a><!-- end c-primary-nav__link -->
 
 			</li><!-- end c-primary-nav__item -->
@@ -12379,6 +11643,14 @@
 					<a href="#tab-standard" class="c-tabs__link js-tab" data-code-tabs="tab-standard">Standard</a>
 				</li><!-- end c-tabs__item -->
 				
+				<li class="c-tabs__item">
+					<a href="#tab-ekstern" class="c-tabs__link js-tab" data-code-tabs="tab-ekstern">Ekstern</a>
+				</li><!-- end c-tabs__item -->
+				
+				<li class="c-tabs__item">
+					<a href="#tab-fremhevet" class="c-tabs__link js-tab" data-code-tabs="tab-fremhevet">Fremhevet</a>
+				</li><!-- end c-tabs__item -->
+				
 
 
 			</ul><!-- end c-tabs__list -->
@@ -12390,7 +11662,8 @@
 
 					<section class="c-section">
 						<header class="c-section__header">
-							<div>Standard  : 
+							<div>Standard  : <p>En standard lenke</p>
+ </div>
 						</header>
 
 						
@@ -12399,10 +11672,77 @@
 
 						
 						<div class="iffframe">
+							
+<a href="/patterns/04-sider-infoportal-01-forside-00-forside/04-sider-infoportal-01-forside-00-forside.html" class=" ">
+  En lenke ser slik ut
+  
+</a>
+ 
+							<!-- iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="/designsystem-styleguide/patterns/00-atoms-02-lenker-00-link/00-atoms-02-lenker-00-link.markup-only.html"></iframe>
 
-							<iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="/designsystem-styleguide/patterns/00-atoms-02-lenker-00-link/00-atoms-02-lenker-00-link.rendered.html"></iframe>
+							<div class="iffframe__handle"></div -->
 
-							<div class="iffframe__handle"></div>
+						</div><!--end iffframe-->
+
+					</section><!--end section-->
+
+				</div><!--end c-tabs__panel-->
+				
+				<div class="c-tabs__panel js-tabs-panel" id="tab-ekstern">
+
+					<section class="c-section">
+						<header class="c-section__header">
+							<div>Ekstern  : <p>En ekstern lenke.</p>
+ </div>
+						</header>
+
+						
+
+						
+
+						
+						<div class="iffframe">
+							
+<a href="http://www.skatteetaten.no/" class=" ">
+  En ekstern lenke har et ikon
+  
+</a>
+ 
+							<!-- iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="/designsystem-styleguide/patterns/00-atoms-02-lenker-02-link-ekstern/00-atoms-02-lenker-02-link-ekstern.markup-only.html"></iframe>
+
+							<div class="iffframe__handle"></div -->
+
+						</div><!--end iffframe-->
+
+					</section><!--end section-->
+
+				</div><!--end c-tabs__panel-->
+				
+				<div class="c-tabs__panel js-tabs-panel" id="tab-fremhevet">
+
+					<section class="c-section">
+						<header class="c-section__header">
+							<div>Fremhevet  : <p>En fremhevet lenke.</p>
+ </div>
+						</header>
+
+						
+
+						
+
+						
+						<div class="iffframe">
+							
+<a href="/patterns/04-sider-infoportal-01-forside-00-forside/04-sider-infoportal-01-forside-00-forside.html" class="a-linkFeatured ">
+  En fremhevet lenke kan se slik ut
+  
+    
+<i class="ai ai-sm ai-nw ai-nw-right ai-arrowright   "    ></i>
+</a>
+ 
+							<!-- iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="/designsystem-styleguide/patterns/00-atoms-02-lenker-03-link-fremhevet/00-atoms-02-lenker-03-link-fremhevet.markup-only.html"></iframe>
+
+							<div class="iffframe__handle"></div -->
 
 						</div><!--end iffframe-->
 
@@ -12455,13 +11795,10 @@
 								<div class="pattern-code">
 									<button class="c-btn pattern-code-copy-btn" data-clipboard-target="#pattern-code-1">Copy</button>
 									<pre class="highlight pattern-code-block"><code class="language-html" id="pattern-code-1">
-<figure class="highlight"><pre><code class="language-liquid" data-lang="liquid">&lt;!-- START: 00-atomer-02-lenker-00-link --&gt;
-&lt;a href="/patterns/04-sider-infoportal-01-forside-00-forside/04-sider-infoportal-01-forside-00-forside.html" class=" "&gt;
+<figure class="highlight"><pre><code class="language-liquid" data-lang="liquid">&lt;a href="/patterns/04-sider-infoportal-01-forside-00-forside/04-sider-infoportal-01-forside-00-forside.html" class=" "&gt;
   En lenke ser slik ut
   
-&lt;/a&gt;
-
-&lt;!-- END: 00-atomer-02-lenker-00-link --&gt;</code></pre></figure>
+&lt;/a&gt;</code></pre></figure>
 </code></pre>
 								</div>
 
@@ -12493,6 +11830,152 @@
 				</li><!-- end c-tabs-list__item -->
 			
 
+				
+
+				
+
+				
+
+				<li class="c-tabs-list__item js-tabs-list-item" data-code-tabs="tab-ekstern">
+
+					<div class="c-tabs test-tabs  js-tabs">
+
+						<ul class="c-tabs__list">
+
+							<li class="c-tabs__item">
+								<a href="#html-2" class="c-tabs__link js-tab">HTML</a>
+							</li><!-- end c-tabs__item -->
+
+							<!--
+
+							<li class="c-tabs__item">
+								<a href="#angular-2" class="c-tabs__link js-tab">Angular</a>
+							</li><!-- end c-tabs__item -->
+
+							<!--<li class="c-tabs__item">
+								<a href="#react-2" class="c-tabs__link js-tab">React</a>
+							</li><!-- end c-tabs__item -->
+
+						</ul><!-- end c-tabs__list -->
+
+						<div class="c-tabs__body ">
+
+							<div class="c-tabs__panel js-tabs-panel" id="html-2">
+
+								
+
+								<div class="pattern-code">
+									<button class="c-btn pattern-code-copy-btn" data-clipboard-target="#pattern-code-2">Copy</button>
+									<pre class="highlight pattern-code-block"><code class="language-html" id="pattern-code-2">
+<figure class="highlight"><pre><code class="language-liquid" data-lang="liquid">&lt;a href="http://www.skatteetaten.no/" class=" "&gt;
+  En ekstern lenke har et ikon
+  
+&lt;/a&gt;</code></pre></figure>
+</code></pre>
+								</div>
+
+							</div><!--end c-tabs__panel-->
+
+
+							<div class="c-tabs__panel js-tabs-panel" id="angular-2">
+
+								<div class="pattern-code">
+									<button class="c-btn pattern-code-copy-btn" data-clipboard-target="#pattern-code-2">Copy</button>
+									<pre class="highlight pattern-code-block"><code class="language-html" id="pattern-code-2">THIS IS ANGULAR CODE</code></pre>
+								</div>
+
+							</div><!--end c-tabs__panel-->
+
+							<div class="c-tabs__panel js-tabs-panel" id="react-2">
+
+								<div class="pattern-code">
+									<button class="c-btn pattern-code-copy-btn" data-clipboard-target="#pattern-code-2">Copy</button>
+									<pre class="highlight pattern-code-block"><code class="language-html" id="pattern-code-2">THIS IS REACT CODE</code></pre>
+								</div>
+
+							</div><!--end c-tabs__panel-->
+
+						</div><!-- end c-tabs__body-->
+
+					</div><!-- end c-tabs -->
+
+				</li><!-- end c-tabs-list__item -->
+			
+
+				
+
+				
+
+				
+
+				<li class="c-tabs-list__item js-tabs-list-item" data-code-tabs="tab-fremhevet">
+
+					<div class="c-tabs test-tabs  js-tabs">
+
+						<ul class="c-tabs__list">
+
+							<li class="c-tabs__item">
+								<a href="#html-3" class="c-tabs__link js-tab">HTML</a>
+							</li><!-- end c-tabs__item -->
+
+							<!--
+
+							<li class="c-tabs__item">
+								<a href="#angular-3" class="c-tabs__link js-tab">Angular</a>
+							</li><!-- end c-tabs__item -->
+
+							<!--<li class="c-tabs__item">
+								<a href="#react-3" class="c-tabs__link js-tab">React</a>
+							</li><!-- end c-tabs__item -->
+
+						</ul><!-- end c-tabs__list -->
+
+						<div class="c-tabs__body ">
+
+							<div class="c-tabs__panel js-tabs-panel" id="html-3">
+
+								
+
+								<div class="pattern-code">
+									<button class="c-btn pattern-code-copy-btn" data-clipboard-target="#pattern-code-3">Copy</button>
+									<pre class="highlight pattern-code-block"><code class="language-html" id="pattern-code-3">
+<figure class="highlight"><pre><code class="language-liquid" data-lang="liquid">&lt;a href="/patterns/04-sider-infoportal-01-forside-00-forside/04-sider-infoportal-01-forside-00-forside.html" class="a-linkFeatured "&gt;
+  En fremhevet lenke kan se slik ut
+  
+    
+&lt;i class="ai ai-sm ai-nw ai-nw-right ai-arrowright   "    &gt;&lt;/i&gt;
+&lt;/a&gt;</code></pre></figure>
+</code></pre>
+								</div>
+
+							</div><!--end c-tabs__panel-->
+
+
+							<div class="c-tabs__panel js-tabs-panel" id="angular-3">
+
+								<div class="pattern-code">
+									<button class="c-btn pattern-code-copy-btn" data-clipboard-target="#pattern-code-3">Copy</button>
+									<pre class="highlight pattern-code-block"><code class="language-html" id="pattern-code-3">THIS IS ANGULAR CODE</code></pre>
+								</div>
+
+							</div><!--end c-tabs__panel-->
+
+							<div class="c-tabs__panel js-tabs-panel" id="react-3">
+
+								<div class="pattern-code">
+									<button class="c-btn pattern-code-copy-btn" data-clipboard-target="#pattern-code-3">Copy</button>
+									<pre class="highlight pattern-code-block"><code class="language-html" id="pattern-code-3">THIS IS REACT CODE</code></pre>
+								</div>
+
+							</div><!--end c-tabs__panel-->
+
+						</div><!-- end c-tabs__body-->
+
+					</div><!-- end c-tabs -->
+
+				</li><!-- end c-tabs-list__item -->
+			
+
 		</ul><!-- end c-tabs-list -->
 
 	</div>
@@ -12513,26 +11996,29 @@
 
 			
 				<h3>Når skal du bruke denne komponenten?</h3>
-        <p>Brukes for handlinger, f.eks Lagre, Send, osv.</p>
-      
-				<h3>Policies</h3>
-        <p>Alltid 2px underline på lenker, unntak for artikler, der det er 1px (2px ved fet tekst). Eksterne lenker for en pil (vendt skrått oppover) til høyre for teksten. Pilen etter lenketekst skal ikke ha understrek under.</p>
-      
-				<h3>Interaksjon og styling</h3>
-        <p>Siden knappen er kun 36px høy, er det avsatt et område over og under, slik at touch target er 48px. Det skal være minimum 12px mellomrom mellom hver knapp/lenke.</p>
+        <p>Brukes når brukeren sendes til en annen side, enten intern eller ekstern.</p>
       
 				<h3>Når skal du vurdere alternativer?</h3>
-        <p>Dersom knappen skal utføre en av følgende handlinger, 'Last ned', 'Last opp', eller 'last inn flere'. I disse tilfellene benyttes handlingsknapp som har stiplet linje.</p>
+        <p>Dersom brukeren ikke skal sendes til en side, men utføre en handling. I slike tilfeller skal knapper brukes, ikke lenker.</p>
+      
+				<h3>Policies</h3>
+        <p>Se theme-spesifikke policies.</p>
       
 
 		</div><!-- end c-text-passage -->
 
 		<div class="c-text-passage l-linelength-container display-altinn">
 			
+				<h3>Theme-spesifikke policies for Altinn</h3>
+        <p>Alltid 2px understrek på lenker, unntak for artikler, der det er 1px (2px ved fet tekst). <p>Eksterne lenker får automatisk en pil (vendt skrått oppover) til høyre for teksten. Pilen etter lenketekst skal ikke ha understrek under.</p> <p>Fremhevede lenker brukes på utvalgte steder for å oppfordre brukeren til en oppgave eller henvise til en oversikt. For eksempel i slutten av lister, etc.</p></p>
+      
 		</div><!-- end c-text-passage -->
 
 		<div class="c-text-passage l-linelength-container display-brreg">
 			
+				<h3>Theme-spesifikke policies for Brønnøysundregistrene</h3>
+        <p>Ingen retningslinjer er lagt inn for Brønnøysundregistrene enda.</p>
+      
 		</div><!-- end c-text-passage -->
 
 		<table class="c-table my-3">
@@ -12553,16 +12039,16 @@
 				<tr class="c-table__row ">
 
 					<td class="c-table__cell ">
-						a-btn
+						Ingen
 					</td>
 
 					<td class="c-table__cell ">
-						Ja
+						nei
 					</td>
 
 					<td class="c-table__cell ">
 						
-						<p>Dersom du skal style en lenke slik at den ut som en knapp, kan du også bruke denne klassen.</p>
+						<p>Ved bruk av &lt; a &gt; vil lenken automatisk få riktig styling. Det er ikke behov for å legge til en klasse.</p>
 
 					</td>
 
@@ -12572,7 +12058,7 @@
 				<tr class="c-table__row ">
 
 					<td class="c-table__cell ">
-						a-btn-success
+						a-linkFeatured
 					</td>
 
 					<td class="c-table__cell ">
@@ -12581,7 +12067,7 @@
 
 					<td class="c-table__cell ">
 						
-						<p>Legg til denne klassen dersom knappen skal være grønn.</p>
+						<p>Legg til denne klassen dersom lenken skal være fremhevet.</p>
 
 					</td>
 
@@ -12591,7 +12077,7 @@
 				<tr class="c-table__row ">
 
 					<td class="c-table__cell ">
-						a-btn-danger
+						a-btn-link
 					</td>
 
 					<td class="c-table__cell ">
@@ -12600,26 +12086,7 @@
 
 					<td class="c-table__cell ">
 						
-						<p>Legg til denne klassen dersom knappen skal være rød.</p>
-
-					</td>
-
-				</tr><!-- end c-table__row -->
-				
-
-				<tr class="c-table__row ">
-
-					<td class="c-table__cell ">
-						disabled
-					</td>
-
-					<td class="c-table__cell ">
-						nei
-					</td>
-
-					<td class="c-table__cell ">
-						
-						<p>Legg til denne klassen dersom knappen skal være deaktivert.</p>
+						<p>For å få en knapp til å se ut som en lenke, kan man bruke klassen “a-btn-link” på &lt; button &gt;.</p>
 
 					</td>
 
@@ -12677,27 +12144,6 @@
 <!-- Bundled assets -->
 <script src="/designsystem-styleguide/dist/js/infoportal.vendor.js"></script>
 <script src="/designsystem-styleguide/dist/js/infoportal.js"></script>
-
-<script>
-  $('.iffframe').find('iframe').on('load', function() {
-    if (window.localStorage.getItem('persisted_style') !== '1') {
-      var e = document.createElement('link')
-      e.rel = 'stylesheet'
-      e.type = 'text/css'
-      if (window.localStorage.getItem('persisted_style') === '2') {
-        e.href = '/designsystem-styleguide/css/altinnett.css'
-      } else {
-        e.href = '/designsystem-styleguide/css/brreg.css'
-      }
-      $($('.iffframe').find('iframe')[0].contentWindow.document.getElementsByTagName('head')[0])
-       .find('link[rel=stylesheet][href~=\'/designsystem-styleguide/css/altinnett.css\']').remove()
-      $($('.iffframe').find('iframe')[0].contentWindow.document.getElementsByTagName('head')[0])
-       .find('link[rel=stylesheet][href~=\'/designsystem-styleguide/css/brreg.css\']').remove()
-      $('.iffframe').find('iframe')[0].contentWindow.document.getElementsByTagName('head')[0].appendChild(e)
-    }
-  });
-</script>
-
 
             </div><!--end l-page-layout__main-->
 

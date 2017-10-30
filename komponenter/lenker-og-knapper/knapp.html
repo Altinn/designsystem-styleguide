@@ -14,10 +14,12 @@
 	<link rel="stylesheet" href="/designsystem-styleguide/css/style-guide.css">
 	<link rel="icon" href="/designsystem-styleguide/favicon.ico">
 
-	<link rel="stylesheet" href="/designsystem-styleguide/css/style.css">
+	<script src="https://use.fortawesome.com/ed31cded.js"></script>
+
+	<link rel="stylesheet" href="/designsystem-styleguide/css/style.dist.storefront.css">
+	<link rel="stylesheet" href="/designsystem-styleguide/css/brreg.css">
 
 	<link rel="canonical" href="http://localhost:4000/designsystem-styleguide/komponenter/lenker-og-knapper/knapp.html">
-	<script src="https://use.fortawesome.com/ed31cded.js"></script>
 </head>
 
 
@@ -61,13 +63,11 @@
 
 	<!-- TITLE -->
 
-	<a href="https://www.npmjs.com/package/altinn-designsystem" class="a-st-version">Versjon: 0.2.36</a>
+	<a href="https://www.npmjs.com/package/altinn-designsystem" class="a-st-version">Versjon: 1.0.0</a>
 
 	<!-- THEME PICKER -->
 	<div class="form-group input-group transparent a-js-forceFlexColumn a-form-group">
 	  <div data-toggle="altinn-dropdown" class="dropdown a-fullWidthXs">
-	    <input type="hidden" class="a-js-altinnDropdown-value">
-
 			<button class="btn dropdown-toggle a-dropdown-toggle form-control-alt  a-js-dropdownToValidate" type="button" id="dropdownMenu" name="Velg theme" title="Velg theme" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 	      <span class="a-form-text">
 					<span class="sr-only" id="a-js-chosenTheme">Altinn</span>
@@ -107,7 +107,7 @@
 
 	    <div class="dropdown-menu a-dropdown-menu" aria-labelledby="dropdownMenu" name="chooseProject">
 
-	        <a class="dropdown-item a-dropdown-item" href="#" data-value="1">
+	        <a class="dropdown-item a-dropdown-item" href="#" data-project="altinn">
 	          <span class="a-form-text">
 	            <span class="sr-only" id="a-js-chosenTheme">Altinn</span>
 							<span class="a-st-dropdownLogo">
@@ -148,7 +148,7 @@
 	          </span>
 	        </a>
 
-	        <a class="dropdown-item a-dropdown-item" href="#" data-value="3">
+	        <a class="dropdown-item a-dropdown-item" href="#" data-project="brreg">
 						<span class="a-form-text a-dropdown-item--long">
 							<span class="sr-only" id="a-js-chosenTheme">Brønnøysundregistrene</span>
 							<span class="a-st-dropdownLogo">
@@ -2574,8 +2574,8 @@
 
 			<li class="c-primary-nav__subitem ">
 
-                <a class="c-primary-nav__sublink " href="/designsystem-styleguide/komponenter/skjemakomponenter/tekstfelt.html">
-			    	Tekstfelt
+                <a class="c-primary-nav__sublink " href="/designsystem-styleguide/komponenter/skjemakomponenter/inputfelt.html">
+			    	Inputfelt
 				</a><!-- end c-primary-nav__link -->
 
 			</li><!-- end c-primary-nav__item -->
@@ -5990,742 +5990,6 @@
 
       </div>
 
-      <div class="display-altinnett">
-        <nav class="c-primary-nav" role="navigation">
-
-	<ul class="c-primary-nav__list c-primary-nav__list--flush js-nav-panel" role="tablist" aria-multiselectable="true">
-
-
-		<li class="c-primary-nav__item">
-
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-				<a href="/designsystem-styleguide/eksempel-altinnett.html" class="c-primary-nav__link ">
-					<span class="c-primary-nav__text">Eksemepelside altinnett</span>
-				</a>
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-
-		</li><!-- end c-nav__list__item -->
-
-		<li class="c-primary-nav__item ">
-			<a class="c-primary-nav__link c-primary-nav__link--has-children js-nav-dropdown-trigger " href="/designsystem-styleguide/altinnett-components/">
-
-				<span class="c-primary-nav__text">Komponenter Altinnett</span>
-
-				<svg class="c-icon c-primary-nav__icon" aria-hidden="true">
-					<use href="/designsystem-styleguide/icons.svg#chevron-right"></use>
-				</svg>
-
-			</a><!--end c-primary-nav__link-->
-
-			<ul class="c-primary-nav__sublist js-nav-dropdown ">
-
-				<li class="c-primary-nav__subitem ">
-
-	<a class="c-primary-nav__sublink c-primary-nav__sublink--has-children js-nav-dropdown-trigger  " href="#">
-
-		<span class="c-primary-nav__text">Lenker og knapper</span>
-
-		
-		<svg class="c-icon c-primary-nav__subicon" aria-hidden="true">
-			<use href="/designsystem-styleguide/icons.svg#chevron-right"></use>
-		</svg>
-		
-	</a><!--end c-primary-nav__link-->
-
-	
-	<ul class="c-primary-nav__sublist js-nav-dropdown ">
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-</ul><!-- end c-primary-nav__sublist-->
-	
-
-</li><!-- end c-primary-nav__item-->
-
-
-
-			</ul>
-
-		</li>
-
-
-	</ul><!-- end c-nav__list -->
-
-</nav><!-- end c-nav -->
-
-      </div>
-
       <div class="display-brreg">
         <nav class="c-primary-nav" role="navigation">
 
@@ -9045,8 +8309,8 @@
 
 			<li class="c-primary-nav__subitem ">
 
-                <a class="c-primary-nav__sublink " href="/designsystem-styleguide/komponenter/skjemakomponenter/tekstfelt.html">
-			    	Tekstfelt
+                <a class="c-primary-nav__sublink " href="/designsystem-styleguide/komponenter/skjemakomponenter/inputfelt.html">
+			    	Inputfelt
 				</a><!-- end c-primary-nav__link -->
 
 			</li><!-- end c-primary-nav__item -->
@@ -12412,10 +11676,16 @@
 
 						
 						<div class="iffframe">
+							
+<button type="button" class="a-btn ">
+  
+    En standard knapp
+  
+</button>
+ 
+							<!-- iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="/designsystem-styleguide/patterns/00-atoms-03-knapper-10-knapp/00-atoms-03-knapper-10-knapp.markup-only.html"></iframe>
 
-							<iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="/designsystem-styleguide/patterns/00-atoms-03-knapper-10-knapp/00-atoms-03-knapper-10-knapp.rendered.html"></iframe>
-
-							<div class="iffframe__handle"></div>
+							<div class="iffframe__handle"></div -->
 
 						</div><!--end iffframe-->
 
@@ -12437,10 +11707,16 @@
 
 						
 						<div class="iffframe">
+							
+<button type="button" class="a-btn a-btn-danger ">
+  
+    En knapp som antyder fare
+  
+</button>
+ 
+							<!-- iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="/designsystem-styleguide/patterns/00-atoms-03-knapper-12-knapp-fare/00-atoms-03-knapper-12-knapp-fare.markup-only.html"></iframe>
 
-							<iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="/designsystem-styleguide/patterns/00-atoms-03-knapper-12-knapp-fare/00-atoms-03-knapper-12-knapp-fare.rendered.html"></iframe>
-
-							<div class="iffframe__handle"></div>
+							<div class="iffframe__handle"></div -->
 
 						</div><!--end iffframe-->
 
@@ -12462,10 +11738,16 @@
 
 						
 						<div class="iffframe">
+							
+<button type="button" class="a-btn a-btn-success ">
+  
+    En knapp som antyder suksess
+  
+</button>
+ 
+							<!-- iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="/designsystem-styleguide/patterns/00-atoms-03-knapper-11-knapp-suksess/00-atoms-03-knapper-11-knapp-suksess.markup-only.html"></iframe>
 
-							<iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="/designsystem-styleguide/patterns/00-atoms-03-knapper-11-knapp-suksess/00-atoms-03-knapper-11-knapp-suksess.rendered.html"></iframe>
-
-							<div class="iffframe__handle"></div>
+							<div class="iffframe__handle"></div -->
 
 						</div><!--end iffframe-->
 
@@ -12487,10 +11769,16 @@
 
 						
 						<div class="iffframe">
+							
+<button type="button" class="a-btn disabled " disabled>
+  
+    En deaktivert knapp
+  
+</button>
+ 
+							<!-- iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="/designsystem-styleguide/patterns/00-atoms-03-knapper-13-knapp-deaktivert/00-atoms-03-knapper-13-knapp-deaktivert.markup-only.html"></iframe>
 
-							<iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="/designsystem-styleguide/patterns/00-atoms-03-knapper-13-knapp-deaktivert/00-atoms-03-knapper-13-knapp-deaktivert.rendered.html"></iframe>
-
-							<div class="iffframe__handle"></div>
+							<div class="iffframe__handle"></div -->
 
 						</div><!--end iffframe-->
 
@@ -12543,14 +11831,11 @@
 								<div class="pattern-code">
 									<button class="c-btn pattern-code-copy-btn" data-clipboard-target="#pattern-code-1">Copy</button>
 									<pre class="highlight pattern-code-block"><code class="language-html" id="pattern-code-1">
-<figure class="highlight"><pre><code class="language-liquid" data-lang="liquid">&lt;!-- START: 00-atomer-03-knapper-10-knapp --&gt;
-&lt;button type="button" class="a-btn "&gt;
+<figure class="highlight"><pre><code class="language-liquid" data-lang="liquid">&lt;button type="button" class="a-btn "&gt;
   
     En standard knapp
   
-&lt;/button&gt;
-
-&lt;!-- END: 00-atomer-03-knapper-10-knapp --&gt;</code></pre></figure>
+&lt;/button&gt;</code></pre></figure>
 </code></pre>
 								</div>
 
@@ -12619,18 +11904,11 @@
 								<div class="pattern-code">
 									<button class="c-btn pattern-code-copy-btn" data-clipboard-target="#pattern-code-2">Copy</button>
 									<pre class="highlight pattern-code-block"><code class="language-html" id="pattern-code-2">
-<figure class="highlight"><pre><code class="language-liquid" data-lang="liquid">&lt;!-- START: 00-atomer-03-knapper-12-♺-knapp-fare --&gt;
-&lt;!-- START: 00-atomer-03-knapper-10-knapp --&gt;
-&lt;button type="button" class="a-btn a-btn-danger "&gt;
+<figure class="highlight"><pre><code class="language-liquid" data-lang="liquid">&lt;button type="button" class="a-btn a-btn-danger "&gt;
   
     En knapp som antyder fare
   
-&lt;/button&gt;
-
-&lt;!-- END: 00-atomer-03-knapper-10-knapp --&gt;
-
-
-&lt;!-- END: 00-atomer-03-knapper-12-♺-knapp-fare --&gt;</code></pre></figure>
+&lt;/button&gt;</code></pre></figure>
 </code></pre>
 								</div>
 
@@ -12699,18 +11977,11 @@
 								<div class="pattern-code">
 									<button class="c-btn pattern-code-copy-btn" data-clipboard-target="#pattern-code-3">Copy</button>
 									<pre class="highlight pattern-code-block"><code class="language-html" id="pattern-code-3">
-<figure class="highlight"><pre><code class="language-liquid" data-lang="liquid">&lt;!-- START: 00-atomer-03-knapper-11-♺-knapp-suksess --&gt;
-&lt;!-- START: 00-atomer-03-knapper-10-knapp --&gt;
-&lt;button type="button" class="a-btn a-btn-success "&gt;
+<figure class="highlight"><pre><code class="language-liquid" data-lang="liquid">&lt;button type="button" class="a-btn a-btn-success "&gt;
   
     En knapp som antyder suksess
   
-&lt;/button&gt;
-
-&lt;!-- END: 00-atomer-03-knapper-10-knapp --&gt;
-
-
-&lt;!-- END: 00-atomer-03-knapper-11-♺-knapp-suksess --&gt;</code></pre></figure>
+&lt;/button&gt;</code></pre></figure>
 </code></pre>
 								</div>
 
@@ -12779,18 +12050,11 @@
 								<div class="pattern-code">
 									<button class="c-btn pattern-code-copy-btn" data-clipboard-target="#pattern-code-4">Copy</button>
 									<pre class="highlight pattern-code-block"><code class="language-html" id="pattern-code-4">
-<figure class="highlight"><pre><code class="language-liquid" data-lang="liquid">&lt;!-- START: 00-atomer-03-knapper-13-♺-knapp-deaktivert --&gt;
-&lt;!-- START: 00-atomer-03-knapper-10-knapp --&gt;
-&lt;button type="button" class="a-btn disabled " disabled&gt;
+<figure class="highlight"><pre><code class="language-liquid" data-lang="liquid">&lt;button type="button" class="a-btn disabled " disabled&gt;
   
     En deaktivert knapp
   
-&lt;/button&gt;
-
-&lt;!-- END: 00-atomer-03-knapper-10-knapp --&gt;
-
-
-&lt;!-- END: 00-atomer-03-knapper-13-♺-knapp-deaktivert --&gt;</code></pre></figure>
+&lt;/button&gt;</code></pre></figure>
 </code></pre>
 								</div>
 
@@ -12894,7 +12158,7 @@
 
 					<td class="c-table__cell ">
 						
-						<p>Bruk denne klassen for alle knapper. PS. Dersom du skal style en lenke &lt; a &gt; slik at den ut som en knapp, kan du også bruke denne klassen.</p>
+						<p>Bruk denne klassen for alle knapper. PS. Dersom du skal style en lenke &lt; a &gt; slik at den ser ut som en knapp, kan du også bruke denne klassen.</p>
 
 					</td>
 
@@ -13047,27 +12311,6 @@
 <!-- Bundled assets -->
 <script src="/designsystem-styleguide/dist/js/infoportal.vendor.js"></script>
 <script src="/designsystem-styleguide/dist/js/infoportal.js"></script>
-
-<script>
-  $('.iffframe').find('iframe').on('load', function() {
-    if (window.localStorage.getItem('persisted_style') !== '1') {
-      var e = document.createElement('link')
-      e.rel = 'stylesheet'
-      e.type = 'text/css'
-      if (window.localStorage.getItem('persisted_style') === '2') {
-        e.href = '/designsystem-styleguide/css/altinnett.css'
-      } else {
-        e.href = '/designsystem-styleguide/css/brreg.css'
-      }
-      $($('.iffframe').find('iframe')[0].contentWindow.document.getElementsByTagName('head')[0])
-       .find('link[rel=stylesheet][href~=\'/designsystem-styleguide/css/altinnett.css\']').remove()
-      $($('.iffframe').find('iframe')[0].contentWindow.document.getElementsByTagName('head')[0])
-       .find('link[rel=stylesheet][href~=\'/designsystem-styleguide/css/brreg.css\']').remove()
-      $('.iffframe').find('iframe')[0].contentWindow.document.getElementsByTagName('head')[0].appendChild(e)
-    }
-  });
-</script>
-
 
             </div><!--end l-page-layout__main-->
 

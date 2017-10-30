@@ -14,10 +14,12 @@
 	<link rel="stylesheet" href="/designsystem-styleguide/css/style-guide.css">
 	<link rel="icon" href="/designsystem-styleguide/favicon.ico">
 
-	<link rel="stylesheet" href="/designsystem-styleguide/css/style.css">
+	<script src="https://use.fortawesome.com/ed31cded.js"></script>
+
+	<link rel="stylesheet" href="/designsystem-styleguide/css/style.dist.storefront.css">
+	<link rel="stylesheet" href="/designsystem-styleguide/css/brreg.css">
 
 	<link rel="canonical" href="http://localhost:4000/designsystem-styleguide/komponenter/skjemakomponenter/">
-	<script src="https://use.fortawesome.com/ed31cded.js"></script>
 </head>
 
 
@@ -61,13 +63,11 @@
 
 	<!-- TITLE -->
 
-	<a href="https://www.npmjs.com/package/altinn-designsystem" class="a-st-version">Versjon: 0.2.36</a>
+	<a href="https://www.npmjs.com/package/altinn-designsystem" class="a-st-version">Versjon: 1.0.0</a>
 
 	<!-- THEME PICKER -->
 	<div class="form-group input-group transparent a-js-forceFlexColumn a-form-group">
 	  <div data-toggle="altinn-dropdown" class="dropdown a-fullWidthXs">
-	    <input type="hidden" class="a-js-altinnDropdown-value">
-
 			<button class="btn dropdown-toggle a-dropdown-toggle form-control-alt  a-js-dropdownToValidate" type="button" id="dropdownMenu" name="Velg theme" title="Velg theme" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 	      <span class="a-form-text">
 					<span class="sr-only" id="a-js-chosenTheme">Altinn</span>
@@ -107,7 +107,7 @@
 
 	    <div class="dropdown-menu a-dropdown-menu" aria-labelledby="dropdownMenu" name="chooseProject">
 
-	        <a class="dropdown-item a-dropdown-item" href="#" data-value="1">
+	        <a class="dropdown-item a-dropdown-item" href="#" data-project="altinn">
 	          <span class="a-form-text">
 	            <span class="sr-only" id="a-js-chosenTheme">Altinn</span>
 							<span class="a-st-dropdownLogo">
@@ -148,7 +148,7 @@
 	          </span>
 	        </a>
 
-	        <a class="dropdown-item a-dropdown-item" href="#" data-value="3">
+	        <a class="dropdown-item a-dropdown-item" href="#" data-project="brreg">
 						<span class="a-form-text a-dropdown-item--long">
 							<span class="sr-only" id="a-js-chosenTheme">Brønnøysundregistrene</span>
 							<span class="a-st-dropdownLogo">
@@ -2574,8 +2574,8 @@
 
 			<li class="c-primary-nav__subitem is-active">
 
-                <a class="c-primary-nav__sublink " href="/designsystem-styleguide/komponenter/skjemakomponenter/tekstfelt.html">
-			    	Tekstfelt
+                <a class="c-primary-nav__sublink " href="/designsystem-styleguide/komponenter/skjemakomponenter/inputfelt.html">
+			    	Inputfelt
 				</a><!-- end c-primary-nav__link -->
 
 			</li><!-- end c-primary-nav__item -->
@@ -5990,742 +5990,6 @@
 
       </div>
 
-      <div class="display-altinnett">
-        <nav class="c-primary-nav" role="navigation">
-
-	<ul class="c-primary-nav__list c-primary-nav__list--flush js-nav-panel" role="tablist" aria-multiselectable="true">
-
-
-		<li class="c-primary-nav__item">
-
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-				<a href="/designsystem-styleguide/eksempel-altinnett.html" class="c-primary-nav__link ">
-					<span class="c-primary-nav__text">Eksemepelside altinnett</span>
-				</a>
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-
-		</li><!-- end c-nav__list__item -->
-
-		<li class="c-primary-nav__item ">
-			<a class="c-primary-nav__link c-primary-nav__link--has-children js-nav-dropdown-trigger " href="/designsystem-styleguide/altinnett-components/">
-
-				<span class="c-primary-nav__text">Komponenter Altinnett</span>
-
-				<svg class="c-icon c-primary-nav__icon" aria-hidden="true">
-					<use href="/designsystem-styleguide/icons.svg#chevron-right"></use>
-				</svg>
-
-			</a><!--end c-primary-nav__link-->
-
-			<ul class="c-primary-nav__sublist js-nav-dropdown ">
-
-				<li class="c-primary-nav__subitem ">
-
-	<a class="c-primary-nav__sublink c-primary-nav__sublink--has-children js-nav-dropdown-trigger  " href="#">
-
-		<span class="c-primary-nav__text">Lenker og knapper</span>
-
-		
-		<svg class="c-icon c-primary-nav__subicon" aria-hidden="true">
-			<use href="/designsystem-styleguide/icons.svg#chevron-right"></use>
-		</svg>
-		
-	</a><!--end c-primary-nav__link-->
-
-	
-	<ul class="c-primary-nav__sublist js-nav-dropdown ">
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-</ul><!-- end c-primary-nav__sublist-->
-	
-
-</li><!-- end c-primary-nav__item-->
-
-
-
-			</ul>
-
-		</li>
-
-
-	</ul><!-- end c-nav__list -->
-
-</nav><!-- end c-nav -->
-
-      </div>
-
       <div class="display-brreg">
         <nav class="c-primary-nav" role="navigation">
 
@@ -9045,8 +8309,8 @@
 
 			<li class="c-primary-nav__subitem is-active">
 
-                <a class="c-primary-nav__sublink " href="/designsystem-styleguide/komponenter/skjemakomponenter/tekstfelt.html">
-			    	Tekstfelt
+                <a class="c-primary-nav__sublink " href="/designsystem-styleguide/komponenter/skjemakomponenter/inputfelt.html">
+			    	Inputfelt
 				</a><!-- end c-primary-nav__link -->
 
 			</li><!-- end c-primary-nav__item -->
@@ -12410,12 +11674,29 @@
 			                        					
 
 			                        					
-
-			                        					
+														
 
 														<div class="iffframe">
-
-														    <iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="/designsystem-styleguide/patterns/00-atoms-01-forms-00-avkrysningsboks/00-atoms-01-forms-00-avkrysningsboks.rendered.html"></iframe>
+															<div class="iffframe__iframe">
+															
+<fieldset class="form-group mb-0">
+  <legend class="a-legend">Velg ett eller flere alternativer</legend>
+  <div class="form-check a-form-checkboxes    ">
+    <label class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input">
+          <span class="custom-control-indicator"></span>
+          <span class="ml-1">Kryss av i den første avkrysningsboksen</span>
+          </label>
+    <label class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input">
+          <span class="custom-control-indicator"></span>
+          <span class="ml-1">Kryss av i den andre avkrysningsboksen</span>
+          </label>
+  </div>
+</fieldset>
+ 
+															</div>
+														    <!-- iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="/designsystem-styleguidepatterns/00-atoms-01-forms-00-avkrysningsboks/00-atoms-01-forms-00-avkrysningsboks.markup-only.html"></iframe -->
 
 														    <div class="iffframe__handle"></div>
 
@@ -12438,7 +11719,7 @@
 
 			                        		<section class="c-section u-margin-bottom-none c-section-viewall">
 			                        			<header class="c-section__header c-section__header--bare d-flex justify-content-between">
-																			<h2 class="c-section__title">Avkrysningsboks <span class="a-meta-text a-dimText7">(Inaktiv)</span> </h2>
+																			<h2 class="c-section__title">Avkrysningsboks <span class="a-meta-text a-dimText7">(Stacked)</span> </h2>
 			                                <div class="">
 			                                  <span class="badge badge-success a-label badge-pill">Ferdig</span>
 			                                </div>
@@ -12451,12 +11732,33 @@
 			                        					
 
 			                        					
-
-			                        					
+														
 
 														<div class="iffframe">
-
-														    <iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="/designsystem-styleguide/patterns/00-atoms-01-forms-01-avkrysningsboks-stacked/00-atoms-01-forms-01-avkrysningsboks-stacked.rendered.html"></iframe>
+															<div class="iffframe__iframe">
+															
+<fieldset class="form-group mb-0">
+  <legend class="a-legend">Velg ett eller flere alternativer</legend>
+  <div class="form-check a-form-checkboxes   custom-controls-stacked ">
+    <label class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input">
+          <span class="custom-control-indicator"></span>
+          <span class="ml-1">Kryss av i den første avkrysningsboksen</span>
+          </label>
+    <label class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input">
+          <span class="custom-control-indicator"></span>
+          <span class="ml-1">Kryss av i den andre avkrysningsboksen</span>
+          </label>
+    <div class="custom-control custom-checkbox inactive">
+      <span class="custom-control-indicator"></span>
+      <span class="ml-1">Den tredje avkrysningsboksen er inaktiv, og er ikke egentlig en avkrysningsboks</span>
+    </div>
+  </div>
+</fieldset>
+ 
+															</div>
+														    <!-- iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="/designsystem-styleguidepatterns/00-atoms-01-forms-01-avkrysningsboks-stacked/00-atoms-01-forms-01-avkrysningsboks-stacked.markup-only.html"></iframe -->
 
 														    <div class="iffframe__handle"></div>
 
@@ -12492,12 +11794,29 @@
 			                        					
 
 			                        					
-
-			                        					
+														
 
 														<div class="iffframe">
-
-														    <iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="/designsystem-styleguide/patterns/00-atoms-01-forms-02-avkrysningsboks-diskret/00-atoms-01-forms-02-avkrysningsboks-diskret.rendered.html"></iframe>
+															<div class="iffframe__iframe">
+															
+<fieldset class="form-group mb-0">
+  <legend class="a-legend">Velg ett eller flere alternativer</legend>
+  <div class="form-check a-form-checkboxes a-form-checkboxes--discret   ">
+    <label class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input">
+          <span class="custom-control-indicator"></span>
+          <span class="ml-1">Kryss av i den første avkrysningsboksen</span>
+          </label>
+    <label class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input">
+          <span class="custom-control-indicator"></span>
+          <span class="ml-1">Kryss av i den andre avkrysningsboksen</span>
+          </label>
+  </div>
+</fieldset>
+ 
+															</div>
+														    <!-- iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="/designsystem-styleguidepatterns/00-atoms-01-forms-02-avkrysningsboks-diskret/00-atoms-01-forms-02-avkrysningsboks-diskret.markup-only.html"></iframe -->
 
 														    <div class="iffframe__handle"></div>
 
@@ -12618,12 +11937,119 @@
 			                        					
 
 			                        					
+														
+
+														<div class="iffframe">
+															<div class="iffframe__iframe">
+															
+<fieldset class="form-group ">
+  <legend class="a-legend">Velg et alternativ
+  </legend>
+  <div class="form-check a-radioButtons  ">
+    <label class="custom-control custom-radio">
+				<input type="radio"
+          name="radioish"
+          class="custom-control-input"
+           id="radio31" 
+          value="radio31"
+           />
+				<span class="custom-control-indicator"></span>
+				<span class="a-radioButtons-title">
+					En radioknapp
+				</span>
+			</label>
+    <label class="custom-control custom-radio">
+				<input type="radio"
+          name="radioish"
+          class="custom-control-input"
+           id="radio32" 
+          value="radio32"
+           />
+				<span class="custom-control-indicator"></span>
+				<span class="a-radioButtons-title">
+					Enda en radioknapp som inneholder mye tekst
+				</span>
+			</label>
+  </div>
+  <!--</div>-->
+</fieldset>
+ 
+															</div>
+														    <!-- iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="/designsystem-styleguidepatterns/00-atoms-01-forms-04-radioknapp/00-atoms-01-forms-04-radioknapp.markup-only.html"></iframe -->
+
+														    <div class="iffframe__handle"></div>
+
+														</div><!--end iffframe-->
+
+
+			                        				</div><!-- end c-pattern-example -->
+
+			                        				<a href="/designsystem-styleguide/komponenter/skjemakomponenter/radioknapp.html"> Mer info om Radioknapp </a>
+
+			                        			</div><!-- end l-section__body -->
+
+			                        		</section>
+
+			                        	</li><!--end c-lined-list__item -->
+
+			                        	
+
+			                        	<li class="c-lined-list__item">
+
+			                        		<section class="c-section u-margin-bottom-none c-section-viewall">
+			                        			<header class="c-section__header c-section__header--bare d-flex justify-content-between">
+																			<h2 class="c-section__title">Radioknapp <span class="a-meta-text a-dimText7">(Stacked)</span> </h2>
+			                                <div class="">
+			                                  <span class="badge badge-success a-label badge-pill">Ferdig</span>
+			                                </div>
+			                        			</header>
+
+			                        			<div class="c-section__body">
+
+			                        				<div class="c-pattern-example u-margin-bottom-double">
 
 			                        					
 
-														<div class="iffframe">
+			                        					
+														
 
-														    <iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="/designsystem-styleguide/patterns/00-atoms-01-forms-04-radioknapp/00-atoms-01-forms-04-radioknapp.rendered.html"></iframe>
+														<div class="iffframe">
+															<div class="iffframe__iframe">
+															
+<fieldset class="form-group ">
+  <legend class="a-legend">Hvilken knapp vil du velge?
+  </legend>
+  <div class="form-check a-radioButtons custom-controls-stacked ">
+    <label class="custom-control custom-radio">
+				<input type="radio"
+          name="radioish"
+          class="custom-control-input"
+           id="radio10" 
+          value="radio10"
+           />
+				<span class="custom-control-indicator"></span>
+				<span class="a-radioButtons-title">
+					En radioknapp
+				</span>
+			</label>
+    <label class="custom-control custom-radio">
+				<input type="radio"
+          name="radioish"
+          class="custom-control-input"
+           id="radio11" 
+          value="radio11"
+           />
+				<span class="custom-control-indicator"></span>
+				<span class="a-radioButtons-title">
+					Enda en radioknapp
+				</span>
+			</label>
+  </div>
+  <!--</div>-->
+</fieldset>
+ 
+															</div>
+														    <!-- iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="/designsystem-styleguidepatterns/00-atoms-01-forms-05-radioknapp-stacked/00-atoms-01-forms-05-radioknapp-stacked.markup-only.html"></iframe -->
 
 														    <div class="iffframe__handle"></div>
 
@@ -12720,12 +12146,68 @@
 			                        					
 
 			                        					
-
-			                        					
+														
 
 														<div class="iffframe">
-
-														    <iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="/designsystem-styleguide/patterns/00-atoms-01-forms-03-valgknapp/00-atoms-01-forms-03-valgknapp.rendered.html"></iframe>
+															<div class="iffframe__iframe">
+															
+<div class="a-switch   ">
+  <input id="checkbutton-read" class="sr-only" type="checkbox" name="checkbutton-read" value="checkbutton-read">
+  <label for="checkbutton-read" class="a-switch-label ">
+        
+<i class="ai ai-read   "    ></i>
+       Kun lese
+    </label>
+</div>
+<div class="a-switch   ">
+  <input id="checkbutton-edit" class="sr-only" type="checkbox" name="checkbutton-edit" value="checkbutton-read">
+  <label for="checkbutton-edit" class="a-switch-label ">
+        
+<i class="ai ai-write   "    ></i>
+       Fylle ut
+    </label>
+</div>
+<div class="a-switch   ">
+  <input id="checkbutton-sign" class="sr-only" type="checkbox" name="checkbutton-sign" value="checkbutton-read">
+  <label for="checkbutton-sign" class="a-switch-label ">
+        
+<i class="ai ai-sign   "    ></i>
+       Signere
+    </label>
+</div>
+<div class="a-switch   ">
+  <input id="checkbutton-toggle" class="sr-only" type="checkbox" name="checkbutton-toggle" value="checkbutton-read">
+  <label for="checkbutton-toggle" class="a-switch-label a-toggle-icon">
+        
+<i class="ai ai-plus   "    ></i>
+        
+<i class="ai ai-check   "    ></i>
+       Toggle state icon
+    </label>
+</div>
+<div class="a-switch   ">
+  <input id="checkbutton-example" class="sr-only" type="checkbox" name="checkbutton-example" value="checkbutton-read">
+  <label for="checkbutton-example" class="a-switch-label ">
+      Eksempel uten ikon
+    </label>
+</div>
+<div class="a-switch   ">
+  <input id="checkbutton-deactivated" class="sr-only" type="checkbox" name="checkbutton-deactivated" value="checkbutton-read" disabled>
+  <label for="checkbutton-deactivated" class="a-switch-label disabled">
+        
+<i class="ai ai-sign   "    ></i>
+      Eksempel på deaktivert
+    </label>
+</div>
+<div class="a-switch   ">
+  <input id="checkbutton-longtext" class="sr-only" type="checkbox" name="checkbutton-longtext" value="checkbutton-read">
+  <label for="checkbutton-longtext" class="a-switch-label ">
+      Eksempel med veldig veldig veldig lang tekst som blir kuttet av på mobilvisning
+    </label>
+</div>
+ 
+															</div>
+														    <!-- iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="/designsystem-styleguidepatterns/00-atoms-01-forms-03-valgknapp/00-atoms-01-forms-03-valgknapp.markup-only.html"></iframe -->
 
 														    <div class="iffframe__handle"></div>
 
@@ -12761,12 +12243,37 @@
 			                        					
 
 			                        					
-
-			                        					
+														
 
 														<div class="iffframe">
-
-														    <iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="/designsystem-styleguide/patterns/00-atoms-01-forms-07-valgknapp-ett-alternativ/00-atoms-01-forms-07-valgknapp-ett-alternativ.rendered.html"></iframe>
+															<div class="iffframe__iframe">
+															
+<fieldset>
+  <legend class="sr-only">Velg et alternativ</legend>
+  <div class="a-switch  ">
+    <input id="radiobutton-read" class="sr-only" type="radio" name="addRights" value="radiobutton-read" />
+    <label for="radiobutton-read" class="a-switch-label ">
+		        
+<i class="ai ai-read   "    ></i>
+	        Du kan velge denne
+	      </label>
+  </div>
+  <div class="a-switch  ">
+    <input id="radiobutton-edit" class="sr-only" type="radio" name="addRights" value="radiobutton-read" />
+    <label for="radiobutton-edit" class="a-switch-label ">
+	        eller denne
+	      </label>
+  </div>
+  <div class="a-switch  ">
+    <input id="radiobutton-sign" class="sr-only" type="radio" name="addRights" value="radiobutton-read" />
+    <label for="radiobutton-sign" class="a-switch-label ">
+	        eller denne
+	      </label>
+  </div>
+</fieldset>
+ 
+															</div>
+														    <!-- iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="/designsystem-styleguidepatterns/00-atoms-01-forms-07-valgknapp-ett-alternativ/00-atoms-01-forms-07-valgknapp-ett-alternativ.markup-only.html"></iframe -->
 
 														    <div class="iffframe__handle"></div>
 
@@ -12853,7 +12360,7 @@
 
 			                        		<section class="c-section u-margin-bottom-none c-section-viewall">
 			                        			<header class="c-section__header c-section__header--bare d-flex justify-content-between">
-																			<h2 class="c-section__title">Tekstfelt <span class="a-meta-text a-dimText7">(Standard)</span> </h2>
+																			<h2 class="c-section__title">Inputfelt <span class="a-meta-text a-dimText7">(Standard)</span> </h2>
 			                                <div class="">
 			                                  <span class="badge badge-success a-label badge-pill">Ferdig</span>
 			                                </div>
@@ -12866,12 +12373,21 @@
 			                        					
 
 			                        					
-
-			                        					
+														
 
 														<div class="iffframe">
-
-														    <iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="/designsystem-styleguide/patterns/00-atoms-01-forms-10-tekst-input/00-atoms-01-forms-10-tekst-input.rendered.html"></iframe>
+															<div class="iffframe__iframe">
+															
+<div class="form-group a-form-group  ">
+  <label class="a-form-label  " for="text-input-generic">Label: </label>
+  <div class="a-form-group-items input-group   ">
+    <input class="form-control  
+         " type="text" placeholder="f.eks placeholder" name="input-field" data-val="true" id="text-input-generic">
+  </div>
+</div>
+ 
+															</div>
+														    <!-- iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="/designsystem-styleguidepatterns/00-atoms-01-forms-10-tekst-input/00-atoms-01-forms-10-tekst-input.markup-only.html"></iframe -->
 
 														    <div class="iffframe__handle"></div>
 
@@ -12880,7 +12396,218 @@
 
 			                        				</div><!-- end c-pattern-example -->
 
-			                        				<a href="/designsystem-styleguide/komponenter/skjemakomponenter/tekstfelt.html"> Mer info om Tekstfelt </a>
+			                        				<a href="/designsystem-styleguide/komponenter/skjemakomponenter/inputfelt.html"> Mer info om Inputfelt </a>
+
+			                        			</div><!-- end l-section__body -->
+
+			                        		</section>
+
+			                        	</li><!--end c-lined-list__item -->
+
+			                        	
+
+			                        	<li class="c-lined-list__item">
+
+			                        		<section class="c-section u-margin-bottom-none c-section-viewall">
+			                        			<header class="c-section__header c-section__header--bare d-flex justify-content-between">
+																			<h2 class="c-section__title">Inputfelt <span class="a-meta-text a-dimText7">(Uten label)</span> </h2>
+			                                <div class="">
+			                                  <span class="badge badge-success a-label badge-pill">Ferdig</span>
+			                                </div>
+			                        			</header>
+
+			                        			<div class="c-section__body">
+
+			                        				<div class="c-pattern-example u-margin-bottom-double">
+
+			                        					
+
+			                        					
+														
+
+														<div class="iffframe">
+															<div class="iffframe__iframe">
+															
+<div class="form-group a-form-group  ">
+  <label class="a-form-label  sr-only  " for="text-input-generic">Label:</label>
+  <div class="a-form-group-items input-group   ">
+    <input class="form-control  
+         " type="text" placeholder="Ingen label, kun placeholder" name="input-field" data-val="true" id="text-input-generic">
+  </div>
+</div>
+ 
+															</div>
+														    <!-- iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="/designsystem-styleguidepatterns/00-atoms-01-forms-12-tekst-input-labelSkjult/00-atoms-01-forms-12-tekst-input-labelSkjult.markup-only.html"></iframe -->
+
+														    <div class="iffframe__handle"></div>
+
+														</div><!--end iffframe-->
+
+
+			                        				</div><!-- end c-pattern-example -->
+
+			                        				<a href="/designsystem-styleguide/komponenter/skjemakomponenter/inputfelt.html"> Mer info om Inputfelt </a>
+
+			                        			</div><!-- end l-section__body -->
+
+			                        		</section>
+
+			                        	</li><!--end c-lined-list__item -->
+
+			                        	
+
+			                        	<li class="c-lined-list__item">
+
+			                        		<section class="c-section u-margin-bottom-none c-section-viewall">
+			                        			<header class="c-section__header c-section__header--bare d-flex justify-content-between">
+																			<h2 class="c-section__title">Inputfelt <span class="a-meta-text a-dimText7">(Deaktivert)</span> </h2>
+			                                <div class="">
+			                                  <span class="badge badge-success a-label badge-pill">Ferdig</span>
+			                                </div>
+			                        			</header>
+
+			                        			<div class="c-section__body">
+
+			                        				<div class="c-pattern-example u-margin-bottom-double">
+
+			                        					
+
+			                        					
+														
+
+														<div class="iffframe">
+															<div class="iffframe__iframe">
+															
+<div class="form-group a-form-group  ">
+  <label class="a-form-label  sr-only  " for="text-input-20">Label:</label>
+  <div class="a-form-group-items input-group   disabled  ">
+    <span class="input-group-addon hidden-sm-down">
+<i class="ai ai-closedmessage   "    ></i>
+</span>
+    <input class="form-control   a-hasIcon 
+         " type="email" placeholder="f.eks feltet er deaktivert" name="input-field" data-val="true" id="text-input-20" disabled>
+  </div>
+  <div class="a-message a-message-error" data-valmsg-for="input-field" data-valmsg-replace="true"></div>
+</div>
+ 
+															</div>
+														    <!-- iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="/designsystem-styleguidepatterns/00-atoms-01-forms-17-input-deaktivert/00-atoms-01-forms-17-input-deaktivert.markup-only.html"></iframe -->
+
+														    <div class="iffframe__handle"></div>
+
+														</div><!--end iffframe-->
+
+
+			                        				</div><!-- end c-pattern-example -->
+
+			                        				<a href="/designsystem-styleguide/komponenter/skjemakomponenter/inputfelt.html"> Mer info om Inputfelt </a>
+
+			                        			</div><!-- end l-section__body -->
+
+			                        		</section>
+
+			                        	</li><!--end c-lined-list__item -->
+
+			                        	
+
+			                        	<li class="c-lined-list__item">
+
+			                        		<section class="c-section u-margin-bottom-none c-section-viewall">
+			                        			<header class="c-section__header c-section__header--bare d-flex justify-content-between">
+																			<h2 class="c-section__title">Inputfelt <span class="a-meta-text a-dimText7">(Fremhevet)</span> </h2>
+			                                <div class="">
+			                                  <span class="badge badge-success a-label badge-pill">Ferdig</span>
+			                                </div>
+			                        			</header>
+
+			                        			<div class="c-section__body">
+
+			                        				<div class="c-pattern-example u-margin-bottom-double">
+
+			                        					
+
+			                        					
+														
+
+														<div class="iffframe">
+															<div class="iffframe__iframe">
+															
+<div class="form-group a-form-group  a-form-group-large  ">
+  <label class="a-form-label  sr-only  " for="text-input-large">Label: </label>
+  <div class="a-form-group-items input-group   ">
+    <input class="form-control  
+         " type="text" placeholder="f.eks placeholder" name="input-field" data-val="true" id="text-input-large">
+  </div>
+</div>
+ 
+															</div>
+														    <!-- iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="/designsystem-styleguidepatterns/00-atoms-01-forms-11-tekst-input-stor/00-atoms-01-forms-11-tekst-input-stor.markup-only.html"></iframe -->
+
+														    <div class="iffframe__handle"></div>
+
+														</div><!--end iffframe-->
+
+
+			                        				</div><!-- end c-pattern-example -->
+
+			                        				<a href="/designsystem-styleguide/komponenter/skjemakomponenter/inputfelt.html"> Mer info om Inputfelt </a>
+
+			                        			</div><!-- end l-section__body -->
+
+			                        		</section>
+
+			                        	</li><!--end c-lined-list__item -->
+
+			                        	
+
+			                        	<li class="c-lined-list__item">
+
+			                        		<section class="c-section u-margin-bottom-none c-section-viewall">
+			                        			<header class="c-section__header c-section__header--bare d-flex justify-content-between">
+																			<h2 class="c-section__title">Inputfelt <span class="a-meta-text a-dimText7">(Ikon venstre)</span> </h2>
+			                                <div class="">
+			                                  <span class="badge badge-success a-label badge-pill">Ferdig</span>
+			                                </div>
+			                        			</header>
+
+			                        			<div class="c-section__body">
+
+			                        				<div class="c-pattern-example u-margin-bottom-double">
+
+			                        					
+
+			                        					
+														
+
+														<div class="iffframe">
+															<div class="iffframe__iframe">
+															
+<div class="form-group a-form-group  a-form-group-large  ">
+  <label class="a-form-label  sr-only  " for="text-input-find-12">Søk etter innhold</label>
+  <div class="a-form-group-items input-group   ">
+    <input class="form-control  
+         a-hasButton  " type="search" placeholder="Søk etter innhold" name="input-field" data-val="true" id="text-input-find-12">
+    <div class="input-group-btn">
+      <button onclick="location.href='/patterns/04-sider-infoportal-40-sok-00-sok-forside/04-sider-infoportal-40-sok-00-sok-forside.html';" class="btn btn-secondary" type="button">
+              
+<i class="ai ai-search   "    ></i>
+              <span class="sr-only">Søk</span>
+          </button>
+    </div>
+  </div>
+</div>
+ 
+															</div>
+														    <!-- iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="/designsystem-styleguidepatterns/00-atoms-01-forms-31-sok-stor/00-atoms-01-forms-31-sok-stor.markup-only.html"></iframe -->
+
+														    <div class="iffframe__handle"></div>
+
+														</div><!--end iffframe-->
+
+
+			                        				</div><!-- end c-pattern-example -->
+
+			                        				<a href="/designsystem-styleguide/komponenter/skjemakomponenter/inputfelt.html"> Mer info om Inputfelt </a>
 
 			                        			</div><!-- end l-section__body -->
 
@@ -12950,12 +12677,63 @@
 			                        					
 
 			                        					
-
-			                        					
+														
 
 														<div class="iffframe">
-
-														    <iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="/designsystem-styleguide/patterns/00-atoms-01-forms-50-flervalg-stilisert/00-atoms-01-forms-50-flervalg-stilisert.rendered.html"></iframe>
+															<div class="iffframe__iframe">
+															
+<div class="form-group input-group transparent a-js-forceFlexColumn a-form-group">
+  <div data-toggle="altinn-dropdown" class="dropdown a-transparent a-fullWidthXs">
+    <input type="hidden" class="a-js-altinnDropdown-value" />
+    <button class="btn dropdown-toggle a-dropdown-toggle form-control-alt  a-js-dropdownToValidate" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      
+<i class="ai ai-private  hidden-md-down "    ></i>
+      <span class="a-form-text ">
+        KARI NORDMANNS FORETAK
+      </span>
+    </button>
+    <div class="dropdown-menu a-dropdown-menu" aria-labelledby="dropdownMenu">
+      <a class="dropdown-item a-dropdown-item" href="#" data-value="1">
+        
+        <i class="ai ai-private  hidden-md-down "></i>
+        
+        <span class="a-form-text ">
+            KARI NORDMANN
+          </span>
+      </a>
+      <a class="dropdown-item a-dropdown-item" href="#" data-value="2">
+        
+        <i class="ai ai-private  hidden-md-down "></i>
+        
+        <span class="a-form-text ">
+            OLA NORDMANN
+          </span>
+      </a>
+      <a class="dropdown-item a-dropdown-item" href="#" data-value="3">
+        
+        <i class="ai ai-client  hidden-md-down "></i>
+        
+        <span class="a-form-text ">
+            OLA NORDMANNS FORETAK
+          </span>
+      </a>
+      <a class="dropdown-item a-dropdown-item" href="#" data-value="4">
+        
+        <i class="ai ai-client  hidden-md-down "></i>
+        
+        <span class="a-form-text ">
+            OLA NORDMANNS ANDRE FORETAK
+          </span>
+      </a>
+    </div>
+  </div>
+  <div class="a-message a-message-error a-js-adjustedError" data-valmsg-for="" data-valmsg-replace="false">
+    <span class="has-error"></span>
+  </div>
+</div>
+ 
+															</div>
+														    <!-- iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="/designsystem-styleguidepatterns/00-atoms-01-forms-50-flervalg-stilisert/00-atoms-01-forms-50-flervalg-stilisert.markup-only.html"></iframe -->
 
 														    <div class="iffframe__handle"></div>
 
@@ -13026,7 +12804,7 @@
 			                        			<header class="c-section__header c-section__header--bare d-flex justify-content-between">
 																			<h2 class="c-section__title">Last opp <span class="a-meta-text a-dimText7">(Standard)</span> </h2>
 			                                <div class="">
-			                                  <span class="badge badge-warning a-label badge-pill">Under arbeid</span>
+			                                  <span class="badge badge-success a-label badge-pill">Ferdig</span>
 			                                </div>
 			                        			</header>
 
@@ -13037,12 +12815,42 @@
 			                        					
 
 			                        					
-
-			                        					
+														
 
 														<div class="iffframe">
-
-														    <iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="/designsystem-styleguide/patterns/01-molecules-05-forms-00-last-opp-og-fjern/01-molecules-05-forms-00-last-opp-og-fjern.rendered.html"></iframe>
+															<div class="iffframe__iframe">
+															
+<div id="js-attachmentForm">
+  
+  <div class="a-form-label a-fontBold">Vedlegg</div>
+  <label class="a-btn a-btn-action a-iconRight a-custom-fileupload mb-0 mt-1 a-js-uploadAttachment">
+    <input  class="a-js-certificateContainer sr-only" type="file" id="newCertificateInput">
+    Legg ved en fil
+      
+<i class="ai ai-upload   "    ></i>
+  </label>
+  
+  <div style="display:none" class="a-js-upload-error">
+    <div class="a-message a-message-error">Feilmelding</div>
+  </div>
+  
+  <div id="alert" class="a-message a-message-edit a-message--arrow-off a-message--fullwidth a-message--no-dropshadow mb-0 mt-1 a-js-attachment-box ">
+    
+    <div class="row a-delete-add-container">
+      <div class="col a-fontBold a-js-attachment-name">
+        dittbilde.jpg
+      </div>
+      <div class="col-md-auto col-sm-12">
+        <button type='button' class='a-btn a-btn-icon a-btn-delete'><i class='ai ai-sm ai-circle-exit a-danger ai-left' aria-hidden='true'></i><span class='a-btn-icon-text'>Slett vedlegg</span></button>
+      </div>
+    </div>
+    
+  </div>
+  
+</div>
+ 
+															</div>
+														    <!-- iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="/designsystem-styleguidepatterns/01-molecules-05-forms-00-last-opp-og-fjern/01-molecules-05-forms-00-last-opp-og-fjern.markup-only.html"></iframe -->
 
 														    <div class="iffframe__handle"></div>
 
@@ -13257,27 +13065,6 @@
 <!-- Bundled assets -->
 <script src="/designsystem-styleguide/dist/js/infoportal.vendor.js"></script>
 <script src="/designsystem-styleguide/dist/js/infoportal.js"></script>
-
-<script>
-  $('.iffframe').find('iframe').on('load', function() {
-    if (window.localStorage.getItem('persisted_style') !== '1') {
-      var e = document.createElement('link')
-      e.rel = 'stylesheet'
-      e.type = 'text/css'
-      if (window.localStorage.getItem('persisted_style') === '2') {
-        e.href = '/designsystem-styleguide/css/altinnett.css'
-      } else {
-        e.href = '/designsystem-styleguide/css/brreg.css'
-      }
-      $($('.iffframe').find('iframe')[0].contentWindow.document.getElementsByTagName('head')[0])
-       .find('link[rel=stylesheet][href~=\'/designsystem-styleguide/css/altinnett.css\']').remove()
-      $($('.iffframe').find('iframe')[0].contentWindow.document.getElementsByTagName('head')[0])
-       .find('link[rel=stylesheet][href~=\'/designsystem-styleguide/css/brreg.css\']').remove()
-      $('.iffframe').find('iframe')[0].contentWindow.document.getElementsByTagName('head')[0].appendChild(e)
-    }
-  });
-</script>
-
 
             </div><!--end l-page-layout__main-->
 

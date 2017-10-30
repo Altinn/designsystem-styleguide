@@ -14,10 +14,12 @@
 	<link rel="stylesheet" href="/designsystem-styleguide/css/style-guide.css">
 	<link rel="icon" href="/designsystem-styleguide/favicon.ico">
 
-	<link rel="stylesheet" href="/designsystem-styleguide/css/style.css">
+	<script src="https://use.fortawesome.com/ed31cded.js"></script>
+
+	<link rel="stylesheet" href="/designsystem-styleguide/css/style.dist.storefront.css">
+	<link rel="stylesheet" href="/designsystem-styleguide/css/brreg.css">
 
 	<link rel="canonical" href="http://localhost:4000/designsystem-styleguide/komponenter/navigasjon/hurtignavigasjon.html">
-	<script src="https://use.fortawesome.com/ed31cded.js"></script>
 </head>
 
 
@@ -61,13 +63,11 @@
 
 	<!-- TITLE -->
 
-	<a href="https://www.npmjs.com/package/altinn-designsystem" class="a-st-version">Versjon: 0.2.36</a>
+	<a href="https://www.npmjs.com/package/altinn-designsystem" class="a-st-version">Versjon: 1.0.0</a>
 
 	<!-- THEME PICKER -->
 	<div class="form-group input-group transparent a-js-forceFlexColumn a-form-group">
 	  <div data-toggle="altinn-dropdown" class="dropdown a-fullWidthXs">
-	    <input type="hidden" class="a-js-altinnDropdown-value">
-
 			<button class="btn dropdown-toggle a-dropdown-toggle form-control-alt  a-js-dropdownToValidate" type="button" id="dropdownMenu" name="Velg theme" title="Velg theme" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 	      <span class="a-form-text">
 					<span class="sr-only" id="a-js-chosenTheme">Altinn</span>
@@ -107,7 +107,7 @@
 
 	    <div class="dropdown-menu a-dropdown-menu" aria-labelledby="dropdownMenu" name="chooseProject">
 
-	        <a class="dropdown-item a-dropdown-item" href="#" data-value="1">
+	        <a class="dropdown-item a-dropdown-item" href="#" data-project="altinn">
 	          <span class="a-form-text">
 	            <span class="sr-only" id="a-js-chosenTheme">Altinn</span>
 							<span class="a-st-dropdownLogo">
@@ -148,7 +148,7 @@
 	          </span>
 	        </a>
 
-	        <a class="dropdown-item a-dropdown-item" href="#" data-value="3">
+	        <a class="dropdown-item a-dropdown-item" href="#" data-project="brreg">
 						<span class="a-form-text a-dropdown-item--long">
 							<span class="sr-only" id="a-js-chosenTheme">Brønnøysundregistrene</span>
 							<span class="a-st-dropdownLogo">
@@ -2574,8 +2574,8 @@
 
 			<li class="c-primary-nav__subitem ">
 
-                <a class="c-primary-nav__sublink " href="/designsystem-styleguide/komponenter/skjemakomponenter/tekstfelt.html">
-			    	Tekstfelt
+                <a class="c-primary-nav__sublink " href="/designsystem-styleguide/komponenter/skjemakomponenter/inputfelt.html">
+			    	Inputfelt
 				</a><!-- end c-primary-nav__link -->
 
 			</li><!-- end c-primary-nav__item -->
@@ -5990,742 +5990,6 @@
 
       </div>
 
-      <div class="display-altinnett">
-        <nav class="c-primary-nav" role="navigation">
-
-	<ul class="c-primary-nav__list c-primary-nav__list--flush js-nav-panel" role="tablist" aria-multiselectable="true">
-
-
-		<li class="c-primary-nav__item">
-
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-				<a href="/designsystem-styleguide/eksempel-altinnett.html" class="c-primary-nav__link ">
-					<span class="c-primary-nav__text">Eksemepelside altinnett</span>
-				</a>
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-
-		</li><!-- end c-nav__list__item -->
-
-		<li class="c-primary-nav__item ">
-			<a class="c-primary-nav__link c-primary-nav__link--has-children js-nav-dropdown-trigger " href="/designsystem-styleguide/altinnett-components/">
-
-				<span class="c-primary-nav__text">Komponenter Altinnett</span>
-
-				<svg class="c-icon c-primary-nav__icon" aria-hidden="true">
-					<use href="/designsystem-styleguide/icons.svg#chevron-right"></use>
-				</svg>
-
-			</a><!--end c-primary-nav__link-->
-
-			<ul class="c-primary-nav__sublist js-nav-dropdown ">
-
-				<li class="c-primary-nav__subitem ">
-
-	<a class="c-primary-nav__sublink c-primary-nav__sublink--has-children js-nav-dropdown-trigger  " href="#">
-
-		<span class="c-primary-nav__text">Lenker og knapper</span>
-
-		
-		<svg class="c-icon c-primary-nav__subicon" aria-hidden="true">
-			<use href="/designsystem-styleguide/icons.svg#chevron-right"></use>
-		</svg>
-		
-	</a><!--end c-primary-nav__link-->
-
-	
-	<ul class="c-primary-nav__sublist js-nav-dropdown ">
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-</ul><!-- end c-primary-nav__sublist-->
-	
-
-</li><!-- end c-primary-nav__item-->
-
-
-
-			</ul>
-
-		</li>
-
-
-	</ul><!-- end c-nav__list -->
-
-</nav><!-- end c-nav -->
-
-      </div>
-
       <div class="display-brreg">
         <nav class="c-primary-nav" role="navigation">
 
@@ -9045,8 +8309,8 @@
 
 			<li class="c-primary-nav__subitem ">
 
-                <a class="c-primary-nav__sublink " href="/designsystem-styleguide/komponenter/skjemakomponenter/tekstfelt.html">
-			    	Tekstfelt
+                <a class="c-primary-nav__sublink " href="/designsystem-styleguide/komponenter/skjemakomponenter/inputfelt.html">
+			    	Inputfelt
 				</a><!-- end c-primary-nav__link -->
 
 			</li><!-- end c-primary-nav__item -->
@@ -12399,10 +11663,184 @@
 
 						
 						<div class="iffframe">
+							
+<nav class="a-inline-page-link">
+  <div class="row">
+    <div class="col-sm-12 col-md-6 list">
+      <a href="#A" class="nav-link " alt="Hopp til A">A</a>
+      <a href="#B" class="nav-link " alt="Hopp til B">B</a>
+      <a href="#C" class="nav-link  disabled " alt="Hopp til C">C</a>
+      <a href="#D" class="nav-link " alt="Hopp til D">D</a>
+      <a href="#E" class="nav-link " alt="Hopp til E">E</a>
+      <a href="#F" class="nav-link  disabled " alt="Hopp til F">F</a>
+      <a href="#G" class="nav-link " alt="Hopp til G">G</a>
+      <a href="#H" class="nav-link " alt="Hopp til H">H</a>
+      <a href="#I" class="nav-link " alt="Hopp til I">I</a>
+      <a href="#J" class="nav-link  disabled " alt="Hopp til J">J</a>
+      <a href="#K" class="nav-link " alt="Hopp til K">K</a>
+      <a href="#L" class="nav-link " alt="Hopp til L">L</a>
+      <a href="#M" class="nav-link " alt="Hopp til M">M</a>
+      <a href="#N" class="nav-link " alt="Hopp til N">N</a>
+      <span class="hidden-sm-down"></span>
+    </div>
+    <div class="col-sm-12 col-md-6 list">
+      <a href="#O" class="nav-link " alt="Hopp til O">O</a>
+      <a href="#P" class="nav-link " alt="Hopp til P">P</a>
+      <a href="#Q" class="nav-link " alt="Hopp til Q">Q</a>
+      <a href="#R" class="nav-link " alt="Hopp til R">R</a>
+      <a href="#S" class="nav-link " alt="Hopp til S">S</a>
+      <a href="#T" class="nav-link " alt="Hopp til T">T</a>
+      <a href="#U" class="nav-link " alt="Hopp til U">U</a>
+      <a href="#V" class="nav-link " alt="Hopp til V">V</a>
+      <a href="#W" class="nav-link " alt="Hopp til W">W</a>
+      <a href="#X" class="nav-link " alt="Hopp til X">X</a>
+      <a href="#Y" class="nav-link " alt="Hopp til Y">Y</a>
+      <a href="#Z" class="nav-link " alt="Hopp til Z">Z</a>
+      <a href="#Æ" class="nav-link " alt="Hopp til Æ">Æ</a>
+      <a href="#Ø" class="nav-link " alt="Hopp til Ø">Ø</a>
+      <a href="#Å" class="nav-link " alt="Hopp til Å">Å</a>
+    </div>
+  </div>
+</nav>
+<div class="a-dotted a-page-nav-dest">
+  <h3 class="a-fontSizeXS mb-0">
+    <a name="A">A</a>
+  </h3>
+</div>
+<div class="a-list-container ">
+  <ul class="a-list    ">
+    <li class="a-dotted a-list a-list-noIcon">
+      <div class="row ">
+        <div class="col-12">
+          
+          Lorem ipsum
+          
+        </div>
+      </div>
+    </li>
+    <li class="a-dotted a-list a-list-noIcon">
+      <div class="row ">
+        <div class="col-12">
+          
+          Dolores sit amet
+          
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+<div class="a-dotted a-page-nav-dest">
+  <h3 class="a-fontSizeXS mb-0">
+    <a name="B">B</a>
+  </h3>
+</div>
+<div class="a-list-container ">
+  <ul class="a-list    ">
+    <li class="a-dotted a-list a-list-noIcon">
+      <div class="row ">
+        <div class="col-12">
+          
+          Lorem ipsum
+          
+        </div>
+      </div>
+    </li>
+    <li class="a-dotted a-list a-list-noIcon">
+      <div class="row ">
+        <div class="col-12">
+          
+          Dolores sit amet
+          
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+<div class="a-dotted a-page-nav-dest">
+  <h3 class="a-fontSizeXS mb-0">
+    <a name="C">C</a>
+  </h3>
+</div>
+<div class="a-list-container ">
+  <ul class="a-list    ">
+    <li class="a-dotted a-list a-list-noIcon">
+      <div class="row ">
+        <div class="col-12">
+          
+          Lorem ipsum
+          
+        </div>
+      </div>
+    </li>
+    <li class="a-dotted a-list a-list-noIcon">
+      <div class="row ">
+        <div class="col-12">
+          
+          Dolores sit amet
+          
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+<div class="a-dotted a-page-nav-dest">
+  <h3 class="a-fontSizeXS mb-0">
+    <a name="D">D</a>
+  </h3>
+</div>
+<div class="a-list-container ">
+  <ul class="a-list    ">
+    <li class="a-dotted a-list a-list-noIcon">
+      <div class="row ">
+        <div class="col-12">
+          
+          Lorem ipsum
+          
+        </div>
+      </div>
+    </li>
+    <li class="a-dotted a-list a-list-noIcon">
+      <div class="row ">
+        <div class="col-12">
+          
+          Dolores sit amet
+          
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+<div class="a-dotted a-page-nav-dest">
+  <h3 class="a-fontSizeXS mb-0">
+    <a name="E">E</a>
+  </h3>
+</div>
+<div class="a-list-container ">
+  <ul class="a-list    ">
+    <li class="a-dotted a-list a-list-noIcon">
+      <div class="row ">
+        <div class="col-12">
+          
+          Lorem ipsum
+          
+        </div>
+      </div>
+    </li>
+    <li class="a-dotted a-list a-list-noIcon">
+      <div class="row ">
+        <div class="col-12">
+          
+          Dolores sit amet
+          
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+ 
+							<!-- iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="/designsystem-styleguide/patterns/01-molecules-02-navigasjon-20-hurtignavigasjon/01-molecules-02-navigasjon-20-hurtignavigasjon.markup-only.html"></iframe>
 
-							<iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="/designsystem-styleguide/patterns/01-molecules-02-navigasjon-20-hurtignavigasjon/01-molecules-02-navigasjon-20-hurtignavigasjon.rendered.html"></iframe>
-
-							<div class="iffframe__handle"></div>
+							<div class="iffframe__handle"></div -->
 
 						</div><!--end iffframe-->
 
@@ -12455,9 +11893,7 @@
 								<div class="pattern-code">
 									<button class="c-btn pattern-code-copy-btn" data-clipboard-target="#pattern-code-1">Copy</button>
 									<pre class="highlight pattern-code-block"><code class="language-html" id="pattern-code-1">
-<figure class="highlight"><pre><code class="language-liquid" data-lang="liquid">&lt;!-- START: 01-molekyler-02-navigasjon-20-hurtignavigasjon --&gt;
-&lt;!-- START: 00-atomer-02-lenker-80-hurtignavigasjon-navbar --&gt;
-&lt;nav class="a-inline-page-link"&gt;
+<figure class="highlight"><pre><code class="language-liquid" data-lang="liquid">&lt;nav class="a-inline-page-link"&gt;
   &lt;div class="row"&gt;
     &lt;div class="col-sm-12 col-md-6 list"&gt;
       &lt;a href="#A" class="nav-link " alt="Hopp til A"&gt;A&lt;/a&gt;
@@ -12495,255 +11931,141 @@
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/nav&gt;
-&lt;!-- END: 00-atomer-02-lenker-80-hurtignavigasjon-navbar --&gt;
-
-
-&lt;div class="a-dotted a-page-nav-dest"&gt;
+&lt;div class="a-dotted a-page-nav-dest"&gt;
   &lt;h3 class="a-fontSizeXS mb-0"&gt;
     &lt;a name="A"&gt;A&lt;/a&gt;
   &lt;/h3&gt;
 &lt;/div&gt;
-&lt;!-- START: 01-molekyler-05-lister-00-liste-unummerert JS doc: selectableCheckbox.js --&gt;
-&lt;div class="a-list-container "&gt;
+&lt;div class="a-list-container "&gt;
   &lt;ul class="a-list    "&gt;
     &lt;li class="a-dotted a-list a-list-noIcon"&gt;
       &lt;div class="row "&gt;
         &lt;div class="col-12"&gt;
-          &lt;!-- START: 01-molekyler-05-lister-_00-liste-innhold --&gt;
-
-          Lorem ipsum
-
-
-
-
-
-
-
-          &lt;!-- END: 01-molekyler-05-lister-_00-liste-innhold --&gt;
-
-        &lt;/div&gt;
+          
+          Lorem ipsum
+          
+        &lt;/div&gt;
       &lt;/div&gt;
     &lt;/li&gt;
     &lt;li class="a-dotted a-list a-list-noIcon"&gt;
       &lt;div class="row "&gt;
         &lt;div class="col-12"&gt;
-          &lt;!-- START: 01-molekyler-05-lister-_00-liste-innhold --&gt;
-
-          Dolores sit amet
-
-
-
-
-
-
-
-          &lt;!-- END: 01-molekyler-05-lister-_00-liste-innhold --&gt;
-
-        &lt;/div&gt;
+          
+          Dolores sit amet
+          
+        &lt;/div&gt;
       &lt;/div&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
 &lt;/div&gt;
-
-&lt;!-- END: 01-molekyler-05-lister-00-liste-unummerert --&gt;
-
-&lt;div class="a-dotted a-page-nav-dest"&gt;
+&lt;div class="a-dotted a-page-nav-dest"&gt;
   &lt;h3 class="a-fontSizeXS mb-0"&gt;
     &lt;a name="B"&gt;B&lt;/a&gt;
   &lt;/h3&gt;
 &lt;/div&gt;
-&lt;!-- START: 01-molekyler-05-lister-00-liste-unummerert JS doc: selectableCheckbox.js --&gt;
-&lt;div class="a-list-container "&gt;
+&lt;div class="a-list-container "&gt;
   &lt;ul class="a-list    "&gt;
     &lt;li class="a-dotted a-list a-list-noIcon"&gt;
       &lt;div class="row "&gt;
         &lt;div class="col-12"&gt;
-          &lt;!-- START: 01-molekyler-05-lister-_00-liste-innhold --&gt;
-
-          Lorem ipsum
-
-
-
-
-
-
-
-          &lt;!-- END: 01-molekyler-05-lister-_00-liste-innhold --&gt;
-
-        &lt;/div&gt;
+          
+          Lorem ipsum
+          
+        &lt;/div&gt;
       &lt;/div&gt;
     &lt;/li&gt;
     &lt;li class="a-dotted a-list a-list-noIcon"&gt;
       &lt;div class="row "&gt;
         &lt;div class="col-12"&gt;
-          &lt;!-- START: 01-molekyler-05-lister-_00-liste-innhold --&gt;
-
-          Dolores sit amet
-
-
-
-
-
-
-
-          &lt;!-- END: 01-molekyler-05-lister-_00-liste-innhold --&gt;
-
-        &lt;/div&gt;
+          
+          Dolores sit amet
+          
+        &lt;/div&gt;
       &lt;/div&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
 &lt;/div&gt;
-
-&lt;!-- END: 01-molekyler-05-lister-00-liste-unummerert --&gt;
-
-&lt;div class="a-dotted a-page-nav-dest"&gt;
+&lt;div class="a-dotted a-page-nav-dest"&gt;
   &lt;h3 class="a-fontSizeXS mb-0"&gt;
     &lt;a name="C"&gt;C&lt;/a&gt;
   &lt;/h3&gt;
 &lt;/div&gt;
-&lt;!-- START: 01-molekyler-05-lister-00-liste-unummerert JS doc: selectableCheckbox.js --&gt;
-&lt;div class="a-list-container "&gt;
+&lt;div class="a-list-container "&gt;
   &lt;ul class="a-list    "&gt;
     &lt;li class="a-dotted a-list a-list-noIcon"&gt;
       &lt;div class="row "&gt;
         &lt;div class="col-12"&gt;
-          &lt;!-- START: 01-molekyler-05-lister-_00-liste-innhold --&gt;
-
-          Lorem ipsum
-
-
-
-
-
-
-
-          &lt;!-- END: 01-molekyler-05-lister-_00-liste-innhold --&gt;
-
-        &lt;/div&gt;
+          
+          Lorem ipsum
+          
+        &lt;/div&gt;
       &lt;/div&gt;
     &lt;/li&gt;
     &lt;li class="a-dotted a-list a-list-noIcon"&gt;
       &lt;div class="row "&gt;
         &lt;div class="col-12"&gt;
-          &lt;!-- START: 01-molekyler-05-lister-_00-liste-innhold --&gt;
-
-          Dolores sit amet
-
-
-
-
-
-
-
-          &lt;!-- END: 01-molekyler-05-lister-_00-liste-innhold --&gt;
-
-        &lt;/div&gt;
+          
+          Dolores sit amet
+          
+        &lt;/div&gt;
       &lt;/div&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
 &lt;/div&gt;
-
-&lt;!-- END: 01-molekyler-05-lister-00-liste-unummerert --&gt;
-
-&lt;div class="a-dotted a-page-nav-dest"&gt;
+&lt;div class="a-dotted a-page-nav-dest"&gt;
   &lt;h3 class="a-fontSizeXS mb-0"&gt;
     &lt;a name="D"&gt;D&lt;/a&gt;
   &lt;/h3&gt;
 &lt;/div&gt;
-&lt;!-- START: 01-molekyler-05-lister-00-liste-unummerert JS doc: selectableCheckbox.js --&gt;
-&lt;div class="a-list-container "&gt;
+&lt;div class="a-list-container "&gt;
   &lt;ul class="a-list    "&gt;
     &lt;li class="a-dotted a-list a-list-noIcon"&gt;
       &lt;div class="row "&gt;
         &lt;div class="col-12"&gt;
-          &lt;!-- START: 01-molekyler-05-lister-_00-liste-innhold --&gt;
-
-          Lorem ipsum
-
-
-
-
-
-
-
-          &lt;!-- END: 01-molekyler-05-lister-_00-liste-innhold --&gt;
-
-        &lt;/div&gt;
+          
+          Lorem ipsum
+          
+        &lt;/div&gt;
       &lt;/div&gt;
     &lt;/li&gt;
     &lt;li class="a-dotted a-list a-list-noIcon"&gt;
       &lt;div class="row "&gt;
         &lt;div class="col-12"&gt;
-          &lt;!-- START: 01-molekyler-05-lister-_00-liste-innhold --&gt;
-
-          Dolores sit amet
-
-
-
-
-
-
-
-          &lt;!-- END: 01-molekyler-05-lister-_00-liste-innhold --&gt;
-
-        &lt;/div&gt;
+          
+          Dolores sit amet
+          
+        &lt;/div&gt;
       &lt;/div&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
 &lt;/div&gt;
-
-&lt;!-- END: 01-molekyler-05-lister-00-liste-unummerert --&gt;
-
-&lt;div class="a-dotted a-page-nav-dest"&gt;
+&lt;div class="a-dotted a-page-nav-dest"&gt;
   &lt;h3 class="a-fontSizeXS mb-0"&gt;
     &lt;a name="E"&gt;E&lt;/a&gt;
   &lt;/h3&gt;
 &lt;/div&gt;
-&lt;!-- START: 01-molekyler-05-lister-00-liste-unummerert JS doc: selectableCheckbox.js --&gt;
-&lt;div class="a-list-container "&gt;
+&lt;div class="a-list-container "&gt;
   &lt;ul class="a-list    "&gt;
     &lt;li class="a-dotted a-list a-list-noIcon"&gt;
       &lt;div class="row "&gt;
         &lt;div class="col-12"&gt;
-          &lt;!-- START: 01-molekyler-05-lister-_00-liste-innhold --&gt;
-
-          Lorem ipsum
-
-
-
-
-
-
-
-          &lt;!-- END: 01-molekyler-05-lister-_00-liste-innhold --&gt;
-
-        &lt;/div&gt;
+          
+          Lorem ipsum
+          
+        &lt;/div&gt;
       &lt;/div&gt;
     &lt;/li&gt;
     &lt;li class="a-dotted a-list a-list-noIcon"&gt;
       &lt;div class="row "&gt;
         &lt;div class="col-12"&gt;
-          &lt;!-- START: 01-molekyler-05-lister-_00-liste-innhold --&gt;
-
-          Dolores sit amet
-
-
-
-
-
-
-
-          &lt;!-- END: 01-molekyler-05-lister-_00-liste-innhold --&gt;
-
-        &lt;/div&gt;
+          
+          Dolores sit amet
+          
+        &lt;/div&gt;
       &lt;/div&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
-&lt;/div&gt;
-
-&lt;!-- END: 01-molekyler-05-lister-00-liste-unummerert --&gt;
-
-&lt;!-- END: 01-molekyler-02-navigasjon-20-hurtignavigasjon --&gt;</code></pre></figure>
+&lt;/div&gt;</code></pre></figure>
 </code></pre>
 								</div>
 
@@ -12871,27 +12193,6 @@
 <!-- Bundled assets -->
 <script src="/designsystem-styleguide/dist/js/infoportal.vendor.js"></script>
 <script src="/designsystem-styleguide/dist/js/infoportal.js"></script>
-
-<script>
-  $('.iffframe').find('iframe').on('load', function() {
-    if (window.localStorage.getItem('persisted_style') !== '1') {
-      var e = document.createElement('link')
-      e.rel = 'stylesheet'
-      e.type = 'text/css'
-      if (window.localStorage.getItem('persisted_style') === '2') {
-        e.href = '/designsystem-styleguide/css/altinnett.css'
-      } else {
-        e.href = '/designsystem-styleguide/css/brreg.css'
-      }
-      $($('.iffframe').find('iframe')[0].contentWindow.document.getElementsByTagName('head')[0])
-       .find('link[rel=stylesheet][href~=\'/designsystem-styleguide/css/altinnett.css\']').remove()
-      $($('.iffframe').find('iframe')[0].contentWindow.document.getElementsByTagName('head')[0])
-       .find('link[rel=stylesheet][href~=\'/designsystem-styleguide/css/brreg.css\']').remove()
-      $('.iffframe').find('iframe')[0].contentWindow.document.getElementsByTagName('head')[0].appendChild(e)
-    }
-  });
-</script>
-
 
             </div><!--end l-page-layout__main-->
 

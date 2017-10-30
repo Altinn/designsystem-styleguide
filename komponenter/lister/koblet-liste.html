@@ -14,10 +14,12 @@
 	<link rel="stylesheet" href="/designsystem-styleguide/css/style-guide.css">
 	<link rel="icon" href="/designsystem-styleguide/favicon.ico">
 
-	<link rel="stylesheet" href="/designsystem-styleguide/css/style.css">
+	<script src="https://use.fortawesome.com/ed31cded.js"></script>
+
+	<link rel="stylesheet" href="/designsystem-styleguide/css/style.dist.storefront.css">
+	<link rel="stylesheet" href="/designsystem-styleguide/css/brreg.css">
 
 	<link rel="canonical" href="http://localhost:4000/designsystem-styleguide/komponenter/lister/koblet-liste.html">
-	<script src="https://use.fortawesome.com/ed31cded.js"></script>
 </head>
 
 
@@ -61,13 +63,11 @@
 
 	<!-- TITLE -->
 
-	<a href="https://www.npmjs.com/package/altinn-designsystem" class="a-st-version">Versjon: 0.2.36</a>
+	<a href="https://www.npmjs.com/package/altinn-designsystem" class="a-st-version">Versjon: 1.0.0</a>
 
 	<!-- THEME PICKER -->
 	<div class="form-group input-group transparent a-js-forceFlexColumn a-form-group">
 	  <div data-toggle="altinn-dropdown" class="dropdown a-fullWidthXs">
-	    <input type="hidden" class="a-js-altinnDropdown-value">
-
 			<button class="btn dropdown-toggle a-dropdown-toggle form-control-alt  a-js-dropdownToValidate" type="button" id="dropdownMenu" name="Velg theme" title="Velg theme" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 	      <span class="a-form-text">
 					<span class="sr-only" id="a-js-chosenTheme">Altinn</span>
@@ -107,7 +107,7 @@
 
 	    <div class="dropdown-menu a-dropdown-menu" aria-labelledby="dropdownMenu" name="chooseProject">
 
-	        <a class="dropdown-item a-dropdown-item" href="#" data-value="1">
+	        <a class="dropdown-item a-dropdown-item" href="#" data-project="altinn">
 	          <span class="a-form-text">
 	            <span class="sr-only" id="a-js-chosenTheme">Altinn</span>
 							<span class="a-st-dropdownLogo">
@@ -148,7 +148,7 @@
 	          </span>
 	        </a>
 
-	        <a class="dropdown-item a-dropdown-item" href="#" data-value="3">
+	        <a class="dropdown-item a-dropdown-item" href="#" data-project="brreg">
 						<span class="a-form-text a-dropdown-item--long">
 							<span class="sr-only" id="a-js-chosenTheme">Brønnøysundregistrene</span>
 							<span class="a-st-dropdownLogo">
@@ -2574,8 +2574,8 @@
 
 			<li class="c-primary-nav__subitem ">
 
-                <a class="c-primary-nav__sublink " href="/designsystem-styleguide/komponenter/skjemakomponenter/tekstfelt.html">
-			    	Tekstfelt
+                <a class="c-primary-nav__sublink " href="/designsystem-styleguide/komponenter/skjemakomponenter/inputfelt.html">
+			    	Inputfelt
 				</a><!-- end c-primary-nav__link -->
 
 			</li><!-- end c-primary-nav__item -->
@@ -5990,742 +5990,6 @@
 
       </div>
 
-      <div class="display-altinnett">
-        <nav class="c-primary-nav" role="navigation">
-
-	<ul class="c-primary-nav__list c-primary-nav__list--flush js-nav-panel" role="tablist" aria-multiselectable="true">
-
-
-		<li class="c-primary-nav__item">
-
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-				<a href="/designsystem-styleguide/eksempel-altinnett.html" class="c-primary-nav__link ">
-					<span class="c-primary-nav__text">Eksemepelside altinnett</span>
-				</a>
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-
-		</li><!-- end c-nav__list__item -->
-
-		<li class="c-primary-nav__item ">
-			<a class="c-primary-nav__link c-primary-nav__link--has-children js-nav-dropdown-trigger " href="/designsystem-styleguide/altinnett-components/">
-
-				<span class="c-primary-nav__text">Komponenter Altinnett</span>
-
-				<svg class="c-icon c-primary-nav__icon" aria-hidden="true">
-					<use href="/designsystem-styleguide/icons.svg#chevron-right"></use>
-				</svg>
-
-			</a><!--end c-primary-nav__link-->
-
-			<ul class="c-primary-nav__sublist js-nav-dropdown ">
-
-				<li class="c-primary-nav__subitem ">
-
-	<a class="c-primary-nav__sublink c-primary-nav__sublink--has-children js-nav-dropdown-trigger  " href="#">
-
-		<span class="c-primary-nav__text">Lenker og knapper</span>
-
-		
-		<svg class="c-icon c-primary-nav__subicon" aria-hidden="true">
-			<use href="/designsystem-styleguide/icons.svg#chevron-right"></use>
-		</svg>
-		
-	</a><!--end c-primary-nav__link-->
-
-	
-	<ul class="c-primary-nav__sublist js-nav-dropdown ">
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-</ul><!-- end c-primary-nav__sublist-->
-	
-
-</li><!-- end c-primary-nav__item-->
-
-
-
-			</ul>
-
-		</li>
-
-
-	</ul><!-- end c-nav__list -->
-
-</nav><!-- end c-nav -->
-
-      </div>
-
       <div class="display-brreg">
         <nav class="c-primary-nav" role="navigation">
 
@@ -9045,8 +8309,8 @@
 
 			<li class="c-primary-nav__subitem ">
 
-                <a class="c-primary-nav__sublink " href="/designsystem-styleguide/komponenter/skjemakomponenter/tekstfelt.html">
-			    	Tekstfelt
+                <a class="c-primary-nav__sublink " href="/designsystem-styleguide/komponenter/skjemakomponenter/inputfelt.html">
+			    	Inputfelt
 				</a><!-- end c-primary-nav__link -->
 
 			</li><!-- end c-primary-nav__item -->
@@ -12399,10 +11663,65 @@
 
 						
 						<div class="iffframe">
+							
+<ul class="no-decoration connected-bullets">
+  <li>
+    <strong>
+        Første punkt
+      </strong> Har både tittel, tekst og lenke. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+    
+    <a href="http://skatteetaten.no" class=" ">
+  Det kan du gjøre her
+  
+</a>
+    
+  </li>
+  <li>
+    <strong>
+        Andre punkt har bare tittel
+      </strong>
+  </li>
+  <li>
+    <strong>
+        
+      </strong> Tredje punkt har bare tekst. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+    ex ea commodo consequat.
+  </li>
+  <li>
+    <strong>
+        
+      </strong> Tredje punkt har bare tekst. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+    ex ea commodo consequat.
+    
+    <a href="javascript:void(0)" tabindex="0" class="a-linkArea a-helpIconButton a-helpIconButton--blue a-js-togglePopoverIcons" role="button" data-toggle="popover" data-animation="false" data-target="#myPopup" data-placement="bottom" data-trigger="click"
+      data-popover-content="popoverWithIconToggle">
+      
+      <i class="ai ai-circle-plus  a-js-popoverIconInitial "></i>
+      
+      
+      <i class="ai ai-circle-minus  a-js-popoverIconExpanded "></i>
+      
+      <span class="sr-only">Vis mer info</span>
+    </a>
+    <div id="popoverWithIconToggle" style="display: none">
+      
+      Dette er en tekst
+      
+      <a href="http://www.altinn.no" class=" ">
+  med en lenke som står i løpende tekst
+  
+</a>
+      
+      og man kan ha mer tekst etter.
+      
+    </div>
+    
+  </li>
+</ul>
+ 
+							<!-- iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="/designsystem-styleguide/patterns/00-atoms-08-lister-08-liste-unummerert-sammenkoblet/00-atoms-08-lister-08-liste-unummerert-sammenkoblet.markup-only.html"></iframe>
 
-							<iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="/designsystem-styleguide/patterns/00-atoms-08-lister-08-liste-unummerert-sammenkoblet/00-atoms-08-lister-08-liste-unummerert-sammenkoblet.rendered.html"></iframe>
-
-							<div class="iffframe__handle"></div>
+							<div class="iffframe__handle"></div -->
 
 						</div><!--end iffframe-->
 
@@ -12455,27 +11774,23 @@
 								<div class="pattern-code">
 									<button class="c-btn pattern-code-copy-btn" data-clipboard-target="#pattern-code-1">Copy</button>
 									<pre class="highlight pattern-code-block"><code class="language-html" id="pattern-code-1">
-<figure class="highlight"><pre><code class="language-liquid" data-lang="liquid">&lt;!-- START: 00-atomer-08-lister-08-liste-unummerert-sammenkoblet --&gt;
-&lt;ul class="no-decoration connected-bullets"&gt;
+<figure class="highlight"><pre><code class="language-liquid" data-lang="liquid">&lt;ul class="no-decoration connected-bullets"&gt;
   &lt;li&gt;
     &lt;strong&gt;
         Første punkt
       &lt;/strong&gt; Har både tittel, tekst og lenke. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-    &lt;!-- START: 00-atomer-02-lenker-00-link --&gt;
+    
     &lt;a href="http://skatteetaten.no" class=" "&gt;
   Det kan du gjøre her
   
 &lt;/a&gt;
-
-    &lt;!-- END: 00-atomer-02-lenker-00-link --&gt;
-
-  &lt;/li&gt;
+    
+  &lt;/li&gt;
   &lt;li&gt;
     &lt;strong&gt;
         Andre punkt har bare tittel
       &lt;/strong&gt;
-
-  &lt;/li&gt;
+  &lt;/li&gt;
   &lt;li&gt;
     &lt;strong&gt;
         
@@ -12487,61 +11802,32 @@
         
       &lt;/strong&gt; Tredje punkt har bare tekst. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
     ex ea commodo consequat.
-    &lt;!-- START: 00-atomer-05-Ekspansjonsknapper-32-link-med-popover-ikon JS doc: popover.js --&gt;
+    
     &lt;a href="javascript:void(0)" tabindex="0" class="a-linkArea a-helpIconButton a-helpIconButton--blue a-js-togglePopoverIcons" role="button" data-toggle="popover" data-animation="false" data-target="#myPopup" data-placement="bottom" data-trigger="click"
       data-popover-content="popoverWithIconToggle"&gt;
-
-
-
-      &lt;!-- START: 00-atomer-09-bilder-og-media-15-ikon --&gt;
+      
       &lt;i class="ai ai-circle-plus  a-js-popoverIconInitial "&gt;&lt;/i&gt;
-
-
-      &lt;!-- END: 00-atomer-09-bilder-og-media-15-ikon --&gt;
-
-      &lt;!-- START: 00-atomer-09-bilder-og-media-15-ikon --&gt;
+      
+      
       &lt;i class="ai ai-circle-minus  a-js-popoverIconExpanded "&gt;&lt;/i&gt;
-
-
-      &lt;!-- END: 00-atomer-09-bilder-og-media-15-ikon --&gt;
-
-      &lt;span class="sr-only"&gt;Vis mer info&lt;/span&gt;
+      
+      &lt;span class="sr-only"&gt;Vis mer info&lt;/span&gt;
     &lt;/a&gt;
-
-
-
-    &lt;div id="popoverWithIconToggle" style="display: none"&gt;
-      &lt;!-- START: 00-atomer-07-tekst-_00-varsel-innhold --&gt;
-
-      Dette er en tekst
-
-
-
-
-
-      &lt;!-- START: 00-atomer-02-lenker-00-link --&gt;
+    &lt;div id="popoverWithIconToggle" style="display: none"&gt;
+      
+      Dette er en tekst
+      
       &lt;a href="http://www.altinn.no" class=" "&gt;
   med en lenke som står i løpende tekst
   
 &lt;/a&gt;
-
-      &lt;!-- END: 00-atomer-02-lenker-00-link --&gt;
-
-
-      og man kan ha mer tekst etter.
-
-
-
-      &lt;!-- END: 00-atomer-07-tekst-_00-varsel-innhold --&gt;
-
-    &lt;/div&gt;
-
-    &lt;!-- END: 00-atomer-05-Ekspansjonsknapper-32-link-med-popover-ikon --&gt;
-
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;!-- END: 00-atomer-08-lister-08-liste-unummerert-sammenkoblet --&gt;</code></pre></figure>
+      
+      og man kan ha mer tekst etter.
+      
+    &lt;/div&gt;
+    
+  &lt;/li&gt;
+&lt;/ul&gt;</code></pre></figure>
 </code></pre>
 								</div>
 
@@ -12669,27 +11955,6 @@
 <!-- Bundled assets -->
 <script src="/designsystem-styleguide/dist/js/infoportal.vendor.js"></script>
 <script src="/designsystem-styleguide/dist/js/infoportal.js"></script>
-
-<script>
-  $('.iffframe').find('iframe').on('load', function() {
-    if (window.localStorage.getItem('persisted_style') !== '1') {
-      var e = document.createElement('link')
-      e.rel = 'stylesheet'
-      e.type = 'text/css'
-      if (window.localStorage.getItem('persisted_style') === '2') {
-        e.href = '/designsystem-styleguide/css/altinnett.css'
-      } else {
-        e.href = '/designsystem-styleguide/css/brreg.css'
-      }
-      $($('.iffframe').find('iframe')[0].contentWindow.document.getElementsByTagName('head')[0])
-       .find('link[rel=stylesheet][href~=\'/designsystem-styleguide/css/altinnett.css\']').remove()
-      $($('.iffframe').find('iframe')[0].contentWindow.document.getElementsByTagName('head')[0])
-       .find('link[rel=stylesheet][href~=\'/designsystem-styleguide/css/brreg.css\']').remove()
-      $('.iffframe').find('iframe')[0].contentWindow.document.getElementsByTagName('head')[0].appendChild(e)
-    }
-  });
-</script>
-
 
             </div><!--end l-page-layout__main-->
 

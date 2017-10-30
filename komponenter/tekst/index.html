@@ -14,10 +14,12 @@
 	<link rel="stylesheet" href="/designsystem-styleguide/css/style-guide.css">
 	<link rel="icon" href="/designsystem-styleguide/favicon.ico">
 
-	<link rel="stylesheet" href="/designsystem-styleguide/css/style.css">
+	<script src="https://use.fortawesome.com/ed31cded.js"></script>
+
+	<link rel="stylesheet" href="/designsystem-styleguide/css/style.dist.storefront.css">
+	<link rel="stylesheet" href="/designsystem-styleguide/css/brreg.css">
 
 	<link rel="canonical" href="http://localhost:4000/designsystem-styleguide/komponenter/tekst/">
-	<script src="https://use.fortawesome.com/ed31cded.js"></script>
 </head>
 
 
@@ -61,13 +63,11 @@
 
 	<!-- TITLE -->
 
-	<a href="https://www.npmjs.com/package/altinn-designsystem" class="a-st-version">Versjon: 0.2.36</a>
+	<a href="https://www.npmjs.com/package/altinn-designsystem" class="a-st-version">Versjon: 1.0.0</a>
 
 	<!-- THEME PICKER -->
 	<div class="form-group input-group transparent a-js-forceFlexColumn a-form-group">
 	  <div data-toggle="altinn-dropdown" class="dropdown a-fullWidthXs">
-	    <input type="hidden" class="a-js-altinnDropdown-value">
-
 			<button class="btn dropdown-toggle a-dropdown-toggle form-control-alt  a-js-dropdownToValidate" type="button" id="dropdownMenu" name="Velg theme" title="Velg theme" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 	      <span class="a-form-text">
 					<span class="sr-only" id="a-js-chosenTheme">Altinn</span>
@@ -107,7 +107,7 @@
 
 	    <div class="dropdown-menu a-dropdown-menu" aria-labelledby="dropdownMenu" name="chooseProject">
 
-	        <a class="dropdown-item a-dropdown-item" href="#" data-value="1">
+	        <a class="dropdown-item a-dropdown-item" href="#" data-project="altinn">
 	          <span class="a-form-text">
 	            <span class="sr-only" id="a-js-chosenTheme">Altinn</span>
 							<span class="a-st-dropdownLogo">
@@ -148,7 +148,7 @@
 	          </span>
 	        </a>
 
-	        <a class="dropdown-item a-dropdown-item" href="#" data-value="3">
+	        <a class="dropdown-item a-dropdown-item" href="#" data-project="brreg">
 						<span class="a-form-text a-dropdown-item--long">
 							<span class="sr-only" id="a-js-chosenTheme">Brønnøysundregistrene</span>
 							<span class="a-st-dropdownLogo">
@@ -2574,8 +2574,8 @@
 
 			<li class="c-primary-nav__subitem ">
 
-                <a class="c-primary-nav__sublink " href="/designsystem-styleguide/komponenter/skjemakomponenter/tekstfelt.html">
-			    	Tekstfelt
+                <a class="c-primary-nav__sublink " href="/designsystem-styleguide/komponenter/skjemakomponenter/inputfelt.html">
+			    	Inputfelt
 				</a><!-- end c-primary-nav__link -->
 
 			</li><!-- end c-primary-nav__item -->
@@ -5990,742 +5990,6 @@
 
       </div>
 
-      <div class="display-altinnett">
-        <nav class="c-primary-nav" role="navigation">
-
-	<ul class="c-primary-nav__list c-primary-nav__list--flush js-nav-panel" role="tablist" aria-multiselectable="true">
-
-
-		<li class="c-primary-nav__item">
-
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-				<a href="/designsystem-styleguide/eksempel-altinnett.html" class="c-primary-nav__link ">
-					<span class="c-primary-nav__text">Eksemepelside altinnett</span>
-				</a>
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-
-		</li><!-- end c-nav__list__item -->
-
-		<li class="c-primary-nav__item ">
-			<a class="c-primary-nav__link c-primary-nav__link--has-children js-nav-dropdown-trigger " href="/designsystem-styleguide/altinnett-components/">
-
-				<span class="c-primary-nav__text">Komponenter Altinnett</span>
-
-				<svg class="c-icon c-primary-nav__icon" aria-hidden="true">
-					<use href="/designsystem-styleguide/icons.svg#chevron-right"></use>
-				</svg>
-
-			</a><!--end c-primary-nav__link-->
-
-			<ul class="c-primary-nav__sublist js-nav-dropdown ">
-
-				<li class="c-primary-nav__subitem ">
-
-	<a class="c-primary-nav__sublink c-primary-nav__sublink--has-children js-nav-dropdown-trigger  " href="#">
-
-		<span class="c-primary-nav__text">Lenker og knapper</span>
-
-		
-		<svg class="c-icon c-primary-nav__subicon" aria-hidden="true">
-			<use href="/designsystem-styleguide/icons.svg#chevron-right"></use>
-		</svg>
-		
-	</a><!--end c-primary-nav__link-->
-
-	
-	<ul class="c-primary-nav__sublist js-nav-dropdown ">
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-</ul><!-- end c-primary-nav__sublist-->
-	
-
-</li><!-- end c-primary-nav__item-->
-
-
-
-			</ul>
-
-		</li>
-
-
-	</ul><!-- end c-nav__list -->
-
-</nav><!-- end c-nav -->
-
-      </div>
-
       <div class="display-brreg">
         <nav class="c-primary-nav" role="navigation">
 
@@ -9045,8 +8309,8 @@
 
 			<li class="c-primary-nav__subitem ">
 
-                <a class="c-primary-nav__sublink " href="/designsystem-styleguide/komponenter/skjemakomponenter/tekstfelt.html">
-			    	Tekstfelt
+                <a class="c-primary-nav__sublink " href="/designsystem-styleguide/komponenter/skjemakomponenter/inputfelt.html">
+			    	Inputfelt
 				</a><!-- end c-primary-nav__link -->
 
 			</li><!-- end c-primary-nav__item -->
@@ -12404,12 +11668,37 @@
 			                        					
 
 			                        					
-
-			                        					
+														
 
 														<div class="iffframe">
-
-														    <iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="/designsystem-styleguide/patterns/02-organisms-40-artikkel-60-artikkel-start/02-organisms-40-artikkel-60-artikkel-start.rendered.html"></iframe>
+															<div class="iffframe__iframe">
+															
+<ol class="breadcrumb a-breadcrumb ">
+  <li class="breadcrumb-item ">
+    <a href="">Første nivå</a>
+  </li>
+  <li class="breadcrumb-item ">
+    <a href="">Andre nivå</a>
+  </li>
+  <li class="breadcrumb-item breadcrumb-mobile">
+    <a href="">Tredje nivå</a>
+  </li>
+  <li class="breadcrumb-item active">
+    <a href="">Fjerde nivå som er siden du står på</a>
+  </li>
+</ol>
+<h1 class="a-fontBold a-pageTitle ">
+  Tittel på siden
+</h1>
+<p class="a-leadText " id="leadText">Ingress er et kort innledende avsnitt som vanligvis plasseres mellom overskriften og brødteksten. Ingressen brukes ofte til å "gripe" fatt i leseren, for at personen skal bli interessert i å lese resten av teksten. Den fungerer også som et visuelt skille
+  mellom resten av teksten. Ingressen bør være lettlest og fri for vanskelige faguttrykk.</p>
+<div class="a-byline">
+  Sist oppdatert 11.10.2016
+</div>
+<hr class="mt-2 mb-0 hidden-md-down">
+ 
+															</div>
+														    <!-- iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="/designsystem-styleguidepatterns/02-organisms-40-artikkel-60-artikkel-start/02-organisms-40-artikkel-60-artikkel-start.markup-only.html"></iframe -->
 
 														    <div class="iffframe__handle"></div>
 
@@ -12656,12 +11945,19 @@
 			                        					
 
 			                        					
-
-			                        					
+														
 
 														<div class="iffframe">
-
-														    <iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="/designsystem-styleguide/patterns/00-atoms-07-tekst-00-varsel/00-atoms-07-tekst-00-varsel.rendered.html"></iframe>
+															<div class="iffframe__iframe">
+															
+<div id="alert" class="a-message a-message-info ">
+  
+  Dette er en beskjed.
+  
+</div>
+ 
+															</div>
+														    <!-- iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="/designsystem-styleguidepatterns/00-atoms-07-tekst-00-varsel/00-atoms-07-tekst-00-varsel.markup-only.html"></iframe -->
 
 														    <div class="iffframe__handle"></div>
 
@@ -12697,12 +11993,54 @@
 			                        					
 
 			                        					
-
-			                        					
+														
 
 														<div class="iffframe">
-
-														    <iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="/designsystem-styleguide/patterns/00-atoms-07-tekst-01-varsel-variasjoner/00-atoms-07-tekst-01-varsel-variasjoner.rendered.html"></iframe>
+															<div class="iffframe__iframe">
+															
+<div id="alert-no-arrow" class="a-message a-message-info a-message--arrow-off a-message--fullwidth ">
+  
+  Dette er en beskjed uten pil og med full bredde
+  
+</div>
+<div id="alert" class="a-message a-message-info ">
+  
+  Obs! E-postadressen må inneholde krøllalfa @
+  
+</div>
+<div id="mail-error" class="a-message a-message-error ">
+  
+  Oida, e-postadressen er ikke gyldig
+  
+</div>
+<div id="mail-success" class="a-message a-message-success ">
+  
+  Yes! Så flink du har vært!
+  
+</div>
+<div id="alert" class="a-message a-message-info ">
+  
+  Dette er en tekst
+  
+  <a href="/patterns/04-sider-infoportal-01-forside-00-forside/04-sider-infoportal-01-forside-00-forside.html" class=" ">
+  med en lenke som står i løpende tekst
+  
+</a>
+  
+  og man kan ha mer tekst etter.
+  
+</div>
+<div id="alert" class="a-message a-message-info a-message--arrow-off a-message--fullwidth a-message--no-dropshadow mt-1 pb-4 pt-2 ">
+  
+  <div class="a-fontBold">
+    Varsel tittel
+  </div>
+  Varsel med tittel og tekst
+  
+</div>
+ 
+															</div>
+														    <!-- iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="/designsystem-styleguidepatterns/00-atoms-07-tekst-01-varsel-variasjoner/00-atoms-07-tekst-01-varsel-variasjoner.markup-only.html"></iframe -->
 
 														    <div class="iffframe__handle"></div>
 
@@ -12781,12 +12119,15 @@
 			                        					
 
 			                        					
-
-			                        					
+														
 
 														<div class="iffframe">
-
-														    <iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="/designsystem-styleguide/patterns/00-atoms-07-tekst-04-merkelapp/00-atoms-07-tekst-04-merkelapp.rendered.html"></iframe>
+															<div class="iffframe__iframe">
+															
+<span class="badge badge-primary a-label badge-pill">9</span>
+ 
+															</div>
+														    <!-- iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="/designsystem-styleguidepatterns/00-atoms-07-tekst-04-merkelapp/00-atoms-07-tekst-04-merkelapp.markup-only.html"></iframe -->
 
 														    <div class="iffframe__handle"></div>
 
@@ -12822,12 +12163,20 @@
 			                        					
 
 			                        					
-
-			                        					
+														
 
 														<div class="iffframe">
-
-														    <iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="/designsystem-styleguide/patterns/00-atoms-07-tekst-05-merkelapp-variasjoner/00-atoms-07-tekst-05-merkelapp-variasjoner.rendered.html"></iframe>
+															<div class="iffframe__iframe">
+															
+<span class="badge badge-primary a-label badge-pill">9</span>
+<span class="badge badge-default a-label badge-pill">19</span>
+<span class="badge badge-default a-label badge-pill">4385</span>
+<span class="badge badge-success a-label badge-pill">Med tekst</span>
+<span class="badge badge-warning a-label badge-pill">Med tekst</span>
+<span class="badge badge-danger a-label badge-pill">Med tekst</span>
+ 
+															</div>
+														    <!-- iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="/designsystem-styleguidepatterns/00-atoms-07-tekst-05-merkelapp-variasjoner/00-atoms-07-tekst-05-merkelapp-variasjoner.markup-only.html"></iframe -->
 
 														    <div class="iffframe__handle"></div>
 
@@ -12915,12 +12264,37 @@
 			                        					
 
 			                        					
-
-			                        					
+														
 
 														<div class="iffframe">
-
-														    <iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="/designsystem-styleguide/patterns/02-organisms-40-artikkel-60-artikkel-start/02-organisms-40-artikkel-60-artikkel-start.rendered.html"></iframe>
+															<div class="iffframe__iframe">
+															
+<ol class="breadcrumb a-breadcrumb ">
+  <li class="breadcrumb-item ">
+    <a href="">Første nivå</a>
+  </li>
+  <li class="breadcrumb-item ">
+    <a href="">Andre nivå</a>
+  </li>
+  <li class="breadcrumb-item breadcrumb-mobile">
+    <a href="">Tredje nivå</a>
+  </li>
+  <li class="breadcrumb-item active">
+    <a href="">Fjerde nivå som er siden du står på</a>
+  </li>
+</ol>
+<h1 class="a-fontBold a-pageTitle ">
+  Tittel på siden
+</h1>
+<p class="a-leadText " id="leadText">Ingress er et kort innledende avsnitt som vanligvis plasseres mellom overskriften og brødteksten. Ingressen brukes ofte til å "gripe" fatt i leseren, for at personen skal bli interessert i å lese resten av teksten. Den fungerer også som et visuelt skille
+  mellom resten av teksten. Ingressen bør være lettlest og fri for vanskelige faguttrykk.</p>
+<div class="a-byline">
+  Sist oppdatert 11.10.2016
+</div>
+<hr class="mt-2 mb-0 hidden-md-down">
+ 
+															</div>
+														    <!-- iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="/designsystem-styleguidepatterns/02-organisms-40-artikkel-60-artikkel-start/02-organisms-40-artikkel-60-artikkel-start.markup-only.html"></iframe -->
 
 														    <div class="iffframe__handle"></div>
 
@@ -12996,12 +12370,25 @@
 			                        					
 
 			                        					
-
-			                        					
+														
 
 														<div class="iffframe">
-
-														    <iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="/designsystem-styleguide/patterns/01-molecules-00-tekst-03-person-rolle/01-molecules-00-tekst-03-person-rolle.rendered.html"></iframe>
+															<div class="iffframe__iframe">
+															
+<div class="a-personRole ">
+  <div class="hidden-sm-down">
+    
+    <i class="ai ai-private  ai-lg "></i>
+    
+  </div>
+  <div class="a-personRole-text">
+    <span class="a-personRole-role">Styremedlem</span>
+    <span class="a-personRole-name">William Mjelde</span>
+  </div>
+</div>
+ 
+															</div>
+														    <!-- iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="/designsystem-styleguidepatterns/01-molecules-00-tekst-03-person-rolle/01-molecules-00-tekst-03-person-rolle.markup-only.html"></iframe -->
 
 														    <div class="iffframe__handle"></div>
 
@@ -13037,12 +12424,23 @@
 			                        					
 
 			                        					
-
-			                        					
+														
 
 														<div class="iffframe">
-
-														    <iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="/designsystem-styleguide/patterns/01-molecules-00-tekst-01-person-privat/01-molecules-00-tekst-01-person-privat.rendered.html"></iframe>
+															<div class="iffframe__iframe">
+															
+<div class="a-personRole">
+  
+  <i class="ai ai-private  ai-lg "></i>
+  
+  <div class="a-personRole-text">
+    <span class="a-personRole-name">JAN PETTERSEN</span>
+    <span class="a-personRole-role"></span>
+  </div>
+</div>
+ 
+															</div>
+														    <!-- iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="/designsystem-styleguidepatterns/01-molecules-00-tekst-01-person-privat/01-molecules-00-tekst-01-person-privat.markup-only.html"></iframe -->
 
 														    <div class="iffframe__handle"></div>
 
@@ -13078,12 +12476,24 @@
 			                        					
 
 			                        					
-
-			                        					
+														
 
 														<div class="iffframe">
-
-														    <iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="/designsystem-styleguide/patterns/01-molecules-00-tekst-02-person-privat-status/01-molecules-00-tekst-02-person-privat-status.rendered.html"></iframe>
+															<div class="iffframe__iframe">
+															
+<div class="a-personRole">
+  
+  <i class="ai ai-private  ai-lg "></i>
+  
+  <span class="a-dot a-dot-red"></span>
+  <div class="a-personRole-text">
+    <span class="a-personRole-name">JAN PETTERSEN</span>
+    <span class="a-personRole-role"></span>
+  </div>
+</div>
+ 
+															</div>
+														    <!-- iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="/designsystem-styleguidepatterns/01-molecules-00-tekst-02-person-privat-status/01-molecules-00-tekst-02-person-privat-status.markup-only.html"></iframe -->
 
 														    <div class="iffframe__handle"></div>
 
@@ -13229,27 +12639,6 @@
 <!-- Bundled assets -->
 <script src="/designsystem-styleguide/dist/js/infoportal.vendor.js"></script>
 <script src="/designsystem-styleguide/dist/js/infoportal.js"></script>
-
-<script>
-  $('.iffframe').find('iframe').on('load', function() {
-    if (window.localStorage.getItem('persisted_style') !== '1') {
-      var e = document.createElement('link')
-      e.rel = 'stylesheet'
-      e.type = 'text/css'
-      if (window.localStorage.getItem('persisted_style') === '2') {
-        e.href = '/designsystem-styleguide/css/altinnett.css'
-      } else {
-        e.href = '/designsystem-styleguide/css/brreg.css'
-      }
-      $($('.iffframe').find('iframe')[0].contentWindow.document.getElementsByTagName('head')[0])
-       .find('link[rel=stylesheet][href~=\'/designsystem-styleguide/css/altinnett.css\']').remove()
-      $($('.iffframe').find('iframe')[0].contentWindow.document.getElementsByTagName('head')[0])
-       .find('link[rel=stylesheet][href~=\'/designsystem-styleguide/css/brreg.css\']').remove()
-      $('.iffframe').find('iframe')[0].contentWindow.document.getElementsByTagName('head')[0].appendChild(e)
-    }
-  });
-</script>
-
 
             </div><!--end l-page-layout__main-->
 

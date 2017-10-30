@@ -14,10 +14,12 @@
 	<link rel="stylesheet" href="/designsystem-styleguide/css/style-guide.css">
 	<link rel="icon" href="/designsystem-styleguide/favicon.ico">
 
-	<link rel="stylesheet" href="/designsystem-styleguide/css/style.css">
+	<script src="https://use.fortawesome.com/ed31cded.js"></script>
+
+	<link rel="stylesheet" href="/designsystem-styleguide/css/style.dist.storefront.css">
+	<link rel="stylesheet" href="/designsystem-styleguide/css/brreg.css">
 
 	<link rel="canonical" href="http://localhost:4000/designsystem-styleguide/komponenter/navigasjon/footer.html">
-	<script src="https://use.fortawesome.com/ed31cded.js"></script>
 </head>
 
 
@@ -61,13 +63,11 @@
 
 	<!-- TITLE -->
 
-	<a href="https://www.npmjs.com/package/altinn-designsystem" class="a-st-version">Versjon: 0.2.36</a>
+	<a href="https://www.npmjs.com/package/altinn-designsystem" class="a-st-version">Versjon: 1.0.0</a>
 
 	<!-- THEME PICKER -->
 	<div class="form-group input-group transparent a-js-forceFlexColumn a-form-group">
 	  <div data-toggle="altinn-dropdown" class="dropdown a-fullWidthXs">
-	    <input type="hidden" class="a-js-altinnDropdown-value">
-
 			<button class="btn dropdown-toggle a-dropdown-toggle form-control-alt  a-js-dropdownToValidate" type="button" id="dropdownMenu" name="Velg theme" title="Velg theme" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 	      <span class="a-form-text">
 					<span class="sr-only" id="a-js-chosenTheme">Altinn</span>
@@ -107,7 +107,7 @@
 
 	    <div class="dropdown-menu a-dropdown-menu" aria-labelledby="dropdownMenu" name="chooseProject">
 
-	        <a class="dropdown-item a-dropdown-item" href="#" data-value="1">
+	        <a class="dropdown-item a-dropdown-item" href="#" data-project="altinn">
 	          <span class="a-form-text">
 	            <span class="sr-only" id="a-js-chosenTheme">Altinn</span>
 							<span class="a-st-dropdownLogo">
@@ -148,7 +148,7 @@
 	          </span>
 	        </a>
 
-	        <a class="dropdown-item a-dropdown-item" href="#" data-value="3">
+	        <a class="dropdown-item a-dropdown-item" href="#" data-project="brreg">
 						<span class="a-form-text a-dropdown-item--long">
 							<span class="sr-only" id="a-js-chosenTheme">Brønnøysundregistrene</span>
 							<span class="a-st-dropdownLogo">
@@ -2574,8 +2574,8 @@
 
 			<li class="c-primary-nav__subitem ">
 
-                <a class="c-primary-nav__sublink " href="/designsystem-styleguide/komponenter/skjemakomponenter/tekstfelt.html">
-			    	Tekstfelt
+                <a class="c-primary-nav__sublink " href="/designsystem-styleguide/komponenter/skjemakomponenter/inputfelt.html">
+			    	Inputfelt
 				</a><!-- end c-primary-nav__link -->
 
 			</li><!-- end c-primary-nav__item -->
@@ -5990,742 +5990,6 @@
 
       </div>
 
-      <div class="display-altinnett">
-        <nav class="c-primary-nav" role="navigation">
-
-	<ul class="c-primary-nav__list c-primary-nav__list--flush js-nav-panel" role="tablist" aria-multiselectable="true">
-
-
-		<li class="c-primary-nav__item">
-
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-				<a href="/designsystem-styleguide/eksempel-altinnett.html" class="c-primary-nav__link ">
-					<span class="c-primary-nav__text">Eksemepelside altinnett</span>
-				</a>
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-
-		</li><!-- end c-nav__list__item -->
-
-		<li class="c-primary-nav__item ">
-			<a class="c-primary-nav__link c-primary-nav__link--has-children js-nav-dropdown-trigger " href="/designsystem-styleguide/altinnett-components/">
-
-				<span class="c-primary-nav__text">Komponenter Altinnett</span>
-
-				<svg class="c-icon c-primary-nav__icon" aria-hidden="true">
-					<use href="/designsystem-styleguide/icons.svg#chevron-right"></use>
-				</svg>
-
-			</a><!--end c-primary-nav__link-->
-
-			<ul class="c-primary-nav__sublist js-nav-dropdown ">
-
-				<li class="c-primary-nav__subitem ">
-
-	<a class="c-primary-nav__sublink c-primary-nav__sublink--has-children js-nav-dropdown-trigger  " href="#">
-
-		<span class="c-primary-nav__text">Lenker og knapper</span>
-
-		
-		<svg class="c-icon c-primary-nav__subicon" aria-hidden="true">
-			<use href="/designsystem-styleguide/icons.svg#chevron-right"></use>
-		</svg>
-		
-	</a><!--end c-primary-nav__link-->
-
-	
-	<ul class="c-primary-nav__sublist js-nav-dropdown ">
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-</ul><!-- end c-primary-nav__sublist-->
-	
-
-</li><!-- end c-primary-nav__item-->
-
-
-
-			</ul>
-
-		</li>
-
-
-	</ul><!-- end c-nav__list -->
-
-</nav><!-- end c-nav -->
-
-      </div>
-
       <div class="display-brreg">
         <nav class="c-primary-nav" role="navigation">
 
@@ -9045,8 +8309,8 @@
 
 			<li class="c-primary-nav__subitem ">
 
-                <a class="c-primary-nav__sublink " href="/designsystem-styleguide/komponenter/skjemakomponenter/tekstfelt.html">
-			    	Tekstfelt
+                <a class="c-primary-nav__sublink " href="/designsystem-styleguide/komponenter/skjemakomponenter/inputfelt.html">
+			    	Inputfelt
 				</a><!-- end c-primary-nav__link -->
 
 			</li><!-- end c-primary-nav__item -->
@@ -12399,10 +11663,77 @@
 
 						
 						<div class="iffframe">
+							
+<div class="container a-containerFooter">
+  <!-- Begin Footer -->
+  <footer class="a-footer ">
+    <div class="row a-footer-firstRow">
+      <div class="col-md-4 hidden-sm-down">
+        
+        <div class="form-group a-form-group  ">
+          <label class="a-form-label  sr-only  " for="text-input-search-11">Søk etter innhold</label>
+          <div class="a-form-group-items input-group   ">
+            <input class="form-control  
+         a-hasButton  " type="search" placeholder="Søk etter innhold" name="input-field" data-val="true" id="text-input-search-11">
+            <div class="input-group-btn">
+              <button onclick="location.href='/patterns/04-sider-infoportal-40-sok-00-sok-forside/04-sider-infoportal-40-sok-00-sok-forside.html';" class="btn btn-secondary" type="button">
+              
+<i class="ai ai-search   "    ></i>
+              <span class="sr-only">Søk</span>
+          </button>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <div class="col-md-8">
+        <nav class="a-footerNav">
+          <ul>
+            <li>
+              <a class="a-hvr-underline" href="&#x2F;patterns&#x2F;04-sider-infoportal-10-seksjonsforsider-30-seksjonsforside-v-starteogdrive&#x2F;04-sider-infoportal-10-seksjonsforsider-30-seksjonsforside-v-starteogdrive.html">
+                
+                <i class="ai ai-nw ai-corp   "></i>
+                
+                starte og drive bedrift
+              </a>
+            </li>
+            <li>
+              <a class="a-hvr-underline" href="&#x2F;patterns&#x2F;04-sider-infoportal-20-navigasjonssider-70-hjelpesenter&#x2F;04-sider-infoportal-20-navigasjonssider-70-hjelpesenter.html">
+                
+                <i class="ai ai-nw ai-phone   "></i>
+                
+                hjelp og kontakt
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <nav class="a-footerExtraNav">
+          Brønnøysundregistrene,
+          <span class="a-footerExtraNav-name">8910 Brønnøysund</span>
+          <div class="a-footerExtraNav-toTop hidden-md-up">
+            <a href="#top" class="a-linkArea a-btn ">
+						    Til toppen
+						</a>
+          </div>
+          <ul>
+            <li><a class="hidden-sm-down" href="&#x2F;patterns&#x2F;04-sider-infoportal-20-navigasjonssider-46-navigasjonsartikkel-v-omaltinn-v2&#x2F;04-sider-infoportal-20-navigasjonssider-46-navigasjonsartikkel-v-omaltinn-v2.html">Om Altinn</a></li>
+            <li><a class="" href="&#x2F;patterns&#x2F;04-sider-infoportal-20-navigasjonssider-61-arkiv-v-driftsarkiv&#x2F;04-sider-infoportal-20-navigasjonssider-61-arkiv-v-driftsarkiv.html">Driftsmeldinger</a></li>
+            <li><a class="" href="&#x2F;patterns&#x2F;04-sider-infoportal-30-artikkel-10-artikkel&#x2F;04-sider-infoportal-30-artikkel-10-artikkel.html">Personvern og cookies</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+</div>
+ 
+							<!-- iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="/designsystem-styleguide/patterns/02-organisms-01-globale-01-footer/02-organisms-01-globale-01-footer.markup-only.html"></iframe>
 
-							<iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="/designsystem-styleguide/patterns/02-organisms-01-globale-01-footer/02-organisms-01-globale-01-footer.rendered.html"></iframe>
-
-							<div class="iffframe__handle"></div>
+							<div class="iffframe__handle"></div -->
 
 						</div><!--end iffframe-->
 
@@ -12455,84 +11786,54 @@
 								<div class="pattern-code">
 									<button class="c-btn pattern-code-copy-btn" data-clipboard-target="#pattern-code-1">Copy</button>
 									<pre class="highlight pattern-code-block"><code class="language-html" id="pattern-code-1">
-<figure class="highlight"><pre><code class="language-liquid" data-lang="liquid">&lt;!-- START: 02-organismer-01-globale-01-footer --&gt;
-&lt;div class="container a-containerFooter"&gt;
+<figure class="highlight"><pre><code class="language-liquid" data-lang="liquid">&lt;div class="container a-containerFooter"&gt;
   &lt;!-- Begin Footer --&gt;
   &lt;footer class="a-footer "&gt;
     &lt;div class="row a-footer-firstRow"&gt;
       &lt;div class="col-md-4 hidden-sm-down"&gt;
-        &lt;!-- START: 00-atomer-01-forms-10-tekst-input JS doc: handleFocus.js --&gt;
-
-        &lt;div class="form-group a-form-group  "&gt;
-
-          &lt;label class="a-form-label  sr-only  " for="text-input-search-11"&gt;Søk etter innhold&lt;/label&gt;
-
-          &lt;div class="a-form-group-items input-group   "&gt;
-
-            &lt;input class="form-control  
+        
+        &lt;div class="form-group a-form-group  "&gt;
+          &lt;label class="a-form-label  sr-only  " for="text-input-search-11"&gt;Søk etter innhold&lt;/label&gt;
+          &lt;div class="a-form-group-items input-group   "&gt;
+            &lt;input class="form-control  
          a-hasButton  " type="search" placeholder="Søk etter innhold" name="input-field" data-val="true" id="text-input-search-11"&gt;
-
-            &lt;div class="input-group-btn"&gt;
+            &lt;div class="input-group-btn"&gt;
               &lt;button onclick="location.href='/patterns/04-sider-infoportal-40-sok-00-sok-forside/04-sider-infoportal-40-sok-00-sok-forside.html';" class="btn btn-secondary" type="button"&gt;
-              &lt;!-- START: 00-atomer-09-bilder-og-media-15-ikon --&gt;
+              
 &lt;i class="ai ai-search   "    &gt;&lt;/i&gt;
-
-
-&lt;!-- END: 00-atomer-09-bilder-og-media-15-ikon --&gt;
-
-              &lt;span class="sr-only"&gt;Søk&lt;/span&gt;
+              &lt;span class="sr-only"&gt;Søk&lt;/span&gt;
           &lt;/button&gt;
             &lt;/div&gt;
-
-
-
-          &lt;/div&gt;
-
-
-        &lt;/div&gt;
-
-        &lt;!-- END: 00-atomer-01-forms-10-tekst-input --&gt;
-
-
-      &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        
+      &lt;/div&gt;
       &lt;div class="col-md-8"&gt;
         &lt;nav class="a-footerNav"&gt;
           &lt;ul&gt;
             &lt;li&gt;
               &lt;a class="a-hvr-underline" href="&amp;#x2F;patterns&amp;#x2F;04-sider-infoportal-10-seksjonsforsider-30-seksjonsforside-v-starteogdrive&amp;#x2F;04-sider-infoportal-10-seksjonsforsider-30-seksjonsforside-v-starteogdrive.html"&gt;
-                &lt;!-- START: 00-atomer-09-bilder-og-media-15-ikon --&gt;
+                
                 &lt;i class="ai ai-nw ai-corp   "&gt;&lt;/i&gt;
-
-
-                &lt;!-- END: 00-atomer-09-bilder-og-media-15-ikon --&gt;
-
-                starte og drive bedrift
+                
+                starte og drive bedrift
               &lt;/a&gt;
             &lt;/li&gt;
-
-            &lt;li&gt;
+            &lt;li&gt;
               &lt;a class="a-hvr-underline" href="&amp;#x2F;patterns&amp;#x2F;04-sider-infoportal-20-navigasjonssider-70-hjelpesenter&amp;#x2F;04-sider-infoportal-20-navigasjonssider-70-hjelpesenter.html"&gt;
-                &lt;!-- START: 00-atomer-09-bilder-og-media-15-ikon --&gt;
+                
                 &lt;i class="ai ai-nw ai-phone   "&gt;&lt;/i&gt;
-
-
-                &lt;!-- END: 00-atomer-09-bilder-og-media-15-ikon --&gt;
-
-                hjelp og kontakt
+                
+                hjelp og kontakt
               &lt;/a&gt;
             &lt;/li&gt;
           &lt;/ul&gt;
-
-        &lt;/nav&gt;
-
-      &lt;/div&gt;
-
-    &lt;/div&gt;
-
-    &lt;div class="row"&gt;
+        &lt;/nav&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="row"&gt;
       &lt;div class="col-lg-12"&gt;
-
-        &lt;nav class="a-footerExtraNav"&gt;
+        &lt;nav class="a-footerExtraNav"&gt;
           Brønnøysundregistrene,
           &lt;span class="a-footerExtraNav-name"&gt;8910 Brønnøysund&lt;/span&gt;
           &lt;div class="a-footerExtraNav-toTop hidden-md-up"&gt;
@@ -12547,15 +11848,10 @@
           &lt;/ul&gt;
         &lt;/nav&gt;
       &lt;/div&gt;
-
-    &lt;/div&gt;
-
-  &lt;/footer&gt;
+    &lt;/div&gt;
+  &lt;/footer&gt;
   &lt;!-- End Footer --&gt;
-&lt;/div&gt;
-&lt;!-- END Container --&gt;
-
-&lt;!-- END: 02-organismer-01-globale-01-footer --&gt;</code></pre></figure>
+&lt;/div&gt;</code></pre></figure>
 </code></pre>
 								</div>
 
@@ -12683,27 +11979,6 @@
 <!-- Bundled assets -->
 <script src="/designsystem-styleguide/dist/js/infoportal.vendor.js"></script>
 <script src="/designsystem-styleguide/dist/js/infoportal.js"></script>
-
-<script>
-  $('.iffframe').find('iframe').on('load', function() {
-    if (window.localStorage.getItem('persisted_style') !== '1') {
-      var e = document.createElement('link')
-      e.rel = 'stylesheet'
-      e.type = 'text/css'
-      if (window.localStorage.getItem('persisted_style') === '2') {
-        e.href = '/designsystem-styleguide/css/altinnett.css'
-      } else {
-        e.href = '/designsystem-styleguide/css/brreg.css'
-      }
-      $($('.iffframe').find('iframe')[0].contentWindow.document.getElementsByTagName('head')[0])
-       .find('link[rel=stylesheet][href~=\'/designsystem-styleguide/css/altinnett.css\']').remove()
-      $($('.iffframe').find('iframe')[0].contentWindow.document.getElementsByTagName('head')[0])
-       .find('link[rel=stylesheet][href~=\'/designsystem-styleguide/css/brreg.css\']').remove()
-      $('.iffframe').find('iframe')[0].contentWindow.document.getElementsByTagName('head')[0].appendChild(e)
-    }
-  });
-</script>
-
 
             </div><!--end l-page-layout__main-->
 

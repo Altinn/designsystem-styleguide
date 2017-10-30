@@ -14,10 +14,12 @@
 	<link rel="stylesheet" href="/designsystem-styleguide/css/style-guide.css">
 	<link rel="icon" href="/designsystem-styleguide/favicon.ico">
 
-	<link rel="stylesheet" href="/designsystem-styleguide/css/style.css">
+	<script src="https://use.fortawesome.com/ed31cded.js"></script>
+
+	<link rel="stylesheet" href="/designsystem-styleguide/css/style.dist.storefront.css">
+	<link rel="stylesheet" href="/designsystem-styleguide/css/brreg.css">
 
 	<link rel="canonical" href="http://localhost:4000/designsystem-styleguide/komponenter/lister/">
-	<script src="https://use.fortawesome.com/ed31cded.js"></script>
 </head>
 
 
@@ -61,13 +63,11 @@
 
 	<!-- TITLE -->
 
-	<a href="https://www.npmjs.com/package/altinn-designsystem" class="a-st-version">Versjon: 0.2.36</a>
+	<a href="https://www.npmjs.com/package/altinn-designsystem" class="a-st-version">Versjon: 1.0.0</a>
 
 	<!-- THEME PICKER -->
 	<div class="form-group input-group transparent a-js-forceFlexColumn a-form-group">
 	  <div data-toggle="altinn-dropdown" class="dropdown a-fullWidthXs">
-	    <input type="hidden" class="a-js-altinnDropdown-value">
-
 			<button class="btn dropdown-toggle a-dropdown-toggle form-control-alt  a-js-dropdownToValidate" type="button" id="dropdownMenu" name="Velg theme" title="Velg theme" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 	      <span class="a-form-text">
 					<span class="sr-only" id="a-js-chosenTheme">Altinn</span>
@@ -107,7 +107,7 @@
 
 	    <div class="dropdown-menu a-dropdown-menu" aria-labelledby="dropdownMenu" name="chooseProject">
 
-	        <a class="dropdown-item a-dropdown-item" href="#" data-value="1">
+	        <a class="dropdown-item a-dropdown-item" href="#" data-project="altinn">
 	          <span class="a-form-text">
 	            <span class="sr-only" id="a-js-chosenTheme">Altinn</span>
 							<span class="a-st-dropdownLogo">
@@ -148,7 +148,7 @@
 	          </span>
 	        </a>
 
-	        <a class="dropdown-item a-dropdown-item" href="#" data-value="3">
+	        <a class="dropdown-item a-dropdown-item" href="#" data-project="brreg">
 						<span class="a-form-text a-dropdown-item--long">
 							<span class="sr-only" id="a-js-chosenTheme">Brønnøysundregistrene</span>
 							<span class="a-st-dropdownLogo">
@@ -2574,8 +2574,8 @@
 
 			<li class="c-primary-nav__subitem ">
 
-                <a class="c-primary-nav__sublink " href="/designsystem-styleguide/komponenter/skjemakomponenter/tekstfelt.html">
-			    	Tekstfelt
+                <a class="c-primary-nav__sublink " href="/designsystem-styleguide/komponenter/skjemakomponenter/inputfelt.html">
+			    	Inputfelt
 				</a><!-- end c-primary-nav__link -->
 
 			</li><!-- end c-primary-nav__item -->
@@ -5990,742 +5990,6 @@
 
       </div>
 
-      <div class="display-altinnett">
-        <nav class="c-primary-nav" role="navigation">
-
-	<ul class="c-primary-nav__list c-primary-nav__list--flush js-nav-panel" role="tablist" aria-multiselectable="true">
-
-
-		<li class="c-primary-nav__item">
-
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-				<a href="/designsystem-styleguide/eksempel-altinnett.html" class="c-primary-nav__link ">
-					<span class="c-primary-nav__text">Eksemepelside altinnett</span>
-				</a>
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-
-		</li><!-- end c-nav__list__item -->
-
-		<li class="c-primary-nav__item ">
-			<a class="c-primary-nav__link c-primary-nav__link--has-children js-nav-dropdown-trigger " href="/designsystem-styleguide/altinnett-components/">
-
-				<span class="c-primary-nav__text">Komponenter Altinnett</span>
-
-				<svg class="c-icon c-primary-nav__icon" aria-hidden="true">
-					<use href="/designsystem-styleguide/icons.svg#chevron-right"></use>
-				</svg>
-
-			</a><!--end c-primary-nav__link-->
-
-			<ul class="c-primary-nav__sublist js-nav-dropdown ">
-
-				<li class="c-primary-nav__subitem ">
-
-	<a class="c-primary-nav__sublink c-primary-nav__sublink--has-children js-nav-dropdown-trigger  " href="#">
-
-		<span class="c-primary-nav__text">Lenker og knapper</span>
-
-		
-		<svg class="c-icon c-primary-nav__subicon" aria-hidden="true">
-			<use href="/designsystem-styleguide/icons.svg#chevron-right"></use>
-		</svg>
-		
-	</a><!--end c-primary-nav__link-->
-
-	
-	<ul class="c-primary-nav__sublist js-nav-dropdown ">
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-</ul><!-- end c-primary-nav__sublist-->
-	
-
-</li><!-- end c-primary-nav__item-->
-
-
-
-			</ul>
-
-		</li>
-
-
-	</ul><!-- end c-nav__list -->
-
-</nav><!-- end c-nav -->
-
-      </div>
-
       <div class="display-brreg">
         <nav class="c-primary-nav" role="navigation">
 
@@ -9045,8 +8309,8 @@
 
 			<li class="c-primary-nav__subitem ">
 
-                <a class="c-primary-nav__sublink " href="/designsystem-styleguide/komponenter/skjemakomponenter/tekstfelt.html">
-			    	Tekstfelt
+                <a class="c-primary-nav__sublink " href="/designsystem-styleguide/komponenter/skjemakomponenter/inputfelt.html">
+			    	Inputfelt
 				</a><!-- end c-primary-nav__link -->
 
 			</li><!-- end c-primary-nav__item -->
@@ -12434,12 +11698,36 @@
 			                        					
 
 			                        					
-
-			                        					
+														
 
 														<div class="iffframe">
-
-														    <iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="/designsystem-styleguide/patterns/01-molecules-05-lister-00-liste-unummerert/01-molecules-05-lister-00-liste-unummerert.rendered.html"></iframe>
+															<div class="iffframe__iframe">
+															
+<div class="a-list-container ">
+  <ul class="a-list    ">
+    <li class="a-dotted">
+      <div class="row ">
+        <div class="col">
+          
+          Første rad
+          
+        </div>
+      </div>
+    </li>
+    <li class="a-dotted">
+      <div class="row ">
+        <div class="col">
+          
+          Andre rad
+          
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+ 
+															</div>
+														    <!-- iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="/designsystem-styleguidepatterns/01-molecules-05-lister-00-liste-unummerert/01-molecules-05-lister-00-liste-unummerert.markup-only.html"></iframe -->
 
 														    <div class="iffframe__handle"></div>
 
@@ -12475,12 +11763,67 @@
 			                        					
 
 			                        					
-
-			                        					
+														
 
 														<div class="iffframe">
-
-														    <iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="/designsystem-styleguide/patterns/01-molecules-05-lister-02-liste-unummerert-lenke/01-molecules-05-lister-02-liste-unummerert-lenke.rendered.html"></iframe>
+															<div class="iffframe__iframe">
+															
+<div class="a-list-container ">
+  <ul class="a-list   a-list-borderTop a-list-noIcon ">
+    <li class="a-dotted a-clickable a-list-hasRowLink">
+      <a href="http://altinn.no" class="a-list-rowLink">
+        <div class="row ">
+          <div class="col">
+            
+            Første klikkbare rad
+            
+          </div>
+        </div>
+      </a>
+    </li>
+    <li class="a-dotted a-clickable a-list-hasRowLink">
+      <a href="http://altinn.no" class="a-list-rowLink">
+        <div class="row ">
+          <div class="col-11">
+            
+            Andre klikkbare rad
+            <span class="a-dimText7">(ekstrainfo)</span>
+            
+          </div>
+          <div class="col-1 text-right">
+            
+            
+            <i class="ai ai-arrowrightup   "></i>
+            
+            
+          </div>
+        </div>
+      </a>
+    </li>
+    <li class="a-dotted a-clickable a-list-hasRowLink">
+      <a href="http://altinn.no" class="a-list-rowLink">
+        <div class="row ">
+          <div class="col-11">
+            
+            Tredje klikkbare rad
+            <span class="a-dimText7">(ekstrainfo)</span>
+            
+          </div>
+          <div class="col-1 text-right">
+            
+            
+            <i class="ai ai-arrowrightup   "></i>
+            
+            
+          </div>
+        </div>
+      </a>
+    </li>
+  </ul>
+</div>
+ 
+															</div>
+														    <!-- iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="/designsystem-styleguidepatterns/01-molecules-05-lister-02-liste-unummerert-lenke/01-molecules-05-lister-02-liste-unummerert-lenke.markup-only.html"></iframe -->
 
 														    <div class="iffframe__handle"></div>
 
@@ -12516,12 +11859,1170 @@
 			                        					
 
 			                        					
-
-			                        					
+														
 
 														<div class="iffframe">
-
-														    <iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="/designsystem-styleguide/patterns/01-molecules-05-lister-10-liste-unummerert-radvarianter/01-molecules-05-lister-10-liste-unummerert-radvarianter.rendered.html"></iframe>
+															<div class="iffframe__iframe">
+															
+<div class="a-list-container ">
+  <ul class="a-list    ">
+    <li class="a-dotted a-selectable" id="firstRow">
+      <div class="row ">
+        <div class="a-w-7 text-center hidden-sm-down">
+          
+          
+          <i class="ai ai-private   "></i>
+          
+          
+        </div>
+        <div class="col-9 col-sm-5 col-md-3">
+          
+          <span class="a-fontBold"> 
+    Navn Navnesenku
+     </span>
+          
+        </div>
+        <div class="col-3 hidden-xs-down">
+          
+          2 roller
+          
+        </div>
+        <div class="a-hiddenWhenSelected">
+          
+          
+          <a href="#" class="a-btn-blue-noUnderline text-right a-fontBold a-fullWidthLink collapsed a-hiddenWhenExpanded pr-0 pr-md-5 " data-toggle="collapse" data-target="#collapseIdSample" aria-controls="collapseIdSample">
+  <span class='hidden-xs-down'>Gi rettigheter</span>
+  
+</a>
+          
+          <span class="a-fontBold a-visibleWhenSelected hidden-xs-down"> 
+    Lagt til
+     </span>
+          
+        </div>
+        <div class="col pr-0 pr-md-5 text-right a-visibleWhenSelected">
+          
+          <span class="a-fontBold"> 
+    Lagt til
+     </span>
+          
+        </div>
+      </div>
+      <div class="col-12 collapse" id="collapseIdSample" aria-expanded="false" role="tabpanel">
+        
+        
+        <div id="collapseIdSampleContent">
+          <div class="a-list-content">
+            <div class="row">
+              <div class="col ml-0 ml-md-7">
+                Velg roller den ansatte skal ha:
+              </div>
+              <div class="col-12 col-sm-auto pr-1 pr-md-4 mt-1 mt-md-0">
+                
+                <button type="button" class="a-btn-link  " aria-label="Fjern alle roller">
+    
+<i class="ai ai-circle-exit ai-nw  a-danger "    ></i>
+    <span class="a-btn-icon-text a-btn-black-noUnderline a-fontBold">
+      Fjern alle
+    </span>
+</button>
+                
+              </div>
+            </div>
+            <div class="text-sm-center mt-1">
+              
+              <div class="a-switch   ">
+                <input id="filterID14" class="sr-only" type="checkbox" name="filterID14" value="checkbutton-read">
+                <label for="filterID14" class="a-switch-label ">
+      Begrenset signeringsrett
+    </label>
+              </div>
+              <div class="a-switch   ">
+                <input id="filterID15" class="sr-only" type="checkbox" name="filterID15" value="checkbutton-read">
+                <label for="filterID15" class="a-switch-label ">
+      Lønn og personalmedarbeider
+    </label>
+              </div>
+              <div class="a-switch   ">
+                <input id="filterID16" class="sr-only" type="checkbox" name="filterID16" value="checkbutton-read">
+                <label for="filterID16" class="a-switch-label ">
+      Primærnæring og næringsmidler
+    </label>
+              </div>
+              <div class="a-switch   ">
+                <input id="filterID17" class="sr-only" type="checkbox" name="filterID17" value="checkbutton-read">
+                <label for="filterID17" class="a-switch-label ">
+      Regnskapsfører med signeringsrett
+    </label>
+              </div>
+              <div class="a-switch   ">
+                <input id="filterID18" class="sr-only" type="checkbox" name="filterID18" value="checkbutton-read">
+                <label for="filterID18" class="a-switch-label ">
+      Regnskapsfører lønn
+    </label>
+              </div>
+              <div class="a-switch   ">
+                <input id="filterID19" class="sr-only" type="checkbox" name="filterID19" value="checkbutton-read">
+                <label for="filterID19" class="a-switch-label ">
+      Basisrolle
+    </label>
+              </div>
+              <div class="a-switch   ">
+                <input id="filterID20" class="sr-only" type="checkbox" name="filterID20" value="checkbutton-read">
+                <label for="filterID20" class="a-switch-label ">
+      Regnskapsfører uten signeringsrett
+    </label>
+              </div>
+              <div class="a-switch   ">
+                <input id="filterID21" class="sr-only" type="checkbox" name="filterID21" value="checkbutton-read">
+                <label for="filterID21" class="a-switch-label ">
+      Revisorattester - MVA kompensasjon
+    </label>
+              </div>
+              <div class="a-switch   ">
+                <input id="filterID22" class="sr-only" type="checkbox" name="filterID22" value="checkbutton-read">
+                <label for="filterID22" class="a-switch-label ">
+      Utfyller/Innsender
+    </label>
+              </div>
+              <div class="a-switch   ">
+                <input id="filterID23" class="sr-only" type="checkbox" name="filterID23" value="checkbutton-read">
+                <label for="filterID23" class="a-switch-label ">
+      Ansvarlig revisor
+    </label>
+              </div>
+              <div class="a-switch   ">
+                <input id="filterID24" class="sr-only" type="checkbox" name="filterID24" value="checkbutton-read">
+                <label for="filterID24" class="a-switch-label ">
+      Revisormedarbeider
+    </label>
+              </div>
+              <div class="a-switch   ">
+                <input id="filterID25" class="sr-only" type="checkbox" name="filterID25" value="checkbutton-read">
+                <label for="filterID25" class="a-switch-label ">
+      Revisorrettighet
+    </label>
+              </div>
+              <div class="a-switch   ">
+                <input id="filterID26" class="sr-only" type="checkbox" name="filterID26" value="checkbutton-read">
+                <label for="filterID26" class="a-switch-label ">
+      Regnskapsmedarbeider
+    </label>
+              </div>
+              
+            </div>
+          </div>
+          
+          <div class="a-list-fullWidthRow">
+            <div class="modal-table-segment-box"></div>
+            <div class="modal-table-segment ">
+              <div class="float-right mt-2">
+                <span class="mr-3">
+            
+<button
+   type="button" 
+   onclick="$(this).closest('li').addClass('a-success a-disabled');" 
+  class="a-btn a-btn-success collapsed a-js-enableWhenValid"
+  
+  
+  data-toggle="collapse"
+  
+  
+  
+  data-target="#collapseIdSample"
+  
+   
+   data-set-selected-target="#firstRow">
+  
+    Ferdig
+  
+</button>
+          </span>
+                <span class="mr-3">
+            
+<button
+   type="button" 
+  
+  class="a-btn-link collapsed "
+  
+  
+  data-toggle="collapse"
+  
+  
+  
+  data-target="#collapseIdSample"
+  
+   
+  >
+  <span>
+    Avbryt
+  </span>
+                </button>
+                
+                
+                </span>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        
+        
+      </div>
+    </li>
+    <li class="a-dotted a-disabled a-success a-selectable a-selected" id="secondRow">
+      <div class="row ">
+        <div class="a-w-7 text-center hidden-sm-down">
+          
+          
+          <i class="ai ai-private   "></i>
+          
+          
+        </div>
+        <div class="col-12 col-sm-5 col-md-3">
+          
+          <span class="a-fontBold"> 
+    Navn Navnesen
+     </span>
+          
+        </div>
+        <div class="col-3 hidden-xs-down">
+          
+          2 roller
+          
+        </div>
+        <div>
+          
+          
+          <a href="#collapseIdSample2" class="a-btn-blue-noUnderline text-right a-fullWidthLink a-fontBold a-hiddenWhenSelected pr-0 pr-md-5 " data-toggle="collapse" data-target="##collapseIdSample2" aria-controls="#collapseIdSample2" data-set-selected-target="#secondRow">
+  <span class='hidden-xs-down'>Gi rettigheter</span>
+  
+</a>
+          
+          
+        </div>
+        <div class="col hidden-xs-down a-visibleWhenSelected text-right pr-0 pr-md-5">
+          
+          <span class="a-fontBold a-visibleWhenSelected"> 
+    Lagt til
+     </span>
+          
+        </div>
+      </div>
+      <div class="col-12 collapse" id="collapseIdSample2" aria-expanded="false" role="tabpanel">
+        
+        
+        <div id="collapseIdSample2Content">
+          <div class="a-list-content">
+            <div class="row">
+              <div class="col ml-0 ml-md-7">
+                Velg roller den ansatte skal ha:
+              </div>
+              <div class="col-12 col-sm-auto pr-1 pr-md-4 mt-1 mt-md-0">
+                
+                <button type="button" class="a-btn-link  " aria-label="Fjern alle roller">
+    
+<i class="ai ai-circle-exit ai-nw  a-danger "    ></i>
+    <span class="a-btn-icon-text a-btn-black-noUnderline a-fontBold">
+      Fjern alle
+    </span>
+</button>
+                
+              </div>
+            </div>
+            <div class="text-sm-center mt-1">
+              
+              <div class="a-switch   ">
+                <input id="filterID14" class="sr-only" type="checkbox" name="filterID14" value="checkbutton-read">
+                <label for="filterID14" class="a-switch-label ">
+      Begrenset signeringsrett
+    </label>
+              </div>
+              <div class="a-switch   ">
+                <input id="filterID15" class="sr-only" type="checkbox" name="filterID15" value="checkbutton-read">
+                <label for="filterID15" class="a-switch-label ">
+      Lønn og personalmedarbeider
+    </label>
+              </div>
+              <div class="a-switch   ">
+                <input id="filterID16" class="sr-only" type="checkbox" name="filterID16" value="checkbutton-read">
+                <label for="filterID16" class="a-switch-label ">
+      Primærnæring og næringsmidler
+    </label>
+              </div>
+              <div class="a-switch   ">
+                <input id="filterID17" class="sr-only" type="checkbox" name="filterID17" value="checkbutton-read">
+                <label for="filterID17" class="a-switch-label ">
+      Regnskapsfører med signeringsrett
+    </label>
+              </div>
+              <div class="a-switch   ">
+                <input id="filterID18" class="sr-only" type="checkbox" name="filterID18" value="checkbutton-read">
+                <label for="filterID18" class="a-switch-label ">
+      Regnskapsfører lønn
+    </label>
+              </div>
+              <div class="a-switch   ">
+                <input id="filterID19" class="sr-only" type="checkbox" name="filterID19" value="checkbutton-read">
+                <label for="filterID19" class="a-switch-label ">
+      Basisrolle
+    </label>
+              </div>
+              <div class="a-switch   ">
+                <input id="filterID20" class="sr-only" type="checkbox" name="filterID20" value="checkbutton-read">
+                <label for="filterID20" class="a-switch-label ">
+      Regnskapsfører uten signeringsrett
+    </label>
+              </div>
+              <div class="a-switch   ">
+                <input id="filterID21" class="sr-only" type="checkbox" name="filterID21" value="checkbutton-read">
+                <label for="filterID21" class="a-switch-label ">
+      Revisorattester - MVA kompensasjon
+    </label>
+              </div>
+              <div class="a-switch   ">
+                <input id="filterID22" class="sr-only" type="checkbox" name="filterID22" value="checkbutton-read">
+                <label for="filterID22" class="a-switch-label ">
+      Utfyller/Innsender
+    </label>
+              </div>
+              <div class="a-switch   ">
+                <input id="filterID23" class="sr-only" type="checkbox" name="filterID23" value="checkbutton-read">
+                <label for="filterID23" class="a-switch-label ">
+      Ansvarlig revisor
+    </label>
+              </div>
+              <div class="a-switch   ">
+                <input id="filterID24" class="sr-only" type="checkbox" name="filterID24" value="checkbutton-read">
+                <label for="filterID24" class="a-switch-label ">
+      Revisormedarbeider
+    </label>
+              </div>
+              <div class="a-switch   ">
+                <input id="filterID25" class="sr-only" type="checkbox" name="filterID25" value="checkbutton-read">
+                <label for="filterID25" class="a-switch-label ">
+      Revisorrettighet
+    </label>
+              </div>
+              <div class="a-switch   ">
+                <input id="filterID26" class="sr-only" type="checkbox" name="filterID26" value="checkbutton-read">
+                <label for="filterID26" class="a-switch-label ">
+      Regnskapsmedarbeider
+    </label>
+              </div>
+              
+            </div>
+          </div>
+          
+          <div class="a-list-fullWidthRow">
+            <div class="modal-table-segment-box"></div>
+            <div class="modal-table-segment ">
+              <div class="float-right mt-2">
+                <span class="mr-3">
+            
+<button
+   type="button" 
+  
+  class="a-btn a-btn-success a-js-enableWhenValid"
+  
+  
+  data-toggle="collapse"
+  
+  
+  
+  data-target="#collapseIdSample2"
+  
+   
+   data-set-selected-target="#secondRow">
+  
+    Ferdig
+  
+</button>
+          </span>
+                <span class="mr-3">
+            
+<button
+   type="button" 
+  
+  class="a-btn-link "
+  
+  
+  data-toggle="collapse"
+  
+  
+  
+  data-target="#collapseIdSample2"
+  
+   
+   data-set-selected-target="#secondRow">
+  <span>
+    Avbryt
+  </span>
+                </button>
+                
+                
+                </span>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        
+        
+      </div>
+    </li>
+    <li class="a-dotted a-selectable a-disabled a-danger a-selected" id="thirdRow">
+      <div class="row ">
+        <div class="a-w-7 text-center hidden-sm-down">
+          
+          
+          <i class="ai ai-private   "></i>
+          
+          
+        </div>
+        <div class="col-12 col-sm-5 col-md-3">
+          
+          <span class="a-fontBold"> 
+    Navn Navnesen
+     </span>
+          
+        </div>
+        <div class="col-3 hidden-xs-down">
+          
+          2 roller
+          
+        </div>
+        <div>
+          
+          
+          <a href="#collapseIdSample3" class="a-btn-blue-noUnderline text-right a-fullWidthLink a-hiddenWhenSelected pr-0 pr-md-5 " data-toggle="collapse" data-target="##collapseIdSample3" aria-controls="#collapseIdSample3" data-set-selected-target="#thirdRow">
+  <b class='hidden-xs-down'>Gi rettigheter</b>
+  
+</a>
+          
+          
+        </div>
+        <div class="col hidden-xs-down text-right a-visibleWhenSelected pr-0 pr-md-5">
+          
+          <span class="a-fontBold"> 
+    Slettet
+     </span>
+          
+        </div>
+      </div>
+      <div class="col-12 collapse" id="collapseIdSample3" aria-expanded="false" role="tabpanel">
+        
+        
+        <div id="collapseIdSample3Content">
+          <div class="a-list-content">
+            <div class="row">
+              <div class="col ml-0 ml-md-7">
+                Velg roller den ansatte skal ha:
+              </div>
+              <div class="col-12 col-sm-auto pr-1 pr-md-4 mt-1 mt-md-0">
+                
+                <button type="button" class="a-btn-link  " aria-label="Fjern alle roller">
+    
+<i class="ai ai-circle-exit ai-nw  a-danger "    ></i>
+    <span class="a-btn-icon-text a-btn-black-noUnderline a-fontBold">
+      Fjern alle
+    </span>
+</button>
+                
+              </div>
+            </div>
+            <div class="text-sm-center mt-1">
+              
+              <div class="a-switch   ">
+                <input id="filterID14" class="sr-only" type="checkbox" name="filterID14" value="checkbutton-read">
+                <label for="filterID14" class="a-switch-label ">
+      Begrenset signeringsrett
+    </label>
+              </div>
+              <div class="a-switch   ">
+                <input id="filterID15" class="sr-only" type="checkbox" name="filterID15" value="checkbutton-read">
+                <label for="filterID15" class="a-switch-label ">
+      Lønn og personalmedarbeider
+    </label>
+              </div>
+              <div class="a-switch   ">
+                <input id="filterID16" class="sr-only" type="checkbox" name="filterID16" value="checkbutton-read">
+                <label for="filterID16" class="a-switch-label ">
+      Primærnæring og næringsmidler
+    </label>
+              </div>
+              <div class="a-switch   ">
+                <input id="filterID17" class="sr-only" type="checkbox" name="filterID17" value="checkbutton-read">
+                <label for="filterID17" class="a-switch-label ">
+      Regnskapsfører med signeringsrett
+    </label>
+              </div>
+              <div class="a-switch   ">
+                <input id="filterID18" class="sr-only" type="checkbox" name="filterID18" value="checkbutton-read">
+                <label for="filterID18" class="a-switch-label ">
+      Regnskapsfører lønn
+    </label>
+              </div>
+              <div class="a-switch   ">
+                <input id="filterID19" class="sr-only" type="checkbox" name="filterID19" value="checkbutton-read">
+                <label for="filterID19" class="a-switch-label ">
+      Basisrolle
+    </label>
+              </div>
+              <div class="a-switch   ">
+                <input id="filterID20" class="sr-only" type="checkbox" name="filterID20" value="checkbutton-read">
+                <label for="filterID20" class="a-switch-label ">
+      Regnskapsfører uten signeringsrett
+    </label>
+              </div>
+              <div class="a-switch   ">
+                <input id="filterID21" class="sr-only" type="checkbox" name="filterID21" value="checkbutton-read">
+                <label for="filterID21" class="a-switch-label ">
+      Revisorattester - MVA kompensasjon
+    </label>
+              </div>
+              <div class="a-switch   ">
+                <input id="filterID22" class="sr-only" type="checkbox" name="filterID22" value="checkbutton-read">
+                <label for="filterID22" class="a-switch-label ">
+      Utfyller/Innsender
+    </label>
+              </div>
+              <div class="a-switch   ">
+                <input id="filterID23" class="sr-only" type="checkbox" name="filterID23" value="checkbutton-read">
+                <label for="filterID23" class="a-switch-label ">
+      Ansvarlig revisor
+    </label>
+              </div>
+              <div class="a-switch   ">
+                <input id="filterID24" class="sr-only" type="checkbox" name="filterID24" value="checkbutton-read">
+                <label for="filterID24" class="a-switch-label ">
+      Revisormedarbeider
+    </label>
+              </div>
+              <div class="a-switch   ">
+                <input id="filterID25" class="sr-only" type="checkbox" name="filterID25" value="checkbutton-read">
+                <label for="filterID25" class="a-switch-label ">
+      Revisorrettighet
+    </label>
+              </div>
+              <div class="a-switch   ">
+                <input id="filterID26" class="sr-only" type="checkbox" name="filterID26" value="checkbutton-read">
+                <label for="filterID26" class="a-switch-label ">
+      Regnskapsmedarbeider
+    </label>
+              </div>
+              
+            </div>
+          </div>
+          
+          <div class="a-list-fullWidthRow">
+            <div class="modal-table-segment-box"></div>
+            <div class="modal-table-segment ">
+              <div class="float-right mt-2">
+                <span class="mr-3">
+            
+<button
+   type="button" 
+  
+  class="a-btn a-btn-success a-js-enableWhenValid"
+  
+  
+  data-toggle="collapse"
+  
+  
+  
+  data-target="#collapseIdSample3"
+  
+   
+   data-set-selected-target="#thirdRow">
+  
+    Ferdig
+  
+</button>
+          </span>
+                <span class="mr-3">
+            
+<button
+   type="button" 
+  
+  class="a-btn-link "
+  
+  
+  data-toggle="collapse"
+  
+  
+  
+  data-target="#collapseIdSample3"
+  
+   
+   data-set-selected-target="#thirdRow">
+  <span>
+    Avbryt
+  </span>
+                </button>
+                
+                
+                </span>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        
+        
+      </div>
+    </li>
+    <li class="a-dotted">
+      <div class="row ">
+        <div class="col">
+          
+          Vanlig rad, ikke klikkbar
+          
+        </div>
+      </div>
+    </li>
+    <li class="a-dotted">
+      <div class="row ">
+        <div class="col-4 pr-1">
+          
+          Vanlig rad med flere kolonner
+          
+        </div>
+        <div class="col-4 pr-1 hidden-sm-down">
+          
+          Denne kolonnen skjules på liten skjerm, neste kolonne tar plassen som frigjøres
+          
+        </div>
+        <div class="col">
+          
+          En særdeles lang tekst som går over flere linjer med lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla suscipit purus eu vehicula bibendum. Duis luctus magna ac dui convallis iaculis.
+          
+        </div>
+      </div>
+    </li>
+    <li class="a-dotted a-danger a-selectable a-selected">
+      <div class="row ">
+        <div class="col a-lineThrough-selected">
+          
+          Eksempel på valgt rad som gir rød bakgrunn og strikethrough på tekst
+          
+        </div>
+      </div>
+    </li>
+    <li class="a-dotted a-clickable">
+      <div class="row ">
+        <div class="col">
+          
+          Blå bakgrunn ved hover, klikkbar rad
+          
+        </div>
+      </div>
+    </li>
+    <li class="a-dotted a-disabled">
+      <div class="row ">
+        <div class="col">
+          
+          Disablet bakgrunn - ikke klikkbar
+          
+        </div>
+      </div>
+    </li>
+    <li class="a-dotted a-disabled a-danger">
+      <div class="row ">
+        <div class="col">
+          
+          Rød disablet bakgrunn - ikke klikkbar
+          
+          <i class="ai ai-deadline   "></i>
+          
+          
+        </div>
+      </div>
+    </li>
+    <li class="a-dotted a-disabled a-success">
+      <div class="row ">
+        <div class="col">
+          
+          Grønn disablet bakgrunn - ikke klikkbar
+          
+        </div>
+      </div>
+    </li>
+    <li class="a-dotted">
+      <div class="row ">
+        <div class="col-12 col-md-2">
+          
+          06.01.2017
+          
+        </div>
+        <div class="col-12 col-md-2">
+          
+          <span class="a-fontBold"> 
+     Rolle tildelt 
+     </span>
+          
+        </div>
+        <div class="col-12 col-md-8">
+          
+          <span class="a-blueText a-fontBold text-uppercase"> 
+     Pelle Hansen 
+     </span> fikk rollen
+          <span class="a-fontBold"> 
+     Begrenset signeringsrettighet 
+     </span> . Det var
+          <span class="a-blueText a-fontBold text-uppercase"> 
+    David Karlsson
+     </span> som tildelte rollen.
+          
+          <a href="javascript:void(0)" tabindex="0" class="a-linkArea a-helpIconButton a-js-persistPopover a-js-popoverBig a-js-togglePopoverIcons" role="button" data-toggle="popover" data-animation="false" data-target="#myPopup" data-placement="bottom" data-trigger="click"
+            data-popover-class="popover-big" data-popover-content="popoverSamtykke1">
+  <span class="sr-only">
+    Klikk for å se mer informasjon
+  </span>
+    
+  <span class="ai-stack a-js-popoverIconInitial">
+    <i class="ai ai-stack-1x ai-plain-circle"></i>
+<i class="ai-stack-1x ai ai-help-popicon   "    ></i>
+  </span>
+    
+  <span class="ai-stack a-js-popoverIconExpanded">
+    <i class="ai ai-stack-1x ai-plain-circle"></i>
+<i class="ai-stack-1x ai ai-circle-exit   "    ></i>
+  </span>
+    <span class="sr-only">Vis mer info</span>
+</a>
+          <div id="popoverSamtykke1" style="display: none">
+            <div class="container">
+              <div class="row">
+                <div class="col-xl-10 offset-xl-1">
+                  <div class="a-modal-body">
+                    
+                    <h2 class="a-h3 mb-1">Samtykke til medlertidig innsyn er git til Altinn1 ANS</h2>
+                    <span>Velkommen til samtykkeløsningen</span>
+                    <div class="mt-2">
+                      <h3 class="a-fontReg mb-1">Følgende informasjon er omfattet av samtykket: </h3>
+                      <span class="a-fontBold">Summert skattegrunnlag fra Skattetaten</span>
+                      <p> Innsyn i ditt skattegrunnlag.</p>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="popoverSamtykke1" style="display: none">
+            
+            Dette er en tekst
+            
+            <a href="http://www.altinn.no" class=" ">
+  med en lenke som står i løpende tekst
+  
+</a>
+            
+            og man kan ha mer tekst etter.
+            
+          </div>
+          
+          
+        </div>
+      </div>
+    </li>
+    <li class="a-dotted a-clickable a-fontSizeM a-fontBold a-list-item-loadMore" role="button">
+      <div class="row ">
+        <div class="a-w-7 text-center hidden-sm-down">
+          
+          
+          <i class="ai ai-plus   "></i>
+          
+          
+        </div>
+        <div class="col">
+          
+          
+          <i class="ai ai-plus  hidden-md-up "></i>
+          
+          Klikkbar rad med tekst og ikon
+          
+        </div>
+      </div>
+    </li>
+    <li class="a-clickable">
+      <div class="row ">
+        <div class="a-w-7 text-center hidden-sm-down">
+          
+          
+          <i class="ai ai-plus   "></i>
+          
+          
+        </div>
+        <div class="col a-fontBold">
+          
+          
+          <i class="ai ai-plus  hidden-md-up mx-1 "></i>
+          
+          <span class="a-fontBold"> 
+    Klikkbar rad med tekst og ikon med mye luft
+     </span>
+          
+        </div>
+      </div>
+    </li>
+    <li class="a-dotted a-selectable a-success">
+      <div class="row ">
+        <div class="col">
+          
+          
+          <i class="ai ai-circle-plus  a-blueText "></i>
+          
+          Rollenavn
+          
+        </div>
+        <div class="col-auto text-right">
+          
+          
+          <a href="javascript:void(0)" tabindex="0" class="a-linkArea a-helpIconButton a-js-persistPopover a-js-popoverBig a-js-togglePopoverIcons" role="button" data-toggle="popover" data-animation="false" data-target="#myPopup" data-placement="bottom" data-trigger="click"
+            data-popover-class="popover-big" data-content="Innholdet i popover fra spørsmålstegn-ikonet kommer her.." data-popover-content="popoverSampleContent">
+  <span class="sr-only">
+    Klikk for å se mer informasjon
+  </span>
+    
+  <span class="ai-stack a-js-popoverIconInitial">
+    <i class="ai ai-stack-1x ai-plain-circle"></i>
+<i class="ai-stack-1x ai ai-help-popicon   "    ></i>
+  </span>
+    
+  <span class="ai-stack a-js-popoverIconExpanded">
+    <i class="ai ai-stack-1x ai-plain-circle"></i>
+<i class="ai-stack-1x ai ai-circle-exit   "    ></i>
+  </span>
+    <span class="sr-only">Vis mer info</span>
+</a>
+          <div id="popoverSampleContent" style="display: none">
+            
+            Dette er en tekst
+            
+            <a href="http://www.altinn.no" class=" ">
+  med en lenke som står i løpende tekst
+  
+</a>
+            
+            og man kan ha mer tekst etter.
+            
+          </div>
+          
+          
+        </div>
+      </div>
+    </li>
+    <li class="a-dotted a-selectable a-success">
+      <div class="row ">
+        <div class="col">
+          
+          
+          <i class="ai ai-circle-plus  a-blueText a-hiddenWhenSelected "></i>
+          
+          Rollenavn
+          
+        </div>
+        <div class="col-auto text-right align-items-center d-flex">
+          
+          
+          <a href="#" class="a-linkIcon a-btn-blue-noUnderline pr-0 ">
+            
+            <i class="ai ai-sm ai-edit   "></i>
+            
+            <span class="hidden-md-down a-fontSizeXS pr-1">
+    Rediger
+  </span>
+          </a>
+          
+          
+          <a href="javascript:void(0)" tabindex="0" class="a-linkArea a-helpIconButton a-js-persistPopover a-js-popoverBig a-js-togglePopoverIcons" role="button" data-toggle="popover" data-animation="false" data-target="#myPopup" data-placement="bottom" data-trigger="click"
+            data-popover-class="popover-big a-hiddenWhenSelected" data-content="Innholdet i popover fra spørsmålstegn-ikonet kommer her.." data-popover-content="popoverSampleContent">
+  <span class="sr-only">
+    Klikk for å se mer informasjon
+  </span>
+    
+  <span class="ai-stack a-js-popoverIconInitial">
+    <i class="ai ai-stack-1x ai-plain-circle"></i>
+<i class="ai-stack-1x ai ai-help-popicon   "    ></i>
+  </span>
+    
+  <span class="ai-stack a-js-popoverIconExpanded">
+    <i class="ai ai-stack-1x ai-plain-circle"></i>
+<i class="ai-stack-1x ai ai-circle-exit   "    ></i>
+  </span>
+    <span class="sr-only">Vis mer info</span>
+</a>
+          <div id="popoverSampleContent" style="display: none">
+            
+            Dette er en tekst
+            
+            <a href="http://www.altinn.no" class=" ">
+  med en lenke som står i løpende tekst
+  
+</a>
+            
+            og man kan ha mer tekst etter.
+            
+          </div>
+          
+          
+          <a href="#" class="no-decoration a-visibleWhenSelected ">
+  Angre
+  
+</a>
+          
+          
+          <i class="ai ai-undo  a-visibleWhenSelected "></i>
+          
+          
+        </div>
+      </div>
+    </li>
+    <li class="a-dotted a-selectable a-success a-selected">
+      <div class="row ">
+        <div class="col">
+          
+          
+          <i class="ai ai-circle-plus  a-blueText a-hiddenWhenSelected "></i>
+          
+          Rollenavn
+          
+        </div>
+        <div class="col-auto text-right align-items-center d-flex">
+          
+          
+          <a href="#" class="a-linkIcon a-btn-blue-noUnderline a-hiddenWhenSelected pr-0 ">
+            
+            <i class="ai ai-sm ai-edit   "></i>
+            
+            <span class="hidden-md-down a-fontSizeXS pr-1">
+    Rediger
+  </span>
+          </a>
+          
+          
+          <a href="javascript:void(0)" tabindex="0" class="a-linkArea a-helpIconButton a-js-persistPopover a-hiddenWhenSelected a-js-popoverBig a-js-togglePopoverIcons" role="button" data-toggle="popover" data-animation="false" data-target="#myPopup" data-placement="bottom"
+            data-trigger="click" data-popover-class="popover-big" data-content="Innholdet i popover fra spørsmålstegn-ikonet kommer her.." data-popover-content="popoverSampleContent">
+  <span class="sr-only">
+    Klikk for å se mer informasjon
+  </span>
+    
+  <span class="ai-stack a-js-popoverIconInitial">
+    <i class="ai ai-stack-1x ai-plain-circle"></i>
+<i class="ai-stack-1x ai ai-help-popicon   "    ></i>
+  </span>
+    
+  <span class="ai-stack a-js-popoverIconExpanded">
+    <i class="ai ai-stack-1x ai-plain-circle"></i>
+<i class="ai-stack-1x ai ai-circle-exit   "    ></i>
+  </span>
+    <span class="sr-only">Vis mer info</span>
+</a>
+          <div id="popoverSampleContent" style="display: none">
+            
+            Dette er en tekst
+            
+            <a href="http://www.altinn.no" class=" ">
+  med en lenke som står i løpende tekst
+  
+</a>
+            
+            og man kan ha mer tekst etter.
+            
+          </div>
+          
+          <span class="hidden-xs-down a-visibleWhenSelected"> 
+    Angre
+     </span>
+          
+          <i class="ai ai-undo  a-visibleWhenSelected a-danger "></i>
+          
+          
+        </div>
+      </div>
+    </li>
+    <li class="a-dotted a-selectable a-danger">
+      <div class="row ">
+        <div class="col" data-searchable="true">
+          
+          <span class="a-js-sortValue a-lineThrough-selected"> 
+    Patent, varemerke og design
+     </span>
+          
+        </div>
+        <div class="col-auto text-right align-items-center d-flex">
+          
+          <span class="hidden-xs-down a-hiddenWhenSelected a-hiddenWhenDeleted"> 
+    Fjern
+     </span>
+          
+          <i class="ai ai-circle-exit  a-danger a-hiddenWhenSelected a-hiddenWhenDeleted "></i>
+          
+          <span class="hidden-xs-down a-visibleWhenSelected a-hiddenWhenDeleted"> 
+    Angre
+     </span>
+          
+          <i class="ai ai-undo  a-danger a-visibleWhenSelected a-hiddenWhenDeleted "></i>
+          
+          <span class="hidden-xs-down a-visibleWhenDeleted"> 
+    Slettet
+     </span>
+          
+          <i class="ai ai-fw  a-danger a-visibleWhenDeleted "></i>
+          
+          
+        </div>
+      </div>
+    </li>
+    <li class="a-dotted a-selectable a-selected a-danger">
+      <div class="row ">
+        <div class="col" data-searchable="true">
+          
+          <span class="a-js-sortValue a-lineThrough-selected"> 
+    Privatperson begrensede rettigheter, med litt ekstra tekst slik at denne går over to linjer
+     </span>
+          
+        </div>
+        <div class="col-auto text-right align-items-center d-flex">
+          
+          <span class="hidden-xs-down a-hiddenWhenSelected a-hiddenWhenDeleted"> 
+    Fjern
+     </span>
+          
+          <i class="ai ai-circle-exit  a-danger a-hiddenWhenSelected a-hiddenWhenDeleted "></i>
+          
+          <span class="hidden-xs-down a-visibleWhenSelected a-hiddenWhenDeleted"> 
+    Angre
+     </span>
+          
+          <i class="ai ai-undo  a-danger a-visibleWhenSelected a-hiddenWhenDeleted "></i>
+          
+          <span class="hidden-xs-down a-visibleWhenDeleted"> 
+    Slettet
+     </span>
+          
+          <i class="ai ai-fw  a-danger a-visibleWhenDeleted "></i>
+          
+          
+        </div>
+      </div>
+    </li>
+    <li class="a-dotted a-selectable">
+      <div class="row ">
+        <div class="col-auto pr-2 pb-1 pb-md-0">
+          
+          ReceiverUser2
+          
+        </div>
+        <div class="col-12 hidden-md-up pb-1">
+          
+          
+          <a href="#" class="collapsed a-hiddenWhenExpanded a-noUnderline a-pr-half " data-toggle="collapse" data-target="#collapseIdSampleSertificate" aria-controls="collapseIdSampleSertificate">
+            
+            <i class="ai ai-edit  a-hiddenWhenExpanded ai-left a-blueText "></i>
+            
+            <span>Rediger</span>
+          </a>
+          
+          
+          <a href="#" class="a-visibleWhenExpanded " data-toggle="collapse" data-target="#collapseIdSampleSertificate" aria-controls="collapseIdSampleSertificate">
+  <span>Avbryt</span>
+  
+</a>
+          
+          
+        </div>
+        <div class="col-12 col-md-auto a-visibleWhenExpanded pr-2 pb-1 pb-md-0">
+          
+          
+          <button type="button" class="a-btn a-btn-icon  ">
+    
+<i class="ai ai-circle-exit  a-danger a-blueText ai-left "    ></i>
+    <span class="a-btn-icon-text ">
+      Slett
+    </span>
+</button>
+          
+          
+        </div>
+        <div class="col-12 col-md-auto a-visibleWhenExpanded pb-1 pb-md-0">
+          
+          
+          <button type="button" class="a-btn a-btn-icon  ">
+    
+<i class="ai ai-edit  a-blueText ai-left "    ></i>
+    <span class="a-btn-icon-text ">
+      Endre
+    </span>
+</button>
+          
+          
+        </div>
+        <div class="col a-visibleWhenExpanded">
+          
+          
+        </div>
+        <div class="col-auto text-right hidden-sm-down">
+          
+          
+          <a href="#" class="collapsed a-fullWidthLink a-hiddenWhenExpanded a-noUnderline a-pr-half " data-toggle="collapse" data-target="#collapseIdSampleSertificate" aria-controls="collapseIdSampleSertificate">
+            
+            <i class="ai ai-edit  a-hiddenWhenExpanded a-blueText "></i>
+            
+            <span>Rediger</span>
+          </a>
+          
+          
+          <a href="#" class="a-fullWidthLink a-fullWidthLink--underline a-visibleWhenExpanded a-pr-half " data-toggle="collapse" data-target="#collapseIdSampleSertificate" aria-controls="collapseIdSampleSertificate">
+  <span>Avbryt</span>
+  
+</a>
+          
+          
+        </div>
+      </div>
+      <div class="col-12 collapse" id="collapseIdSampleSertificate" aria-expanded="false" role="tabpanel">
+        
+        
+        <div class="a-delete-add-container row">
+          <div class="col pb-1 a-fontBold">Tittel på elementet</div>
+          <div class="col-md-auto col-sm-12 pb-sm-1">
+            
+            <button type="button" class="a-btn a-btn-icon  ">
+    
+<i class="ai ai-circle-exit  a-danger ai-left "    ></i>
+    <span class="a-btn-icon-text ">
+      Slett
+    </span>
+</button>
+            
+          </div>
+          <div class="col-12">Dette er en beskrivelse av elementet som er blitt lagt til</div>
+        </div>
+        <div class="row pb-1">
+          <div class="col">
+            
+            <button type="button" class="a-btn a-btn-icon a-btn-add a-add-certificate  ">
+    
+<i class="ai ai-circle-plus  a-blueText "    ></i>
+    <span class="a-btn-icon-text ">
+      Legg til
+    </span>
+</button>
+            
+          </div>
+        </div>
+        
+        
+      </div>
+    </li>
+  </ul>
+</div>
+ 
+															</div>
+														    <!-- iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="/designsystem-styleguidepatterns/01-molecules-05-lister-10-liste-unummerert-radvarianter/01-molecules-05-lister-10-liste-unummerert-radvarianter.markup-only.html"></iframe -->
 
 														    <div class="iffframe__handle"></div>
 
@@ -12732,12 +13233,29 @@
 			                        					
 
 			                        					
-
-			                        					
+														
 
 														<div class="iffframe">
-
-														    <iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="/designsystem-styleguide/patterns/00-atoms-08-lister-06-liste-nummerert-sirkel/00-atoms-08-lister-06-liste-nummerert-sirkel.rendered.html"></iframe>
+															<div class="iffframe__iframe">
+															
+<ol class="a-circle-list ">
+  <li><b>Første punkt i listen</b>(med ekstra informasjon) </li>
+  <li><b>Andre punkt i listen har</b>en særdeles lang tekst som går over flere linjer med lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla suscipit purus eu vehicula bibendum. Duis luctus magna ac dui convallis iaculis. Donec aliquam dolor quis
+    convallis finibus. Vivamus commodo semper volutpat. Nullam iaculis, nisl in elementum viverra, ligula leo tristique mauris, ut laoreet justo massa ut nisi. Duis lacinia nulla justo, vitae vehicula arcu suscipit sed. Vivamus ac odio quis turpis rutrum
+    lacinia a eu dui. Nullam imperdiet, nibh sit amet venenatis auctor, libero massa placerat ipsum, fermentum dignissim nibh mauris sit amet ex. </li>
+  <li><b>Tredje punkt</b>har kun litt tekst. </li>
+  <li><b>Fjerde punkt i listen har lenke!</b>
+    
+    <a href="http://www.skatteetaten.no" class=" ">
+  Finn ut mer
+  
+</a>
+    
+  </li>
+</ol>
+ 
+															</div>
+														    <!-- iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="/designsystem-styleguidepatterns/00-atoms-08-lister-06-liste-nummerert-sirkel/00-atoms-08-lister-06-liste-nummerert-sirkel.markup-only.html"></iframe -->
 
 														    <div class="iffframe__handle"></div>
 
@@ -12773,12 +13291,31 @@
 			                        					
 
 			                        					
-
-			                        					
+														
 
 														<div class="iffframe">
-
-														    <iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="/designsystem-styleguide/patterns/00-atoms-08-lister-05-liste-nummerert/00-atoms-08-lister-05-liste-nummerert.rendered.html"></iframe>
+															<div class="iffframe__iframe">
+															
+<ol class="a-number-list ">
+  <li>
+    Første punkt i listen </li>
+  <li>
+    Andre punkt i listen har </li>
+  <li>
+    Tredje punkt </li>
+  <li>
+    Fjerde punkt i listen har lenke!
+    
+    <a href="http://www.skatteetaten.no" class=" ">
+  Finn ut mer
+  
+</a>
+    
+  </li>
+</ol>
+ 
+															</div>
+														    <!-- iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="/designsystem-styleguidepatterns/00-atoms-08-lister-05-liste-nummerert/00-atoms-08-lister-05-liste-nummerert.markup-only.html"></iframe -->
 
 														    <div class="iffframe__handle"></div>
 
@@ -12814,12 +13351,29 @@
 			                        					
 
 			                        					
-
-			                        					
+														
 
 														<div class="iffframe">
-
-														    <iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="/designsystem-styleguide/patterns/00-atoms-08-lister-07-liste-nummerert-sirkel-gul/00-atoms-08-lister-07-liste-nummerert-sirkel-gul.rendered.html"></iframe>
+															<div class="iffframe__iframe">
+															
+<ol class="a-circle-list a-circle-list-yellow">
+  <li><b>Første punkt i listen</b>(med ekstra informasjon) </li>
+  <li><b>Andre punkt i listen har</b>en særdeles lang tekst som går over flere linjer med lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla suscipit purus eu vehicula bibendum. Duis luctus magna ac dui convallis iaculis. Donec aliquam dolor quis
+    convallis finibus. Vivamus commodo semper volutpat. Nullam iaculis, nisl in elementum viverra, ligula leo tristique mauris, ut laoreet justo massa ut nisi. Duis lacinia nulla justo, vitae vehicula arcu suscipit sed. Vivamus ac odio quis turpis rutrum
+    lacinia a eu dui. Nullam imperdiet, nibh sit amet venenatis auctor, libero massa placerat ipsum, fermentum dignissim nibh mauris sit amet ex. </li>
+  <li><b>Tredje punkt</b>har kun litt tekst. </li>
+  <li><b>Fjerde punkt i listen har lenke!</b>
+    
+    <a href="http://www.skatteetaten.no" class=" ">
+  Finn ut mer
+  
+</a>
+    
+  </li>
+</ol>
+ 
+															</div>
+														    <!-- iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="/designsystem-styleguidepatterns/00-atoms-08-lister-07-liste-nummerert-sirkel-gul/00-atoms-08-lister-07-liste-nummerert-sirkel-gul.markup-only.html"></iframe -->
 
 														    <div class="iffframe__handle"></div>
 
@@ -12910,12 +13464,49 @@
 			                        					
 
 			                        					
-
-			                        					
+														
 
 														<div class="iffframe">
-
-														    <iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="/designsystem-styleguide/patterns/00-atoms-08-lister-11-liste-unummerert-kuler/00-atoms-08-lister-11-liste-unummerert-kuler.rendered.html"></iframe>
+															<div class="iffframe__iframe">
+															
+<ul class="a-bullet-list ">
+  <li>
+    Første punkt i bullet-listen.
+    
+    <a href="javascript:void(0)" tabindex="0" class="a-linkArea a-helpIconButton a-helpIconButton--blue a-js-togglePopoverIcons" role="button" data-toggle="popover" data-animation="false" data-target="#myPopup" data-placement="bottom" data-trigger="click"
+      data-popover-content="popoverWithIconToggle">
+      
+      <i class="ai ai-circle-plus  a-js-popoverIconInitial "></i>
+      
+      
+      <i class="ai ai-circle-minus  a-js-popoverIconExpanded "></i>
+      
+      <span class="sr-only">Vis mer info</span>
+    </a>
+    <div id="popoverWithIconToggle" style="display: none">
+      
+      Dette er en tekst
+      
+      <a href="http://www.altinn.no" class=" ">
+  med en lenke som står i løpende tekst
+  
+</a>
+      
+      og man kan ha mer tekst etter.
+      
+    </div>
+    
+  </li>
+  <li>
+    Andre punkt i bullet-listen.
+  </li>
+  <li>
+    Tredje punkt i bullet-listen.
+  </li>
+</ul>
+ 
+															</div>
+														    <!-- iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="/designsystem-styleguidepatterns/00-atoms-08-lister-11-liste-unummerert-kuler/00-atoms-08-lister-11-liste-unummerert-kuler.markup-only.html"></iframe -->
 
 														    <div class="iffframe__handle"></div>
 
@@ -12985,12 +13576,68 @@
 			                        					
 
 			                        					
-
-			                        					
+														
 
 														<div class="iffframe">
-
-														    <iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="/designsystem-styleguide/patterns/00-atoms-08-lister-08-liste-unummerert-sammenkoblet/00-atoms-08-lister-08-liste-unummerert-sammenkoblet.rendered.html"></iframe>
+															<div class="iffframe__iframe">
+															
+<ul class="no-decoration connected-bullets">
+  <li>
+    <strong>
+        Første punkt
+      </strong> Har både tittel, tekst og lenke. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+    
+    <a href="http://skatteetaten.no" class=" ">
+  Det kan du gjøre her
+  
+</a>
+    
+  </li>
+  <li>
+    <strong>
+        Andre punkt har bare tittel
+      </strong>
+  </li>
+  <li>
+    <strong>
+        
+      </strong> Tredje punkt har bare tekst. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+    ex ea commodo consequat.
+  </li>
+  <li>
+    <strong>
+        
+      </strong> Tredje punkt har bare tekst. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+    ex ea commodo consequat.
+    
+    <a href="javascript:void(0)" tabindex="0" class="a-linkArea a-helpIconButton a-helpIconButton--blue a-js-togglePopoverIcons" role="button" data-toggle="popover" data-animation="false" data-target="#myPopup" data-placement="bottom" data-trigger="click"
+      data-popover-content="popoverWithIconToggle">
+      
+      <i class="ai ai-circle-plus  a-js-popoverIconInitial "></i>
+      
+      
+      <i class="ai ai-circle-minus  a-js-popoverIconExpanded "></i>
+      
+      <span class="sr-only">Vis mer info</span>
+    </a>
+    <div id="popoverWithIconToggle" style="display: none">
+      
+      Dette er en tekst
+      
+      <a href="http://www.altinn.no" class=" ">
+  med en lenke som står i løpende tekst
+  
+</a>
+      
+      og man kan ha mer tekst etter.
+      
+    </div>
+    
+  </li>
+</ul>
+ 
+															</div>
+														    <!-- iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="/designsystem-styleguidepatterns/00-atoms-08-lister-08-liste-unummerert-sammenkoblet/00-atoms-08-lister-08-liste-unummerert-sammenkoblet.markup-only.html"></iframe -->
 
 														    <div class="iffframe__handle"></div>
 
@@ -13072,12 +13719,49 @@
 			                        					
 
 			                        					
-
-			                        					
+														
 
 														<div class="iffframe">
-
-														    <iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="/designsystem-styleguide/patterns/00-atoms-08-lister-10-liste-unummerert-ikoner/00-atoms-08-lister-10-liste-unummerert-ikoner.rendered.html"></iframe>
+															<div class="iffframe__iframe">
+															
+<ul class="no-decoration a-iconList">
+  <li>
+    <a href="#" class="">
+      
+      <i class="ai ai-document   "></i>
+      
+      <span>
+            <b>Forretningsplan.doc</b>
+            En plan for selskapets vekst og utvikling gir deg noe å styre etter.
+          </span>
+    </a>
+  </li>
+  <li>
+    <a href="#" class="">
+      
+      <i class="ai ai-document   "></i>
+      
+      <span>
+            <b>Oppdragsavtale.doc</b>
+            Hvis du selger tjenester bør du signere en avtale med kjøper.
+          </span>
+    </a>
+  </li>
+  <li>
+    <a href="#" class="">
+      
+      <i class="ai ai-document   "></i>
+      
+      <span>
+            <b>Driftsbudsjett.doc</b>
+            For å disponere oppstartskapitalen din og prioritere innkjøpene riktig.
+          </span>
+    </a>
+  </li>
+</ul>
+ 
+															</div>
+														    <!-- iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="/designsystem-styleguidepatterns/00-atoms-08-lister-10-liste-unummerert-ikoner/00-atoms-08-lister-10-liste-unummerert-ikoner.markup-only.html"></iframe -->
 
 														    <div class="iffframe__handle"></div>
 
@@ -13229,27 +13913,6 @@
 <!-- Bundled assets -->
 <script src="/designsystem-styleguide/dist/js/infoportal.vendor.js"></script>
 <script src="/designsystem-styleguide/dist/js/infoportal.js"></script>
-
-<script>
-  $('.iffframe').find('iframe').on('load', function() {
-    if (window.localStorage.getItem('persisted_style') !== '1') {
-      var e = document.createElement('link')
-      e.rel = 'stylesheet'
-      e.type = 'text/css'
-      if (window.localStorage.getItem('persisted_style') === '2') {
-        e.href = '/designsystem-styleguide/css/altinnett.css'
-      } else {
-        e.href = '/designsystem-styleguide/css/brreg.css'
-      }
-      $($('.iffframe').find('iframe')[0].contentWindow.document.getElementsByTagName('head')[0])
-       .find('link[rel=stylesheet][href~=\'/designsystem-styleguide/css/altinnett.css\']').remove()
-      $($('.iffframe').find('iframe')[0].contentWindow.document.getElementsByTagName('head')[0])
-       .find('link[rel=stylesheet][href~=\'/designsystem-styleguide/css/brreg.css\']').remove()
-      $('.iffframe').find('iframe')[0].contentWindow.document.getElementsByTagName('head')[0].appendChild(e)
-    }
-  });
-</script>
-
 
             </div><!--end l-page-layout__main-->
 

@@ -14,10 +14,12 @@
 	<link rel="stylesheet" href="/designsystem-styleguide/css/style-guide.css">
 	<link rel="icon" href="/designsystem-styleguide/favicon.ico">
 
-	<link rel="stylesheet" href="/designsystem-styleguide/css/style.css">
+	<script src="https://use.fortawesome.com/ed31cded.js"></script>
+
+	<link rel="stylesheet" href="/designsystem-styleguide/css/style.dist.storefront.css">
+	<link rel="stylesheet" href="/designsystem-styleguide/css/brreg.css">
 
 	<link rel="canonical" href="http://localhost:4000/designsystem-styleguide/komponenter/tekst/artikkelheader.html">
-	<script src="https://use.fortawesome.com/ed31cded.js"></script>
 </head>
 
 
@@ -61,13 +63,11 @@
 
 	<!-- TITLE -->
 
-	<a href="https://www.npmjs.com/package/altinn-designsystem" class="a-st-version">Versjon: 0.2.36</a>
+	<a href="https://www.npmjs.com/package/altinn-designsystem" class="a-st-version">Versjon: 1.0.0</a>
 
 	<!-- THEME PICKER -->
 	<div class="form-group input-group transparent a-js-forceFlexColumn a-form-group">
 	  <div data-toggle="altinn-dropdown" class="dropdown a-fullWidthXs">
-	    <input type="hidden" class="a-js-altinnDropdown-value">
-
 			<button class="btn dropdown-toggle a-dropdown-toggle form-control-alt  a-js-dropdownToValidate" type="button" id="dropdownMenu" name="Velg theme" title="Velg theme" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 	      <span class="a-form-text">
 					<span class="sr-only" id="a-js-chosenTheme">Altinn</span>
@@ -107,7 +107,7 @@
 
 	    <div class="dropdown-menu a-dropdown-menu" aria-labelledby="dropdownMenu" name="chooseProject">
 
-	        <a class="dropdown-item a-dropdown-item" href="#" data-value="1">
+	        <a class="dropdown-item a-dropdown-item" href="#" data-project="altinn">
 	          <span class="a-form-text">
 	            <span class="sr-only" id="a-js-chosenTheme">Altinn</span>
 							<span class="a-st-dropdownLogo">
@@ -148,7 +148,7 @@
 	          </span>
 	        </a>
 
-	        <a class="dropdown-item a-dropdown-item" href="#" data-value="3">
+	        <a class="dropdown-item a-dropdown-item" href="#" data-project="brreg">
 						<span class="a-form-text a-dropdown-item--long">
 							<span class="sr-only" id="a-js-chosenTheme">Brønnøysundregistrene</span>
 							<span class="a-st-dropdownLogo">
@@ -2574,8 +2574,8 @@
 
 			<li class="c-primary-nav__subitem ">
 
-                <a class="c-primary-nav__sublink " href="/designsystem-styleguide/komponenter/skjemakomponenter/tekstfelt.html">
-			    	Tekstfelt
+                <a class="c-primary-nav__sublink " href="/designsystem-styleguide/komponenter/skjemakomponenter/inputfelt.html">
+			    	Inputfelt
 				</a><!-- end c-primary-nav__link -->
 
 			</li><!-- end c-primary-nav__item -->
@@ -5990,742 +5990,6 @@
 
       </div>
 
-      <div class="display-altinnett">
-        <nav class="c-primary-nav" role="navigation">
-
-	<ul class="c-primary-nav__list c-primary-nav__list--flush js-nav-panel" role="tablist" aria-multiselectable="true">
-
-
-		<li class="c-primary-nav__item">
-
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-				<a href="/designsystem-styleguide/eksempel-altinnett.html" class="c-primary-nav__link ">
-					<span class="c-primary-nav__text">Eksemepelside altinnett</span>
-				</a>
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-				
-			
-
-		</li><!-- end c-nav__list__item -->
-
-		<li class="c-primary-nav__item ">
-			<a class="c-primary-nav__link c-primary-nav__link--has-children js-nav-dropdown-trigger " href="/designsystem-styleguide/altinnett-components/">
-
-				<span class="c-primary-nav__text">Komponenter Altinnett</span>
-
-				<svg class="c-icon c-primary-nav__icon" aria-hidden="true">
-					<use href="/designsystem-styleguide/icons.svg#chevron-right"></use>
-				</svg>
-
-			</a><!--end c-primary-nav__link-->
-
-			<ul class="c-primary-nav__sublist js-nav-dropdown ">
-
-				<li class="c-primary-nav__subitem ">
-
-	<a class="c-primary-nav__sublink c-primary-nav__sublink--has-children js-nav-dropdown-trigger  " href="#">
-
-		<span class="c-primary-nav__text">Lenker og knapper</span>
-
-		
-		<svg class="c-icon c-primary-nav__subicon" aria-hidden="true">
-			<use href="/designsystem-styleguide/icons.svg#chevron-right"></use>
-		</svg>
-		
-	</a><!--end c-primary-nav__link-->
-
-	
-	<ul class="c-primary-nav__sublist js-nav-dropdown ">
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-
-		
-
-	
-</ul><!-- end c-primary-nav__sublist-->
-	
-
-</li><!-- end c-primary-nav__item-->
-
-
-
-			</ul>
-
-		</li>
-
-
-	</ul><!-- end c-nav__list -->
-
-</nav><!-- end c-nav -->
-
-      </div>
-
       <div class="display-brreg">
         <nav class="c-primary-nav" role="navigation">
 
@@ -9045,8 +8309,8 @@
 
 			<li class="c-primary-nav__subitem ">
 
-                <a class="c-primary-nav__sublink " href="/designsystem-styleguide/komponenter/skjemakomponenter/tekstfelt.html">
-			    	Tekstfelt
+                <a class="c-primary-nav__sublink " href="/designsystem-styleguide/komponenter/skjemakomponenter/inputfelt.html">
+			    	Inputfelt
 				</a><!-- end c-primary-nav__link -->
 
 			</li><!-- end c-primary-nav__item -->
@@ -12390,7 +11654,8 @@
 
 					<section class="c-section">
 						<header class="c-section__header">
-							<div>Standard  : 
+							<div>Standard  : <p>Toppen av artikler vil som standard inneholde brødsmulesti, tittel, ingress og dato.</p>
+ </div>
 						</header>
 
 						
@@ -12399,10 +11664,34 @@
 
 						
 						<div class="iffframe">
+							
+<ol class="breadcrumb a-breadcrumb ">
+  <li class="breadcrumb-item ">
+    <a href="">Første nivå</a>
+  </li>
+  <li class="breadcrumb-item ">
+    <a href="">Andre nivå</a>
+  </li>
+  <li class="breadcrumb-item breadcrumb-mobile">
+    <a href="">Tredje nivå</a>
+  </li>
+  <li class="breadcrumb-item active">
+    <a href="">Fjerde nivå som er siden du står på</a>
+  </li>
+</ol>
+<h1 class="a-fontBold a-pageTitle ">
+  Tittel på siden
+</h1>
+<p class="a-leadText " id="leadText">Ingress er et kort innledende avsnitt som vanligvis plasseres mellom overskriften og brødteksten. Ingressen brukes ofte til å "gripe" fatt i leseren, for at personen skal bli interessert i å lese resten av teksten. Den fungerer også som et visuelt skille
+  mellom resten av teksten. Ingressen bør være lettlest og fri for vanskelige faguttrykk.</p>
+<div class="a-byline">
+  Sist oppdatert 11.10.2016
+</div>
+<hr class="mt-2 mb-0 hidden-md-down">
+ 
+							<!-- iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="/designsystem-styleguide/patterns/02-organisms-40-artikkel-60-artikkel-start/02-organisms-40-artikkel-60-artikkel-start.markup-only.html"></iframe>
 
-							<iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="/designsystem-styleguide/patterns/02-organisms-40-artikkel-60-artikkel-start/02-organisms-40-artikkel-60-artikkel-start.rendered.html"></iframe>
-
-							<div class="iffframe__handle"></div>
+							<div class="iffframe__handle"></div -->
 
 						</div><!--end iffframe-->
 
@@ -12455,10 +11744,7 @@
 								<div class="pattern-code">
 									<button class="c-btn pattern-code-copy-btn" data-clipboard-target="#pattern-code-1">Copy</button>
 									<pre class="highlight pattern-code-block"><code class="language-html" id="pattern-code-1">
-<figure class="highlight"><pre><code class="language-liquid" data-lang="liquid">&lt;!-- START: 02-organismer-40-artikkel-60-artikkel-start --&gt;
-
-&lt;!-- START: 01-molekyler-02-navigasjon-14-smulesti --&gt;
-&lt;ol class="breadcrumb a-breadcrumb "&gt;
+<figure class="highlight"><pre><code class="language-liquid" data-lang="liquid">&lt;ol class="breadcrumb a-breadcrumb "&gt;
   &lt;li class="breadcrumb-item "&gt;
     &lt;a href=""&gt;Første nivå&lt;/a&gt;
   &lt;/li&gt;
@@ -12472,37 +11758,15 @@
     &lt;a href=""&gt;Fjerde nivå som er siden du står på&lt;/a&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
-
-&lt;!-- END: 01-molekyler-02-navigasjon-14-smulesti --&gt;
-
-
-&lt;!-- START: 00-atomer-07-tekst-09-sidetittel --&gt;
-&lt;h1 class="a-fontBold a-pageTitle "&gt;
+&lt;h1 class="a-fontBold a-pageTitle "&gt;
   Tittel på siden
-
-&lt;/h1&gt;
-
-&lt;!-- END: 00-atomer-07-tekst-09-sidetittel --&gt;
-
-
-&lt;!-- START: 00-atomer-07-tekst-02-intro-tekst --&gt;
-&lt;p class="a-leadText " id="leadText"&gt;Ingress er et kort innledende avsnitt som vanligvis plasseres mellom overskriften og brødteksten. Ingressen brukes ofte til å "gripe" fatt i leseren, for at personen skal bli interessert i å lese resten av teksten. Den fungerer også som et visuelt skille
+&lt;/h1&gt;
+&lt;p class="a-leadText " id="leadText"&gt;Ingress er et kort innledende avsnitt som vanligvis plasseres mellom overskriften og brødteksten. Ingressen brukes ofte til å "gripe" fatt i leseren, for at personen skal bli interessert i å lese resten av teksten. Den fungerer også som et visuelt skille
   mellom resten av teksten. Ingressen bør være lettlest og fri for vanskelige faguttrykk.&lt;/p&gt;
-
-&lt;!-- END: 00-atomer-07-tekst-02-intro-tekst --&gt;
-
-
-&lt;!-- START: 00-atomer-07-tekst-20-byline --&gt;
-&lt;div class="a-byline"&gt;
+&lt;div class="a-byline"&gt;
   Sist oppdatert 11.10.2016
 &lt;/div&gt;
-
-&lt;!-- END: 00-atomer-07-tekst-20-byline --&gt;
-
-
-&lt;hr class="mt-2 mb-0 hidden-md-down"&gt;
-
-&lt;!-- END: 02-organismer-40-artikkel-60-artikkel-start --&gt;</code></pre></figure>
+&lt;hr class="mt-2 mb-0 hidden-md-down"&gt;</code></pre></figure>
 </code></pre>
 								</div>
 
@@ -12553,15 +11817,30 @@
 		<div class="c-text-passage l-linelength-container">
 
 			
+				<h3>Når skal du bruke denne komponenten?</h3>
+        <p>Info kommer.</p>
+      
+				<h3>Når skal du vurdere alternativer?</h3>
+        <p>Info kommer.</p>
+      
+				<h3>Policies</h3>
+        <p>Se theme-spesifikke policies.</p>
+      
 
 		</div><!-- end c-text-passage -->
 
 		<div class="c-text-passage l-linelength-container display-altinn">
 			
+				<h3>Theme-spesifikke policies for Altinn</h3>
+        <p>Ingen retningslinjer er lagt inn for Altinn enda.</p>
+      
 		</div><!-- end c-text-passage -->
 
 		<div class="c-text-passage l-linelength-container display-brreg">
 			
+				<h3>Theme-spesifikke policies for Brønnøysundregistrene</h3>
+        <p>Ingen retningslinjer er lagt inn for Brønnøysundregistrene enda.</p>
+      
 		</div><!-- end c-text-passage -->
 
 		<table class="c-table my-3">
@@ -12577,6 +11856,24 @@
 			</thead><!-- end c-table__header -->
 
 			<tbody class="c-table__body ">
+				
+
+				<tr class="c-table__row ">
+
+					<td class="c-table__cell ">
+						
+					</td>
+
+					<td class="c-table__cell ">
+						
+					</td>
+
+					<td class="c-table__cell ">
+						
+						
+					</td>
+
+				</tr><!-- end c-table__row -->
 				
 
 			</tbody><!-- end c-table__body -->
@@ -12630,27 +11927,6 @@
 <!-- Bundled assets -->
 <script src="/designsystem-styleguide/dist/js/infoportal.vendor.js"></script>
 <script src="/designsystem-styleguide/dist/js/infoportal.js"></script>
-
-<script>
-  $('.iffframe').find('iframe').on('load', function() {
-    if (window.localStorage.getItem('persisted_style') !== '1') {
-      var e = document.createElement('link')
-      e.rel = 'stylesheet'
-      e.type = 'text/css'
-      if (window.localStorage.getItem('persisted_style') === '2') {
-        e.href = '/designsystem-styleguide/css/altinnett.css'
-      } else {
-        e.href = '/designsystem-styleguide/css/brreg.css'
-      }
-      $($('.iffframe').find('iframe')[0].contentWindow.document.getElementsByTagName('head')[0])
-       .find('link[rel=stylesheet][href~=\'/designsystem-styleguide/css/altinnett.css\']').remove()
-      $($('.iffframe').find('iframe')[0].contentWindow.document.getElementsByTagName('head')[0])
-       .find('link[rel=stylesheet][href~=\'/designsystem-styleguide/css/brreg.css\']').remove()
-      $('.iffframe').find('iframe')[0].contentWindow.document.getElementsByTagName('head')[0].appendChild(e)
-    }
-  });
-</script>
-
 
             </div><!--end l-page-layout__main-->
 
