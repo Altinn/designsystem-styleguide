@@ -947,6 +947,19 @@ var toggleArchivedState = function() {
 };
 
 /* globals $ */
+var toggleSelectProfiles = function() {
+  $('#selectedProfiles').hide();
+  $('#profile-selection').hide();
+
+  $('#alle-jeg-kan-representere-checkbutton-1').on('click', function() {
+    $('#profile-selection').hide();
+  });
+  $('#select-profile-checkbutton-2').on('click', function() {
+    $('#profile-selection').show();
+  });
+};
+
+/* globals $ */
 var toggleTheme = function() {
   $(function() {
     var toggleStuff = function(className) {
@@ -6570,214 +6583,124 @@ var setValidatorSettings = function() {
   };
 };
 
-/* globals _anchors, hideIntroInSubs, insetVariations, toggleArchivedState,
-  selectAll, toggleTheme, fixPatternLinks,
-  preOpenModals, prototypingInteractionStarteENK, $, onboarding, codeLookup, nameChecker,
-  setupAddRightsHandler, initSearchWithHighlight, certificateHandler, searchWithAutocomplete */
-window.devInit = function() {
-  _anchors();
-  hideIntroInSubs();
-  insetVariations();
-  toggleArchivedState();
-  selectAll();
-  toggleTheme();
-  fixPatternLinks();
-  preOpenModals();
-  prototypingInteractionStarteENK();
-  onboarding();
-  codeLookup();
-  nameChecker();
-  initSearchWithHighlight();
-  setupAddRightsHandler();
-  selectAll();
-  toggleTheme();
-  certificateHandler();
-  searchWithAutocomplete();
-};
-window.devInit();
-$('.html-escape').each(function() {
-  $(this).text($(this).html());
-});
-// $('form').validate();
-
 /*
   globals
-  formatOrgNr,
-  cardsToggle,
-  onConfirmDeletionClick,
-  setupListRowSelect,
-  toggleSwitch,
-  truncateBoxButtonNames,
-  onFileInputChange,
-  questionnaireInteraction,
-  colnavCustom,
-  handleFocus,
-  mobileNavigation,
-  toggleFilter,
-  uniformHeight,
-  tooltip,
-  initializeDatepicker,
-  onboarding,
-  nameChecker,
-  codeLookup,
-  setupAddRightsHandler,
-  onFileInputChange,
-  toggleInstant,
+  $,
+  _anchors,
   addListExpandHandler,
   addListSortHandler,
-  setupListRowSelect,
-  setupOnKeypress,
-  genericSearch,
-  toggleInstant,
   articleAnchors,
-  feedbackToggle,
-  setValidatorSettings,
   autoFootnotes,
-  popoverLocalInit,
-  popoverGlobalInit,
-  setupSelectableCheckbox,
-  window,
-  setupTruncateLines,
-  AltinnModal,
-  setupExpandContent,
   AltinnDropdown,
-  setupNestedCheckboxes,
-  searchFilterView,
+  AltinnModal,
   AltinnQuickhelp
-
-*/
-window.portalInit = function() {
-  $.fn.modal.Constructor.prototype._enforceFocus = function() {
-    $(document)
-      .off('focusin.bs.modal')
-      .on('focusin.bs.modal', $.proxy(function(event) {
-        if (document !== event.target &&
-            this._element !== event.target &&
-            !$(this._element).has(event.target).length
-            && !$(event.target).hasClass('popover')
-            && !$(event.target).closest('.popover').length > 0) {
-          this._element.focus();
-        }
-      }, this));
-  };
-
-  formatOrgNr();
-  cardsToggle();
-  onConfirmDeletionClick();
-  setupListRowSelect();
-  toggleSwitch();
-  truncateBoxButtonNames();
-  onFileInputChange();
-  setValidatorSettings();
-  addListExpandHandler();
-  setupOnKeypress();
-  handleFocus();
-  initializeDatepicker();
-  addListSortHandler();
-  mobileNavigation();
-  toggleFilter();
-  tooltip();
-  toggleInstant();
-  feedbackToggle();
-  autoFootnotes();
-  popoverLocalInit();
-  popoverGlobalInit();
-  setupSelectableCheckbox();
-  setupTruncateLines();
-  setupExpandContent();
-  AltinnModal.init();
-  AltinnDropdown.init();
-  AltinnQuickhelp.init();
-  setupNestedCheckboxes();
-  searchFilterView();
-};
-window.portalInit();
-
-/* globals
+  cardsToggle,
+  certificateHandler,
+  codeLookup,
   colnavCustom,
+  feedbackToggle,
+  fixPatternLinks,
+  formatOrgNr,
   genericSearch,
-  questionnaireInteraction,
-  uniformHeight,
-  articleAnchors,
-  subscribe,
-  setupFormValidation,
+  handleFocus,
+  hideIntroInSubs,
+  initializeDatepicker,
+  initSearchWithHighlight,
+  insetVariations,
   listenForAttachmentChanges,
-  newsArchive
-  formatOrgNr,
-  cardsToggle,
-  onConfirmDeletionClick,
-  setupListRowSelect,
-  toggleSwitch,
-  truncateBoxButtonNames,
-  onFileInputChange,
-  questionnaireInteraction,
-  colnavCustom,
-  handleFocus,
   mobileNavigation,
-  toggleFilter,
-  uniformHeight,
-  tooltip,
-  initializeDatepicker,
-  onboarding,
   nameChecker,
-  codeLookup,
-  setupAddRightsHandler,
+  newsArchive
+  onboarding,
+  onConfirmDeletionClick,
   onFileInputChange,
-  toggleInstant,
-  addListExpandHandler,
-  addListSortHandler,
-  setupListRowSelect,
-  setupOnKeypress,
-  genericSearch,
-  toggleInstant,
-  articleAnchors,
-  feedbackToggle,
-  setValidatorSettings,
-  autoFootnotes,
-  popoverLocalInit,
   popoverGlobalInit,
-  setupSelectableCheckbox,
-  window,
-  setupTruncateLines,
-  AltinnModal,
-  setupExpandContent,
-  AltinnDropdown,
-  setupNestedCheckboxes,
+  popoverLocalInit,
+  preOpenModals,
+  prototypingInteractionStarteENK,
+  questionnaireInteraction,
   searchFilterView,
-  AltinnQuickhelp
+  searchWithAutocomplete,
+  selectAll,
+  setupAddRightsHandler,
+  setupExpandContent,
+  setupFormValidation,
+  setupListRowSelect,
+  setupNestedCheckboxes,
+  setupOnKeypress,
+  setupSelectableCheckbox,
+  setupTruncateLines,
+  setValidatorSettings,
+  subscribe,
+  toggleArchivedState,
+  toggleFilter,
+  toggleInstant,
+  toggleSelectProfiles,
+  toggleSwitch,
+  toggleTheme,
+  tooltip,
+  truncateBoxButtonNames,
+  uniformHeight,
+  window
 */
-window.infoportalInit = function() {
-  colnavCustom();
-  genericSearch();
-  questionnaireInteraction();
-  uniformHeight();
-  articleAnchors();
-  subscribe();
-  setupFormValidation();
-  listenForAttachmentChanges();
-  newsArchive();
-  setValidatorSettings();
+
+window.devInit = function() {
+  _anchors();
   addListExpandHandler();
-  setupOnKeypress();
-  handleFocus();
-  initializeDatepicker();
   addListSortHandler();
-  mobileNavigation();
-  toggleFilter();
-  tooltip();
-  toggleInstant();
-  feedbackToggle();
+  articleAnchors();
   autoFootnotes();
-  popoverLocalInit();
+  AltinnDropdown.init();
+  AltinnModal.init();
+  AltinnQuickhelp.init();
+  cardsToggle();
+  certificateHandler();
+  codeLookup();
+  colnavCustom();
+  feedbackToggle();
+  fixPatternLinks();
+  formatOrgNr();
+  handleFocus();
+  hideIntroInSubs();
+  genericSearch();
+  initializeDatepicker();
+  insetVariations();
+  initSearchWithHighlight();
+  listenForAttachmentChanges();
+  mobileNavigation();
+  nameChecker();
+  newsArchive();
+  onboarding();
+  onConfirmDeletionClick();
+  onFileInputChange();
   popoverGlobalInit();
+  popoverLocalInit();
+  preOpenModals();
+  prototypingInteractionStarteENK();
+  questionnaireInteraction();
+  searchFilterView();
+  searchWithAutocomplete();
+  selectAll();
+  setupAddRightsHandler();
+  setupExpandContent();
+  setupFormValidation();
+  setupListRowSelect();
+  setupNestedCheckboxes();
+  setupOnKeypress();
   setupSelectableCheckbox();
   setupTruncateLines();
-  setupExpandContent();
-  AltinnModal.init();
-  AltinnDropdown.init();
-  AltinnQuickhelp.init();
-  setupNestedCheckboxes();
-  searchFilterView();
+  setValidatorSettings();
+  subscribe();
+  toggleArchivedState();
+  toggleFilter();
+  toggleInstant();
+  toggleSelectProfiles();
+  toggleSwitch();
+  toggleTheme();
+  tooltip();
+  truncateBoxButtonNames();
+  uniformHeight();
+
   $.fn.modal.Constructor.prototype._enforceFocus = function() {
     $(document)
       .off('focusin.bs.modal')
@@ -6791,6 +6714,7 @@ window.infoportalInit = function() {
         }
       }, this));
   };
+
   function setupForm1() {
     $('body').off('focus', '#contactForm', setupForm1);
     setupFormValidation('#contactForm', '#a-js-contactForm-submit');
@@ -6814,14 +6738,8 @@ window.infoportalInit = function() {
   }
   listenForAttachmentChanges('#js-attachmentForm', errorMessageCallback);
 };
-window.infoportalInit();
-// $(document).foundation();
-
-/* globals
-  setupTruncateLines
-*/
-window.altinnettInit = function() {
-  setupTruncateLines();
-};
-
-window.altinnettInit();
+window.devInit();
+$('.html-escape').each(function() {
+  $(this).text($(this).html());
+});
+// $('form').validate();

@@ -416,7 +416,7 @@ code[class*="language-"], pre[class*="language-"] {
     border-bottom: 2px solid #fff; }
 
 .iffframe {
-  padding: 0 0.7rem 0 0;
+  padding: 12px;
   border: none; }
 
 .iffframe__iframe {
@@ -472,3 +472,155 @@ code[class*="language-"], pre[class*="language-"] {
   .c-footer p {
     font-size: 14px;
     margin-bottom: 0; }
+
+.ap-colorCircle {
+  font-size: 24px;
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  padding-top: 8px;
+  margin-right: 1rem;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 999px; }
+
+.ap-shadowBox {
+  display: block;
+  width: 100px;
+  height: 100px;
+  background: #fff;
+  box-shadow: 1px 1px 4px 0 rgba(137, 137, 137, 0.5); }
+
+.ap-colors {
+  margin-left: 0;
+  clear: both;
+  list-style: none; }
+  .ap-colors li {
+    float: left;
+    width: 100%;
+    padding: 0 10px 0 0;
+    margin: 0;
+    border: none; }
+    @media screen and (min-width: 768px) {
+      .ap-colors li {
+        width: 25%; }
+        .ap-colors li:last-child {
+          padding-right: 0; } }
+
+.ap-colorLabel {
+  display: none;
+  line-height: 24px; }
+
+.ap-swatch {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 72px;
+  padding-top: 15px;
+  margin-bottom: 10px;
+  text-align: center;
+  border-radius: 2px; }
+  .ap-swatch .ap-colorLabel {
+    position: absolute;
+    top: 12px;
+    right: -100%;
+    bottom: 0;
+    left: 0;
+    display: block;
+    opacity: 0;
+    transition: 0.2s all; }
+  .ap-swatch:hover .ap-colorLabel {
+    right: 0;
+    display: block;
+    opacity: 1; }
+
+/*.ap-iconPreview {
+  display: inline;
+  padding: $spacer;
+  padding-top: 0;
+  text-align: center;
+
+  &:hover {
+    background-color: $grey-light;
+  }
+}
+
+.ap-iconPreview-caption {
+  @include a-fontSize12;
+  display: block;
+  color: $grey;
+}
+
+.ap-icon {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 0;
+}
+
+.ap-systemicon {
+  width: 50px;
+}
+
+.material-icons {
+  &.ap-fonticon {
+    @include a-fontSize36;
+    color: $black;
+  }
+}*/
+/*.ap-kitIcons {
+  margin-bottom: $spacer * 2;
+
+  .ap-kitIcons-icon {
+    display: inline-block;
+    padding: $spacer $spacer * 2;
+    color: $grey-medium;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+
+    &:hover {
+      color: $white;
+      background: $blue;
+    }
+  }
+
+  .ap-kitIcons-name {
+    @include a-fontSize14;
+    @include a-fontLight;
+    display: block;
+  }
+}*/
+.ap-typo-container {
+  border-top: 1px dotted #eee; }
+
+.ap-typo {
+  padding: 30px 0 30px 40px;
+  background: #fff;
+  border-bottom: 1px dotted #eee; }
+  .ap-typo:hover {
+    background: #F5F5F5; }
+  .ap-typo h1,
+  .ap-typo h2,
+  .ap-typo h3,
+  .ap-typo h4 {
+    margin-top: 0; }
+
+@media screen and (min-width: 576px) {
+  .ap-typo-activeSize-m {
+    font-family: 'DIN-bold';
+    color: #17C96B; } }
+
+@media screen and (min-width: 768px) {
+  .ap-typo-activeSize-t {
+    font-family: 'DIN-medium';
+    color: #17C96B; } }
+
+@media screen and (min-width: 992px) {
+  .ap-typo-activeSize-l {
+    font-family: 'DIN-bold';
+    color: #17C96B; } }
+
+@media screen and (min-width: 1200px) {
+  .ap-typo-activeSize-d {
+    font-family: 'DIN-bold';
+    color: #17C96B; } }

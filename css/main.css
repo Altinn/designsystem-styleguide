@@ -134,6 +134,18 @@ body {
   height: 100%; }
 
 /*------------------------------------*\
+    #BUTTONS
+\*------------------------------------*/
+/**
+ * Button and submit inputs reset
+ * 1) These should be styled using c-btn
+ */
+button, input[type=submit] {
+  cursor: pointer; }
+  button:focus, input[type=submit]:focus {
+    outline: 1px solid #bbb; }
+
+/*------------------------------------*\
     #HEADINGS
 \*------------------------------------*/
 /**

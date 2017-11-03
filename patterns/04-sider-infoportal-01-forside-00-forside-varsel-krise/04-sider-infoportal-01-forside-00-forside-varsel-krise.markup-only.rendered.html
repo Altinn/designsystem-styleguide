@@ -23,7 +23,7 @@
             <a href="&#x2F;patterns&#x2F;04-sider-infoportal-01-forside-02-forside-innlogget&#x2F;04-sider-infoportal-01-forside-02-forside-innlogget.html" class="a-globalNav-logo">
               <!-- START: 00-atomer-09-bilder-og-media-01-logo -->
 
-              <img src="..&#x2F;..&#x2F;images&#x2F;a-logo-blue.svg" alt="Altinn logo" class="a-logo a-modal-top-logo ">
+              <img src="/designsystem-styleguide/images/a-logo-blue.svg" alt="Altinn logo" class="a-logo a-modal-top-logo ">
 
               <!-- END: 00-atomer-09-bilder-og-media-01-logo -->
               <span class="sr-only">Til forsiden</span>
@@ -499,7 +499,7 @@
           <!-- START: 01-molekyler-03-media-03-bilde-innhold-under -->
           <figure class="a-mediaBlock ">
             <!-- START: 00-atomer-09-bilder-og-media-_08-placeholder -->
-            <img src="/designsystem-styleguide/images/temp-placeholder.svg" alt="Illustrasjon" />
+            <img src="/designsystem-styleguide/images/illustrasjon_starte_og_drive_sirkel.svg" alt="Illustrasjon" />
 
             <!-- END: 00-atomer-09-bilder-og-media-_08-placeholder -->
 
@@ -518,7 +518,7 @@
           <!-- START: 01-molekyler-03-media-03-bilde-innhold-under -->
           <figure class="a-mediaBlock ">
             <!-- START: 00-atomer-09-bilder-og-media-_08-placeholder -->
-            <img src="/designsystem-styleguide/images/temp-placeholder.svg" alt="Illustrasjon" />
+            <img src="/designsystem-styleguide/images/illustrasjon_starte_og_drive_sirkel.svg" alt="Illustrasjon" />
 
             <!-- END: 00-atomer-09-bilder-og-media-_08-placeholder -->
 
@@ -715,6 +715,46 @@
   <!-- END: 02-organismer-01-globale-01-footer -->
 
 </div>
+
+<!-- START: 01-molekyler-06-hjelp-00-hjelp-container -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- Should be included for pages that has quickhelp -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<div class="a-stickyHelp-container">
+
+  <!-- Open-button for .a-iframeToggle -->
+  <!-- HELP ANIMATION:
+  On pages that have help in context (step for step guide), add class "a-stickyHelp-animationHint" when users has not been active for 10 seconds -->
+  <button type="button" class="a-btn a-stickyHelp-open  collapsed" data-toggle="collapse" data-target="#a-iframeToggle" aria-expanded="false" aria-controls="a-iframeToggle">
+
+    <span class="sr-only a-stickyHelp-openText">Trenger du hjelp</span>
+    <i>?</i>
+  </button>
+
+  <div id="a-iframeToggle" class="a-iframeToggle collapse">
+
+    <!-- Close-button for .a-iframeToggle -->
+    <button type="button" class="a-stickyHelp-close" data-toggle="collapse" data-target="#a-iframeToggle" data-action="close" aria-expanded="true" aria-controls="a-iframeToggle"> <!-- START: 00-atomer-09-bilder-og-media-15-ikon -->
+<i class="ai ai-exit ai-sm   "   id="close-stickyHelp"   ></i>
+  <span class="sr-only">Minimer hjelpevinduet</span>
+
+
+<!-- END: 00-atomer-09-bilder-og-media-15-ikon -->
+ </button>
+
+    <iframe class="a-js-stickyHelpFrame" data-src="../../&#x2F;patterns&#x2F;04-sider-infoportal-70-hurtighjelp-60-hurtighjelp&#x2F;04-sider-infoportal-70-hurtighjelp-60-hurtighjelp.html"></iframe>
+
+  </div>
+
+</div>
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- End quickhelp -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<!-- END: 01-molekyler-06-hjelp-00-hjelp-container -->
+
 
 <!-- END: 03-maler-infoportal-01-forside-01-forside -->
 
