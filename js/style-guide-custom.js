@@ -6,10 +6,6 @@
  * * * * * * * * * * * * * * * * * * * * *
  */
 
- /*
- * LIVE SEARCH IN COMPONENTS
- */
-
 function getLocalStorageValue(key) {
 	return window.localStorage.getItem(key);
 }
@@ -33,15 +29,19 @@ function setPersistedHtml(value) {
   setLocalStorageValue('persisted_html', value);
 }
 
+/*
+* LIVE SEARCH IN COMPONENTS
+*/
+
 jQuery(document).ready(function($) {
-  $('.live-search-list li').each(function(){
+  $('.live-search-list li.c-lined-list__item').each(function(){
       $(this).attr('data-search-term', $(this).text().toLowerCase());
   });
 
    $('.live-search-box').on('keyup', function(){
 
    var searchTerm = $(this).val().toLowerCase();
-       $('.live-search-list li').each(function(){
+       $('.live-search-list li.c-lined-list__item').each(function(){
            if ($(this).filter('[data-search-term *= ' + searchTerm + ']').length > 0 || searchTerm.length < 1) {
                $(this).show();
                $('.live-search-title').show();

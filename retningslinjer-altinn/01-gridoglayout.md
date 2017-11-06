@@ -2,9 +2,9 @@
 layout: page
 type: detail
 title: Grid og layout
-group: guidelines
-permalink: /guidelines/grid.html
-description: Felles retningslinjer
+group: retningslinjer-altinn
+permalink: /retningslinjer-altinn/grid.html
+description: Retningslinjer
 
 ---
 

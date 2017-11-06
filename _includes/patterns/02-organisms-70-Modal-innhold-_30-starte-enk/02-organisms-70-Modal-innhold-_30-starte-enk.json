@@ -389,7 +389,7 @@
 		"26": "s",
 		"27": "v",
 		"28": "g",
-		"logo": "../../images/a-logo-black.svg"
+		"logo": "/designsystem-styleguide/images/a-logo-black.svg"
 	},
 	"logo-class": "a-modal-top-logo",
 	"show-login": false,

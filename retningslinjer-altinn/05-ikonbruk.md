@@ -3,8 +3,8 @@ layout: page
 type: detail
 title: Ikonbruk
 group: retningslinjer-altinn
-permalink: /retningslinjer-altinn/iconography.html
-description: Altinns retningslinjer
+permalink: /retningslinjer-altinn/ikonbruk.html
+description: Retningslinjer
 
 ---
 

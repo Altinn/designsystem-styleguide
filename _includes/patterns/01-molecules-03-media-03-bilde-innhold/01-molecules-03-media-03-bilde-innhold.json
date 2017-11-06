@@ -74,7 +74,7 @@
 		"icon-prefix": "ai ai-nw ai-nw-pr",
 		"icon-class": "ai-phone"
 	},
-	"imageurl": "../../images/temp-placeholder.svg",
+	"imageurl": "/designsystem-styleguide/images/illustrasjon_starte_og_drive_sirkel.svg",
 	"card-picture-content": {
 		"image": true,
 		"card-picture-title": "Trenger du hjelp?",

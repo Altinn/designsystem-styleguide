@@ -55,7 +55,7 @@
 		}
 	],
 	"label-class": "badge-primary",
-	"label-id": "label",
+	"label-id": false,
 	"label-content": "9",
 	"button-text": "En knapp med ikon",
 	"button-class": "a-btn a-btn-icon",
@@ -401,7 +401,7 @@
 	"jumbo-md-class": "col-md-8",
 	"jumbo-lg-class": "col-lg-6",
 	"jumbo-xl-class": "col-xl-5",
-	"jumbotron-image-url": "url('../../images/header-bg-starteogdrive.svg')",
+	"jumbotron-image-url": "url('/designsystem-styleguide/images/header-bg-starteogdrive.svg')",
 	"jumbotron-bgcolor": "#efefef",
 	"jumbotron-styles": "a-jumbotron-top a-jumbotron-light",
 	"jumbotron-title-size": "a-h2",

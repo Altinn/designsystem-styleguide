@@ -1,5 +1,5 @@
 {
-	"logo": "../../images/a-logo-blue.svg",
+	"logo": "/designsystem-styleguide/images/a-logo-blue.svg",
 	"logo-class": "a-modal-top-logo",
 	"themeCss": "../../css/style.css",
 	"themeJs": "./../../js/altinnDev.js",

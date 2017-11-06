@@ -3,7 +3,7 @@ layout: page
 title: Visuell profil
 group: retningslinjer-brreg
 permalink: /retningslinjer-brreg/visuellprofil.html
-description: Retningslinjer for Brønnøysundregistrene
+description: Retningslinjer
 
 
 ---

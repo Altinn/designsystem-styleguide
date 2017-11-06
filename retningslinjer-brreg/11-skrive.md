@@ -4,7 +4,7 @@ type: detail
 title: Språkguide
 group: retningslinjer-brreg
 permalink: /retningslinjer-brreg/skrive.html
-description: Retingslinjer for Brønnøysundregistrene
+description: Retingslinjer
 
 ---
 
@@ -13,7 +13,7 @@ description: Retingslinjer for Brønnøysundregistrene
 </div>
 
 ## Målform
-Innhold kommer. 
+Innhold kommer.
 
 ## Begreper
 Innhold kommer.

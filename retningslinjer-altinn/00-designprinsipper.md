@@ -3,14 +3,10 @@ layout: page
 title: Designprinsipper
 group: retningslinjer-altinn
 permalink: /retningslinjer-altinn/designprinsipper.html
-description: Altinns retningslinjer
+description: Retningslinjer
 
 
 ---
-
-<div id="alert-no-arrow" class="a-message a-message-error a-message--arrow-off a-message--fullwidth mb-2 a-py-minus-1">
-  NB: Innholdet og sidene er under utvikling
-</div>
 
 <p class="a-leadText a-fontBold">Altinn og Brønnøysundregistrene har som mål å gjøre det enklere for innbyggere og næringsliv å være i kontakt med det offentlige uavhengig av digital kompetanse.</p>
 

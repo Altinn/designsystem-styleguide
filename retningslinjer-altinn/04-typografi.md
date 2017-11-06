@@ -4,13 +4,9 @@ type: detail
 title: Typografi
 group: retningslinjer-altinn
 permalink: /retningslinjer-altinn/typography.html
-description: Altinns retningslinjer
+description: Retningslinjer
 
 ---
-
-<div id="alert-no-arrow" class="a-message a-message-error a-message--arrow-off a-message--fullwidth mb-2 a-py-minus-1">
-  NB: Innholdet og sidene er under utvikling
-</div>
 
 ## Font
 All tekst på Altinn er satt med fonten ‘DIN’ i fire ulike varianter: Light, Regular, Medium og Bold. For å style teksten med de ulike variantene kan følgende klasser benyttes:
@@ -22,7 +18,25 @@ All tekst på Altinn er satt med fonten ‘DIN’ i fire ulike varianter: Light,
 .a-fontBold
 ```
 
-Brødtekst er satt til 16px regular, og normal tekst i paragrafer vil få denne stylingen. Ingresser er litt større og kan styles med klassen ```a-leadText```.
+<div class="row">
+<div class="col-xs-12 col-md-6">
+
+<h2 id="din-light">DIN Light</h2>
+<span class="a-fontLight"> A B C D E F G H I J K L M N O P Q R S T U V W X Y Z Æ Ø Å<br> a b c d e f g h i j k l m n o p q r s t u v w x y z æ ø å<br> 0 1 2 3 4 5 6 7 8 9<br> ! &amp; / ( ) $ = @ ; : , . </span><br><br><br></div>
+<div class="col-xs-12 col-md-6">
+
+<h2 id="din-regular">DIN Regular</h2>
+<span class="a-fontReg"> A B C D E F G H I J K L M N O P Q R S T U V W X Y Z Æ Ø Å<br> a b c d e f g h i j k l m n o p q r s t u v w x y z æ ø å<br> 0 1 2 3 4 5 6 7 8 9<br> ! &amp; / ( ) $ = @ ; : , . </span><br><br><br></div>
+<div class="col-xs-12 col-md-6">
+
+<h2 id="din-medium">DIN Medium</h2>
+<span class="a-fontMedium"> A B C D E F G H I J K L M N O P Q R S T U V W X Y Z Æ Ø Å<br> a b c d e f g h i j k l m n o p q r s t u v w x y z æ ø å<br> 0 1 2 3 4 5 6 7 8 9<br> ! &amp; / ( ) $ = @ ; : , . </span><br><br><br></div>
+<div class="col-xs-12 col-md-6">
+
+<h2 id="din-bold">DIN Bold</h2>
+<span class="a-fontBold"> A B C D E F G H I J K L M N O P Q R S T U V W X Y Z Æ Ø Å<br> a b c d e f g h i j k l m n o p q r s t u v w x y z æ ø å<br> 0 1 2 3 4 5 6 7 8 9<br> ! &amp; / ( ) $ = @ ; : , . </span> <br><br><br><br></div>
+
+</div>
 
 ## Overskrifter
 
@@ -39,68 +53,46 @@ Les mer om riktig bruk av overskrifter på [Difis nettsider](https://uu.difi.no/
 Line-height er satt til 1.5 (unitless).
 
 
-## Font-size
+## Tekststørrelser
+Standard tekststørrelse er satt til 16px regular, mens brødtekst i artikler er satt til 18px regular. Tekststørrelsene på overskrifter og paragrafer varierer med skjermstørrelse.
 
-<div class="container ap-typo-container">
-<div class="row ap-typo">
-<div class="col-xs-12 col-md-5">
-<h1 class="a-pageTitle">Page title &lt;H1&gt;</h1>
-</div>
-<div class="col-xs-12 col-md-4"><span class="ap-typo-activeSize-d">36px(desktop)</span><br> <span class="ap-typo-activeSize-l">36px (laptop)</span><br> <span class="ap-typo-activeSize-t">28px (tablet)</span><br> <span class="ap-typo-activeSize-m">24px (mobile)</span></div>
-<div class="col-xs-12 col-md-3">
-<p style="font-family: 'DIN-reg';">DIN-reg</p>
-</div>
-</div>
-<div class="row ap-typo">
-<div class="col-xs-12 col-md-5">
-<h2 class="a-sectionTitle" id="section-title-h2"><a class="anchorjs-link a-anchor" href="#section-title-h2" aria-label="Anchor link for: section title h2" data-anchorjs-icon="" style="font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 1em; line-height: inherit; font-family: anchorjs-icons; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Section title &lt;H2&gt;</h2>
-</div>
-<div class="col-xs-12 col-md-4"><span class="ap-typo-activeSize-d">28px (desktop)</span><br> <span class="ap-typo-activeSize-l">24px (laptop)</span><br> <span class="ap-typo-activeSize-t">22px (tablet)</span><br> <span class="ap-typo-activeSize-m">18px (mobile)</span></div>
-<div class="col-xs-12 col-md-3">
-<p style="font-family: 'DIN-reg';">DIN-reg</p>
-</div>
-</div>
-<div class="row ap-typo">
-<div class="col-xs-12 col-md-5">
-<h3 class="a-sectionSubTitle" id="section-sub-title-h3"><a class="anchorjs-link a-anchor" href="#section-sub-title-h3" aria-label="Anchor link for: section sub title h3" data-anchorjs-icon="" style="font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 1em; line-height: inherit; font-family: anchorjs-icons; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Section sub title &lt;H3&gt;</h3>
-</div>
-<div class="col-xs-12 col-md-4"><span class="ap-typo-activeSize-d">20px (desktop)</span><br> <span class="ap-typo-activeSize-l">20px (laptop)</span><br> <span class="ap-typo-activeSize-t">18px (tablet)</span><br> <span class="ap-typo-activeSize-m">16px (mobile)</span></div>
-<div class="col-xs-12 col-md-3">
-<p style="font-family: 'DIN-bold';">DIN-bold</p>
-</div>
-</div>
-<div class="row ap-typo">
-<div class="col-xs-12 col-md-5">
-<h4 class="a-sectionSubSubTitle" id="section-sub-sub-title-h4"><a class="anchorjs-link a-anchor" href="#section-sub-sub-title-h4" aria-label="Anchor link for: section sub sub title h4" data-anchorjs-icon="" style="font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 1em; line-height: inherit; font-family: anchorjs-icons; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Section sub sub title &lt;H4&gt;</h4>
-</div>
-<div class="col-xs-12 col-md-4"><span class="ap-typo-activeSize-d">16px (desktop)</span><br> <span class="ap-typo-activeSize-l">16px (laptop)</span><br> <span class="ap-typo-activeSize-t">16px (tablet)</span><br> <span class="ap-typo-activeSize-m">16px (mobile)</span></div>
-<div class="col-xs-12 col-md-3">
-<p style="font-family: 'DIN-bold';">DIN-bold</p>
-</div>
-</div>
-<div class="row ap-typo">
-<div class="col-xs-12 col-md-5">
-<p class="a-leadText">Intro text &lt;p&gt;</p>
-</div>
-<div class="col-xs-12 col-md-4"><span class="ap-typo-activeSize-d">16px (desktop)</span><br> <span class="ap-typo-activeSize-l">16px (laptop)</span><br> <span class="ap-typo-activeSize-t">16px (tablet)</span><br> <span class="ap-typo-activeSize-m">16px (mobile)</span></div>
-<div class="col-xs-12 col-md-3">
-<p style="font-family: 'DIN-reg';">DIN-reg</p>
-</div>
-</div>
-<div class="row ap-typo">
-<div class="col-xs-12 col-md-5">
-<p>Body text &lt;p&gt;</p>
-</div>
-<div class="col-xs-12 col-md-4"><span class="ap-typo-activeSize-d">16px (desktop)</span><br> <span class="ap-typo-activeSize-l">16px (laptop)</span><br> <span class="ap-typo-activeSize-t">16px (tablet)</span><br> <span class="ap-typo-activeSize-m">16px (mobile)</span></div>
-<div class="col-xs-12 col-md-3">
-<p style="font-family: 'DIN-reg';">DIN-reg</p>
-</div>
-</div>
-<div class="row ap-typo">
-<div class="col-xs-12 col-md-5"><span class="a-metaText">Meta text</span></div>
-<div class="col-xs-12 col-md-4"><span class="ap-typo-activeSize-d">14px (desktop)</span><br> <span class="ap-typo-activeSize-l">14px (laptop)</span><br> <span class="ap-typo-activeSize-t">14px (tablet)</span><br> <span class="ap-typo-activeSize-m">14px (mobile)</span></div>
-<div class="col-xs-12 col-md-3">
-<p style="font-family: 'DIN-reg';">DIN-reg</p>
-</div>
-</div>
-</div>
+<h1 class="a-pageTitle">Sidetittel</h1>
+<code> <H1> </code><br><br>
+36px (desktop)<br>
+36px (laptop)<br>
+28px (tablet)<br>
+24px (mobile)<br>
+
+<h2 class="a-sectionTitle">Seksjonstittel</h2>
+<code> <H2> </code><br><br>
+28px (desktop)<br>
+24px (laptop)<br>
+22px (tablet)<br>
+18px (mobile)<br>
+
+<h3 class="a-sectionSubTitle">Undertittel</h3>
+<code> <H3> </code><br><br>
+20px (desktop)<br>
+20px (laptop)<br>
+18px (tablet)<br>
+16px (mobile)<br>
+
+<hr>
+
+<p class="a-leadText">Introtekst/ingress</p>
+<code><p class="a-leadText"> </code><br><br>
+20px (desktop)<br>
+20px (laptop)<br>
+20px (tablet)<br>
+18px (mobile)<br>
+
+<hr>
+
+<p>Brødtekst i artikler</p>
+<code><p> </code><br><br>
+18px (desktop)<br>
+18px (laptop)<br>
+18px (tablet)<br>
+16px (mobile)<br>
+
+<hr>

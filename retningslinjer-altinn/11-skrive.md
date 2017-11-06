@@ -4,7 +4,7 @@ type: detail
 title: Språkguide
 group: retningslinjer-altinn
 permalink: /retningslinjer-altinn/skrive.html
-description: Altinns retingslinjer
+description: Retingslinjer
 
 ---
 
@@ -16,13 +16,6 @@ description: Altinns retingslinjer
 På altinn.no har vi innhold på både bokmål, nynorsk og engelsk. Vi forholder oss til mållova, som sier at begge målformer skal være representert med minst 25 prosent.
 
 Informasjonsportal har mer variasjon i sidene som er tilgjengelig på hvilket språk, mens innlogget skal alt være oversatt.
-
-## Retningslinjer fra Altinns innholdsstrategi
-Venter på innhold.
-
-## Begreper
-Venter på innhold.
-
 
 ## Tall, nummer og tid
 Så fremt ikke annet er oppgitt her bruker vi retningslinjene for skrivemåte fra Språkrådet. Det er viktig at disse reglene følges konsekvent. Særlig aktuelt for Altinn er følgende regler:

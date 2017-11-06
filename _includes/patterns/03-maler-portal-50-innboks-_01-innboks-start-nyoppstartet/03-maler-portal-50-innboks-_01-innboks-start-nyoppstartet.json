@@ -136,7 +136,7 @@
 			},
 			"dropdown-item-content": "Alt innhold er tilgjengelig på bokmål.",
 			"dropdown-item-content-class": "a-fontBold",
-			"dropdown-item-image": "../../images/norsk.svg",
+			"dropdown-item-image": "/designsystem-styleguide/images/norsk.svg",
 			"dropdown-item-image-class": "a-iconLeft a-flag",
 			"dropdown-item-title": "Bokmål"
 		},
@@ -149,7 +149,7 @@
 			},
 			"dropdown-item-content": "All content is available in english.",
 			"dropdown-item-content-class": "a-fontBold",
-			"dropdown-item-image": "../../images/english.svg",
+			"dropdown-item-image": "/designsystem-styleguide/images/english.svg",
 			"dropdown-item-image-class": "a-iconLeft a-flag",
 			"language": "lang=\"en\"",
 			"dropdown-item-title": "English"
@@ -163,12 +163,12 @@
 			},
 			"dropdown-item-content": "Det er førebels berre skjema som er tilgjengelig på nynorsk. Andre sider vil vises med bokmål.",
 			"dropdown-item-content-class": "a-fontBold",
-			"dropdown-item-image": "../../images/norsk.svg",
+			"dropdown-item-image": "/designsystem-styleguide/images/norsk.svg",
 			"dropdown-item-image-class": "a-iconLeft a-flag",
 			"dropdown-item-title": "Nynorsk"
 		},
 		{
-			"dropdown-item-image": "../../images/globe.svg",
+			"dropdown-item-image": "/designsystem-styleguide/images/globe.svg",
 			"dropdown-item-image-class": "a-iconLeft a-flag a-globe",
 			"language": "lang=\"en\"",
 			"dropdown-item-title": "Other languages",
@@ -176,7 +176,7 @@
 		}
 	],
 	"label-class": "badge-primary",
-	"label-id": "label",
+	"label-id": false,
 	"label-content": "9",
 	"button-colorClass": "",
 	"link-url": "/patterns/04-sider-infoportal-01-forside-00-forside/04-sider-infoportal-01-forside-00-forside.html",
@@ -533,9 +533,11 @@
 	},
 	"checkboxes": [
 		{
+			"isChecked": false,
 			"checkboxes-title": "Kryss av i den første avkrysningsboksen"
 		},
 		{
+			"isChecked": false,
 			"checkboxes-title": "Kryss av i den andre avkrysningsboksen"
 		}
 	],
@@ -1141,7 +1143,7 @@
 		"icon-extra-class": "a-personSwitcher-icon a-js-onboardingTarget-1",
 		"icon-sr-only-text": "Min profil"
 	},
-	"logo": "../../images/a-logo-blue.svg",
+	"logo": "/designsystem-styleguide/images/a-logo-blue.svg",
 	"logo-class": "a-modal-top-logo",
 	"header-color": "",
 	"dropdown-personswitch": true,
@@ -1150,26 +1152,26 @@
 		"dropdown-class": "a-dropdown-languages",
 		"dropdown-item": [
 			{
-				"dropdown-item-image": "../../images/norsk.svg",
+				"dropdown-item-image": "/designsystem-styleguide/images/norsk.svg",
 				"dropdown-item-image-class": "a-iconLeft a-flag",
 				"dropdown-item-title": "Bokmål",
 				"dropdown-item-content": "Alt innhold er tilgjengelig på bokmål."
 			},
 			{
-				"dropdown-item-image": "../../images/english.svg",
+				"dropdown-item-image": "/designsystem-styleguide/images/english.svg",
 				"dropdown-item-image-class": "a-iconLeft a-flag",
 				"language": "lang=\"en\"",
 				"dropdown-item-title": "English",
 				"dropdown-item-content": "All content is available in english."
 			},
 			{
-				"dropdown-item-image": "../../images/norsk.svg",
+				"dropdown-item-image": "/designsystem-styleguide/images/norsk.svg",
 				"dropdown-item-image-class": "a-iconLeft a-flag",
 				"dropdown-item-title": "Nynorsk",
 				"dropdown-item-content": "Det er førebels berre skjema som er tilgjengelig på nynorsk. Andre sider vil vises med bokmål."
 			},
 			{
-				"dropdown-item-image": "../../images/globe.svg",
+				"dropdown-item-image": "/designsystem-styleguide/images/globe.svg",
 				"dropdown-item-image-class": "a-iconLeft a-flag a-globe",
 				"language": "lang=\"en\"",
 				"dropdown-item-title": "Other languages",

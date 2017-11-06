@@ -185,7 +185,7 @@
 		}
 	],
 	"label-class": "badge-primary",
-	"label-id": "label",
+	"label-id": false,
 	"label-content": "9",
 	"button-colorClass": "",
 	"button-shadow-label": false,
@@ -498,7 +498,7 @@
 	"search-algorithm": "show-and-highlight",
 	"search-target": "employee-table",
 	"table-actions-id": "employee-table",
-	"logo": "../../images/a-logo-white.svg",
+	"logo": "/designsystem-styleguide/images/a-logo-white.svg",
 	"logo-class": "a-modal-top-logo",
 	"modal-title": "Gi og fjerne rettigheter",
 	"cancel-link": {
@@ -1719,7 +1719,7 @@
 		"title": "Altinn",
 		"bodyClass": "a-modal-background-success",
 		"logo": {
-			"logo": "../../images/a-logo-black.svg"
+			"logo": "/designsystem-styleguide/images/a-logo-black.svg"
 		},
 		"login-name": "JAN PETTERSEN",
 		"modalBack": true,

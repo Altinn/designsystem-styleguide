@@ -8,19 +8,7 @@ description: Retningslinjer
 
 ---
 
-<div id="alert-no-arrow" class="a-message a-message-error a-message--arrow-off a-message--fullwidth mb-2 a-py-minus-1">
-  NB: Innholdet og sidene er under utvikling
-</div>
-
 <p class="a-leadText a-fontBold">Illustrasjonene brukt på altinn er spesialtegnet for å forsterke det visuelle uttrykket og myke opp budskapet.</p>
-
-## Målet med illustrasjonene
-Illustrasjonene skal:
-- Heve brukeropplevelsen og styrke Altinns posisjon hos nye brukergrupper
-- Ha en gjennomgående egenart og gjenkjennelighet
-- Fange blikket, differensiere sidene, myke opp budskapet og heve helhetsinntrykket
-- Ha et naturlig visuelt slektskap til resten av det visuelle uttrykket
-- Baseres på fargepaletten og formspråket i designet som ligger til grunn
 
 ## Bruk av illustrasjoner
 Illustrasjoner på Altinn skal brukes enten som [bakgrunnsillustrasjon](../komponenter/bilder-og-media/bakgrunnsillustrasjon.html), eller som illustrasjoner ved siden av tekst (de skal da være innrammet i en sirkel). F.eks:
@@ -35,7 +23,7 @@ Illustrasjoner på Altinn skal brukes enten som [bakgrunnsillustrasjon](../kompo
 </div>
 
 ## Alle illustrasjoner
-Det jobbes for tiden med å lage flere illustrasjoner. Foreløpig har vi følgende tilgjengelig:
+Foreløpig har vi følgende illustrasjoner tilgjengelig:
 
 ### Forside / Logg inn
 ![Illustrasjon for forside](../images/illustrasjon_logginn.svg)

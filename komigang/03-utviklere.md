@@ -37,7 +37,7 @@ Er du backend-utvikler og skal benytte deg av designet fra designsystemet, treng
 
 Med definerte UI-komponenter i Patternlab kan man som frontend-utvikler enkelt sy sammen nye maler og prototyper. NB: En designer skal alltid være ivolvert i design av nye brukergrensesnitt.
 
-Skal du jobbe med frontend, må du først klone Git-repositoriet fra Altinns [github](https://github.com/Altinn/DesignSystem) og følge oppskriften der for hvordan du setter opp utviklingsmiljøet.
+Skal du jobbe med frontend, må du først klone Git-repositoriet fra Altinns [github](https://github.com/Altinn/DesignSystem) og følge oppskriften der for hvordan du setter opp utviklingsmiljøet. Når du er ferdig med innstallasjonen skal du kunne se [dette](http://altinn.github.io/DesignSystem/PatternLab-public/) på din localhost:3000.
 
 ### Pattern Lab Dokumentasjon
 Dokumentasjon for hvordan utvikle atomisk design med Pattern Lab er tilgjengelig på [Pattern Lab](http://patternlab.io/docs/index.html) sine nettsider.
@@ -45,11 +45,11 @@ Dokumentasjon for hvordan utvikle atomisk design med Pattern Lab er tilgjengelig
 ### Rutiner for oppdatering
 Når et nytt atom, molekyl eller organisme lages, skal følgene sjekkes:
 
-- Følg retningslinjene for <a href="../guidelines/frontend.html">frontend-kode</a>.
+- Følg retningslinjene for <a href="../retningslinjer-altinn/frontend.html">frontend-kode</a>.
 - Dersom du har endret en eksisterende komponent, sjekk at den fortsatt fungerer som den skal på alle steder den er brukt.
 - Oppdater komponentens MD-fil med versjon, status, og eventuelle notater relatert til frontend.
 - Sjekk at komponenten fungerer i alle skjermstørrelser (responsivt).
-- Sjekk at både koden og komponenten er <a href="../guidelines/uu.html">universelt utformet</a> i henhold til kravene.
+- Sjekk at både koden og komponenten er <a href="../retningslinjer-altinn/uu.html">universelt utformet</a> i henhold til kravene.
 
 ### Branching i github
 Designsystemet benytter trunk-basert utvikling. Les mer om dette på [altinnpedia](http://altinnpedia.ai-dev.brreg.no/dev/design-system/branching)
@@ -57,8 +57,34 @@ Designsystemet benytter trunk-basert utvikling. Les mer om dette på [altinnpedi
 ### Publisering
 Designsystemet versjoneres og publiseres slik at det enkelt kan benyttes av andre løsninger. Vi publiserer til både npmjs.com og github.com. Les mer om dette på [altinnpedia](http://altinnpedia.ai-dev.brreg.no/dev/design-system/publishing/)
 
-### Oppdatere Designsystemets utstillingsvindu
-Designsystemet har et eget "utstillingsvindu" (det er her du er akkurat nå). Koden for dette ligger på Git-repositoriet "[designsystem-styleguide](https://github.com/Altinn/designsystem-styleguide)." Dersom du skal oppdatere dette må du først klone Git-repositoriet.
+## JavaScript
+JavaScript benyttes i utviklingsmiljøet og som del av Altinns brukergrensesnitt for å tillate ulike former for interaktivitet og funksjonalitet i nettleseren.
+
+### Eksterne biblioteker
+Utviklingsoppsettet er orientert rundt et Node.js-miljø og derfor blir JavaScript-biblioteker (til bruk i både utvikling og produksjon) hentet inn som Node.js-moduler (definert i fila package.json).
+
+### Pakking
+Javascript ligger lagret modulvis i et mappesystem som er strukturert rundt bruksområde:
+
+- source/js/prototyping/ inneholder funksjonalitet som bare brukes i prototype-sammenheng
+- source/js/production/ inneholder funksjonalitet som brukes i produksjon
+
+Hvert prosjekt har en egen init fil som henter inn modulene de har behov for. Filen "config.json" inneholder konfigurasjonen for hvordan modulene og bibliotekene blir kombinert for å danne produksjonsfilene til hvert prosjekt. Den leses av Gulp for å generere produksjonsfilene.
+
+### Distribuert kode
+JavaScript-kode for Altinns brukergrensesnitt leveres som produksjonsfiler:
+
+- dist/js/infoportal.js sammenfatter internt produsert kode for de visninger og moduler som omfattes av infoportal
+- dist/js/infoportal.vendor.js sammenfatter eksterne biblioteker for de visninger og moduler som omfattes av infoportal
+- dist/js/portal.js sammenfatter internt produsert kode for de visninger og moduler som omfattes av portal
+- dist/js/portal.vendor.js sammenfatter eksterne biblioteker for de visninger og moduler som omfattes av portal
+
+### Øvrig informasjon
+En del av koden forutsetter jQuery som avhengighet. jQuery bundles imidlertid aldri med distrubusjonsfiler, grunnet utbredelsen til bibilioteket, og må derfor refereres til utenom.
+
+
+## Oppdatere Designsystemets utstillingsvindu
+Designsystemet har et eget "utstillingsvindu" (det er her du er akkurat nå). Koden for dette ligger på Git-repositoriet "[designsystem-styleguide](https://github.com/Altinn/designsystem-styleguide)." Dersom du skal oppdatere dette må du først klone Git-repositoriet og følge installasjonsveiledningen.
 
 For å importere de siste komponentene fra Pattern Lab inn i utstillingsvinduet, gå tilbake til git-repositoriet "Designsystem" (Pattern Lab), og kjør ```gulp style-guide-export``` i kommandolinjen. Alle patterns vil da havne i "designsystem-styleguide" > "patterns".
 
@@ -72,12 +98,4 @@ Her ligger følgende:
 - Innholdet fra PatternLabs "public"-mappe, slik at frontendmiljøet kan være synlig fra [altinn.github.io/DesignSystem/PatternLab](altinn.github.io/DesignSystem/PatternLab)
 - Et par andre mapper som er relevant for tidligere versjoner av prototypen
 
-For å oppdatere [altinn.github.io/DesignSystem/](altinn.github.io/DesignSystem/), kopier de nyeste filene fra "designsystem-styleguide" > "_site" og innholdet fra PatternLabs "public"-mappe. Kjør ```git checkout gh-pages``` i "Designsystem"-repositoriet, og lim inn de nye filene.
-
-```
-git add -A
-git commit -m "latest from dev"
-git pull origin gh-pages
-git push origin gh-pages
-git checkout dev
-```
+For å oppdatere [altinn.github.io/DesignSystem/](altinn.github.io/DesignSystem/), kopier de nyeste filene fra "designsystem-styleguide" > "_site" og innholdet fra PatternLabs "public"-mappe. Kjør ```git checkout gh-pages``` i "Designsystem"-repositoriet, og lim inn de nye filene. Commit til gh-pages branchen.

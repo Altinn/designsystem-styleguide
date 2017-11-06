@@ -1,17 +1,13 @@
 ---
 layout: page
-title: Altinns sidemaler
+title: Sidemaler/prototyper
 permalink: sidemaler.html
 description:
 project: altinn
 
 ---
 
-<div id="alert-no-arrow" class="a-message a-message-error a-message--arrow-off a-message--fullwidth mb-2 a-py-minus-1">
-  NB: Innholdet og sidene er under utvikling
-</div>
-
-<p class="a-leadText a-fontBold">Her finner du sidemalene som er prototypet for Altinn ved hjelp av UI-komponentene.</p>
+<p class="a-leadText a-fontBold">Her finner du sidemalene som er prototypet for Altinn i designsystemet.</p><br>
 
 <div class="form-group a-form-group a-form-group-large mb-4">
 
@@ -48,7 +44,8 @@ project: altinn
 
   <li><a href="http://altinn.github.io/DesignSystem/patterns/04-sider-portal-01-aktorvalg-10-aktorvalg-forste-gang-enkel/04-sider-portal-01-aktorvalg-10-aktorvalg-forste-gang-enkel.html">Aktørvalg</a></li>
   <li><a href="http://altinn.github.io/DesignSystem/patterns/04-sider-infoportal-20-navigasjonssider-31-temaside-v-arbeidsforhold/04-sider-infoportal-20-navigasjonssider-31-temaside-v-arbeidsforhold.html">Temaside</a></li>
-  <li><a href="http://altinn.github.io/DesignSystem/patterns/04-sider-infoportal-20-navigasjonssider-50-kolonnenavigasjon-v-skjemaoversikt/04-sider-infoportal-20-navigasjonssider-50-kolonnenavigasjon-v-skjemaoversikt.html">Kolonnenenavigasjon</a></li>
+  <li><a href="http://altinn.github.io/DesignSystem/patterns/04-sider-infoportal-20-navigasjonssider-40-temaside-filter-v-stotteordninger/04-sider-infoportal-20-navigasjonssider-40-temaside-filter-v-stotteordninger.html">Temaside for støtteordninger</a></li>
+  <li><a href="http://altinn.github.io/DesignSystem/patterns/04-sider-infoportal-20-navigasjonssider-50-kolonnenavigasjon-v-skjemaoversikt/04-sider-infoportal-20-navigasjonssider-50-kolonnenavigasjon-v-skjemaoversikt.html">Kolonnenenavigasjon for skjemaoversikt</a></li>
 
   <li><a href="http://altinn.github.io/DesignSystem/patterns/04-sider-infoportal-20-navigasjonssider-51-omraadeside/04-sider-infoportal-20-navigasjonssider-51-omraadeside.html?1507106898184">Områdeside (A-melding)</a></li>
   <li><a href="http://altinn.github.io/DesignSystem/patterns/04-sider-infoportal-30-artikkel-42-artikkel-jumbo-v-velg-foretaksform/04-sider-infoportal-30-artikkel-42-artikkel-jumbo-v-velg-foretaksform.html">Sammenlikning spørsmål</a></li>
@@ -68,25 +65,34 @@ project: altinn
 
 </ul>
 
-
-<h2 class="live-search-title"> STEGVIS PROSESS </h2>
-
-<ul class="live-search-list">
-
-  <li><a href="http://altinn.github.io/DesignSystem/versjon-altinndagen/patterns/04-sider-90-starte-enk-00-starte-enk-0/04-sider-90-starte-enk-00-starte-enk-0.html">Registrere enkeltpersonforetak</a></li>
-
-</ul>
-
-
-<h2 class="live-search-title"> SØK </h2>
+<h2 class="live-search-title"> INNBOKS </h2>
 
 <ul class="live-search-list">
 
-  <li><a href="http://altinn.github.io/DesignSystem/patterns/04-sider-infoportal-40-sok-00-sok-forside/04-sider-infoportal-40-sok-00-sok-forside.html?1507106953230">Søkeresultater</a></li>
-  <li><a href="http://altinn.github.io/DesignSystem/patterns/04-sider-infoportal-40-sok-10-sok-skjema/04-sider-infoportal-40-sok-10-sok-skjema.html">Søk med filter: skjema</a></li>
-  <li><a href="http://altinn.github.io/DesignSystem/patterns/04-sider-infoportal-40-sok-20-sok-artikkel/04-sider-infoportal-40-sok-20-sok-artikkel.html">Søk med filter: starte og drive</a></li>
+  <li><a href="http://altinn.github.io/DesignSystem/patterns/04-sider-portal-50-innboks-00-innboks/04-sider-portal-50-innboks-00-innboks.html">Innboks</a></li>
+
+  <li><a href="http://altinn.github.io/DesignSystem/patterns/04-sider-portal-50-innboks-05-innboks-arkiv/04-sider-portal-50-innboks-05-innboks-arkiv.html">Innboks arkiv</a></li>
+
+  <li><a href="http://altinn.github.io/DesignSystem/patterns/04-sider-portal-50-innboks-06-innboks-soketreff/04-sider-portal-50-innboks-06-innboks-soketreff.html">Innboks søketreff</a></li>
 
 </ul>
+
+<h2 class="live-search-title"> PROFIL </h2>
+
+<ul class="live-search-list">
+
+  <li><a href="http://altinn.github.io/DesignSystem/patterns/04-sider-portal-60-profil-roller-rettigheter-profil-roller-rettigheter/04-sider-portal-60-profil-roller-rettigheter-profil-roller-rettigheter.html">Profil, roller og rettigheter</a></li>
+
+  <li><a href="http://altinn.github.io/DesignSystem/patterns/04-sider-portal-91-klientdelegering-00-klientdelegering-fjern-rettigheter-fra-klient/04-sider-portal-91-klientdelegering-00-klientdelegering-fjern-rettigheter-fra-klient.html">Klientdelegering - Fjern rettigheter</a></li>
+
+  <li><a href="http://altinn.github.io/DesignSystem/patterns/04-sider-portal-91-klientdelegering-00-klientdelegering-gi-rettigheter-til-ansatte/04-sider-portal-91-klientdelegering-00-klientdelegering-gi-rettigheter-til-ansatte.html">Klientdelegering - Gi rettigheter</a></li>
+
+  <li><a href="http://altinn.github.io/DesignSystem/patterns/04-sider-portal-91-klientdelegering-00-klientdelegering-kvittering-gyldig/04-sider-portal-91-klientdelegering-00-klientdelegering-kvittering-gyldig.html">Klientdelegering - Fullført prosess</a></li>
+
+  <li><a href="http://altinn.github.io/DesignSystem/patterns/04-sider-portal-91-klientdelegering-00-klientdelegering-pa-fil/04-sider-portal-91-klientdelegering-00-klientdelegering-pa-fil.html">Klientdelegering på fil</a></li>
+
+</ul>
+
 
 <h2 class="live-search-title"> HJELPESENTER </h2>
 
@@ -108,7 +114,7 @@ project: altinn
 
   <li><a href="http://altinn.github.io/DesignSystem/patterns/04-sider-infoportal-35-skjemaartikkel-12-artikkel-skjema-v-amelding-a02/04-sider-infoportal-35-skjemaartikkel-12-artikkel-skjema-v-amelding-a02.html">Om skjema</a></li>
 
-  <li><a href="http://altinn.github.io/DesignSystem/patterns/04-sider-infoportal-35-skjemaartikkel-12-artikkel-skjema-v-amelding-a02/04-sider-infoportal-35-skjemaartikkel-12-artikkel-skjema-v-amelding-a02.html">Om skjema med varsel</a></li>
+  <li><a href="http://altinn.github.io/DesignSystem/patterns/04-sider-infoportal-35-skjemaartikkel-11-artikkel-skjema-v-amelding-varsler/04-sider-infoportal-35-skjemaartikkel-11-artikkel-skjema-v-amelding-varsler.html">Om skjema med varsel</a></li>
 
   <li><a href="http://altinn.github.io/DesignSystem/patterns/04-sider-infoportal-35-skjemaartikkel-53-artikkel-skjema-v-egenmeldt-sykefravaer/04-sider-infoportal-35-skjemaartikkel-53-artikkel-skjema-v-egenmeldt-sykefravaer.html">Skjema fra innboksen</a></li>
 
@@ -118,5 +124,25 @@ project: altinn
 
   <li><a href="http://altinn.github.io/DesignSystem/patterns/04-sider-infoportal-35-skjemaartikkel-58-artikkel-skjema-v-skjenkebevilling-for-skjenking-av-alkoholholdig-drikke/04-sider-infoportal-35-skjemaartikkel-58-artikkel-skjema-v-skjenkebevilling-for-skjenking-av-alkoholholdig-drikke.html">Skjema med kommunesøk</a></li>
 
+
+</ul>
+
+
+<h2 class="live-search-title"> STEGVIS PROSESS </h2>
+
+<ul class="live-search-list">
+
+  <li><a href="http://altinn.github.io/DesignSystem/versjon-altinndagen/patterns/04-sider-90-starte-enk-00-starte-enk-0/04-sider-90-starte-enk-00-starte-enk-0.html">Registrere enkeltpersonforetak</a></li>
+
+</ul>
+
+
+<h2 class="live-search-title"> SØK </h2>
+
+<ul class="live-search-list">
+
+  <li><a href="http://altinn.github.io/DesignSystem/patterns/04-sider-infoportal-40-sok-00-sok-forside/04-sider-infoportal-40-sok-00-sok-forside.html?1507106953230">Søkeresultater</a></li>
+  <li><a href="http://altinn.github.io/DesignSystem/patterns/04-sider-infoportal-40-sok-10-sok-skjema/04-sider-infoportal-40-sok-10-sok-skjema.html">Søk med filter: skjema</a></li>
+  <li><a href="http://altinn.github.io/DesignSystem/patterns/04-sider-infoportal-40-sok-20-sok-artikkel/04-sider-infoportal-40-sok-20-sok-artikkel.html">Søk med filter: starte og drive</a></li>
 
 </ul>

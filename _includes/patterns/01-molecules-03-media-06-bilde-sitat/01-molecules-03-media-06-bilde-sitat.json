@@ -7,7 +7,7 @@
 	"themeJsVendor": "../../js/altinnDev.vendor.js",
 	"img": {
 		"landscape-16x9": {
-			"src": "../../images/img2.jpg",
+			"src": "/designsystem-styleguide/images/img2.jpg",
 			"alt": "Post Thumbnail"
 		}
 	}

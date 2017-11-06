@@ -52,7 +52,7 @@
 		}
 	],
 	"label-class": "badge-primary",
-	"label-id": "label",
+	"label-id": false,
 	"label-content": "9",
 	"button-text": "En knapp stylet som en link som antyder fare",
 	"button-class": "a-btn-link a-linkDanger",
@@ -392,7 +392,7 @@
 	"search-algorithm": "show-and-highlight",
 	"search-target": "employee-table",
 	"table-actions-id": "employee-table",
-	"logo": "../../images/a-logo-white.svg",
+	"logo": "/designsystem-styleguide/images/a-logo-white.svg",
 	"logo-class": "a-modal-top-logo",
 	"modal-title": "Gi og fjerne rettigheter",
 	"cancel-link": {

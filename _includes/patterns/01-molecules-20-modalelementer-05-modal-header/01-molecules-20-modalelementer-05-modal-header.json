@@ -26,7 +26,7 @@
 		"icon-sr-only-text": "Min profil"
 	},
 	"logo": {
-		"logo": "../../images/a-logo-black.svg"
+		"logo": "/designsystem-styleguide/images/a-logo-black.svg"
 	},
 	"logo-class": "a-modal-top-logo",
 	"show-login": false,

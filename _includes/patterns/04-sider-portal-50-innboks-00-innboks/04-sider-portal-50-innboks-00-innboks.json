@@ -159,7 +159,7 @@
 			},
 			"dropdown-item-content": "Alt innhold er tilgjengelig på bokmål.",
 			"dropdown-item-content-class": "a-fontBold",
-			"dropdown-item-image": "../../images/norsk.svg",
+			"dropdown-item-image": "/designsystem-styleguide/images/norsk.svg",
 			"dropdown-item-image-class": "a-iconLeft a-flag",
 			"dropdown-item-title": "Bokmål"
 		},
@@ -172,7 +172,7 @@
 			},
 			"dropdown-item-content": "All content is available in english.",
 			"dropdown-item-content-class": "a-fontBold",
-			"dropdown-item-image": "../../images/english.svg",
+			"dropdown-item-image": "/designsystem-styleguide/images/english.svg",
 			"dropdown-item-image-class": "a-iconLeft a-flag",
 			"language": "lang=\"en\"",
 			"dropdown-item-title": "English"
@@ -186,12 +186,12 @@
 			},
 			"dropdown-item-content": "Det er førebels berre skjema som er tilgjengelig på nynorsk. Andre sider vil vises med bokmål.",
 			"dropdown-item-content-class": "a-fontBold",
-			"dropdown-item-image": "../../images/norsk.svg",
+			"dropdown-item-image": "/designsystem-styleguide/images/norsk.svg",
 			"dropdown-item-image-class": "a-iconLeft a-flag",
 			"dropdown-item-title": "Nynorsk"
 		},
 		{
-			"dropdown-item-image": "../../images/globe.svg",
+			"dropdown-item-image": "/designsystem-styleguide/images/globe.svg",
 			"dropdown-item-image-class": "a-iconLeft a-flag a-globe",
 			"language": "lang=\"en\"",
 			"dropdown-item-title": "Other languages",
@@ -199,7 +199,7 @@
 		}
 	],
 	"label-class": "badge-primary",
-	"label-id": "label",
+	"label-id": false,
 	"label-content": "9",
 	"button-colorClass": "",
 	"button-shadow-label": false,
@@ -847,21 +847,24 @@
 			"button-shadow-label": false
 		}
 	],
-	"imageurl": "../../images/temp-placeholder.svg",
+	"imageurl": "/designsystem-styleguide/images/illustrasjon_starte_og_drive_sirkel.svg",
 	"check-legend": {
 		"check-legendText": "Velg ett eller flere alternativer"
 	},
 	"checkboxes": [
 		{
+			"isChecked": false,
 			"checkboxes-title": "Kryss av i den første avkrysningsboksen"
 		},
 		{
+			"isChecked": false,
 			"checkboxes-title": "Kryss av i den andre avkrysningsboksen"
 		}
 	],
 	"firstLevelColClass": "col-12",
 	"secondLevelColClass": "col-12 col-md-3",
 	"hrExtraClass": "a-hrLight",
+	"loadmoreSearch": false,
 	"firstLevelCheckboxes": [
 		{
 			"hasSecondLevel": true,
@@ -921,6 +924,134 @@
 				}
 			],
 			"hasSecondLevel": false
+		}
+	],
+	"profile-sok": {
+		"text-input-id": "search-for-profiles-1",
+		"text-input-placeholder": "Søk etter profil",
+		"input-type": "search",
+		"isRequired": false,
+		"extra-help": false,
+		"isHidden": false,
+		"isLarge": false,
+		"top-label": false,
+		"form-control-class": "",
+		"form-input-hasButton": false,
+		"form-input-isPassword": false,
+		"form-label-hasIcon": {
+			"icon-prefix": "ai",
+			"icon-class": "ai-others"
+		}
+	},
+	"select-all": {
+		"check-legend": false,
+		"checkboxes": [
+			{
+				"checkboxes-title-class": "a-fontBold ml-1",
+				"checkboxes-title": "Velg alle"
+			}
+		]
+	},
+	"selected-items": {
+		"label-class": "badge-primary a-bgBlueLighter",
+		"label-id": "profiles-selected",
+		"label-content": "2 profiler valgt"
+	},
+	"checkbox-list": [
+		{
+			"checkbox-list-id": "forSelectionList",
+			"loadmoreSearch": {
+				"icon-prefix": "ai ai-nw ai-nw-pr",
+				"icon-class": "ai-plus",
+				"icon-size": "",
+				"icon-extra-class": "",
+				"icon-text": "",
+				"icon-id": false,
+				"sr-only": false,
+				"aria-hidden": false,
+				"stacked-background": false,
+				"icon-post-text": false,
+				"icon-title": false,
+				"icon-sr-only-text": false,
+				"linkIcon-url": "#",
+				"linkIcon-text": "Last flere",
+				"text-class": "a-fontBold"
+			},
+			"firstLevelCheckboxes": [
+				{
+					"hasSecondLevel": false,
+					"isStacked": "custom-controls-stacked",
+					"secondLevelId": "secondNestedLevel",
+					"check-legend": false,
+					"checkboxes": [
+						{
+							"checkboxes-title": "<b>Organisasjon 1 AS</b> org. nr. 123 456 001"
+						}
+					]
+				},
+				{
+					"hasSecondLevel": false,
+					"isStacked": "custom-controls-stacked",
+					"secondLevelId": "secondNestedLevel",
+					"check-legend": false,
+					"checkboxes": [
+						{
+							"checkboxes-title": "<b>Organisasjon 2 AS</b> org. nr. 123 456 002"
+						}
+					]
+				},
+				{
+					"hasSecondLevel": false,
+					"isStacked": "custom-controls-stacked",
+					"secondLevelId": "secondNestedLevel",
+					"check-legend": false,
+					"checkboxes": [
+						{
+							"checkboxes-title": "<b>Organisasjon 3 AS</b> org. nr. 123 456 003"
+						}
+					]
+				},
+				{
+					"hasSecondLevel": false,
+					"isStacked": "custom-controls-stacked",
+					"secondLevelId": "secondNestedLevel",
+					"check-legend": false,
+					"checkboxes": [
+						{
+							"checkboxes-title": "<b>Organisasjon 4 AS</b> org. nr. 123 456 004"
+						}
+					]
+				}
+			]
+		},
+		{
+			"checkbox-list-id": "selectedProfiles",
+			"firstLevelCheckboxes": [
+				{
+					"hasSecondLevel": false,
+					"isStacked": "custom-controls-stacked",
+					"secondLevelId": "secondNestedLevel",
+					"check-legend": false,
+					"checkboxes": [
+						{
+							"isChecked": true,
+							"checkboxes-title": "<b>Organisasjon 5 AS</b> org. nr. 123 456 005"
+						}
+					]
+				},
+				{
+					"hasSecondLevel": false,
+					"isStacked": "custom-controls-stacked",
+					"secondLevelId": "secondNestedLevel",
+					"check-legend": false,
+					"checkboxes": [
+						{
+							"isChecked": true,
+							"checkboxes-title": "<b>Organisasjon 6 AS</b> org. nr. 123 456 006"
+						}
+					]
+				}
+			]
 		}
 	],
 	"date-input-label": "Dato:",
@@ -1433,11 +1564,11 @@
 		"icon-extra-class": "a-personSwitcher-icon a-js-onboardingTarget-1",
 		"icon-sr-only-text": "Min profil"
 	},
-	"logo": "../../images/a-logo-blue.svg",
+	"logo": "/designsystem-styleguide/images/a-logo-blue.svg",
 	"logo-class": "a-modal-top-logo",
 	"NAMESPACED-OUT-AS-AN-EXAMPLE--NOT-USED-BY-PATTERN--TECHNICAL-DEBT": {
 		"subheader-color": "a-bgBlueDarker a-compact",
-		"logo": "../../images/a-logo-white.svg",
+		"logo": "/designsystem-styleguide/images/a-logo-white.svg",
 		"display-as-dropdown": true,
 		"dropdown-personswitch": true,
 		"variation": "search-header",
@@ -1456,7 +1587,7 @@
 		"sub-header": {
 			"header-color": "",
 			"subheader-extraclass": false,
-			"logo": "../../images/a-logo-blue.svg",
+			"logo": "/designsystem-styleguide/images/a-logo-blue.svg",
 			"display-as-dropdown": false
 		},
 		"filter-sok": {
@@ -1988,26 +2119,26 @@
 		"dropdown-class": "a-dropdown-languages",
 		"dropdown-item": [
 			{
-				"dropdown-item-image": "../../images/norsk.svg",
+				"dropdown-item-image": "/designsystem-styleguide/images/norsk.svg",
 				"dropdown-item-image-class": "a-iconLeft a-flag",
 				"dropdown-item-title": "Bokmål",
 				"dropdown-item-content": "Alt innhold er tilgjengelig på bokmål."
 			},
 			{
-				"dropdown-item-image": "../../images/english.svg",
+				"dropdown-item-image": "/designsystem-styleguide/images/english.svg",
 				"dropdown-item-image-class": "a-iconLeft a-flag",
 				"language": "lang=\"en\"",
 				"dropdown-item-title": "English",
 				"dropdown-item-content": "All content is available in english."
 			},
 			{
-				"dropdown-item-image": "../../images/norsk.svg",
+				"dropdown-item-image": "/designsystem-styleguide/images/norsk.svg",
 				"dropdown-item-image-class": "a-iconLeft a-flag",
 				"dropdown-item-title": "Nynorsk",
 				"dropdown-item-content": "Det er førebels berre skjema som er tilgjengelig på nynorsk. Andre sider vil vises med bokmål."
 			},
 			{
-				"dropdown-item-image": "../../images/globe.svg",
+				"dropdown-item-image": "/designsystem-styleguide/images/globe.svg",
 				"dropdown-item-image-class": "a-iconLeft a-flag a-globe",
 				"language": "lang=\"en\"",
 				"dropdown-item-title": "Other languages",

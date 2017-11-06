@@ -3,7 +3,7 @@ layout: page
 title: Designprinsipper
 group: retningslinjer-brreg
 permalink: /retningslinjer-brreg/designprinsipper.html
-description: Brønnøysundregistrene retningslinjer
+description: Retningslinjer
 
 
 ---

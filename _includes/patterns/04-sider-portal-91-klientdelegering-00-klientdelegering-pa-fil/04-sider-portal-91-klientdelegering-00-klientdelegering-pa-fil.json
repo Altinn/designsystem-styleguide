@@ -92,7 +92,7 @@
 		}
 	],
 	"label-class": "badge-primary",
-	"label-id": "label",
+	"label-id": false,
 	"label-content": "9",
 	"button-text": "En standard knapp",
 	"button-class": "a-btn",
@@ -2143,7 +2143,7 @@
 	"search-target": "employee-table",
 	"table-actions-id": "employee-table",
 	"logo": {
-		"logo": "../../images/a-logo-black.svg"
+		"logo": "/designsystem-styleguide/images/a-logo-black.svg"
 	},
 	"logo-class": "a-modal-top-logo",
 	"modal-title": "Gi og fjerne rettigheter",
@@ -3200,7 +3200,7 @@
 		"title": "Altinn",
 		"bodyClass": "a-modal-background-success",
 		"logo": {
-			"logo": "../../images/a-logo-black.svg"
+			"logo": "/designsystem-styleguide/images/a-logo-black.svg"
 		},
 		"login-name": "JAN PETTERSEN",
 		"modalBack": true,
@@ -3364,9 +3364,11 @@
 	},
 	"checkboxes": [
 		{
+			"isChecked": false,
 			"checkboxes-title": "Kryss av i den første avkrysningsboksen"
 		},
 		{
+			"isChecked": false,
 			"checkboxes-title": "Kryss av i den andre avkrysningsboksen"
 		}
 	],
@@ -3691,7 +3693,7 @@
 	},
 	"NAMESPACED-OUT-AS-AN-EXAMPLE--NOT-USED-BY-PATTERN--TECHNICAL-DEBT": {
 		"subheader-color": "a-bgBlueDarker a-compact",
-		"logo": "../../images/a-logo-white.svg",
+		"logo": "/designsystem-styleguide/images/a-logo-white.svg",
 		"display-as-dropdown": true,
 		"dropdown-personswitch": true,
 		"variation": "search-header",

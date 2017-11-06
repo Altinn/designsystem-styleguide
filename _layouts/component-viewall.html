@@ -7,7 +7,7 @@ layout: default
 <div class="l-container">
 
   <div id="alert-no-arrow" class="a-message a-message-error a-message--arrow-off a-message--fullwidth mb-2 a-py-minus-1 display-brreg">
-    NB: Disse komponentene vil snart få et eget brreg-theme, men dette er ikke helt klart enda. Inntil videre vil du derfor se Altinns visuelle theme her.
+    NB: Disse komponentene vil snart få et eget brreg-theme. Inntil dette er klart vil du se Altinns visuelle theme på komponentene.
   </div>
 
   <div class="form-group a-form-group a-form-group-large mb-4">
@@ -48,7 +48,7 @@ layout: default
 
                         		<section class="c-section u-margin-bottom-none c-section-viewall">
                         			<header class="c-section__header c-section__header--bare d-flex justify-content-between">
-                        				<h2 class="c-section__title">{{ componentPage.title }} <span class="a-meta-text a-dimText7">({{ variation.title }})</span> </h2>
+                        				<a href="{{ componentPage.permalink  | prepend: site.baseurl }}"> <h2 class="c-section__title">{{ componentPage.title }} <span class="a-meta-text a-dimText7">({{ variation.title }})</span> </h2></a>
                                 <div class="">
                                   <span class="badge {{ componentPage.statecolor }} a-label badge-pill">{{ componentPage.state }}</span>
                                 </div>
@@ -69,19 +69,18 @@ layout: default
 
                         					{% capture componentString %}{{ atomicNumber }}-{{ variation.includeClassification }}-{{ variation.includeCategory }}-{{ variation.includeName }}{% endcapture %}
                         					{% capture iframePath %}patterns/{{ componentString }}/{{ componentString }}.markup-only.html{% endcapture %}
-																	
+
             											<div class="iffframe">
-																			<div class="iffframe__iframe">
-																			{% include {{ iframePath }} %} 
-																			</div>
-            											    <!-- frame class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="{{ iframePath  | prepend: site.baseurl }}"></iframe -->
-																			<div class="iffframe__handle"></div>
+
+																			{% include {{ iframePath }} %}
+            											    <!-- frame class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="{{ iframePath  | prepend: site.baseurl }}"></iframe>
+																			<div class="iffframe__handle"></div>-->
             											</div><!--end iffframe-->
 
 
                         				</div><!-- end c-pattern-example -->
 
-                        				<a href="{{ componentPage.permalink  | prepend: site.baseurl }}"> Mer info om {{ componentPage.title }} </a>
+                        				<!--<a href="{{ componentPage.permalink  | prepend: site.baseurl }}"> Mer info om {{ componentPage.title }} </a>-->
 
                         			</div><!-- end l-section__body -->
 
