@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Sidemaler/prototyper
-permalink: sidemaler.html
+title: Prototyper
+permalink: prototyper.html
 description:
 project: altinn
 

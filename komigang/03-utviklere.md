@@ -8,10 +8,6 @@ description: Kom i gang
 
 ---
 
-<div id="alert-no-arrow" class="a-message a-message-error a-message--arrow-off a-message--fullwidth mb-2 a-py-minus-1">
-  NB: Innholdet og sidene er under utvikling
-</div>
-
 <p class="a-leadText a-fontBold">Selv om Altinn er satt sammen av flere ulike bakenforliggende system, sørger vi for en helhetlig og konsistent brukeropplevelse ved hjelp av designsystemet som binder det hele sammen.</p>
 
 Siden vi er flere ulike team som jobber med ulike løsninger (men med samme brukergrensesnitt), trenger vi et felles sted for frontend. Dette er for å sikre at vi kun lager komponentene èn gang og at de fremtrer konsistent i brukergrensesnittet selv om de er implementert i ulike løsninger.
