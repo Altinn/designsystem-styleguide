@@ -5633,8 +5633,8 @@
 				
 			
 				
-				<a href="/designsystem-styleguide/sidemaler.html" class="c-primary-nav__link ">
-					<span class="c-primary-nav__text">Sidemaler</span>
+				<a href="/designsystem-styleguide/prototyper.html" class="c-primary-nav__link ">
+					<span class="c-primary-nav__text">Prototyper</span>
 				</a>
 				
 			
@@ -11169,27 +11169,34 @@
 	<div class="c-text-passage a-text">
 		<p>NB: Som frontendutvikler bør du også ha lest gjennom <a href="/designsystem-styleguide/komigang/utviklere.html">Kom i gang for utviklere</a> .</p>
 
-<h2 id="css---regler-og-utilities">CSS - regler og utilities</h2>
+<h2 id="css-regler">CSS-regler</h2>
 
 <p>For å få en felles forståelse av “best practice” for frontend-utvikling i Altinn har vi samlet noen regler for CSS, samt utilities-klassene vi opererer med</p>
 
 <ul>
   <li>Skriv all CSS ved hjelp av SASS/SCSS</li>
-  <li>Alle variabler skal inn i “variables.scss”</li>
+  <li>Alle variabler skal inn i “variables.scss”. Prosjekter med eget theme kan overstyre variablene i sin egen variables-fil.</li>
   <li>Bruk kun klasser til stilsetting, ikke ID’er.</li>
   <li>Kun engelske klassenavn, id-navn og kommentarer</li>
 </ul>
 
 <h3 id="prefikser">Prefikser</h3>
 
-<p>For å hjelpe utviklere å skille mellom klasser som kommer fra Bootstrap, Patternlab og klasser som er ment for å stilsette Altinns UI-komponenter, bruker vi prefikser som start på egendefinerte klasser.</p>
+<p>For å kunne skille mellom klasser som kommer fra Bootstrap, Patternlab og klasser som er ment for å stilsette Altinns UI-komponenter, bruker vi prefikser som start på egendefinerte klasser.</p>
 
 <ul>
   <li>.a-… Spesifiserer stilsetting for Altinns UI-komponenter</li>
-  <li>.a-st-… Spesifiserer stilsetting for presentasjon av designsystemet ( <a href="https://altinn.github.io/designsystem-styleguide/">storefront</a>)</li>
-  <li>.sg-… Stilsetting for selve Pattern Lab og overstyring av default design.</li>
   <li>.a-sg-… Stilsetting lagt til for å utvide Pattern Lab’s design</li>
   <li>.a-js-… For JavaScript og dens funksjoner</li>
+  <li>.a-st-… Spesifiserer stilsetting for presentasjon av designsystemet ( <a href="https://github.com/Altinn/designsystem-styleguide">storefront</a>)
+<br /><br />
+Dersom en løsning skal ha et eget theme, kan Altinns styling overstyres ved å neste css’en inni en klasse som blir lagt på body, f.eks <code class="highlighter-rouge">.project-altinnett</code>.</li>
+</ul>
+
+<p>Dersom nye klasser introduseres for et prosjekt, bruk egen prefix, f.eks;</p>
+<ul>
+  <li>.br- … Spesifiserer stilsetting for Brønnøysundregistrenes UI-komponenter</li>
+  <li>.an- … Spesifiserer stilsetting for Altinnetts UI-komponenter</li>
 </ul>
 
 <h3 id="css-konvensjon">CSS Konvensjon</h3>
@@ -11224,10 +11231,50 @@
 
 <p>Sortering av element properties er satt til å ta utgangspunktet i bootstrap sin PropertySortOrder <a href="https://github.com/twbs/bootstrap/blob/v4-dev/scss/.scss-lint.yml">https://github.com/twbs/bootstrap/blob/v4-dev/scss/.scss-lint.yml</a>.</p>
 
-<h2 id="javascript">JavaScript</h2>
-<p>For linting av javascript bruker vi airbnb sine regler, med noen custom overrides som finnes i .eslintrc.js.</p>
+<h2 id="css-utilities">CSS-utilities</h2>
+<p>Se Bootstraps sider for <a href="https://v4-alpha.getbootstrap.com/utilities/borders/">utilities</a>. Vi har i tillegg noen egne utilities:</p>
 
-<p>NB: Man vil ikke kunne committe til github dersom det er linting-feil i koden. Dette gjelder også for css-linting.</p>
+<ul>
+  <li>
+    <p>Fontweight: <code class="highlighter-rouge">.a-fontLight</code> <code class="highlighter-rouge">.a-fontReg</code>  <code class="highlighter-rouge">.a-fontMedium</code>  <code class="highlighter-rouge">.a-fontBold</code></p>
+  </li>
+  <li>
+    <p>Overskrifter: <code class="highlighter-rouge">.a-h1</code> <code class="highlighter-rouge">.a-h2</code>  <code class="highlighter-rouge">.a-h3</code>  <code class="highlighter-rouge">.a-h4</code></p>
+  </li>
+  <li>
+    <p>Bakgrunn: <code class="highlighter-rouge">.a-bgWhite</code> <code class="highlighter-rouge">.a-textGreen</code> <code class="highlighter-rouge">.a-bgGreen</code> <code class="highlighter-rouge">.a-bgGreenLight</code> <code class="highlighter-rouge">.a-bgGreenLighter</code> <code class="highlighter-rouge">.a-bgBlue</code> <code class="highlighter-rouge">.a-bgBlueLight</code> <code class="highlighter-rouge">.a-bgBlueLighter</code> <code class="highlighter-rouge">.a-bgPurple</code> <code class="highlighter-rouge">.a-bgPurpleLight</code> <code class="highlighter-rouge">.a-bgYellow</code> <code class="highlighter-rouge">.a-bgYellowLight</code>  <code class="highlighter-rouge">.a-bgRed</code>   <code class="highlighter-rouge">.a-bgRedLight</code></p>
+  </li>
+  <li>
+    <p>Deaktivert bakgrunn: <code class="highlighter-rouge">.a-textureLines</code></p>
+  </li>
+  <li>
+    <p>Tekstfarger: <code class="highlighter-rouge">.a-textWhite</code> <code class="highlighter-rouge">.a-textBlue</code></p>
+  </li>
+  <li>
+    <p>Stiplet linje i lister: <code class="highlighter-rouge">.a-dotted</code> <code class="highlighter-rouge">.a-dotted-line-top</code></p>
+  </li>
+  <li>
+    <p>Lenker uten understrek: <code class="highlighter-rouge">.a-noUnderline</code></p>
+  </li>
+  <li>
+    <p>Maks tre linjer tekst: <code class="highlighter-rouge">.a-maxThreeLines2</code></p>
+  </li>
+  <li>
+    <p>Position: <code class="highlighter-rouge">.a-p-relative</code> <code class="highlighter-rouge">.a-p-static</code></p>
+  </li>
+  <li>
+    <p>Display: <code class="highlighter-rouge">a-displayBlock</code></p>
+  </li>
+</ul>
+
+<div id="alert-no-arrow" class="a-message a-message-error a-message--arrow-off a-message--fullwidth mb-2 a-py-minus-1">
+  NB: Denne listen er ikke fullstendig per 6.nov 2017.
+</div>
+
+<h2 id="javascript">JavaScript</h2>
+<p>For linting av javascript bruker vi airbnb sine regler, med noen custom overrides som finnes i <code class="highlighter-rouge">.eslintrc.js</code>.</p>
+
+<p>Man vil <em>ikke</em> kunne committe til github dersom det er linting-feil i koden. Dette gjelder også for css-linting.</p>
 
 <h2 id="kodekvalitet">Kodekvalitet</h2>
 
