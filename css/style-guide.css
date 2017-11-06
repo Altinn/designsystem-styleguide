@@ -354,6 +354,8 @@ code[class*="language-"], pre[class*="language-"] {
     display: block;
     height: calc(100vh - 242px);
     overflow-y: scroll; }
+    .a-st .c-header__nav-container .display-altinn {
+      display: block; }
   .a-st .c-header--vertical .c-primary-nav {
     margin-left: 0;
     margin-right: 0; }
