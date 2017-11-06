@@ -37,45 +37,53 @@ jQuery(document).ready(function($) {
   $('.live-search-list li.c-lined-list__item').each(function(){
       $(this).attr('data-search-term', $(this).text().toLowerCase());
   });
-
    $('.live-search-box').on('keyup', function(){
-
-   var searchTerm = $(this).val().toLowerCase();
-       $('.live-search-list li.c-lined-list__item').each(function(){
-           if ($(this).filter('[data-search-term *= ' + searchTerm + ']').length > 0 || searchTerm.length < 1) {
-               $(this).show();
-               $('.live-search-title').show();
-           } else {
-               $(this).hide();
-               $('.live-search-title').hide();
-           }
-       });
-   });
+     var searchTerm = $(this).val().toLowerCase();
+     var hit = false;
+     $('.no-results-element').hide(); // this element should have the text “Ingen treff”
+     $('.live-search-list li.c-lined-list__item').each(function(){
+         if ($(this).filter('[data-search-term *= ' + searchTerm + ']').length > 0 || searchTerm.length < 1) {
+             $(this).show();
+             $('.live-search-title').show();
+             hit = true;
+         } else {
+             $(this).hide();
+             $('.live-search-title').hide();
+         }
+     });
+     if (hit === false) {
+         $('.no-results-element').show();
+     }
  });
+});
 
  /*
  * LIVE SEARCH IN TEMPLATES
  */
 
- jQuery(document).ready(function($) {
+jQuery(document).ready(function($) {
    $('.live-search-list li').each(function(){
        $(this).attr('data-search-term', $(this).text().toLowerCase());
    });
-
     $('.live-search-box').on('keyup', function(){
-
-    var searchTerm = $(this).val().toLowerCase();
-        $('.live-search-list li').each(function(){
-            if ($(this).filter('[data-search-term *= ' + searchTerm + ']').length > 0 || searchTerm.length < 1) {
-                $(this).show();
-                $('.live-search-title').show();
-            } else {
-                $(this).hide();
-                $('.live-search-title').hide();
-            }
-        });
-    });
+      var searchTerm = $(this).val().toLowerCase();
+      var hit = false;
+      $('.no-results-element').hide(); // this element should have the text “Ingen treff”
+      $('.live-search-list li').each(function(){
+          if ($(this).filter('[data-search-term *= ' + searchTerm + ']').length > 0 || searchTerm.length < 1) {
+              $(this).show();
+              $('.live-search-title').show();
+              hit = true;
+          } else {
+              $(this).hide();
+              $('.live-search-title').hide();
+          }
+      });
+      if (hit === false) {
+          $('.no-results-element').show();
+      }
   });
+});
 
  /*
  * Get text from chosen theme

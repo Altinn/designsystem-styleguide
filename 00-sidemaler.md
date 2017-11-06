@@ -146,3 +146,6 @@ project: altinn
   <li><a href="http://altinn.github.io/DesignSystem/patterns/04-sider-infoportal-40-sok-20-sok-artikkel/04-sider-infoportal-40-sok-20-sok-artikkel.html">Søk med filter: starte og drive</a></li>
 
 </ul>
+
+
+<div class="no-results-element">Ingen treff</div>
