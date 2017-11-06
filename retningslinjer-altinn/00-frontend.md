@@ -49,13 +49,13 @@ For å sikre konsistens i CSS-koden, skiller vi modul, komponent og state med bi
 
 ### Sass-lint med custom policies
 
-Der det er sammenfallende regler med linting av javascript er disse like. Dette gjelder i hovedsak innrykk som settes som 2xspace. Alle regler for linting av sass ligger i filen «.sass-lint.yml». Her ligger det også lenker til dokumentasjonen for de spesifikke reglene. Om en regel er satt til 0 er den skrudd av, 1 vil gi en warning og 2 vil gi en feil.
+Der det er sammenfallende regler med linting av javascript er disse like. Dette gjelder i hovedsak innrykk som settes som 2xspace. Alle regler for linting av sass ligger i filen ```.sass-lint.yml```. Her ligger det også lenker til dokumentasjonen for de spesifikke reglene. Om en regel er satt til 0 er den skrudd av, 1 vil gi en warning og 2 vil gi en feil.
 
 Man kan sette opp automatisk linting av scss i Visual Studio Code, installer extension «vscode-sass-lint»: [https://marketplace.visualstudio.com/items?itemName=glen-84.sass-lint](https://marketplace.visualstudio.com/items?itemName=glen-84.sass-lint) .
 
-For å linte sass fra kommandolinjen kjør «npm run sass» eller «./node_modules/.bin/sass-lint –v -q» fra roten av git-repoet. Om man bruker «npm run sass» vil kommandoen gi en feilmelding til slutt om man har noen feil eller warnings. Derfor kan det være ryddigere å bruke den andre kommandoen.
+For å linte sass fra kommandolinjen kjør ```npm run sass``` eller ```./node_modules/.bin/sass-lint –v -q``` fra roten av git-repoet. Om man bruker «npm run sass» vil kommandoen gi en feilmelding til slutt om man har noen feil eller warnings. Derfor kan det være ryddigere å bruke den andre kommandoen.
 
-For å linte en spesifikk sass fil, bruk kommandoen «./node_modules/.bin/sass-lint –v –q source/css/scss/<mappenavn>/<filnavn>».
+For å linte en spesifikk sass fil, bruk kommandoen ```./node_modules/.bin/sass-lint –v –q source/css/scss/<mappenavn>/<filnavn>```
 
 Sortering av element properties er satt til å ta utgangspunktet i bootstrap sin PropertySortOrder [https://github.com/twbs/bootstrap/blob/v4-dev/scss/.scss-lint.yml](https://github.com/twbs/bootstrap/blob/v4-dev/scss/.scss-lint.yml).
 

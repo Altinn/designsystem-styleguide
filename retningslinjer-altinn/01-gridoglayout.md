@@ -8,10 +8,6 @@ description: Retningslinjer
 
 ---
 
-<div id="alert-no-arrow" class="a-message a-message-error a-message--arrow-off a-message--fullwidth mb-2 a-py-minus-1">
-  NB: Innholdet og sidene er under utvikling
-</div>
-
 <p class="a-leadText a-fontBold">Altinn’s responsive brukergrensesnitt er basert på en 12-kolonners grid layout, samt et sett definerte avstander som tar utgangspunkt i 12px som base.</p>
 
 ## Bootstrap grid

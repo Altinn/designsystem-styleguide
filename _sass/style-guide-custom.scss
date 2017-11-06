@@ -321,6 +321,10 @@ $blue-dark: #0062BA;
 	    display: block;
 			height: calc(100vh - 242px);
 	    overflow-y: scroll;
+
+			.display-altinn {
+				display: block;
+			}
 	}
 	.c-header--vertical {
 
