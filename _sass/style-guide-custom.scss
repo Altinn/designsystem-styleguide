@@ -352,7 +352,8 @@ $blue-dark: #0062BA;
 			}
 			.c-primary-nav__link {
 				&.is-current {
-					font-weight: bold;
+					font-family: 'DIN-medium';
+					font-weight: normal;
 					border-left: 6px solid #0062BA;
 					padding-left: 12px;
 					background: #f5f7fa;
@@ -366,10 +367,12 @@ $blue-dark: #0062BA;
 			}
 			&.is-active {
 				background: #f5f7fa;
+				font-weight: normal;
 
 				.c-primary-nav__link--has-children {
 					background: #e0e4ea;
 					padding-left: 18px;
+					font-family: 'DIN-medium';
 				}
 
 				.c-primary-nav__sublist {
@@ -380,10 +383,16 @@ $blue-dark: #0062BA;
 					.c-primary-nav__sublink {
 						padding-left: 24px;
 
+						&.is-active {
+							font-weight: normal;
+						}
+
 						&.is-current {
 							border-left: 6px solid $blue-dark;
 							padding-left: 18px;
 							background: #f5f7fa;
+							font-family: 'DIN-medium';
+							font-weight: normal;
 						}
 					}
 

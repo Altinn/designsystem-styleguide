@@ -66,7 +66,7 @@ Se Bootstraps sider for [utilities](https://v4-alpha.getbootstrap.com/utilities/
 
 - Overskrifter: ```.a-h1``` ```.a-h2```  ```.a-h3```  ```.a-h4```
 
-- Bakgrunn: ```.a-bgWhite``` ```.a-textGreen``` ```.a-bgGreen``` ```.a-bgGreenLight``` ```.a-bgGreenLighter``` ```.a-bgBlue``` ```.a-bgBlueLight``` ```.a-bgBlueLighter``` ```.a-bgPurple``` ```.a-bgPurpleLight``` ```.a-bgYellow``` ```.a-bgYellowLight```  ```.a-bgRed```   ```.a-bgRedLight```
+- Bakgrunn: ```.a-bgWhite``` ```.a-bgGreen``` ```.a-bgGreenLight``` ```.a-bgGreenLighter``` ```.a-bgBlue``` ```.a-bgBlueLight``` ```.a-bgBlueLighter``` ```.a-bgPurple``` ```.a-bgPurpleLight``` ```.a-bgYellow``` ```.a-bgYellowLight```  ```.a-bgRed```   ```.a-bgRedLight```
 
 - Deaktivert bakgrunn: ```.a-textureLines```
 
