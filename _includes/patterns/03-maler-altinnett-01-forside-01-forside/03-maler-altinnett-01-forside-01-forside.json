@@ -11,9 +11,9 @@
 	"icon-post-text": false,
 	"icon-title": false,
 	"icon-sr-only-text": false,
-	"themeCss": "../../css/style-altinnett.css",
-	"themeJs": "../../js/altinnettDev.js",
-	"themeJsVendor": "../../js/altinnettDev.vendor.js",
+	"themeCss": "../../css/style.dist.altinnett.css",
+	"themeJs": "../../js/altinnettPrototyping.js",
+	"themeJsVendor": "../../js/altinnettPrototyping.vendor.js",
 	"link-text": "En lenke ser slik ut",
 	"link-url": "/patterns/04-sider-infoportal-01-forside-00-forside/04-sider-infoportal-01-forside-00-forside.html",
 	"sr-text": false,
@@ -420,5 +420,6 @@
 		}
 	],
 	"title": "Altinnett",
-	"list-header": "Aktuelle skjema og tjenester:"
+	"list-header": "Aktuelle skjema og tjenester:",
+	"bodyClass": "project-altinnett a-bgWhite"
 }

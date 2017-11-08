@@ -1535,7 +1535,7 @@
 			"link-url": "/patterns/04-sider-portal-60-profil-roller-rettigheter-profil-roller-rettigheter/04-sider-portal-60-profil-roller-rettigheter-profil-roller-rettigheter.html"
 		}
 	},
-	"profile-text": "Alle dine aktører: ",
+	"profile-text": "Alle dine profiler: ",
 	"profile-text-class": "a-h2",
 	"personswitch-button": false,
 	"personswitch-overview": true,
@@ -2282,7 +2282,8 @@
 				{
 					"text-paragraph": {
 						"message-text": "Upersonlige skattepliktige som aksjeselskaper skal betale forskuddsskatt. Krav om reduksjon eller frafallelse av forskuddsskatt må fremsettes i god tid før siste termins forfall."
-					}
+					},
+					"extra-class": "mt-3"
 				},
 				{
 					"text-paragraph": {
@@ -2370,5 +2371,8 @@
 			"info-notice": false,
 			"expandable-content": false
 		}
-	}
+	},
+	"pre-header": false,
+	"pre-header-classes": "col-sm-12 col-lg-12 mt-1",
+	"direct-link-url": false
 }

@@ -15957,6 +15957,9 @@ body > .loader-container {
 .a-searchResults .a-iconText-text .a-label {
   margin-top: -6px; }
 
+.a-searchResults .a-iconText.a-iconText-background--white {
+  margin-top: -1px; }
+
 html {
   width: 1px;
   min-width: 100%;

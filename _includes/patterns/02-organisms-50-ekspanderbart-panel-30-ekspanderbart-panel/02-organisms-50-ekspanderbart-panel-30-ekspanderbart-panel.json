@@ -12,8 +12,8 @@
 	"themeCss": "../../css/style.css",
 	"themeJs": "./../../js/altinnDev.js",
 	"themeJsVendor": "../../js/altinnDev.vendor.js",
-	"icon-prefix": "ai",
-	"icon-class": "ai-deadline",
+	"icon-prefix": "ai ai-nw ai-nw-pr",
+	"icon-class": "ai-private",
 	"icon-size": "",
 	"icon-extra-class": "",
 	"icon-text": "",
@@ -325,5 +325,10 @@
 	},
 	"messageBody": false,
 	"extraPanelBodyClass": false,
-	"collapse-panel-content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam excepturi sit natus pariatur consequuntur labore magnam aperiam non iusto itaque cumque iste ipsum, sed molestias! Placeat quia velit dolor doloremque?"
+	"collapse-panel-content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam excepturi sit natus pariatur consequuntur labore magnam aperiam non iusto itaque cumque iste ipsum, sed molestias! Placeat quia velit dolor doloremque?",
+	"section-title": "Tittel på seksjon",
+	"extra-class": false,
+	"pre-header": false,
+	"pre-header-classes": "col-sm-12 col-lg-12 mt-1",
+	"direct-link-url": false
 }

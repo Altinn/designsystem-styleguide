@@ -1385,7 +1385,7 @@
 			"link-url": "/patterns/04-sider-portal-60-profil-roller-rettigheter-profil-roller-rettigheter/04-sider-portal-60-profil-roller-rettigheter-profil-roller-rettigheter.html"
 		}
 	},
-	"profile-text": "Alle dine aktører: ",
+	"profile-text": "Alle dine profiler: ",
 	"profile-text-class": "a-h2",
 	"personswitch-button": false,
 	"personswitch-overview": true,
@@ -1481,6 +1481,7 @@
 			},
 			"mail": false,
 			"linkIcon": {
+				"link-icon-id": "contact-form-link",
 				"linkIcon-text": "Skriv til oss",
 				"icon-prefix": "ai ai-nw ai-nw-pr",
 				"icon-class": "ai-send",

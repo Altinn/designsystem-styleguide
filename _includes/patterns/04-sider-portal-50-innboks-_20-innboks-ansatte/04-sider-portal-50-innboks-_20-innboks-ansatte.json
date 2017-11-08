@@ -1169,7 +1169,7 @@
 			"link-url": "/patterns/04-sider-portal-60-profil-roller-rettigheter-profil-roller-rettigheter/04-sider-portal-60-profil-roller-rettigheter-profil-roller-rettigheter.html"
 		}
 	},
-	"profile-text": "Alle dine aktører: ",
+	"profile-text": "Alle dine profiler: ",
 	"profile-text-class": "a-h2",
 	"personswitch-button": false,
 	"personswitch-overview": true,
@@ -1430,5 +1430,10 @@
 		"i-class": "material-icons a-box-button-icon a-blueDarkText",
 		"box-button-icon": "people",
 		"box-button-action": "Gi og fjerne rettigheter"
-	}
+	},
+	"section-title": "Tittel på seksjon",
+	"extra-class": false,
+	"pre-header": false,
+	"pre-header-classes": "col-sm-12 col-lg-12 mt-1",
+	"direct-link-url": false
 }
