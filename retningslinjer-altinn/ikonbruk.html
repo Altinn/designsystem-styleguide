@@ -772,20 +772,6 @@
 			
 
 				
-				<li class="c-primary-nav__item">
-					<a class="c-primary-nav__link " href="/designsystem-styleguide/retningslinjer-altinn/skrive.html">
-                    
-
-                    Språkguide
-
-                    
-					</a>
-				</li>
-				
-
-			
-
-				
 
 			
 
@@ -807,6 +793,20 @@
 
 			
 
+				
+
+			
+
+				
+				<li class="c-primary-nav__item">
+					<a class="c-primary-nav__link " href="/designsystem-styleguide/retningslinjer-altinn/skrive.html">
+                    
+
+                    Språkguide
+
+                    
+					</a>
+				</li>
 				
 
 			
@@ -2923,10 +2923,6 @@
 
 		
 
-	
-
-		
-
 			<li class="c-primary-nav__subitem ">
 
                 <a class="c-primary-nav__sublink " href="/designsystem-styleguide/komponenter/tekst/labels.html">
@@ -2934,6 +2930,10 @@
 				</a><!-- end c-primary-nav__link -->
 
 			</li><!-- end c-primary-nav__item -->
+
+		
+
+	
 
 		
 
@@ -3530,10 +3530,6 @@
 
 		
 
-	
-
-		
-
 			<li class="c-primary-nav__subitem ">
 
                 <a class="c-primary-nav__sublink " href="/designsystem-styleguide/komponenter/lister/punktliste.html">
@@ -3541,6 +3537,10 @@
 				</a><!-- end c-primary-nav__link -->
 
 			</li><!-- end c-primary-nav__item -->
+
+		
+
+	
 
 		
 
@@ -5478,7 +5478,7 @@
 			
 				
 				<a href="/designsystem-styleguide/prototyper.html" class="c-primary-nav__link ">
-					<span class="c-primary-nav__text">Prototyper</span>
+					<span class="c-primary-nav__text">Sidemaler</span>
 				</a>
 				
 			
@@ -6133,10 +6133,6 @@
 			
 
 				
-
-			
-
-				
 				<li class="c-primary-nav__item">
 					<a class="c-primary-nav__link " href="/designsystem-styleguide/retningslinjer-brreg/skrive.html">
                     
@@ -6146,6 +6142,10 @@
                     
 					</a>
 				</li>
+				
+
+			
+
 				
 
 			
@@ -8273,10 +8273,6 @@
 
 		
 
-	
-
-		
-
 			<li class="c-primary-nav__subitem ">
 
                 <a class="c-primary-nav__sublink " href="/designsystem-styleguide/komponenter/tekst/labels.html">
@@ -8284,6 +8280,10 @@
 				</a><!-- end c-primary-nav__link -->
 
 			</li><!-- end c-primary-nav__item -->
+
+		
+
+	
 
 		
 
@@ -8880,10 +8880,6 @@
 
 		
 
-	
-
-		
-
 			<li class="c-primary-nav__subitem ">
 
                 <a class="c-primary-nav__sublink " href="/designsystem-styleguide/komponenter/lister/punktliste.html">
@@ -8891,6 +8887,10 @@
 				</a><!-- end c-primary-nav__link -->
 
 			</li><!-- end c-primary-nav__item -->
+
+		
+
+	
 
 		
 
@@ -10851,15 +10851,23 @@
 <div class="l-container">
 
 	<div class="c-text-passage a-text">
-		<div id="alert-no-arrow" class="a-message a-message-error a-message--arrow-off a-message--fullwidth mb-2 a-py-minus-1">
-  NB: Innholdet og sidene er under utvikling
-</div>
+		<p class="a-leadText a-fontBold">Altinns ikoner er spesialtegnet for å harmonere med Altinns profilfont DIN. Ikonene fremstår i to vekter: Regular og Bold.</p>
 
-<p class="a-leadText a-fontBold">Altinns ikoner er spesialtegnet for å passe resten av uttrykket. Ikonene er tegnet i vektorgrafikk, og satt sammen til en font ved hjelp av verktøyet "FortAwesome". </p>
+<p>Ikonene er satt sammen til en font ved hjelp av verktøyet “FortAwesome”. Fonten oppdateres med nye ikoner ved å laste opp SVG-filer til <a href="https://www.fortawesome.com/">FortAwesome</a>. Kontakt UX-ansvarlig i Altinn for å få tilgang til å laste opp nye ikoner til fortAwesome.</p>
 
-<p>Fonten kan oppdateres med nye ikoner etter behov ved å laste opp SVG-filer til <a href="https://www.fortawesome.com/">FortAwesome</a>. Kontakt løsningsansvarlig på UX i Digitalisering for å få tilgang til å laste opp nye ikoner til fortAwesome.</p>
+<h2 id="retningslinjer-for-ikonbruk">Retningslinjer for ikonbruk:</h2>
+<ul>
+  <li>Ikonene skal som hovedregel ikke stå alene. De er ikke nødvendigvis selvforklarende og brukes derfor som støtteelement til tekst.</li>
+  <li>Som hovedregel settes ikonene i samme vekt som teksten den står til.</li>
+  <li>Ikoner skal brukes sparsomt og kun der de gir verdi.</li>
+  <li>Ikoner brukes for å differensiere og fremheve interaktive elementer.</li>
+  <li>Et ikon kan ikke brukes til å symbolisere flere ting</li>
+  <li>Det skal ikke benyttes ikoner som ikke er en del av ikonbiblioteket.</li>
+  <li>Utvikling av nye ikoner skal skje gjennom UX-ansvarlig i Altinn.</li>
+  <li>Hvis du ikke finner et ikon som passer og ikke har anledning til å følge disse retningslinjene vil du antagelig klare deg fint uten</li>
+</ul>
 
-<h2 id="bruk-av-ikoner">Bruk av ikoner</h2>
+<h2 id="sett-inn-et-ikon-i-html">Sett inn et ikon i HTML</h2>
 
 <p>For å sette inn et ikon, bruk følgende kode:</p>
 
@@ -10869,7 +10877,7 @@
 
 <p>Bytt ut “flag” med navnet på ikonet du vil sette inn.</p>
 
-<p>NB: Dersom ikonet står alene uten tekst, legg følgende etter:</p>
+<p><strong>NB: Dersom ikonet står alene uten tekst, legg følgende etter:</strong></p>
 
 <div class="highlighter-rouge"><pre class="highlight"><code>&lt;span class="sr-only"&gt;flag icon&lt;/span&gt;
 </code></pre>

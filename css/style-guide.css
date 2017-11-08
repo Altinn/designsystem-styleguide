@@ -466,8 +466,8 @@ code[class*="language-"], pre[class*="language-"] {
   border-top: 1px solid #dee7ef; }
   .c-section__header a {
     border: none; }
-    .c-section__header a:hover {
-      color: #1EAEF7;
+    .c-section__header a:hover, .c-section__header a:active, .c-section__header a:focus {
+      color: #0062BA;
       border: none; }
   .c-section__header h2 {
     font-size: 2.2rem; }
