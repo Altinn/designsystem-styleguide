@@ -54,7 +54,7 @@ Fargen <code>$blue</code> er dedikert til elementer som brukeren kan interagere 
 
 Deaktiverte elementer får en stiplet grå bakgrunn ved bruk av klassen <code>.a-disabled</code>
 
-<div style="width: 300px; height: 100px; cursor: not-allowed; background-color: #ffffff; color: #000; background-image: url('http://altinn.github.io/DesignSystem/images/disabled-background.svg'); text-align: center; line-height: 100px;">.a-disabled</div>
+<div class="a-disabled p-3">.a-disabled</div>
 
 ## Skygger
 

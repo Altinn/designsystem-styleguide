@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Prototyper
+title: Sidemaler
 permalink: prototyper.html
 description:
 project: altinn
@@ -15,7 +15,7 @@ project: altinn
 
     <div class="a-form-group-items input-group">
 
-    <input class="form-control a-hasButton live-search-box" type="search" placeholder="Søk etter innhold" name="input-field" data-val="true" id="text-input-find-12">
+    <input class="form-control a-hasButton live-search-box-templates" type="search" placeholder="Søk etter innhold" name="input-field" data-val="true" id="text-input-find-12">
 
     <div class="input-group-btn">
       <button onclick="" class="btn btn-secondary" type="button">
@@ -29,7 +29,7 @@ project: altinn
 
 <h2 class="live-search-title"> FORSIDER PÅ ALTINN </h2>
 
-<ul class="live-search-list">
+<ul class="live-search-list-templates">
 
   <li><a href="http://altinn.github.io/DesignSystem/public/patterns/04-sider-infoportal-01-forside-00-forside/04-sider-infoportal-01-forside-00-forside.html?1498551267012">Forside normal</a></li>
   <li><a href="http://altinn.github.io/DesignSystem/public/patterns/04-sider-infoportal-01-forside-02-forside-innlogget/04-sider-infoportal-01-forside-02-forside-innlogget.html">Forside innlogget</a></li>
@@ -40,7 +40,7 @@ project: altinn
 
 <h2 class="live-search-title"> NAVIGASJONSSIDER </h2>
 
-<ul class="live-search-list">
+<ul class="live-search-list-templates">
 
   <li><a href="http://altinn.github.io/DesignSystem/public/patterns/04-sider-portal-01-aktorvalg-10-aktorvalg-forste-gang-enkel/04-sider-portal-01-aktorvalg-10-aktorvalg-forste-gang-enkel.html">Aktørvalg</a></li>
   <li><a href="http://altinn.github.io/DesignSystem/public/patterns/04-sider-infoportal-20-navigasjonssider-31-temaside-v-arbeidsforhold/04-sider-infoportal-20-navigasjonssider-31-temaside-v-arbeidsforhold.html">Temaside</a></li>
@@ -55,7 +55,7 @@ project: altinn
 
 <h2 class="live-search-title"> ARTIKKELSIDER </h2>
 
-<ul class="live-search-list">
+<ul class="live-search-list-templates">
 
   <li><a href="http://altinn.github.io/DesignSystem/public/patterns/04-sider-infoportal-30-artikkel-14-artikkel-v-aksjeselskap/04-sider-infoportal-30-artikkel-14-artikkel-v-aksjeselskap.html?1507106597065">Vanlig artikkel</a></li>
   <li><a href="http://altinn.github.io/DesignSystem/public/patterns/04-sider-infoportal-30-artikkel-41-artikkel-jumbo-v-enkeltpersonforetak/04-sider-infoportal-30-artikkel-41-artikkel-jumbo-v-enkeltpersonforetak.html">Artikkel med toppillustrasjon</a></li>
@@ -67,7 +67,7 @@ project: altinn
 
 <h2 class="live-search-title"> INNBOKS </h2>
 
-<ul class="live-search-list">
+<ul class="live-search-list-templates">
 
   <li><a href="http://altinn.github.io/DesignSystem/public/patterns/04-sider-portal-50-innboks-00-innboks/04-sider-portal-50-innboks-00-innboks.html">Innboks</a></li>
 
@@ -79,7 +79,7 @@ project: altinn
 
 <h2 class="live-search-title"> PROFIL </h2>
 
-<ul class="live-search-list">
+<ul class="live-search-list-templates">
 
   <li><a href="http://altinn.github.io/DesignSystem/public/patterns/04-sider-portal-60-profil-roller-rettigheter-profil-roller-rettigheter/04-sider-portal-60-profil-roller-rettigheter-profil-roller-rettigheter.html">Profil, roller og rettigheter</a></li>
 
@@ -96,7 +96,7 @@ project: altinn
 
 <h2 class="live-search-title"> HJELPESENTER </h2>
 
-<ul class="live-search-list">
+<ul class="live-search-list-templates">
 
   <li><a href="http://altinn.github.io/DesignSystem/public/patterns/04-sider-infoportal-20-navigasjonssider-70-hjelpesenter/04-sider-infoportal-20-navigasjonssider-70-hjelpesenter.html?1507106852930">Hjelpesenter forside</a></li>
 
@@ -108,7 +108,7 @@ project: altinn
 
 <h2 class="live-search-title"> SKJEMA </h2>
 
-<ul class="live-search-list">
+<ul class="live-search-list-templates">
 
   <li><a href="http://altinn.github.io/DesignSystem/public/patterns/04-sider-infoportal-20-navigasjonssider-51-omraadeside/04-sider-infoportal-20-navigasjonssider-51-omraadeside.html">Skjemaoversikt</a></li>
 
@@ -130,7 +130,7 @@ project: altinn
 
 <h2 class="live-search-title"> STEGVIS PROSESS </h2>
 
-<ul class="live-search-list">
+<ul class="live-search-list-templates">
 
   <li><a href="http://altinn.github.io/DesignSystem/versjon-altinndagen/patterns/04-sider-90-starte-enk-00-starte-enk-0/04-sider-90-starte-enk-00-starte-enk-0.html">Registrere enkeltpersonforetak</a></li>
 
@@ -139,7 +139,7 @@ project: altinn
 
 <h2 class="live-search-title"> SØK </h2>
 
-<ul class="live-search-list">
+<ul class="live-search-list-templates">
 
   <li><a href="http://altinn.github.io/DesignSystem/public/patterns/04-sider-infoportal-40-sok-00-sok-forside/04-sider-infoportal-40-sok-00-sok-forside.html?1507106953230">Søkeresultater</a></li>
   <li><a href="http://altinn.github.io/DesignSystem/public/patterns/04-sider-infoportal-40-sok-10-sok-skjema/04-sider-infoportal-40-sok-10-sok-skjema.html">Søk med filter: skjema</a></li>

@@ -33,7 +33,7 @@ Er du backend-utvikler og skal benytte deg av designet fra designsystemet, treng
 
 Med definerte UI-komponenter i Patternlab kan man som frontend-utvikler enkelt sy sammen nye maler og prototyper. NB: En designer skal alltid være ivolvert i design av nye brukergrensesnitt.
 
-Skal du jobbe med frontend, må du først klone Git-repositoriet fra Altinns [github](https://github.com/Altinn/DesignSystem) og følge oppskriften der for hvordan du setter opp utviklingsmiljøet. Når du er ferdig med innstallasjonen skal du kunne se [dette](http://altinn.github.io/DesignSystem/PatternLab-public/) på din localhost:3000.
+Skal du jobbe med frontend, må du først klone Git-repositoriet fra Altinns [github](https://github.com/Altinn/DesignSystem) og følge oppskriften der for hvordan du setter opp utviklingsmiljøet. Når du er ferdig med innstallasjonen skal du kunne se [dette](http://altinn.github.io/DesignSystem/public/) på din localhost:3000.
 
 ### Pattern Lab Dokumentasjon
 Dokumentasjon for hvordan utvikle atomisk design med Pattern Lab er tilgjengelig på [Pattern Lab](http://patternlab.io/docs/index.html) sine nettsider.

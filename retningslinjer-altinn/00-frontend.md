@@ -6,12 +6,11 @@ title: Frontend
 description: Retningslinjer
 ---
 
+<p class="a-leadText a-fontBold">For å få en felles forståelse av "best practice" for frontend-utvikling i Altinn har vi samlet noen regler for Javascript og CSS, samt utilities-klassene vi opererer med</p>
+
 NB: Som frontendutvikler bør du også ha lest gjennom [Kom i gang for utviklere](/designsystem-styleguide/komigang/utviklere.html) .
 
-
 ## CSS-regler
-
-For å få en felles forståelse av "best practice" for frontend-utvikling i Altinn har vi samlet noen regler for CSS, samt utilities-klassene vi opererer med
 
 - Skriv all CSS ved hjelp av SASS/SCSS
 - Alle variabler skal inn i "variables.scss". Prosjekter med eget theme kan overstyre variablene i sin egen variables-fil.
@@ -68,7 +67,7 @@ Se Bootstraps sider for [utilities](https://v4-alpha.getbootstrap.com/utilities/
 
 - Bakgrunn: ```.a-bgWhite``` ```.a-bgGreen``` ```.a-bgGreenLight``` ```.a-bgGreenLighter``` ```.a-bgBlue``` ```.a-bgBlueLight``` ```.a-bgBlueLighter``` ```.a-bgPurple``` ```.a-bgPurpleLight``` ```.a-bgYellow``` ```.a-bgYellowLight```  ```.a-bgRed```   ```.a-bgRedLight```
 
-- Deaktivert bakgrunn: ```.a-textureLines```
+- Deaktivert bakgrunn: ```.a-disabled```
 
 - Tekstfarger: ```.a-textWhite``` ```.a-textBlue```
 

@@ -532,8 +532,10 @@ $blue-dark: #0062BA;
 		a {
 			border: none;
 
-			&:hover {
-				color: $blue;
+			&:hover,
+			&:active,
+			&:focus {
+				color: $blue-dark;
 				border: none;
 			}
 		}

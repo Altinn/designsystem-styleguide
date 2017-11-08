@@ -8,15 +8,21 @@ description: Retningslinjer
 
 ---
 
-<div id="alert-no-arrow" class="a-message a-message-error a-message--arrow-off a-message--fullwidth mb-2 a-py-minus-1">
-  NB: Innholdet og sidene er under utvikling
-</div>
+<p class="a-leadText a-fontBold">Altinns ikoner er spesialtegnet for å harmonere med Altinns profilfont DIN. Ikonene fremstår i to vekter: Regular og Bold.</p>
 
-<p class="a-leadText a-fontBold">Altinns ikoner er spesialtegnet for å passe resten av uttrykket. Ikonene er tegnet i vektorgrafikk, og satt sammen til en font ved hjelp av verktøyet "FortAwesome". </p>
+Ikonene er satt sammen til en font ved hjelp av verktøyet "FortAwesome". Fonten oppdateres med nye ikoner ved å laste opp SVG-filer til [FortAwesome](https://www.fortawesome.com/). Kontakt UX-ansvarlig i Altinn for å få tilgang til å laste opp nye ikoner til fortAwesome.
 
-Fonten kan oppdateres med nye ikoner etter behov ved å laste opp SVG-filer til [FortAwesome](https://www.fortawesome.com/). Kontakt løsningsansvarlig på UX i Digitalisering for å få tilgang til å laste opp nye ikoner til fortAwesome.
+## Retningslinjer for ikonbruk:
+- Ikonene skal som hovedregel ikke stå alene. De er ikke nødvendigvis selvforklarende og brukes derfor som støtteelement til tekst.
+- Som hovedregel settes ikonene i samme vekt som teksten den står til.
+- Ikoner skal brukes sparsomt og kun der de gir verdi.
+- Ikoner brukes for å differensiere og fremheve interaktive elementer.
+- Et ikon kan ikke brukes til å symbolisere flere ting
+- Det skal ikke benyttes ikoner som ikke er en del av ikonbiblioteket.
+- Utvikling av nye ikoner skal skje gjennom UX-ansvarlig i Altinn.
+- Hvis du ikke finner et ikon som passer og ikke har anledning til å følge disse retningslinjene vil du antagelig klare deg fint uten
 
-## Bruk av ikoner
+## Sett inn et ikon i HTML
 
 For å sette inn et ikon, bruk følgende kode:
 
@@ -26,7 +32,7 @@ For å sette inn et ikon, bruk følgende kode:
 
 Bytt ut "flag" med navnet på ikonet du vil sette inn.
 
-NB: Dersom ikonet står alene uten tekst, legg følgende etter:
+**NB: Dersom ikonet står alene uten tekst, legg følgende etter:**
 
 ```
 <span class="sr-only">flag icon</span>

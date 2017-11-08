@@ -7,16 +7,18 @@ description: Kom i gang
 
 ---
 
-<div id="alert-no-arrow" class="a-message a-message-error a-message--arrow-off a-message--fullwidth mb-2 a-py-minus-1">
-  NB: Innholdet og sidene er under utvikling
-</div>
+<p class="a-leadText a-fontBold">Det er viktig å ha dedikerte designere i prosjektet som kjenner brukernes behov og kan lage gode offentlige digitale løsninger ved å gjenbruke komponentene på riktig måte.</p>
 
-<p class="a-leadText a-fontBold">Som designer kan du bruke designsystemet som en ressurs for å finne eksisterende UI-komponenter og design. </p>
+Som designer kan du bruke designsystemet til å finne interaksjonselementer til å bygge nye eller videreutvikle webløsninger med. De ulike komponentene er laget for at de skal passe sammen i en større helhet. Det er derfor viktig å følge retningslinjene for hvordan disse brukes for å oppnå et konsistent og gjenkjennbart uttrykk over tid. Designsystemet vil hjelpe oss til å gjøre designprosessen mer fokusert på å løse konkrete designutfordringer for brukerne våre, ved at vi slipper å designe komponentene på nytt hver gang vi skal lage noe.
 
-Skal du designe nye sidemaler eller helt nye løsninger er det ønskelig at du setter deg inn i hvilke komponenter som allerede eksisterer, og ser på om noen av disse kan <b>gjenbrukes</b>, evt. gjenbrukes med nytt visuelt theme for løsningen du skal lage.
+## Gjenbruke eksisterende eller lage ny visuell profil
 
-Det er viktig å bruke de ulike profilelementene på riktig måte, for å opprettholde et konsistent og gjenkjennbart uttrykk over tid. Ta deg derfor tid til å lese retningslinjene for komponentene og informasjon angående visuell profil for løsningen du skal jobbe med.
+Skal løsningen knyttes opp mot en eksisterende merkevare vil du som designer benytte deg av samme visuelle profil som denne merkevaren. Siden designsystemet er et levende bibliotek av komponenter vil det over tid være behov for å justere og gjøre tilføyelser til den visuelle profilen.
 
-## Last ned design-kit
+For nye løsninger som skal bruke designsystemet anbefaler vi at så mye som mulig av egenskapene til de ulike komponentene arves. Det vil typisk være behov for å bruke en annen font, andre farger og gjøre små justeringer i styling. Grid og komponentenes responsive egenskaper er noe vi ser for oss kan gjenbrukes av alle. Hver merkevare får sitt eget “theme” i designsystemet.
 
-Vi ser på muligheter for å lage et design-kit for Sketch, Figma eller et tilsvarende program. Det vil da bli mulig å laste ned en fil med alle tilgjengelige komponenter for kjapp skissering av nye konsepter i et grafisk program.
+## Effektiv design av gode brukeropplevelser
+
+Vi er opptatt av å forbedre måten vi designer produktene våre på og jobber med å organisere arbeidet med design og utvikling. Vi ønsker at alle prosjekter er med på å videreutvikle det felles biblioteket av komponenter med både design og kode. For designere vil dette i praksis si at Altinn som eiere av designsystemet ønsker å ta imot forslag til nye komponenter etter hvert som prosjektene ser behovet for det. Hvordan dette arbeidet skal organiseres jobber vi med.
+
+Vi ser også på muligheter for å lage et design-kit for Sketch, Figma eller et tilsvarende program slik at vi kan jobbe mer effektivt med interaksjonsdesign. Det vil da bli mulig å laste ned en fil med alle tilgjengelige komponenter for kjapp skissering av nye konsepter i et prototype-program.
