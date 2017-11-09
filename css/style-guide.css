@@ -458,6 +458,16 @@ code[class*="language-"], pre[class*="language-"] {
 .pattern-code-block {
   overflow: auto; }
 
+.pattern-code-copy-btn {
+  position: absolute;
+  background: #3c3c3c;
+  border-radius: 36px;
+  margin: 12px;
+  color: #fff;
+  font-size: 14px;
+  padding: 8px 13px 6px 13px;
+  border: none; }
+
 .c-section__header {
   background: #f5f7fa;
   padding: 14px 24px 1px 24px;
