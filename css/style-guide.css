@@ -432,6 +432,8 @@ code[class*="language-"], pre[class*="language-"] {
     max-width: 93rem;
     margin: 0 auto;
     padding: 0 36px; }
+    .a-st .l-container.l-container-full {
+      max-width: none; }
   .a-st .c-text-passage {
     max-width: 670px; }
     .a-st .c-text-passage ol {

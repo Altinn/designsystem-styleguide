@@ -13,13 +13,13 @@
 
 	var iframeInterval = setInterval(function(){
 		//Iframe resize height functionality
-		
+
 	    if (counter >= 20) {
 	        clearInterval(iframeInterval);
 	    }
 
 			$('.iffframe__iframe').attr('scrolling','auto');
-			
+
 
 	}, 250);
 
@@ -108,7 +108,7 @@
 	var clipboard = new Clipboard('.pattern-code-copy-btn');
 
 	clipboard.on('success', function(e) {
-	    e.trigger.textContent = 'Copied';
+	    e.trigger.textContent = 'Kopiert';
 	});
 
 	//iframe viewport change size
