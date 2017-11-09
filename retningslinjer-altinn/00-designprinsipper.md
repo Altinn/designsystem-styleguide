@@ -8,9 +8,9 @@ description: Retningslinjer
 
 ---
 
-<p class="a-leadText a-fontBold">Altinn og Brønnøysundregistrene har som mål å gjøre det enklere for innbyggere og næringsliv å være i kontakt med det offentlige uavhengig av digital kompetanse.</p>
+<p class="a-leadText a-fontBold">Altinn har som mål å gjøre det enklere for innbyggere og næringsliv å være i kontakt med det offentlige uavhengig av digital kompetanse. </p>
 
-Når vi utvikler nye eller forbedrer eksisterende produkter følger vi et sett med prinsipper for å kunne sikre oss at vi leverer brukervennlige løsninger til alle. Disse prinsippene er viktig å følge uansett om du jobber med Altinn, Brønnøysundregistrenes løsninger eller andre offentlige løsninger.
+Når vi utvikler nye eller forbedrer eksisterende produkter følger vi et sett med prinsipper for å kunne sikre oss at vi leverer brukervennlige løsninger til alle. Vi anbefaler å følge disse prinsippene uansett hvilken offentlig løsning du jobber med å utvikle.
 
 <ol class="a-circle-list mt-2">
   <li><b>Vi setter brukerbehov først</b>

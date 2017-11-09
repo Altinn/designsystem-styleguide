@@ -476,6 +476,10 @@ $blue-dark: #0062BA;
     max-width: 93rem;
     margin: 0 auto;
     padding: 0 36px;
+
+		&.l-container-full {
+			max-width: none;
+		}
 	}
 
 	.c-text-passage {

@@ -11,13 +11,13 @@ statecolor: badge-success
 
 variations:
 - title: Standard
-  description:
+  description: Et vanlig varsel
   styleModifier:
   includeClassification: atoms
   includeCategory: 07-tekst
   includeName: 00-varsel
 - title: Varianter
-  description:
+  description: Alle ulike variante av varsler. 
   styleModifier:
   includeClassification: atoms
   includeCategory: 07-tekst

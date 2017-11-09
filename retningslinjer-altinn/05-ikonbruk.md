@@ -595,26 +595,6 @@ Dette vil hjelpe brukere med skjermleser å oppfatte ikonets funksjon. Denne tek
 	</li>
 	<li class="a-st-iconItem">
 	    <div class="a-st-iconPreview">
-	    	<i class="ai ai-lg">&#xf07d;</i>
-	    </div>
-	    <div class="a-st-iconLabel">
-	    	<span class="">ai-plain-circle</span>
-	    	<span class="d-block">f07d</span>
-	    </div>
-	  	<a href="../fortAwesome/icons/svg/aordningen.svg">Last ned svg</a>
-	</li>
-	<li class="a-st-iconItem">
-	    <div class="a-st-iconPreview">
-	    	<i class="ai ai-lg">&#xf07e;</i>
-	    </div>
-	    <div class="a-st-iconLabel">
-	    	<span class="">ai-plain-circle-big</span>
-	    	<span class="d-block">f07e</span>
-	    </div>
-	  	<a href="../fortAwesome/icons/svg/aordningen.svg">Last ned svg</a>
-	</li>
-	<li class="a-st-iconItem">
-	    <div class="a-st-iconPreview">
 	    	<i class="ai ai-lg">&#xf07f;</i>
 	    </div>
 	    <div class="a-st-iconLabel">

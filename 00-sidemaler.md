@@ -11,11 +11,11 @@ project: altinn
 
 <div class="form-group a-form-group a-form-group-large mb-4">
 
-    <label class="a-form-label sr-only" for="text-input-find-12">Søk etter sidemaler</label>
+    <label class="a-form-label sr-only" for="text-input-find-12">Søk etter en sidemal</label>
 
     <div class="a-form-group-items input-group">
 
-    <input class="form-control a-hasButton live-search-box-templates" type="search" placeholder="Søk etter innhold" name="input-field" data-val="true" id="text-input-find-12">
+    <input class="form-control a-hasButton live-search-box-templates" type="search" placeholder="Søk etter sidemal" name="input-field" data-val="true" id="text-input-find-12">
 
     <div class="input-group-btn">
       <button onclick="" class="btn btn-secondary" type="button">
