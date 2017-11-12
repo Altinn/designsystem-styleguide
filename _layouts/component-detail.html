@@ -106,7 +106,7 @@ layout: default
 								{% capture markupOnlyPath %}/patterns/{{ componentString }}/{{ componentString }}.markup-only.html{% endcapture %}
 
 								<div class="pattern-code">
-									<button class="c-btn pattern-code-copy-btn" data-clipboard-target="#pattern-code-{{ forloop.index }}">Copy</button>
+									<button class="c-btn pattern-code-copy-btn" data-clipboard-target="#pattern-code-{{ forloop.index }}">Kopier</button>
 									<pre class="highlight pattern-code-block"><code class="language-html" id="pattern-code-{{ forloop.index }}">{% highlight liquid %}{% include {{ markupOnlyPath }} %}{% endhighlight %}</code></pre>
 								</div>
 
