@@ -445,6 +445,12 @@ code[class*="language-"], pre[class*="language-"] {
     @media screen and (min-width: 768px) {
       .a-st .a-text .a-leadText {
         font-size: 2.0rem; } }
+  .a-st .a-text ol li {
+    position: relative; }
+    .a-st .a-text ol li:before {
+      position: absolute;
+      padding: 3px 10px 0px 10px;
+      top: -5px; }
 
 .iffframe {
   padding: 12px;
