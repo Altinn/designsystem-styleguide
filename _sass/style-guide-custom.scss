@@ -505,6 +505,22 @@ $blue-dark: #0062BA;
 		}
 	}
 
+	// FIX FOR BROKEN LIST
+
+	.a-text {
+		ol {
+			li {
+				position: relative;
+
+				&:before {
+					position: absolute;
+					padding: 3px 10px 0px 10px;
+					top: -5px;
+				}
+			}
+		}
+	}
+
 }
 
 // COMPONENTS VIEW
