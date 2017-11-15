@@ -947,6 +947,19 @@ var toggleArchivedState = function() {
 };
 
 /* globals $ */
+var toggleSavedEdit = function() {
+  $(function() {
+    $('.a-js-toggleEdit').on('click', function() {
+      $('.js-edit').toggleClass('invisible');
+    });
+    $('.js-edit').on('click', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+    });
+  });
+};
+
+/* globals $ */
 var toggleSelectProfiles = function() {
   $('#selectedProfiles').hide();
   $('#profile-selection').hide();
@@ -6706,6 +6719,7 @@ var setValidatorSettings = function() {
   toggleArchivedState,
   toggleFilter,
   toggleInstant,
+  toggleSavedEdit,
   toggleSelectProfiles,
   toggleSwitch,
   toggleTheme,
@@ -6767,6 +6781,7 @@ window.devInit = function() {
   toggleArchivedState();
   toggleFilter();
   toggleInstant();
+  toggleSavedEdit();
   toggleSelectProfiles();
   toggleSwitch();
   toggleTheme();

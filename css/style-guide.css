@@ -438,6 +438,9 @@ code[class*="language-"], pre[class*="language-"] {
     max-width: 670px; }
     .a-st .c-text-passage ol {
       list-style: none; }
+    .a-st .c-text-passage h2 {
+      font-weight: normal;
+      color: #000; }
   .a-st .c-tabs__item a {
     border-bottom: 2px solid #fff; }
   .a-st .a-text .a-leadText {
