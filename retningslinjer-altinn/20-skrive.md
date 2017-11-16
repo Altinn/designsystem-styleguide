@@ -32,6 +32,6 @@ Riktig og konsekvent oppdeling av tallene hjelper brukeren å lese og skille for
 
 - Organisasjonsnummer deles opp i tre og tre: 123 456 789
 - Bankkonto deles opp i fire, to og fem: 1234 56 78901
-- Personnummer delers opp i seks og fem: 123456 78901
+- Personnummer deles opp i seks og fem: 123456 78901
 - Mobilnummer deles opp i tre, to og tre: 987 65 432
 - Fasttelefon og faks deles opp i to og to: 98 76 54 32
