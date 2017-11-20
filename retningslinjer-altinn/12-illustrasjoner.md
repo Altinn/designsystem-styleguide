@@ -19,7 +19,7 @@ description: Retningslinjer
 - All endring av eksisterende illustrasjoner, bruksendring eller utvikling av nye illustrasjoner skal skje gjennom UX-ansvarlig i Altinn.
 
 ## Eksempel på bruk
-Illustrasjoner på Altinn skal brukes enten som [bakgrunnsillustrasjon](../komponenter/bilder-og-media/bakgrunnsillustrasjon.html), eller som illustrasjoner [ved siden av tekst](../komponenter/bilder-og-media/bildeblokk.html) (de skal da være innrammet i en sirkel). F.eks:
+Illustrasjoner på Altinn skal brukes enten som [bakgrunnsillustrasjon](http://altinn.github.io/DesignSystem/public/patterns/04-sider-infoportal-20-navigasjonssider-70-hjelpesenter/04-sider-infoportal-20-navigasjonssider-70-hjelpesenter.html?1507106852930), eller som illustrasjoner [ved siden av tekst](../komponenter/bilder-og-media/bildeblokk.html) (de skal da være innrammet i en sirkel). F.eks:
 
 <div class="a-card a-cardImage mt-3 mb-5">
   <img src="../images/temp-placeholder.svg" alt="Illustrasjon">

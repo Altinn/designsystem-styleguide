@@ -22,7 +22,7 @@ Når vi utvikler nye eller forbedrer eksisterende produkter følger vi et sett m
   </li>
   <li>
     <b>Helhetlige brukeropplevelser</b>
-    <br>Produktene våre skal henge sammen slik at folk får en helhetlig brukeropplevelse. Vi bruker konsistent språk og samme komponenter i alle digitale løsninger. Brukerne skal kjenne seg uansett hvilken del av produktet man bruker.
+    <br>Produktene våre skal henge sammen slik at folk får en helhetlig brukeropplevelse. Vi bruker konsistent språk og samme komponenter i alle digitale løsninger. Brukerne skal kjenne seg igjen uansett hvilken del av produktet man bruker.
   </li>
   <li>
     <b>Visuelt design som motiverer</b>

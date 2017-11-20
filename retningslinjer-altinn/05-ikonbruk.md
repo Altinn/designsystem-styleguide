@@ -15,6 +15,7 @@ Ikonene er satt sammen til en font ved hjelp av verktøyet "FortAwesome". Fonten
 ## Retningslinjer for ikonbruk:
 - Ikonene skal som hovedregel ikke stå alene. De er ikke nødvendigvis selvforklarende og brukes derfor som støtteelement til tekst.
 - Som hovedregel settes ikonene i samme vekt som teksten den står til.
+- Ikoner på deaktiverte elementer skal være grå.
 - Ikoner skal brukes sparsomt og kun der de gir verdi.
 - Ikoner brukes for å differensiere og fremheve interaktive elementer.
 - Et ikon kan ikke brukes til å symbolisere flere ting
@@ -39,6 +40,7 @@ Bytt ut "flag" med navnet på ikonet du vil sette inn.
 ```
 
 Dette vil hjelpe brukere med skjermleser å oppfatte ikonets funksjon. Denne teksten er kun synlig for skjermlesere, ikke for vanlige brukere.
+
 
 <h2> Tilgjengelige ikoner </h2>
 

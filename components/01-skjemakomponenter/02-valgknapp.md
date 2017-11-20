@@ -32,7 +32,8 @@ usage:
   description: Se theme-spesifikke policies.
 
 theme-specific-altinn:
-- description: Ingen retningslinjer er lagt inn for Altinn enda.
+- description: Valgknapper som er en del av ekspanderbar overskrift skal midtstilles på stor-skjerm, og venstre-alignes på skjermer mindre enn 768px ($MD).
+
 
 theme-specific-brreg:
 - description: Ingen retningslinjer er lagt inn for Brønnøysundregistrene enda.
