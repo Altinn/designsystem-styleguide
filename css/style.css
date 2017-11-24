@@ -9536,6 +9536,21 @@ textarea {
   .a-form-checkboxes.custom-controls-stacked .custom-control {
     display: block;
     margin-right: 0; }
+  .a-form-checkboxes.small-checkboxes .custom-control-indicator {
+    width: 18px;
+    height: 18px;
+    margin-top: -1px;
+    border-color: #000000;
+    border-width: 1px; }
+  .a-form-checkboxes.small-checkboxes .custom-control {
+    font-size: 14px;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    -webkit-font-smoothing: subpixel-antialiased; }
+  .a-form-checkboxes.a-search-multiple-actor-select .inactive {
+    cursor: not-allowed; }
+    .a-form-checkboxes.a-search-multiple-actor-select .inactive span {
+      color: #BCC7CC; }
   .a-form-checkboxes.a-form-checkboxes--discret {
     font-size: 14px;
     font-size: 1.4rem;

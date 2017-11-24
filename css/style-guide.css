@@ -181,7 +181,7 @@ code[class*="language-"], pre[class*="language-"] {
       width: 300px;
       box-shadow: 1px 1px 4px 0 rgba(137, 137, 137, 0.5);
       height: 100vh;
-      z-index: 10001;
+      z-index: 1001;
       position: fixed;
       left: -300px;
       overflow-y: hidden; }
@@ -194,9 +194,10 @@ code[class*="language-"], pre[class*="language-"] {
         .a-st .l-page-layout--two-column-fixed > .l-page-layout__secondary .c-header .c-header__inner {
           padding: 0; }
     .a-st .l-page-layout--two-column-fixed > .l-page-layout__main {
-      transform: translateX(0px) translateY(0px);
-      transition: all 200ms ease;
       margin-left: 0; }
+  .a-st:not(.modal-open) .l-page-layout--two-column-fixed > .l-page-layout__main {
+    transform: translateX(0px) translateY(0px);
+    transition: all 200ms ease; }
   @media all and (max-width: 768px) {
     .a-st .a-st-overlay {
       float: none;
