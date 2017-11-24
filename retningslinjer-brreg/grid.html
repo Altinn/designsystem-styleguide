@@ -10856,7 +10856,7 @@
   NB: Innholdet og sidene er under utvikling
 </div>
 
-<p class="a-leadText a-fontBold">Altinn’s responsive brukergrensesnitt er basert på en 12-kolonners grid layout, samt et sett definerte avstander som tar utgangspunkt i 12px som base.</p>
+<p class="a-leadText a-fontBold">Brsys’s responsive brukergrensesnitt er basert på en 12-kolonners grid layout, samt et sett definerte avstander som tar utgangspunkt i 8px som base.</p>
 
 <h2 id="bootstrap-grid">Bootstrap grid</h2>
 <p>Vi har brukt Bootstrap’s responsive gridsystem (fra aplha v4) for å bygge malene. Systemet baserer seg på <strong>flexbox</strong>. Les mer om grid-systemet hos <a href="http://v4-alpha.getbootstrap.com/layout/grid/">Bootstrap</a></p>
@@ -10916,15 +10916,15 @@
 
 <div class="language-css highlighter-rouge"><pre class="highlight"><code><span class="o">//</span> <span class="nt">SPACE</span>
 
-<span class="err">$</span><span class="nt">spacer</span> <span class="o">:</span> <span class="nt">12px</span><span class="o">;</span>	<span class="o">//</span> <span class="nt">12px</span>
+<span class="err">$</span><span class="nt">spacer</span> <span class="o">:</span> <span class="nt">8px</span><span class="o">;</span>	<span class="o">//</span> <span class="nt">8px</span>
 
-<span class="err">$</span><span class="nt">spacer</span><span class="o">/</span><span class="nt">2</span><span class="o">;</span>			<span class="o">//</span> <span class="nt">6px</span>
-<span class="err">$</span><span class="nt">spacer</span><span class="o">*</span><span class="nt">1</span><span class="nc">.5</span><span class="o">;</span>		<span class="o">//</span> <span class="nt">18px</span>
-<span class="err">$</span><span class="nt">spacer</span><span class="o">*</span><span class="nt">2</span><span class="o">;</span>			<span class="o">//</span> <span class="nt">24px</span>
-<span class="err">$</span><span class="nt">spacer</span><span class="o">*</span><span class="nt">3</span><span class="o">;</span>			<span class="o">//</span> <span class="nt">36px</span>
-<span class="err">$</span><span class="nt">spacer</span><span class="o">*</span><span class="nt">4</span><span class="o">;</span>			<span class="o">//</span> <span class="nt">48px</span>
-<span class="err">$</span><span class="nt">spacer</span><span class="o">*</span><span class="nt">5</span><span class="o">;</span> 			<span class="o">//</span> <span class="nt">60px</span>
-<span class="err">$</span><span class="nt">spacer</span><span class="o">*</span><span class="nt">6</span><span class="o">;</span>			<span class="o">//</span> <span class="nt">72px</span>
+<span class="err">$</span><span class="nt">spacer</span><span class="o">/</span><span class="nt">2</span><span class="o">;</span>			<span class="o">//</span> <span class="nt">4px</span>
+<span class="err">$</span><span class="nt">spacer</span><span class="o">*</span><span class="nt">1</span><span class="nc">.5</span><span class="o">;</span>		<span class="o">//</span> <span class="nt">12px</span>
+<span class="err">$</span><span class="nt">spacer</span><span class="o">*</span><span class="nt">2</span><span class="o">;</span>			<span class="o">//</span> <span class="nt">16px</span>
+<span class="err">$</span><span class="nt">spacer</span><span class="o">*</span><span class="nt">3</span><span class="o">;</span>			<span class="o">//</span> <span class="nt">24px</span>
+<span class="err">$</span><span class="nt">spacer</span><span class="o">*</span><span class="nt">4</span><span class="o">;</span>			<span class="o">//</span> <span class="nt">32px</span>
+<span class="err">$</span><span class="nt">spacer</span><span class="o">*</span><span class="nt">5</span><span class="o">;</span> 			<span class="o">//</span> <span class="nt">40px</span>
+<span class="err">$</span><span class="nt">spacer</span><span class="o">*</span><span class="nt">6</span><span class="o">;</span>			<span class="o">//</span> <span class="nt">48px</span>
 </code></pre>
 </div>
 
@@ -10932,7 +10932,7 @@
 
 <p>Klassene refereres til med {property}-{sides}-{size}</p>
 
-<p>F.eks “pr-1” vil sette padding right til 12px. “mt-2” vil sette margin top til 24px. Her kan man også bruke mediaquery-klasser, f.eks ved å sette “pl-md-3” så vil man få en padding left på 36 px for skjermer større enn md (768px).</p>
+<p>F.eks “pr-1” vil sette padding right til 8px. “mt-2” vil sette margin top til 16px. Her kan man også bruke mediaquery-klasser, f.eks ved å sette “pl-md-3” så vil man få en padding left på 24 px for skjermer større enn md (768px).</p>
 
 <p>Les mer på <a href="http://v4-alpha.getbootstrap.com/components/utilities/#spacing">Bootstraps nettsider</a></p>
 
@@ -10944,7 +10944,7 @@
 
 <h2 id="interaktive-elementer">Interaktive elementer</h2>
 
-<p>Av hensyn til ulike brukeres fingerstørrelse og førlighet skal alle interaktive elementer ha touch-target på minimum 48px. Det vil si at selv om en knapp kan se ut som den er 36px høy vil ethvert trykk innenfor 48px utløse knappen.</p>
+<p>Av hensyn til ulike brukeres fingerstørrelse og førlighet skal alle interaktive elementer ha touch-target på minimum 48px. Det vil si at selv om en knapp kan se ut som den er 32px høy vil ethvert trykk innenfor 48px utløse knappen.</p>
 
 <p><img src="../images/clickable_eksempel.png" alt="&quot;Viser ekstra høyde på knapp&quot;" /></p>
 
