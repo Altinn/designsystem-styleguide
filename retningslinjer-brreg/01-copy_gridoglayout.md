@@ -12,7 +12,7 @@ description: Retningslinjer
   NB: Innholdet og sidene er under utvikling
 </div>
 
-<p class="a-leadText a-fontBold">Altinn’s responsive brukergrensesnitt er basert på en 12-kolonners grid layout, samt et sett definerte avstander som tar utgangspunkt i 12px som base.</p>
+<p class="a-leadText a-fontBold">Brsys’s responsive brukergrensesnitt er basert på en 12-kolonners grid layout, samt et sett definerte avstander som tar utgangspunkt i 8px som base.</p>
 
 ## Bootstrap grid
 Vi har brukt Bootstrap's responsive gridsystem (fra aplha v4) for å bygge malene. Systemet baserer seg på **flexbox**. Les mer om grid-systemet hos [Bootstrap](http://v4-alpha.getbootstrap.com/layout/grid/)
@@ -71,22 +71,22 @@ Les mer på [Bootstraps nettsider](http://v4-alpha.getbootstrap.com/layout/overv
 ```css
 // SPACE
 
-$spacer : 12px;	// 12px
+$spacer : 8px;	// 8px
 
-$spacer/2;			// 6px
-$spacer*1.5;		// 18px
-$spacer*2;			// 24px
-$spacer*3;			// 36px
-$spacer*4;			// 48px
-$spacer*5; 			// 60px
-$spacer*6;			// 72px
+$spacer/2;			// 4px
+$spacer*1.5;		// 12px
+$spacer*2;			// 16px
+$spacer*3;			// 24px
+$spacer*4;			// 32px
+$spacer*5; 			// 40px
+$spacer*6;			// 48px
 ```
 
 ### Gjenbrukbare klasser for avstander
 
 Klassene refereres til med {property}-{sides}-{size}
 
-F.eks "pr-1" vil sette padding right til 12px. "mt-2" vil sette margin top til 24px. Her kan man også bruke mediaquery-klasser, f.eks ved å sette "pl-md-3" så vil man få en padding left på 36 px for skjermer større enn md (768px).
+F.eks "pr-1" vil sette padding right til 8px. "mt-2" vil sette margin top til 16px. Her kan man også bruke mediaquery-klasser, f.eks ved å sette "pl-md-3" så vil man få en padding left på 24 px for skjermer større enn md (768px).
 
 Les mer på [Bootstraps nettsider](http://v4-alpha.getbootstrap.com/components/utilities/#spacing)
 
@@ -99,7 +99,7 @@ Når tekst skal sentreres innenfor en ramme, slik som for eksempel på en knapp,
 
 ## Interaktive elementer
 
-Av hensyn til ulike brukeres fingerstørrelse og førlighet skal alle interaktive elementer ha touch-target på minimum 48px. Det vil si at selv om en knapp kan se ut som den er 36px høy vil ethvert trykk innenfor 48px utløse knappen.
+Av hensyn til ulike brukeres fingerstørrelse og førlighet skal alle interaktive elementer ha touch-target på minimum 48px. Det vil si at selv om en knapp kan se ut som den er 32px høy vil ethvert trykk innenfor 48px utløse knappen.
 
 !["Viser ekstra høyde på knapp"](../images/clickable_eksempel.png)
 
