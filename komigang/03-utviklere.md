@@ -43,6 +43,7 @@ Når et nytt atom, molekyl eller organisme lages, skal følgene sjekkes:
 
 - Følg retningslinjene for <a href="../retningslinjer-altinn/frontend.html">frontend-kode</a>.
 - Dersom du har endret en eksisterende komponent, sjekk at den fortsatt fungerer som den skal på alle steder den er brukt.
+- Placeholder-tekst i komponenter skal beskrive funksjonen. F.eks "Tittel på listen". Løpende tekst kan være lorem ipsum.
 - Oppdater komponentens MD-fil med versjon, status, og eventuelle notater relatert til frontend.
 - Sjekk at komponenten fungerer i alle skjermstørrelser (responsivt).
 - Sjekk at både koden og komponenten er <a href="../retningslinjer-altinn/uu.html">universelt utformet</a> i henhold til kravene.

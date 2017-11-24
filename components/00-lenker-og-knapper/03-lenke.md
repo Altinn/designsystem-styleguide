@@ -38,7 +38,7 @@ usage:
   description: Se theme-spesifikke policies.
 
 theme-specific-altinn:
-- description: Alltid 2px understrek på lenker, unntak for artikler, der det er 1px (2px ved fet tekst). <p>Eksterne lenker får automatisk en pil (vendt skrått oppover) til høyre for teksten. Pilen etter lenketekst skal ikke ha understrek under.</p> <p>Fremhevede lenker brukes på utvalgte steder for å oppfordre brukeren til en oppgave eller henvise til en oversikt. For eksempel i slutten av lister, etc.</p>
+- description: Alltid 2px understrek på lenker, unntak for artikler, der det er 1px (2px ved fet tekst). <p>Eksterne lenker får automatisk en pil (vendt skrått oppover) til høyre for teksten. Pilen etter lenketekst skal ikke ha understrek under.</p> <p>Fremhevede lenker brukes på utvalgte steder for å oppfordre brukeren til en oppgave eller henvise til en oversikt. For eksempel i slutten av lister, etc.</p><p>Hover skal ha mørkeblå ($blue-dark) border-bottom hvis det er blå lenke, mørkerød hvis det er rød lenke</p>
 
 theme-specific-brreg:
 - description: Ingen retningslinjer er lagt inn for Brønnøysundregistrene enda.

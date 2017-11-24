@@ -28,6 +28,6 @@
 		"data-action": "next",
 		"data-toggle": "altinn-modal",
 		"data-target": "#modal",
-		"page-url": "../../patterns/02-organismer-80-Modal-js-innhold-51-onboarding-steg2/02-organismer-80-Modal-js-innhold-51-onboarding-steg2.markup-only.html"
+		"page-url": "../../patterns/02-organismer-80-Modal-js-innhold-51-onboarding-steg2/02-organismer-80-Modal-js-innhold-51-onboarding-steg2.markup-only.rendered.html"
 	}
 }

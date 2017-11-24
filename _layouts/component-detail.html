@@ -214,6 +214,13 @@ layout: default
 
 		</table><!--end c-table-->
 
+		<div class="c-text-passage l-linelength-container">
+			{% for class in page.technical %}
+				<h2>Teknisk beskrivelse</h2>
+        <p>{{ class.description }}</p>
+      {% endfor %}
+		</div><!-- end c-text-passage -->
+
 	</div>
 
 </section><!-- end c-section -->

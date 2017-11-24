@@ -23,7 +23,7 @@ usage:
 - title: Når skal du vurdere alternativer?
   description: Info kommer.
 - title: Policies
-  description: Se theme-spesifikke policies.
+  description: Popover skal lukkes ved trykk på body/andre elementer.
 
 theme-specific-altinn:
 - description: Blå merkelapp brukes for å belyse et nummer, eksempelvis hvor mange uleste meldinger du har, hvor mange filter du har valgt, etc. Grå brukes for å gi tilleggsinfo, f.eks hvilken kategori et søkeresultat tilhører. Gul brukes for å gjøre brukeren oppmerksom på noe. Rød brukes for å advare. Grønn brukes for å oppfordre.

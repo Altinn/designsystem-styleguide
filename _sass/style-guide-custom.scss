@@ -24,6 +24,8 @@ $blue-dark: #0062BA;
 		color: #000;
 	}
 
+
+
 	.l-page-layout--two-column-fixed {
 		width: 100%;
 
@@ -32,7 +34,7 @@ $blue-dark: #0062BA;
 	    width: 300px;
 			box-shadow: 1px 1px 4px 0 rgba($shadow-color, 0.5);
 			height: 100vh;
-			z-index: 10001;
+			z-index: 1001;
 			position: fixed;
 			left: -300px;
 			overflow-y: hidden;
@@ -50,12 +52,20 @@ $blue-dark: #0062BA;
 				}
 			}
 		}
-
 		// RIGHT AREA
 		> .l-page-layout__main {
-			transform: translateX(0px) translateY(0px);
-			transition: all 200ms ease;
 			margin-left: 0;
+		}
+
+	}
+
+	&:not(.modal-open) {
+		.l-page-layout--two-column-fixed {
+			// RIGHT AREA
+			> .l-page-layout__main {
+				transform: translateX(0px) translateY(0px);
+				transition: all 200ms ease;
+			}
 		}
 	}
 
@@ -525,7 +535,6 @@ $blue-dark: #0062BA;
 			}
 		}
 	}
-
 }
 
 // COMPONENTS VIEW

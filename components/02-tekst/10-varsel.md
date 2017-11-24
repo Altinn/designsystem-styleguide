@@ -17,7 +17,7 @@ variations:
   includeCategory: 07-tekst
   includeName: 00-varsel
 - title: Varianter
-  description: Alle ulike variante av varsler. 
+  description: Alle ulike variante av varsler.
   styleModifier:
   includeClassification: atoms
   includeCategory: 07-tekst
@@ -32,7 +32,7 @@ usage:
   description: Se theme-spesifikke policies.
 
 theme-specific-altinn:
-- description: Ingen retningslinjer er lagt inn for Altinn enda.
+- description: Fargene skal brukes riktig etter hva varselet skal antyde. Grå - info, Gul - driftsmelding, info ( endring), Rød - advarsel, ute av drift, feil input, Grønn - riktig input, godkjent.
 
 theme-specific-brreg:
 - description: Ingen retningslinjer er lagt inn for Brønnøysundregistrene enda.

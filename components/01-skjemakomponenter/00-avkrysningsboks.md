@@ -35,7 +35,7 @@ usage:
 - title: Når skal du vurdere alternativer?
   description: Dersom det handler om en filtrering, skal valgknapper brukes.
 - title: Policies
-  description: Se theme-spesifikke policies.
+  description: Ingen avkrysningsbokser skal stå uten tekst.
 
 theme-specific-altinn:
 - description: Ingen retningslinjer er lagt inn for Altinn enda.

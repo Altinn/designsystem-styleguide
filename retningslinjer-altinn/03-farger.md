@@ -16,7 +16,7 @@ Fargene refereres til ved bruk av variabler som er definert i <code> variables.s
 
 <ul class="no-decoration ap-colors">
 <li><span class="ap-swatch" style="background: #022F51;"><span class="ap-colorLabel" style="color: #fff;">$blue-darker: <br>#022F51;</span></span></li>
-<li><span class="ap-swatch" style="background: #0062ba;"><span class="ap-colorLabel" style="color: #fff;">$blue-dark: <br>#0062ba; </span></span></li>
+<li><span class="ap-swatch" style="background: #0062ba;"><span class="ap-colorLabel" style="color: #fff;">$blue-dark: <br>#0062BA; </span></span></li>
 <li><span class="ap-swatch" style="background: #1eaef7;"><span class="ap-colorLabel">$blue: <br>#1eaef7;</span></span></li>
 <li><span class="ap-swatch" style="background: #cff0ff;"><span class="ap-colorLabel">$blue-light: <br>#cff0ff;</span></span></li>
 </ul>

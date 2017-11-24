@@ -1,9 +1,9 @@
 
 <!-- Button trigger modal -->
-<button class="a-btn" data-toggle="altinn-modal" data-action="load" data-url="/patterns/03-maler-portal-99-modal-js-02-page-one/03-maler-portal-99-modal-js-02-page-one.markup-only.html" data-target="#modal">Åpne modal demo</button>
-<div class="a-modal fade modal a-fade--appear" id="modal" role="dialog" tabindex="-1">
+<button class="a-btn" data-toggle="altinn-modal" data-action="load" data-url="../../patterns/03-maler-portal-99-modal-js-02-page-one/03-maler-portal-99-modal-js-02-page-one.markup-only.rendered.html" data-target="#modal">Åpne modal for stegvis prosess</button>
+<div class="a-modal fade modal " id="modal" role="dialog" tabindex="-1">
   <div class="modal-dialog modal-lg" role="document">
-    <div class="container">
+    <div class="container a-p-static">
       <div class="row">
         <div class="col-xl-12">
           
@@ -31,26 +31,60 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-xl-10 offset-xl-1">
+        <div class="col-xl-10 offset-xl-1 a-p-static">
           
           <div class="a-modal-navbar">
             
-            <button type="button" class="a-modal-back a-js-tabable-popover" aria-label="Tilbake">
+            <button type="button" class="a-modal-back a-js-tabable-popover" aria-label="Tilbake" data-toggle="popover" data-placement="bottom" data-animation="false" data-popover-content="backPopoverContent" data-popover-class="popover-warning" data-trigger="manual">
   
   <span class="ai-stack">
     <i class="ai ai-stack-1x ai-plain-circle-big"></i>
 <i class="ai-stack-1x ai ai-back   "    ></i>
   </span>
 </button>
+            <div id="backPopoverContent" class="hidden-xs-up">
+              <div class="pb-1">Du har gjort endringer som ikke vil lagres</div>
+              
+              <button type="button" class="a-btn a-btn-danger a-js-modal-dirtyBackBtn mr-1">
+  
+    Ok
+  
+</button>
+              
+              
+              <button type="button" class="a-btn-link a-linkDanger a-js-modal-dirtyCancelBtn mr-1">
+  <span>
+    Avbryt
+  </span>
+</button>
+              
+            </div>
             
             
-            <button type="button" class="a-modal-close a-js-tabable-popover" aria-label="Lukk">
+            <button type="button" class="a-modal-close a-js-tabable-popover" aria-label="Lukk" data-toggle="popover" data-placement="bottom" data-animation="false" data-popover-content="closePopoverContent" data-popover-class="popover-warning" data-trigger="manual">
   
   <span class="ai-stack">
     <i class="ai ai-stack-1x ai-plain-circle-big"></i>
 <i class="ai-stack-1x ai ai-exit  a-modal-close-icon "    ></i>
   </span>
 </button>
+            <div id="closePopoverContent" class="hidden-xs-up">
+              <div class="pb-1">Du har gjort endringer som ikke vil lagres</div>
+              
+              <button type="button" class="a-btn a-btn-danger a-js-modal-dirtyCloseBtn mr-1">
+  
+    Ok
+  
+</button>
+              
+              
+              <button type="button" class="a-btn-link a-linkDanger a-js-modal-dirtyCancelBtn mr-1">
+  <span>
+    Avbryt
+  </span>
+</button>
+              
+            </div>
             
           </div>
           

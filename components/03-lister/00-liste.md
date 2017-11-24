@@ -32,7 +32,7 @@ usage:
   description: Maks 2 kolonner på mobilvisning. Dersom det er mange rader, vises kun 20 første, og en "Last flere" knapp. Handlingstekster (Lagt til/Slettet) skal være bold (font-family DIN-bold). Det skal være strek over teksten dersom en rad er fjernet. Rader som kan ekspanderes vises kun 1 ekspandert ad gangen. Dersom en rad blir ekspandert, lukkes den andre som evt var ekspandert fra før.
 
 theme-specific-altinn:
-- description: Dersom radene i listen inneholder ikoner, skal raden ha 6px avstand fra venstre til begynnelsen av innholdet på radene. Dersom det er ren tekst i radene (ingen ikoner), brukes klassen a-list-noIcon legges på ul for å fjerne padding-left.
+- description: Dersom radene i listen inneholder ikoner, skal raden ha 6px avstand fra venstre til begynnelsen av innholdet på radene. Dersom det er ren tekst i radene (ingen ikoner), brukes klassen a-list-noIcon legges på ul for å fjerne padding-left.<p>Hover og focus på klikkbare rader skal bli lyseblå ($blue-light). Som med alle andre klikkbare elementer skal raden få en hånd-hover musepeker. Når rad kan fjernes skal hover være lyserød ($red-light). Gjennomstryking når rad er slettet. Grønn markering når rad er valgt. Pilene på tabell-sortering skal ikke ha onhover effekt</p>
 
 theme-specific-brreg:
 - description: Ingen retningslinjer er lagt inn for Brønnøysundregistrene enda.
