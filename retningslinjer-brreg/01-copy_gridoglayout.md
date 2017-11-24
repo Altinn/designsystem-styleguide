@@ -12,7 +12,7 @@ description: Retningslinjer
   NB: Innholdet og sidene er under utvikling
 </div>
 
-<p class="a-leadText a-fontBold">Altinn’s responsive brukergrensesnitt er basert på en 12-kolonners grid layout, samt et sett definerte avstander som tar utgangspunkt i 8px som base.</p>
+<p class="a-leadText a-fontBold">Brsys’s responsive brukergrensesnitt er basert på en 12-kolonners grid layout, samt et sett definerte avstander som tar utgangspunkt i 8px som base.</p>
 
 ## Bootstrap grid
 Vi har brukt Bootstrap's responsive gridsystem (fra aplha v4) for å bygge malene. Systemet baserer seg på **flexbox**. Les mer om grid-systemet hos [Bootstrap](http://v4-alpha.getbootstrap.com/layout/grid/)
