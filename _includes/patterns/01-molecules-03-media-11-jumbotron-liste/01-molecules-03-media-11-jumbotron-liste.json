@@ -15,7 +15,7 @@
 	"themeJs": "./../../js/altinnPrototyping.js",
 	"themeJsVendor": "../../js/altinnPrototyping.vendor.js",
 	"link-text": "En lenke ser slik ut",
-	"link-url": "/patterns/04-sider-infoportal-01-forside-00-forside/04-sider-infoportal-01-forside-00-forside.html",
+	"link-url": "link.sider-infoportal-forside",
 	"sr-text": false,
 	"dropdown-link-class": "a-borderBottom",
 	"dropdown-top-item": {
@@ -362,7 +362,7 @@
 	"alert-class": "a-message-info",
 	"alert-items": {
 		"alert-text": {
-			"text": "Dette er en beskjed."
+			"text": "Dette er en driftsmelding eller endringsinformasjon"
 		}
 	},
 	"link-buttonLarge": {
@@ -418,7 +418,7 @@
 			{
 				"additional-classes": "a-dotted a-clickable a-list-hasRowLink",
 				"isRowLink": {
-					"rowLink": "/patterns/04-sider-infoportal-30-artikkel-42-artikkel-jumbo-v-velg-foretaksform/04-sider-infoportal-30-artikkel-42-artikkel-jumbo-v-velg-foretaksform.html"
+					"rowLink": "link.sider-infoportal-artikkel-jumbo-v-velg-foretaksform"
 				},
 				"columns": [
 					{
@@ -436,7 +436,7 @@
 			{
 				"additional-classes": "a-dotted a-clickable a-list-hasRowLink",
 				"isRowLink": {
-					"rowLink": "/patterns/04-sider-infoportal-30-artikkel-42-artikkel-jumbo-v-velg-foretaksform/04-sider-infoportal-30-artikkel-42-artikkel-jumbo-v-velg-foretaksform.html"
+					"rowLink": "link.sider-infoportal-artikkel-jumbo-v-velg-foretaksform"
 				},
 				"columns": [
 					{
@@ -454,7 +454,7 @@
 			{
 				"additional-classes": "a-dotted a-clickable a-list-hasRowLink",
 				"isRowLink": {
-					"rowLink": "/patterns/04-sider-infoportal-20-navigasjonssider-40-temaside-filter-v-stotteordninger/04-sider-infoportal-20-navigasjonssider-40-temaside-filter-v-stotteordninger.html"
+					"rowLink": "link.sider-infoportal-temaside-filter-v-stotteordninger"
 				},
 				"columns": [
 					{
@@ -478,6 +478,6 @@
 			"icon-prefix": "ai ai-sm ai-nw ai-nw-right",
 			"icon-class": "ai-arrowright"
 		},
-		"link-url": "/patterns/04-sider-infoportal-20-navigasjonssider-31-temaside-v-starte/04-sider-infoportal-20-navigasjonssider-31-temaside-v-starte.html"
+		"link-url": "link.sider-infoportal-temaside-v-starte"
 	}
 }

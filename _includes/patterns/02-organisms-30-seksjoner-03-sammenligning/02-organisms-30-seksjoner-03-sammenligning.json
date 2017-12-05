@@ -15,7 +15,7 @@
 	"themeJs": "./../../js/altinnPrototyping.js",
 	"themeJsVendor": "../../js/altinnPrototyping.vendor.js",
 	"link-text": "Les mer",
-	"link-url": "/patterns/04-sider-infoportal-01-forside-00-forside/04-sider-infoportal-01-forside-00-forside.html",
+	"link-url": "link.sider-infoportal-forside",
 	"sr-text": false,
 	"istitle": true,
 	"category-element-title": "<h3>Tittel på elementet</h3>",

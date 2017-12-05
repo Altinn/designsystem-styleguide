@@ -89,7 +89,7 @@
 	"label-id": false,
 	"label-content": "9",
 	"button-colorClass": "",
-	"link-url": "/patterns/04-sider-infoportal-01-forside-00-forside/04-sider-infoportal-01-forside-00-forside.html",
+	"link-url": "link.sider-infoportal-forside",
 	"button-shadow-label": false,
 	"icon-list-items": [
 		{
@@ -117,7 +117,7 @@
 	"alert-class": "a-message-info",
 	"alert-items": {
 		"alert-text": {
-			"text": "Dette er en beskjed."
+			"text": "Dette er en driftsmelding eller endringsinformasjon"
 		}
 	},
 	"linkIcon-url": "#",
@@ -128,7 +128,7 @@
 		"message-date": "05.03.2016"
 	},
 	"activitylog": {
-		"linkIcon-url": "/patterns/04-sider-portal-50-innboks-04-innboks-aktivitetslogg/04-sider-portal-50-innboks-04-innboks-aktivitetslogg.html",
+		"linkIcon-url": "link.sider-portal-innboks-aktivitetslogg",
 		"linkIcon-text": "Aktivitetslogg",
 		"icon-prefix": "reg ai-nw ai-nw-pr",
 		"icon-class": "reg-log"
@@ -331,17 +331,18 @@
 	"extraPanelBodyClass": false,
 	"direct-link-url": false,
 	"collapse-panel-content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam excepturi sit natus pariatur consequuntur labore magnam aperiam non iusto itaque cumque iste ipsum, sed molestias! Placeat quia velit dolor doloremque?",
-	"accordion-large-id": "accordion",
+	"accordion-large-id": "panelAccordion",
 	"accordion-large-items": [
 		{
-			"collapseID": "accordionItem15",
-			"dataParent": "#accordion",
+			"collapseID": "myPanel1",
+			"dataParent": "#panelAccordion",
+			"collapse-panel-header-id": "myPanel1Header",
 			"collapseHeader": {
-				"variation-class": "a-iconText-shadow a-collapseBtn collapsed",
+				"variation-class": "a-iconText-shadow a-iconText-large a-collapseBtn collapsed",
 				"hasIcon": {
-					"icon-prefix": "ai",
-					"icon-class": "ai-others",
-					"icon-extra-class": "a-icon a-icon-circle"
+					"icon-prefix": "reg",
+					"icon-class": "reg-lock",
+					"icon-extra-class": "a-icon"
 				},
 				"hasTextSmall": {
 					"textSmall": "Liten tekst"
@@ -351,19 +352,37 @@
 			"collapse-panel-content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus cumque maxime, quam commodi doloremque adipisci deserunt atque non unde rem blanditiis quos veritatis suscipit, omnis animi labore nobis delectus eaque."
 		},
 		{
-			"collapseID": "accordionItem16",
+			"collapseID": "myPanel2",
+			"dataParent": "#panelAccordion",
+			"collapse-panel-header-id": "myPanel2Header",
 			"collapseHeader": {
-				"variation-class": "a-iconText-shadow a-collapseBtn collapsed",
-				"dataParent": "#accordion",
+				"variation-class": "a-iconText-shadow a-iconText-large a-collapseBtn collapsed",
 				"hasIcon": {
-					"icon-prefix": "ai",
-					"icon-class": "ai-help",
-					"icon-extra-class": "a-icon a-icon-circle"
+					"icon-prefix": "reg",
+					"icon-class": "reg-other",
+					"icon-extra-class": "a-icon"
 				},
-				"hasTextSmall": {
-					"textSmall": "Liten tekst"
+				"hasTextSmall": false,
+				"icontext": "Bare stor tekst"
+			},
+			"collapse-panel-content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus cumque maxime, quam commodi doloremque adipisci deserunt atque non unde rem blanditiis quos veritatis suscipit, omnis animi labore nobis delectus eaque."
+		},
+		{
+			"collapseID": "myPanel3",
+			"dataParent": "#panelAccordion",
+			"collapse-panel-header-id": "myPanel3Header",
+			"collapseHeader": {
+				"variation-class": "a-iconText-shadow a-iconText-large a-collapseBtn collapsed",
+				"hasIcon": {
+					"icon-prefix": "reg",
+					"icon-class": "reg-document",
+					"icon-extra-class": "a-icon"
 				},
-				"icontext": "Stor tekst"
+				"hasTextSmall": false,
+				"isHeader": {
+					"isH2": true
+				},
+				"icontext": "Tittel (h2)"
 			},
 			"collapse-panel-content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus cumque maxime, quam commodi doloremque adipisci deserunt atque non unde rem blanditiis quos veritatis suscipit, omnis animi labore nobis delectus eaque."
 		}

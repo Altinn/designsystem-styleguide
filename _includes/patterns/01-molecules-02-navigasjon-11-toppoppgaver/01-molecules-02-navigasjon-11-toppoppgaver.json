@@ -68,7 +68,7 @@
 			"dropdown-overflow": false,
 			"button-class": "a-btn a-active a-btn-icon a-btn-transparentWhite",
 			"button-colorClass": "",
-			"link-url": "/patterns/04-sider-portal-50-innboks-_11-innboks-mva-og-skatt-nyoppstartet/04-sider-portal-50-innboks-_11-innboks-mva-og-skatt-nyoppstartet.html",
+			"link-url": "link.sider-portal-innboks-mva-og-skatt-nyoppstartet",
 			"button-text": "alle",
 			"responsive-br": true,
 			"button-icon": {
@@ -82,7 +82,7 @@
 			"dropdown-overflow": false,
 			"button-class": "a-btn a-btn-icon a-btn-transparentWhite",
 			"button-colorClass": "",
-			"link-url": "/patterns/04-sider-portal-50-innboks-05-innboks-arkiv/04-sider-portal-50-innboks-05-innboks-arkiv.html",
+			"link-url": "link.sider-portal-innboks-arkiv",
 			"button-text": "arkiv",
 			"responsive-br": true,
 			"button-icon": {
@@ -96,7 +96,7 @@
 			"dropdown-overflow": false,
 			"button-class": "a-btn a-btn-icon a-btn-transparentWhite",
 			"button-colorClass": "",
-			"link-url": "/patterns/04-sider-portal-50-innboks-08-innboks-slettede-meldinger/04-sider-portal-50-innboks-08-innboks-slettede-meldinger.html",
+			"link-url": "link.sider-portal-innboks-slettede-meldinger",
 			"button-text": "slettede",
 			"responsive-br": true,
 			"button-icon": {
@@ -126,7 +126,7 @@
 			"wrapper-class": "hidden-lg-up",
 			"button-class": "a-btn a-btn-icon a-btn-transparentWhite",
 			"button-colorClass": "",
-			"link-url": "/patterns/04-sider-portal-50-innboks-_10-innboks-mva-og-skatt/04-sider-portal-50-innboks-_10-innboks-mva-og-skatt.html",
+			"link-url": "link.sider-portal-innboks-mva-og-skatt",
 			"button-text": "nytt",
 			"responsive-br": true,
 			"button-icon": {

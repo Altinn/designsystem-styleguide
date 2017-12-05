@@ -45,7 +45,7 @@
 					"icon-size": "ai-lg",
 					"icon-extra-class": "a-box-button-icon a-blueDarkText",
 					"box-button-action": "Gi og fjerne rettigheter",
-					"onclick": "location.href='/patterns/04-sider-portal-92-andre-med-rettigheter-00-andre-med-rettigheter-roller-oversikt/04-sider-portal-92-andre-med-rettigheter-00-andre-med-rettigheter-roller-oversikt.html';"
+					"onclick": "location.href='link.sider-portal-andre-med-rettigheter-roller-oversikt';"
 				},
 				{
 					"data-target": false,
@@ -57,7 +57,7 @@
 					"icon-size": "ai-lg",
 					"icon-extra-class": "a-box-button-icon a-blueDarkText",
 					"box-button-action": "Gi og fjerne rettigheter",
-					"onclick": "location.href='/patterns/04-sider-portal-92-andre-med-rettigheter-00-andre-med-rettigheter-roller-oversikt/04-sider-portal-92-andre-med-rettigheter-00-andre-med-rettigheter-roller-oversikt.html';"
+					"onclick": "location.href='link.sider-portal-andre-med-rettigheter-roller-oversikt';"
 				}
 			]
 		},
@@ -71,7 +71,7 @@
 			"icon-size": "ai-lg",
 			"icon-extra-class": "a-box-button-icon a-blueDarkText",
 			"box-button-action": "Gi og fjerne rettigheter",
-			"onclick": "location.href='/patterns/04-sider-portal-92-andre-med-rettigheter-00-andre-med-rettigheter-roller-oversikt/04-sider-portal-92-andre-med-rettigheter-00-andre-med-rettigheter-roller-oversikt.html';"
+			"onclick": "location.href='link.sider-portal-andre-med-rettigheter-roller-oversikt';"
 		},
 		{
 			"data-target": false,
@@ -83,7 +83,7 @@
 			"icon-size": "ai-lg",
 			"icon-extra-class": "a-box-button-icon a-blueDarkText",
 			"box-button-action": "Gi og fjerne rettigheter",
-			"onclick": "location.href='/patterns/04-sider-portal-92-andre-med-rettigheter-00-andre-med-rettigheter-roller-oversikt/04-sider-portal-92-andre-med-rettigheter-00-andre-med-rettigheter-roller-oversikt.html';"
+			"onclick": "location.href='link.sider-portal-andre-med-rettigheter-roller-oversikt';"
 		}
 	],
 	"box-button-list-add": {
@@ -93,6 +93,6 @@
 		"icon-class": "ai-plus",
 		"icon-size": "ai-lg",
 		"icon-extra-class": "a-box-button-icon a-blueDarkText",
-		"onclick": "location.href='/patterns/04-sider-portal-92-andre-med-rettigheter-00-andre-med-rettigheter-legg-til/04-sider-portal-92-andre-med-rettigheter-00-andre-med-rettigheter-legg-til.html';"
+		"onclick": "location.href='link.sider-portal-andre-med-rettigheter-legg-til';"
 	}
 }

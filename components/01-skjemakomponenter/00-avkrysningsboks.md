@@ -31,7 +31,7 @@ variations:
 
 usage:
 - title: Når skal du bruke denne komponenten?
-  description: Avkrysningsbokser brukes i tilfeller der brukeren får et spørsmål og kan svare med et eller flere alternativer.
+  description: Avkrysningsbokser brukes i tilfeller der brukeren får et spørsmål og kan svare med et eller flere alternativer. Avkrysningsboksene skal stå foran tilhørende tekst, og skal aldri stå alene. 
 - title: Når skal du vurdere alternativer?
   description: Dersom det handler om en filtrering, skal valgknapper brukes.
 - title: Policies

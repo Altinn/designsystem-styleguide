@@ -89,7 +89,7 @@
 	"label-id": false,
 	"label-content": "9",
 	"button-colorClass": "",
-	"link-url": "/patterns/04-sider-infoportal-01-forside-00-forside/04-sider-infoportal-01-forside-00-forside.html",
+	"link-url": "link.sider-infoportal-forside",
 	"button-shadow-label": false,
 	"icon-list-items": [
 		{
@@ -117,7 +117,7 @@
 	"alert-class": "a-message-info",
 	"alert-items": {
 		"alert-text": {
-			"text": "Dette er en beskjed."
+			"text": "Dette er en driftsmelding eller endringsinformasjon"
 		}
 	},
 	"linkIcon-url": "#",
@@ -128,7 +128,7 @@
 		"message-date": "05.03.2016"
 	},
 	"activitylog": {
-		"linkIcon-url": "/patterns/04-sider-portal-50-innboks-04-innboks-aktivitetslogg/04-sider-portal-50-innboks-04-innboks-aktivitetslogg.html",
+		"linkIcon-url": "link.sider-portal-innboks-aktivitetslogg",
 		"linkIcon-text": "Aktivitetslogg",
 		"icon-prefix": "reg ai-nw ai-nw-pr",
 		"icon-class": "reg-log"

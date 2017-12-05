@@ -20,6 +20,7 @@ This file is also used for dev (in patternlab)
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 html {
   font-family: sans-serif;
   line-height: 1.15;
@@ -13130,6 +13131,10 @@ button.a-btn-delete {
 .a-articleList .a-linkArticle {
   padding-bottom: 0; }
 
+.card-block,
+.a-message {
+  overflow-wrap: break-word; }
+
 /*
   General list
 */
@@ -13839,7 +13844,7 @@ ol {
     margin-left: 12px;
     content: ' ';
     border: 6px solid #000000;
-    border-color: transparent transparent #FBF6BD #FBF6BD;
+    border-color: transparent transparent #BCC7CC #BCC7CC;
     border-width: 6px;
     -webkit-box-shadow: -2px 2px 2px -2px rgba(0, 0, 0, 0.1);
     box-shadow: -2px 2px 2px -2px rgba(0, 0, 0, 0.1);
@@ -13908,7 +13913,7 @@ ol {
   .a-message.a-message-info {
     background-color: #FBF6BD; }
     .a-message.a-message-info::after {
-      border-bottom-color: #FBF6BD; }
+      border-color: transparent transparent #FBF6BD #FBF6BD; }
   .a-message.a-message-edit {
     background-color: #CFF0FF; }
   .a-message p:last-child {
@@ -14073,7 +14078,7 @@ body.modal-open {
           left: 96px; } }
   .a-modal .a-personSwitcher-name {
     display: inline-block;
-    max-width: 240px;
+    max-width: 220px;
     letter-spacing: normal; }
   .a-modal .a-page {
     position: absolute;
@@ -14397,7 +14402,7 @@ a.a-modal-close {
       border-bottom: 1px solid #BCC7CC; }
       @media (min-width: 576px) {
         .a-collapsePanel .a-collapsePanel-body .a-collapsePanel-body-content {
-          padding: 24px 84px; } }
+          padding: 24px 72px; } }
       @media (min-width: 768px) {
         .a-collapsePanel .a-collapsePanel-body .a-collapsePanel-body-content {
           padding: 36px 84px 60px 84px; } }
@@ -16934,8 +16939,18 @@ hr {
 
 /*------------------------------------*    $ALTINNETT SPECIFIC
 \*------------------------------------*/
+.an-bgBlack {
+  background: #000000; }
+
 .project-altinnett .a-list li.a-clickable.a-list-hasRowLink:hover {
   background-color: yellow; }
+
+.an-header {
+  height: 100px; }
+
+@media (min-width: 768px) {
+  .a-darkBackground .a-globalNav-main li a.globalNav-active {
+    border-bottom: 3px solid #FFFFFF; } }
 
 /*------------------------------------*    $BRREG SPECIFIC
 \*------------------------------------*/

@@ -59,7 +59,7 @@
 		}
 	},
 	"link-text": "En lenke ser slik ut",
-	"link-url": "/patterns/04-sider-infoportal-01-forside-00-forside/04-sider-infoportal-01-forside-00-forside.html",
+	"link-url": "link.sider-infoportal-forside",
 	"sr-text": false,
 	"help-text-1": "Står du fast? Start en",
 	"is-chat": true,
@@ -170,7 +170,7 @@
 	"display-as-link": false,
 	"date-input-label": "Dato:",
 	"form-control-class": "a-hasButton",
-	"url": "/patterns/04-sider-infoportal-01-forside-00-forside/04-sider-infoportal-01-forside-00-forside.html",
+	"url": "link.sider-infoportal-forside",
 	"text-input-date": {
 		"date-input-label": "Oppstartdato:",
 		"isRequired": true,
@@ -245,7 +245,7 @@
 	},
 	"chooseCategory-findself": {
 		"link-text": "Finn næringskode selv",
-		"link-url": "/patterns/04-sider-infoportal-01-forside-00-forside/04-sider-infoportal-01-forside-00-forside.html"
+		"link-url": "link.sider-infoportal-forside"
 	},
 	"radiobutton-indicator": true,
 	"radio-legend": {
@@ -401,7 +401,7 @@
 			"icon-extra-class": "a-personSwitcher-icon"
 		}
 	},
-	"btn-url": "/patterns/04-sider-infoportal-01-forside-00-forside/04-sider-infoportal-01-forside-00-forside.html",
+	"btn-url": "link.sider-infoportal-forside",
 	"modal-lead": {
 		"lead-text-content": "Ingress er et kort innledende avsnitt som vanligvis plasseres mellom overskriften og brødteksten."
 	},

@@ -14,13 +14,15 @@ Siden vi er flere ulike team som jobber med ulike løsninger (men med samme bruk
 
 ![Illustrasjon av ulike team som jobber med ulike bakenforliggendesystem, men frontend-koden må gå via et felles designsystem](../images/designsystemTeams.png)
 
+I tillegg til portal og infoportal (Altinn), jobbes det nå med å koble Brreg og AltinNett på designsystemet.
+
 For å komme i gang med utvikling på Altinn og Brønnøysundregistrenes webløsninger, bør du ha kjennskap til hvordan designsystemet er tenkt å fungere som bindeledd mellom de ulike løsningene.
 
 ## Pattern Lab
 
 For å bygge designsystemet har vi brukt «Pattern Lab», som er et verktøy for å lage atomiske designsystem. Pattern Lab fungerer som et arbeidsverktøy der frontend-utviklere lager alle UI-komponentene i HTML, CSS og Javasript. Komponentene kan settes sammen til sider, og deretter til en klikkbar prototype som kan brukertestes. Pattern Lab sørger for enkel prototyping og overlevering av CSS, javascript og HTML-kode til backend-utviklere.
 
-<b>Pattern Lab brukes i hovedsak til to formål på Altinn:</b>
+<b>Pattern Lab brukes i hovedsak til to formål:</b>
 
 - Pattern Lab skal være et hjem for alle UI-komponenter med deres styling og retningslinjer. CSS og javascript for komponentene skal **kun** eksistere og vedlikeholdes her.
 - Pattern Lab skal fungere som prototypeverktøy. Alle maler skal i de fleste tilfeller prototypes og brukertestes før implementering.
@@ -54,19 +56,27 @@ Designsystemet benytter trunk-basert utvikling. Les mer om dette på [altinnpedi
 ### Publisering
 Designsystemet versjoneres og publiseres slik at det enkelt kan benyttes av andre løsninger. Vi publiserer til både npmjs.com og github.com. Les mer om dette på [altinnpedia](http://altinnpedia.ai-dev.brreg.no/dev/design-system/publishing/)
 
+## CSS
+Designsystemets css-filer er delt inn etter prosjekt. Vi har en felles "scss-common"-mappe som inneholder felles gjenbrukbar css på tvers av prosjekter.
+
+Hvert enkelt prosjekt kan selv velge hva de ønsker å inkludere av common-filer. De kan også velge hvilken Bootstrap-css de ønsker å inkludere. Til slutt inkluderes spesifikk css for det aktuelle prosjektet. Dette gjelder alle prosjekter i designsystemet.
+
+Ingen av prosjektene eier "scss-common"-mappen, og dersom det gjøres endringer her, skal minst en representant fra hvert prosjekt tagges i pull requesten, og godkjenne endringen.
+
+Dersom et prosjekt ønsker å gjøre endringer som **ikke** påvirker de andre prosjektene, gjøres dette i prosjektets egen scss-mappe. F.eks: Dersom AltinNett har behov for å for å endre "breadcrumb-scss", men ikke vil risikere at det påvirker brreg, oppretter de en egen "breadcrumb.scss" under scss-altinnett og gjør den aktuelle endringen her.
+
 ## JavaScript
-JavaScript benyttes i utviklingsmiljøet og som del av Altinns brukergrensesnitt for å tillate ulike former for interaktivitet og funksjonalitet i nettleseren.
-
-### Eksterne biblioteker
-Utviklingsoppsettet er orientert rundt et Node.js-miljø og derfor blir JavaScript-biblioteker (til bruk i både utvikling og produksjon) hentet inn som Node.js-moduler (definert i fila package.json).
-
-### Pakking
-Javascript ligger lagret modulvis i et mappesystem som er strukturert rundt bruksområde:
+Designsystemets JavaScript-filer er delt inn i "prototyping" og "production".
 
 - source/js/prototyping/ inneholder funksjonalitet som bare brukes i prototype-sammenheng
 - source/js/production/ inneholder funksjonalitet som brukes i produksjon
 
-Hvert prosjekt har en egen init fil som henter inn modulene de har behov for. Filen "config.json" inneholder konfigurasjonen for hvordan modulene og bibliotekene blir kombinert for å danne produksjonsfilene til hvert prosjekt. Den leses av Gulp for å generere produksjonsfilene.
+Hvert prosjekt har en egen "init"-fil som starter javascript-filene prosjektet har behov for.
+
+Filen "config.json" spesifiserer hvilke javascript-filer hvert prosjekt skal hente inn. Hvert prosjekt har i config-filen en prototype-del og en produksjons-del. Config-filen leses av Gulp for å generere produksjonsfilene til dist-mappen, mens prototypefilene genereres til public-mappen.
+
+### Eksterne biblioteker
+Utviklingsoppsettet er orientert rundt et Node.js-miljø og derfor blir JavaScript-biblioteker (til bruk i både utvikling og produksjon) hentet inn som Node.js-moduler (definert i fila package.json).
 
 ### Distribuert kode
 JavaScript-kode for Altinns brukergrensesnitt leveres som produksjonsfiler:
@@ -79,19 +89,18 @@ JavaScript-kode for Altinns brukergrensesnitt leveres som produksjonsfiler:
 ### Øvrig informasjon
 En del av koden forutsetter jQuery som avhengighet. jQuery bundles imidlertid aldri med distrubusjonsfiler, grunnet utbredelsen til bibilioteket, og må derfor refereres til utenom.
 
-
 ## Oppdatere Designsystemets utstillingsvindu
 Designsystemet har et eget "utstillingsvindu" (det er her du er akkurat nå). Koden for dette ligger på Git-repositoriet "[designsystem-styleguide](https://github.com/Altinn/designsystem-styleguide)." Dersom du skal oppdatere dette må du først klone Git-repositoriet og følge installasjonsveiledningen.
 
 For å importere de siste komponentene fra Pattern Lab inn i utstillingsvinduet, gå tilbake til git-repositoriet "Designsystem" (Pattern Lab), og kjør ```gulp style-guide-export``` i kommandolinjen. Alle patterns vil da havne i "designsystem-styleguide" > "patterns".
 
-For å vise komponentene, må man lage en ny md-fil under ønsket kategori i "components"-mappen. F.eks under "skjemakomponenter". Deretter må md-filen oppdateres med info og referere til korrekt pattern.
+For å vise komponentene, må man lage en ny md-fil under ønsket kategori i "components"-mappen. F.eks under "skjemakomponenter". Deretter må md-filen oppdateres med info og referere til korrekt fil i "patterns"-mappen.
 
 ### Github gh-pages
 Vi har en egen branch som heter "gh-pages". Filene som ligger i denne branchen vises som en demo på [altinn.github.io/DesignSystem/](altinn.github.io/DesignSystem/) .
 
-Her ligger følgende:
-- Alle filer som ligger under "designsystem-styleguide" > "_site". (Index-filen vil da sørge for at designsystemets utstillingsvindu er tilgjengelig på demoen over.)
+I denne branchen ligger følgende:
+- Alle filer under "designsystem-styleguide" > "_site". (Index-filen vil da sørge for at designsystemets utstillingsvindu er tilgjengelig på demoen over.)
 - Innholdet fra PatternLabs "public"-mappe, slik at frontendmiljøet kan være synlig fra [altinn.github.io/DesignSystem/PatternLab](altinn.github.io/DesignSystem/PatternLab)
 - Et par andre mapper som er relevant for tidligere versjoner av prototypen
 

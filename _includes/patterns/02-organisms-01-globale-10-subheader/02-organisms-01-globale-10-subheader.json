@@ -71,7 +71,7 @@
 	"label-content": "9",
 	"button-text": "En standard knapp",
 	"button-colorClass": "",
-	"link-url": "/patterns/04-sider-infoportal-01-forside-00-forside/04-sider-infoportal-01-forside-00-forside.html",
+	"link-url": "link.sider-infoportal-forside",
 	"button-shadow-label": false,
 	"button-icon": false,
 	"info-delete-add": {
@@ -388,7 +388,7 @@
 			"icon-class": "ai-corp",
 			"icon-extra-class": ""
 		},
-		"link-url": "/patterns/04-sider-portal-50-innboks-00-innboks/04-sider-portal-50-innboks-00-innboks.html"
+		"link-url": "link.sider-portal-innboks"
 	},
 	"button-sub": {
 		"collapse-header-contentID": "listsublevels2",
@@ -472,7 +472,7 @@
 					"icon-class": "ai-corp ai-left",
 					"icon-extra-class": ""
 				},
-				"link-url": "/patterns/04-sider-portal-50-innboks-00-innboks/04-sider-portal-50-innboks-00-innboks.html"
+				"link-url": "link.sider-portal-innboks"
 			},
 			"button-sub": false
 		},
@@ -493,7 +493,7 @@
 					"icon-class": "ai-corp ai-left",
 					"icon-extra-class": ""
 				},
-				"link-url": "/patterns/04-sider-portal-50-innboks-00-innboks/04-sider-portal-50-innboks-00-innboks.html"
+				"link-url": "link.sider-portal-innboks"
 			},
 			"button-sub": {
 				"collapse-header-contentID": "listsublevels2",
@@ -578,7 +578,7 @@
 					"icon-class": "ai-private ai-left",
 					"icon-extra-class": ""
 				},
-				"link-url": "/patterns/04-sider-portal-50-innboks-00-innboks/04-sider-portal-50-innboks-00-innboks.html"
+				"link-url": "link.sider-portal-innboks"
 			},
 			"button-sub": false
 		},
@@ -598,7 +598,7 @@
 					"icon-class": "ai-corp ai-left",
 					"icon-extra-class": ""
 				},
-				"link-url": "/patterns/04-sider-portal-50-innboks-00-innboks/04-sider-portal-50-innboks-00-innboks.html"
+				"link-url": "link.sider-portal-innboks"
 			},
 			"button-sub": false
 		},
@@ -618,7 +618,7 @@
 					"icon-class": "ai-corp ai-left",
 					"icon-extra-class": ""
 				},
-				"link-url": "/patterns/04-sider-portal-50-innboks-00-innboks/04-sider-portal-50-innboks-00-innboks.html"
+				"link-url": "link.sider-portal-innboks"
 			},
 			"button-sub": false
 		}
@@ -629,7 +629,7 @@
 		"icon-prefix": "ai",
 		"icon-class": "ai-plus",
 		"icon-extra-class": "",
-		"onclick": "location.href='/patterns/04-sider-portal-01-aktorvalg-10-aktorvalg/04-sider-portal-01-aktorvalg-10-aktorvalg.html'"
+		"onclick": "location.href='link.sider-portal-aktorvalg'"
 	},
 	"personswitch-options": {
 		"isDiscreet": "a-form-checkboxes--discret",
@@ -665,7 +665,7 @@
 		"button-dot": false,
 		"personrole-link": {
 			"link-text": "Innstillinger",
-			"link-url": "/patterns/04-sider-portal-60-profil-roller-rettigheter-profil-roller-rettigheter/04-sider-portal-60-profil-roller-rettigheter-profil-roller-rettigheter.html"
+			"link-url": "link.sider-portal-profil-roller-rettigheter"
 		}
 	},
 	"profile-text": "Alle dine profiler: ",
@@ -707,7 +707,7 @@
 		"linkFeatured": {
 			"link-text": "Tilbake til innboks",
 			"link-class": "a-linkFeatured a-textBlue a-textBlue-hover ml-1",
-			"link-url": "/patterns/04-sider-portal-50-innboks-00-innboks/04-sider-portal-50-innboks-00-innboks.html",
+			"link-url": "link.sider-portal-innboks",
 			"link-icon-left": {
 				"icon-prefix": "ai ",
 				"icon-class": "ai-back",

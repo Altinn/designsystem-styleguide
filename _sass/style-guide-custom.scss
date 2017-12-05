@@ -542,6 +542,7 @@ $blue-dark: #0062BA;
 .iffframe {
   padding: 12px;
 	border: none;
+	overflow: visible !important;
 }
 
 .iffframe__iframe {

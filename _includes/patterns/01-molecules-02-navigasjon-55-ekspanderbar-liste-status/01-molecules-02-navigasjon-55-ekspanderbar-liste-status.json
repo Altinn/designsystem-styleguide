@@ -377,7 +377,7 @@
 			"icon-class": "ai-corp",
 			"icon-extra-class": ""
 		},
-		"link-url": "/patterns/04-sider-portal-50-innboks-00-innboks/04-sider-portal-50-innboks-00-innboks.html"
+		"link-url": "link.sider-portal-innboks"
 	},
 	"button-sub": {
 		"collapse-header-contentID": "listsublevels2",

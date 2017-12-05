@@ -11,11 +11,23 @@ statecolor: badge-success
 
 variations:
 - title: Standard
-  description: Trekkspill som viser et åpent tema om gangen.
-  styleModifier: < a >
+  description: Trekkspill med overskrifter
+  styleModifier:
   includeClassification: molecules
   includeCategory: 02-navigasjon
   includeName: 01-trekkspill-overskrifter
+- title: Diskret
+  description: Diskret trekkspill
+  styleModifier:
+  includeClassification: molecules
+  includeCategory: 02-navigasjon
+  includeName: 02-trekkspill
+- title: Panel
+  description: Trekkspill i panelvisning
+  styleModifier:
+  includeClassification: organisms
+  includeCategory: 50-ekspanderbart-panel
+  includeName: 40-ekspanderbart-panel-trekkspill
 
 usage:
 - title: Når skal du bruke denne komponenten?
