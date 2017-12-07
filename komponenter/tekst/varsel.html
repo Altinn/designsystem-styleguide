@@ -2908,8 +2908,8 @@
 
 			<li class="c-primary-nav__subitem is-active">
 
-                <a class="c-primary-nav__sublink " href="/designsystem-styleguide/komponenter/tekst/labels.html">
-			    	Labels
+                <a class="c-primary-nav__sublink " href="/designsystem-styleguide/komponenter/tekst/etikett.html">
+			    	Etikett
 				</a><!-- end c-primary-nav__link -->
 
 			</li><!-- end c-primary-nav__item -->
@@ -8258,8 +8258,8 @@
 
 			<li class="c-primary-nav__subitem is-active">
 
-                <a class="c-primary-nav__sublink " href="/designsystem-styleguide/komponenter/tekst/labels.html">
-			    	Labels
+                <a class="c-primary-nav__sublink " href="/designsystem-styleguide/komponenter/tekst/etikett.html">
+			    	Etikett
 				</a><!-- end c-primary-nav__link -->
 
 			</li><!-- end c-primary-nav__item -->
@@ -10878,11 +10878,27 @@
 			<ul class="c-tabs__list">
 				
 				<li class="c-tabs__item">
-					<a href="#tab-standard" class="c-tabs__link js-tab" data-code-tabs="tab-standard">Standard</a>
+					<a href="#tab-info" class="c-tabs__link js-tab" data-code-tabs="tab-info">Info</a>
 				</li><!-- end c-tabs__item -->
 				
 				<li class="c-tabs__item">
-					<a href="#tab-varianter" class="c-tabs__link js-tab" data-code-tabs="tab-varianter">Varianter</a>
+					<a href="#tab-driftsmelding" class="c-tabs__link js-tab" data-code-tabs="tab-driftsmelding">Driftsmelding</a>
+				</li><!-- end c-tabs__item -->
+				
+				<li class="c-tabs__item">
+					<a href="#tab-advarsel" class="c-tabs__link js-tab" data-code-tabs="tab-advarsel">Advarsel</a>
+				</li><!-- end c-tabs__item -->
+				
+				<li class="c-tabs__item">
+					<a href="#tab-godkjent" class="c-tabs__link js-tab" data-code-tabs="tab-godkjent">Godkjent</a>
+				</li><!-- end c-tabs__item -->
+				
+				<li class="c-tabs__item">
+					<a href="#tab-uten-pil" class="c-tabs__link js-tab" data-code-tabs="tab-uten-pil">Uten pil</a>
+				</li><!-- end c-tabs__item -->
+				
+				<li class="c-tabs__item">
+					<a href="#tab-uten-skygge" class="c-tabs__link js-tab" data-code-tabs="tab-uten-skygge">Uten skygge</a>
 				</li><!-- end c-tabs__item -->
 				
 
@@ -10892,11 +10908,42 @@
 			<div class="c-tabs__body">
 
 				
-				<div class="c-tabs__panel js-tabs-panel" id="tab-standard">
+				<div class="c-tabs__panel js-tabs-panel" id="tab-info">
 
 					<section class="c-section">
 						<header class="c-section__header">
-							<div>Standard  : <p>Et vanlig varsel</p>
+							<div>Info  : <p>Et vanlig varsel med nøytral informasjon</p>
+ </div>
+						</header>
+
+						
+
+						
+
+						
+						<div class="iffframe">
+							
+<div id="alert" class="a-message  ">
+  
+  Dette er en nøytral beskjed
+  
+</div>
+
+							<!-- iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="/designsystem-styleguide/patterns/00-atoms-07-tekst-01-varsel-01-info/00-atoms-07-tekst-01-varsel-01-info.markup-only.html"></iframe>
+
+							<div class="iffframe__handle"></div -->
+
+						</div><!--end iffframe-->
+
+					</section><!--end section-->
+
+				</div><!--end c-tabs__panel-->
+				
+				<div class="c-tabs__panel js-tabs-panel" id="tab-driftsmelding">
+
+					<section class="c-section">
+						<header class="c-section__header">
+							<div>Driftsmelding  : <p>Varsel som viser driftsmeldinger eller endringsinformasjon</p>
  </div>
 						</header>
 
@@ -10909,7 +10956,7 @@
 							
 <div id="alert" class="a-message a-message-info ">
   
-  Dette er en beskjed.
+  Dette er en driftsmelding eller endringsinformasjon
   
 </div>
 
@@ -10923,11 +10970,73 @@
 
 				</div><!--end c-tabs__panel-->
 				
-				<div class="c-tabs__panel js-tabs-panel" id="tab-varianter">
+				<div class="c-tabs__panel js-tabs-panel" id="tab-advarsel">
 
 					<section class="c-section">
 						<header class="c-section__header">
-							<div>Varianter  : <p>Alle ulike variante av varsler.</p>
+							<div>Advarsel  : <p>Varsel som antyder feil input, driftsfeil, etc.</p>
+ </div>
+						</header>
+
+						
+
+						
+
+						
+						<div class="iffframe">
+							
+<div id="mail-error" class="a-message a-message-error ">
+  
+  Oida, e-postadressen er ikke gyldig
+  
+</div>
+
+							<!-- iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="/designsystem-styleguide/patterns/00-atoms-07-tekst-01-varsel-02-advarsel/00-atoms-07-tekst-01-varsel-02-advarsel.markup-only.html"></iframe>
+
+							<div class="iffframe__handle"></div -->
+
+						</div><!--end iffframe-->
+
+					</section><!--end section-->
+
+				</div><!--end c-tabs__panel-->
+				
+				<div class="c-tabs__panel js-tabs-panel" id="tab-godkjent">
+
+					<section class="c-section">
+						<header class="c-section__header">
+							<div>Godkjent  : <p>Varsel som antyder gyldig input.</p>
+ </div>
+						</header>
+
+						
+
+						
+
+						
+						<div class="iffframe">
+							
+<div id="mail-success" class="a-message a-message-success ">
+  
+  Yes! Så flink du har vært!
+  
+</div>
+
+							<!-- iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="/designsystem-styleguide/patterns/00-atoms-07-tekst-01-varsel-03-godkjent/00-atoms-07-tekst-01-varsel-03-godkjent.markup-only.html"></iframe>
+
+							<div class="iffframe__handle"></div -->
+
+						</div><!--end iffframe-->
+
+					</section><!--end section-->
+
+				</div><!--end c-tabs__panel-->
+				
+				<div class="c-tabs__panel js-tabs-panel" id="tab-uten-pil">
+
+					<section class="c-section">
+						<header class="c-section__header">
+							<div>Uten pil  : <p>Varselboks som ikke har pil over seg og er 100% (fyller hele bredden).</p>
  </div>
 						</header>
 
@@ -10940,46 +11049,49 @@
 							
 <div id="alert-no-arrow" class="a-message a-message-info a-message--arrow-off a-message--fullwidth ">
   
-  Dette er en beskjed uten pil og med full bredde
+  Dette er en varselboks uten pil og med full bredde. Varselboksene kan forresten innneholde
   
-</div>
-<div id="alert" class="a-message a-message-info ">
-  
-  Obs! E-postadressen må inneholde krøllalfa @
-  
-</div>
-<div id="mail-error" class="a-message a-message-error ">
-  
-  Oida, e-postadressen er ikke gyldig
-  
-</div>
-<div id="mail-success" class="a-message a-message-success ">
-  
-  Yes! Så flink du har vært!
-  
-</div>
-<div id="alert" class="a-message a-message-info ">
-  
-  Dette er en tekst
-  
-  <a href="/patterns/04-sider-infoportal-01-forside-00-forside/04-sider-infoportal-01-forside-00-forside.html" class=" ">
-  med en lenke som står i løpende tekst
+  <a href="link.sider-infoportal-forside" class=" ">
+  lenker som står i løpende tekst, 
   
 </a>
-  
+  
   og man kan ha mer tekst etter.
   
 </div>
+
+							<!-- iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="/designsystem-styleguide/patterns/00-atoms-07-tekst-01-varsel-04-alene/00-atoms-07-tekst-01-varsel-04-alene.markup-only.html"></iframe>
+
+							<div class="iffframe__handle"></div -->
+
+						</div><!--end iffframe-->
+
+					</section><!--end section-->
+
+				</div><!--end c-tabs__panel-->
+				
+				<div class="c-tabs__panel js-tabs-panel" id="tab-uten-skygge">
+
+					<section class="c-section">
+						<header class="c-section__header">
+							<div>Uten skygge  : <p>Varselboks uten skygge.</p>
+ </div>
+						</header>
+
+						
+
+						
+
+						
+						<div class="iffframe">
+							
 <div id="alert" class="a-message a-message-info a-message--arrow-off a-message--fullwidth a-message--no-dropshadow mt-1 pb-4 pt-2 ">
   
-  <div class="a-fontBold">
-    Varsel tittel
-  </div>
-  Varsel med tittel og tekst
+  Dette er en varselboks uten skygge
   
 </div>
 
-							<!-- iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="/designsystem-styleguide/patterns/00-atoms-07-tekst-01-varsel-variasjoner/00-atoms-07-tekst-01-varsel-variasjoner.markup-only.html"></iframe>
+							<!-- iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="/designsystem-styleguide/patterns/00-atoms-07-tekst-01-varsel-05-utenskygge/00-atoms-07-tekst-01-varsel-05-utenskygge.markup-only.html"></iframe>
 
 							<div class="iffframe__handle"></div -->
 
@@ -11003,7 +11115,7 @@
 
 				
 
-				<li class="c-tabs-list__item js-tabs-list-item" data-code-tabs="tab-standard">
+				<li class="c-tabs-list__item js-tabs-list-item" data-code-tabs="tab-info">
 
 					<div class="c-tabs test-tabs  js-tabs">
 
@@ -11034,9 +11146,9 @@
 								<div class="pattern-code">
 									<button class="c-btn pattern-code-copy-btn" data-clipboard-target="#pattern-code-1">Kopier</button>
 									<pre class="highlight pattern-code-block"><code class="language-html" id="pattern-code-1">
-<figure class="highlight"><pre><code class="language-liquid" data-lang="liquid">&lt;div id="alert" class="a-message a-message-info "&gt;
+<figure class="highlight"><pre><code class="language-liquid" data-lang="liquid">&lt;div id="alert" class="a-message  "&gt;
   
-  Dette er en beskjed.
+  Dette er en nøytral beskjed
   
 &lt;/div&gt;</code></pre></figure>
 </code></pre>
@@ -11076,7 +11188,7 @@
 
 				
 
-				<li class="c-tabs-list__item js-tabs-list-item" data-code-tabs="tab-varianter">
+				<li class="c-tabs-list__item js-tabs-list-item" data-code-tabs="tab-driftsmelding">
 
 					<div class="c-tabs test-tabs  js-tabs">
 
@@ -11107,44 +11219,9 @@
 								<div class="pattern-code">
 									<button class="c-btn pattern-code-copy-btn" data-clipboard-target="#pattern-code-2">Kopier</button>
 									<pre class="highlight pattern-code-block"><code class="language-html" id="pattern-code-2">
-<figure class="highlight"><pre><code class="language-liquid" data-lang="liquid">&lt;div id="alert-no-arrow" class="a-message a-message-info a-message--arrow-off a-message--fullwidth "&gt;
+<figure class="highlight"><pre><code class="language-liquid" data-lang="liquid">&lt;div id="alert" class="a-message a-message-info "&gt;
   
-  Dette er en beskjed uten pil og med full bredde
-  
-&lt;/div&gt;
-&lt;div id="alert" class="a-message a-message-info "&gt;
-  
-  Obs! E-postadressen må inneholde krøllalfa @
-  
-&lt;/div&gt;
-&lt;div id="mail-error" class="a-message a-message-error "&gt;
-  
-  Oida, e-postadressen er ikke gyldig
-  
-&lt;/div&gt;
-&lt;div id="mail-success" class="a-message a-message-success "&gt;
-  
-  Yes! Så flink du har vært!
-  
-&lt;/div&gt;
-&lt;div id="alert" class="a-message a-message-info "&gt;
-  
-  Dette er en tekst
-  
-  &lt;a href="/patterns/04-sider-infoportal-01-forside-00-forside/04-sider-infoportal-01-forside-00-forside.html" class=" "&gt;
-  med en lenke som står i løpende tekst
-  
-&lt;/a&gt;
-  
-  og man kan ha mer tekst etter.
-  
-&lt;/div&gt;
-&lt;div id="alert" class="a-message a-message-info a-message--arrow-off a-message--fullwidth a-message--no-dropshadow mt-1 pb-4 pt-2 "&gt;
-  
-  &lt;div class="a-fontBold"&gt;
-    Varsel tittel
-  &lt;/div&gt;
-  Varsel med tittel og tekst
+  Dette er en driftsmelding eller endringsinformasjon
   
 &lt;/div&gt;</code></pre></figure>
 </code></pre>
@@ -11178,6 +11255,305 @@
 				</li><!-- end c-tabs-list__item -->
 			
 
+				
+
+				
+
+				
+
+				<li class="c-tabs-list__item js-tabs-list-item" data-code-tabs="tab-advarsel">
+
+					<div class="c-tabs test-tabs  js-tabs">
+
+						<ul class="c-tabs__list">
+
+							<li class="c-tabs__item">
+								<a href="#html-3" class="c-tabs__link js-tab">HTML</a>
+							</li><!-- end c-tabs__item -->
+
+							<!--
+
+							<li class="c-tabs__item">
+								<a href="#angular-3" class="c-tabs__link js-tab">Angular</a>
+							</li><!-- end c-tabs__item -->
+
+							<!--<li class="c-tabs__item">
+								<a href="#react-3" class="c-tabs__link js-tab">React</a>
+							</li><!-- end c-tabs__item -->
+
+						</ul><!-- end c-tabs__list -->
+
+						<div class="c-tabs__body ">
+
+							<div class="c-tabs__panel js-tabs-panel" id="html-3">
+
+								
+
+								<div class="pattern-code">
+									<button class="c-btn pattern-code-copy-btn" data-clipboard-target="#pattern-code-3">Kopier</button>
+									<pre class="highlight pattern-code-block"><code class="language-html" id="pattern-code-3">
+<figure class="highlight"><pre><code class="language-liquid" data-lang="liquid">&lt;div id="mail-error" class="a-message a-message-error "&gt;
+  
+  Oida, e-postadressen er ikke gyldig
+  
+&lt;/div&gt;</code></pre></figure>
+</code></pre>
+								</div>
+
+							</div><!--end c-tabs__panel-->
+
+
+							<div class="c-tabs__panel js-tabs-panel" id="angular-3">
+
+								<div class="pattern-code">
+									<button class="c-btn pattern-code-copy-btn" data-clipboard-target="#pattern-code-3">Copy</button>
+									<pre class="highlight pattern-code-block"><code class="language-html" id="pattern-code-3">THIS IS ANGULAR CODE</code></pre>
+								</div>
+
+							</div><!--end c-tabs__panel-->
+
+							<div class="c-tabs__panel js-tabs-panel" id="react-3">
+
+								<div class="pattern-code">
+									<button class="c-btn pattern-code-copy-btn" data-clipboard-target="#pattern-code-3">Copy</button>
+									<pre class="highlight pattern-code-block"><code class="language-html" id="pattern-code-3">THIS IS REACT CODE</code></pre>
+								</div>
+
+							</div><!--end c-tabs__panel-->
+
+						</div><!-- end c-tabs__body-->
+
+					</div><!-- end c-tabs -->
+
+				</li><!-- end c-tabs-list__item -->
+			
+
+				
+
+				
+
+				
+
+				<li class="c-tabs-list__item js-tabs-list-item" data-code-tabs="tab-godkjent">
+
+					<div class="c-tabs test-tabs  js-tabs">
+
+						<ul class="c-tabs__list">
+
+							<li class="c-tabs__item">
+								<a href="#html-4" class="c-tabs__link js-tab">HTML</a>
+							</li><!-- end c-tabs__item -->
+
+							<!--
+
+							<li class="c-tabs__item">
+								<a href="#angular-4" class="c-tabs__link js-tab">Angular</a>
+							</li><!-- end c-tabs__item -->
+
+							<!--<li class="c-tabs__item">
+								<a href="#react-4" class="c-tabs__link js-tab">React</a>
+							</li><!-- end c-tabs__item -->
+
+						</ul><!-- end c-tabs__list -->
+
+						<div class="c-tabs__body ">
+
+							<div class="c-tabs__panel js-tabs-panel" id="html-4">
+
+								
+
+								<div class="pattern-code">
+									<button class="c-btn pattern-code-copy-btn" data-clipboard-target="#pattern-code-4">Kopier</button>
+									<pre class="highlight pattern-code-block"><code class="language-html" id="pattern-code-4">
+<figure class="highlight"><pre><code class="language-liquid" data-lang="liquid">&lt;div id="mail-success" class="a-message a-message-success "&gt;
+  
+  Yes! Så flink du har vært!
+  
+&lt;/div&gt;</code></pre></figure>
+</code></pre>
+								</div>
+
+							</div><!--end c-tabs__panel-->
+
+
+							<div class="c-tabs__panel js-tabs-panel" id="angular-4">
+
+								<div class="pattern-code">
+									<button class="c-btn pattern-code-copy-btn" data-clipboard-target="#pattern-code-4">Copy</button>
+									<pre class="highlight pattern-code-block"><code class="language-html" id="pattern-code-4">THIS IS ANGULAR CODE</code></pre>
+								</div>
+
+							</div><!--end c-tabs__panel-->
+
+							<div class="c-tabs__panel js-tabs-panel" id="react-4">
+
+								<div class="pattern-code">
+									<button class="c-btn pattern-code-copy-btn" data-clipboard-target="#pattern-code-4">Copy</button>
+									<pre class="highlight pattern-code-block"><code class="language-html" id="pattern-code-4">THIS IS REACT CODE</code></pre>
+								</div>
+
+							</div><!--end c-tabs__panel-->
+
+						</div><!-- end c-tabs__body-->
+
+					</div><!-- end c-tabs -->
+
+				</li><!-- end c-tabs-list__item -->
+			
+
+				
+
+				
+
+				
+
+				<li class="c-tabs-list__item js-tabs-list-item" data-code-tabs="tab-uten-pil">
+
+					<div class="c-tabs test-tabs  js-tabs">
+
+						<ul class="c-tabs__list">
+
+							<li class="c-tabs__item">
+								<a href="#html-5" class="c-tabs__link js-tab">HTML</a>
+							</li><!-- end c-tabs__item -->
+
+							<!--
+
+							<li class="c-tabs__item">
+								<a href="#angular-5" class="c-tabs__link js-tab">Angular</a>
+							</li><!-- end c-tabs__item -->
+
+							<!--<li class="c-tabs__item">
+								<a href="#react-5" class="c-tabs__link js-tab">React</a>
+							</li><!-- end c-tabs__item -->
+
+						</ul><!-- end c-tabs__list -->
+
+						<div class="c-tabs__body ">
+
+							<div class="c-tabs__panel js-tabs-panel" id="html-5">
+
+								
+
+								<div class="pattern-code">
+									<button class="c-btn pattern-code-copy-btn" data-clipboard-target="#pattern-code-5">Kopier</button>
+									<pre class="highlight pattern-code-block"><code class="language-html" id="pattern-code-5">
+<figure class="highlight"><pre><code class="language-liquid" data-lang="liquid">&lt;div id="alert-no-arrow" class="a-message a-message-info a-message--arrow-off a-message--fullwidth "&gt;
+  
+  Dette er en varselboks uten pil og med full bredde. Varselboksene kan forresten innneholde
+  
+  &lt;a href="link.sider-infoportal-forside" class=" "&gt;
+  lenker som står i løpende tekst, 
+  
+&lt;/a&gt;
+  
+  og man kan ha mer tekst etter.
+  
+&lt;/div&gt;</code></pre></figure>
+</code></pre>
+								</div>
+
+							</div><!--end c-tabs__panel-->
+
+
+							<div class="c-tabs__panel js-tabs-panel" id="angular-5">
+
+								<div class="pattern-code">
+									<button class="c-btn pattern-code-copy-btn" data-clipboard-target="#pattern-code-5">Copy</button>
+									<pre class="highlight pattern-code-block"><code class="language-html" id="pattern-code-5">THIS IS ANGULAR CODE</code></pre>
+								</div>
+
+							</div><!--end c-tabs__panel-->
+
+							<div class="c-tabs__panel js-tabs-panel" id="react-5">
+
+								<div class="pattern-code">
+									<button class="c-btn pattern-code-copy-btn" data-clipboard-target="#pattern-code-5">Copy</button>
+									<pre class="highlight pattern-code-block"><code class="language-html" id="pattern-code-5">THIS IS REACT CODE</code></pre>
+								</div>
+
+							</div><!--end c-tabs__panel-->
+
+						</div><!-- end c-tabs__body-->
+
+					</div><!-- end c-tabs -->
+
+				</li><!-- end c-tabs-list__item -->
+			
+
+				
+
+				
+
+				
+
+				<li class="c-tabs-list__item js-tabs-list-item" data-code-tabs="tab-uten-skygge">
+
+					<div class="c-tabs test-tabs  js-tabs">
+
+						<ul class="c-tabs__list">
+
+							<li class="c-tabs__item">
+								<a href="#html-6" class="c-tabs__link js-tab">HTML</a>
+							</li><!-- end c-tabs__item -->
+
+							<!--
+
+							<li class="c-tabs__item">
+								<a href="#angular-6" class="c-tabs__link js-tab">Angular</a>
+							</li><!-- end c-tabs__item -->
+
+							<!--<li class="c-tabs__item">
+								<a href="#react-6" class="c-tabs__link js-tab">React</a>
+							</li><!-- end c-tabs__item -->
+
+						</ul><!-- end c-tabs__list -->
+
+						<div class="c-tabs__body ">
+
+							<div class="c-tabs__panel js-tabs-panel" id="html-6">
+
+								
+
+								<div class="pattern-code">
+									<button class="c-btn pattern-code-copy-btn" data-clipboard-target="#pattern-code-6">Kopier</button>
+									<pre class="highlight pattern-code-block"><code class="language-html" id="pattern-code-6">
+<figure class="highlight"><pre><code class="language-liquid" data-lang="liquid">&lt;div id="alert" class="a-message a-message-info a-message--arrow-off a-message--fullwidth a-message--no-dropshadow mt-1 pb-4 pt-2 "&gt;
+  
+  Dette er en varselboks uten skygge
+  
+&lt;/div&gt;</code></pre></figure>
+</code></pre>
+								</div>
+
+							</div><!--end c-tabs__panel-->
+
+
+							<div class="c-tabs__panel js-tabs-panel" id="angular-6">
+
+								<div class="pattern-code">
+									<button class="c-btn pattern-code-copy-btn" data-clipboard-target="#pattern-code-6">Copy</button>
+									<pre class="highlight pattern-code-block"><code class="language-html" id="pattern-code-6">THIS IS ANGULAR CODE</code></pre>
+								</div>
+
+							</div><!--end c-tabs__panel-->
+
+							<div class="c-tabs__panel js-tabs-panel" id="react-6">
+
+								<div class="pattern-code">
+									<button class="c-btn pattern-code-copy-btn" data-clipboard-target="#pattern-code-6">Copy</button>
+									<pre class="highlight pattern-code-block"><code class="language-html" id="pattern-code-6">THIS IS REACT CODE</code></pre>
+								</div>
+
+							</div><!--end c-tabs__panel-->
+
+						</div><!-- end c-tabs__body-->
+
+					</div><!-- end c-tabs -->
+
+				</li><!-- end c-tabs-list__item -->
+			
+
 		</ul><!-- end c-tabs-list -->
 
 	</div>
@@ -11198,13 +11574,13 @@
 
 			
 				<h3>Når skal du bruke denne komponenten?</h3>
-        <p>Info kommer.</p>
+        <p>Brukes for å gi brukeren varsler, f.eks ved feil i systemet, feil innfylt informasjon eller ved andre viktige opplysninger brukeren må gjøres oppmerksom på.</p>
       
 				<h3>Når skal du vurdere alternativer?</h3>
-        <p>Info kommer.</p>
+        <p>Dersom det gjelder tilleggsinformasjon til et begrep eller tema, bruk heller popover.</p>
       
 				<h3>Policies</h3>
-        <p>Se theme-spesifikke policies.</p>
+        <p>Dersom det er viktig at brukeren får med seg informasjonen, legg en role="alert" på div-en, slik at brukere med skjermlesere får med seg informasjonen uten å måtte lete seg frem til den.</p>
       
 
 		</div><!-- end c-text-passage -->
@@ -11212,7 +11588,7 @@
 		<div class="c-text-passage l-linelength-container display-altinn">
 			
 				<h3>Theme-spesifikke policies for Altinn</h3>
-        <p>Fargene skal brukes riktig etter hva varselet skal antyde. Grå - info, Gul - driftsmelding, info ( endring), Rød - advarsel, ute av drift, feil input, Grønn - riktig input, godkjent.</p>
+        <p>Fargene skal brukes riktig etter hva varselet skal antyde. Grå - info, Gul - driftsmelding/endringsinformasjon, Rød - advarsel, ute av drift, feil input, Grønn - riktig input, godkjent.</p>
       
 		</div><!-- end c-text-passage -->
 
@@ -11241,16 +11617,131 @@
 				<tr class="c-table__row ">
 
 					<td class="c-table__cell ">
-						
+						a-message
+					</td>
+
+					<td class="c-table__cell ">
+						ja
 					</td>
 
 					<td class="c-table__cell ">
 						
+						<p>Brukes som standard.</p>
+
+					</td>
+
+				</tr><!-- end c-table__row -->
+				
+
+				<tr class="c-table__row ">
+
+					<td class="c-table__cell ">
+						a-message--fullwidth
+					</td>
+
+					<td class="c-table__cell ">
+						nei
 					</td>
 
 					<td class="c-table__cell ">
 						
+						<p>Bruk denne klassen for å få varselboksen til å fylle hele den tilgjengelige bredden.</p>
+
+					</td>
+
+				</tr><!-- end c-table__row -->
+				
+
+				<tr class="c-table__row ">
+
+					<td class="c-table__cell ">
+						a-message--arrow-off
+					</td>
+
+					<td class="c-table__cell ">
+						nei
+					</td>
+
+					<td class="c-table__cell ">
 						
+						<p>Bruk denne klassen for å fjerne pilen.</p>
+
+					</td>
+
+				</tr><!-- end c-table__row -->
+				
+
+				<tr class="c-table__row ">
+
+					<td class="c-table__cell ">
+						a-message--no-dropshadow
+					</td>
+
+					<td class="c-table__cell ">
+						nei
+					</td>
+
+					<td class="c-table__cell ">
+						
+						<p>Bruk denne klassen for å fjerne skyggen.</p>
+
+					</td>
+
+				</tr><!-- end c-table__row -->
+				
+
+				<tr class="c-table__row ">
+
+					<td class="c-table__cell ">
+						a-message-info
+					</td>
+
+					<td class="c-table__cell ">
+						nei
+					</td>
+
+					<td class="c-table__cell ">
+						
+						<p>Bruk denne klassen ved driftsmelding/endringsinformasjon.</p>
+
+					</td>
+
+				</tr><!-- end c-table__row -->
+				
+
+				<tr class="c-table__row ">
+
+					<td class="c-table__cell ">
+						a-message-error
+					</td>
+
+					<td class="c-table__cell ">
+						nei
+					</td>
+
+					<td class="c-table__cell ">
+						
+						<p>Bruk denne klassen ved advarsler, feil input og kritisk informasjon / ute av drift.</p>
+
+					</td>
+
+				</tr><!-- end c-table__row -->
+				
+
+				<tr class="c-table__row ">
+
+					<td class="c-table__cell ">
+						a-message-success
+					</td>
+
+					<td class="c-table__cell ">
+						nei
+					</td>
+
+					<td class="c-table__cell ">
+						
+						<p>Bruk denne klassen ved korrekt input, eller andre godkjenninger.</p>
+
 					</td>
 
 				</tr><!-- end c-table__row -->

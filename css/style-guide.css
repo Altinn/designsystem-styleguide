@@ -458,7 +458,8 @@ code[class*="language-"], pre[class*="language-"] {
 
 .iffframe {
   padding: 12px;
-  border: none; }
+  border: none;
+  overflow: visible !important; }
 
 .iffframe__iframe {
   overflow: auto !important;
@@ -525,7 +526,10 @@ code[class*="language-"], pre[class*="language-"] {
       visibility: hidden; }
 
 .a-st-iconLabel {
-  margin-top: 5px; }
+  margin-top: 5px;
+  font-size: 16px; }
+  .a-st-iconLabel a {
+    font-size: 16px; }
 
 .c-footer {
   margin-top: 36px;
@@ -578,7 +582,7 @@ code[class*="language-"], pre[class*="language-"] {
   position: relative;
   display: block;
   width: 100%;
-  height: 72px;
+  height: 78px;
   padding-top: 15px;
   margin-bottom: 10px;
   text-align: center;
