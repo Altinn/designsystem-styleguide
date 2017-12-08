@@ -964,7 +964,7 @@ var toggleSelectProfiles = function() {
   $('#selectedProfiles').hide();
   $('#profile-selection').hide();
 
-  $('#alle-jeg-kan-representere-checkbutton-1').on('click', function() {
+  $('#alle-jeg-kan-representere-checkbutton-1,#alle-jeg-kan-representere-checkbutton-3').on('click', function() {
     $('#profile-selection').hide();
   });
   $('#select-profile-checkbutton-2').on('click', function() {
@@ -5667,6 +5667,81 @@ var iOS11BugWorkAround = function() {
 };
 
 
+/* globals $, Foundation */
+var listenForAttachmentChanges = function(formId, errorMessageCallback) {
+  var maxSizeInMb = 15;
+  var maxSizeInBytes = maxSizeInMb * 1024 * 1024;
+  var allowedExtensions = [
+    'bmp', 'jpg', 'jpeg', 'png', 'gif', 'txt', 'log', 'csv', 'doc', 'docx', 'xls', 'xlsx', 'ppt',
+    'pptx', 'pdf', 'odt', 'ods', 'odp', 'rtf', 'rar', 'zip', '7z', 'gdoc', 'gsheet', 'gslide', 'htm',
+    'html', 'eml', 'msg'
+  ];
+
+  var fileInput = $(formId).find('.a-js-uploadAttachment').find('#newCertificateInput');
+  var attachmentErrorBox = $(formId).find('.a-js-upload-error');
+  var attachmentBox = $(formId).find('.a-js-attachment-box');
+  var attachmentNameText = $(attachmentBox).find('.a-js-attachment-name');
+  var deleteAttachmentButton = $(attachmentBox).find('.a-btn-delete');
+  var selectedFile = '';
+
+  attachmentErrorBox.hide();
+  attachmentBox.hide();
+
+  deleteAttachmentButton.click(function() {
+    fileInput.val(''); // reset content
+    attachmentBox.hide();
+    attachmentErrorBox.hide();
+    fileInput.parent().show();
+  });
+
+  $(fileInput).change(function(event) {
+    if (event.target.files.length > 0) {
+      selectedFile = event.target.files[0];
+    }
+
+    function handleFile(file) {
+      var fileName = file.name;
+      var extension = fileName.split('.').pop();
+      var byteSize = file.size;
+
+      var validExtension = $.inArray(extension, allowedExtensions) > -1;
+      var validFileSize = maxSizeInBytes > byteSize;
+
+      if (validExtension && validFileSize) {
+        // success:
+        // set file name and show 'attachment box'
+        // hide 'error box'
+        // hide upload button
+
+        attachmentNameText.text(fileName);
+        attachmentBox.show();
+        attachmentErrorBox.hide();
+        fileInput.parent().hide();
+      } else {
+        // failure:
+        // hide 'attachment box'
+        // show 'error box'
+        // show upload button
+        attachmentBox.hide();
+        attachmentErrorBox.show();
+        fileInput.parent().show();
+      }
+
+      if (!validFileSize) {
+        attachmentErrorBox.find('.a-message-error').text(errorMessageCallback('size') + ': ' + maxSizeInMb + 'MB');
+      } else if (!validExtension) {
+        attachmentErrorBox.find('.a-message-error').text(errorMessageCallback('ext') + ': ' + allowedExtensions.join(', '));
+      }
+    }
+
+    if (selectedFile) {
+      handleFile(selectedFile);
+    } else {
+      attachmentBox.hide();
+    }
+  });
+};
+
 /* globals goBack */
 var onConfirmDeletionClick = function() {
   var $list = $('ul[data-list-selectable="true"]');
@@ -5780,81 +5855,6 @@ var addListSortHandler = function() {
   });
 
   defaultListSort();
-};
-
-/* globals $, Foundation */
-var listenForAttachmentChanges = function(formId, errorMessageCallback) {
-  var maxSizeInMb = 15;
-  var maxSizeInBytes = maxSizeInMb * 1024 * 1024;
-  var allowedExtensions = [
-    'bmp', 'jpg', 'jpeg', 'png', 'gif', 'txt', 'log', 'csv', 'doc', 'docx', 'xls', 'xlsx', 'ppt',
-    'pptx', 'pdf', 'odt', 'ods', 'odp', 'rtf', 'rar', 'zip', '7z', 'gdoc', 'gsheet', 'gslide', 'htm',
-    'html', 'eml', 'msg'
-  ];
-
-  var fileInput = $(formId).find('.a-js-uploadAttachment').find('#newCertificateInput');
-  var attachmentErrorBox = $(formId).find('.a-js-upload-error');
-  var attachmentBox = $(formId).find('.a-js-attachment-box');
-  var attachmentNameText = $(attachmentBox).find('.a-js-attachment-name');
-  var deleteAttachmentButton = $(attachmentBox).find('.a-btn-delete');
-  var selectedFile = '';
-
-  attachmentErrorBox.hide();
-  attachmentBox.hide();
-
-  deleteAttachmentButton.click(function() {
-    fileInput.val(''); // reset content
-    attachmentBox.hide();
-    attachmentErrorBox.hide();
-    fileInput.parent().show();
-  });
-
-  $(fileInput).change(function(event) {
-    if (event.target.files.length > 0) {
-      selectedFile = event.target.files[0];
-    }
-
-    function handleFile(file) {
-      var fileName = file.name;
-      var extension = fileName.split('.').pop();
-      var byteSize = file.size;
-
-      var validExtension = $.inArray(extension, allowedExtensions) > -1;
-      var validFileSize = maxSizeInBytes > byteSize;
-
-      if (validExtension && validFileSize) {
-        // success:
-        // set file name and show 'attachment box'
-        // hide 'error box'
-        // hide upload button
-
-        attachmentNameText.text(fileName);
-        attachmentBox.show();
-        attachmentErrorBox.hide();
-        fileInput.parent().hide();
-      } else {
-        // failure:
-        // hide 'attachment box'
-        // show 'error box'
-        // show upload button
-        attachmentBox.hide();
-        attachmentErrorBox.show();
-        fileInput.parent().show();
-      }
-
-      if (!validFileSize) {
-        attachmentErrorBox.find('.a-message-error').text(errorMessageCallback('size') + ': ' + maxSizeInMb + 'MB');
-      } else if (!validExtension) {
-        attachmentErrorBox.find('.a-message-error').text(errorMessageCallback('ext') + ': ' + allowedExtensions.join(', '));
-      }
-    }
-
-    if (selectedFile) {
-      handleFile(selectedFile);
-    } else {
-      attachmentBox.hide();
-    }
-  });
 };
 
 /* globals mobileNavigation */
@@ -6169,8 +6169,19 @@ var removeListRow = function(src) {
 };
 
 function searchFilterView() {
+  var hideClass = 'd-none';
+
+  function RepositionStickyHelp() {
+    var searchFilters = $('.a-overlay-container');
+    var searchFilerActionWrapper = $('.a-search-filter-action-wrapper');
+    if (searchFilerActionWrapper.hasClass(hideClass) || searchFilters.hasClass(hideClass)) {
+      $('.a-stickyHelp-container button').css('transform', 'translateY(0px)');
+    } else {
+      $('.a-stickyHelp-container button').css('transform', 'translateY(-38px)');
+    }
+  }
+
   $(document.body).on('click', '.a-js-searchFilterToggle', function(e) {
-    var hideClass = 'd-none';
     var hideMainInbox = $('.a-js-hideElement');
     var searchField = $('.a-js-filterFocus');
     var searchFilters = $('.a-overlay-container');
@@ -6189,12 +6200,12 @@ function searchFilterView() {
       hideMainInbox.removeAttr('tabindex');
       $('input#inbox_search').val($('input#inbox_search_filter').val());
     }
+    setTimeout(RepositionStickyHelp, 0);
   });
 
   $('.a-overlay-container').on('change', 'input', function(e) {
-    var hideClass = 'd-none';
     var searchFilerActionWrapper = $('.a-search-filter-action-wrapper');
-
+    setTimeout(RepositionStickyHelp, 0);
     if (searchFilerActionWrapper.hasClass(hideClass)) {
       searchFilerActionWrapper.removeClass(hideClass);
     }
