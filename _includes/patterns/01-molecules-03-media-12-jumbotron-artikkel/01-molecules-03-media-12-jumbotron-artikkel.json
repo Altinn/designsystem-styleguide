@@ -11,11 +11,11 @@
 	"icon-post-text": false,
 	"icon-title": false,
 	"icon-sr-only-text": false,
-	"themeCss": "../../css/style.css",
+	"themeCss": "../../css/style.dist.altinn.css",
 	"themeJs": "./../../js/altinnPrototyping.js",
 	"themeJsVendor": "../../js/altinnPrototyping.vendor.js",
 	"link-text": "En lenke ser slik ut",
-	"link-url": "link.sider-infoportal-forside",
+	"link-url": "/patterns/04-sider-infoportal-01-forside-00-forside/04-sider-infoportal-01-forside-00-forside.html",
 	"sr-text": false,
 	"dropdown-link-class": "a-borderBottom",
 	"dropdown-top-item": {
@@ -406,11 +406,11 @@
 		"breadcrumb-item": [
 			{
 				"breadcrumb-title": "Starte og drive bedrift",
-				"breadcrumb-link": "link.sider-infoportal-seksjonsforside-v-starteogdrive"
+				"breadcrumb-link": "/patterns/04-sider-infoportal-10-seksjonsforsider-30-seksjonsforside-v-starteogdrive/04-sider-infoportal-10-seksjonsforsider-30-seksjonsforside-v-starteogdrive.html"
 			},
 			{
 				"breadcrumb-title": "Starte bedrift",
-				"breadcrumb-link": "link.sider-infoportal-temaside-v-starte",
+				"breadcrumb-link": "/patterns/04-sider-infoportal-20-navigasjonssider-31-temaside-v-starte/04-sider-infoportal-20-navigasjonssider-31-temaside-v-starte.html",
 				"breadcrumb-class": "breadcrumb-mobile"
 			},
 			{

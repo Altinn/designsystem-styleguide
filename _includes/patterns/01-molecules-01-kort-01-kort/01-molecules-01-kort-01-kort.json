@@ -11,7 +11,7 @@
 	"icon-post-text": false,
 	"icon-title": false,
 	"icon-sr-only-text": false,
-	"themeCss": "../../css/style.css",
+	"themeCss": "../../css/style.dist.altinn.css",
 	"themeJs": "./../../js/altinnPrototyping.js",
 	"themeJsVendor": "../../js/altinnPrototyping.vendor.js",
 	"checkbuttons": [
@@ -85,7 +85,7 @@
 	"collapse-header-contentID": "",
 	"collapse-header-title": "Dette er en utvidbar tittel med merkelapp <span class='badge badge-primary a-label badge-pill'>1</span> og lang tekst for å teste hvordan det ser ut",
 	"link-text": "En lenke ser slik ut",
-	"link-url": "link.sider-infoportal-forside",
+	"link-url": "/patterns/04-sider-infoportal-01-forside-00-forside/04-sider-infoportal-01-forside-00-forside.html",
 	"sr-text": false,
 	"card-content": {
 		"link-text": "Dette er en overskrift som er en link 2",

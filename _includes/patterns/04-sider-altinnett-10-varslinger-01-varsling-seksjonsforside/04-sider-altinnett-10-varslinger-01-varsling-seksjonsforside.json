@@ -51,7 +51,7 @@
 				}
 			],
 			"form-input-button-action": "Utfør søk",
-			"onclick": "location.href='link.sider-infoportal-sok-forside';"
+			"onclick": "location.href='/patterns/04-sider-infoportal-40-sok-00-sok-forside/04-sider-infoportal-40-sok-00-sok-forside.html';"
 		}
 	},
 	"footerBedriftIkon": {
@@ -65,11 +65,6 @@
 	"telNumber": "75006000",
 	"telNumberVisible": "75 00 60 00",
 	"telText": "Telefonnummer til Altinn kundestøtte",
-	"collapse-header-class": "",
-	"area-expanded-header": false,
-	"collapsed": true,
-	"collapse-header-contentID": "",
-	"collapse-header-title": "Dette er en utvidbar tittel med merkelapp <span class='badge badge-primary a-label badge-pill'>1</span> og lang tekst for å teste hvordan det ser ut",
 	"button-text": "En standard knapp",
 	"button-class": "a-btn a-btn-icon a-btn-shadow",
 	"button-disabled": false,
@@ -194,7 +189,7 @@
 	},
 	"page-url": "../../patterns/03-maler-portal-99-modal-js-02-page-one/03-maler-portal-99-modal-js-02-page-one.markup-only.rendered.html",
 	"link-text": "En lenke ser slik ut",
-	"link-url": "link.sider-infoportal-forside",
+	"link-url": "/patterns/04-sider-infoportal-01-forside-00-forside/04-sider-infoportal-01-forside-00-forside.html",
 	"sr-text": false,
 	"lead-text-id": "leadText",
 	"lead-text-content": "Ingress er et kort innledende avsnitt som vanligvis plasseres mellom overskriften og brødteksten. Ingressen brukes ofte til å \"gripe\" fatt i leseren, for at personen skal bli interessert i å lese resten av teksten. Den fungerer også som et visuelt skille mellom resten av teksten. Ingressen bør være lettlest og fri for vanskelige faguttrykk.",
@@ -304,7 +299,7 @@
 					"button-text-class": "sr-only"
 				}
 			],
-			"onclick": "location.href='link.sider-infoportal-sok-forside';"
+			"onclick": "location.href='/patterns/04-sider-infoportal-40-sok-00-sok-forside/04-sider-infoportal-40-sok-00-sok-forside.html';"
 		}
 	},
 	"tel-icon": {
@@ -327,13 +322,13 @@
 		"lead-text-content": "Her kan du registrere din e-post adresse dersom du ønsker å motta viktige varslinger fra Altinn. Du bestemmer selv hvilke kategorier av hendelser som du ønsker å motta varslinger om."
 	},
 	"subscribeLink": {
-		"link-text": "Abonner på varslinger",
+		"link-text": "En lenke som åpner modal",
 		"link-url": "javascript:void(0)",
 		"sr-text": false,
 		"data-toggle": "altinn-modal",
 		"data-action": "load",
 		"data-url": {
-			"data-url": "../../patterns/02-organismer-80-Modal-js-innhold-80-altinnett-varsling-pamelding/02-organismer-80-Modal-js-innhold-80-altinnett-varsling-pamelding.markup-only.rendered.html"
+			"data-url": "../../patterns/02-organismer-80-Modal-js-innhold-80-varsling-pamelding/02-organismer-80-Modal-js-innhold-80-varsling-pamelding.markup-only.rendered.html"
 		},
 		"data-target": "modal"
 	},
@@ -374,41 +369,5 @@
 				}
 			]
 		}
-	},
-	"loginButton": {
-		"button-text": "Logg inn",
-		"button-class": "a-btn",
-		"button-disabled": false,
-		"button-type": "button",
-		"onclick": false,
-		"button-icon": false,
-		"display-as-link": false
-	},
-	"createUserLink": {
-		"link-text": "opprett bruker",
-		"link-url": "javascript:void(0)",
-		"sr-text": false
-	},
-	"categoriesExpandableTitle": {
-		"icon-prefix": "ai",
-		"icon-class": "ai-deadline",
-		"icon-size": "",
-		"icon-extra-class": "",
-		"icon-text": "",
-		"icon-id": false,
-		"sr-only": false,
-		"aria-hidden": false,
-		"stacked-background": false,
-		"icon-post-text": false,
-		"icon-title": false,
-		"icon-sr-only-text": false,
-		"themeCss": "../../css/style.css",
-		"themeJs": "./../../js/altinnPrototyping.js",
-		"themeJsVendor": "../../js/altinnPrototyping.vendor.js",
-		"collapse-header-class": "",
-		"area-expanded-header": false,
-		"collapsed": true,
-		"collapse-header-contentID": "",
-		"collapse-header-title": "Kommende varslinger <span class='badge badge-primary a-label badge-pill'>2</span>"
 	}
 }

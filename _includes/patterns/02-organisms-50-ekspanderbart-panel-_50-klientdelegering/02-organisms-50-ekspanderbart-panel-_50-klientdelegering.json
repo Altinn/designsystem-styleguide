@@ -11,7 +11,7 @@
 	"icon-post-text": false,
 	"icon-title": false,
 	"icon-sr-only-text": false,
-	"themeCss": "../../css/style.css",
+	"themeCss": "../../css/style.dist.altinn.css",
 	"themeJs": "./../../js/altinnPrototyping.js",
 	"themeJsVendor": "../../js/altinnPrototyping.vendor.js",
 	"dropdown-link-class": "a-borderBottom",
@@ -57,7 +57,7 @@
 	"button-text": "En standard knapp",
 	"button-class": "a-btn",
 	"button-colorClass": "",
-	"link-url": "link.sider-infoportal-forside",
+	"link-url": "/patterns/04-sider-infoportal-01-forside-00-forside/04-sider-infoportal-01-forside-00-forside.html",
 	"button-shadow-label": false,
 	"button-icon": false,
 	"info-delete-add": {
@@ -395,18 +395,18 @@
 		"button-text": "Klientdelegering på fil",
 		"button-class": "a-btn-link",
 		"display-as-link": true,
-		"onclick": "location.href='link.sider-portal-klientdelegering-pa-fil';"
+		"onclick": "location.href='/patterns/04-sider-portal-91-klientdelegering-00-klientdelegering-pa-fil/04-sider-portal-91-klientdelegering-00-klientdelegering-pa-fil.html';"
 	},
 	"klientdelegering-file-mobile": {
 		"button-text": "Klientdelegering på fil",
 		"button-class": "a-btn-link",
 		"display-as-link": true,
-		"onclick": "location.href='link.sider-portal-klientdelegering-pa-fil';"
+		"onclick": "location.href='/patterns/04-sider-portal-91-klientdelegering-00-klientdelegering-pa-fil/04-sider-portal-91-klientdelegering-00-klientdelegering-pa-fil.html';"
 	},
 	"klientdelegering-add": {
 		"button-class": "a-btn a-btn-action a-fullWidthBtn",
 		"action-button-text": "Legg til ny ansatt",
-		"onclick": "location.href='link.sider-portal-klientdelegering-legg-til-ansatt'",
+		"onclick": "location.href='/patterns/04-sider-portal-91-klientdelegering-00-klientdelegering-legg-til-ansatt/04-sider-portal-91-klientdelegering-00-klientdelegering-legg-til-ansatt.html'",
 		"icon-prefix": "ai",
 		"icon-class": "ai-plus",
 		"icon-extra-class": ""

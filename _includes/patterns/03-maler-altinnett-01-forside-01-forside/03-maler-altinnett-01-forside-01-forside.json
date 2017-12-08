@@ -51,7 +51,7 @@
 				}
 			],
 			"form-input-button-action": "Utfør søk",
-			"onclick": "location.href='link.sider-infoportal-sok-forside';"
+			"onclick": "location.href='/patterns/04-sider-infoportal-40-sok-00-sok-forside/04-sider-infoportal-40-sok-00-sok-forside.html';"
 		}
 	},
 	"footerBedriftIkon": {
@@ -66,7 +66,7 @@
 	"telNumberVisible": "75 00 60 00",
 	"telText": "Telefonnummer til Altinn kundestøtte",
 	"link-text": "En lenke ser slik ut",
-	"link-url": "link.sider-infoportal-forside",
+	"link-url": "/patterns/04-sider-infoportal-01-forside-00-forside/04-sider-infoportal-01-forside-00-forside.html",
 	"sr-text": false,
 	"dropdown-link-class": "a-borderBottom",
 	"dropdown-top-item": {
@@ -551,7 +551,7 @@
 					"button-text-class": "sr-only"
 				}
 			],
-			"onclick": "location.href='link.sider-infoportal-sok-forside';"
+			"onclick": "location.href='/patterns/04-sider-infoportal-40-sok-00-sok-forside/04-sider-infoportal-40-sok-00-sok-forside.html';"
 		}
 	},
 	"tel-icon": {

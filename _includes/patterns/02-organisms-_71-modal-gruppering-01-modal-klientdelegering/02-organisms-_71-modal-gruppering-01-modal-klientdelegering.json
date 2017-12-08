@@ -6,7 +6,7 @@
 	"onclick": false,
 	"button-icon": false,
 	"display-as-link": true,
-	"themeCss": "../../css/style.css",
+	"themeCss": "../../css/style.dist.altinn.css",
 	"themeJs": "./../../js/altinnPrototyping.js",
 	"themeJsVendor": "../../js/altinnPrototyping.vendor.js",
 	"icon-prefix": "ai",
@@ -72,7 +72,7 @@
 		"icon-extra-class": ""
 	},
 	"link-text": "En lenke ser slik ut",
-	"link-url": "link.sider-infoportal-forside",
+	"link-url": "/patterns/04-sider-infoportal-01-forside-00-forside/04-sider-infoportal-01-forside-00-forside.html",
 	"sr-text": false,
 	"circle-variation": "a-circle-list-yellow",
 	"circle-list-items": [
@@ -144,7 +144,7 @@
 		"button-text": "Ferdig",
 		"button-class": "a-btn a-btn-success mb-0",
 		"button-type": "submit",
-		"onclick": "location.href='link.sider-portal-profil-roller-rettigheter'"
+		"onclick": "location.href='/patterns/04-sider-portal-60-profil-roller-rettigheter-profil-roller-rettigheter/04-sider-portal-60-profil-roller-rettigheter-profil-roller-rettigheter.html'"
 	},
 	"animationClass": "a-scene-element--fadeinright",
 	"dropdown-link-class": "a-borderBottom",
