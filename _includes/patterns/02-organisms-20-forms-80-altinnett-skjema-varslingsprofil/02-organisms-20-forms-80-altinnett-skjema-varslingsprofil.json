@@ -6,7 +6,7 @@
 	"onclick": false,
 	"button-icon": false,
 	"display-as-link": false,
-	"themeCss": "../../css/style.css",
+	"themeCss": "../../css/style.prototype.altinn.css",
 	"themeJs": "./../../js/altinnPrototyping.js",
 	"themeJsVendor": "../../js/altinnPrototyping.vendor.js",
 	"check-legend": {
@@ -35,7 +35,7 @@
 	"icon-title": false,
 	"icon-sr-only-text": false,
 	"link-text": "En lenke ser slik ut",
-	"link-url": "link.sider-infoportal-forside",
+	"link-url": "/patterns/04-sider-infoportal-01-forside-00-forside/04-sider-infoportal-01-forside-00-forside.html",
 	"sr-text": false,
 	"alert-id": "alert",
 	"alert-class": "a-message-info",
@@ -57,13 +57,33 @@
 	"isLarge": false,
 	"form-label-hasIcon": false,
 	"input-name": "input-field",
-	"sectionTitle": "Din kontaktinformasjon:",
+	"person-role-role": "Styremedlem",
+	"person-role-name": "William Mjelde",
+	"person-role-name-meta": false,
+	"user-icon": {
+		"icon-prefix": "ai",
+		"icon-class": "ai-private",
+		"icon-extra-class": "ai-lg"
+	},
+	"personRole": {
+		"person-role-role": "Rolle",
+		"person-role-name": "Navn Navnesen",
+		"person-role-name-meta": false,
+		"user-icon": {
+			"icon-prefix": "ai",
+			"icon-class": "ai-private",
+			"icon-extra-class": "ai-lg"
+		}
+	},
+	"sectionTitle1": {
+		"sectionTitle1": "Din kontaktinformasjon:"
+	},
 	"phoneNumber": {
 		"text-input-id": "text-input-10",
 		"top-label": "SMS:",
 		"text-input-placeholder": "123 12 123",
 		"input-type": "tel",
-		"isRequired": true,
+		"isRequired": false,
 		"error-message-popover": true,
 		"extra-help": false,
 		"isHidden": false,
@@ -111,11 +131,17 @@
 			}
 		}
 	},
-	"sectionTitle2": "Varslinger du abonnerer på:",
+	"organization": {
+		"text-input-placeholder": "Navn på organisasjon",
+		"top-label": "Organisasjon:",
+		"extra-help": false,
+		"isHidden": false,
+		"isLarge": false
+	},
 	"chooseServices": {
 		"isStacked": "custom-controls-stacked",
 		"check-legend": {
-			"check-legendText": ""
+			"check-legendText": "Hvilke varslingstjenester vil du melde deg på?"
 		},
 		"checkboxes": [
 			{
@@ -129,13 +155,36 @@
 			}
 		]
 	},
+	"chooseRoles": {
+		"isStacked": "custom-controls-stacked",
+		"check-legend": {
+			"check-legendText": "Roller og deltakelse i møtefora:"
+		},
+		"checkboxes": [
+			{
+				"checkboxes-title": "Navn på rolle 1"
+			},
+			{
+				"checkboxes-title": "Navn på rolle 2"
+			},
+			{
+				"checkboxes-title": "Navn på rolle 3"
+			}
+		]
+	},
+	"chooseSubscriptions": {
+		"isStacked": "custom-controls-stacked",
+		"check-legend": {
+			"check-legendText": "Sider du abonnerer på:"
+		},
+		"checkboxes": [
+			{
+				"checkboxes-title": "Tittel på siden (lenkes til siden)"
+			}
+		]
+	},
 	"submitButton": {
 		"button-text": "Meld meg på",
-		"button-class": "a-btn",
-		"button-disabled": false,
-		"button-type": "button",
-		"onclick": false,
-		"button-icon": false,
-		"display-as-link": false
+		"button-class": "a-btn"
 	}
 }

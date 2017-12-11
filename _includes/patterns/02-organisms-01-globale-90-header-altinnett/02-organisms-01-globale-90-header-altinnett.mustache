@@ -15,7 +15,7 @@
       <div class="col-12">
         <!-- Begin .a-globalNav -->
         <nav id="primary-nav" class="a-globalNav">
-          <a href="{{ link.sider-altinnett-forside }}" class="a-globalNav-logo">
+          <a href="{{ url-logo }}" class="a-globalNav-logo">
                         <img src="{{ headerlogo }}" alt="Altinnett logo" class="a-logo {{ logo-class }} {{ styleModifier }}">
                         <span class="sr-only">Til forsiden</span>
                     </a>
@@ -28,7 +28,7 @@
                 {{# header-mobilesearch }} {{> atomer-tekst-input }} {{/ header-mobilesearch }}
               </li>
               <li><a class="a-hvr-underline {{{ globalNav-active-tjenester }}}" href="#">Tjenester</a></li>
-              <li><a class="a-hvr-underline {{{ globalNav-active-varsling }}}" href="{{ link.sider-altinnett-varsling-seksjonsforside }}">Varsling</a></li>
+              <li><a class="a-hvr-underline {{{ globalNav-active-varsling }}}" href="{{ url-varsling }}">Varsling</a></li>
               <li><a class="a-hvr-underline {{{ globalNav-active-aktuelt }}}" href="#">Aktuelt</a></li>
               <li class="hidden-md-up"><a class="a-nav-link a-hvr-underline" href="#">Ekstra menypunkt 1</a></li>
               <li class="hidden-md-up"><a class="a-hvr-underline" href="#">Ekstra menypunkt 2</a></li>
@@ -60,3 +60,4 @@
   <!-- End .container -->
 </header>
 <!-- End .header -->
+

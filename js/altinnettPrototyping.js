@@ -1,3 +1,19 @@
+/* globals $ */
+var fixPatternLinks = function() {
+  if (window.location.pathname.indexOf('DesignSystem') === 1) {
+    $('a').each(function() {
+      if (typeof $(this).attr('href') !== typeof undefined && $(this).attr('href') !== false && $(this).attr('href').indexOf('DesignSystem') === -1) {
+        $(this).attr('href', $(this).attr('href').replace('/patterns/', '/DesignSystem/public/patterns/'));
+      }
+    });
+    $('*[onclick]').each(function() {
+      if ($(this).attr('onclick').indexOf('location.href=\'/patterns/') > -1) {
+        $(this).attr('onclick', $(this).attr('onclick').replace('location.href=\'/patterns/', 'location.href=\'/DesignSystem/public/patterns/'));
+      }
+    });
+  }
+};
+
 var setupTruncateLines = function() {
   setTimeout(function() {
     // Max two lines for all screen sizes
@@ -630,10 +646,57 @@ AltinnModal = {
 };
 
 /* globals
-  AltinnModal
+  setupExpandContent
+*/
+$('body').on('show.bs.collapse', '.a-collapsePanel-body', function() {
+  var that = this;
+
+  setTimeout(function() {
+    var $collapsePanelHeader = $(that).siblings('.a-js-index-heading').first();
+    var $msgIconWrapper = $collapsePanelHeader.find('.a-inboxHeadingContent')
+    .find('.a-msgIconSecondary')
+    .closest('.a-msgIconWrapper');
+
+    $msgIconWrapper.find('.reg')
+      .hide()
+      .siblings('.a-msgIconSecondary')
+      .show();
+
+    $msgIconWrapper.find('span').attr('aria-hidden', true);
+    $msgIconWrapper.find('span:last-of-type').removeAttr('aria-hidden');
+
+    $('.a-collapsePanel').removeClass('expanded');
+    $(that).closest('.a-collapsePanel').addClass('expanded');
+    $('.a-js-index-heading').addClass('dim');
+    $('.a-collapsePanel.expanded').find('.a-js-index-heading').removeClass('dim');
+    setupExpandContent();
+  }, 0);
+});
+
+$('body').on('hide.bs.collapse', '.a-collapsePanel-body', function() {
+  var that = this;
+  setTimeout(function() {
+    var $collapsePanelHeader = $(that).siblings('.a-js-index-heading').first();
+    $collapsePanelHeader.find('.a-inboxHeadingContent').removeClass('a-msgUnread');
+    $(that).closest('.a-collapsePanel').removeClass('expanded');
+    if ($('.a-collapsePanel.expanded').length === 0) {
+      $('.a-js-index-heading').removeClass('dim');
+    } else {
+      $collapsePanelHeader.addClass('dim');
+    }
+  }, 0);
+});
+
+/* globals
+  fixPatternLinks,
+  AltinnModal,
   setupTruncateLines
 */
 window.altinnettInit = function() {
+  // Only for prototyping
+  fixPatternLinks();
+
+  // Should also be included in production (dist)
   AltinnModal.init();
   setupTruncateLines();
 };
