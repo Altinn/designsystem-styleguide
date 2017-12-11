@@ -9,7 +9,7 @@
 		"icon-class": "ai-deadline"
 	},
 	"display-as-link": false,
-	"themeCss": "../../css/style.css",
+	"themeCss": "../../css/style.dist.altinn.css",
 	"themeJs": "./../../js/altinnPrototyping.js",
 	"themeJsVendor": "../../js/altinnPrototyping.vendor.js",
 	"icon-prefix": "ai",
@@ -89,7 +89,7 @@
 	"label-id": false,
 	"label-content": "9",
 	"button-colorClass": "",
-	"link-url": "link.sider-infoportal-forside",
+	"link-url": "/patterns/04-sider-infoportal-01-forside-00-forside/04-sider-infoportal-01-forside-00-forside.html",
 	"button-shadow-label": false,
 	"icon-list-items": [
 		{
@@ -128,7 +128,7 @@
 		"message-date": "05.03.2016"
 	},
 	"activitylog": {
-		"linkIcon-url": "link.sider-portal-innboks-aktivitetslogg",
+		"linkIcon-url": "/patterns/04-sider-portal-50-innboks-04-innboks-aktivitetslogg/04-sider-portal-50-innboks-04-innboks-aktivitetslogg.html",
 		"linkIcon-text": "Aktivitetslogg",
 		"icon-prefix": "reg ai-nw ai-nw-pr",
 		"icon-class": "reg-log"
