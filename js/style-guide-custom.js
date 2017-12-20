@@ -96,6 +96,15 @@ jQuery(document).ready(function($) {
  });
 
 
+
+/*
+* CHANGE CSS LOADED IN HEAD
+*/
+function changeCss(project) {
+  $("head").find('link[href*=\'/css/style.dist\']').prop('disabled', true);
+  $("head").find('link[href*=\'/css/style.dist.'+project+'.css\']').prop('disabled', false);
+}
+
  /*
  * SWITCH BETWEEN PROJECTS
  */
@@ -113,6 +122,7 @@ function setProject(project) {
 	$('.display-brreg').hide();
 	$('.display-altinn').hide();
 	$('.display-' + project).show();
+    changeCss(project);
 }
 
  $('body').on('click', '[data-toggle="altinn-dropdown"] .a-dropdown-item', function() {

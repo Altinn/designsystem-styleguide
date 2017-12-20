@@ -15,10 +15,12 @@
 	<link rel="icon" href="/designsystem-styleguide/favicon.ico">
 
 	<script src="https://use.fortawesome.com/ed31cded.js"></script> <!-- bold -->
-	<script src="https://use.fortawesome.com/df832575.js"></script> <!-- regular --> 
+	<script src="https://use.fortawesome.com/df832575.js"></script> <!-- regular -->
 
-	<link rel="stylesheet" href="/designsystem-styleguide/css/style.dist.storefront.css">
-	<link rel="stylesheet" href="/designsystem-styleguide/css/brreg.css">
+	<link rel="stylesheet" href="/designsystem-styleguide/css/style.css">
+	<link rel="stylesheet" href="/designsystem-styleguide/css/style.dist.altinn.css">
+	<link rel="stylesheet" href="/designsystem-styleguide/css/style.dist.altinnett.css">
+	<link rel="stylesheet" href="/designsystem-styleguide/css/style.dist.brreg.css">
 
 	<link rel="canonical" href="http://localhost:4000/designsystem-styleguide/komponenter/skjemakomponenter/">
 </head>
@@ -11368,12 +11370,23 @@
     </label>
 </div>
 <div class="a-switch   ">
-  <input id="checkbutton-sign" class="sr-only" type="checkbox" name="checkbutton-sign" value="checkbutton-read">
+  <input id="checkbutton-sign" class="sr-only" type="checkbox" name="checkbutton-sign" value="checkbutton-read" data-toggle="popover" data-placement="bottom" data-animation="false" data-popover-content="conditionalPopover" data-popover-class="popover-warning"
+    data-trigger="onchange">
   <label for="checkbutton-sign" class="a-switch-label ">
         
 <i class="ai ai-sign   "    ></i>
        Signere
     </label>
+  <div id="conditionalPopover" class="d-none">
+    <div class="pb-1">Dette er en popover tekst</div>
+    
+    <button type="button" class="a-btn a-btn-danger mr-1">
+  
+    knapp
+  
+</button>
+    
+  </div>
 </div>
 <div class="a-switch   ">
   <input id="checkbutton-toggle" class="sr-only" type="checkbox" name="checkbutton-toggle" value="checkbutton-read">
@@ -11746,7 +11759,7 @@
     <input class="form-control  
          a-hasButton  " type="search" placeholder="Søk etter innhold" name="input-field" data-val="true" id="text-input-find-12">
     <div class="input-group-btn">
-      <button onclick="location.href='link.sider-infoportal-sok-forside';" class="btn btn-secondary" type="button">
+      <button onclick="location.href='/patterns/04-sider-infoportal-40-sok-00-sok-forside/04-sider-infoportal-40-sok-00-sok-forside.html';" class="btn btn-secondary" type="button">
               
 <i class="ai ai-search   "    ></i>
               <span class="sr-only">Søk</span>

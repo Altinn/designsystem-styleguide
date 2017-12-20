@@ -15,10 +15,12 @@
 	<link rel="icon" href="/designsystem-styleguide/favicon.ico">
 
 	<script src="https://use.fortawesome.com/ed31cded.js"></script> <!-- bold -->
-	<script src="https://use.fortawesome.com/df832575.js"></script> <!-- regular --> 
+	<script src="https://use.fortawesome.com/df832575.js"></script> <!-- regular -->
 
-	<link rel="stylesheet" href="/designsystem-styleguide/css/style.dist.storefront.css">
-	<link rel="stylesheet" href="/designsystem-styleguide/css/brreg.css">
+	<link rel="stylesheet" href="/designsystem-styleguide/css/style.css">
+	<link rel="stylesheet" href="/designsystem-styleguide/css/style.dist.altinn.css">
+	<link rel="stylesheet" href="/designsystem-styleguide/css/style.dist.altinnett.css">
+	<link rel="stylesheet" href="/designsystem-styleguide/css/style.dist.brreg.css">
 
 	<link rel="canonical" href="http://localhost:4000/designsystem-styleguide/komponenter/skjemakomponenter/valgknapp.html">
 </head>
@@ -10924,12 +10926,23 @@
     </label>
 </div>
 <div class="a-switch   ">
-  <input id="checkbutton-sign" class="sr-only" type="checkbox" name="checkbutton-sign" value="checkbutton-read">
+  <input id="checkbutton-sign" class="sr-only" type="checkbox" name="checkbutton-sign" value="checkbutton-read" data-toggle="popover" data-placement="bottom" data-animation="false" data-popover-content="conditionalPopover" data-popover-class="popover-warning"
+    data-trigger="onchange">
   <label for="checkbutton-sign" class="a-switch-label ">
         
 <i class="ai ai-sign   "    ></i>
        Signere
     </label>
+  <div id="conditionalPopover" class="d-none">
+    <div class="pb-1">Dette er en popover tekst</div>
+    
+    <button type="button" class="a-btn a-btn-danger mr-1">
+  
+    knapp
+  
+</button>
+    
+  </div>
 </div>
 <div class="a-switch   ">
   <input id="checkbutton-toggle" class="sr-only" type="checkbox" name="checkbutton-toggle" value="checkbutton-read">
@@ -11083,12 +11096,23 @@
     &lt;/label&gt;
 &lt;/div&gt;
 &lt;div class="a-switch   "&gt;
-  &lt;input id="checkbutton-sign" class="sr-only" type="checkbox" name="checkbutton-sign" value="checkbutton-read"&gt;
+  &lt;input id="checkbutton-sign" class="sr-only" type="checkbox" name="checkbutton-sign" value="checkbutton-read" data-toggle="popover" data-placement="bottom" data-animation="false" data-popover-content="conditionalPopover" data-popover-class="popover-warning"
+    data-trigger="onchange"&gt;
   &lt;label for="checkbutton-sign" class="a-switch-label "&gt;
         
 &lt;i class="ai ai-sign   "    &gt;&lt;/i&gt;
        Signere
     &lt;/label&gt;
+  &lt;div id="conditionalPopover" class="d-none"&gt;
+    &lt;div class="pb-1"&gt;Dette er en popover tekst&lt;/div&gt;
+    
+    &lt;button type="button" class="a-btn a-btn-danger mr-1"&gt;
+  
+    knapp
+  
+&lt;/button&gt;
+    
+  &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="a-switch   "&gt;
   &lt;input id="checkbutton-toggle" class="sr-only" type="checkbox" name="checkbutton-toggle" value="checkbutton-read"&gt;
