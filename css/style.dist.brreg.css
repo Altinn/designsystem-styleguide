@@ -573,29 +573,29 @@ mark,
   font-size: 90%;
   color: #EFEFEF; }
 
-/*@import "./../../node_modules/bootstrap/scss/code";*/
+/*@import './../../node_modules/bootstrap/scss/code';*/
 .container {
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  padding-right: 12px;
-  padding-left: 12px; }
+  padding-right: 8px;
+  padding-left: 8px; }
   @media (min-width: 576px) {
     .container {
-      padding-right: 12px;
-      padding-left: 12px; } }
+      padding-right: 8px;
+      padding-left: 8px; } }
   @media (min-width: 768px) {
     .container {
-      padding-right: 12px;
-      padding-left: 12px; } }
+      padding-right: 8px;
+      padding-left: 8px; } }
   @media (min-width: 992px) {
     .container {
-      padding-right: 12px;
-      padding-left: 12px; } }
+      padding-right: 8px;
+      padding-left: 8px; } }
   @media (min-width: 1200px) {
     .container {
-      padding-right: 12px;
-      padding-left: 12px; } }
+      padding-right: 8px;
+      padding-left: 8px; } }
   @media (min-width: 576px) {
     .container {
       width: 540px;
@@ -617,24 +617,24 @@ mark,
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  padding-right: 12px;
-  padding-left: 12px; }
+  padding-right: 8px;
+  padding-left: 8px; }
   @media (min-width: 576px) {
     .container-fluid {
-      padding-right: 12px;
-      padding-left: 12px; } }
+      padding-right: 8px;
+      padding-left: 8px; } }
   @media (min-width: 768px) {
     .container-fluid {
-      padding-right: 12px;
-      padding-left: 12px; } }
+      padding-right: 8px;
+      padding-left: 8px; } }
   @media (min-width: 992px) {
     .container-fluid {
-      padding-right: 12px;
-      padding-left: 12px; } }
+      padding-right: 8px;
+      padding-left: 8px; } }
   @media (min-width: 1200px) {
     .container-fluid {
-      padding-right: 12px;
-      padding-left: 12px; } }
+      padding-right: 8px;
+      padding-left: 8px; } }
 
 .row {
   display: -webkit-box;
@@ -642,24 +642,24 @@ mark,
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-right: -12px;
-  margin-left: -12px; }
+  margin-right: -8px;
+  margin-left: -8px; }
   @media (min-width: 576px) {
     .row {
-      margin-right: -12px;
-      margin-left: -12px; } }
+      margin-right: -8px;
+      margin-left: -8px; } }
   @media (min-width: 768px) {
     .row {
-      margin-right: -12px;
-      margin-left: -12px; } }
+      margin-right: -8px;
+      margin-left: -8px; } }
   @media (min-width: 992px) {
     .row {
-      margin-right: -12px;
-      margin-left: -12px; } }
+      margin-right: -8px;
+      margin-left: -8px; } }
   @media (min-width: 1200px) {
     .row {
-      margin-right: -12px;
-      margin-left: -12px; } }
+      margin-right: -8px;
+      margin-left: -8px; } }
 
 .no-gutters {
   margin-right: 0;
@@ -673,24 +673,24 @@ mark,
   position: relative;
   width: 100%;
   min-height: 1px;
-  padding-right: 12px;
-  padding-left: 12px; }
+  padding-right: 8px;
+  padding-left: 8px; }
   @media (min-width: 576px) {
     .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl, .col-xxl-1, .col-xxl-2, .col-xxl-3, .col-xxl-4, .col-xxl-5, .col-xxl-6, .col-xxl-7, .col-xxl-8, .col-xxl-9, .col-xxl-10, .col-xxl-11, .col-xxl-12, .col-xxl {
-      padding-right: 12px;
-      padding-left: 12px; } }
+      padding-right: 8px;
+      padding-left: 8px; } }
   @media (min-width: 768px) {
     .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl, .col-xxl-1, .col-xxl-2, .col-xxl-3, .col-xxl-4, .col-xxl-5, .col-xxl-6, .col-xxl-7, .col-xxl-8, .col-xxl-9, .col-xxl-10, .col-xxl-11, .col-xxl-12, .col-xxl {
-      padding-right: 12px;
-      padding-left: 12px; } }
+      padding-right: 8px;
+      padding-left: 8px; } }
   @media (min-width: 992px) {
     .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl, .col-xxl-1, .col-xxl-2, .col-xxl-3, .col-xxl-4, .col-xxl-5, .col-xxl-6, .col-xxl-7, .col-xxl-8, .col-xxl-9, .col-xxl-10, .col-xxl-11, .col-xxl-12, .col-xxl {
-      padding-right: 12px;
-      padding-left: 12px; } }
+      padding-right: 8px;
+      padding-left: 8px; } }
   @media (min-width: 1200px) {
     .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl, .col-xxl-1, .col-xxl-2, .col-xxl-3, .col-xxl-4, .col-xxl-5, .col-xxl-6, .col-xxl-7, .col-xxl-8, .col-xxl-9, .col-xxl-10, .col-xxl-11, .col-xxl-12, .col-xxl {
-      padding-right: 12px;
-      padding-left: 12px; } }
+      padding-right: 8px;
+      padding-left: 8px; } }
 
 .col {
   -ms-flex-preferred-size: 0;
@@ -3591,9 +3591,9 @@ tbody.collapse.show {
       -ms-flex-direction: column;
       flex-direction: column; }
       .card-deck .card:not(:first-child) {
-        margin-left: 12px; }
+        margin-left: 8px; }
       .card-deck .card:not(:last-child) {
-        margin-right: 12px; } }
+        margin-right: 8px; } }
 
 @media (min-width: 576px) {
   .card-group {
@@ -3812,7 +3812,7 @@ a.badge:focus, a.badge:hover {
   padding-left: 0;
   border-radius: 0; }
 
-/*@import "./../../node_modules/bootstrap/scss/alert";*/
+/*@import './../../node_modules/bootstrap/scss/alert';*/
 @-webkit-keyframes progress-bar-stripes {
   from {
     background-position: 1rem 0; }
@@ -4400,7 +4400,7 @@ button.close {
   content: "";
   border-width: 10px; }
 
-/*@import "./../../node_modules/bootstrap/scss/carousel";*/
+/*@import './../../node_modules/bootstrap/scss/carousel';*/
 .align-baseline {
   vertical-align: baseline !important; }
 
@@ -8862,6 +8862,9 @@ textarea {
   .form-group input[type='radio'] + .disabled.a-form-label-inline,
   .form-group .a-switch input[type='radio'] + .disabled.a-form-label-inline {
     cursor: not-allowed; }
+  .a-switch input[type='checkbox'][data-toggle='popover'], .a-switch input[type='radio'][data-toggle='popover'] {
+    height: 40px;
+    margin-left: 25px; }
   .a-switch input[type='checkbox']:not(:checked) + label, .a-switch .a-form-group input[type='checkbox']:not(:checked) + .a-form-label-inline, .a-form-group .a-switch input[type='checkbox']:not(:checked) + .a-form-label-inline, .a-switch
   .form-group input[type='checkbox']:not(:checked) + .a-form-label-inline,
   .form-group .a-switch input[type='checkbox']:not(:checked) + .a-form-label-inline, .a-switch input[type='radio']:not(:checked) + label, .a-switch .a-form-group input[type='radio']:not(:checked) + .a-form-label-inline, .a-form-group .a-switch input[type='radio']:not(:checked) + .a-form-label-inline, .a-switch
@@ -13076,7 +13079,7 @@ a.a-modal-close {
       content: none; }
 
 .a-jumbotron {
-  min-height: 490px;
+  min-height: 550px;
   max-height: 792px;
   margin-bottom: 36px;
   background-repeat: no-repeat;
@@ -13134,7 +13137,7 @@ a.a-modal-close {
   padding-top: 130px;
   margin-top: -144px;
   background-position: right 120px;
-  background-size: 814px; }
+  background-size: 945px; }
   @media (min-width: 576px) {
     .a-jumbotron-header {
       background-position: right 0;
@@ -13273,12 +13276,9 @@ a.a-modal-close {
       background-size: cover; } }
 
 .a-jumbotron-top {
-  padding-top: 220px;
-  background-position: right -130px;
-  background-size: 753px; }
-  @media (min-width: 576px) {
-    .a-jumbotron-top {
-      padding-top: 254px; } }
+  padding-top: 357px;
+  background-position: right -50px;
+  background-size: 890px; }
   @media (min-width: 768px) {
     .a-jumbotron-top {
       display: -webkit-box;
@@ -13629,11 +13629,11 @@ blockquote::before, blockquote::after {
 /*------------------------------------*    $BUTTONS
 \*------------------------------------*/
 .project-brreg .a-btn {
-  background-image: url(//scf.brreg.no/bilder/2015/pilknapp_graa.svg);
+  background-color: #89d6f6;
+  background-image: url("//scf.brreg.no/bilder/2015/pilknapp_graa.svg");
   background-repeat: no-repeat;
   background-position: right;
-  background-size: auto 100%;
-  background-color: #89d6f6; }
+  background-size: auto 100%; }
   .project-brreg .a-btn:hover {
     background-color: #bce6fa; }
 

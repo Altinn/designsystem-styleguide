@@ -1617,6 +1617,15 @@ var cardsToggle = function() {
   });
 };
 
+  $('.a-switch').find('[data-toggle=popover]').on('change', function() {
+    if ($(this).is(':checked')) {
+      $(this).popover('hide');
+    } else {
+      $(this).popover('show');
+    }
+  });
+
+
 var setupOnKeypress = function() {
   $('body').on('keydown', '.a-clickable, .a-selectable', function(e) {
     var key = e.which;
@@ -6080,7 +6089,7 @@ var popoverGlobalInit = function() {
         }
         // disable blur when in modal to allow use of non-original scrollbar
         if ($('.modal.show').length > 0) {
-          $('[data-toggle="popover"]').popover('hide');
+          $('.popover-big[data-toggle="popover"]').popover('hide');
         }
       }
     }, 0);
@@ -6631,31 +6640,39 @@ var tooltip = function() {
 };
 
 var truncateToNumberOfLines = function(element) {
-  var innerText = $($(element).find('.a-js-inner-text')[0]);
+  var originalText = $(element).find('.sr-only').text();
+  var $innerText = $(element).find('.a-js-inner-text');
   var containerHeight = $(element).height();
   var containerWidth = $(element).width();
 
-  while ($(innerText).outerHeight() >= (containerHeight + 5) ||
-   $(innerText).outerWidth() >= (containerWidth + 5)) {
-    $(innerText).text(function(index, text) {
-      return text.trim().replace(/\s*.{4}$/, '...');
-    });
+  $innerText.text(originalText);
+  while ($innerText.outerHeight() >= (containerHeight + 5) ||
+   $innerText.outerWidth() >= (containerWidth)) {
+    $innerText.text($innerText.text().trim().replace(/\s*.{4}$/, '...'));
   }
 };
 
-// adds ellipsis for text that spans over two lines
+var truncateAllBoxButtons = function() {
+  $('.a-box-button-name').each(function() {
+    truncateToNumberOfLines($(this));
+  });
+};
+
 var truncateBoxButtonNames = function() {
   $('.a-box-button').on('click', function() {
-    $('.a-box-button-name').each(function() {
-      truncateToNumberOfLines($(this));
-    });
+    truncateAllBoxButtons();
   });
 
   $('.a-collapsePanel-body').on('shown.bs.collapse', function() {
-    $('.a-box-button-name').each(function() {
-      truncateToNumberOfLines($(this));
-    });
+    truncateAllBoxButtons();
+    $(window).off('resize', truncateAllBoxButtons);
+    $(window).resize(truncateAllBoxButtons);
   });
+
+  if ($('.a-box-button-name').length > 0) {
+    $(window).off('resize', truncateAllBoxButtons);
+    $(window).resize(truncateAllBoxButtons);
+  }
 };
 
 /* globals $ */
