@@ -112,13 +112,19 @@ function setProject(project) {
 	$('.display-altinn').hide();
 	$('.display-' + project).show();
     changeCss(project);
+    setActiveProjectLink(project);
 }
 
- $('body').on('click', '.a-st-switchProject-link', function() {
+function setActiveProjectLink(project) {
+	$("a.a-st-switchProject-link[data-project="+project+"]").addClass('a-st-switchProject-link--active');
+    $("a.a-st-switchProject-link[data-project="+project+"]").siblings().removeClass('a-st-switchProject-link--active');
+}
+
+
+$('body').on('click', '.a-st-switchProject-link', function() {
   var project = $(this).data('project');
   setProject(project);
-	$(this).addClass('a-st-switchProject-link--active');
-	$(this).siblings().removeClass('a-st-switchProject-link--active');
+
   setPersistedStyle(project);
   setPersistedHtml($(this).html());
  });
