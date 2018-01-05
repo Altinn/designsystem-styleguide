@@ -77,7 +77,7 @@ $blue-dark: #0062BA;
 		    height: 100%;
 		    background: #000;
 		    opacity: 0;
-		    z-index: 10000;
+		    z-index: 1;
 		    position: fixed;
 		    top: 0;
 		    left: 0;
@@ -870,4 +870,3 @@ $blue-dark: #0062BA;
 .project-brreg .svg-dslogo-color {
 	fill: #333;
 }
-
