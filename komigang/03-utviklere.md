@@ -31,6 +31,8 @@ For å bygge designsystemet har vi brukt «Pattern Lab», som er et verktøy for
 
 Er du backend-utvikler og skal benytte deg av designet fra designsystemet, trenger du ikke å innstallere Pattern Lab som utviklingsmiljø. Du trenger kun å hente ned de distribuerte designfilene (css og javascript) fra [NPM](https://www.npmjs.com/package/altinn-designsystem). I tillegg kan du bruke designsystemet for å finne og kopiere HTML-koden inn i ditt system. (Grunnen til at HTML ikke kan være synkronisert, er at de ulike løsningene er bygget på ulike bakenforliggende system). Designsystemet er versjonsbasert, slik at din løsning kan velge å oppdatere til nyeste versjon av designsystemet når det er ønskelig. NB: jQuery må hentes inn i tillegg.
 
+<a class="a-noUnderline" href="https://badge.fury.io/js/altinn-designsystem"><img src="https://badge.fury.io/js/altinn-designsystem.svg" alt="npm version" height="18"></a>
+
 ## Er du frontend-utvikler?
 
 Med definerte UI-komponenter i Patternlab kan man som frontend-utvikler enkelt sy sammen nye maler og prototyper. NB: En designer skal alltid være ivolvert i design av nye brukergrensesnitt.

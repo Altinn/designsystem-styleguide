@@ -2,7 +2,7 @@
 layout: page
 title: Sidemaler
 permalink: prototyper.html
-description:
+description: Designsystem
 project: altinn
 
 ---

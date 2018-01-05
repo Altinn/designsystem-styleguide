@@ -86,17 +86,6 @@ jQuery(document).ready(function($) {
 });
 
 
- /*
- * Get text from chosen theme
- */
-
- jQuery(document).ready(function($){
-   var str = $( '.a-dropdown-toggle #a-js-chosenTheme' ).text();
-   $( '#a-js-showChosenTheme' ).html( str );
- });
-
-
-
 /*
 * CHANGE CSS LOADED IN HEAD
 */
@@ -125,11 +114,11 @@ function setProject(project) {
     changeCss(project);
 }
 
- $('body').on('click', '[data-toggle="altinn-dropdown"] .a-dropdown-item', function() {
-  var $dropdownElement = $(this).closest('[data-toggle="altinn-dropdown"]');
+ $('body').on('click', '.a-st-switchProject-link', function() {
   var project = $(this).data('project');
   setProject(project);
-  $dropdownElement.find('.a-dropdown-toggle').html($(this).html());
+	$(this).addClass('a-st-switchProject-link--active');
+	$(this).siblings().removeClass('a-st-switchProject-link--active');
   setPersistedStyle(project);
   setPersistedHtml($(this).html());
  });
