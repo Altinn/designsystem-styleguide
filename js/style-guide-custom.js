@@ -86,17 +86,6 @@ jQuery(document).ready(function($) {
 });
 
 
- /*
- * Get text from chosen theme
- */
-
- jQuery(document).ready(function($){
-   var str = $( '.a-dropdown-toggle #a-js-chosenTheme' ).text();
-   $( '#a-js-showChosenTheme' ).html( str );
- });
-
-
-
 /*
 * CHANGE CSS LOADED IN HEAD
 */
@@ -123,13 +112,19 @@ function setProject(project) {
 	$('.display-altinn').hide();
 	$('.display-' + project).show();
     changeCss(project);
+    setActiveProjectLink(project);
 }
 
- $('body').on('click', '[data-toggle="altinn-dropdown"] .a-dropdown-item', function() {
-  var $dropdownElement = $(this).closest('[data-toggle="altinn-dropdown"]');
+function setActiveProjectLink(project) {
+	$("a.a-st-switchProject-link[data-project="+project+"]").addClass('a-st-switchProject-link--active');
+    $("a.a-st-switchProject-link[data-project="+project+"]").siblings().removeClass('a-st-switchProject-link--active');
+}
+
+
+$('body').on('click', '.a-st-switchProject-link', function() {
   var project = $(this).data('project');
   setProject(project);
-  $dropdownElement.find('.a-dropdown-toggle').html($(this).html());
+
   setPersistedStyle(project);
   setPersistedHtml($(this).html());
  });
@@ -201,6 +196,12 @@ setProject(getPersistedStyle());
 
  		$element.addClass('open');
 
+		$('.a-st-switchProject-link').animate({
+ 			opacity: "0"
+ 		}, 100, function() {
+
+ 		});
+
  		$('<div class="a-st-overlay"></div>').appendTo('body');
 
  		$('body .a-st-overlay').animate({
@@ -237,7 +238,7 @@ setProject(getPersistedStyle());
 
  		});
 
-     $(".a-st-toggleNavbar:visible").animate({
+    $(".a-st-toggleNavbar:visible").animate({
  			left: "0px"
 
  		}, 200, function() {
@@ -245,6 +246,12 @@ setProject(getPersistedStyle());
  		});
 
  		$element.removeClass('open');
+
+		$('.a-st-switchProject-link').animate({
+ 			opacity: "1"
+ 		}, 100, function() {
+
+ 		});
  	}
 
  	function addClickOutsideExpandableEvent(){
