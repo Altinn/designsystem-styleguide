@@ -19,14 +19,14 @@ variations:
 
 usage:
 - title: Når skal du bruke denne komponenten?
-  description: Info kommer.
+  description: Brukes for eksempel på artikkelsider, temasider, hjelpesider og skjemasider for å vise brukeren hvor siden bor. Brødsmulestien skal vises fra andre nivå og videre nedover i strukturen.
 - title: Når skal du vurdere alternativer?
-  description: Info kommer.
+  description: På første nivå i en sidestruktur er det ikke nødvendig å vise brødsmulestien (f.eks på seksjonsforsider). Dersom det kun er et nivå av sider, er det ikke nødvendig med brødsmulesti. Dette gjelder for eksempel søkesider, profil og innboks.
 - title: Policies
-  description: Se theme-spesifikke policies.
+  description: Dersom det ikke er plass til hele brødsmulestien på skjermens bredde, vil siste nivå avsluttes med "...". På de minste skjermene vises kun forrige nivå i brødsmulestien med en tilbakepil for å indikere "Opp til forrige nivå".
 
 theme-specific-altinn:
-- description: Ingen retningslinjer er lagt inn for Altinn enda.
+- description: Teksten i brødsmulestien skal være 16px på små skjermer, og 20px på store skjermer. Lenkene skal ha 2px border bottom (blå), og siden du står på skal være utgrået uten understrek.
 
 theme-specific-brreg:
 - description: Ingen retningslinjer er lagt inn for Brønnøysundregistrene enda.

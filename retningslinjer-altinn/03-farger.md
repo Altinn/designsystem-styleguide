@@ -8,7 +8,7 @@ description: Retningslinjer
 
 ---
 
-<p class="a-leadText a-fontBold">I utgangspunktet skal kun de fargene som er presentert her brukes. Hvis nye farger blir implementert skal dette gås opp med ansvarlig designer. De skal i så fall inkluderes i hele nettstedet, og tilføre en verdi til brukeropplevelsen. </p>
+<p class="a-leadText a-fontBold">I utgangspunktet skal kun de fargene som er presentert her brukes. Hvis nye farger blir implementert skal dette gås opp med ansvarlig designer. </p>
 
 Fargene refereres til ved bruk av variabler som er definert i <code> variables.scss </code>.
 
@@ -48,7 +48,7 @@ Fargene refereres til ved bruk av variabler som er definert i <code> variables.s
 
 Følgende fargekombinasjoner som er brukt på Altinn oppfyller kravene til kontrast i liten tekst. AA er minstekravet, mens AAA er anbefalt, særlig for løpende tekst.
 
-<div style="min-width: 800px;">
+<div>
 <div class="ap-swatch" style="background: #022F51;">
 <div class="ap-colorCircle" style="border: 1px solid #1EAEF7; color: #1EAEF7; font-size: 20px; line-height: 36px;">AA</div>
 <div class="ap-colorCircle" style="border: 1px solid #CFF0FF; color: #CFF0FF; font-size: 20px; line-height: 36px;">AAA</div>
@@ -85,12 +85,17 @@ Følgende fargekombinasjoner som er brukt på Altinn oppfyller kravene til kontr
 
 
 
-
 ## Interaksjon
 
-Fargen <code>$blue</code> er dedikert til elementer som brukeren kan interagere med, f.eks lenker, knapper og navigasjon. Denne fargen skal ikke bli brukt i andre sammenhenger (unntatt illustrasjoner).
+Fargen <code>$blue</code> er dedikert til elementer som brukeren kan interagere med på altinn.no, f.eks lenker, knapper og navigasjon. Denne fargen skal ikke bli brukt i andre sammenhenger (unntatt illustrasjoner).
 
 <span class="ap-swatch" style="background: #1eaef7;"><span class="ap-colorLabel">$blue: <br>#1eaef7;</span></span>
+
+## Altinn Digitalisering
+
+Fargen <code>$orange</code> er forbeholdt Altinn Digitalisering, og brukes som et virkemiddel for å skille designet fra altinn.no. Fargen brukes i logo og på interaktive elementer.
+
+<span class="ap-swatch" style="background: #F7971E;"><span class="ap-colorLabel">$orange: <br>#F7971E;</span></span>
 
 
 ## Deaktiverte elementer
