@@ -275,7 +275,7 @@ setProject(getPersistedStyle());
 
  	$(function () {
  		addClickOutsideExpandableEvent();
- 		$('.a-st-toggleNavbar-expandable').on('click touchstart', function () {
+ 		$('.a-st-toggleNavbar-expandable').on('click touch', function () {
  			var self = $(this);
 
  			if (self.hasClass('open')) {
