@@ -19,7 +19,7 @@ variations:
 
 usage:
 - title: Når skal du bruke denne komponenten?
-  description: Når brukeren skal laste opp et vedlegg.
+  description: Ved større mengder av informasjon der det er hensiktsmessig å se alle treff som begynner på en valgt bokstav.
 - title: Når skal du vurdere alternativer?
   description: Info kommer.
 - title: Policies
@@ -32,8 +32,8 @@ theme-specific-brreg:
 - description: Ingen retningslinjer er lagt inn for Brønnøysundregistrene enda.
 
 classes:
-- className: a-btn a-btn-action a-iconRight a-custom-fileupload a-js-uploadAttachment
-  required : ja
+- className:
+  required : 
   description:
 
 ---
