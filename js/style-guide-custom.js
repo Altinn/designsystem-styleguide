@@ -255,7 +255,7 @@ setProject(getPersistedStyle());
  	}
 
  	function addClickOutsideExpandableEvent(){
- 		$(document).mouseup(function (e){
+ 		$(document).bind( "mouseup touchend", function(e){
  			if(!$(e.target).hasClass("a-st-toggleNavbar-expandable open")){
  				var $openExpandable = $(".a-st-expandable:visible");
  				var testClass = $(e.target).hasClass('.a-st-overlay');
