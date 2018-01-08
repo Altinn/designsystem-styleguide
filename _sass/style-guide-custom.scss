@@ -27,8 +27,9 @@ $blue-dark: #0062BA;
 	.a-st-switchProject {
 		height: 40px;
 		min-height: 40px;
+		width: 100%;
 		background: #333;
-		position: sticky;
+		position: fixed;
     top: 0;
     z-index: 9999;
     display: flex;
@@ -76,6 +77,7 @@ $blue-dark: #0062BA;
 
 	.l-page-layout--two-column-fixed {
 		width: 100%;
+		margin-top: 40px;
 
 		// LEFT AREA
 		> .l-page-layout__secondary {

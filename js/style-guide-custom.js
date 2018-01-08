@@ -196,6 +196,12 @@ setProject(getPersistedStyle());
 
  		$element.addClass('open');
 
+		$('.a-st-switchProject-link').animate({
+ 			opacity: "0"
+ 		}, 100, function() {
+
+ 		});
+
  		$('<div class="a-st-overlay"></div>').appendTo('body');
 
  		$('body .a-st-overlay').animate({
@@ -232,7 +238,7 @@ setProject(getPersistedStyle());
 
  		});
 
-     $(".a-st-toggleNavbar:visible").animate({
+    $(".a-st-toggleNavbar:visible").animate({
  			left: "0px"
 
  		}, 200, function() {
@@ -240,6 +246,12 @@ setProject(getPersistedStyle());
  		});
 
  		$element.removeClass('open');
+
+		$('.a-st-switchProject-link').animate({
+ 			opacity: "1"
+ 		}, 100, function() {
+
+ 		});
  	}
 
  	function addClickOutsideExpandableEvent(){
