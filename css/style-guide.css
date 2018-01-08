@@ -175,8 +175,50 @@ code[class*="language-"], pre[class*="language-"] {
   .a-st .c-text-passage a:not(.c-btn) {
     text-decoration: none;
     color: #000; }
+  .a-st .a-st-switchProject {
+    height: 40px;
+    min-height: 40px;
+    width: 100%;
+    background: #333;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    display: flex;
+    justify-content: flex-end; }
+    .a-st .a-st-switchProject .a-st-switchProject-link {
+      background: #333;
+      color: #fff;
+      border: none;
+      border-left: 1px solid #fff;
+      padding: 0 24px;
+      display: flex;
+      align-items: center;
+      font-family: verdana;
+      font-size: 14px;
+      padding-bottom: 3px; }
+      .a-st .a-st-switchProject .a-st-switchProject-link:hover {
+        background: #222;
+        color: #fff; }
+      .a-st .a-st-switchProject .a-st-switchProject-link.a-st-switchProject-link--active {
+        background: #0062BA;
+        position: relative;
+        background: #0062BA; }
+        .a-st .a-st-switchProject .a-st-switchProject-link.a-st-switchProject-link--active:after {
+          top: 100%;
+          left: 50%;
+          border: solid transparent;
+          content: " ";
+          height: 0;
+          width: 0;
+          position: absolute;
+          pointer-events: none;
+          border-color: rgba(0, 98, 186, 0);
+          border-top-color: #0062BA;
+          border-width: 6px;
+          margin-left: -6px; }
   .a-st .l-page-layout--two-column-fixed {
-    width: 100%; }
+    width: 100%;
+    margin-top: 40px; }
     .a-st .l-page-layout--two-column-fixed > .l-page-layout__secondary {
       width: 300px;
       box-shadow: 1px 1px 4px 0 rgba(137, 137, 137, 0.5);
@@ -205,7 +247,7 @@ code[class*="language-"], pre[class*="language-"] {
       height: 100%;
       background: #000;
       opacity: 0;
-      z-index: 10000;
+      z-index: 1;
       position: fixed;
       top: 0;
       left: 0; } }
@@ -270,13 +312,17 @@ code[class*="language-"], pre[class*="language-"] {
   .a-st .a-st-logoArea {
     background: #fff;
     width: 100%;
-    text-align: center; }
+    text-align: center;
+    border-bottom: 1px solid #eee;
+    height: 155px; }
     .a-st .a-st-logoArea .c-logo {
-      align-self: center; }
+      align-self: center;
+      display: flex;
+      height: 100%;
+      align-items: center; }
     .a-st .a-st-logoArea .c-logo__link {
       border: none;
       width: 160px;
-      padding-top: 22px;
       margin: 0 auto 0 auto;
       text-align: center; }
       .a-st .a-st-logoArea .c-logo__link svg {
@@ -353,7 +399,7 @@ code[class*="language-"], pre[class*="language-"] {
         padding: 0; }
   .a-st .c-header__nav-container {
     display: block;
-    height: calc(100vh - 242px);
+    height: calc(100vh - 196px);
     overflow-y: scroll; }
     .a-st .c-header__nav-container .display-altinn {
       display: block; }
@@ -692,8 +738,9 @@ code[class*="language-"], pre[class*="language-"] {
     font-family: 'DIN-bold';
     color: #17C96B; } }
 
-.a-st.project-brreg .a-st-logoArea .a-dropdown-toggle {
-  background: #333; }
-
-.project-brreg .svg-dslogo-color {
-  fill: #333; }
+.a-st.project-brreg .a-st-switchProject .a-st-switchProject-link.a-st-switchProject-link--active {
+  background: #039153; }
+  .a-st.project-brreg .a-st-switchProject .a-st-switchProject-link.a-st-switchProject-link--active:after {
+    border-top-color: #039153; }
+.a-st.project-brreg .svg-dslogo-color {
+  fill: #039153; }
