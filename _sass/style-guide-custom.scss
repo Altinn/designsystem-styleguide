@@ -917,10 +917,21 @@ $blue-dark: #0062BA;
 }
 
 
-.a-st.project-brreg .a-st-logoArea .a-dropdown-toggle {
-	background: #333;
-}
+.a-st {
+	&.project-brreg {
+		.a-st-switchProject {
+			.a-st-switchProject-link {
+				&.a-st-switchProject-link--active {
+					background: #039153;
 
-.project-brreg .svg-dslogo-color {
-	fill: #333;
+					&:after {
+						border-top-color: #039153;
+					}
+				}
+			}
+		}
+		.svg-dslogo-color {
+			fill: #039153;
+		}
+	}
 }
