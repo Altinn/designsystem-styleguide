@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Designere
-group: komigang
-permalink: /komigang/designere.html
+group: 
+permalink: /komigang/designere_v2.html
 description: Kom i gang
 
 ---
