@@ -22,7 +22,7 @@
 	<link rel="stylesheet" href="/designsystem-styleguide/css/style.dist.altinnett.css">
 	<link rel="stylesheet" href="/designsystem-styleguide/css/style.dist.brreg.css">
 
-	<link rel="canonical" href="http://localhost:4000/designsystem-styleguide/komigang/designere.html">
+	<link rel="canonical" href="http://localhost:4000/designsystem-styleguide/komigang/designere_v2.html">
 </head>
 
 
@@ -176,7 +176,7 @@
 
 				
 				<li class="c-primary-nav__item">
-					<a class="c-primary-nav__link is-active is-current" href="/designsystem-styleguide/komigang/designere.html">
+					<a class="c-primary-nav__link " href="/designsystem-styleguide/komigang/designere.html">
                     
 
                     Designere
@@ -5636,7 +5636,7 @@
 
 				
 				<li class="c-primary-nav__item">
-					<a class="c-primary-nav__link is-active is-current" href="/designsystem-styleguide/komigang/designere.html">
+					<a class="c-primary-nav__link " href="/designsystem-styleguide/komigang/designere.html">
                     
 
                     Designere
@@ -10864,7 +10864,50 @@
 
 <p>Vi er opptatt av å forbedre måten vi designer produktene våre på og jobber med å organisere arbeidet med design og utvikling. Vi ønsker at alle prosjekter er med på å videreutvikle det felles biblioteket av komponenter med både design og kode. For designere vil dette i praksis si at Altinn som eiere av designsystemet ønsker å ta imot forslag til nye komponenter etter hvert som prosjektene ser behovet for det. Hvordan dette arbeidet skal organiseres jobber vi med.</p>
 
-<p>Vi ser også på muligheter for å lage et design-kit for Sketch, Figma eller et tilsvarende program slik at vi kan jobbe mer effektivt med interaksjonsdesign. Det vil da bli mulig å laste ned en fil med alle tilgjengelige komponenter for kjapp skissering av nye konsepter i et prototype-program.</p>
+<h2 id="komponentbibliotek-i-figma">Komponentbibliotek i Figma</h2>
+<p>For å kunne jobbe effektivt med interaksjonsdesign og nye konsepter, har vi satt opp et design-kit for Figma som inneholder alle komponentene i et såkalt “Team-library”. For å få tilgang til Altinns Figma-konto ta kontakt med <a href="mailto:alise.kjelling@brreg.no">Alise Kjelling</a>.</p>
+
+<p><img class="py-2" src="../images/Figma-movie-1.gif" alt="figma" /></p>
+
+<p>Ved hjelp av “Team Library” deler vi komponenter på tvers av alle filer og prosjekter i Altinns Figmakonto. Filmen over viser hvordan komponentene er delt inn i “Lister”, “Skjemakomponenter” og så videre.</p>
+
+<h3 id="masterkomponenter-og-instanser">Masterkomponenter og instanser</h3>
+<p>Dersom en master-komponent oppdateres vil de ulike filene som bruker komponenten få en melding om oppdateringen og spørsmål om å oppdatere til nyeste versjon.</p>
+
+<p>Filmen under viser eksempel på endring av en fargekomponent. Brukes fargen av en knapp, vil man i knappens fil få spørsmål om å oppdatere fargen. Herfra kan man igjen publisere den nye knappen, slik at disse endringene igjen når ut til alle filer som bruker knappen.</p>
+
+<p><img class="py-2" src="../images/Figma-movie-2.gif" alt="figma" /></p>
+
+<p>Hver masterkomponent eksisterer kun en gang.  Alle instanser av komponenten lever sitt eget liv og endringer i disse vil ikke påvirke masterkomponenten. Man kan alltid resette en instans til å se ut som masterkomponenten igjen (ved å høyreklikke og velge “reset”).</p>
+
+<h3 id="sett-opp-en-ny-mal-i-figma">Sett opp en ny mal i figma</h3>
+<p>For å lage en ny mal må du først kopiere griden du ønsker å bruke (som du finner i “Introduksjon” &gt; “Grid”). Gå deretter inn i prosjektet du skal jobbe med (f.eks “Maler-Altinn”).  Velg filen XL eller XS, alt ettersom om du skal lage en ny desktopskisse eller mobilskisse. Lim inn griden (den kan justeres i høyden, men ikke i bredden). Hent til slutt inn komponentene du trenger fra “Team Library” og gjør eventuelle justeringer på dem.</p>
+
+<p><img class="py-2" src="../images/Figma-movie-3.gif" alt="figma" /></p>
+
+<h3 id="variasjoner-av-komponenter">Variasjoner av komponenter</h3>
+<p>En komponent kan inneholde flere ulike varianter av lag du kan skru på og av. Dersom du f.eks henter inn komponenten “Standard liste” og ser i lagene, vil du finne skjulte lag du kan aktivere ved å bruke øyesymbolet.</p>
+
+<p><img class="py-2" src="../images/Figma-movie-4.gif" alt="figma" /></p>
+
+<h3 id="versjonskontroll">Versjonskontroll</h3>
+<p>På hver fil har man mulighet til å vise versjonshistorikk. Her kan man enkelt gå tilbake i historikken dersom en komponent er ødelagt.</p>
+
+<p><img class="py-2" src="../images/Figma-movie-6.gif" alt="figma" /></p>
+
+<h3 id="prototyping">Prototyping</h3>
+<p>Når sidemaler befinner seg i samme fil, er det mulig å lenke mellom dem. På denne måten kan man sette opp en enkel klikkbar prototype som viser hvor de ulike lenkene fører deg hen.</p>
+
+<p><img class="py-2" src="../images/Figma-movie-7.gif" alt="figma" /></p>
+
+<h3 id="eksempel-på-altinns-figma-filer">Eksempel på Altinns Figma-filer</h3>
+<p>De navigerbare rammene under viser eksempler på filer vi har i komponentbiblioteket vårt. For å få tilgang til biblioteket, ta kontakt med <a href="mailto:alise.kjelling@brreg.no">Alise Kjelling</a>.</p>
+
+<iframe style="border: none;" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&amp;url=https://www.figma.com/file/CXfqqhADO3NqUy8UAyZbgtP1/Lister-%F0%9F%9A%80-public" allowfullscreen=""></iframe>
+
+<iframe style="border: none;" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&amp;url=https://www.figma.com/file/GyswmqpVg2wXAfn1631J9Ipz/Skjemakomponenter-%F0%9F%9A%80-public" allowfullscreen=""></iframe>
+
+<iframe style="border: none;" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&amp;url=https://www.figma.com/file/ZkfTPt4kU0SWMhjN5Jyht65y/Panel-and-Kort-%F0%9F%9A%80-public" allowfullscreen=""></iframe>
 
 	</div><!--end c-text-passage-->
 
