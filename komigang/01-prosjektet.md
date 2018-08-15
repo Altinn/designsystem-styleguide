@@ -19,5 +19,5 @@ Les mer om dette under [Kom i gang som designer](../komigang/designere.html).
 ## Ta kontakt med oss
 Teamet som jobber med Altinn eier designsystemet og vil ha det overordnede ansvaret for å følge opp prosjektgrupper som kobler seg på designsystemet. Dette teamet vil også ha ansvar for å følge opp nye komponenter og andre forbedringsforslag.
 
-Prosjektoppstart og UX: [Alise Kjelling](mailto:alise.kjelling@brreg.no) <br>
+Prosjektoppstart og UX: [Linn Kamilla Drågen](mailto:linn.dragen@brreg.no) <br>
 Teknisk: [Eirik Mikkelsen](mailto:eirik.mikkelsen@brreg.no)
