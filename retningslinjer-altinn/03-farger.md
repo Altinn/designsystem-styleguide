@@ -91,12 +91,6 @@ Fargen <code>$blue</code> er dedikert til elementer som brukeren kan interagere 
 
 <span class="ap-swatch" style="background: #1eaef7;"><span class="ap-colorLabel">$blue: <br>#1eaef7;</span></span>
 
-## Altinn Digitalisering
-
-Fargen <code>$orange</code> er forbeholdt Altinn Digitalisering, og brukes som et virkemiddel for å skille designet fra altinn.no. Fargen brukes i logo og på interaktive elementer.
-
-<span class="ap-swatch" style="background: #F7971E;"><span class="ap-colorLabel">$orange: <br>#F7971E;</span></span>
-
 
 ## Deaktiverte elementer
 
