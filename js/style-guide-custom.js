@@ -86,62 +86,6 @@ jQuery(document).ready(function($) {
 });
 
 
-/*
-* CHANGE CSS LOADED IN HEAD
-*/
-function changeCss(project) {
-  $("head").find('link[href*=\'/css/style.dist\']').prop('disabled', true);
-  $("head").find('link[href*=\'/css/style.dist.'+project+'.css\']').prop('disabled', false);
-}
-
- /*
- * SWITCH BETWEEN PROJECTS
- */
-function setProject(project) {
-  var projectCssClassPrefix = 'project-';
-  var $body = $('body');
-  var i;
-  var cssClasses = $body.attr('class').split(' ').filter(function(elem) {
-   return elem.indexOf(projectCssClassPrefix) == 0;
-  });
-  for (i = 0; i < cssClasses.length; i = i+1) {
-   $body.removeClass(cssClasses[i]);
-  }
-	$body.addClass(projectCssClassPrefix + project);
-	$('.display-brreg').hide();
-	$('.display-altinn').hide();
-	$('.display-' + project).show();
-    changeCss(project);
-    setActiveProjectLink(project);
-}
-
-function setActiveProjectLink(project) {
-	$("a.a-st-switchProject-link[data-project="+project+"]").addClass('a-st-switchProject-link--active');
-    $("a.a-st-switchProject-link[data-project="+project+"]").siblings().removeClass('a-st-switchProject-link--active');
-}
-
-
-$('body').on('click', '.a-st-switchProject-link', function() {
-  var project = $(this).data('project');
-  setProject(project);
-
-  setPersistedStyle(project);
-  setPersistedHtml($(this).html());
- });
-
- /*
- * VIEW CORRECT NAV BASED ON CHOSEN PROJECT
- */
-if (getPersistedStyle() === null) {
-	setPersistedStyle('altinn')
-}
-if (getPersistedHtml() === null) {
-	setPersistedHtml($('[data-toggle=\'altinn-dropdown\']').find('.dropdown-item').eq(0).html())
-}
-$('[data-toggle="altinn-dropdown"]').find('.a-dropdown-toggle')
-	.html(getPersistedHtml())
-
-setProject(getPersistedStyle());
 
  /*!
  * TOGGLE navbar
