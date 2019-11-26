@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE11">
 
-	<title>Sidemaler | Designsystem</title>
+	<title>Avkrysningsboks | Designsystem</title>
 	<meta name="description" content="Designsystem for Brønnøysundregistrenes webløsninger
 ">
 
@@ -20,7 +20,7 @@
 	<link rel="stylesheet" href="/designsystem-styleguide/css/style.css">
 	<link rel="stylesheet" href="/designsystem-styleguide/css/style.dist.altinn.css">
 
-	<link rel="canonical" href="http://localhost:4000/designsystem-styleguide/prototyper.html">
+	<link rel="canonical" href="http://localhost:4000/designsystem-styleguide/skjemakomponenter/avkrysningsboks.html">
 </head>
 
 
@@ -314,8 +314,8 @@
 			</ul>
 		</li>
 
-		<li class="c-primary-nav__item ">
-			<a class="c-primary-nav__link c-primary-nav__link--has-children js-nav-dropdown-trigger " href="/designsystem-styleguide/komigang/">
+		<li class="c-primary-nav__item is-active">
+			<a class="c-primary-nav__link c-primary-nav__link--has-children js-nav-dropdown-trigger  is-active is-current" href="/designsystem-styleguide/komigang/">
 
 				<span class="c-primary-nav__text">Skjemakomponenter</span>
 
@@ -325,7 +325,7 @@
 
 			</a>
 
-			<ul class="c-primary-nav__sublist js-nav-dropdownn ">
+			<ul class="c-primary-nav__sublist js-nav-dropdownn  is-active">
 			
 
 				
@@ -334,7 +334,7 @@
 
 				
 				<li class="c-primary-nav__item">
-					<a class="c-primary-nav__link " href="/designsystem-styleguide/skjemakomponenter/avkrysningsboks.html">
+					<a class="c-primary-nav__link is-active is-current" href="/designsystem-styleguide/skjemakomponenter/avkrysningsboks.html">
                     
 
                     Avkrysningsboks
@@ -1720,7 +1720,7 @@
 				
 			
 				
-				<a href="/designsystem-styleguide/prototyper.html" class="c-primary-nav__link is-active is-current">
+				<a href="/designsystem-styleguide/prototyper.html" class="c-primary-nav__link ">
 					<span class="c-primary-nav__text">Sidemaler</span>
 				</a>
 				
@@ -1833,13 +1833,25 @@
                       <div class="c-page-header">
 
 	<div class="l-container">
+			
+			<ol class="c-breadcrumbs">
+
+				<li class="c-breadcrumbs__item">
+					<a href="/designsystem-styleguide/skjemakomponenter" class="c-breadcrumbs__link">Skjemakomponenter</a>
+				</li><!-- end c-breadcrumbs__item -->
+
+				
+
+			</ol><!-- end c-breadcrumbs -->
+			
+
 
 			<div class="c-page-header__desc">
-				<p>Designsystem</p>
+				
 
 			</div>
 
-			<h1 class="c-page-header__title">Sidemaler </h1>
+			<h1 class="c-page-header__title">Avkrysningsboks </h1>
 			
 
 	</div>
@@ -1847,152 +1859,571 @@
 </div><!-- end c-page-header -->
 
 
-<div class="l-container">
+<section class="c-section">
 
-	<div class="c-text-passage a-text">
-		<p class="a-leadText a-fontBold">Her finner du sidemalene som er prototypet for Altinn i designsystemet.</p>
-<p><br /></p>
+	<div class="l-container">
 
-<div class="form-group a-form-group a-form-group-large mb-4">
+		<div class="c-tabs js-tabs">
 
-    <label class="a-form-label sr-only" for="text-input-find-12">Søk etter en sidemal</label>
+			<ul class="c-tabs__list">
+				
+				<li class="c-tabs__item">
+					<a href="#tab-standard" class="c-tabs__link js-tab" data-code-tabs="tab-standard">Standard</a>
+				</li><!-- end c-tabs__item -->
+				
+				<li class="c-tabs__item">
+					<a href="#tab-stacked" class="c-tabs__link js-tab" data-code-tabs="tab-stacked">Stacked</a>
+				</li><!-- end c-tabs__item -->
+				
+				<li class="c-tabs__item">
+					<a href="#tab-diskret" class="c-tabs__link js-tab" data-code-tabs="tab-diskret">Diskret</a>
+				</li><!-- end c-tabs__item -->
+				
 
-    <div class="a-form-group-items input-group">
 
-    <input class="form-control a-hasButton live-search-box-templates" type="search" placeholder="Søk etter sidemal" name="input-field" data-val="true" id="text-input-find-12" />
+			</ul><!-- end c-tabs__list -->
 
-    <div class="input-group-btn">
-      <button onclick="" class="btn btn-secondary" type="button">
-        <i class="ai ai-search"></i>
-          <span class="sr-only">Søk</span>
-      </button>
-    </div>
+			<div class="c-tabs__body">
 
+				
+				<div class="c-tabs__panel js-tabs-panel" id="tab-standard">
+
+					<section class="c-section">
+						<header class="c-section__header">
+							<div>Standard  : <p>Vanlig utseende for avkrysningsbokser</p>
+ </div>
+						</header>
+
+						
+
+						
+
+						
+						<div class="iffframe">
+							
+<fieldset class="form-group mb-0">
+  <legend class="a-legend">Velg ett eller flere alternativer</legend>
+  <div class="form-check a-form-checkboxes    ">
+    <label class="custom-control custom-checkbox">
+            <input type="checkbox"  class="custom-control-input">
+          <span class="custom-control-indicator"></span>
+          <span class="ml-1">Kryss av i den første avkrysningsboksen</span>
+          </label>
+    <label class="custom-control custom-checkbox">
+            <input type="checkbox"  class="custom-control-input">
+          <span class="custom-control-indicator"></span>
+          <span class="ml-1">Kryss av i den andre avkrysningsboksen</span>
+          </label>
   </div>
+</fieldset>
+
+							<!-- iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="/designsystem-styleguide/patterns/00-atoms-01-forms-00-avkrysningsboks/00-atoms-01-forms-00-avkrysningsboks.markup-only.html"></iframe>
+
+							<div class="iffframe__handle"></div -->
+
+						</div><!--end iffframe-->
+
+					</section><!--end section-->
+
+				</div><!--end c-tabs__panel-->
+				
+				<div class="c-tabs__panel js-tabs-panel" id="tab-stacked">
+
+					<section class="c-section">
+						<header class="c-section__header">
+							<div>Stacked  : <p>Dersom avkrysningsboksene skal falle under hverandre.</p>
+ </div>
+						</header>
+
+						
+
+						
+
+						
+						<div class="iffframe">
+							
+<fieldset class="form-group mb-0">
+  <legend class="a-legend">Velg ett eller flere alternativer</legend>
+  <div class="form-check a-form-checkboxes   custom-controls-stacked ">
+    <label class="custom-control custom-checkbox">
+            <input type="checkbox"  class="custom-control-input">
+          <span class="custom-control-indicator"></span>
+          <span class="ml-1">Kryss av i den første avkrysningsboksen</span>
+          </label>
+    <label class="custom-control custom-checkbox">
+            <input type="checkbox"  class="custom-control-input">
+          <span class="custom-control-indicator"></span>
+          <span class="ml-1">Kryss av i den andre avkrysningsboksen</span>
+          </label>
+    <div class="custom-control custom-checkbox inactive">
+      <span class="custom-control-indicator"></span>
+      <span class="ml-1">Den tredje avkrysningsboksen er inaktiv, og er ikke egentlig en avkrysningsboks</span>
+    </div>
+  </div>
+</fieldset>
+
+							<!-- iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="/designsystem-styleguide/patterns/00-atoms-01-forms-01-avkrysningsboks-stacked/00-atoms-01-forms-01-avkrysningsboks-stacked.markup-only.html"></iframe>
+
+							<div class="iffframe__handle"></div -->
+
+						</div><!--end iffframe-->
+
+					</section><!--end section-->
+
+				</div><!--end c-tabs__panel-->
+				
+				<div class="c-tabs__panel js-tabs-panel" id="tab-diskret">
+
+					<section class="c-section">
+						<header class="c-section__header">
+							<div>Diskret  : <p>En mer diskret visning av boksene.</p>
+ </div>
+						</header>
+
+						
+
+						
+
+						
+						<div class="iffframe">
+							
+<fieldset class="form-group mb-0">
+  <legend class="a-legend">Velg ett eller flere alternativer</legend>
+  <div class="form-check a-form-checkboxes a-form-checkboxes--discret   ">
+    <label class="custom-control custom-checkbox">
+            <input type="checkbox"  class="custom-control-input">
+          <span class="custom-control-indicator"></span>
+          <span class="ml-1">Kryss av i den første avkrysningsboksen</span>
+          </label>
+    <label class="custom-control custom-checkbox">
+            <input type="checkbox"  class="custom-control-input">
+          <span class="custom-control-indicator"></span>
+          <span class="ml-1">Kryss av i den andre avkrysningsboksen</span>
+          </label>
+  </div>
+</fieldset>
+
+							<!-- iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="/designsystem-styleguide/patterns/00-atoms-01-forms-02-avkrysningsboks-diskret/00-atoms-01-forms-02-avkrysningsboks-diskret.markup-only.html"></iframe>
+
+							<div class="iffframe__handle"></div -->
+
+						</div><!--end iffframe-->
+
+					</section><!--end section-->
+
+				</div><!--end c-tabs__panel-->
+				
+
+			</div><!--end c-tabs__body-->
+
+		</div><!--end c-tabs-->
+
+		<ul class="c-tabs-list js-tabs-list">
+			
+
+				
+
+				
+
+				
+
+				<li class="c-tabs-list__item js-tabs-list-item" data-code-tabs="tab-standard">
+
+					<div class="c-tabs test-tabs  js-tabs">
+
+						<ul class="c-tabs__list">
+
+							<li class="c-tabs__item">
+								<a href="#html-1" class="c-tabs__link js-tab">HTML</a>
+							</li><!-- end c-tabs__item -->
+
+							<!--
+
+							<li class="c-tabs__item">
+								<a href="#angular-1" class="c-tabs__link js-tab">Angular</a>
+							</li><!-- end c-tabs__item -->
+
+							<!--<li class="c-tabs__item">
+								<a href="#react-1" class="c-tabs__link js-tab">React</a>
+							</li><!-- end c-tabs__item -->
+
+						</ul><!-- end c-tabs__list -->
+
+						<div class="c-tabs__body ">
+
+							<div class="c-tabs__panel js-tabs-panel" id="html-1">
+
+								
+
+								<div class="pattern-code">
+									<button class="c-btn pattern-code-copy-btn" data-clipboard-target="#pattern-code-1">Kopier</button>
+									<pre class="highlight pattern-code-block"><code class="language-html" id="pattern-code-1">
+<figure class="highlight"><pre><code class="language-liquid" data-lang="liquid">&lt;fieldset class="form-group mb-0"&gt;
+  &lt;legend class="a-legend"&gt;Velg ett eller flere alternativer&lt;/legend&gt;
+  &lt;div class="form-check a-form-checkboxes    "&gt;
+    &lt;label class="custom-control custom-checkbox"&gt;
+            &lt;input type="checkbox"  class="custom-control-input"&gt;
+          &lt;span class="custom-control-indicator"&gt;&lt;/span&gt;
+          &lt;span class="ml-1"&gt;Kryss av i den første avkrysningsboksen&lt;/span&gt;
+          &lt;/label&gt;
+    &lt;label class="custom-control custom-checkbox"&gt;
+            &lt;input type="checkbox"  class="custom-control-input"&gt;
+          &lt;span class="custom-control-indicator"&gt;&lt;/span&gt;
+          &lt;span class="ml-1"&gt;Kryss av i den andre avkrysningsboksen&lt;/span&gt;
+          &lt;/label&gt;
+  &lt;/div&gt;
+&lt;/fieldset&gt;</code></pre></figure>
+</code></pre>
+								</div>
+
+							</div><!--end c-tabs__panel-->
+
+
+							<div class="c-tabs__panel js-tabs-panel" id="angular-1">
+
+								<div class="pattern-code">
+									<button class="c-btn pattern-code-copy-btn" data-clipboard-target="#pattern-code-1">Copy</button>
+									<pre class="highlight pattern-code-block"><code class="language-html" id="pattern-code-1">THIS IS ANGULAR CODE</code></pre>
+								</div>
+
+							</div><!--end c-tabs__panel-->
+
+							<div class="c-tabs__panel js-tabs-panel" id="react-1">
+
+								<div class="pattern-code">
+									<button class="c-btn pattern-code-copy-btn" data-clipboard-target="#pattern-code-1">Copy</button>
+									<pre class="highlight pattern-code-block"><code class="language-html" id="pattern-code-1">THIS IS REACT CODE</code></pre>
+								</div>
+
+							</div><!--end c-tabs__panel-->
+
+						</div><!-- end c-tabs__body-->
+
+					</div><!-- end c-tabs -->
+
+				</li><!-- end c-tabs-list__item -->
+			
+
+				
+
+				
+
+				
+
+				<li class="c-tabs-list__item js-tabs-list-item" data-code-tabs="tab-stacked">
+
+					<div class="c-tabs test-tabs  js-tabs">
+
+						<ul class="c-tabs__list">
+
+							<li class="c-tabs__item">
+								<a href="#html-2" class="c-tabs__link js-tab">HTML</a>
+							</li><!-- end c-tabs__item -->
+
+							<!--
+
+							<li class="c-tabs__item">
+								<a href="#angular-2" class="c-tabs__link js-tab">Angular</a>
+							</li><!-- end c-tabs__item -->
+
+							<!--<li class="c-tabs__item">
+								<a href="#react-2" class="c-tabs__link js-tab">React</a>
+							</li><!-- end c-tabs__item -->
+
+						</ul><!-- end c-tabs__list -->
+
+						<div class="c-tabs__body ">
+
+							<div class="c-tabs__panel js-tabs-panel" id="html-2">
+
+								
+
+								<div class="pattern-code">
+									<button class="c-btn pattern-code-copy-btn" data-clipboard-target="#pattern-code-2">Kopier</button>
+									<pre class="highlight pattern-code-block"><code class="language-html" id="pattern-code-2">
+<figure class="highlight"><pre><code class="language-liquid" data-lang="liquid">&lt;fieldset class="form-group mb-0"&gt;
+  &lt;legend class="a-legend"&gt;Velg ett eller flere alternativer&lt;/legend&gt;
+  &lt;div class="form-check a-form-checkboxes   custom-controls-stacked "&gt;
+    &lt;label class="custom-control custom-checkbox"&gt;
+            &lt;input type="checkbox"  class="custom-control-input"&gt;
+          &lt;span class="custom-control-indicator"&gt;&lt;/span&gt;
+          &lt;span class="ml-1"&gt;Kryss av i den første avkrysningsboksen&lt;/span&gt;
+          &lt;/label&gt;
+    &lt;label class="custom-control custom-checkbox"&gt;
+            &lt;input type="checkbox"  class="custom-control-input"&gt;
+          &lt;span class="custom-control-indicator"&gt;&lt;/span&gt;
+          &lt;span class="ml-1"&gt;Kryss av i den andre avkrysningsboksen&lt;/span&gt;
+          &lt;/label&gt;
+    &lt;div class="custom-control custom-checkbox inactive"&gt;
+      &lt;span class="custom-control-indicator"&gt;&lt;/span&gt;
+      &lt;span class="ml-1"&gt;Den tredje avkrysningsboksen er inaktiv, og er ikke egentlig en avkrysningsboks&lt;/span&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/fieldset&gt;</code></pre></figure>
+</code></pre>
+								</div>
+
+							</div><!--end c-tabs__panel-->
+
+
+							<div class="c-tabs__panel js-tabs-panel" id="angular-2">
+
+								<div class="pattern-code">
+									<button class="c-btn pattern-code-copy-btn" data-clipboard-target="#pattern-code-2">Copy</button>
+									<pre class="highlight pattern-code-block"><code class="language-html" id="pattern-code-2">THIS IS ANGULAR CODE</code></pre>
+								</div>
+
+							</div><!--end c-tabs__panel-->
+
+							<div class="c-tabs__panel js-tabs-panel" id="react-2">
+
+								<div class="pattern-code">
+									<button class="c-btn pattern-code-copy-btn" data-clipboard-target="#pattern-code-2">Copy</button>
+									<pre class="highlight pattern-code-block"><code class="language-html" id="pattern-code-2">THIS IS REACT CODE</code></pre>
+								</div>
+
+							</div><!--end c-tabs__panel-->
+
+						</div><!-- end c-tabs__body-->
+
+					</div><!-- end c-tabs -->
+
+				</li><!-- end c-tabs-list__item -->
+			
+
+				
+
+				
+
+				
+
+				<li class="c-tabs-list__item js-tabs-list-item" data-code-tabs="tab-diskret">
+
+					<div class="c-tabs test-tabs  js-tabs">
+
+						<ul class="c-tabs__list">
+
+							<li class="c-tabs__item">
+								<a href="#html-3" class="c-tabs__link js-tab">HTML</a>
+							</li><!-- end c-tabs__item -->
+
+							<!--
+
+							<li class="c-tabs__item">
+								<a href="#angular-3" class="c-tabs__link js-tab">Angular</a>
+							</li><!-- end c-tabs__item -->
+
+							<!--<li class="c-tabs__item">
+								<a href="#react-3" class="c-tabs__link js-tab">React</a>
+							</li><!-- end c-tabs__item -->
+
+						</ul><!-- end c-tabs__list -->
+
+						<div class="c-tabs__body ">
+
+							<div class="c-tabs__panel js-tabs-panel" id="html-3">
+
+								
+
+								<div class="pattern-code">
+									<button class="c-btn pattern-code-copy-btn" data-clipboard-target="#pattern-code-3">Kopier</button>
+									<pre class="highlight pattern-code-block"><code class="language-html" id="pattern-code-3">
+<figure class="highlight"><pre><code class="language-liquid" data-lang="liquid">&lt;fieldset class="form-group mb-0"&gt;
+  &lt;legend class="a-legend"&gt;Velg ett eller flere alternativer&lt;/legend&gt;
+  &lt;div class="form-check a-form-checkboxes a-form-checkboxes--discret   "&gt;
+    &lt;label class="custom-control custom-checkbox"&gt;
+            &lt;input type="checkbox"  class="custom-control-input"&gt;
+          &lt;span class="custom-control-indicator"&gt;&lt;/span&gt;
+          &lt;span class="ml-1"&gt;Kryss av i den første avkrysningsboksen&lt;/span&gt;
+          &lt;/label&gt;
+    &lt;label class="custom-control custom-checkbox"&gt;
+            &lt;input type="checkbox"  class="custom-control-input"&gt;
+          &lt;span class="custom-control-indicator"&gt;&lt;/span&gt;
+          &lt;span class="ml-1"&gt;Kryss av i den andre avkrysningsboksen&lt;/span&gt;
+          &lt;/label&gt;
+  &lt;/div&gt;
+&lt;/fieldset&gt;</code></pre></figure>
+</code></pre>
+								</div>
+
+							</div><!--end c-tabs__panel-->
+
+
+							<div class="c-tabs__panel js-tabs-panel" id="angular-3">
+
+								<div class="pattern-code">
+									<button class="c-btn pattern-code-copy-btn" data-clipboard-target="#pattern-code-3">Copy</button>
+									<pre class="highlight pattern-code-block"><code class="language-html" id="pattern-code-3">THIS IS ANGULAR CODE</code></pre>
+								</div>
+
+							</div><!--end c-tabs__panel-->
+
+							<div class="c-tabs__panel js-tabs-panel" id="react-3">
+
+								<div class="pattern-code">
+									<button class="c-btn pattern-code-copy-btn" data-clipboard-target="#pattern-code-3">Copy</button>
+									<pre class="highlight pattern-code-block"><code class="language-html" id="pattern-code-3">THIS IS REACT CODE</code></pre>
+								</div>
+
+							</div><!--end c-tabs__panel-->
+
+						</div><!-- end c-tabs__body-->
+
+					</div><!-- end c-tabs -->
+
+				</li><!-- end c-tabs-list__item -->
+			
+
+		</ul><!-- end c-tabs-list -->
+
+	</div>
+
+</section><!-- end c-section -->
+
+<section class="c-section">
+
+	<div class="l-container">
+
+		<div class="c-section-header">
+
+			<h2 class="">Retningslinjer for bruk</h2>
+
+		</div><!-- end c-section-header -->
+
+		<div class="c-text-passage l-linelength-container">
+
+			
+				<h3>Når skal du bruke denne komponenten?</h3>
+        <p>Avkrysningsbokser brukes i tilfeller der brukeren får et spørsmål og kan svare med et eller flere alternativer. Avkrysningsboksene skal stå foran tilhørende tekst, og skal aldri stå alene.</p>
+      
+				<h3>Når skal du vurdere alternativer?</h3>
+        <p>Dersom det handler om en filtrering, skal valgknapper brukes.</p>
+      
+				<h3>Policies</h3>
+        <p>Ingen avkrysningsbokser skal stå uten tekst.</p>
+      
+
+		</div><!-- end c-text-passage -->
+
+		<div class="c-text-passage l-linelength-container display-altinn">
+			
+				<h3>Theme-spesifikke policies for Altinn</h3>
+        <p>Ingen retningslinjer er lagt inn for Altinn enda.</p>
+      
+		</div><!-- end c-text-passage -->
+
+		<div class="c-text-passage l-linelength-container display-brreg">
+			
+				<h3>Theme-spesifikke policies for Brønnøysundregistrene</h3>
+        <p>Ingen retningslinjer er lagt inn for Brønnøysundregistrene enda.</p>
+      
+		</div><!-- end c-text-passage -->
+
+		<table class="c-table my-3">
+
+			<thead class="c-table__header">
+
+				<tr class="c-table__header-row">
+				<th scope="col" class="c-table__header-cell ">Relevante klasser</th>
+				<th scope="col" class="c-table__header-cell ">Obligatorisk</th>
+				<th scope="col" class="c-table__header-cell ">Beskrivelse</th>
+				</tr><!-- c-table__header-row -->
+
+			</thead><!-- end c-table__header -->
+
+			<tbody class="c-table__body ">
+				
+
+				<tr class="c-table__row ">
+
+					<td class="c-table__cell ">
+						form-check a-form-checkboxes
+					</td>
+
+					<td class="c-table__cell ">
+						ja
+					</td>
+
+					<td class="c-table__cell ">
+						
+						
+					</td>
+
+				</tr><!-- end c-table__row -->
+				
+
+				<tr class="c-table__row ">
+
+					<td class="c-table__cell ">
+						custom-controls-stacked
+					</td>
+
+					<td class="c-table__cell ">
+						nei
+					</td>
+
+					<td class="c-table__cell ">
+						
+						<p>Legg på denne klassen dersom avkrysningsboksene skal falle under hverandre.</p>
+
+					</td>
+
+				</tr><!-- end c-table__row -->
+				
+
+				<tr class="c-table__row ">
+
+					<td class="c-table__cell ">
+						a-form-checkboxes--discret
+					</td>
+
+					<td class="c-table__cell ">
+						nei
+					</td>
+
+					<td class="c-table__cell ">
+						
+						<p>Legg på denne klassen dersom avkrysningsboksene skal være små.</p>
+
+					</td>
+
+				</tr><!-- end c-table__row -->
+				
+
+			</tbody><!-- end c-table__body -->
+
+		</table><!--end c-table-->
+
+		<div class="c-text-passage l-linelength-container">
+			
+		</div><!-- end c-text-passage -->
+
+	</div>
+
+</section><!-- end c-section -->
+
+<section class="c-section">
+
+	<div class="l-container">
+
+<!-- TODO: SKriv ut dette fra MD-filen?
+<div class="c-section-header ">
+
+	<h2>Detaljer</h2>
+
 </div>
+		<div class="c-text-passage l-linelength-container">
+	        <ul>
 
-<h2 class="live-search-title"> FORSIDER PÅ ALTINN </h2>
+	            <li>Versjon: 1</li>
+	            <li>Sist oppdatert: April 27, 2017</li>
+	            <li>Brukt på : <a href="#">Altinn</a>, <a href="#">Altinnett</a></li>
+	        </ul>
+		</div> -->
 
-<ul class="live-search-list-templates">
+	</div>
 
-  <li><a href="http://altinn.github.io/DesignSystem/public/patterns/04-sider-infoportal-01-forside-00-forside/04-sider-infoportal-01-forside-00-forside.html?1498551267012">Forside normal</a></li>
-  <li><a href="http://altinn.github.io/DesignSystem/public/patterns/04-sider-infoportal-01-forside-02-forside-innlogget/04-sider-infoportal-01-forside-02-forside-innlogget.html">Forside innlogget</a></li>
-  <li><a href="http://altinn.github.io/DesignSystem/public/patterns/04-sider-infoportal-01-forside-00-forside-varsel-info/04-sider-infoportal-01-forside-00-forside-varsel-info.html?1502110645310">Forside info</a></li>
-  <li><a href="http://altinn.github.io/DesignSystem/public/patterns/04-sider-infoportal-01-forside-00-forside-varsel-krise/04-sider-infoportal-01-forside-00-forside-varsel-krise.html?1502110705394">Forside krise</a></li>
-
-</ul>
-
-<h2 class="live-search-title"> NAVIGASJONSSIDER </h2>
-
-<ul class="live-search-list-templates">
-
-  <li><a href="http://altinn.github.io/DesignSystem/public/patterns/04-sider-portal-01-aktorvalg-10-aktorvalg-forste-gang-enkel/04-sider-portal-01-aktorvalg-10-aktorvalg-forste-gang-enkel.html">Aktørvalg</a></li>
-  <li><a href="http://altinn.github.io/DesignSystem/public/patterns/04-sider-infoportal-20-navigasjonssider-31-temaside-v-arbeidsforhold/04-sider-infoportal-20-navigasjonssider-31-temaside-v-arbeidsforhold.html">Temaside</a></li>
-  <li><a href="http://altinn.github.io/DesignSystem/public/patterns/04-sider-infoportal-20-navigasjonssider-40-temaside-filter-v-stotteordninger/04-sider-infoportal-20-navigasjonssider-40-temaside-filter-v-stotteordninger.html">Temaside for støtteordninger</a></li>
-  <li><a href="http://altinn.github.io/DesignSystem/public/patterns/04-sider-infoportal-20-navigasjonssider-50-kolonnenavigasjon-v-skjemaoversikt/04-sider-infoportal-20-navigasjonssider-50-kolonnenavigasjon-v-skjemaoversikt.html">Kolonnenenavigasjon for skjemaoversikt</a></li>
-
-  <li><a href="http://altinn.github.io/DesignSystem/public/patterns/04-sider-infoportal-20-navigasjonssider-51-omraadeside/04-sider-infoportal-20-navigasjonssider-51-omraadeside.html?1507106898184">Områdeside (A-melding)</a></li>
-  <li><a href="http://altinn.github.io/DesignSystem/public/patterns/04-sider-infoportal-30-artikkel-42-artikkel-jumbo-v-velg-foretaksform/04-sider-infoportal-30-artikkel-42-artikkel-jumbo-v-velg-foretaksform.html">Sammenlikning spørsmål</a></li>
-  <li><a href="http://altinn.github.io/DesignSystem/public/patterns/04-sider-infoportal-20-navigasjonssider-21-sammenlikning-v-velg-foretaksform/04-sider-infoportal-20-navigasjonssider-21-sammenlikning-v-velg-foretaksform.html">Sammenlikning svar</a></li>
-
-</ul>
-
-<h2 class="live-search-title"> ARTIKKELSIDER </h2>
-
-<ul class="live-search-list-templates">
-
-  <li><a href="http://altinn.github.io/DesignSystem/public/patterns/04-sider-infoportal-30-artikkel-14-artikkel-v-aksjeselskap/04-sider-infoportal-30-artikkel-14-artikkel-v-aksjeselskap.html?1507106597065">Vanlig artikkel</a></li>
-  <li><a href="http://altinn.github.io/DesignSystem/public/patterns/04-sider-infoportal-30-artikkel-41-artikkel-jumbo-v-enkeltpersonforetak/04-sider-infoportal-30-artikkel-41-artikkel-jumbo-v-enkeltpersonforetak.html">Artikkel med toppillustrasjon</a></li>
-  <li><a href="http://altinn.github.io/DesignSystem/public/patterns/04-sider-infoportal-30-artikkel-60-artikkel-v-stotteordning/04-sider-infoportal-30-artikkel-60-artikkel-v-stotteordning.html?1507106764721">Artikkel for støtteordning</a></li>
-
-  <li><a href="http://altinn.github.io/DesignSystem/public/patterns/04-sider-infoportal-20-navigasjonssider-21-sammenlikning-v-velg-foretaksform/04-sider-infoportal-20-navigasjonssider-21-sammenlikning-v-velg-foretaksform.html">Sammenlikning svar</a></li>
-
-</ul>
-
-<h2 class="live-search-title"> INNBOKS </h2>
-
-<ul class="live-search-list-templates">
-
-  <li><a href="http://altinn.github.io/DesignSystem/public/patterns/04-sider-portal-50-innboks-00-innboks/04-sider-portal-50-innboks-00-innboks.html">Innboks</a></li>
-
-  <li><a href="http://altinn.github.io/DesignSystem/public/patterns/04-sider-portal-50-innboks-05-innboks-arkiv/04-sider-portal-50-innboks-05-innboks-arkiv.html">Innboks arkiv</a></li>
-
-  <li><a href="http://altinn.github.io/DesignSystem/public/patterns/04-sider-portal-50-innboks-06-innboks-soketreff/04-sider-portal-50-innboks-06-innboks-soketreff.html">Innboks søketreff</a></li>
-
-</ul>
-
-<h2 class="live-search-title"> PROFIL </h2>
-
-<ul class="live-search-list-templates">
-
-  <li><a href="http://altinn.github.io/DesignSystem/public/patterns/04-sider-portal-60-profil-roller-rettigheter-profil-roller-rettigheter/04-sider-portal-60-profil-roller-rettigheter-profil-roller-rettigheter.html">Profil, roller og rettigheter</a></li>
-
-  <li><a href="http://altinn.github.io/DesignSystem/public/patterns/04-sider-portal-91-klientdelegering-00-klientdelegering-fjern-rettigheter-fra-klient/04-sider-portal-91-klientdelegering-00-klientdelegering-fjern-rettigheter-fra-klient.html">Klientdelegering - Fjern rettigheter</a></li>
-
-  <li><a href="http://altinn.github.io/DesignSystem/public/patterns/04-sider-portal-91-klientdelegering-00-klientdelegering-gi-rettigheter-til-ansatte/04-sider-portal-91-klientdelegering-00-klientdelegering-gi-rettigheter-til-ansatte.html">Klientdelegering - Gi rettigheter</a></li>
-
-  <li><a href="http://altinn.github.io/DesignSystem/public/patterns/04-sider-portal-91-klientdelegering-00-klientdelegering-kvittering-gyldig/04-sider-portal-91-klientdelegering-00-klientdelegering-kvittering-gyldig.html">Klientdelegering - Fullført prosess</a></li>
-
-  <li><a href="http://altinn.github.io/DesignSystem/public/patterns/04-sider-portal-91-klientdelegering-00-klientdelegering-pa-fil/04-sider-portal-91-klientdelegering-00-klientdelegering-pa-fil.html">Klientdelegering på fil</a></li>
-
-</ul>
-
-<h2 class="live-search-title"> HJELPESENTER </h2>
-
-<ul class="live-search-list-templates">
-
-  <li><a href="http://altinn.github.io/DesignSystem/public/patterns/04-sider-infoportal-20-navigasjonssider-70-hjelpesenter/04-sider-infoportal-20-navigasjonssider-70-hjelpesenter.html?1507106852930">Hjelpesenter forside</a></li>
-
-  <li><a href="http://altinn.github.io/DesignSystem/public/patterns/04-sider-infoportal-40-sok-70-sok-hjelp/04-sider-infoportal-40-sok-70-sok-hjelp.html">Søk i hjelpesenter</a></li>
-
-  <li><a href="http://altinn.github.io/DesignSystem/public/patterns/04-sider-infoportal-30-artikkel-70-artikkel-v-hjelpetrinn/04-sider-infoportal-30-artikkel-70-artikkel-v-hjelpetrinn.html?1507106808809">Artikkel med hjelpetrinn</a></li>
-
-</ul>
-
-<h2 class="live-search-title"> SKJEMA </h2>
-
-<ul class="live-search-list-templates">
-
-  <li><a href="http://altinn.github.io/DesignSystem/public/patterns/04-sider-infoportal-20-navigasjonssider-51-omraadeside/04-sider-infoportal-20-navigasjonssider-51-omraadeside.html">Skjemaoversikt</a></li>
-
-  <li><a href="http://altinn.github.io/DesignSystem/public/patterns/04-sider-infoportal-35-skjemaartikkel-12-artikkel-skjema-v-amelding-a02/04-sider-infoportal-35-skjemaartikkel-12-artikkel-skjema-v-amelding-a02.html">Om skjema</a></li>
-
-  <li><a href="http://altinn.github.io/DesignSystem/public/patterns/04-sider-infoportal-35-skjemaartikkel-11-artikkel-skjema-v-amelding-varsler/04-sider-infoportal-35-skjemaartikkel-11-artikkel-skjema-v-amelding-varsler.html">Om skjema med varsel</a></li>
-
-  <li><a href="http://altinn.github.io/DesignSystem/public/patterns/04-sider-infoportal-35-skjemaartikkel-53-artikkel-skjema-v-egenmeldt-sykefravaer/04-sider-infoportal-35-skjemaartikkel-53-artikkel-skjema-v-egenmeldt-sykefravaer.html">Skjema fra innboksen</a></li>
-
-  <li><a href="http://altinn.github.io/DesignSystem/public/patterns/04-sider-infoportal-35-skjemaartikkel-55-artikkel-skjema-v-avskrivning/04-sider-infoportal-35-skjemaartikkel-55-artikkel-skjema-v-avskrivning.html">Skjema vedlegg</a></li>
-
-  <li><a href="http://altinn.github.io/DesignSystem/public/patterns/04-sider-infoportal-35-skjemaartikkel-56-artikkel-skjema-v-anmodning-om-tildeling-av-D-nummer/04-sider-infoportal-35-skjemaartikkel-56-artikkel-skjema-v-anmodning-om-tildeling-av-D-nummer.html">Skjema du ikke kan starte i altinn</a></li>
-
-  <li><a href="http://altinn.github.io/DesignSystem/public/patterns/04-sider-infoportal-35-skjemaartikkel-58-artikkel-skjema-v-skjenkebevilling-for-skjenking-av-alkoholholdig-drikke/04-sider-infoportal-35-skjemaartikkel-58-artikkel-skjema-v-skjenkebevilling-for-skjenking-av-alkoholholdig-drikke.html">Skjema med kommunesøk</a></li>
-
-
-</ul>
-
-<h2 class="live-search-title"> STEGVIS PROSESS </h2>
-
-<ul class="live-search-list-templates">
-
-  <li><a href="http://altinn.github.io/DesignSystem/versjon-altinndagen/patterns/04-sider-90-starte-enk-00-starte-enk-0/04-sider-90-starte-enk-00-starte-enk-0.html">Registrere enkeltpersonforetak</a></li>
-
-</ul>
-
-<h2 class="live-search-title"> SØK </h2>
-
-<ul class="live-search-list-templates">
-
-  <li><a href="http://altinn.github.io/DesignSystem/public/patterns/04-sider-infoportal-40-sok-00-sok-forside/04-sider-infoportal-40-sok-00-sok-forside.html?1507106953230">Søkeresultater</a></li>
-  <li><a href="http://altinn.github.io/DesignSystem/public/patterns/04-sider-infoportal-40-sok-10-sok-skjema/04-sider-infoportal-40-sok-10-sok-skjema.html">Søk med filter: skjema</a></li>
-  <li><a href="http://altinn.github.io/DesignSystem/public/patterns/04-sider-infoportal-40-sok-20-sok-artikkel/04-sider-infoportal-40-sok-20-sok-artikkel.html">Søk med filter: starte og drive</a></li>
-
-</ul>
-
-<div class="no-results-element">Ingen treff</div>
-
-	</div><!--end c-text-passage-->
-
-</div>
+</section><!-- end c-section -->
 
 
 							</main><!--end role=main-->

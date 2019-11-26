@@ -2,7 +2,7 @@
 
 This repository contains the code for our "storefront" of the Design System. It is made  using Brad Frost's [Style Guide Guide](https://github.com/bradfrost/style-guide-guide). Altinn is using [Pattern Lab](https://github.com/pattern-lab/patternlab-node) to develop frontend-code for web components. You can find our Design System repository [here](https://github.com/Altinn/DesignSystem).
 
-Pattern Lab serves as our "workshop" for frontend developers (based on atomic design), while the “Style Guide Guide” is our "storefront".
+Pattern Lab serves as our "workshop" for frontend developers (based on atomic design), while this is our "storefront".
 
 A gulp-task is exporting all the components from Pattern Lab to this storefront, and creates a better display of the final components.
 

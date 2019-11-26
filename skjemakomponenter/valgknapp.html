@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE11">
 
-	<title>Sidemaler | Designsystem</title>
+	<title>Valgknapp | Designsystem</title>
 	<meta name="description" content="Designsystem for Brønnøysundregistrenes webløsninger
 ">
 
@@ -20,7 +20,7 @@
 	<link rel="stylesheet" href="/designsystem-styleguide/css/style.css">
 	<link rel="stylesheet" href="/designsystem-styleguide/css/style.dist.altinn.css">
 
-	<link rel="canonical" href="http://localhost:4000/designsystem-styleguide/prototyper.html">
+	<link rel="canonical" href="http://localhost:4000/designsystem-styleguide/skjemakomponenter/valgknapp.html">
 </head>
 
 
@@ -314,8 +314,8 @@
 			</ul>
 		</li>
 
-		<li class="c-primary-nav__item ">
-			<a class="c-primary-nav__link c-primary-nav__link--has-children js-nav-dropdown-trigger " href="/designsystem-styleguide/komigang/">
+		<li class="c-primary-nav__item is-active">
+			<a class="c-primary-nav__link c-primary-nav__link--has-children js-nav-dropdown-trigger  is-active is-current" href="/designsystem-styleguide/komigang/">
 
 				<span class="c-primary-nav__text">Skjemakomponenter</span>
 
@@ -325,7 +325,7 @@
 
 			</a>
 
-			<ul class="c-primary-nav__sublist js-nav-dropdownn ">
+			<ul class="c-primary-nav__sublist js-nav-dropdownn  is-active">
 			
 
 				
@@ -394,7 +394,7 @@
 
 				
 				<li class="c-primary-nav__item">
-					<a class="c-primary-nav__link " href="/designsystem-styleguide/skjemakomponenter/valgknapp.html">
+					<a class="c-primary-nav__link is-active is-current" href="/designsystem-styleguide/skjemakomponenter/valgknapp.html">
                     
 
                     Valgknapp
@@ -1720,7 +1720,7 @@
 				
 			
 				
-				<a href="/designsystem-styleguide/prototyper.html" class="c-primary-nav__link is-active is-current">
+				<a href="/designsystem-styleguide/prototyper.html" class="c-primary-nav__link ">
 					<span class="c-primary-nav__text">Sidemaler</span>
 				</a>
 				
@@ -1833,13 +1833,25 @@
                       <div class="c-page-header">
 
 	<div class="l-container">
+			
+			<ol class="c-breadcrumbs">
+
+				<li class="c-breadcrumbs__item">
+					<a href="/designsystem-styleguide/skjemakomponenter" class="c-breadcrumbs__link">Skjemakomponenter</a>
+				</li><!-- end c-breadcrumbs__item -->
+
+				
+
+			</ol><!-- end c-breadcrumbs -->
+			
+
 
 			<div class="c-page-header__desc">
-				<p>Designsystem</p>
+				
 
 			</div>
 
-			<h1 class="c-page-header__title">Sidemaler </h1>
+			<h1 class="c-page-header__title">Valgknapp </h1>
 			
 
 	</div>
@@ -1847,152 +1859,513 @@
 </div><!-- end c-page-header -->
 
 
-<div class="l-container">
+<section class="c-section">
 
-	<div class="c-text-passage a-text">
-		<p class="a-leadText a-fontBold">Her finner du sidemalene som er prototypet for Altinn i designsystemet.</p>
-<p><br /></p>
+	<div class="l-container">
 
-<div class="form-group a-form-group a-form-group-large mb-4">
+		<div class="c-tabs js-tabs">
 
-    <label class="a-form-label sr-only" for="text-input-find-12">Søk etter en sidemal</label>
+			<ul class="c-tabs__list">
+				
+				<li class="c-tabs__item">
+					<a href="#tab-standard" class="c-tabs__link js-tab" data-code-tabs="tab-standard">Standard</a>
+				</li><!-- end c-tabs__item -->
+				
+				<li class="c-tabs__item">
+					<a href="#tab-valgknapp-radio" class="c-tabs__link js-tab" data-code-tabs="tab-valgknapp-radio">Valgknapp Radio</a>
+				</li><!-- end c-tabs__item -->
+				
 
-    <div class="a-form-group-items input-group">
 
-    <input class="form-control a-hasButton live-search-box-templates" type="search" placeholder="Søk etter sidemal" name="input-field" data-val="true" id="text-input-find-12" />
+			</ul><!-- end c-tabs__list -->
 
-    <div class="input-group-btn">
-      <button onclick="" class="btn btn-secondary" type="button">
-        <i class="ai ai-search"></i>
-          <span class="sr-only">Søk</span>
-      </button>
-    </div>
+			<div class="c-tabs__body">
 
-  </div>
+				
+				<div class="c-tabs__panel js-tabs-panel" id="tab-standard">
+
+					<section class="c-section">
+						<header class="c-section__header">
+							<div>Standard  : <p>Valgknapper brukt som avkrysningsbokser der brukeren kan velge flere alternativer.</p>
+ </div>
+						</header>
+
+						
+
+						
+
+						
+						<div class="iffframe">
+							
+<div class="a-switch   ">
+  <input id="checkbutton-read" class="sr-only" type="checkbox" name="checkbutton-read" value="checkbutton-read">
+  <label for="checkbutton-read" class="a-switch-label ">
+        
+<i class="ai ai-read   "    ></i>
+       Kun lese
+    </label>
+</div>
+<div class="a-switch   ">
+  <input id="checkbutton-edit" class="sr-only" type="checkbox" name="checkbutton-edit" value="checkbutton-read">
+  <label for="checkbutton-edit" class="a-switch-label ">
+        
+<i class="ai ai-write   "    ></i>
+       Fylle ut
+    </label>
+</div>
+<div class="a-switch   ">
+  <input id="checkbutton-sign" class="sr-only" type="checkbox" name="checkbutton-sign" value="checkbutton-read" data-toggle="popover" data-placement="bottom" data-animation="false" data-popover-content="conditionalPopover" data-popover-class="popover-warning"
+    data-trigger="onchange">
+  <label for="checkbutton-sign" class="a-switch-label ">
+        
+<i class="ai ai-sign   "    ></i>
+       Signere
+    </label>
+  <div id="conditionalPopover" class="d-none">
+    <div class="pb-1">Dette er en popover tekst</div>
+    
+    <button type="button" class="a-btn a-btn-danger mr-1">
+  
+    knapp
+  
+</button>
+    
+  </div>
+</div>
+<div class="a-switch   ">
+  <input id="checkbutton-toggle" class="sr-only" type="checkbox" name="checkbutton-toggle" value="checkbutton-read">
+  <label for="checkbutton-toggle" class="a-switch-label a-toggle-icon">
+        
+<i class="ai ai-plus   "    ></i>
+        
+<i class="ai ai-check   "    ></i>
+       Toggle state icon
+    </label>
+</div>
+<div class="a-switch   ">
+  <input id="checkbutton-example" class="sr-only" type="checkbox" name="checkbutton-example" value="checkbutton-read">
+  <label for="checkbutton-example" class="a-switch-label ">
+      Eksempel uten ikon
+    </label>
+</div>
+<div class="a-switch   ">
+  <input id="checkbutton-deactivated" class="sr-only" type="checkbox" name="checkbutton-deactivated" value="checkbutton-read" disabled>
+  <label for="checkbutton-deactivated" class="a-switch-label disabled">
+        
+<i class="ai ai-sign   "    ></i>
+      Eksempel på deaktivert
+    </label>
+</div>
+<div class="a-switch   ">
+  <input id="checkbutton-longtext" class="sr-only" type="checkbox" name="checkbutton-longtext" value="checkbutton-read">
+  <label for="checkbutton-longtext" class="a-switch-label ">
+      Eksempel med veldig veldig veldig lang tekst som blir kuttet av på mobilvisning
+    </label>
 </div>
 
-<h2 class="live-search-title"> FORSIDER PÅ ALTINN </h2>
+							<!-- iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="/designsystem-styleguide/patterns/00-atoms-01-forms-03-valgknapp/00-atoms-01-forms-03-valgknapp.markup-only.html"></iframe>
 
-<ul class="live-search-list-templates">
+							<div class="iffframe__handle"></div -->
 
-  <li><a href="http://altinn.github.io/DesignSystem/public/patterns/04-sider-infoportal-01-forside-00-forside/04-sider-infoportal-01-forside-00-forside.html?1498551267012">Forside normal</a></li>
-  <li><a href="http://altinn.github.io/DesignSystem/public/patterns/04-sider-infoportal-01-forside-02-forside-innlogget/04-sider-infoportal-01-forside-02-forside-innlogget.html">Forside innlogget</a></li>
-  <li><a href="http://altinn.github.io/DesignSystem/public/patterns/04-sider-infoportal-01-forside-00-forside-varsel-info/04-sider-infoportal-01-forside-00-forside-varsel-info.html?1502110645310">Forside info</a></li>
-  <li><a href="http://altinn.github.io/DesignSystem/public/patterns/04-sider-infoportal-01-forside-00-forside-varsel-krise/04-sider-infoportal-01-forside-00-forside-varsel-krise.html?1502110705394">Forside krise</a></li>
+						</div><!--end iffframe-->
 
-</ul>
+					</section><!--end section-->
 
-<h2 class="live-search-title"> NAVIGASJONSSIDER </h2>
+				</div><!--end c-tabs__panel-->
+				
+				<div class="c-tabs__panel js-tabs-panel" id="tab-valgknapp-radio">
 
-<ul class="live-search-list-templates">
+					<section class="c-section">
+						<header class="c-section__header">
+							<div>Valgknapp Radio  : <p>Valgknapper brukt som radioknapper der brukeren kan velge ett alternativ.</p>
+ </div>
+						</header>
 
-  <li><a href="http://altinn.github.io/DesignSystem/public/patterns/04-sider-portal-01-aktorvalg-10-aktorvalg-forste-gang-enkel/04-sider-portal-01-aktorvalg-10-aktorvalg-forste-gang-enkel.html">Aktørvalg</a></li>
-  <li><a href="http://altinn.github.io/DesignSystem/public/patterns/04-sider-infoportal-20-navigasjonssider-31-temaside-v-arbeidsforhold/04-sider-infoportal-20-navigasjonssider-31-temaside-v-arbeidsforhold.html">Temaside</a></li>
-  <li><a href="http://altinn.github.io/DesignSystem/public/patterns/04-sider-infoportal-20-navigasjonssider-40-temaside-filter-v-stotteordninger/04-sider-infoportal-20-navigasjonssider-40-temaside-filter-v-stotteordninger.html">Temaside for støtteordninger</a></li>
-  <li><a href="http://altinn.github.io/DesignSystem/public/patterns/04-sider-infoportal-20-navigasjonssider-50-kolonnenavigasjon-v-skjemaoversikt/04-sider-infoportal-20-navigasjonssider-50-kolonnenavigasjon-v-skjemaoversikt.html">Kolonnenenavigasjon for skjemaoversikt</a></li>
+						
 
-  <li><a href="http://altinn.github.io/DesignSystem/public/patterns/04-sider-infoportal-20-navigasjonssider-51-omraadeside/04-sider-infoportal-20-navigasjonssider-51-omraadeside.html?1507106898184">Områdeside (A-melding)</a></li>
-  <li><a href="http://altinn.github.io/DesignSystem/public/patterns/04-sider-infoportal-30-artikkel-42-artikkel-jumbo-v-velg-foretaksform/04-sider-infoportal-30-artikkel-42-artikkel-jumbo-v-velg-foretaksform.html">Sammenlikning spørsmål</a></li>
-  <li><a href="http://altinn.github.io/DesignSystem/public/patterns/04-sider-infoportal-20-navigasjonssider-21-sammenlikning-v-velg-foretaksform/04-sider-infoportal-20-navigasjonssider-21-sammenlikning-v-velg-foretaksform.html">Sammenlikning svar</a></li>
+						
 
-</ul>
+						
+						<div class="iffframe">
+							
+<fieldset>
+  <legend class="sr-only">Velg et alternativ</legend>
+  <div class="a-switch  ">
+    <input id="radiobutton-read" class="sr-only" type="radio" name="addRights" value="radiobutton-read" />
+    <label for="radiobutton-read" class="a-switch-label ">
+		        
+<i class="ai ai-read   "    ></i>
+	        Du kan velge denne
+	      </label>
+  </div>
+  <div class="a-switch  ">
+    <input id="radiobutton-edit" class="sr-only" type="radio" name="addRights" value="radiobutton-read" />
+    <label for="radiobutton-edit" class="a-switch-label ">
+	        eller denne
+	      </label>
+  </div>
+  <div class="a-switch  ">
+    <input id="radiobutton-sign" class="sr-only" type="radio" name="addRights" value="radiobutton-read" />
+    <label for="radiobutton-sign" class="a-switch-label ">
+	        eller denne
+	      </label>
+  </div>
+</fieldset>
 
-<h2 class="live-search-title"> ARTIKKELSIDER </h2>
+							<!-- iframe class="iffframe__iframe" frameBorder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" src="/designsystem-styleguide/patterns/00-atoms-01-forms-07-valgknapp-ett-alternativ/00-atoms-01-forms-07-valgknapp-ett-alternativ.markup-only.html"></iframe>
 
-<ul class="live-search-list-templates">
+							<div class="iffframe__handle"></div -->
 
-  <li><a href="http://altinn.github.io/DesignSystem/public/patterns/04-sider-infoportal-30-artikkel-14-artikkel-v-aksjeselskap/04-sider-infoportal-30-artikkel-14-artikkel-v-aksjeselskap.html?1507106597065">Vanlig artikkel</a></li>
-  <li><a href="http://altinn.github.io/DesignSystem/public/patterns/04-sider-infoportal-30-artikkel-41-artikkel-jumbo-v-enkeltpersonforetak/04-sider-infoportal-30-artikkel-41-artikkel-jumbo-v-enkeltpersonforetak.html">Artikkel med toppillustrasjon</a></li>
-  <li><a href="http://altinn.github.io/DesignSystem/public/patterns/04-sider-infoportal-30-artikkel-60-artikkel-v-stotteordning/04-sider-infoportal-30-artikkel-60-artikkel-v-stotteordning.html?1507106764721">Artikkel for støtteordning</a></li>
+						</div><!--end iffframe-->
 
-  <li><a href="http://altinn.github.io/DesignSystem/public/patterns/04-sider-infoportal-20-navigasjonssider-21-sammenlikning-v-velg-foretaksform/04-sider-infoportal-20-navigasjonssider-21-sammenlikning-v-velg-foretaksform.html">Sammenlikning svar</a></li>
+					</section><!--end section-->
 
-</ul>
+				</div><!--end c-tabs__panel-->
+				
 
-<h2 class="live-search-title"> INNBOKS </h2>
+			</div><!--end c-tabs__body-->
 
-<ul class="live-search-list-templates">
+		</div><!--end c-tabs-->
 
-  <li><a href="http://altinn.github.io/DesignSystem/public/patterns/04-sider-portal-50-innboks-00-innboks/04-sider-portal-50-innboks-00-innboks.html">Innboks</a></li>
+		<ul class="c-tabs-list js-tabs-list">
+			
 
-  <li><a href="http://altinn.github.io/DesignSystem/public/patterns/04-sider-portal-50-innboks-05-innboks-arkiv/04-sider-portal-50-innboks-05-innboks-arkiv.html">Innboks arkiv</a></li>
+				
 
-  <li><a href="http://altinn.github.io/DesignSystem/public/patterns/04-sider-portal-50-innboks-06-innboks-soketreff/04-sider-portal-50-innboks-06-innboks-soketreff.html">Innboks søketreff</a></li>
+				
 
-</ul>
+				
 
-<h2 class="live-search-title"> PROFIL </h2>
+				<li class="c-tabs-list__item js-tabs-list-item" data-code-tabs="tab-standard">
 
-<ul class="live-search-list-templates">
+					<div class="c-tabs test-tabs  js-tabs">
 
-  <li><a href="http://altinn.github.io/DesignSystem/public/patterns/04-sider-portal-60-profil-roller-rettigheter-profil-roller-rettigheter/04-sider-portal-60-profil-roller-rettigheter-profil-roller-rettigheter.html">Profil, roller og rettigheter</a></li>
+						<ul class="c-tabs__list">
 
-  <li><a href="http://altinn.github.io/DesignSystem/public/patterns/04-sider-portal-91-klientdelegering-00-klientdelegering-fjern-rettigheter-fra-klient/04-sider-portal-91-klientdelegering-00-klientdelegering-fjern-rettigheter-fra-klient.html">Klientdelegering - Fjern rettigheter</a></li>
+							<li class="c-tabs__item">
+								<a href="#html-1" class="c-tabs__link js-tab">HTML</a>
+							</li><!-- end c-tabs__item -->
 
-  <li><a href="http://altinn.github.io/DesignSystem/public/patterns/04-sider-portal-91-klientdelegering-00-klientdelegering-gi-rettigheter-til-ansatte/04-sider-portal-91-klientdelegering-00-klientdelegering-gi-rettigheter-til-ansatte.html">Klientdelegering - Gi rettigheter</a></li>
+							<!--
 
-  <li><a href="http://altinn.github.io/DesignSystem/public/patterns/04-sider-portal-91-klientdelegering-00-klientdelegering-kvittering-gyldig/04-sider-portal-91-klientdelegering-00-klientdelegering-kvittering-gyldig.html">Klientdelegering - Fullført prosess</a></li>
+							<li class="c-tabs__item">
+								<a href="#angular-1" class="c-tabs__link js-tab">Angular</a>
+							</li><!-- end c-tabs__item -->
 
-  <li><a href="http://altinn.github.io/DesignSystem/public/patterns/04-sider-portal-91-klientdelegering-00-klientdelegering-pa-fil/04-sider-portal-91-klientdelegering-00-klientdelegering-pa-fil.html">Klientdelegering på fil</a></li>
+							<!--<li class="c-tabs__item">
+								<a href="#react-1" class="c-tabs__link js-tab">React</a>
+							</li><!-- end c-tabs__item -->
 
-</ul>
+						</ul><!-- end c-tabs__list -->
 
-<h2 class="live-search-title"> HJELPESENTER </h2>
+						<div class="c-tabs__body ">
 
-<ul class="live-search-list-templates">
+							<div class="c-tabs__panel js-tabs-panel" id="html-1">
 
-  <li><a href="http://altinn.github.io/DesignSystem/public/patterns/04-sider-infoportal-20-navigasjonssider-70-hjelpesenter/04-sider-infoportal-20-navigasjonssider-70-hjelpesenter.html?1507106852930">Hjelpesenter forside</a></li>
+								
 
-  <li><a href="http://altinn.github.io/DesignSystem/public/patterns/04-sider-infoportal-40-sok-70-sok-hjelp/04-sider-infoportal-40-sok-70-sok-hjelp.html">Søk i hjelpesenter</a></li>
+								<div class="pattern-code">
+									<button class="c-btn pattern-code-copy-btn" data-clipboard-target="#pattern-code-1">Kopier</button>
+									<pre class="highlight pattern-code-block"><code class="language-html" id="pattern-code-1">
+<figure class="highlight"><pre><code class="language-liquid" data-lang="liquid">&lt;div class="a-switch   "&gt;
+  &lt;input id="checkbutton-read" class="sr-only" type="checkbox" name="checkbutton-read" value="checkbutton-read"&gt;
+  &lt;label for="checkbutton-read" class="a-switch-label "&gt;
+        
+&lt;i class="ai ai-read   "    &gt;&lt;/i&gt;
+       Kun lese
+    &lt;/label&gt;
+&lt;/div&gt;
+&lt;div class="a-switch   "&gt;
+  &lt;input id="checkbutton-edit" class="sr-only" type="checkbox" name="checkbutton-edit" value="checkbutton-read"&gt;
+  &lt;label for="checkbutton-edit" class="a-switch-label "&gt;
+        
+&lt;i class="ai ai-write   "    &gt;&lt;/i&gt;
+       Fylle ut
+    &lt;/label&gt;
+&lt;/div&gt;
+&lt;div class="a-switch   "&gt;
+  &lt;input id="checkbutton-sign" class="sr-only" type="checkbox" name="checkbutton-sign" value="checkbutton-read" data-toggle="popover" data-placement="bottom" data-animation="false" data-popover-content="conditionalPopover" data-popover-class="popover-warning"
+    data-trigger="onchange"&gt;
+  &lt;label for="checkbutton-sign" class="a-switch-label "&gt;
+        
+&lt;i class="ai ai-sign   "    &gt;&lt;/i&gt;
+       Signere
+    &lt;/label&gt;
+  &lt;div id="conditionalPopover" class="d-none"&gt;
+    &lt;div class="pb-1"&gt;Dette er en popover tekst&lt;/div&gt;
+    
+    &lt;button type="button" class="a-btn a-btn-danger mr-1"&gt;
+  
+    knapp
+  
+&lt;/button&gt;
+    
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="a-switch   "&gt;
+  &lt;input id="checkbutton-toggle" class="sr-only" type="checkbox" name="checkbutton-toggle" value="checkbutton-read"&gt;
+  &lt;label for="checkbutton-toggle" class="a-switch-label a-toggle-icon"&gt;
+        
+&lt;i class="ai ai-plus   "    &gt;&lt;/i&gt;
+        
+&lt;i class="ai ai-check   "    &gt;&lt;/i&gt;
+       Toggle state icon
+    &lt;/label&gt;
+&lt;/div&gt;
+&lt;div class="a-switch   "&gt;
+  &lt;input id="checkbutton-example" class="sr-only" type="checkbox" name="checkbutton-example" value="checkbutton-read"&gt;
+  &lt;label for="checkbutton-example" class="a-switch-label "&gt;
+      Eksempel uten ikon
+    &lt;/label&gt;
+&lt;/div&gt;
+&lt;div class="a-switch   "&gt;
+  &lt;input id="checkbutton-deactivated" class="sr-only" type="checkbox" name="checkbutton-deactivated" value="checkbutton-read" disabled&gt;
+  &lt;label for="checkbutton-deactivated" class="a-switch-label disabled"&gt;
+        
+&lt;i class="ai ai-sign   "    &gt;&lt;/i&gt;
+      Eksempel på deaktivert
+    &lt;/label&gt;
+&lt;/div&gt;
+&lt;div class="a-switch   "&gt;
+  &lt;input id="checkbutton-longtext" class="sr-only" type="checkbox" name="checkbutton-longtext" value="checkbutton-read"&gt;
+  &lt;label for="checkbutton-longtext" class="a-switch-label "&gt;
+      Eksempel med veldig veldig veldig lang tekst som blir kuttet av på mobilvisning
+    &lt;/label&gt;
+&lt;/div&gt;</code></pre></figure>
+</code></pre>
+								</div>
 
-  <li><a href="http://altinn.github.io/DesignSystem/public/patterns/04-sider-infoportal-30-artikkel-70-artikkel-v-hjelpetrinn/04-sider-infoportal-30-artikkel-70-artikkel-v-hjelpetrinn.html?1507106808809">Artikkel med hjelpetrinn</a></li>
-
-</ul>
-
-<h2 class="live-search-title"> SKJEMA </h2>
-
-<ul class="live-search-list-templates">
-
-  <li><a href="http://altinn.github.io/DesignSystem/public/patterns/04-sider-infoportal-20-navigasjonssider-51-omraadeside/04-sider-infoportal-20-navigasjonssider-51-omraadeside.html">Skjemaoversikt</a></li>
-
-  <li><a href="http://altinn.github.io/DesignSystem/public/patterns/04-sider-infoportal-35-skjemaartikkel-12-artikkel-skjema-v-amelding-a02/04-sider-infoportal-35-skjemaartikkel-12-artikkel-skjema-v-amelding-a02.html">Om skjema</a></li>
-
-  <li><a href="http://altinn.github.io/DesignSystem/public/patterns/04-sider-infoportal-35-skjemaartikkel-11-artikkel-skjema-v-amelding-varsler/04-sider-infoportal-35-skjemaartikkel-11-artikkel-skjema-v-amelding-varsler.html">Om skjema med varsel</a></li>
-
-  <li><a href="http://altinn.github.io/DesignSystem/public/patterns/04-sider-infoportal-35-skjemaartikkel-53-artikkel-skjema-v-egenmeldt-sykefravaer/04-sider-infoportal-35-skjemaartikkel-53-artikkel-skjema-v-egenmeldt-sykefravaer.html">Skjema fra innboksen</a></li>
-
-  <li><a href="http://altinn.github.io/DesignSystem/public/patterns/04-sider-infoportal-35-skjemaartikkel-55-artikkel-skjema-v-avskrivning/04-sider-infoportal-35-skjemaartikkel-55-artikkel-skjema-v-avskrivning.html">Skjema vedlegg</a></li>
-
-  <li><a href="http://altinn.github.io/DesignSystem/public/patterns/04-sider-infoportal-35-skjemaartikkel-56-artikkel-skjema-v-anmodning-om-tildeling-av-D-nummer/04-sider-infoportal-35-skjemaartikkel-56-artikkel-skjema-v-anmodning-om-tildeling-av-D-nummer.html">Skjema du ikke kan starte i altinn</a></li>
-
-  <li><a href="http://altinn.github.io/DesignSystem/public/patterns/04-sider-infoportal-35-skjemaartikkel-58-artikkel-skjema-v-skjenkebevilling-for-skjenking-av-alkoholholdig-drikke/04-sider-infoportal-35-skjemaartikkel-58-artikkel-skjema-v-skjenkebevilling-for-skjenking-av-alkoholholdig-drikke.html">Skjema med kommunesøk</a></li>
+							</div><!--end c-tabs__panel-->
 
 
-</ul>
+							<div class="c-tabs__panel js-tabs-panel" id="angular-1">
 
-<h2 class="live-search-title"> STEGVIS PROSESS </h2>
+								<div class="pattern-code">
+									<button class="c-btn pattern-code-copy-btn" data-clipboard-target="#pattern-code-1">Copy</button>
+									<pre class="highlight pattern-code-block"><code class="language-html" id="pattern-code-1">THIS IS ANGULAR CODE</code></pre>
+								</div>
 
-<ul class="live-search-list-templates">
+							</div><!--end c-tabs__panel-->
 
-  <li><a href="http://altinn.github.io/DesignSystem/versjon-altinndagen/patterns/04-sider-90-starte-enk-00-starte-enk-0/04-sider-90-starte-enk-00-starte-enk-0.html">Registrere enkeltpersonforetak</a></li>
+							<div class="c-tabs__panel js-tabs-panel" id="react-1">
 
-</ul>
+								<div class="pattern-code">
+									<button class="c-btn pattern-code-copy-btn" data-clipboard-target="#pattern-code-1">Copy</button>
+									<pre class="highlight pattern-code-block"><code class="language-html" id="pattern-code-1">THIS IS REACT CODE</code></pre>
+								</div>
 
-<h2 class="live-search-title"> SØK </h2>
+							</div><!--end c-tabs__panel-->
 
-<ul class="live-search-list-templates">
+						</div><!-- end c-tabs__body-->
 
-  <li><a href="http://altinn.github.io/DesignSystem/public/patterns/04-sider-infoportal-40-sok-00-sok-forside/04-sider-infoportal-40-sok-00-sok-forside.html?1507106953230">Søkeresultater</a></li>
-  <li><a href="http://altinn.github.io/DesignSystem/public/patterns/04-sider-infoportal-40-sok-10-sok-skjema/04-sider-infoportal-40-sok-10-sok-skjema.html">Søk med filter: skjema</a></li>
-  <li><a href="http://altinn.github.io/DesignSystem/public/patterns/04-sider-infoportal-40-sok-20-sok-artikkel/04-sider-infoportal-40-sok-20-sok-artikkel.html">Søk med filter: starte og drive</a></li>
+					</div><!-- end c-tabs -->
 
-</ul>
+				</li><!-- end c-tabs-list__item -->
+			
 
-<div class="no-results-element">Ingen treff</div>
+				
 
-	</div><!--end c-text-passage-->
+				
+
+				
+
+				<li class="c-tabs-list__item js-tabs-list-item" data-code-tabs="tab-valgknapp-radio">
+
+					<div class="c-tabs test-tabs  js-tabs">
+
+						<ul class="c-tabs__list">
+
+							<li class="c-tabs__item">
+								<a href="#html-2" class="c-tabs__link js-tab">HTML</a>
+							</li><!-- end c-tabs__item -->
+
+							<!--
+
+							<li class="c-tabs__item">
+								<a href="#angular-2" class="c-tabs__link js-tab">Angular</a>
+							</li><!-- end c-tabs__item -->
+
+							<!--<li class="c-tabs__item">
+								<a href="#react-2" class="c-tabs__link js-tab">React</a>
+							</li><!-- end c-tabs__item -->
+
+						</ul><!-- end c-tabs__list -->
+
+						<div class="c-tabs__body ">
+
+							<div class="c-tabs__panel js-tabs-panel" id="html-2">
+
+								
+
+								<div class="pattern-code">
+									<button class="c-btn pattern-code-copy-btn" data-clipboard-target="#pattern-code-2">Kopier</button>
+									<pre class="highlight pattern-code-block"><code class="language-html" id="pattern-code-2">
+<figure class="highlight"><pre><code class="language-liquid" data-lang="liquid">&lt;fieldset&gt;
+  &lt;legend class="sr-only"&gt;Velg et alternativ&lt;/legend&gt;
+  &lt;div class="a-switch  "&gt;
+    &lt;input id="radiobutton-read" class="sr-only" type="radio" name="addRights" value="radiobutton-read" /&gt;
+    &lt;label for="radiobutton-read" class="a-switch-label "&gt;
+		        
+&lt;i class="ai ai-read   "    &gt;&lt;/i&gt;
+	        Du kan velge denne
+	      &lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div class="a-switch  "&gt;
+    &lt;input id="radiobutton-edit" class="sr-only" type="radio" name="addRights" value="radiobutton-read" /&gt;
+    &lt;label for="radiobutton-edit" class="a-switch-label "&gt;
+	        eller denne
+	      &lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div class="a-switch  "&gt;
+    &lt;input id="radiobutton-sign" class="sr-only" type="radio" name="addRights" value="radiobutton-read" /&gt;
+    &lt;label for="radiobutton-sign" class="a-switch-label "&gt;
+	        eller denne
+	      &lt;/label&gt;
+  &lt;/div&gt;
+&lt;/fieldset&gt;</code></pre></figure>
+</code></pre>
+								</div>
+
+							</div><!--end c-tabs__panel-->
+
+
+							<div class="c-tabs__panel js-tabs-panel" id="angular-2">
+
+								<div class="pattern-code">
+									<button class="c-btn pattern-code-copy-btn" data-clipboard-target="#pattern-code-2">Copy</button>
+									<pre class="highlight pattern-code-block"><code class="language-html" id="pattern-code-2">THIS IS ANGULAR CODE</code></pre>
+								</div>
+
+							</div><!--end c-tabs__panel-->
+
+							<div class="c-tabs__panel js-tabs-panel" id="react-2">
+
+								<div class="pattern-code">
+									<button class="c-btn pattern-code-copy-btn" data-clipboard-target="#pattern-code-2">Copy</button>
+									<pre class="highlight pattern-code-block"><code class="language-html" id="pattern-code-2">THIS IS REACT CODE</code></pre>
+								</div>
+
+							</div><!--end c-tabs__panel-->
+
+						</div><!-- end c-tabs__body-->
+
+					</div><!-- end c-tabs -->
+
+				</li><!-- end c-tabs-list__item -->
+			
+
+		</ul><!-- end c-tabs-list -->
+
+	</div>
+
+</section><!-- end c-section -->
+
+<section class="c-section">
+
+	<div class="l-container">
+
+		<div class="c-section-header">
+
+			<h2 class="">Retningslinjer for bruk</h2>
+
+		</div><!-- end c-section-header -->
+
+		<div class="c-text-passage l-linelength-container">
+
+			
+				<h3>Når skal du bruke denne komponenten?</h3>
+        <p>Info kommer.</p>
+      
+				<h3>Når skal du vurdere alternativer?</h3>
+        <p>Info kommer.</p>
+      
+				<h3>Policies</h3>
+        <p>Se theme-spesifikke policies.</p>
+      
+
+		</div><!-- end c-text-passage -->
+
+		<div class="c-text-passage l-linelength-container display-altinn">
+			
+				<h3>Theme-spesifikke policies for Altinn</h3>
+        <p>Valgknapper som er en del av ekspanderbar overskrift skal midtstilles på stor-skjerm, og venstre-alignes på skjermer mindre enn 768px ($MD).</p>
+      
+		</div><!-- end c-text-passage -->
+
+		<div class="c-text-passage l-linelength-container display-brreg">
+			
+				<h3>Theme-spesifikke policies for Brønnøysundregistrene</h3>
+        <p>Ingen retningslinjer er lagt inn for Brønnøysundregistrene enda.</p>
+      
+		</div><!-- end c-text-passage -->
+
+		<table class="c-table my-3">
+
+			<thead class="c-table__header">
+
+				<tr class="c-table__header-row">
+				<th scope="col" class="c-table__header-cell ">Relevante klasser</th>
+				<th scope="col" class="c-table__header-cell ">Obligatorisk</th>
+				<th scope="col" class="c-table__header-cell ">Beskrivelse</th>
+				</tr><!-- c-table__header-row -->
+
+			</thead><!-- end c-table__header -->
+
+			<tbody class="c-table__body ">
+				
+
+				<tr class="c-table__row ">
+
+					<td class="c-table__cell ">
+						a-switch
+					</td>
+
+					<td class="c-table__cell ">
+						ja
+					</td>
+
+					<td class="c-table__cell ">
+						
+						
+					</td>
+
+				</tr><!-- end c-table__row -->
+				
+
+			</tbody><!-- end c-table__body -->
+
+		</table><!--end c-table-->
+
+		<div class="c-text-passage l-linelength-container">
+			
+		</div><!-- end c-text-passage -->
+
+	</div>
+
+</section><!-- end c-section -->
+
+<section class="c-section">
+
+	<div class="l-container">
+
+<!-- TODO: SKriv ut dette fra MD-filen?
+<div class="c-section-header ">
+
+	<h2>Detaljer</h2>
 
 </div>
+		<div class="c-text-passage l-linelength-container">
+	        <ul>
+
+	            <li>Versjon: 1</li>
+	            <li>Sist oppdatert: April 27, 2017</li>
+	            <li>Brukt på : <a href="#">Altinn</a>, <a href="#">Altinnett</a></li>
+	        </ul>
+		</div> -->
+
+	</div>
+
+</section><!-- end c-section -->
 
 
 							</main><!--end role=main-->
